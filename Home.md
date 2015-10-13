@@ -9,6 +9,10 @@ If you simply want more information on using Code, please visit our [homepage](h
 * [[Design Goals]]
 * [[Issue Tracking Workflow]]
 
+## Documentation
+* [API](https://github.com/Microsoft/vscode-extensionbuilders/tree/master/docs/extensionAPI)
+* [Extensions](https://github.com/Microsoft/vscode-extensionbuilders/tree/master/docs/extensions)
+
 ## Contributing to VS Code
 * [[How to Contribute]]
 * [[Coding Guidelines]]
