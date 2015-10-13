@@ -1,12 +1,11 @@
 
 ## 0.10.0
 ### Schedule
-|                           |                 |
-| ------------------------- | --------------- |
-| Development               | Oct 5th - Nov 6 |
-| Drop to insiders          | Nov 9           | 
-| Last build before connect | Nov 16          |
-| Connect() event           | Nov 18, 19      |
+| ------------------------- | ------------- |
+| Development               | Oct 5 - Nov 6 |
+| Insiders drop             | Nov 9         | 
+| Last build before Connect | Nov 16        |
+| Connect event             | Nov 18, 19    |
 
 ### Goals
 * React to early extension feedback, expand API
