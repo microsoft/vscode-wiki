@@ -7,7 +7,7 @@ If you simply want more information on using Code, please visit our [homepage](h
 ## Project Overview
 * [[Roadmap]]
 * [[Design Goals]]
-* [[Workflow]]
+* [[Issue Tracking Workflow]]
 
 ## Contributing to VS Code
 * [[How to Contribute]]
