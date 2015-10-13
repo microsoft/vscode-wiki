@@ -2,7 +2,6 @@
 ## 0.10.0
 ### Schedule
 |||
-| ------------------------- | ------------- |
 | Development               | Oct 5 - Nov 6 |
 | Insiders drop             | Nov 9         | 
 | Last build before Connect | Nov 16        |
