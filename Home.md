@@ -9,14 +9,9 @@ If you simply want more information on using Code, please visit our [homepage](h
 * [[Design Goals]]
 * [[Workflow]]
 
-## News
-* [[Breaking Changes]]
-* [Product Updates](http://code.visualstudio.com/updates)
-
 ## Contributing to VS Code
 * [[Contributing]]
 * [[Coding Guidelines]]
 * [[Writing and Running Tests]]
 * [[Useful Issue Queries]]
-
 
