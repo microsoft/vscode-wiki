@@ -10,7 +10,7 @@ If you simply want more information on using Code, please visit our [homepage](h
 * [[Workflow]]
 
 ## Contributing to VS Code
-* [[Contributing]]
+* [[How to Contribute]]
 * [[Coding Guidelines]]
 * [[Writing and Running Tests]]
 * [[Useful Issue Queries]]
