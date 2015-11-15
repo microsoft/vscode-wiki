@@ -1,14 +1,8 @@
-# 0.10.0
 
-### Offsets are not 0-based
-* ...
+# Breaking Changes
 
-### Language Service Features
+We take breaking changes seriously and will outline them for each milestone in this document. 
+As we are still pre "1.0" you can expect that there may be sweeping changes before we lock
+down the API set. 
 
-* Hover
-* Go to declaration
-* ...
-
-### window#runInTerminal
-
-* Replaced by a node module: https://www.npmjs.com/package/run-in-terminal
+## 0.11.0
