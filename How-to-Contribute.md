@@ -1,8 +1,8 @@
 There are three great ways to contribute to the VS Code project: logging bugs, submitting pull requests, and creating suggestions.
 
 ## Logging Bugs
-To log a bug, just use the GitHub issue tracker. Confirmed bugs will be labelled 
-with the `Bug` label. Please do a search to see if the issue has been reported 
+To log a bug, just use the [GitHub issue tracker](https://github.com/microsoft/vscode/issues). 
+Confirmed bugs will be labelled with the `Bug` label. Please do a search to see if the issue has been reported 
 already and if not, all of the following are helpful so we can better reproduce the problem.
 * Code that demonstrates the issue
 * Verison of Code
@@ -15,7 +15,7 @@ Don't feel bad if we can't reproduce the issue and ask for more information!
 ## Pull Requests
 Before we can accept a pull request from you, you'll need to sign a 
 [[Contributor License Agreement (CLA)|Contributor-License-Agreement]]. It is an automated process
-and you only need to do it once. The project [README.md](https://github.com/microsoft/vscode)
+and you only need to do it once. The project [README.md](https://github.com/Microsoft/vscode/blob/master/README.md)
 details how to clone, build, run, debug and test Code. Be sure to follow our 
 [[Coding Guidelines|Coding-Guidelines]].
 
