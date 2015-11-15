@@ -1,5 +1,26 @@
+# 0.11.0
+## Schedule
 
-## 0.10.0
+| Task                      | Dates           |
+| ------------------------- | --------------- |
+| Planning                  | Nov 19          |
+| Development               | Nov 24 - Dec 17 |
+| End Game                  | Dec 07 - Dec 10 |
+| Insiders drop             | Dec 10          | 
+| Release                   | Dec 17          | 
+
+## Goals
+* React to broad extension development feedback
+* Refine development in the open workflow
+
+## Constraints
+* Holiday season
+
+## Key Initiatives
+* TBD
+
+
+# 0.10.0
 ### Schedule
 | Task                      | Dates         |
 | ------------------------- | ------------- |
