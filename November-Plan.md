@@ -1,5 +1,3 @@
-# November Plan
-
 ## Theme
 Get ready for `Connect()` and then recover from `Connect`
 
