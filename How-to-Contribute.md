@@ -7,13 +7,9 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 ### Installing Prerequisites
 
-[Download the latest version](https://code.visualstudio.com/Download) of Visual Studio Code (you will use VS Code to edit Code!)
+Code includes node module dependencies that require native compilation. To ensure the compilation is picking up the right version of header files from the Electron Shell, we have our own script to run the installation via `npm`.
 
-Code includes node module dependencies that require native compilation. To ensure the compilation is picking up the right version of header files from the Electron Shell, we have our own script to run the installation via npm.
-
-**Tip!** In case you fail to build the native modules you can copy the node_modules folder of the VS Code installation into the `vscode` workspace node_modules folder. You will still need to run our unpm install to get all the development dependencies.
-
-For native compilation, you will need python (version `v2.7` recommended, `v3.x.x` is __*not*__ supported) as well as a C/C++ compiler tool chain.
+For native compilation, you will need python (version `v2.7` recommended, `v3.x.x` is __*not*__ supported), as well as a C/C++ compiler tool chain.
 
 **Windows:**
 * In addition to Python v2.7, make sure you have a PYTHON environment variable set to `drive:\path\to\python.exe`, not to a folder
@@ -26,7 +22,7 @@ For native compilation, you will need python (version `v2.7` recommended, `v3.x.
 **Linux:**
 * Python v2.7
 * `make`
-* A proper C/C++ compiler toolchain, for example [GCC](https://gcc.gnu.org)
+* A proper C/C++ compiler tool chain, for example [GCC](https://gcc.gnu.org)
 
 After you have these tools installed, run the following commands to check out Code and install dependencies:
 
@@ -54,12 +50,19 @@ Linux
 ## Development Workflow
 
 ### Incremental Build
-Open VS Code on the folder where you have cloned the `vscode` repository and press `CMD+SHIFT+B` (`CTRL+SHIFT+B` on Windows, Linux) to start the TypeScript builder. It will do an initial full build and then watch for file changes, compiling those changes *incrementally*. To view the build output open the Output stream by pressing `CMD+SHIFT+U`.
+From a terminal, where you have cloned the `vscode` repository, run the following command to run the TypeScript incremental builder:
 
-### Errors and Warnigns
-Errors and warnings are indicated in the status bar at the bottom left. You can view the error list using `View | Errors and Warnings` or pressing `CMD+P` and then `!`. Please note, if you start the TypeScript builder from a terminal using `gulp watch`, errors and warnings will only show in the console and not in Code.
+``` bash
+gulp watch
+```
+It will do an initial full build and then watch for file changes, compiling those changes incrementally, enabling a fast, iterative coding experience.
 
-**Tip!** You do not need to stop and restart the development version after each change, you can just execute `Reload Window` from the command palette.
+**Tip!** Open VS Code on the folder where you have cloned the `vscode` repository and press `CMD+SHIFT+B` (`CTRL+SHIFT+B` on Windows, Linux) to start the builder. To view the build output open the Output stream by pressing `CMD+SHIFT+U`.
+
+### Errors and Warnings
+Errors and warnings will show in the console while developing Code. If you use VS Code to develop Code, errors and warnings are shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing `CMD+P` and then `!`. 
+
+**Tip!** You do not need to stop and restart the development version of Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut `CMD+R` (`CTRL+R on Windows, Linux) to this command.
 
 ### Validate your changes
 To test the changes you launch a development version of VS Code on the workspace `vscode`, which you are currently editing.
