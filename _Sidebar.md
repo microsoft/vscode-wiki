@@ -13,7 +13,7 @@
 * [[Coding Guidelines]]
 * [[Contributor License Agreement]]
 
-** Documentation **
+**Documentation**
 * [Extensions](https://code.visualstudio.com/docs/extensions/overview)
 * [API](https://code.visualstudio.com/docs/extensionAPI/overview)
 * [Visual Studio Code](https://code.visualstudio.com/docs)
