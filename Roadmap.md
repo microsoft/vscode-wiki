@@ -1,5 +1,3 @@
-# Roadmap
-
 This document outlines the 6 month roadmap.
 
 * Theme: Getting to General Availability
