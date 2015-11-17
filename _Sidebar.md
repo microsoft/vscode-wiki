@@ -2,14 +2,13 @@
 * [[Roadmap]]
 * [[November Plan]]
 * [[Breaking Changes]]
-* [[Development Process]]
-* [[Useful Queries]]
+* [[Iterations]]
 * [[Related Projects]]
 
 **Contributing**
 * [[How to Contribute]]
 * [[Submitting Bugs and Suggestions]]
+* [[Insiders]]
 * [[Code Organization]]
 * [[Coding Guidelines]]
-* [[Development Process]]
 * [[Contributor License Agreement]]
