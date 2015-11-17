@@ -1,24 +1,32 @@
+## Names
+1. Use PascalCase for type names.
+3. Use PascalCase for enum values.
+4. Use camelCase for function names.
+5. Use camelCase for property names and local variables.
+7. Use whole words in names when possible.
 
-<<<These are the guidelines for extensions only. They do not apply to the Code core. This information belongs to the extension doc, 
-not the contributing doc >>>
-##Events
+## Types
+1. Do not export types/functions unless you need to share it across multiple components.
+2. Do not introduce new types/values to the global namespace.
 
-* We use `Event<T>` which exposes events as a function to which you subscribe by calling that function. The return value is a disposable which removes the event subscription.
+## Comments
+1. Use JSDoc style comments for functions, interfaces, enums, and classes.
 
-* We use `onDidVerbNoun?` and `onWillVerbNoun?`. For instance `onWillCloseSidebar`, `onDidiShutdownWorkbench`. The noun is optional if the scope provided enough identification, like `document#onDidChange` but `document#onWillDeleteLine`.
+## Strings
+1. Use double quotes for strings shown to the user that need to be externalized.
+2. Use single quotes otherwise. 
+3. All strings visible to the user need to be externalized.
 
-## Getter/Setter vs. Properties
+## Style
 
-* We use a property assignment when the assignment only alters that property but doesn't do anything else. We use a set/get method when value checking is performed, when events are send out, when other properties are updates etc.
-
-## Promise - resolve vs. reject
-
-* We don't use the reject path for expected conditions. For instance, when asking for the existence of a file a project resolves with a boolean instead rejecting. Similar, cancelling user input resolves with undefined instead or rejecting, `shell.showQuickPick:Promise`.
-
-## Interface with I
-
-* We *only* prefix interfaces with a uppercase `I` when it's supposed to be implemented by clients. That is it appears after the implements keyword. We don't use I-names when defining function signature or property bags.
-
-## Prefix private member
-
-* *All* private members of classes are prefixed with an `_`, such as `class Foo { private _bar;}`.
+1. Use arrow functions over anonymous function expressions.
+2. Only surround arrow function parameters when necessary. <br />For example, `(x) => x + x` is wrong but the following are correct:
+  1. `x => x + x`
+  2. `(x,y) => x + y`
+  3. `<T>(x: T, y: T) => x === y`
+3. Always surround loop and conditional bodies with curly braces.
+4. Open curly braces always go on the same line as whatever necessitates them.
+5. Parenthesized constructs should have no surrounding whitespace. <br />A single space follows commas, colons, and semicolons in those constructs. For example:
+  1. `for (var i = 0, n = str.length; i < 10; i++) { }`
+  2. `if (x < 10) { }`
+  3. `function f(x: number, y: string): void { }`
