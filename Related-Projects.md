@@ -9,7 +9,7 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 
 
 ## Linters
-|||
+|Linter|Repository|
 |---|---|
 |JSCS	|[vscode-jscs](https://github.com/microsoft/vscode-jscs)|
 |TSLint	|[vscode-tslint](https://github.com/microsoft/vscode-tslint)|
@@ -17,7 +17,7 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 |JSHint	|[vscode-jshint](https://github.com/microsoft/vscode-jshint)|
 
 ## Core Repositories
-|||
+|Component|Repository|
 |---|---|
 |Node Debug|[vscode-node-debug](https://github.com/microsoft/vscode-node-debug)|
 |Mono Debug|[vscode-mono-debug](https://github.com/microsoft/vscode-mono-debug)|
@@ -27,25 +27,25 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 |TextMate Service|[vscode-textmate](https://github.com/microsoft/vscode-textmate)|
 |AMD Loader|[vscode-loader](https://github.com/microsoft/vscode-loader)|
 
-## Tools
-|||
+## SDK Tools
+|Tool|Repository|
 |---|---|
 |yo code generator|[vscode-generator-code](https://github.com/microsoft/vscode-generator-code)|
 |vsce publishing tool|[vscode-vsce](https://github.com/microsoft/vscode-vsce)|
 
 ## Documentation
-|||
-|---|---|
-|`vscode-docs`|[vscode-docs](https://github.com/microsoft/vscode-docs)|
+|Repository|
+|---|
+|[`vscode-docs`](https://github.com/microsoft/vscode-docs)|
 
 ## Themes
-|||
-|---|---|
-|`vscode-themes`|[vscode-themes](https://github.com/microsoft/vscode-themes)
+||
+|---|
+|[`vscode-themes`](https://github.com/microsoft/vscode-themes)
 
 
 ## Samples
-|||
+|Sample|Repository|
 |---|---|
 |Mock Debug Adapter|[vscode-mock-debug](https://github.com/microsoft/vscode-mock-debug)|
 |Editor Config|[vscode-editorconfig](https://github.com/microsoft/vscode-editorconfig)|
