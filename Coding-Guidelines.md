@@ -1,32 +1,40 @@
+#Coding Guidelines
+
 ## Names
-1. Use PascalCase for type names.
-3. Use PascalCase for enum values.
-4. Use camelCase for function names.
-5. Use camelCase for property names and local variables.
-7. Use whole words in names when possible.
+* Use PascalCase for `type` names
+* Use PascalCase for `enum` values
+* Use camelCase for `function` names
+* Use camelCase for `property` names and `local variables`
+* Use whole words in names when possible
 
 ## Types
-1. Do not export types/functions unless you need to share it across multiple components.
-2. Do not introduce new types/values to the global namespace.
+* Do not export `types` or `functions` unless you need to share it across multiple components
+* Do not introduce new `types` or `values` to the global namespace
 
 ## Comments
-1. Use JSDoc style comments for functions, interfaces, enums, and classes.
+* Use JSDoc style comments for `functions`, `interfaces`, `enums`, and `classes`
 
 ## Strings
-1. Use double quotes for strings shown to the user that need to be externalized.
-2. Use single quotes otherwise. 
-3. All strings visible to the user need to be externalized.
+* Use "double quotes" for strings shown to the user that need to be externalized (localized)
+* Use 'single quotes' otherwise 
+* All strings visible to the user need to be externalized
 
 ## Style
+* Use arrow functions `=>` over anonymous function expressions
+* Only surround arrow function parameters when necessary. For example, `(x) => x + x` is wrong but the following are correct:
 
-1. Use arrow functions over anonymous function expressions.
-2. Only surround arrow function parameters when necessary. <br />For example, `(x) => x + x` is wrong but the following are correct:
-  1. `x => x + x`
-  2. `(x,y) => x + y`
-  3. `<T>(x: T, y: T) => x === y`
-3. Always surround loop and conditional bodies with curly braces.
-4. Open curly braces always go on the same line as whatever necessitates them.
-5. Parenthesized constructs should have no surrounding whitespace. <br />A single space follows commas, colons, and semicolons in those constructs. For example:
-  1. `for (var i = 0, n = str.length; i < 10; i++) { }`
-  2. `if (x < 10) { }`
-  3. `function f(x: number, y: string): void { }`
+``` javascript
+  x => x + x
+  (x,y) => x + y
+  <T>(x: T, y: T) => x === y
+```
+
+* Always surround loop and conditional bodies with curly braces
+* Open curly braces always go on the same line as whatever necessitates them
+* Parenthesized constructs should have no surrounding whitespace. A single space follows commas, colons, and semicolons in those constructs. For example:
+
+``` javascript
+  for (var i = 0, n = str.length; i < 10; i++) { }
+  if (x < 10) { }
+  function f(x: number, y: string): void { }
+```

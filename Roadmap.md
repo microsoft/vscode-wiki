@@ -1,34 +1,40 @@
-This document outlines the 6 month roadmap.
+# Roadmap
+This document outlines the 6 month roadmap for Code.
 
-* Theme: Getting to General Availability
-	* Accessability
-	* Globalization
-	* Stable APIs
-	* Performance
+## Theme: Getting to General Availability
+* Accessibility
+* Globalization
+* Stable APIs
+* Performance
 	
-* Theme: Highly demanded features
-	* Code folding
-	* editor config - promote the extension to a core extension
-	* Global search/replace
-	* VIM key bindings
-	* Git improvements (manage remotes, .git in parent folder of workspace)
+## Theme: Highly Demanded Features
+* Code folding
+* Editor Config - promote the extension to a core extension
+* Global search and replace
+* VIM key binding support
+* Git improvements - ability to manage remotes, .git in parent folder of workspace, etc.
 	
-* Theme: Deepen language support
-	* General
-		* Improve managing many errors in the workspace
-		* Improve adding a new language to Code
-		* Provide a notion of a test case failure
-	* JavaScript
-		* adopt the Salsa <link> component to support mixed JS/TS development (collaboration with the TS team).
-		* improve JSX support (Salsa enables deeper support)
-	* TypeScript
-		* track and contribute to TypeScript
-	* C# 
-		* debugging support (collaboration witht the coreCLR team)
-		* track and contribute to OmniSharp
-	* Debt: migrate _legacy_ languages into extensions
+## Theme: Deep Language Support
+### General
+* Improve managing many errors in the workspace
+* Improve adding a new language to Code
+* Provide a notion of a test case failure
+
+### JavaScript
+* Adopt the [Salsa](https://github.com/microsoft/typescript) component to support mixed JavaScript and TypeScript development (collaboration with the TS team)
+* Improve JSX support (Salsa enables deeper support)
+
+### TypeScript
+* Track and contribute to TypeScript
+
+### C# 
+* Debugging support (collaboration with the coreCLR team)
+* Track and contribute to OmniSharp
+
+### Debt
+* Migrate _legacy_ languages into extensions
 	
-* Theme: Extensibility
-	* Address gaps in the API based on feedback from extenders
-	* Simplify the consumption of many extensions
-	* Address gaps in the gallery support based on feedback
+## Theme: Extensibility
+* Address gaps in the API based on feedback from extenders
+* Simplify the consumption of a large number of extensions
+* Address gaps in the gallery support based on feedback
