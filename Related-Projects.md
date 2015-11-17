@@ -39,7 +39,7 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 |[`vscode-docs`](https://github.com/microsoft/vscode-docs)|
 
 ## Themes
-||
+|Theme|
 |---|
 |[`vscode-themes`](https://github.com/microsoft/vscode-themes)
 
