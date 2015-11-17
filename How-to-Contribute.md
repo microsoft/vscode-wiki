@@ -1,10 +1,10 @@
-There are three great ways to contribute to the VS Code project: logging bugs, submitting pull requests, and creating suggestions.
+There are three great ways to contribute to the Code project: logging bugs, submitting pull requests, and creating suggestions.
 
 ## Logging Bugs
 To log a bug, just use the [GitHub issue tracker](https://github.com/microsoft/vscode/issues). 
 Confirmed bugs will be labelled with the `Bug` label. Please do a search to see if the issue has been reported already and if not, all of the following are helpful so we can better reproduce the problem.
 * Code that demonstrates the issue
-* Verison of Code
+* Version of Code
 * Description of what you expect to happen
 * Animated GIFs
 * Errors in the Dev Tools (Help | Toggle Developer Tools)

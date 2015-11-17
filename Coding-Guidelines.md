@@ -1,4 +1,6 @@
 
+<<<These are the guidelines for extensions only. They do not apply to the Code core. This information belongs to the extension doc, 
+not the contributing doc >>>
 ##Events
 
 * We use `Event<T>` which exposes events as a function to which you subscribe by calling that function. The return value is a disposable which removes the event subscription.

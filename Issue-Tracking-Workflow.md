@@ -6,13 +6,15 @@ We use Labels to track the status of suggestions or feature requests. You can ex
 
 `[empty]`
 
-Issues that are unlabelled have not been looked at by a VS Code team member. You can expect to see them labelled within a few days of being logged.
+Issues that are unlabelled have not been looked at by a Code team member <<<we should be less inclusive, in eclipse we would have used
+committer, which is not a fashionable term anymore. Maybe 'Code core contributor'>>>. You can expect to see them labelled within a few days of being logged.
 
 `Bug`
 
 Issues with the `Bug` label are considered to be defects. Once they have the `Bug` label, they'll either be assigned to a developer and assigned a milestone, or put in the `Backlog` milestone, indicating we know it's an issue but we don't know when we will fix it. 
 
 The `Backlog` milestone is a good place to start if you're interested in making a contribution to Code.
+<<<other teams use a help wanted for simple to fix bugs, this has never worked for me in the past so we should not do it >>>
 
 `Suggestion`
 
@@ -38,4 +40,4 @@ We consider this issue to not be a bug, but rather a design change or feature of
 
 Issues that are not bugs or suggestions will be labelled appropriately (`Question`, `By Design`, `External`) and closed.
 
-Please use [Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=536384) for VS Code questions.
+Please use [Stack Overflow](http://go.microsoft.com/fwlink/?LinkID=536384) for Code questions.
