@@ -1,20 +1,5 @@
 # Related Repositories
 The Code project consists of the `vscode` repository plus a number of satellite projects.
- 
-## Lanugages
-|Language|Repository|
-|---|---|
-|Go|[vscode-go](https://github.com/microsoft/vscode-go)|
-|LaTeX|[vscode-latex](https://github.com/microsoft/vscode-latex)|
-
-
-## Linters
-|Linter|Repository|
-|---|---|
-|JSCS	|[vscode-jscs](https://github.com/microsoft/vscode-jscs)|
-|TSLint	|[vscode-tslint](https://github.com/microsoft/vscode-tslint)|
-|ESLint	|[vscode-eslint](https://github.com/microsoft/vscode-eslint)|
-|JSHint	|[vscode-jshint](https://github.com/microsoft/vscode-jshint)|
 
 ## Core Repositories
 |Component|Repository|
@@ -37,6 +22,20 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 |Repository|
 |---|
 |[`vscode-docs`](https://github.com/microsoft/vscode-docs)|
+ 
+## Languages
+|Language|Repository|
+|---|---|
+|Go|[vscode-go](https://github.com/microsoft/vscode-go)|
+|LaTeX|[vscode-latex](https://github.com/microsoft/vscode-latex)|
+
+## Linters
+|Linter|Repository|
+|---|---|
+|JSCS	|[vscode-jscs](https://github.com/microsoft/vscode-jscs)|
+|TSLint	|[vscode-tslint](https://github.com/microsoft/vscode-tslint)|
+|ESLint	|[vscode-eslint](https://github.com/microsoft/vscode-eslint)|
+|JSHint	|[vscode-jshint](https://github.com/microsoft/vscode-jshint)|
 
 ## Themes
 |Theme|
