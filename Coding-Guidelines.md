@@ -1,5 +1,8 @@
 #Coding Guidelines
 
+## Indentation
+We use tabs, not spaces.
+
 ## Names
 * Use PascalCase for `type` names
 * Use PascalCase for `enum` values
