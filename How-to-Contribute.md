@@ -82,7 +82,7 @@ You can identify the development version of Code by the Electron icon in the Doc
 ### Debugging
 Code has a multi-process architecture and your code is executed in different processes.
 
-The **render** process runs the UI code inside the Shell window. To debug code running in the **renderer** you can either use VS Code or the Chrome Developer Tools.
+The **render** process runs the UI code inside the Shell window. To debug code running in the **render** you can either use VS Code or the Chrome Developer Tools.
 
 #### Using VSCode
 * Install the [Debugger for Chrome](https://marketplace.visualstudio.com/items/msjsdiag.debugger-for-chrome) extension. This extension will let you attach to and debug client side code running in Chrome.
