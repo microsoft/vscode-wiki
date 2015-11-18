@@ -12,7 +12,7 @@ This document outlines the 6 month roadmap for Code.
 * Editor Config - promote the extension to a core extension
 * Global search and replace
 * VIM key binding support
-* Git improvements - ability to manage remotes, .git in parent folder of workspace, etc.
+* Git improvements - ability to manage remotes, .git in parent folder of workspace, rebasing etc.
 	
 ## Theme: Deep Language Support
 ### General
