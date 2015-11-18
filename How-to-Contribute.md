@@ -1,5 +1,5 @@
 # Contributing to Code
-There are many great ways to contribute to the Code project: logging bugs, submitting pull requests, and creating suggestions.
+There are many ways to contribute to the Code project: logging bugs, submitting pull requests, and creating suggestions.
 
 ## Build and Run From Source
 
