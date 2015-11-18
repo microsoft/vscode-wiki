@@ -13,7 +13,7 @@ For native compilation, you will need python (version `v2.7` recommended, `v3.x.
 
 **Windows:**
 * In addition to Python v2.7, make sure you have a PYTHON environment variable set to `drive:\path\to\python.exe`, not to a folder
-* Visual Studio 2013 for Windows Desktop or [Visual Studio 2015](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx) , make sure to select the option to install all C++ tools and the Windows SDK
+* Visual Studio 2013 for Windows Desktop or [Visual Studio 2015](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx), make sure to select the option to install all C++ tools and the Windows SDK
 
 **OS X** Command line developer tools
 * Python should be installed already
