@@ -7,9 +7,11 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 ### Installing Prerequisites
 
+You'll need [Node.JS](https://nodejs.org/en/), at least version 0.12.
+
 Code includes node module dependencies that require native compilation. To ensure the compilation is picking up the right version of header files from the Electron Shell, we have our own script to run the installation via `npm`.
 
-For native compilation, you will need python (version `v2.7` recommended, `v3.x.x` is __*not*__ supported), as well as a C/C++ compiler tool chain.
+For native compilation, you will need Python (version `v2.7` recommended, `v3.x.x` is __*not*__ supported), as well as a C/C++ compiler tool chain.
 
 **Windows:**
 * In addition to Python v2.7, make sure you have a PYTHON environment variable set to `drive:\path\to\python.exe`, not to a folder
