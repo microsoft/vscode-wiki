@@ -1,5 +1,5 @@
 # Contributing to Code
-There are many ways to contribute to the Code project: logging bugs, submitting pull requests, and creating suggestions.
+There are many ways to contribute to the Code project: logging bugs, submitting pull requests, reporting issues, and creating suggestions.
 
 ## Build and Run From Source
 
@@ -11,37 +11,38 @@ You'll need [Node.JS](https://nodejs.org/en/), at least version 0.12.
 
 Code includes node module dependencies that require native compilation. To ensure the compilation is picking up the right version of header files from the Electron Shell, we have our own script to run the installation via `npm`.
 
-For native compilation, you will need Python (version `v2.7` recommended, `v3.x.x` is __*not*__ supported), as well as a C/C++ compiler tool chain.
+For native compilation, you will need [Python](https://www.python.org/downloads/) (version `v2.7` recommended, `v3.x.x` is __*not*__ supported), as well as a C/C++ compiler tool chain.
 
 **Windows:**
-* In addition to Python v2.7, make sure you have a PYTHON environment variable set to `drive:\path\to\python.exe`, not to a folder
-* Visual Studio 2013 for Windows Desktop or [Visual Studio 2015](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx), make sure to select the option to install all C++ tools and the Windows SDK
+* In addition to [Python v2.7](https://www.python.org/downloads/release/python-279/), make sure you have a PYTHON environment variable set to `drive:\path\to\python.exe`, not to a folder
+* [Visual Studio 2013 for Windows Desktop](https://www.visualstudio.com/en-us/news/vs2013-community-vs.aspx) or [Visual Studio 2015](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx), make sure to select the option to install all C++ tools and the Windows SDK
 
-**OS X** Command line developer tools
+**OS X** 
+* Command line developer tools
 * Python should be installed already
 * [XCode](https://developer.apple.com/xcode/downloads/) and the Command Line Tools (XCode -> Preferences -> Downloads), which will install `gcc` and the related toolchain containing `make`
 
-**Linux:**
+**Linux**
 * Python v2.7
 * `make`
 * A proper C/C++ compiler tool chain, for example [GCC](https://gcc.gnu.org)
 
 After you have these tools installed, run the following commands to check out Code and install dependencies:
 
-OS X
+**OS X**
 
 	git clone https://github.com/microsoft/vscode
 	cd vscode && npm install -g mocha gulp
 	./scripts/npm.sh install
 
-Windows
+**Windows**
 
 	git clone https://github.com/microsoft/vscode
 	cd vscode
 	npm install -g mocha gulp
 	scripts\npm install
 
-Linux
+**Linux**
 
 	git clone https://github.com/microsoft/vscode
 	cd vscode && npm install -g mocha gulp
@@ -52,7 +53,7 @@ Linux
 ## Development Workflow
 
 ### Incremental Build
-From a terminal, where you have cloned the `vscode` repository, run the following command to run the TypeScript incremental builder:
+From a terminal, where you have cloned the `vscode` repository, execute the following command to run the TypeScript incremental builder:
 
 ``` bash
 gulp watch
@@ -64,7 +65,7 @@ It will do an initial full build and then watch for file changes, compiling thos
 ### Errors and Warnings
 Errors and warnings will show in the console while developing Code. If you use VS Code to develop Code, errors and warnings are shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing `CMD+P` and then `!`. 
 
-**Tip!** You do not need to stop and restart the development version of Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut `CMD+R` (`CTRL+R on Windows, Linux) to this command.
+**Tip!** You don't need to stop and restart the development version of Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut `CMD+R` (`CTRL+R on Windows, Linux) to this command.
 
 ### Validate your changes
 To test the changes you launch a development version of VS Code on the workspace `vscode`, which you are currently editing.
@@ -115,7 +116,7 @@ Press `CMD+SHIFT+T` (`CTRL+SHIFT+T` on Windows) to start the unit tests or run t
 Before we can accept a pull request from you, you'll need to sign a [[Contributor License Agreement (CLA)|Contributor-License-Agreement]]. It is an automated process and you only need to do it once. The project [README.md](https://github.com/Microsoft/vscode/blob/master/README.md) details how to clone, build, run, debug and test Code. Be sure to follow our [[Coding Guidelines|Coding-Guidelines]].
 
 ## Suggestions
-We're also interested in your feedback in future of Code. You can submit a suggestion or feature request through the issue tracker. To make this process more effective, we're asking that these include more information to help define them more clearly. 
+We're also interested in your feedback for the future of Code. You can submit a suggestion or feature request through the issue tracker. To make this process more effective, we're asking that these include more information to help define them more clearly. 
 
 ## Discussion Etiquette
 
