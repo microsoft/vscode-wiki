@@ -28,7 +28,7 @@ This document outlines the 6 month roadmap for Code.
 * Track and contribute to TypeScript
 
 ### C# 
-* Debugging support (collaboration with the coreCLR team)
+* Debugging support (collaboration with the coreCLR team) :heart:
 * Track and contribute to OmniSharp
 
 ### Debt
