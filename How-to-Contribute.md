@@ -50,6 +50,8 @@ After you have these tools installed, run the following commands to check out Co
 	# for 32bit Linux
 	#./scripts/npm.sh install --arch=ia32
 
+**Note:** For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/) .
+
 ## Development Workflow
 
 ### Incremental Build
