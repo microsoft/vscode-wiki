@@ -14,12 +14,11 @@ Before `Connect();` finish:
 - [x] Make the gallery available
 - [x] Initial version of the extension documentation
 
-
 After `Connect();` decompress:
 - [ ] Support the extender community
 - [ ] React to feedback from the community
+- [ ] Fix critical bugs -> tag bugs with 'November - end' milestone
+- [ ] Debt reduction
 - [ ] Tune our development workflows
 - [ ] Build extensions
 - [ ] Improve the documentation
-- [ ] Revive smart editing features that were lost during the
-- [ ] Explore integrating the Salsa component from the TypeScript team 
