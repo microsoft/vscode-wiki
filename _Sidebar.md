@@ -3,7 +3,7 @@
 * [[November Plan]]
 * [[Breaking Changes]]
 * [[Iterations]]
-* [[Older Releases]]
+* [[Previous Releases]]
 * [[Related Projects]]
 
 **Contributing**
