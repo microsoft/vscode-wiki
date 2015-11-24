@@ -118,7 +118,8 @@ Press `CMD+SHIFT+T` (`CTRL+SHIFT+T` on Windows) to start the unit tests or run t
 Even if you have push rights on the Microsoft/vscode repository, you should create a personal fork and create feature branches there when you need them. This keeps the main repository clean and your personal workflow cruft out of sight.
 
 ## Pull Requests
-Before we can accept a pull request from you, you'll need to sign a [[Contributor License Agreement (CLA)|Contributor-License-Agreement]]. It is an automated process and you only need to do it once. The project [README.md](https://github.com/Microsoft/vscode/blob/master/README.md) details how to clone, build, run, debug and test Code. Be sure to follow our [[Coding Guidelines|Coding-Guidelines]].
+Before we can accept a pull request from you, you'll need to sign a [[Contributor License Agreement (CLA)|Contributor-License-Agreement]]. It is an automated process and you only need to do it once. The project [README.md](https://github.com/Microsoft/vscode/blob/master/README.md) details how to clone, build, run, debug and test Code.
+To make it easy to review and discuss changes, create one pull request per issue. Never merge multiple requests in one. Be sure to follow our [[Coding Guidelines|Coding-Guidelines]] and keep code changes as small as possible. If possible, write tests that cover your changes. 
 
 ## Suggestions
 We're also interested in your feedback for the future of Code. You can submit a suggestion or feature request through the issue tracker. To make this process more effective, we're asking that these include more information to help define them more clearly. 
