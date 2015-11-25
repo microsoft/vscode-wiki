@@ -16,5 +16,6 @@ The `core` is partitioned into the following layers:
 The `core` of Code is fully implemented in [TypeScript](https://github.com/microsoft/typescript). Inside each layer the code is organized by the target runtime environment. This ensures that only the runtime specific APIs are used. In the code we distinguish between the following target environments:
 - `browser`: Source code that requires the `browser` APIs like access to the DOM
 - `node`: Source code that requires [`nodejs`](https://nodejs.org) APIs
-- `electron`: Source code that requires the [Electron](http://electron.atom.io/) APIs
+- `electron-browser`: Source code that requires the [Electron](http://electron.atom.io/) renderer-process APIs
+- `electron-main`: Source code that requires the [Electron](http://electron.atom.io/) main-process APIs
 - `common`: Source code that only requires basic JavaScript APIs and run in all the other target environments
