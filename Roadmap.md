@@ -21,7 +21,7 @@ This document outlines the 6 month roadmap for Code.
 * Provide a notion of a test case failure
 
 ### JavaScript
-* Adopt the [Salsa](https://github.com/microsoft/typescript) component to support mixed JavaScript and TypeScript development (collaboration with the TS team)
+* Adopt the [Salsa](https://github.com/Microsoft/TypeScript/issues/4789) component to support mixed JavaScript and TypeScript development (collaboration with the TS team)
 * Improve JSX support (Salsa enables deeper support)
 
 ### TypeScript
