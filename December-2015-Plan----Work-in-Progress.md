@@ -11,5 +11,5 @@ React to feedback.
 
 ## Items
 Adoptions
-- [ ] Latest Electron build #826
+- [ ] Latest Electron build [#826](../issues/826)
 - [ ] Adopt TypeScript 1.7 (depends on availability)
