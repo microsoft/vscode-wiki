@@ -1,5 +1,3 @@
-# December 2015 Plan
-
 ## Dates
 - Insider update on XXX
 - Stable update on XXX
