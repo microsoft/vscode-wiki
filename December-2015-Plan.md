@@ -12,8 +12,5 @@ React to feedback.
 
 ## Items
 Adoptions
-
- -[ ] Latest Electron build #826
- -[ ] Adopt TypeScript 1.7 (depends on availability)
-
-Plan items
+- [x] Latest Electron build #826
+- [ ] Adopt TypeScript 1.7 (depends on availability)
