@@ -20,7 +20,7 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - [ ] Run VSCode unit tests headless in a CI setup
 - [ ] Proposal to separate vscode tools form the vscode API of the existing vscode module
 - [ ] Automated Mac signing
-- [ ] Move old valuable bugs to github (Done: Ben, Joao)
+- [ ] Move old valuable bugs to github (Done: Ben, Joao, Andre, Isi)
 
 **Extensions**
 - [ ] Expose more Commands as API
@@ -41,26 +41,26 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 **Debug**
 
 **Basic language support**
-- [ ] Recover language support lost due to the textmate transition (electric characters, auto closing)
+- [ ] ? Recover language support lost due to the textmate transition (electric characters, auto closing)
 
 **Language service servers**
+- [ ] Expose more language features in the language service protocol
 - [ ] Document the language services protocol
 
 **JS**
 - [ ] Connect with TS team on Salsa (feature gaps?)
 - [ ] Support to make ES6 the default without having to add a jsconfig.json (depends on Salsa) (#337)
-- [ ] jsconfig.json sometime not taken into account #703
 - [ ] Enable ES6 coloring by using the TypeScript textmate grammar (align with Salsa)
+- [ ] jsconfig.json sometime not taken into account #703
 - [ ] Investigate into emmet support in JSX and TSX files
 
-
 **C#**
-- [ ] OmniSharp [#837](../issues/837)
-- [ ] Move C# into a separate extension and support build
+- [ ] Adopt OmniSharp [#837](../issues/837)
+- [ ] Move C# into a separate extension 
 
 **TS**
 - [ ] Adopt TypeScript 1.7 [#836](../issues/836)
-- [ ] Explore an incremental build project extension (based on tsb)
+- [ ] Explore an incremental build project extension (based on gulp-tsb)
 
 **Git**
 - [x] Support git integration when git folder is in a parent folder
@@ -68,7 +68,7 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - [ ] Add pull with rebase action
 
 **UI**
-- [ ] Intellisense improve support to show documentation for a  completion item
+- [ ] Explore: Intellisense improve support to show documentation for a  completion item
 - [ ] Preserve zoom state 
 
 **JSON**
