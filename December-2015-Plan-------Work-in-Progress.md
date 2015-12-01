@@ -18,10 +18,10 @@ Adoptions
 - [ ] Electron [#826](../issues/826)
 - [ ] OmniSharp [#837](../issues/837)
 
-Development
+### Development
 - [ ] Run VSCode unit tests in a CI setup
 
-Gallery
+### Gallery
 
 ### Basic language support
 - [ ] Recover language support
