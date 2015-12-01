@@ -17,7 +17,7 @@ Create a personal query: current milestone, assigned to me, closed, `-label:"ver
 
 ## Duplicates
 
-Duplicate bugs are closed with a comment `duplicates bug #issue`
+Duplicate bugs are closed with a comment `duplicates #issue`
 
 ## Issue Triage
 
