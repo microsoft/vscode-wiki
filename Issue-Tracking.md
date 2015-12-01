@@ -26,7 +26,13 @@ Issues are assigned a label that indicates the issue type:
 - `feature-request`: a request for an enhancement
 - `question`: a question from a user
 
-Issues can be assigned to a feature area using a label. The feature area labels are 'greenish'.
+Issues can be assigned to a feature area using a label. The feature area labels are 'greenish'. For example:
+- js
+- html
+- debug
+- tasks
+- typescript
+- ...
 
 ## Moving issues to another repository
 
