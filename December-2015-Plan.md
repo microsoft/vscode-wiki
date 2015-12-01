@@ -1,5 +1,10 @@
 **WORK IN PROGRESS**
 
+- Issue # , contribute a PR node-onigurum 45.
+- Issue #, 3631 in electron
+
+
+
 ## Dates
 - `insider` channel update Dec 14th
 - `stable` channel update Dec 18th
@@ -25,19 +30,14 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 
 **Extensions**
 - [ ] Expose more Commands as API
-- [ ] ?Support deactivate() call for an extension
+- [ ] Investigate deactivate() call for an extension
 - [ ] Example of using TS 1.7 and async and await inside an extension
+- [ ] Investigate into providing better support for VIM integration (intercept all keyevents for VIM command mode implementation)
+
 
 **Gallery**
 - [ ] Improve experience when user wants to read the README.md before installing an extension, provide option to install in an info box
 - [ ] Support a command line switch to launch Code without any extensions #???
-
-**Editor**
-- [ ] Setup an editor-distro respository
-- [ ] Define a website with usage documentation (align branding of the web site with code.visualstudio.com
-
-- [ ] ?Provide better support for VIM integration (intercept all keyevents for VIM command mode implementation)
-- [ ] ?Revive the language support features lost during the text mate transition (auto close, electric characters)
 
 **Debug**
 
