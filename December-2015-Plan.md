@@ -4,7 +4,7 @@
 
 ## Dates
 - `stable` channel update Dec 18th
-- `insider` channel update Dec 14th
+- `insider` channel update Dec 14th. For more information on the insider channel refer to [Test Prereleases](https://code.visualstudio.com/Docs/supporting/FAQ#_how-can-i-test-prerelease-versions-of-vs-code)
 
 Most of the VS Code team is on vacation from Dec 20th until January 4th.
 
