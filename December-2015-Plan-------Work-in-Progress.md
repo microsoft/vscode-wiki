@@ -22,6 +22,9 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - [ ] Support deactivate() call for an extension
 - [ ] Example of using TS 1.7 and async and await inside an extension
 
+**Code Owned Extensions**
+- [ ] Consistent options for the linters we provide
+
 **Gallery**
 - [ ] Improve experience when user wants to read the README.md before installing an extension
 - [ ] Improve performance by a local cache
