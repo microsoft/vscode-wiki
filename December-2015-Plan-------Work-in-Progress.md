@@ -23,7 +23,7 @@ Adoptions
 
 ### Gallery
 
-### Basic language support
+#### Basic language support
 - [ ] Recover language support
 
 ### JS
