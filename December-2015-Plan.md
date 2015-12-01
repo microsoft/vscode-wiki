@@ -6,16 +6,15 @@
 
 
 ## Dates
-- `insider` channel update Dec 14th
 - `stable` channel update Dec 18th
+- `insider` channel update Dec 14th
 
 Most of the VS Code team is on vacation from Dec 20th until January 4th.
 
 ## Themes
-- Establish OSS workflows
-- Listen to feedback, address critical issues, unblock users
-- Support extension authors
-- Support to consume the VS Code editor as a separate component
+- Establish our OSS development workflows (issue tracking, continuous integration)
+- Listen to feedback, address critical issues
+- Contribute to upstream components to address critical issues
 
 ## Items
 - [Bugs](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Dec+2015%22+-label%3Aupstream+)
@@ -40,9 +39,6 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - [ ] Support a command line switch to launch Code without any extensions #???
 
 **Debug**
-
-**Basic language support**
-- [ ] ? Recover language support lost due to the textmate transition (electric characters, auto closing)
 
 **Language service servers**
 - [ ] Expose more language features in the language service protocol
