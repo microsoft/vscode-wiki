@@ -1,9 +1,6 @@
 **WORK IN PROGRESS**
 
 - Issue # , contribute a PR node-onigurum 45.
-- Issue #, 3631 in electron
-
-
 
 ## Dates
 - `stable` channel update Dec 18th
@@ -19,6 +16,8 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 ## Items
 - [Bugs](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Dec+2015%22+-label%3Aupstream+)
 
+TODO: add bugs from other vscode components
+
 **Development**
 - [ ] Electron version 0.34.5 [#826](../issues/826)
 - [ ] Run VSCode unit tests headless in a CI setup
@@ -26,6 +25,10 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - [ ] Automated Mac signing
 - [ ] Increase test coverage
 - [ ] Move old valuable bugs to github (Done: Ben, Joao, Andre, Isi)
+
+**Upstream Contributions**
+- [ ] Investigate into a PR for [Slow tokenization when using multibyte characters](https://github.com/atom/node-oniguruma/issues/45)
+- [ ] Investigate into a PR [Keyboard aware key labels](https://github.com/atom/electron/issues/3631)
 
 **Extensions**
 - [ ] Expose more Commands as API
