@@ -64,7 +64,7 @@ TODO: add bugs from other vscode components
 
 **Git**
 - [x] Support git integration when git folder is in a parent folder
-- [ ] Create pull request (publish branch?)
+- [ ] Make it easy to submit a pull request/create and publish a local branch
 - [ ] Add pull with rebase action
 
 **UI**
