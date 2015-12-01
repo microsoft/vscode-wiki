@@ -17,7 +17,12 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - [ ] Electron version 0.34.5 [#826](../issues/826)
 - [ ] Run VSCode unit tests headless in a CI setup
 - [ ] Proposal to separate vscode tools form the vscode API of the existing vscode module
+- [ ] Support to consume an extension in the build
 - [ ] Move old valuable bugs to github
+
+**API**
+- [ ] Deactivation of extension on shutdown
+- [ ] Expose more Commands as API
 
 **Extensions**
 - [ ] Support deactivate() call for an extension
@@ -47,15 +52,16 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - [ ] Document the language services protocol
 
 **JS**
-- [ ] Support to make ES6 the default without having to add a jsconfig.json (#337)
+- [ ] Connect with TS team on Salsa (feature gaps?)
+- [ ] Support to make ES6 the default without having to add a jsconfig.json (depends on Salsa) (#337)
 - [ ] jsconfig.json sometime not taken into account #703
-- [ ] Enable ES6 coloring by using the TypeScript textmate grammar
+- [ ] Enable ES6 coloring by using the TypeScript textmate grammar (align with Salsa)
 - [ ] Investigate into emmet support in JSX and TSX files
-- [ ] Connect with TS team on Salsa
+
 
 **C#**
 - [ ] OmniSharp [#837](../issues/837)
-- [ ] Move C# into a separate extension
+- [ ] Move C# into a separate extension and support build
 
 **TS**
 - [ ] Adopt TypeScript 1.7 [#836](../issues/836)
@@ -67,7 +73,7 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - [ ] Create pull request (create remote branch?)
 
 **UI**
-- [ ] Intellisense, improve support to show documentation for a  completion item
+- [ ] Intellisense improve support to show documentation for a  completion item
 - [ ] Preserve zoom state 
 
 **JSON**
