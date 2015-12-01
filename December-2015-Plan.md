@@ -69,7 +69,7 @@ TODO: add bugs from other vscode components
 
 **UI**
 - [ ] Explore: Intellisense improve support to show documentation for a  completion item
-- [ ] Preserve zoom state 
+- [x] Support to define and preserve the zoom state of VS Code
 
 **JSON**
 - [ ] Support to contribute a JSON schema for a file pattern from an extension (Issue #)
