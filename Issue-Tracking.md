@@ -4,7 +4,7 @@ This page describes how we track issues in the `vscode` repository.
 
 The inbox are bugs which have 1) no assigned owner and 2) no assigned label. Assigning an owner or a label like `feature-request`, `question`, `more info needed` indicates that the issue has been triaged.
 
-Query to find bugs in the inbox: [query](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+no%3Aassignee+no%3Alabel)
+Query to find bugs in the inbox: [inbox query](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+no%3Aassignee+no%3Alabel)
 
 ## Bug verification
 
