@@ -12,11 +12,12 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 
 ## Items
 - [Bugs](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Dec+2015%22+-label%3Aupstream+)
-- [Feature Requests](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Afeature%3Arequest+milestone%3A%22Dec+2015%22+-label%3Aupstream+)
 
 **Development**
 - [ ] Electron [#826](../issues/826)
 - [ ] Run VSCode unit tests in a CI setup
+- [ ] Separate vscode tools form the vscode API of the existing vscode module
+- [ ] Move old valuable bugs to github
 
 **Extensions**
 - [ ] Support deactivate() call for an extension
@@ -30,6 +31,7 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - [ ] Improve performance by a local cache
 - [ ] Separate installing themes from other extensions
 - [ ] Support a command line switch to launch Code without any extensions #???
+- [ ] Support to disable an extension
 
 **Editor**
 - [ ] Setup an editor-distro respository
@@ -46,7 +48,10 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 
 **JS**
 - [ ] Support to make ES6 the default without having to add a jsconfig.json (#337)
+- [ ] jsconfig.json sometime not taken into account #703
 - [ ] Enable ES6 coloring by using the TypeScript textmate grammar
+- [ ] Investigate into emmet support in JSX and TSX files
+- [ ] Connect with TS team on Salsa
 
 **C#**
 - [ ] OmniSharp [#837](../issues/837)
@@ -58,6 +63,12 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 
 **Git**
 - [ ] Support git integration when git folder is in a parent folder
+- [ ] Commands to rebase
+- [ ] Create pull request (create remote branch?)
 
 **UI**
 - [ ] Intellisense, improve support to show documentation for a  completion item
+- [ ] Preserve zoom state
+
+**JSON**
+- [ ] Support to contribute a JSON schema for a file pattern from an extension (Issue #)
