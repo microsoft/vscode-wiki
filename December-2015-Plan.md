@@ -43,7 +43,9 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 **Editor**
 - [ ] Setup an editor-distro respository
 - [ ] Define a website with usage documentation (align branding of the web site with code.visualstudio.com
+
 - [ ] Provide better support for VIM integration (intercept all keyevents for VIM command mode implementation)
+- [ ] Revive the language support features lost during the text mate transition (auto close, electric characters)
 
 **Debug**
 
