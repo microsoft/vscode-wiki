@@ -14,9 +14,9 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - [Bugs](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Dec+2015%22+-label%3Aupstream+)
 
 **Development**
-- [ ] Electron [#826](../issues/826)
-- [ ] Run VSCode unit tests in a CI setup
-- [ ] Separate vscode tools form the vscode API of the existing vscode module
+- [ ] Electron version 0.34.5 [#826](../issues/826)
+- [ ] Run VSCode unit tests headless in a CI setup
+- [ ] Proposal to separate vscode tools form the vscode API of the existing vscode module
 - [ ] Move old valuable bugs to github
 
 **Extensions**
@@ -68,7 +68,7 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 
 **UI**
 - [ ] Intellisense, improve support to show documentation for a  completion item
-- [ ] Preserve zoom state
+- [ ] Preserve zoom state 
 
 **JSON**
 - [ ] Support to contribute a JSON schema for a file pattern from an extension (Issue #)
