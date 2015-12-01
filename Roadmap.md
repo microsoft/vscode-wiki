@@ -11,8 +11,9 @@ This document outlines the 6 month roadmap for Code.
 * Code folding
 * Editor Config - promote the extension to a core extension
 * Global search and replace
-* VIM key binding support
+* VIM key binding support, enable extension authors
 * Git improvements - ability to manage remotes, .git in parent folder of workspace, rebasing etc.
+* Improve the Error List experience
 	
 ## Theme: Deep Language Support
 ### General
