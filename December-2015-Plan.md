@@ -1,8 +1,8 @@
 **WORK IN PROGRESS**
 
 ## Dates
-- Insider channel update weekly (7th, 14th) (to be discussed)
-- Stable channel update on Dec 18th (to be discussed)
+- Insider channel update Dec 14th
+- Stable channel update Dec 18th
 
 Most of the VS Code team is on vacation from Dec 20th until January 4th.
 
@@ -22,11 +22,8 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - [ ] Automated Mac signing
 - [ ] Move old valuable bugs to github (Done: Ben, Joao)
 
-**API**
-- [ ] Deactivation of extension on shutdown
-- [ ] Expose more Commands as API
-
 **Extensions**
+- [ ] Expose more Commands as API
 - [ ] Support deactivate() call for an extension
 - [ ] Example of using TS 1.7 and async and await inside an extension
 
