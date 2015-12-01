@@ -1,7 +1,5 @@
 **WORK IN PROGRESS**
 
-- Issue # , contribute a PR node-onigurum 45.
-
 ## Dates
 - `stable` channel update Dec 18th
 - `insider` channel update Dec 14th. For more information on the insider channel refer to [Test Prereleases](https://code.visualstudio.com/Docs/supporting/FAQ#_how-can-i-test-prerelease-versions-of-vs-code)
