@@ -20,6 +20,7 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - [ ] Run VSCode unit tests headless in a CI setup
 - [ ] Proposal to separate vscode tools form the vscode API of the existing vscode module
 - [ ] Automated Mac signing
+- [ ] Increase test coverage
 - [ ] Move old valuable bugs to github (Done: Ben, Joao, Andre, Isi)
 
 **Extensions**
