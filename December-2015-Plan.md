@@ -1,8 +1,8 @@
 **WORK IN PROGRESS**
 
 ## Dates
-- Insider channel update Dec 14th
-- Stable channel update Dec 18th
+- `insider` channel update Dec 14th
+- `stable` channel update Dec 18th
 
 Most of the VS Code team is on vacation from Dec 20th until January 4th.
 
