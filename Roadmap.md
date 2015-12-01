@@ -10,7 +10,7 @@ This document outlines the 6 month roadmap for Code.
 ## Theme: Highly Demanded Features
 * Code folding
 * Editor Config - promote the extension to a core extension
-* Global search and replace
+* Improve global search and provide replace support
 * VIM key binding support, enable extension authors
 * Git improvements - ability to manage remotes, .git in parent folder of workspace, rebasing etc.
 * Improve the Error List experience
