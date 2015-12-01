@@ -20,18 +20,29 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 
 **Development**
 - [ ] Run VSCode unit tests in a CI setup
+- [ ] Example of using TS 1.7 and async and await inside an extension
+
+**Extension API**
+- [ ] Support deactivate() call for an extension
 
 **Gallery**
+- [ ] Improve experience when user wants to read the README.md before installing an extension
+- [ ] Improve performance by a local cache
+- [ ] Separate installing themes from other extensions
+- [ ] Support a command line switch to launch Code without any extensions #???
 
 **Editor**
 - [ ] Setup an editor-distro respository
 - [ ] Define a website with usage documentation (align branding of the web site with code.visualstudio.com
+- [ ] Provide better support for VIM integration (intercept all keyevents for VIM command mode implementation)
 
 **Debug**
 
 **Basic language support**
 - [ ] Recover language support lost due to the textmate transition (electric characters, auto closing)
 
+**Language service servers**
+- [ ] Document the language services protocol
 
 **JS**
 - [ ] Support to make ES6 the default without having to add a jsconfig.json (#337)
