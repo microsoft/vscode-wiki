@@ -19,8 +19,8 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - [ ] Electron version 0.34.5 [#826](../issues/826)
 - [ ] Run VSCode unit tests headless in a CI setup
 - [ ] Proposal to separate vscode tools form the vscode API of the existing vscode module
-- [ ] Support to consume an extension in the build
-- [ ] Move old valuable bugs to github
+- [ ] Automated Mac signing
+- [ ] Move old valuable bugs to github (Done: Ben, Joao)
 
 **API**
 - [ ] Deactivation of extension on shutdown
@@ -34,11 +34,8 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - [ ] Consistent options for the linters we provide
 
 **Gallery**
-- [ ] Improve experience when user wants to read the README.md before installing an extension
-- [ ] Improve performance by a local cache
-- [ ] Separate installing themes from other extensions
+- [ ] Improve experience when user wants to read the README.md before installing an extension, provide option to install in an info box
 - [ ] Support a command line switch to launch Code without any extensions #???
-- [ ] Support to disable an extension
 
 **Editor**
 - [ ] Setup an editor-distro respository
@@ -72,9 +69,9 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - [ ] Explore an incremental build project extension (based on tsb)
 
 **Git**
-- [ ] Support git integration when git folder is in a parent folder
-- [ ] Commands to rebase
-- [ ] Create pull request (create remote branch?)
+- [x] Support git integration when git folder is in a parent folder
+- [ ] Create pull request (publish branch?)
+- [ ] Add pull with rebase action
 
 **UI**
 - [ ] Intellisense improve support to show documentation for a  completion item
