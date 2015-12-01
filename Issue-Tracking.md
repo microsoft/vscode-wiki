@@ -34,3 +34,8 @@ Use [issue mover](https://github-issue-mover.appspot.com/) tool to move bugs to 
 
 **Notice** labels are copied to another repository, therefore when moving an issue to a repository owned by another team we should remove our custom labels.
 
+# Consistent labels across vscode repositories
+
+VS Code consists of multiple repositories and we should use consistent work flows and labels across all our repositories.
+
+To establish consistent labels across all our repositories use the [Label Manager](http://www.dorukdestan.com/github-label-manager/) tool.
