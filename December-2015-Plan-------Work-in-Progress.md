@@ -23,16 +23,26 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 
 **Gallery**
 
-** Basic language support **
+**Editor**
+- [ ] Setup an editor-distro respository
+- [ ] Define a website with usage documentation (align branding of the web site with code.visualstudio.com
+
+**Debug**
+
+**Basic language support**
 - [ ] Recover language support lost due to the textmate transition (electric characters, auto closing)
 
 
-** JS **
+**JS**
 - [ ] Support to make ES6 the default without having to add a jsconfig.json (#337)
 - [ ] Enable ES6 coloring by using the TypeScript textmate grammar
 
-** TS **
+**TS**
 - [ ] Adopt TypeScript 1.7 [#836](../issues/836)
 - [ ] Explore an incremental build project extension (based on tsb)
 
-** Git **
+**Git**
+- [ ] Support git integration when git folder is in a parent folder
+
+**UI**
+- [ ] Intellisense, improve support to show documentation for a  completion item
