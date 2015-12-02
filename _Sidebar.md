@@ -1,8 +1,8 @@
 **Project Management**
 * [[Roadmap]]
-* [[November Plan]]
 * [[Breaking Changes]]
-* [[Iterations]]
+* [[Development Process]]
+* [[Iteration Plans]]
 * [[Previous Releases]]
 * [[Related Projects]]
 
