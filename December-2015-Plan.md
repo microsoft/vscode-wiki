@@ -12,33 +12,43 @@ Most of the VS Code team is on vacation from Dec 20th until January 4th.
 - Contribute to upstream components to address critical issues
 
 ## Items
-- [Bugs](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Dec+2015%22+-label%3Aupstream+)
 
-TODO: add bugs from other vscode components
+
+Repository  | Bugs
+------------- | -------------
+vscode  | [Bugs](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Dec+2015%22+-label%3Aupstream+)
+vscode-vsce  |  [Bugs](https://github.com/Microsoft/vscode-vsce/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Abug+milestone%3A%22Dec+2015%22+-label%3Aupstream+)
+
+
+
 
 **Development**
-- [ ] Electron version 0.34.5 [#826](../issues/826)
-- [ ] Run VSCode unit tests headless in a CI setup
+- [x] Electron version 0.34.5 [#826](../issues/826)
+- [ ] Run VSCode unit tests headless in a CI setup  [#912](../issues/912)
 - [ ] Automated Mac signing
-- [ ] Increase test coverage
-- [ ] Move old valuable bugs to github (Done: Ben, Joao, Andre, Isi)
+- [ ] Add telemetry to measure startup time [#707](../issues/707)
+
+- [ ] General: Increase test coverage
+- [ ] General: move old valuable bugs to github
 
 **Upstream Contributions**
 - [ ] Investigate into a PR for [Slow tokenization when using multibyte characters](https://github.com/atom/node-oniguruma/issues/45)
 - [ ] Investigate into a PR [Keyboard aware key labels](https://github.com/atom/electron/issues/3631)
 
 **Extensions**
-- [ ] Expose more Commands as API
+- [ ] Expose more Commands as API [#913](../issues/913)
 - [ ] Investigate deactivate() on shutdown call for an extension
-- [ ] Proposal to separate vscode tools form the vscode API of the existing vscode module
-- [ ] Example of using TS 1.7 and async and await inside an extension (consider updating the yo generator)
+- [ ] Proposal for separating the vscode tools form the vscode API of the existing vscode module
+- [ ] Support TS 1.7 for extensions (updating the yo generator)
 - [ ] Extension host debugging: change to a model where VS Code triggers reattach (instead of polling)
+- [ ] Warn user when contributions conflict
+- [x] Support a command line switch to launch Code without any extensions [#708](../issues/708)
+
 - [ ] Investigate into providing better support for a VIM integration extension
 
 
 **Gallery**
-- [ ] Improve experience when user wants to read the README.md before installing an extension, provide option to install in an info box
-- [ ] Support a command line switch to launch Code without any extensions #???
+- [ ] Improve experience when user wants to read the README.md before installing an extension [#914](../issues/914)
 
 **Debug**
 - [ ] Improve presenting long text values inside the debug console
@@ -67,12 +77,12 @@ TODO: add bugs from other vscode components
 
 **Git**
 - [x] Support git integration when git folder is in a parent folder
-- [ ] Make it easy to submit a pull request/create and publish a local branch
-- [ ] Add pull with rebase action
+- [ ] Make it easy to submit a pull request/create and publish a local branch [#908](../issues/908)
+- [ ] Add a pull with rebase action to the git viewlet [#907](../issues/907)
 
 **UI**
-- [ ] Explore: Intellisense improve support to show documentation for a  completion item
-- [x] Support to define and preserve the zoom state of VS Code
+- [ ] Explore: Intellisense improve support to show documentation for a  completion item [#369](../issues/369)
+- [x] Support to define and preserve the zoom state of VS Code [#291](../issues/291)
 
 **JSON**
-- [ ] Support to contribute a JSON schema for a file pattern from an extension (Issue #)
+- [ ] Support to contribute a JSON schema for a file pattern from an extension [#489](../issues/489)
