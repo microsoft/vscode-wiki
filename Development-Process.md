@@ -1,5 +1,3 @@
-# Development Process
-
 ## Roadmap
 The team has a 6 month high level [[Roadmap]] which defines high level themes and features to be addressed in this timeframe.
 
