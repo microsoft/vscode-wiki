@@ -45,3 +45,7 @@ Use [issue mover](https://github-issue-mover.appspot.com/) tool to move bugs to 
 VS Code consists of multiple repositories and we should use consistent work flows and labels across all our repositories.
 
 To establish consistent labels across all our repositories use the [Label Manager](http://www.dorukdestan.com/github-label-manager/) tool.
+
+## Consistent milestones across vscode repositories
+
+To enable planning across repositories all the vscode repositories need to define the same milestones.
