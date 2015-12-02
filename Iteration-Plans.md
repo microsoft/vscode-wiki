@@ -2,4 +2,4 @@
 * [December](../issues/917)
 
 ## Previous
-* [[November Plan]]
+* [[November|November Plan]]
