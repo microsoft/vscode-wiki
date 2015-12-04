@@ -4,7 +4,7 @@ The team has a 6 month high level [[Roadmap]] which defines high level themes an
 ## Iterations
 We will work in monthly iterations on the items on the roadmap. Iterations are roughly month based, rather than week based. We will begin a milestone on a Monday and end on a Friday, meaning that each milestone can have a different duration, depending on how the weeks align.
 
-At the end of each iteration we want to have a version of Code that can be used by Code community. The work planned during an iteration is captured in the iteration plan. The feature highlights of each iteration are highlighted in the release notes.
+At the end of each iteration we want to have a version of Code that can be used by Code community. The work planned during an iteration is captured in the iteration plan (see [[Iteration Plans]]). The feature highlights of each iteration are highlighted in the release notes.
 
 ## Planning
 
