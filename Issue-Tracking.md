@@ -24,16 +24,19 @@ The person assigned to do the inbox tracking has the following duties.
 - if it is remembered that the issue is a duplicate, mark it as a duplicate (see below)
 - if the issue doesn't have enough information, comment on the issue with a link for how to file issues
 
-The person assigned to do the inbox tracking doesn not have to (but is free to do more):
+The person assigned to do the inbox tracking **doesn not** have to (but is free to do more):
 - try to reproduce the issue
 - analyze the issue, this is the duty of the assigned owner
+- engage into a discussion with the author of the issue
+
+We rotate the initial inbox triage on a weekly basis.
 
 ### 2nd level Triage by the assignee
 - review the `feature-request` vs. `bug` assignment, if it is a feature request remove the assignee
 - assign the `P1` label if needed
 - assign a milestone issues
 
-### Issue Planning
+### Fix Planning
 - Open Bugs assigned to an milestone will be reviewed regularly and the milestone will be adjusted if needed.
 
 ## Bug Verification
@@ -64,3 +67,8 @@ To establish consistent labels across all our repositories use the [Label Manage
 ## Consistent milestones across vscode repositories
 
 To enable planning across repositories all the vscode repositories need to define the same milestones.
+
+## Iteration Planning
+We use issues for iteration plans and test plans:
+- Iteration Plans have a label `iteration-plan` with `tasks` [ ] for the different items. The individual items are tracked in existing issues (bugs, feature requests). If there is no existing issue then a new issue with the label `plan-item` is created. Here is an [example](https://github.com/Microsoft/vscode/issues/917).
+- Test Plans have a label `test-plan`.
