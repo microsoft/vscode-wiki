@@ -50,7 +50,7 @@ Bugs need to be verified.
 - Once verified, label the issue with `verified`
 >>> How do i know if i need to verify closed bugs?  Will this query do it for me??
 
-> **Tip**: Create a personal query: current milestone, assigned to me, closed, `-label:"verified ✓"`
+> **Tip**: Create a personal query: current milestone, assigned to me, closed, `-label:"verified"`
 
 ## Duplicates
 Duplicate bugs are closed with a comment `duplicates #issue`. Please try to reference an earlier issue **unless** a later issue is more appropriate (has more context, better scenarios, repro steps, etc.).
