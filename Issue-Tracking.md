@@ -26,7 +26,7 @@ The person assigned to do the inbox tracking has the following duties.
 
 The person assigned to do the inbox tracking **doesn not** have to (but is free to do more):
 - try to reproduce the issue
-- analyze the issue, this is the duty of the assigned owner
+- analyze the issue, this is the duty of the assignee
 - engage into a discussion with the author of the issue
 
 We rotate the initial inbox triage on a weekly basis.
@@ -34,10 +34,11 @@ We rotate the initial inbox triage on a weekly basis.
 ### 2nd level Triage by the assignee
 - review the `feature-request` vs. `bug` assignment, if it is a feature request remove the assignee
 - assign the `P1` label if needed
-- assign a milestone issues
+- assign a milestone 
+- follow-up with the author
 
 ### Fix Planning
-- Open Bugs assigned to an milestone will be reviewed regularly and the milestone will be adjusted if needed.
+- Open Bugs assigned to an milestone will be reviewed weekly at the iteration planning meeting and the milestone will be adjusted if needed.
 
 ## Bug Verification
 
