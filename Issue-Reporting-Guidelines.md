@@ -7,4 +7,11 @@ The basic rule is the less the development team has to do to understand your iss
 
 # Submit the issue
 
-* If you have extensions installed, please try to reproduce the issue 
+* Pick a title that summarizes the issue  
+* Include information about your configuration, OS, platform.
+* Describe the steps to reproduce the issue and describe the result and what you expected.
+* When you have extensions installed, can you reproduce the issue when starting vscode with `--disable-extensions`?
+* Include screenshots illustrating the problem
+* Attach example files that help us to reproduce the problem.
+* Check the developer tools (`Help>Toggle Developer Tools`) Console for output and include it in the issue.
+
