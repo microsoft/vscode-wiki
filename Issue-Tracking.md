@@ -3,7 +3,7 @@ This page describes how we track issues in the `vscode` repository.
 ## Inbox tracking and Issue triage
 
 ### The Inbox
-The inbox consists of issues and pull requests which have 1) no assigned owner and 2) no assigned label. Assigning an owner or a label like `feature-request`, `question`, `more info needed` indicates that the issue has been triaged.
+The inbox consists of issues and pull requests which have no assigned owner and no assigned label. 
 
 Query to find bugs in the inbox: [inbox query](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Abug+-label%3Aquestion+)
 
@@ -18,28 +18,28 @@ Issues are assigned to a feature area/topic using a label. The feature area labe
 ### Initial Triage
 The person assigned to do the inbox tracking has the following duties. 
 - if the issue is a `bug` assign it to a person
-- if the issue is a `feature request` add the label `feature request` an `assignee` is optional
-- if the issue is a `question` assign the question label and assign a owner to answer the question
-- assign the issue a feature/topic area label 
-- if it is remembered that the issue is a duplicate, mark it as a duplicate (see below)
+- if the issue is a `feature request` add the label `feature request` you to @mention if the someone from the team should be aware of the issue.
+- if the issue is a `question` redirect them to stack overflow (see [[Submitting Bugs]]
+- assign the issue a feature/topic area label
+- assign a P1 label if the issue is critical/blocking and use @microsoft/vscode to make the team aware of the issue. 
 - if the issue doesn't have enough information, comment on the issue with a link for how to file issues [[Submitting Bugs and Suggestions]]
 
 The person assigned to do the inbox tracking **doesn not** have to (but is free to do more):
-- try to reproduce the issue
 - perform a duplicate search
 - analyze the issue, this is the duty of the assignee
-- engage into a discussion with the author of the issue
+- engage into a discussion with the author of the issue and ask for more information
+- assign a P1 label as appropriate
 
-We rotate the initial inbox triage on a weekly basis.
+The team rotates the initial inbox triage on a weekly basis.
 
-### 2nd level Triage by the assignee
+### 2nd level Triage done by the assignee
 - review the `feature-request` vs. `bug` assignment, if it is a feature request remove the assignee
 - assign the `P1` label if needed
 - assign a milestone 
 - follow-up with the author
 
 ### Fix Planning
-- Open Bugs assigned to an milestone will be reviewed weekly at the iteration planning meeting and the milestone will be adjusted if needed.
+- The open bugs assigned to an milestone will be reviewed weekly at the iteration planning meeting and the milestone will be adjusted if needed.
 
 ## Bug Verification
 
@@ -58,7 +58,6 @@ Duplicate bugs are closed with a comment `duplicates #issue`
 
 Use [issue mover](https://github-issue-mover.appspot.com/) tool to move bugs to another repository.
 
-**Notice** labels are copied to another repository, therefore when moving an issue to a repository owned by another team we should remove our custom labels.
 
 ## Consistent labels across vscode repositories
 
@@ -73,4 +72,4 @@ To enable planning across repositories all the vscode repositories need to defin
 ## Iteration Planning
 We use issues for iteration plans and test plans:
 - Iteration Plans have a label `iteration-plan` with `tasks` [ ] for the different items. The individual items are tracked in existing issues (bugs, feature requests). If there is no existing issue then a new issue with the label `plan-item` is created. Here is an [example](https://github.com/Microsoft/vscode/issues/917).
-- Test Plans have a label `test-plan`.
+- Test Plans have a label `test-plan`[example](https://github.com/Microsoft/vscode/issues/1096)
