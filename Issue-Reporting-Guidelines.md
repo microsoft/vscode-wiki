@@ -2,7 +2,7 @@ The basic rule is the less the development team has to do to understand your iss
 
 # Before you submit an Issue
 
-* Select a vscode repository, vscode consists of different projects. Here is an overview: [[Related Projects]]
+* Try to select the correct vscode repository, vscode consists of different projects. Here is an overview: [[Related Projects]]
 * Perform a search whether the issue has already been reported and comment on the existing issue.
 
 # Submit the issue
