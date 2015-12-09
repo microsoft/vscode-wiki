@@ -18,14 +18,15 @@ Issues are assigned to a feature area/topic using a label. The feature area labe
 ### Initial Triage
 The person assigned to do the inbox tracking has the following duties. 
 - if the issue is a `bug` assign it to a person
-- if the issue is a `feature request` add the label `feature request` **no** `assignee`
+- if the issue is a `feature request` add the label `feature request` an `assignee` is optional
 - if the issue is a `question` assign the question label and assign a owner to answer the question
-- assign the issue a feature/topic area to the issue
+- assign the issue a feature/topic area label 
 - if it is remembered that the issue is a duplicate, mark it as a duplicate (see below)
-- if the issue doesn't have enough information, comment on the issue with a link for how to file issues
+- if the issue doesn't have enough information, comment on the issue with a link for how to file issues [[Issue Reporting Guidelines]]
 
 The person assigned to do the inbox tracking **doesn not** have to (but is free to do more):
 - try to reproduce the issue
+- perform a duplicate search
 - analyze the issue, this is the duty of the assignee
 - engage into a discussion with the author of the issue
 
