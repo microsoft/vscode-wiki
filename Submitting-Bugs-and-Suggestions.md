@@ -1,5 +1,3 @@
-# Submitting Bugs and Feature Requests
-
 The Code project tracks issues and feature requests using the [GitHub issue tracker](https://github.com/microsoft/vscode/issues) for the `vscode` repository. 
 
 ## Before Submitting an Issue
