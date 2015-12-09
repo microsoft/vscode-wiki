@@ -19,7 +19,7 @@ Issues are assigned to a feature area/topic using a label. The feature area labe
 The person assigned to do the inbox tracking has the following duties. 
 - if the issue is a `bug` assign it to a person
 - if the issue is a `feature request` add the label `feature request` and @mention if the someone from the team should be aware of the issue
-- if the issue is a `question` redirect them to stack overflow (see [[Submitting Bugs and Suggestions]]
+- if the issue is a `question` redirect them to stack overflow (see [[Submitting Bugs and Suggestions]]).
 - assign the issue a feature/topic area label
 - assign a P1 label if the issue is critical/blocking and mention @microsoft/vscode to make the team aware of the issue
 - if the issue doesn't have enough information, comment on the issue with a link for how to file issues [[Submitting Bugs and Suggestions]]
@@ -28,7 +28,6 @@ The person assigned to do the inbox tracking **does not** have to (but is free t
 - perform a duplicate search
 - analyze the issue, this is the duty of the assignee
 - engage into a discussion with the author of the issue and ask for more information
-- assign a P1 label as appropriate
 
 The team rotates the initial inbox triage on a weekly basis.
 
