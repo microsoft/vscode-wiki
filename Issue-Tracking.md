@@ -22,7 +22,7 @@ The person assigned to do the inbox tracking has the following duties.
 - if the issue is a `question` assign the question label and assign a owner to answer the question
 - assign the issue a feature/topic area label 
 - if it is remembered that the issue is a duplicate, mark it as a duplicate (see below)
-- if the issue doesn't have enough information, comment on the issue with a link for how to file issues [[Issue Reporting Guidelines]]
+- if the issue doesn't have enough information, comment on the issue with a link for how to file issues [[Submitting Bugs and Suggestions]]
 
 The person assigned to do the inbox tracking **doesn not** have to (but is free to do more):
 - try to reproduce the issue
