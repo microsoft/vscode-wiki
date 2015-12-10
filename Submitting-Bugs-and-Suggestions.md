@@ -8,13 +8,16 @@ The Code project is distributed across multiple repositories, try to file the is
 If your issue is a question consider asking it on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using the tag `vscode`.
 
 ## Writing Great Issues and Suggestions
+
+Please file a single issue per problem and feature request.
+
 The more information you can provide, the more likely someone will be successful reproducing the issue and finding a fix.  Consider the following:
 
-* Code that demonstrates the issue
 * Provide reproducable steps, what the result of the steps was, an what you would have expected.
 * Description of what you expect to happen
 * Animated GIFs
-* Version of Code
+* Code that demonstrates the issue
+* Version of VS Code
 * Errors in the Dev Tools Console (Help | Toggle Developer Tools)
 * When you have extensions installed, can you reproduce the issue when starting vscode without extensions by using `--disable-extensions`? 
 
