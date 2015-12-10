@@ -24,8 +24,7 @@ The person assigned to do the inbox tracking has the following duties.
 - edit the title if needed to improve it
 - assign the issue a feature/topic area label
 - assign a P1 label if the issue is critical/blocking and mention @microsoft/vscode to make the team aware of the issue
-- if the issue doesn't have enough information, comment on the issue with a link for how to file issues [[Submitting Bugs and Suggestions]]
->>> should the bug be closed or add a `more info needed` label?
+- if the issue doesn't have enough information, comment on the issue with a link for how to file issues [[Submitting Bugs and Suggestions]] and add the `more-info-needed` label.
 
 The person assigned to do the inbox tracking **does not** have to (unless they want to):
 - perform a duplicate search
