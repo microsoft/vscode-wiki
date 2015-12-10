@@ -8,13 +8,12 @@ The inbox consists of issues and pull requests which have no assigned owner and 
 > [Inbox Query](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Abug+-label%3Aquestion++-label%3Aupstream)
 
 ### Labels
-Issues are assigned a label that indicates the issue type:
-- `bug`: incorrect behaviour of the code
-- `feature-request`: a request for an enhancement
+Issues are assigned a label that indicates the _issue type_:`bug` or `feature-request`
+
 - `question`: a question from a user (these will be redirected to Stack Overflow)
 >>> can we short circut the `question` and have the inbox triage person refer to S.O. immediatley?
 
-Issues are assigned to a feature area/topic using a label. The feature area labels are 'greenish'. 
+Issues are assigned to a _feature area/topic_ using a label. The feature area labels are 'greenish'. 
 
 ### Initial Triage
 The person assigned to do the inbox tracking has the following duties. 
@@ -22,6 +21,7 @@ The person assigned to do the inbox tracking has the following duties.
 - if the issue is a feature request, add the label `feature request` and @mention if someone from the team should be aware of the issue
 - if the issue is a question redirect them to stack overflow (see [[Submitting Bugs and Suggestions]])
 >>> should the issue be closed?
+- edit the title if needed to improve it
 - assign the issue a feature/topic area label
 - assign a P1 label if the issue is critical/blocking and mention @microsoft/vscode to make the team aware of the issue
 - if the issue doesn't have enough information, comment on the issue with a link for how to file issues [[Submitting Bugs and Suggestions]]
