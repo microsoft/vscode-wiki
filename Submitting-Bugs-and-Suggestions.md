@@ -1,7 +1,7 @@
 The Code project tracks issues and feature requests using the [GitHub issue tracker](https://github.com/microsoft/vscode/issues) for the `vscode` repository. 
 
 ## Before Submitting an Issue
-First, please do a search to see if the issue or feature request has already exists. If it does and it is open, feel free to add more information that might be helpful in diagnosing or understanding the issue.
+First, please do a search in open issues to see if the issue or feature request has already been filed. If there is an issue add your comments to this issue.
 
 The Code project is distributed across multiple repositories, try to file the issue against the correct repository [[Related Projects]].
 
@@ -9,7 +9,7 @@ If your issue is a question consider asking it on [Stack Overflow](https://stack
 
 ## Writing Great Issues and Suggestions
 
-Please file a single issue per problem and feature request.
+File a single issue per problem and feature request, do not file combo issues.
 
 The more information you can provide, the more likely someone will be successful reproducing the issue and finding a fix.  Consider the following:
 
