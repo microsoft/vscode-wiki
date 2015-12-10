@@ -2,52 +2,45 @@ This page describes how we track issues in the `vscode` repository.
 
 ## Inbox tracking and Issue triage
 
-### The Inbox
-The inbox consists of issues and pull requests which have no assigned owner and no assigned label. 
+### The Inbox Triage
+New issues or pull requests submitted by the community are triaged by a team member. The team rotates the inbox tracker on a weekly basis.
 
-> [Inbox Query](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Abug+-label%3Aquestion++-label%3Aupstream)
+> [Inbox Query](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+no%3Amilestone)
 
-### Labels
-Issues are assigned a label that indicates the _issue type_:`bug` or `feature-request`
+### Initial Triage done by the Inbox Tracker
 
-- `question`: a question from a user (these will be redirected to Stack Overflow)
->>> can we short circut the `question` and have the inbox triage person refer to S.O. immediatley?
-
-Issues are assigned to a _feature area/topic_ using a label. The feature area labels are 'greenish'. 
-
-### Initial Triage
-The person assigned to do the inbox tracking has the following duties. 
+- If the issue or pull request is valid, it is assigned to the `Backlog` milestone. 
+- If an issue is a question, then the author is redirected to stack overflow. Add the following comment and close the issue.
+  - Please ask your question on stack overflow [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using
+    the tag `vscode`. The code community is happy to answer your question there.
+- If an issue needs more info the `needs more info` label is assigned and the author is asked for more information in a comment. The issue is not assigned to the `Backlog`. If there is no additional information provided after 3 days the issue is closed with a comment to reopen it with more information.
 - if the issue is a bug, add the `bug` label and assign it to a person
 - if the issue is a feature request, add the label `feature request` and @mention if someone from the team should be aware of the issue
-- if the issue is a question redirect them to stack overflow (see [[Submitting Bugs and Suggestions]])
->>> should the issue be closed?
-- edit the title if needed to improve it
-- assign the issue a feature/topic area label
+- if needed edit the title to improve it
+- assign the issue with a feature/topic area label
 - assign a P1 label if the issue is critical/blocking and mention @microsoft/vscode to make the team aware of the issue
-- if the issue doesn't have enough information, comment on the issue with a link for how to file issues [[Submitting Bugs and Suggestions]] and add the `more-info-needed` label.
 
 The person assigned to do the inbox tracking **does not** have to (unless they want to):
 - perform a duplicate search
 - analyze the issue, this is the duty of the assignee
 - engage into a discussion with the author of the issue and ask for more information
 
-The team rotates the initial inbox triage on a weekly basis.
-
 ### 2nd level Triage done by the assignee
 - review the `feature-request` vs. `bug` assignment, if it is a feature request remove the assignee, add the correct label
 - assign the `P1` label if needed
-- assign a milestone 
-- follow-up with the author
+- if the issue is critical assign it to the current milestone 
+- follow-up with the author as needed
 
-### Fix Planning
-Open bugs assigned to a milestone will be reviewed weekly at the iteration planning meeting and the milestone will be adjusted if needed
+### Bug Management
+At the beginning of the debt week we review the issues and pull requests assigned to the backlog milestone and assign them to the current milestone.
+
+At the beginning of the endgame we review the open issues and adjust the milestone if needed, move it to the next milestone or back to the backlog.
 
 ## Bug Verification
 Bugs need to be verified. 
 - Once a bug is fixed its state is changed to `closed` 
 - If it needs verification, assign it to another team member
 - Once verified, label the issue with `verified`
->>> How do i know if i need to verify closed bugs?  Will this query do it for me??
 
 > **Tip**: Create a personal query: current milestone, assigned to me, closed, `-label:"verified"`
 
