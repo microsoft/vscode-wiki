@@ -1,4 +1,3 @@
-# Related Repositories
 The Code project consists of the `vscode` repository plus a number of satellite projects.
 
 ## Core Repositories
