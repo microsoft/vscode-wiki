@@ -12,31 +12,31 @@ New issues or pull requests submitted by the community are triaged by a team mem
 - If the issue or pull request is valid, it is assigned to the `Backlog` milestone. 
 - If an issue is a question, then the author is redirected to stack overflow. Add the following comment and close the issue:
 ```
-Please ask your question on stack overflow [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using
-the tag `vscode`. The code community is happy to answer your question there.
+Please ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using
+the tag `vscode`. The VS Code team and Community will answer questions there.
 ```
 - If an issue needs more info the `needs more info` label is assigned and the author is asked for more information in a comment. The issue is not assigned to the `Backlog`. If there is no additional information provided after 3 days the issue is closed with a comment to reopen it with more information.
-- if the issue is a bug, add the `bug` label and assign it to a person
-- if the issue is a feature request, add the label `feature request` and @mention if someone from the team should be aware of the issue
-- if needed edit the title to improve it
-- assign the issue with a feature/topic area label
-- assign a P1 label if the issue is critical/blocking and mention @microsoft/vscode to make the team aware of the issue
+- If the issue is a bug, add the `bug` label and assign it to a person
+- If the issue is a feature request, add the label `feature request` and @mention if someone from the team should be aware of the issue
+- If needed edit the title to improve it
+- Assign the issue with a feature/topic area label
+- Assign a `P1` label if the issue is critical/blocking and mention @microsoft/vscode to make the team aware of the issue
 
 The person assigned to do the inbox tracking **does not** have to (unless they want to):
-- perform a duplicate search
-- analyze the issue, this is the duty of the assignee
-- engage into a discussion with the author of the issue and ask for more information
+- Perform a duplicate search
+- Analyze the issue, this is the duty of the assignee
+- Engage into a discussion with the author of the issue and ask for more information
 
-### 2nd level Triage done by the assignee
-- review the `feature-request` vs. `bug` assignment, if it is a feature request remove the assignee, add the correct label
-- assign the `P1` label if needed
-- if the issue is critical assign it to the current milestone 
-- follow-up with the author as needed
+### 2nd level Triage, done by the assignee
+- Review the `feature-request` vs. `bug` assignment, if it is a feature request remove the assignee, add the correct label
+- Assign the `P1` label if needed
+- Assign the current milestone if the issue needs to be fixed in this release (blocks a scenario, completes a new feature, etc.) 
+- Follow-up with the author as needed
 
 ### Bug Management
-At the beginning of the debt week we review the issues and pull requests assigned to the backlog milestone and assign them to the current milestone.
+At the beginning of the endgame we review the open issues and adjust the milestone if needed, moving to the next milestone or back to the backlog.
 
-At the beginning of the endgame we review the open issues and adjust the milestone if needed, move it to the next milestone or back to the backlog.
+At the beginning of the debt week we review the issues, pull requests assigned to the backlog milestone, and assign them to the current milestone.
 
 ## Bug Verification
 Bugs need to be verified. 
@@ -44,7 +44,7 @@ Bugs need to be verified.
 - If it needs verification, assign it to another team member
 - Once verified, label the issue with `verified`
 
-> **Tip**: Create a personal query: current milestone, assigned to me, closed, `-label:"verified"`
+> **Tip**: To see what bugs you need to verify, create a personal query: current milestone, assigned to me, closed, `-label:"verified"`
 
 ## Duplicates
 Duplicate bugs are closed with a comment `duplicates #issue`. Please try to reference an earlier issue **unless** a later issue is more appropriate (has more context, better scenarios, repro steps, etc.).
