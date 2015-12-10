@@ -5,7 +5,7 @@ This page describes how we track issues in the `vscode` repository.
 ### The Inbox
 The inbox consists of issues and pull requests which have no assigned owner and no assigned label. 
 
-> [Inbox Query](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Abug+-label%3Aquestion+)
+> [Inbox Query](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Abug+-label%3Aquestion++-label%3Aupstream)
 
 ### Labels
 Issues are assigned a label that indicates the issue type:
