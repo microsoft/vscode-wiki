@@ -10,9 +10,11 @@ New issues or pull requests submitted by the community are triaged by a team mem
 ### Initial Triage done by the Inbox Tracker
 
 - If the issue or pull request is valid, it is assigned to the `Backlog` milestone. 
-- If an issue is a question, then the author is redirected to stack overflow. Add the following comment and close the issue.
-  - Please ask your question on stack overflow [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using
-    the tag `vscode`. The code community is happy to answer your question there.
+- If an issue is a question, then the author is redirected to stack overflow. Add the following comment and close the issue:
+```
+Please ask your question on stack overflow [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using
+the tag `vscode`. The code community is happy to answer your question there.
+```
 - If an issue needs more info the `needs more info` label is assigned and the author is asked for more information in a comment. The issue is not assigned to the `Backlog`. If there is no additional information provided after 3 days the issue is closed with a comment to reopen it with more information.
 - if the issue is a bug, add the `bug` label and assign it to a person
 - if the issue is a feature request, add the label `feature request` and @mention if someone from the team should be aware of the issue
