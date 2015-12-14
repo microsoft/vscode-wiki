@@ -10,9 +10,9 @@ New issues or pull requests submitted by the community are triaged by a team mem
 ### Initial Triage done by the Inbox Tracker
 
 - If the issue or pull request is valid, it is assigned to the `Backlog` milestone. 
-- If an issue is a question, then the author is redirected to stack overflow. Add the following comment and close the issue:
+- If an issue is a general question like 'How to compile TypeScript', then the author is redirected to stack overflow. Add the following comment and close the issue:
 ```
-Please ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using
+Please ask general questions about VS Code on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using
 the tag `vscode`. The VS Code team and Community will answer questions there.
 ```
 - If an issue needs more info the `needs more info` label is assigned and the author is asked for more information in a comment. The issue is not assigned to the `Backlog`. If there is no additional information provided after 3 days the issue is closed with a comment to reopen it with more information.
