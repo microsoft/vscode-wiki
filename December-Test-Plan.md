@@ -210,7 +210,7 @@ The Suggest widget underwent quite some heavy rework behind the scenes. Make sur
 # Scoped git services #718
 - [ ] win @SofianHn  
 - [x] mac @isidorn 
-- [ ] linux @weinand 
+- [x] linux @weinand 
 
 You should now be able to open a folder inside a git repo and still have the git features enabled.
 
@@ -218,7 +218,7 @@ You should now be able to open a folder inside a git repo and still have the git
 
 - [x] win @dbaeumer 
 - [ ] mac @egamma 
-- [ ] linux @weinand 
+- [x] linux @weinand 
 
 The sync action is back in the status bar:
 
