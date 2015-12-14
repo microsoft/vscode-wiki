@@ -20,7 +20,9 @@ We work in weekly segments:
 - **Final Week**: End game, the team tests the new features according a test plan, fixes bugs, and updates the documentation
 
 ## Triage
-Bugs and features will be assigned a milestone and within a milestone they will be assigned a priority. The priority dictates the order in which issues should be addressed. A `P1` bug (something that we think is critical for the milestone) is to be addressed before the other bugs. 
+Bugs and features will be assigned a milestone and within a milestone they will be assigned a priority. The priority dictates the order in which issues should be addressed. A `important` bug (something that we think is critical for the milestone) is to be addressed before the other bugs. 
+
+To find out when a bug fix will be available, then please check the corresponding milestone. 
 
 ## Weekly
 Each week we will manage work items, crossing off completed features, and triaging bugs. At the end of the milestone we will strive for 0 bugs and 0 issues in the milestone, indicating we are done. This means that bugs and features will be postponed to later milestones.
