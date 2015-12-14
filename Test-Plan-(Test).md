@@ -17,7 +17,7 @@ We have changed breakpoints states and now show it differently in the UI. Verify
 * breakpoints get hit / not hit depending on their enablement state
 
 ### Debug - extension debugging
-- [ ] win @dbaeumer 
+- [x] win @dbaeumer 
 - [ ] mac @SofianHn 
 - [x] linux @aeschli 
 
@@ -35,7 +35,7 @@ Extension debugging is now using a new strategy to attach the debugger to the ex
 Verify you can change the update channel from settings.
 
 ### View - persisted zoom settings
-- [ ] win @dbaeumer 
+- [x] win @dbaeumer 
 - [x] mac | linux @weinand 
 
 Verify you can change and persist the zoom factor for windows. 
@@ -163,7 +163,7 @@ The language client / server libraries now support the complete set of language 
 
 
 ## extension deactivate()
-- [ ] win @dbaeumer
+- [x] win @dbaeumer
 - [x] mac @joaomoreno 
 - [x] linux @aeschli
 - **is** platform specific
@@ -210,7 +210,7 @@ The language client / server libraries now support the complete set of language 
 * Verify all duplicates of #133
 
 ## JSON schema configuration
-- [ ] any platform @dbaeumer 
+- [x] any platform @dbaeumer 
 
  The built-in schemas have been removed. They are now offered by the extensions. The schemas are now loaded directly from the schema server. That way they are more up-to-date, but might lack descriptions
 * Check hover and intellisense support for package.json, project.json, bower.json
