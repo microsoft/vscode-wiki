@@ -20,7 +20,7 @@ the tag `vscode`. The VS Code team and Community will answer questions there.
 - If the issue is a feature request, add the label `feature request` and @mention if someone from the team should be aware of the issue
 - If needed edit the title to improve it
 - Assign the issue with a feature/topic area label
-- Assign a `important` label if the issue is critical/blocking and mention @microsoft/vscode to make the team aware of the issue
+- Assign a `important` label if the issue is important and mention @microsoft/vscode to make the team aware of the issue
 
 The person assigned to do the inbox tracking **does not** have to (unless they want to):
 - Perform a duplicate search
