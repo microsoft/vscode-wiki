@@ -1,4 +1,4 @@
-The test plan for the December iteration plan #917.
+The test plan for the December iteration plan [December Iteration Plan](../issues/917).
 
 ### Debug - long text wraps in repl
 - [x] win @alexandrudima 
