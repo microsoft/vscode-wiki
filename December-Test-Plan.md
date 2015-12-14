@@ -200,6 +200,38 @@ The language client / server libraries now support the complete set of language 
  - e.g. `Split Editor` shows under `German (Switzerland)` as <kbd>Ctrl</kbd>+<kbd>ä</kbd> because you trigger it by pressing the keys <kbd>Ctrl</kbd> and the key that would produce `ä`.
  - dead characters: Sometimes, under some kb layouts, some keys don't produce anything and act more like composing (accents). To be able to render something, we display in the UI label the value or the shiftedValue of those keys.
 
+# Suggest widget #1006 #1079
+- [x] win @bpasero 
+- [ ] mac @egamma 
+- [ ] linux
+
+The Suggest widget underwent quite some heavy rework behind the scenes. Make sure everything still works as before.
+
+# Scoped git services #718
+- [ ] win @SofianHn  
+- [x] mac @isidorn 
+- [ ] linux @weinand 
+
+You should now be able to open a folder inside a git repo and still have the git features enabled.
+
+# Git sync & publish action #908
+
+- [x] win @dbaeumer 
+- [ ] mac @egamma 
+- [ ] linux @weinand 
+
+The sync action is back in the status bar:
+
+![image](https://cloud.githubusercontent.com/assets/22350/11761005/3e9a1b4a-a0b2-11e5-8144-812cbc021e16.png)
+
+If you check out to a branch that doesn't have an upstream link, we assume it is **unpublished**. The following UI should show up. Clicking it will publish the branch.
+
+![image](https://cloud.githubusercontent.com/assets/22350/11761011/563d6806-a0b2-11e5-9fb4-dadf19755147.png)
+
+If you are in a repository without a **remote** configured, none of the previous actions should show up:
+
+![image](https://cloud.githubusercontent.com/assets/22350/11761022/83add9e2-a0b2-11e5-9890-83b88f96437f.png)
+
 ## ES6 JavaScript grammar
 
 - [x] any platform @joaomoreno 
