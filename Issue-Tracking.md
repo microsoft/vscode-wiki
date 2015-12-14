@@ -15,7 +15,7 @@ New issues or pull requests submitted by the community are triaged by a team mem
 Please ask general questions about VS Code on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using
 the tag `vscode`. The VS Code team and Community will answer questions there.
 ```
-- If an issue needs more info the `needs more info` label is assigned and the author is asked for more information in a comment. The issue is not assigned to the `Backlog`. If there is no additional information provided after 3 days the issue is closed with a comment to reopen it with more information.
+- If an issue needs more info the `needs more info` label is assigned and the author is asked for more information in a comment. The issue is assigned to the `Backlog` and a team member to track it.
 - If the issue is a bug, add the `bug` label and assign it to a person
 - If the issue is a feature request, add the label `feature request` and @mention if someone from the team should be aware of the issue
 - If needed edit the title to improve it
