@@ -19,17 +19,17 @@ We work in weekly segments:
 - **Week 3+**: Work according the plan
 - **Final Week**: End game
  - the team tests the new features according a test plan and updates the documentation. 
- - we make a pre-release available on the 'insiders' channel.
+ - we make a pre-release available on the 'insiders' channel and invite users to help us test the pre-release.
 
 ## Triage
 Bugs and features will be assigned a milestone and within a milestone they will be assigned a priority. The priority dictates the order in which issues should be addressed. A `important` bug (something that we think is critical for the milestone) is to be addressed before the other bugs. 
 
-To find out when a bug fix will be available, then please check the corresponding milestone. 
+To find out when a bug fix will be available in an update, then please check the milestone that is assigned to the issue. 
 
 ## Weekly
-Each week we will manage work items, crossing off completed features, and triaging bugs. At the end of the milestone we will strive for 0 bugs and 0 issues in the milestone, indicating we are done. This means that bugs and features will be postponed to later milestones.
+Each week we will manage work items, crossing off completed features, and triaging bugs. At the end of the milestone we will strive for 0 bugs and 0 issues assigned to the milestone. Some bugs and features will then be either postponed to later milestones or moved back to the backlog.
 
 ## End Game
 The final week of the milestone is what we call the "end game". During this week we will wrap up any feature work, we will test using a test plan [[Iteration Plans]], and then we will fix the critical bugs for that milestone.
 
-At the end of this process we will produce a build and release it on the `insiders` channel ([see also](https://code.visualstudio.com/Docs/supporting/FAQ#_how-can-i-test-prerelease-versions-of-vs-code). We will monitor incoming issues from this release, fix any critical bugs that arise, and then produce a final `stable` release for the milestone and the `stable` channel.
+During the endgame we make a build available on the `insiders` channel ([see also](https://code.visualstudio.com/Docs/supporting/FAQ#_how-can-i-test-prerelease-versions-of-vs-code). We will monitor incoming issues from this release, fix any critical bugs that arise, and then produce a final `stable` release for the milestone and the `stable` channel.
