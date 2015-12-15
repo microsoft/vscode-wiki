@@ -1,5 +1,7 @@
 A pre-release of the [December update](../issues/917) is now available on the so called `insiders` channel (see below). 
 
+> 
+
 We love getting feedback on the pre-release and you can help us in many ways:
 - test new features as described in the [[December Test Plan]].
 - verify the bugs you have filed and that are targetting the December milestone [bug fixes](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aclosed+label%3Abug+milestone%3A%22Dec+2015%22).
@@ -18,7 +20,8 @@ The updated version of Code is 0.10.4, once updated you will see this in the `He
 Follow [these steps](https://code.visualstudio.com/Docs/supporting/FAQ#_how-can-i-test-prerelease-versions-of-vs-code). 
 
 ### Getting the update on Linux
-On Linux you must manually update (no support for auto-update).
+On Linux you must manually update (no support for auto-update):
+
 1. Download Code from this location [Linux 64](https://az764295.vo.msecnd.net/public/0.10.4/VSCode-linux64.zip), [Linux 32](https://az764295.vo.msecnd.net/public/0.10.4/VSCode-linux32.zip).
 2. Open the Zip and run Code.
 3. Code will require a manual update each time we release.
@@ -27,4 +30,3 @@ On Linux you must manually update (no support for auto-update).
 To revert to the standard build, reverse the updates you made to your storage.json i.e. back to stable from insiders.   At that point you will receive the 0.10.3 update again. 
 
 If all else fails, uninstall the Update and re-install from http://code.visualstudio.com.
-
