@@ -29,7 +29,7 @@ Extension debugging is now using a new strategy to attach the debugger to the ex
 * verify stopping the session from the debugger closes the extension development window
 
 ### Update - channel from settings
-- [ ] win @alexandrudima 
+- [x] win @egamma 
 - [x] mac @joaomoreno 
 
 Verify you can change the update channel from settings.
