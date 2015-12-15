@@ -65,7 +65,7 @@ Verify the new support for fuzzy file matching
 
 ### Extensions info in status bar #1123
 - [ ] win @bpasero 
-- [ ] mac @egamma 
+- [ ] mac @egamma (cannot make the extension info appear, I have extension warnings in Console, but nothing in the statusbar)
 - [ ] linux @SofianHn  
 
 Verify that the extensions status shows up in the status bar if you have extension errors. Verify clicking on the status bar shows all the error / warning messages to the user and that you can uninstall the extension via action in message.
