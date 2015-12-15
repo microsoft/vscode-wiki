@@ -65,7 +65,7 @@ Verify the new support for fuzzy file matching
 
 ### Extensions info in status bar #1123
 - [ ] win @bpasero 
-- [ ] mac @egamma (cannot make the extension info appear, I have extension warnings in Console, but nothing in the statusbar)
+- [ ] mac @egamma (blocked by #1256)
 - [ ] linux @SofianHn  
 
 Verify that the extensions status shows up in the status bar if you have extension errors. Verify clicking on the status bar shows all the error / warning messages to the user and that you can uninstall the extension via action in message.
@@ -217,7 +217,7 @@ You should now be able to open a folder inside a git repo and still have the git
 # Git sync & publish action #908
 
 - [x] win @dbaeumer 
-- [ ] mac @egamma 
+- [x] mac @egamma 
 - [x] linux @weinand 
 
 The sync action is back in the status bar:
