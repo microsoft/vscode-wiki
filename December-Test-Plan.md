@@ -45,7 +45,7 @@ Verify you can change and persist the zoom factor for windows.
 
 ### Quick open - Path and Fuzzy matching
 - [x] win @aeschli 
-- [ ] mac | linux @isidorn 
+- [x] mac | linux @isidorn 
 
 Unless you include a path character in your query or enabled fuzzy matching, quick open for files should work as before:
 * results are sorted properly with most relevant ones to the top
