@@ -10,7 +10,7 @@ When reporting issues please mention in the comment that you found the issue in 
 Since we are also testing the same release, please do a duplicate search and comment on the existing issue before creating a new one.
 
 ## Getting the update
-**Notice** the release notes are not up to date yet, to find out about new features check the [December plan](../issues/917)) or the [[December Test Plan]].
+**Notice** the release notes are not up to date yet, to find out about new features check the [December plan](../issues/917) or the [[December Test Plan]].
 
 The updated version of Code is 0.10.4, once updated you will see this in the `Help | About` or `Code | About Visual Studio Code` dialog.
 
