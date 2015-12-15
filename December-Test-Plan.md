@@ -3,12 +3,10 @@ The test plan for the December iteration plan [December Iteration Plan](../issue
 ### Debug - long text wraps in repl
 - [x] win @alexandrudima 
 - [x] mac @jrieken
-- [ ] linux @SofianHn  
 
 Verify that long text now nicely wraps across multiple lines in the debug repl both for evaluation requests and for output text.
 
 ### Debug - breakpoint state
-- [ ] win @alexandrudima 
 - [x] mac @jrieken
 - [x] linux @aeschli 
 
@@ -18,7 +16,6 @@ We have changed breakpoints states and now show it differently in the UI. Verify
 
 ### Debug - extension debugging
 - [x] win @dbaeumer 
-- [ ] mac @SofianHn 
 - [x] linux @aeschli 
 
 Extension debugging is now using a new strategy to attach the debugger to the extension
@@ -95,7 +92,7 @@ Should expand to
 
 ## Language Server
 
-- [ ] win | mac | linux @jrieken
+- [x] win | mac | linux @jrieken
 
 The language client / server libraries now support the complete set of language features available in the extension host. Implement a sample language server with more features by taking https://github.com/Microsoft/vscode-languageserver-node-example as a starting point. Focus on the new support for CodeActions, CodeLens, Formatting and rename.
 
@@ -202,13 +199,11 @@ The language client / server libraries now support the complete set of language 
 
 # Suggest widget #1006 #1079
 - [x] win @bpasero 
-- [ ] mac @egamma 
-- [ ] linux
+- [x] mac @egamma 
 
 The Suggest widget underwent quite some heavy rework behind the scenes. Make sure everything still works as before.
 
 # Scoped git services #718
-- [ ] win @SofianHn  
 - [x] mac @isidorn 
 - [x] linux @weinand 
 
