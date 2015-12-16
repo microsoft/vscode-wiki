@@ -10,11 +10,12 @@ The inbox are all the open issues or pull requests that have no milestone assign
 
 The inbox tracker analyses the bug and performs the following steps:
 - If the issue or pull request is valid, it is assigned to the `Backlog` milestone. This indicates that the issue has been triaged.
-- If an issue is a general question like 'How to compile TypeScript', then the author is redirected to stack overflow. Add the following comment and close the issue:
+- If an issue is a general question like 'How to compile TypeScript', then the author is redirected to stack overflow.
 ```
-<<<TODO: describe all the input channels we use and track>>>
-Please ask general questions about VS Code on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using
-the tag `vscode`. The VS Code team and Community will answer questions there.
+Please ask 'how-to' questions about VS Code on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using
+the tag `vscode`. 
+The VS Code development team together with the VS Code Community will answer question your question over there. 
+Here is how the development team tracks feedback on the different channels: [Feedback Channels](https://github.com/Microsoft/vscode/wiki/Feedback-Channels).
 ```
 - If an issue needs more info the `needs more info` label is assigned and the author is asked for more information in a comment. The issue is assigned to the `Backlog` and a team member to track it.
 - If the issue is a bug, add the `bug` label and assign it to a person
