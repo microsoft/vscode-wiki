@@ -1,4 +1,4 @@
-As a development team we have to track and want to be present on many channels (github issues, twitter, stack overflow, user voice, gitter). We want to be responsive and at the same time be effective, for example, we want to avoid having to provide the same answer on different channels. This page describes how we manage the different channels.
+As a development team we have to track and want to be present on many channels (github issues, twitter, stack overflow, user voice, gitter). We want to be responsive and at the same time be effective, for example, we want to avoid having to provide the same answer on different channels. This page describes how the development team intends to be use and be active on the different channels.
 
 ## [Github issues](https://github.com/Microsoft/vscode/issues)
 Issues on github should be used for bugs and feature requests. How to submit good bugs and feature requests is described in [[Submitting Bugs and Suggestions]] and how we track issues is described in [[Issue Tracking]].
