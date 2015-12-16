@@ -8,9 +8,13 @@ Notice we would not like to use Github Issues for general 'how-to' questions abo
 ## [Stack overflow](https://stackoverflow.com/questions/tagged/vscode)
 Stack Overflow is the best place for getting high quality answers. Many Code community members are already on Stack Overflow and provide great answers to 'how-to' questions. A development team member tracks stack overflow for questions without an answer and jumps in as needed. 
 
->Therefore please be not upset when we close an issue with the comment to ask a question on Stack Overflow. 
+>Therefore please do not be upset when we close an issue with the comment to ask a question on Stack Overflow. 
 
 ## [Gitter Chat Room](https://gitter.im/Microsoft/vscode)
 The Gitter channel provides a place where the Community can get together and collaborate. It is actually great to see that folks have already started to collaborate and support each other there. However, the VS Code team's presence in the room will be very limited, at least for the foreseeable future. We hope the Community will use the room and have discussions.
 
-## [User Voice]()
+## [User Voice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code)
+User voice is great for voting a for a particular feature, but user voice is limited when it comes to discuss the feature with the development team. Therefore the development team does not engage into a discussion on user voice. Instead once development starts on a feature request a corresponding issue is created and the discussion, milestone assignment is done there. Feel free to file an issue for a feature request.
+
+## [Twitter](https://twitter.com/code)
+We use the **@code** account on twitter for announcements and members from the development team watch for tweets for @code.
