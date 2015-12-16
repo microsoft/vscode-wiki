@@ -26,6 +26,8 @@ Bugs and features will be assigned a milestone and within a milestone they will 
 
 To find out when a bug fix will be available in an update, then please check the milestone that is assigned to the issue. 
 
+Please see [[Issue Tracking]] for a description of the different workflows we are using.
+
 ## Weekly
 Each week we will manage work items, crossing off completed features, and triaging bugs. At the end of the milestone we will strive for 0 bugs and 0 issues assigned to the milestone. Some bugs and features will then be either postponed to later milestones or moved back to the backlog.
 
