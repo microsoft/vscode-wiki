@@ -1,43 +1,46 @@
 This page describes how we track issues in the `vscode` repository.
 
 ## Inbox tracking and Issue triage
-
-### The Inbox Triage
 New issues or pull requests submitted by the community are triaged by a team member. The team rotates the inbox tracker on a weekly basis.
+
+### Inbox Tracking
+The inbox are all the open issues or pull requests that have no milestone assigned:
 
 > [Inbox Query](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+no%3Amilestone)
 
-### Initial Triage done by the Inbox Tracker
-
-- If the issue or pull request is valid, it is assigned to the `Backlog` milestone. 
+The inbox tracker analyses the bug and performs the following steps:
+- If the issue or pull request is valid, it is assigned to the `Backlog` milestone. This indicates that the issue has been triaged.
 - If an issue is a general question like 'How to compile TypeScript', then the author is redirected to stack overflow. Add the following comment and close the issue:
 ```
+<<<TODO: describe all the input channels we use and track>>>
 Please ask general questions about VS Code on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using
 the tag `vscode`. The VS Code team and Community will answer questions there.
 ```
 - If an issue needs more info the `needs more info` label is assigned and the author is asked for more information in a comment. The issue is assigned to the `Backlog` and a team member to track it.
 - If the issue is a bug, add the `bug` label and assign it to a person
-- If the issue is a feature request, add the label `feature request` and @mention if someone from the team should be aware of the issue
+- If the issue is a feature request, add the label `feature request` and @mention if someone from the team should be aware of the feature request
 - If needed edit the title to improve it
 - Assign the issue with a feature/topic area label
-- Assign a `important` label if the issue is important and mention @microsoft/vscode to make the team aware of the issue
+- Assign a `important` label if the issue is important and optionally mention @microsoft/vscode to get the attention of the entire team.
 
 The person assigned to do the inbox tracking **does not** have to (unless they want to):
 - Perform a duplicate search
-- Analyze the issue, this is the duty of the assignee
 - Engage into a discussion with the author of the issue and ask for more information
 
 ### 2nd level Triage, done by the assignee
 - Review the `feature-request` vs. `bug` assignment, if it is a feature request remove the assignee, add the correct label
-- Assign the `P1` label if needed
+- Assign the `important` label if needed
 - Assign the current milestone if the issue needs to be fixed in this release (blocks a scenario, completes a new feature, etc.) 
 - Follow-up with the author as needed
 
-### Bug Management
+### Fix planning
 At the beginning of the endgame we review the open issues and adjust the milestone if needed, moving to the next milestone or back to the backlog.
 
-At the beginning of the debt week we review the issues, pull requests assigned to the backlog milestone, and assign them to the current milestone.
+At the beginning of the debt week we review the issues, pull requests assigned to the backlog milestone, and assign the ones we want to address to the current milestone.
 
+## Filing bugs as development team member
+When team members files a bug they perform steps of the inbox tracker for the issue they filed. Therefore bugs filed by the development team do not need to be triged by the inbox tracker.
+ 
 ## Bug Verification
 Bugs need to be verified. 
 - Once a bug is fixed its state is changed to `closed` 
