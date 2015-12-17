@@ -68,7 +68,7 @@ It will do an initial full build and then watch for file changes, compiling thos
 ### Errors and Warnings
 Errors and warnings will show in the console while developing Code. If you use VS Code to develop Code, errors and warnings are shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing `CMD+P` and then `!`. 
 
-**Tip!** You don't need to stop and restart the development version of Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut `CMD+R` (`CTRL+R on Windows, Linux) to this command.
+**Tip!** You don't need to stop and restart the development version of Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut `CMD+R` (`CTRL+R` on Windows, Linux) to this command.
 
 ### Validate your changes
 To test the changes you launch a development version of VS Code on the workspace `vscode`, which you are currently editing.
