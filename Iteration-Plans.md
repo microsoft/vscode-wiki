@@ -1,6 +1,6 @@
 ## Current
 * [January Iteration Plan](../issues/1826)
-* [[January Test Plan]]
+* [January Test Plan](https://github.com/Microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22Jan+2016%22)
 
 ## Previous
 ### December
