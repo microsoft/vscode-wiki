@@ -58,6 +58,6 @@ To establish consistent labels across all our repositories use the [Label Manage
 To enable planning across repositories all the Visual Studio Code related repositories need to define the same milestones.
 
 ## Iteration Planning
-We use issues for iteration plans and test plans:
+We use issues for iteration plans and the wiki for the test plan. 
 - Iteration Plans have a label `iteration-plan` with `tasks` [ ] for the different items. The individual items are tracked in existing issues (bugs, feature requests). If there is no existing issue then a new issue with the label `plan-item` is created. Here is an [example](https://github.com/Microsoft/vscode/issues/917).
-- Test Plans have a label `test-plan`, here is an [example](https://github.com/Microsoft/vscode/issues/1096).
+- We use a wiki page for a test plan. Here is an [example](https://github.com/Microsoft/vscode/wiki/December-Test-Plan).
