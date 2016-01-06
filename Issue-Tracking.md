@@ -10,33 +10,24 @@ The [Inbox query](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is
 - are **not feature requests** and
 - have **no owner assignment**.
 
-The inbox **tracker** should do the following initial triage:
+The **inbox tracker** should do the following initial triage:
 - Is the issue **invalid**? Close it and justify the reason.
-- Is the issue **a general question**, like *How can I compile TypeScript*? Close it and redirect the user to [Stack Overflow](http://stackoverflow.com/questions/tagged/vscode).
+- Is the issue **a general question**, like *How can I compile TypeScript*? Close it and redirect the user to [Stack Overflow](http://stackoverflow.com/questions/tagged/vscode) with [this message](https://gist.github.com/joaomoreno/960b4f643b2ff09bcdf7).
 - Else, assign the issue to an **owner**.
-- Optionally give it the proper labels and/or assign it to the Backlog or a specific milestone. The owner should do this otherwise.
-```
-Please ask 'how-to' questions about VS Code on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using
-the tag `vscode`.
-The VS Code development team together with the VS Code Community will answer question your question over there. 
-Here is how the development team tracks feedback on the different channels: [Feedback Channels](https://github.com/Microsoft/vscode/wiki/Feedback-Channels).
-```
-- If an issue needs more info the `needs more info` label is assigned and the author is asked for more information in a comment. The issue is assigned to the `Backlog` and a team member to track it.
-- If the issue is a bug, add the `bug` label and assign it to a person
-- If the issue is a feature request, add the label `feature request` and @mention if someone from the team should be aware of the feature request
-- If needed edit the title to improve it
-- Assign the issue with a feature/topic area label
-- Assign a `important` label if the issue is important and optionally mention @microsoft/vscode to get the attention of the entire team.
+
+**Everyone** should do the following secondary triage to their assigned issues (the **inbox tracker** may do some of these steps too, if obvious):
+- If an issue needs more info, assign the `needs more info` and ask for more information in a comment.
+- If the issue is a bug, add the `bug` label.
+- If the issue is a feature request, add the label `feature request` and @-mention if someone from the team should be aware of the feature request.
+- If needed, edit the title to improve it.
+- If possible, assign the issue with a feature/topic area label.
+- If the issue is important, assign an `important` label and optionally mention @microsoft/vscode to get the attention of the entire team.
+- If the issue needs to be fixed in this release, assign it to the current milestone (eg: blocks a scenario, completes a new feature, etc.). Else, assign it to the **Backlog**.
+- If needed, follow-up with the author.
 
 The person assigned to do the inbox tracking **does not** have to (unless they want to):
 - Perform a duplicate search
 - Engage into a discussion with the author of the issue and ask for more information
-
-### 2nd level Triage, done by the assignee
-- Review the `feature-request` vs. `bug` assignment, if it is a feature request remove the assignee, add the correct label
-- Assign the `important` label if needed
-- Assign the current milestone if the issue needs to be fixed in this release (blocks a scenario, completes a new feature, etc.) 
-- Follow-up with the author as needed
 
 ### Fix planning
 At the beginning of the endgame we review the open issues and adjust the milestone if needed, moving to the next milestone or back to the backlog.
