@@ -25,10 +25,6 @@ The **inbox tracker** should do the following initial triage:
 - If the issue needs to be fixed in this release, assign it to the current milestone (eg: blocks a scenario, completes a new feature, etc.). Else, assign it to the **Backlog**.
 - If needed, follow-up with the author.
 
-The person assigned to do the inbox tracking **does not** have to (unless they want to):
-- Perform a duplicate search
-- Engage into a discussion with the author of the issue and ask for more information
-
 ### Fix planning
 At the beginning of the endgame we review the open issues and adjust the milestone if needed, moving to the next milestone or back to the backlog.
 
