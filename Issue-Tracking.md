@@ -6,14 +6,15 @@ New issues or pull requests submitted by the community are triaged by a team mem
 ### Inbox Tracking
 The inbox are all the open issues or pull requests that have no milestone assigned:
 
-> [Inbox Query](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+no%3Amilestone)
+> [Inbox Query](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+)
 
 The inbox tracker analyses the bug and performs the following steps:
-- If the issue or pull request is valid, it is assigned to the `Backlog` milestone. This indicates that the issue has been triaged.
-- If an issue is a general question like 'How to compile TypeScript', then the author is redirected to stack overflow.
+- Is the issue **invalid**? Close it and justify the reason.
+- Is the issue **a general question**, like *How can I compile TypeScript*? Close it and redirect the user to [Stack Overflow](http://stackoverflow.com/questions/tagged/vscode).
+- Else, assign the issue to an **owner**. Optionally give it the proper labels and/or assign it to the Backlog or a specific milestone. The owner should do this otherwise.
 ```
 Please ask 'how-to' questions about VS Code on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using
-the tag `vscode`. 
+the tag `vscode`.
 The VS Code development team together with the VS Code Community will answer question your question over there. 
 Here is how the development team tracks feedback on the different channels: [Feedback Channels](https://github.com/Microsoft/vscode/wiki/Feedback-Channels).
 ```
