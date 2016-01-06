@@ -4,11 +4,13 @@ This page describes how we track issues in the `vscode` repository.
 New issues or pull requests submitted by the community are triaged by a team member. The team rotates the inbox tracker on a weekly basis.
 
 ### Inbox Tracking
-The inbox are all the open issues or pull requests that have no milestone assigned:
 
-> [Inbox Query](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+)
+The [Inbox query](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+) contains all the
+- **open issues or pull requests** that
+- are **not feature requests** and
+- have **no owner assignment**.
 
-The inbox tracker analyses the bug and performs the following steps:
+The inbox **tracker** should do the following initial triage:
 - Is the issue **invalid**? Close it and justify the reason.
 - Is the issue **a general question**, like *How can I compile TypeScript*? Close it and redirect the user to [Stack Overflow](http://stackoverflow.com/questions/tagged/vscode).
 - Else, assign the issue to an **owner**. Optionally give it the proper labels and/or assign it to the Backlog or a specific milestone. The owner should do this otherwise.
