@@ -1,40 +1,29 @@
-This document outlines the 6 month roadmap for Code.
+# 1.0 (March 31st)
 
-## Theme: Getting to General Availability
+## Getting to General Availability
 * Accessibility
 * Globalization
 * Stable APIs
 * Performance
 	
-## Theme: Highly Demanded Features
+## Adoption Blockers
+### Core Editing
 * Code folding
-* Editor Config - promote the extension to a core extension
-* Improve global search and provide replace support
-* VIM key binding support, enable extension authors
-* Git improvements - ability to manage remotes, .git in parent folder of workspace, rebasing etc.
-* Improve the Error List experience
-	
-## Theme: Deep Language Support
-### General
-* Improve managing many errors in the workspace
-* Improve adding a new language to Code
-* Provide a notion of a test case failure
+* Providing key bindings for users used to other editors, support VIM extension authors
+* Improve the document management, stacking behaviour of editors
+
+## Development pain points
+
+### Tasks
+* Support to run multiple tasks
+
+### Debug
+* Support a horizontal layout for output (debug output, task output)
+* Support conditional break points
 
 ### JavaScript
-* Adopt the [Salsa](https://github.com/Microsoft/TypeScript/issues/4789) component to support mixed JavaScript and TypeScript development (collaboration with the TS team)
-* Improve JSX support (Salsa enables deeper support)
-
-### TypeScript
-* Track and contribute to TypeScript
+* Improved Intellisense in JavaScript, migrate to [Salsa](https://github.com/Microsoft/TypeScript/issues/4789)
+* Improve the support for JSX (Salsa enables this)
 
 ### C# 
 * Debugging support (collaboration with the coreCLR team) :heart:
-* Track and contribute to OmniSharp
-
-### Debt
-* Migrate _legacy_ languages into extensions
-	
-## Theme: Extensibility
-* Address gaps in the API based on feedback from extenders
-* Simplify the consumption of a large number of extensions
-* Address gaps in the gallery support based on feedback
