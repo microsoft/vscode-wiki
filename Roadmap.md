@@ -14,17 +14,26 @@
 
 ## Development pain points
 
+### Workbench
+* Support a horizontal layout for output (debug output, task output)
+
 ### Tasks
 * Support to run multiple tasks
 * Improve support for continously running `watching` tasks
 
+### Extensions
+* Improve in product extension selection performance
+* Improve extension discovery and acquisition experience, looking across website/marketplace and product
+
 ### Debug
-* Support a horizontal layout for output (debug output, task output)
 * Support conditional break points
+* Support remote debugging (e.g. attach to Node app running in Docker container locally or on Linux)
+* Support additional debug architectures (e.g. xdebug for PHP, C# debugging)
 
 ### JavaScript
 * Improved Intellisense in JavaScript, migrate to [Salsa](https://github.com/Microsoft/TypeScript/issues/4789)
 * Improve the support for JSX (Salsa enables this)
 
 ### C# 
+* Move into a separate extension
 * Debugging support (collaboration with the coreCLR team) :heart:
