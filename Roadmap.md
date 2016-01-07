@@ -16,6 +16,7 @@
 
 ### Tasks
 * Support to run multiple tasks
+* Improve support for continously running `watching` tasks
 
 ### Debug
 * Support a horizontal layout for output (debug output, task output)
