@@ -1,24 +1,23 @@
 # 1.0 (March 31st)
 
-## Getting to General Availability
+## Declare General Availability ("GA")
 * Accessibility
-* Globalization
+* Localization
 * Stable APIs
 * Performance
 	
-## Adoption Blockers
+## Eliminate Adoption Blockers
 ### Core Editing
 * Code folding
 * Providing key bindings for users used to other editors, support VIM extension authors
 * Improve the document management, stacking behaviour of editors
 
-## Development pain points
-
+## Address Development Pain Points
 ### Workbench
-* Support a horizontal layout for output (debug output, task output)
+* Support horizontal layout for output (debug output, task output)
 
 ### Tasks
-* Support to run multiple tasks
+* Support running multiple tasks
 * Improve support for continously running `watching` tasks
 
 ### Extensions
@@ -36,4 +35,4 @@
 
 ### C# 
 * Move into a separate extension
-* Debugging support (collaboration with the coreCLR team) :heart:
+* Debugging support (collaboration with the CoreCLR team) :heart:
