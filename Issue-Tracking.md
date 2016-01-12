@@ -13,6 +13,7 @@ The [Inbox query](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is
 The **inbox tracker** should do the following initial triage:
 - Is the issue **invalid**? Close it and justify the reason.
 - Is the issue **a general question**, like *How can I compile TypeScript*? Close it and redirect the user to [Stack Overflow](http://stackoverflow.com/questions/tagged/vscode) with [this message](https://gist.github.com/joaomoreno/960b4f643b2ff09bcdf7).
+- Is it a feature request? Tag it accordingly and **cc** the people related to that area.
 - Else, assign the issue to an **owner**.
 
 **Everyone** should do the following secondary triage to their assigned issues (the **inbox tracker** may do some of these steps too, if obvious):
