@@ -115,6 +115,11 @@ The **extension host** process runs code implemented by a plugin. To debug exten
 ### Unit Testing
 Press `CMD+SHIFT+T` (`CTRL+SHIFT+T` on Windows) to start the unit tests or run the tests directly from a terminal by running `./test/run.sh` from the `vscode` folder (`test\run` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/master/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
 
+### Linting
+We use [tslint](https://github.com/palantir/tslint) for linting our sources. You can run tslint across the sources by calling `gulp tslint` from a terminal or command prompt. You can also run `gulp tslint` as a Code task by pressing `CMD+P` (`CTRL+P` on Windows) and enter `task tslint` In this way the tslint warnings show up in the `Errors and Warnings` quick box and you can navigate to them from inside Code. 
+
+To lint the source as you make changes you can install the [tslint extension](https://marketplace.visualstudio.com/items/eg2.tslint). 
+
 ## Work Branches
 Even if you have push rights on the Microsoft/vscode repository, you should create a personal fork and create feature branches there when you need them. This keeps the main repository clean and your personal workflow cruft out of sight.
 
