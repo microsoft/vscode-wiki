@@ -63,12 +63,12 @@ gulp watch
 ```
 It will do an initial full build and then watch for file changes, compiling those changes incrementally, enabling a fast, iterative coding experience.
 
-**Tip!** Open VS Code on the folder where you have cloned the `vscode` repository and press `CMD+SHIFT+B` (`CTRL+SHIFT+B` on Windows, Linux) to start the builder. To view the build output open the Output stream by pressing `CMD+SHIFT+U`.
+**Tip!** Open VS Code on the folder where you have cloned the `vscode` repository and press <kbd>CMD+SHIFT+B</kbd> (<kbd>CTRL+SHIFT+B</kbd> on Windows, Linux) to start the builder. To view the build output open the Output stream by pressing <kbd>CMD+SHIFT+U</kbd>.
 
 ### Errors and Warnings
-Errors and warnings will show in the console while developing Code. If you use VS Code to develop Code, errors and warnings are shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing `CMD+P` and then `!`. 
+Errors and warnings will show in the console while developing Code. If you use VS Code to develop Code, errors and warnings are shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing <kbd>CMD+P</kbd> and then <kbd>!</kbd>. 
 
-**Tip!** You don't need to stop and restart the development version of Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut `CMD+R` (`CTRL+R` on Windows, Linux) to this command.
+**Tip!** You don't need to stop and restart the development version of Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut <kbd>CMD+R</kbd> (<kbd>CTRL+R</kbd> on Windows, Linux) to this command.
 
 ### Validate your changes
 To test the changes you launch a development version of VS Code on the workspace `vscode`, which you are currently editing.
@@ -110,13 +110,13 @@ scripts\code --remote-debugging-port=9222
 
 * Run the `Developer: Toggle Developer Tools` command from the Command Palette in your development instance of Code to launch the Chrome tools.
 
-The **extension host** process runs code implemented by a plugin. To debug extensions (including those packaged with Code) which run in the extension host process, you can use VS Code itself. Switch to the Debug viewlet, choose the `Attach to Extension Host` configuration, and press `F5`.
+The **extension host** process runs code implemented by a plugin. To debug extensions (including those packaged with Code) which run in the extension host process, you can use VS Code itself. Switch to the Debug viewlet, choose the `Attach to Extension Host` configuration, and press <kbd>F5</kbd>.
 
 ### Unit Testing
-Press `CMD+SHIFT+T` (`CTRL+SHIFT+T` on Windows) to start the unit tests or run the tests directly from a terminal by running `./test/run.sh` from the `vscode` folder (`test\run` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/master/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
+Press <kbd>CMD+SHIFT+T</kbd> (<kbd>CTRL+SHIFT+T</kbd> on Windows) to start the unit tests or run the tests directly from a terminal by running `./test/run.sh` from the `vscode` folder (`test\run` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/master/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
 
 ### Linting
-We use [tslint](https://github.com/palantir/tslint) for linting our sources. You can run tslint across the sources by calling `gulp tslint` from a terminal or command prompt. You can also run `gulp tslint` as a Code task by pressing `CMD+P` (`CTRL+P` on Windows) and enter `task tslint` In this way the tslint warnings show up in the `Errors and Warnings` quick box and you can navigate to them from inside Code. 
+We use [tslint](https://github.com/palantir/tslint) for linting our sources. You can run tslint across the sources by calling `gulp tslint` from a terminal or command prompt. You can also run `gulp tslint` as a Code task by pressing <kbd>CMD+P</kbd> (<kbd>CTRL+P</kbd> on Windows) and enter `task tslint` In this way the tslint warnings show up in the `Errors and Warnings` quick box and you can navigate to them from inside Code. 
 
 To lint the source as you make changes you can install the [tslint extension](https://marketplace.visualstudio.com/items/eg2.tslint). 
 
