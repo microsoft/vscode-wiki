@@ -2,9 +2,10 @@
 
 - [ ] GCC linting
 - [ ] call hierarchy
-- [x] doxy commenting, etc., would be super sweet!
 - [ ] atom-alignment
-- [x] docblockr -> there is the Document This extension: https://marketplace.visualstudio.com/items?itemName=joelday.docthis
-- [ ] fold-functions -> on the February plan
-- [ ] highlight-line -> not sure what is missing, Code highlights the current line
+- [ ] fold-functions -> on the [February plan](https://github.com/Microsoft/vscode/issues/2616)
 - [ ] todo-show
+
+## Complete
+
+- [x] docblockr, doxy-commenting -> VS Code [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis) extension
