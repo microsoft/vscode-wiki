@@ -2,6 +2,9 @@ Issue for discussion [#2789](https://github.com/Microsoft/vscode/issues/2789).
 
 ## Community Requested Extensions
 
+This is a list of community requested extensions collected from a variety of sources (twitter, user voice, etc.). 
+
+- [ ] Scala language support. [500+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7755597-scala-support)
 - [ ] D programming language support. [1000+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7763160-support-the-d-programming-language)
 - [ ] [GCC linting](https://atom.io/packages/linter-gcc)
 - [ ] call hierarchy
