@@ -2,7 +2,7 @@ Issue for discussion [#2789](https://github.com/Microsoft/vscode/issues/2789).
 
 ## Community Requested Extensions
 
-- [ ] [D programming language support](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7763160-support-the-d-programming-language)
+- [ ] D programming language support [1000+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7763160-support-the-d-programming-language)
 - [ ] [GCC linting](https://atom.io/packages/linter-gcc)
 - [ ] call hierarchy
 - [ ] [todo-show](https://atom.io/packages/todo-show)
