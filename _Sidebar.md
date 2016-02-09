@@ -13,6 +13,7 @@
 * [[Code Organization]]
 * [[Coding Guidelines]]
 * [[Contributor License Agreement]]
+* [Requested Extensions](https://github.com/Microsoft/vscode/wiki/Requested-Extensions)
 
 **Documentation**
 * [Extensions](https://code.visualstudio.com/docs/extensions/overview)
