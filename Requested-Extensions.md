@@ -1,4 +1,4 @@
-Issue for discussion [#2789](https://github.com/Microsoft/vscode/issues/2789).
+Use this issue to discuss the contents of this wiki [#2789](https://github.com/Microsoft/vscode/issues/2789).
 
 ## Community Requested Extensions
 
