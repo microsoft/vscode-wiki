@@ -24,7 +24,7 @@ For discussions on specific extensions and to add more information, link a newly
 - [ ] [atom-typescript](https://atom.io/packages/atom-typescript). Feature that is missing is compile on save with no task runner configuration. Good task candidate. 
 - [ ] [color-picker](https://atom.io/packages/color-picker). Sleek color picking UI widget. 
 - [ ] [hex](https://atom.io/packages/hex). View the hex of any dump file. 
-- [ ] [tree-view-filter](https://atom.io/packages/tree-view-filter)
+- [ ] [tree-view-filter](https://atom.io/packages/tree-view-filter). Limits files show in tree view. 
 
 ## Complete
 
