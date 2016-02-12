@@ -14,9 +14,9 @@ For discussions on specific extensions and to add more information, link a newly
 - [ ] Rust programming language support. [1000+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7755504-support-rust)
 - [ ] Python language support. [1400+ votes on UserVoice](https://github.com/Microsoft/vscode/wiki/Requested-Extensions)
 - [ ] [GCC linting](https://atom.io/packages/linter-gcc)
-- [ ] call hierarchy
-- [ ] [todo-show](https://atom.io/packages/todo-show)
-- [ ] [atom-alignment](https://atom.io/packages/atom-alignment)
+- [ ] Call hierarchy. 
+- [ ] [todo-show](https://atom.io/packages/todo-show). Show todo, fixme, and changed. 
+- [ ] [atom-alignment](https://atom.io/packages/atom-alignment). Aligning multi-line, multi-cursor and multiple selections.
 - [ ] [Sublime-Style-Column-Selection](https://atom.io/packages/Sublime-Style-Column-Selection)
 - [ ] [activate-power-mode](https://atom.io/packages/activate-power-mode)
 - [ ] [atom-beautify](https://atom.io/packages/atom-beautify). Lots of language support for code formatting. 
