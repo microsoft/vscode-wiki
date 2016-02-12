@@ -11,6 +11,7 @@ For discussions on specific extensions and to add more information, link a newly
 - [ ] Action Script 3 language support [2000+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7757226-actionscript-3-support)
 - [ ] D programming language support. [1000+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7763160-support-the-d-programming-language)
 - [ ] Rust programming language support. [1000+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7755504-support-rust)
+- [ ] Python language support. [1400+ votes on UserVoice](https://github.com/Microsoft/vscode/wiki/Requested-Extensions)
 - [ ] [GCC linting](https://atom.io/packages/linter-gcc)
 - [ ] call hierarchy
 - [ ] [todo-show](https://atom.io/packages/todo-show)
