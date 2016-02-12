@@ -17,6 +17,24 @@ For discussions on specific extensions and to add more information, link a newly
 - [ ] call hierarchy
 - [ ] [todo-show](https://atom.io/packages/todo-show)
 - [ ] [atom-alignment](https://atom.io/packages/atom-alignment)
+- [ ] Sublime-Style-Column-Selection
+- [ ] activate-power-mode
+- [ ] atom-beautify
+- [ ] atom-prettify
+- [ ] atom-typescript
+- [ ] color-picker
+- [ ] escape-utils
+- [ ] hex
+- [ ] html2jade-plus
+- [ ] jsformat
+- [ ] language-jade
+- [ ] linter
+- [ ] linter-eslint
+- [ ] linter-jscs
+- [ ] linter-tslint
+- [ ] pretty-json
+- [ ] tabs-to-spaces
+- [ ] tree-view-filter
 
 ## Complete
 
