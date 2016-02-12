@@ -17,26 +17,26 @@ For discussions on specific extensions and to add more information, link a newly
 - [ ] call hierarchy
 - [ ] [todo-show](https://atom.io/packages/todo-show)
 - [ ] [atom-alignment](https://atom.io/packages/atom-alignment)
-- [ ] Sublime-Style-Column-Selection
-- [ ] activate-power-mode
-- [ ] atom-beautify
-- [ ] atom-prettify
-- [ ] atom-typescript
-- [ ] color-picker
-- [ ] escape-utils
-- [ ] hex
-- [ ] html2jade-plus
-- [ ] jsformat
-- [ ] language-jade
-- [ ] linter
-- [ ] linter-eslint
-- [ ] linter-jscs
-- [ ] linter-tslint
-- [ ] pretty-json
-- [ ] tabs-to-spaces
-- [ ] tree-view-filter
+- [ ] [Sublime-Style-Column-Selection](https://atom.io/packages/Sublime-Style-Column-Selection)
+- [ ] [activate-power-mode](https://atom.io/packages/activate-power-mode)
+- [ ] [atom-beautify](https://atom.io/packages/atom-beautify). Lots of language support for code formatting. 
+- [ ] [atom-prettify](https://atom.io/packages/atom-prettify). Pretty format HTML code. 
+- [ ] [atom-typescript](https://atom.io/packages/atom-typescript). Feature that is missing is compile on save with no task runner configuration. Good task candidate. 
+- [ ] [color-picker](https://atom.io/packages/color-picker). Sleek color picking UI widget. 
+- [ ] [hex](https://atom.io/packages/hex). View the hex of any dump file. 
+- [ ] [tree-view-filter](https://atom.io/packages/tree-view-filter)
 
 ## Complete
 
 - [x] docblockr, doxy-commenting -> VS Code [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis) extension
 - [x] atom alignment -> VS Code [Align](https://marketplace.visualstudio.com/items?itemName=steve8708.Align)
+- [x] [escape-utils](https://atom.io/packages/escape-utils) => VS Code [Encode Decode](https://marketplace.visualstudio.com/items?itemName=mitchdenny.ecdc)
+- [x] [html2jade-plus](https://atom.io/packages/html2jade-plus) => VS Code [html2jade](https://marketplace.visualstudio.com/items?itemName=wmaurer.html2jade)
+- [x] [jsfmt](https://atom.io/packages/atom-jsfmt) => VS Code [Javascript Standard Format](https://marketplace.visualstudio.com/items?itemName=chenxsan.vscode-standard-format)
+- [x] [language-jade](https://atom.io/packages/language-jade) => Shipped with Editor. 
+- [x] [linter](https://atom.io/packages/linter) => Lots of linters available, including [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+- [x] [linter-eslint](https://atom.io/packages/eslint) => VS Code [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [x] [linter-jscs](https://atom.io/packages/linter-jscs) => VS Code [JSCS Linting](https://marketplace.visualstudio.com/items?itemName=ms-vscode.jscs)
+- [x] [linter-tslint](https://atom.io/packages/linter-tslint) => VS Code [tslint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
+- [x] [pretty-json](https://atom.io/packages/pretty-json) => VS Code [Pretty JSON](https://marketplace.visualstudio.com/items?itemName=mohsen1.prettify-json)
+- [x] [tabs-to-spaces](https://atom.io/packages/tabs-to-spaces) => [Untabify](https://marketplace.visualstudio.com/items?itemName=ilich8086.Untabify)
