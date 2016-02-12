@@ -7,6 +7,8 @@ This is a list of community requested extensions collected from a variety of sou
 For discussions on specific extensions and to add more information, link a newly created issue to one of the extensions names below. 
 
 - [ ] Scala language support. [500+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7755597-scala-support)
+- [ ] Haskel language support [2000+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7756542-haskell)
+- [ ] Action Script 3 language support [2000+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7757226-actionscript-3-support)
 - [ ] D programming language support. [1000+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7763160-support-the-d-programming-language)
 - [ ] [GCC linting](https://atom.io/packages/linter-gcc)
 - [ ] call hierarchy
