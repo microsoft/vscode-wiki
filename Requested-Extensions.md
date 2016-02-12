@@ -6,6 +6,7 @@ This is a list of community requested extensions collected from a variety of sou
 
 For discussions on specific extensions and to add more information, link a newly created issue to one of the extensions names below. 
 
+- [ ] More PHP language support. [3700+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7752606-php-intellisense)
 - [ ] Scala language support. [500+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7755597-scala-support)
 - [ ] Haskel language support [2000+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7756542-haskell)
 - [ ] Action Script 3 language support [2000+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7757226-actionscript-3-support)
