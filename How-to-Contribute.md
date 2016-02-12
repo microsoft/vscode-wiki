@@ -26,7 +26,8 @@ For native compilation, you will need [Python](https://www.python.org/downloads/
 * Python v2.7
 * `make`
 * A proper C/C++ compiler tool chain, for example [GCC](https://gcc.gnu.org)
-* [native-keymap](https://www.npmjs.com/package/native-keymap) needs X11, therefore `sudo apt-get install libx11-dev`
+* [native-keymap](https://www.npmjs.com/package/native-keymap) needs `libx11-dev`, run: `sudo apt-get install libx11-dev`
+* Building deb packages required `fakeroot`, run: `sudo apt-get install fakeroot`
 
 After you have these tools installed, run the following commands to check out Code and install dependencies:
 
