@@ -110,6 +110,9 @@ scripts\code --remote-debugging-port=9222
 #### Using the Chrome Developers Tools
 
 * Run the `Developer: Toggle Developer Tools` command from the Command Palette in your development instance of Code to launch the Chrome tools.
+* It's also possible to debug the released versions of Code, since the sources link to sourcemaps hosted online.
+
+![sourcemaps](http://i.imgur.com/KU3TdjO.png)
 
 The **extension host** process runs code implemented by a plugin. To debug extensions (including those packaged with Code) which run in the extension host process, you can use VS Code itself. Switch to the Debug viewlet, choose the `Attach to Extension Host` configuration, and press <kbd>F5</kbd>.
 
