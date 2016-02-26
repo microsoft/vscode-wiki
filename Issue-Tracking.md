@@ -45,6 +45,7 @@ https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+assignee%3Ajoaomoreno+is%3
 - Once an issue is fixed its state is changed to `closed`
 - If you are the issue's creator and/or resolver, please reassign the issue to someone else for verification
 - Once an issue is verified the `verified` label is added to it
+- Invalid, duplicates, etc should also be added the `verified` label so they get out of the queries
 
 ## Duplicates
 Duplicate bugs are closed with a comment `duplicates #issue`. Please try to reference an earlier issue **unless** a later issue is more appropriate (has more context, better scenarios, repro steps, etc.).
