@@ -34,13 +34,17 @@ At the beginning of the debt week we review the issues, pull requests assigned t
 ## Filing bugs as development team member
 When team members files a bug they perform steps of the inbox tracker for the issue they filed. Therefore bugs filed by the development team do not need to be triged by the inbox tracker.
  
-## Bug Verification
-Bugs need to be verified. 
-- Once a bug is fixed its state is changed to `closed` 
-- If it needs verification, assign it to another team member
-- Once verified, label the issue with `verified`
+## Verification
 
-> **Tip**: To see what bugs you need to verify, create a personal query: current milestone, assigned to me, closed, `-label:"verified"`
+Issues need to be verified.
+
+You can easily find the issues that need verification or reassignment from your part with the following query (remember to replace your username and the iteration name):
+
+https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+assignee%3Ajoaomoreno+is%3Aclosed+-label%3Averified+milestone%3A%22Feb+2016%22+
+
+- Once an issue is fixed its state is changed to `closed`
+- If you are the issue's creator and/or resolver, please reassign the issue to someone else for verification
+- Once an issue is verified the `verified` label is added to it
 
 ## Duplicates
 Duplicate bugs are closed with a comment `duplicates #issue`. Please try to reference an earlier issue **unless** a later issue is more appropriate (has more context, better scenarios, repro steps, etc.).
