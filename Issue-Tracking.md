@@ -43,7 +43,7 @@ You can easily find the issues that need verification or reassignment from your 
 https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+assignee%3Ajoaomoreno+is%3Aclosed+-label%3Averified+milestone%3A%22Feb+2016%22+
 
 - Once an issue is fixed its state is changed to `closed`
-- If you are the issue's creator and/or resolver, please reassign the issue to someone else for verification
+- If you are the issue's resolver, please reassign the issue to someone else for verification
 - Once an issue is verified the `verified` label is added to it
 - Invalid, duplicates, etc should also be added the `verified` label so they get out of the queries
 
