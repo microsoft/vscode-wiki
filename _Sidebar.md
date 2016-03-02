@@ -3,7 +3,7 @@
 * [[Iteration Plans]]
 * [[Breaking Changes]]
 * [[Development Process]]
- * [[Issue Tracking]]
+* [[Issue Tracking]]
 * [[Previous Releases]]
 * [[Related Projects]]
 
