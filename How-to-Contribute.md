@@ -1,6 +1,8 @@
 # Contributing to Code
 There are many ways to contribute to the Code project: logging bugs, submitting pull requests, reporting issues, and creating suggestions.
 
+After cloning and building the repo, check out the [issues list](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue). Issues labeled [`effort easy`](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3A%22effort+easy%22) are good candidates to pick up if you are in the code for the first time. 
+
 ## Build and Run From Source
 
 If you want to understand how Code works or want to debug an issue, you'll want to get the source, build it, and run the tool locally.
@@ -130,6 +132,10 @@ Even if you have push rights on the Microsoft/vscode repository, you should crea
 ## Pull Requests
 Before we can accept a pull request from you, you'll need to sign a [[Contributor License Agreement (CLA)|Contributor-License-Agreement]]. It is an automated process and you only need to do it once. The project [README.md](https://github.com/Microsoft/vscode/blob/master/README.md) details how to clone, build, run, debug and test Code.
 To enable us to quickly review and accept your pull requests, always create one pull request per issue. Never merge multiple requests in one. Be sure to follow our [[Coding Guidelines|Coding-Guidelines]] and keep code changes as small as possible. Avoid pure formatting changes to code that has not been modified otherwise. And, if possible, cover your changes with tests. 
+
+## Where to Contribute
+
+Check out the [issues list](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue). Issues labeled [`effort easy`](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3A%22effort+easy%22) are good candidates to pick up if you are in the code for the first time. 
 
 ## Suggestions
 We're also interested in your feedback for the future of Code. You can submit a suggestion or feature request through the issue tracker. To make this process more effective, we're asking that these include more information to help define them more clearly. 
