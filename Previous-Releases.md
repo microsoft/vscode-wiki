@@ -1,4 +1,3 @@
-# Visual Studio Code Stable Release History
 
 | Version | Date | Windows | OS X | Linux ia32 | Linux x64 |
 | ------- | ---- | ------- | ---- | ---------- | --------- |
