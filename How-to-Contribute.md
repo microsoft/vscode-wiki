@@ -36,20 +36,19 @@ After you have these tools installed, run the following commands to check out Co
 **OS X**
 
 	git clone https://github.com/microsoft/vscode
-	cd vscode && npm install -g mocha gulp
+	cd vscode
 	./scripts/npm.sh install
 
 **Windows**
 
 	git clone https://github.com/microsoft/vscode
 	cd vscode
-	npm install -g mocha gulp
 	scripts\npm install
 
 **Linux**
 
 	git clone https://github.com/microsoft/vscode
-	cd vscode && npm install -g mocha gulp
+	cd vscode
 	./scripts/npm.sh install --arch=x64
 	# for 32bit Linux
 	#./scripts/npm.sh install --arch=ia32
@@ -61,8 +60,8 @@ After you have these tools installed, run the following commands to check out Co
 ### Incremental Build
 From a terminal, where you have cloned the `vscode` repository, execute the following command to run the TypeScript incremental builder:
 
-``` bash
-gulp watch
+```bash
+npm run watch
 ```
 It will do an initial full build and then watch for file changes, compiling those changes incrementally, enabling a fast, iterative coding experience.
 
@@ -86,7 +85,7 @@ Windows
 
 You can identify the development version of Code by the Electron icon in the Dock or Taskbar.
 
-**Tip!** If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `gulp watch` first.
+**Tip!** If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `npm run watch` first.
 
 ### Debugging
 Code has a multi-process architecture and your code is executed in different processes.
