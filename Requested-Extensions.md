@@ -18,7 +18,6 @@ For discussions on specific extensions and to add more information, link a newly
 - [ ] Python language support. [1400+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7752336-wider-python-support)
 - [ ] [GCC linting](https://atom.io/packages/linter-gcc)
 - [ ] Call hierarchy. 
-- [ ] [todo-show](https://atom.io/packages/todo-show). Show todo, fixme, and changed. 
 - [ ] [atom-alignment](https://atom.io/packages/atom-alignment). Aligning multi-line, multi-cursor and multiple selections.
 - [ ] [Sublime-Style-Column-Selection](https://atom.io/packages/Sublime-Style-Column-Selection)
 - [ ] [activate-power-mode](https://atom.io/packages/activate-power-mode)
@@ -43,3 +42,4 @@ For discussions on specific extensions and to add more information, link a newly
 - [x] [linter-tslint](https://atom.io/packages/linter-tslint) => VS Code [tslint](https://marketplace.visualstudio.com/items?itemName=eg2.tslint)
 - [x] [pretty-json](https://atom.io/packages/pretty-json) => VS Code [Pretty JSON](https://marketplace.visualstudio.com/items?itemName=mohsen1.prettify-json)
 - [x] [tabs-to-spaces](https://atom.io/packages/tabs-to-spaces) => [Untabify](https://marketplace.visualstudio.com/items?itemName=ilich8086.Untabify)
+- [x] [todo-show](https://atom.io/packages/todo-show). Show todo, fixme, and changed. -> [vscode-todo](https://marketplace.visualstudio.com/items/MattiasPernhult.vscode-todo)
