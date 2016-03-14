@@ -25,6 +25,7 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 ## Languages
 |Language|Repository|
 |---|---|
+|C#|[Omnisharp](https://github.com/OmniSharp/omnisharp-vscode)
 |Go|[vscode-go](https://github.com/microsoft/vscode-go)|
 |LaTeX|[vscode-latex](https://github.com/microsoft/vscode-latex)|
 
