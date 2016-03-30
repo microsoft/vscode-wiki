@@ -1,4 +1,8 @@
-# 1.0 (March 31st)
+# 1.0 Release of VS Code
+
+As of March 31st we will have completed the engineering work for our “1.0” release of VS Code. However, with all of the excitement around [//Build](https://build.microsoft.com/), we've decided to take this opportunity to hold back our "1.0" release for just a couple of weeks, to get some more community testing on the product. Our “Insiders” release has been updated to match what we plan to ship in mid April. We encourage you to [download it today](http://code.visualstudio.com/insiders?wt.mc_id=DX_835018&utm_source=blogs&utm_medium=ms%20editorial&utm_campaign=GH%20Roadmap%201-0%20Update) ([release notes](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/latest.md)), use it, and let us know if you find any critical ship stopping issues. In the meantime we're going to finish up work on the [1.0 documentation](https://github.com/Microsoft/vscode-docs/tree/vnext/docs), clean up debt, unwind a bit, and start planning the future of Visual Studio Code.
+
+----
 
 ## Declare General Availability ("GA")
 * Accessibility
