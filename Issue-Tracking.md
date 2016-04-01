@@ -26,10 +26,8 @@ The **inbox tracker** should do the following initial triage:
 - If the issue needs to be fixed in this release, assign it to the current milestone (eg: blocks a scenario, completes a new feature, etc.). Else, assign it to the **Backlog**.
 - If needed, follow-up with the author.
 
-### Fix planning
-At the beginning of the endgame we review the open issues and adjust the milestone if needed, moving to the next milestone or back to the backlog.
-
-At the beginning of the debt week we review the issues, pull requests assigned to the backlog milestone, and assign the ones we want to address to the current milestone.
+### Planning
+During planning we review the open issues and assign the ones we plan to work on to the current milestone. Issues that do not make it for the current milestone are either assigned to the next milestone or they are moved back to the backlog milestone. 
 
 ## Filing bugs as development team member
 When team members files a bug they perform steps of the inbox tracker for the issue they filed. Therefore bugs filed by the development team do not need to be triged by the inbox tracker.
