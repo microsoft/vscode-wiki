@@ -1,5 +1,5 @@
 ## March
-* [Iteration Plan](../issues/3555) (work in progress)
+* [Iteration Plan](../issues/3555) 
 * [Test Plan](https://github.com/Microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22March+2016%22)
 
 ## February
