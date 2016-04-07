@@ -6,27 +6,15 @@ This is a list of community requested extensions collected from a variety of sou
 
 For discussions on specific extensions and to add more information, link a newly created issue to one of the extensions names below. 
 
-- [ ] Xamarin
-- [ ] [Live CSS reloading](http://livestyle.io/docs/). 
 - [ ] Auto complete relative paths in Javascript files. See [SO question](https://stackoverflow.com/questions/35415444/is-it-possible-to-auto-complete-relative-paths-in-vscode) for details.
-- [ ] More PHP language support. [3700+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7752606-php-intellisense)
-- [ ] Scala language support. [500+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7755597-scala-support)
-- [ ] Haskel language support [2000+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7756542-haskell)
-- [ ] Action Script 3 language support [2000+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7757226-actionscript-3-support)
-- [ ] D programming language support. [1000+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7763160-support-the-d-programming-language)
-- [ ] Rust programming language support. [1000+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7755504-support-rust)
-- [ ] Python language support. [1400+ votes on UserVoice](https://visualstudio.uservoice.com/forums/293070-visual-studio-code/suggestions/7752336-wider-python-support)
 - [ ] [GCC linting](https://atom.io/packages/linter-gcc)
-- [ ] Call hierarchy. 
 - [ ] [atom-alignment](https://atom.io/packages/atom-alignment). Aligning multi-line, multi-cursor and multiple selections.
 - [ ] [Sublime-Style-Column-Selection](https://atom.io/packages/Sublime-Style-Column-Selection)
 - [ ] [activate-power-mode](https://atom.io/packages/activate-power-mode)
 - [ ] [atom-beautify](https://atom.io/packages/atom-beautify). Lots of language support for code formatting. 
-- [ ] [atom-prettify](https://atom.io/packages/atom-prettify). Pretty format HTML code. 
 - [ ] [atom-typescript](https://atom.io/packages/atom-typescript). Feature that is missing is compile on save with no task runner configuration. Good task candidate. 
 - [ ] [color-picker](https://atom.io/packages/color-picker). Sleek color picking UI widget. 
 - [ ] [hex](https://atom.io/packages/hex). View the hex of any dump file. 
-- [ ] [tree-view-filter](https://atom.io/packages/tree-view-filter). Limits files show in tree view. 
 
 ## Complete
 
