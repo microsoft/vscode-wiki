@@ -23,3 +23,6 @@ The `core` of Code is fully implemented in [TypeScript](https://github.com/micro
    - inherits: `common`, `browser`, `node`
 - `electron-main`: Source code that requires the [Electron main-process](https://github.com/atom/electron/tree/master/docs#modules-for-the-main-process) APIs
    - inherits: `common`, `node`
+
+# Dependency Injection
+ TBD @jrieken
