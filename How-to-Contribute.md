@@ -110,7 +110,7 @@ scripts\code --remote-debugging-port=9222
 * Choose the `Attach to VSCode` launch configuration from the launch dropdown in the Debug viewlet and press `F5`.
 
 
-#### Using the Chrome Developers Tools
+#### Using the Chrome Developer Tools
 
 * Run the `Developer: Toggle Developer Tools` command from the Command Palette in your development instance of Code to launch the Chrome tools.
 * It's also possible to debug the released versions of Code, since the sources link to sourcemaps hosted online.
@@ -123,7 +123,7 @@ The **extension host** process runs code implemented by a plugin. To debug exten
 Press <kbd>CMD+SHIFT+T</kbd> (<kbd>CTRL+SHIFT+T</kbd> on Windows) to start the unit tests or run the tests directly from a terminal by running `./scripts/test.sh` from the `vscode` folder (`scripts\test` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/master/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
 
 ### Linting
-We use [tslint](https://github.com/palantir/tslint) for linting our sources. You can run tslint across the sources by calling `gulp tslint` from a terminal or command prompt. You can also run `gulp tslint` as a Code task by pressing <kbd>CMD+P</kbd> (<kbd>CTRL+P</kbd> on Windows) and enter `task tslint` In this way the tslint warnings show up in the `Errors and Warnings` quick box and you can navigate to them from inside Code. 
+We use [tslint](https://github.com/palantir/tslint) for linting our sources. You can run tslint across the sources by calling `gulp tslint` from a terminal or command prompt. You can also run `gulp tslint` as a Code task by pressing <kbd>CMD+P</kbd> (<kbd>CTRL+P</kbd> on Windows) and entering `task tslint`. Warnings from tslint show up in the `Errors and Warnings` quick box and you can navigate to them from inside Code. 
 
 To lint the source as you make changes you can install the [tslint extension](https://marketplace.visualstudio.com/items/eg2.tslint). 
 
