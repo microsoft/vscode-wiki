@@ -25,4 +25,19 @@ The `core` of Code is fully implemented in [TypeScript](https://github.com/micro
    - may use code from: `common`, `node`
 
 # Dependency Injection
- TBD @jrieken
+
+The code is organised around services of which most are defined in the `platform` layer. Services get to its clients via `constructor injection`. 
+
+A service definition is two parts: (1) the interface of a service, and (2) a service identifier - the latter is required because TypeScript doesn't use nominal but structural typing. A service identifier is a decoration (as proposed for ES7) and should have the same name as the service interface. 
+
+Declaring a service dependency happens by adding a corresponding decoration to a constructor argument. In the snippet below `@IModelService` is the service identifier decoration and `IModelService` is the (optional) type annotation for this argument.
+
+```javascript
+class Client {
+  constructor(@IModelService modelService: IModelService) {
+    // use modelService
+  }
+}
+```
+
+Use the instantiation service to create instances for service consumers, like so `instantiationService.createInstance(Client)`. Usually, this is done for you when being registered as a contribution, like a Viewlet or Language.
