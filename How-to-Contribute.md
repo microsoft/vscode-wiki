@@ -65,7 +65,10 @@ From a terminal, where you have cloned the `vscode` repository, execute the foll
 ```bash
 npm run watch
 ```
+
 It will do an initial full build and then watch for file changes, compiling those changes incrementally, enabling a fast, iterative coding experience.
+
+**Tip!** Linux users may hit a ENOSPC error when running `npm run watch`, to get around this follow instructions in the [Linux FAQ](https://code.visualstudio.com/docs/supporting/faq#_linux-faq).
 
 **Tip!** Open VS Code on the folder where you have cloned the `vscode` repository and press <kbd>CMD+SHIFT+B</kbd> (<kbd>CTRL+SHIFT+B</kbd> on Windows, Linux) to start the builder. To view the build output open the Output stream by pressing <kbd>CMD+SHIFT+U</kbd>.
 
