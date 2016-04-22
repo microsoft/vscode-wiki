@@ -9,15 +9,13 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 ### Installing Prerequisites
 
-You'll need [Node.JS](https://nodejs.org/en/), at least `v4`.
-
-We suggest to use `npm@2`, you can install it with `npm install -g npm@2`.
+You'll need [Node.JS](https://nodejs.org/en/), at least `v5.10`.
 
 Code includes node module dependencies that require native compilation. To ensure the compilation is picking up the right version of header files from the Electron Shell, we have our own script to run the installation via `npm`.
 
 For native compilation, you will need [Python](https://www.python.org/downloads/) (version `v2.7` recommended, `v3.x.x` is __*not*__ supported), as well as a C/C++ compiler tool chain.
 
-**Windows:**
+**Windows**
 * In addition to [Python v2.7](https://www.python.org/downloads/release/python-279/), make sure you have a PYTHON environment variable set to `drive:\path\to\python.exe`, not to a folder
 * [Visual Studio 2013 for Windows Desktop](https://www.visualstudio.com/en-us/news/vs2013-community-vs.aspx) or [Visual Studio 2015](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx), make sure to select the option to install all C++ tools and the Windows SDK
 
@@ -37,23 +35,29 @@ After you have these tools installed, run the following commands to check out Co
 
 **OS X**
 
-	git clone https://github.com/microsoft/vscode
-	cd vscode
-	./scripts/npm.sh install
+```bash
+git clone https://github.com/microsoft/vscode
+cd vscode
+./scripts/npm.sh install
+```
 
 **Windows**
 
-	git clone https://github.com/microsoft/vscode
-	cd vscode
-	scripts\npm install
+```bash
+git clone https://github.com/microsoft/vscode
+cd vscode
+scripts\npm install
+```
 
 **Linux**
 
-	git clone https://github.com/microsoft/vscode
-	cd vscode
-	./scripts/npm.sh install --arch=x64
-	# for 32bit Linux
-	#./scripts/npm.sh install --arch=ia32
+```bash
+git clone https://github.com/microsoft/vscode
+cd vscode
+./scripts/npm.sh install --arch=x64
+# for 32bit Linux
+#./scripts/npm.sh install --arch=ia32
+```
 
 **Note:** For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/) .
 
@@ -80,13 +84,17 @@ Errors and warnings will show in the console while developing Code. If you use V
 ### Validate your changes
 To test the changes you launch a development version of VS Code on the workspace `vscode`, which you are currently editing.
 
-OS X and Linux
+**OS X and Linux**
 
-	./scripts/code.sh
+```bash
+./scripts/code.sh
+```
 
-Windows
+**Windows**
 
-	.\scripts\code.bat
+```bash
+.\scripts\code.bat
+```
 
 You can identify the development version of Code by the Electron icon in the Dock or Taskbar.
 
