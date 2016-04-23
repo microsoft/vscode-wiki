@@ -1,6 +1,6 @@
 # Code Organization
 
-Code consists a layered and modular `core` that can be extended using extensions. Extensions are run in a separate process refered to as the
+Code consists of a layered and modular `core` that can be extended using extensions. Extensions are run in a separate process refered to as the
 `extension host.` Extensions are implemented by utilizing the [extension API](https://code.visualstudio.com/docs/extensions/overview).
 
 # Layers
