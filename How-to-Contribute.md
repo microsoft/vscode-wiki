@@ -28,7 +28,9 @@ For native compilation, you will need [Python](https://www.python.org/downloads/
 * Python v2.7
 * `make`
 * A proper C/C++11 compiler tool chain, for example [GCC](https://gcc.gnu.org)
-* [native-keymap](https://www.npmjs.com/package/native-keymap) needs `libx11-dev`, run: `sudo apt-get install libx11-dev`. For Fedora, please use `sudo dnf install libX11-devel.x86_64`.
+* [native-keymap](https://www.npmjs.com/package/native-keymap) needs `libx11-dev`.
+ * On Debian-based Linux: `sudo apt-get install libx11-dev`
+ * On Red Hat-based Linux: `sudo yum install libx11-devel.x86_64 # or .i686`.
 * Building deb and rpm packages requires `fakeroot`, run: `sudo apt-get install fakeroot`
 
 After you have these tools installed, run the following commands to check out Code and install dependencies:
