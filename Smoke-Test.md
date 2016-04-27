@@ -1,3 +1,5 @@
+This page describes the VS Code Smoke test, a manual test case that we execute before we release VS Code to the public on all platforms.
+
 #### Prereqs
 
 * For the best debugging experience you'll need node version 0.12.x (or higher)
