@@ -3,6 +3,7 @@
 * [[Iteration Plans]]
 * [[Breaking Changes]]
 * [[Development Process]]
+* [[Smoke Test]]
 * [[Issue Tracking]]
 * [[Previous Releases]]
 * [[Related Projects]]
