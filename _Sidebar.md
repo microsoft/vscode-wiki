@@ -1,10 +1,9 @@
 **Project Management**
 * [[Roadmap]]
 * [[Iteration Plans]]
-* [[Breaking Changes]]
 * [[Development Process]]
-* [[Smoke Test]]
 * [[Issue Tracking]]
+* [[Breaking Changes]]
 * [[Previous Releases]]
 * [[Related Projects]]
 
@@ -13,6 +12,7 @@
 * [[Submitting Bugs and Suggestions]]
 * [[Code Organization]]
 * [[Coding Guidelines]]
+* [[Smoke Test]]
 * [[Contributor License Agreement]]
 * [Requested Extensions](https://github.com/Microsoft/vscode/wiki/Requested-Extensions)
 
