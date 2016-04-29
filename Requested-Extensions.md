@@ -6,19 +6,16 @@ This is a list of community requested extensions collected from a variety of sou
 
 For discussions on specific extensions and to add more information, link a newly created issue to one of the extensions names below. 
 
-- [ ] Auto complete relative paths in Javascript files. See [SO question](https://stackoverflow.com/questions/35415444/is-it-possible-to-auto-complete-relative-paths-in-vscode) for details.
 - [ ] [GCC linting](https://atom.io/packages/linter-gcc)
 - [ ] [atom-alignment](https://atom.io/packages/atom-alignment). Aligning multi-line, multi-cursor and multiple selections.
 - [ ] [Sublime-Style-Column-Selection](https://atom.io/packages/Sublime-Style-Column-Selection)
-- [ ] [activate-power-mode](https://atom.io/packages/activate-power-mode)
 - [ ] [atom-beautify](https://atom.io/packages/atom-beautify). Lots of language support for code formatting. 
 - [ ] [atom-typescript](https://atom.io/packages/atom-typescript). Feature that is missing is compile on save with no task runner configuration. Good task candidate. 
-- [ ] [color-picker](https://atom.io/packages/color-picker). Sleek color picking UI widget. 
 - [ ] [hex](https://atom.io/packages/hex). View the hex of any dump file. 
 - [ ] [qmake / Qt project file](http://doc.qt.io/qt-5/qmake-project-files.html).  Syntax highlighting and auto-complete.
 
 ## Complete
-
+- [x] Auto complete relative paths in Javascript files. See [SO question](https://stackoverflow.com/questions/35415444/is-it-possible-to-auto-complete-relative-paths-in-vscode) for details. Covered by the [Path Intellisense Extension](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 - [x] docblockr, doxy-commenting -> VS Code [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis) extension
 - [x] atom alignment -> VS Code [Align](https://marketplace.visualstudio.com/items?itemName=steve8708.Align)
 - [x] [escape-utils](https://atom.io/packages/escape-utils) => VS Code [Encode Decode](https://marketplace.visualstudio.com/items?itemName=mitchdenny.ecdc)
@@ -32,3 +29,7 @@ For discussions on specific extensions and to add more information, link a newly
 - [x] [pretty-json](https://atom.io/packages/pretty-json) => VS Code [Pretty JSON](https://marketplace.visualstudio.com/items?itemName=mohsen1.prettify-json)
 - [x] [tabs-to-spaces](https://atom.io/packages/tabs-to-spaces) => [Untabify](https://marketplace.visualstudio.com/items?itemName=ilich8086.Untabify)
 - [x] [todo-show](https://atom.io/packages/todo-show). Show todo, fixme, and changed. -> [vscode-todo](https://marketplace.visualstudio.com/items/MattiasPernhult.vscode-todo)
+- [x] [color-picker](https://atom.io/packages/color-picker). Sleek color picking UI widget. [Color Picker](https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color) 
+
+# Currently not implementable
+- [activate-power-mode](https://atom.io/packages/activate-power-mode) - not possible without DOM access in the API
