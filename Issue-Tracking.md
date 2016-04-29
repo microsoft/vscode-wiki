@@ -36,7 +36,7 @@ When team members files a bug they perform steps of the inbox tracker for the is
 
 Issues need to be verified.
 
-The issues that need verification or reassignment from your part on [VSCode](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+assignee%3Ajoaomoreno+is%3Aclosed+-label%3Averified+-label%3Atestplan-item+) and [across all GitHub projects](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+assignee%3Ajoaomoreno+is%3Aclosed+-label%3Averified+-label%3Atestplan-item+) (remember to change the query to use your username) follow the following rules:
+The issues that need verification or reassignment from your part on [VSCode](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+assignee%3Ajoaomoreno+is%3Aclosed+-label%3Averified+-label%3Atestplan-item+-label%3Aquestion) and [across all GitHub projects](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+assignee%3Ajoaomoreno+is%3Aclosed+-label%3Averified+-label%3Atestplan-item+-label%3Aquestion) (remember to change the query to use your username) follow the following rules:
 
 - Once an issue is fixed its state is changed to `closed`
 - If you are the issue's resolver, please reassign the issue to someone else for verification
