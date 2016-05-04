@@ -18,4 +18,4 @@ GUI Based: Navigate to Control Panel -> Programs -> Program and Features. Search
 
 ## Linux
 
-TODO 
+Remove `.deb` or `.rpm` package. 
