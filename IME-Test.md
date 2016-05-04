@@ -24,7 +24,11 @@ The golden standard is Word
 
 * Type `gksrmf` and press space. Here is how Word looks like doing this (it should be "한글"):
 
-    [[images/ime/windows-korean-word.gif]]
+    [[images/ime/windows-korean-word1.gif]]
+
+* Type `dkssudgktpdy` in a new file. Here is how Word looks like doing this:
+
+    [[images/ime/windows-korean-word2.gif]]
 
 ## [Windows] Vietnamese with UniKey
 * Download and Run [UniKey](http://www.unikey.org/bdownload.php#uk)
@@ -61,5 +65,6 @@ The golden standard is Word
 
 ---
 Content created from:
+* [#1168](https://github.com/Microsoft/vscode/issues/1168)
 * [#2250](https://github.com/Microsoft/vscode/issues/2250)
 * [#2374](https://github.com/Microsoft/vscode/issues/2374)
