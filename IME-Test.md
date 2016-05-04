@@ -27,6 +27,23 @@ The golden standard is Word
     [[images/ime/windows-korean-word.gif]]
 
 ## [Windows] Vietnamese with UniKey
+* Download and Run [UniKey](http://www.unikey.org/bdownload.php#uk)
+* Click the button with a down arrow:
+
+    [[images/windows-vietnamese-ime-1.png]]
+
+* Get the following settings:
+
+    [[images/windows-vietnamese-ime-2.png]]
+
+* Focus VS Code and click once UniKey's system tray entry (next to the date) to toggle on Vietnamese mode (get it to be a V):
+
+    [[images/windows-vietnamese-ime-2.png]]
+
+* Type `Tooi` => it should transform to => Tôi. Here is how Word looks like doing this:
+
+    [[images/ime/windows-vietnamese-word.gif]]
+
 
 ## [Windows] Chinese
 * Type `.` or `,` in full width form.
