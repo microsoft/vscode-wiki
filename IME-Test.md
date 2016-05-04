@@ -38,7 +38,7 @@ The golden standard is Word
 
 * Focus VS Code and click once UniKey's system tray entry (next to the date) to toggle on Vietnamese mode (get it to be a V):
 
-    [[images/ime/windows-vietnamese-ime-2.png]]
+    [[images/ime/windows-vietnamese-ime-3.png]]
 
 * Type `Tooi` => it should transform to => Tôi. Here is how Word looks like doing this:
 
