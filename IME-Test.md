@@ -22,9 +22,9 @@ The golden standard is Word
 
     [[images/ime/windows-korean-ime.png]]
 
-* Type `gksrmf`(it should be "한글")
-* Press space
-* You should get "한글"
+* Type `gksrmf` and press space. Here is how Word looks like doing this (it should be "한글"):
+
+    [[images/ime/windows-korean-word.gif]]
 
 ## [Windows] Vietnamese with UniKey
 
