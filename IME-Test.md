@@ -3,15 +3,23 @@ Input method smoke test
 The golden standard is Word
 
 ## [Windows] Japanese
-* Add the Japanese input method (`Settings > Time & Language > Region & language > Add a language > Japanese`)
-* Focus VS Code and switch input method to Japanese and choose Hiragana:
+* Add the Japanese input method
+ * `Settings > Time & Language > Region & language > Add a language > Japanese`
+
+* Focus VS Code and switch OS input method to Japanese and choose Hiragana:
 
     [[images/ime/windows-japanese-ime.png]]
 
-* Focus VS Code and type for example: `sennsei` or `konnichiha` or `mikann`
+* Type the following words: `sennsei` or `konnichiha` or `mikann`. Here is how Word looks like doing this:
+
+    [[images/ime/windows-japanese-word.gif]]
 
 ## [Windows] Korean
-* Add the Korean input method (`Settings > Time & Language > Region & language > Add a language > Korean`)
+* Add the Korean input method
+ * `Settings > Time & Language > Region & language > Add a language > Korean`
+
+* Focus VS Code and switch OS input method to Korean and choose Hangul:
+
     [[images/ime/windows-korean-ime.png]]
 
 * Type `gksrmf`(it should be "한글")
