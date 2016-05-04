@@ -50,7 +50,17 @@ The golden standard is Word
 
 
 ## [Windows] Chinese
-* Type `.` or `,` in full width form.
+* Add the Chinese (Simplified) input method
+ * `Settings > Time & Language > Region & language > Add a language > Chinese (Simplified)`
+
+* Focus VS Code and switch OS input method to Chinese and choose Chinese mode:
+
+    [[images/ime/windows-chinese-ime.png]]
+
+* Type `.` or `,` in full width form. They should be typed in immediately. Here is how Word looks like doing this:
+
+    [[images/ime/windows-chinese-word.gif]]
+
 
 ## [Mac] The hold input method
 * Long press `e`
