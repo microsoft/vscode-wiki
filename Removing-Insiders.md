@@ -1,10 +1,14 @@
 ## Mac
 
-Remove Visual Studio Code - Insiders.app
+1) Remove Visual Studio Code - Insiders.app
 
 GUI Based: Open Finder -> Applications. Right click "Visual Studio Code - Insiders.app" and move it to the trash. 
 
 Terminal: `rm -r /Applications/Visual\ Studio\ Code\ -\ Insiders.app`
+
+2) Remove `.vscode-insiders` folder
+
+Terminal: `rm -r .vscode-insiders`
 
 ## Windows
 
