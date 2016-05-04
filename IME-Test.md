@@ -78,3 +78,4 @@ Content created from:
 * [#1168](https://github.com/Microsoft/vscode/issues/1168)
 * [#2250](https://github.com/Microsoft/vscode/issues/2250)
 * [#2374](https://github.com/Microsoft/vscode/issues/2374)
+* [#5615](https://github.com/Microsoft/vscode/issues/5615)
