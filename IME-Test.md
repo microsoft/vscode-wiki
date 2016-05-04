@@ -6,13 +6,13 @@ The golden standard is Word
 * Add the Japanese input method (`Settings > Time & Language > Region & language > Add a language > Japanese`)
 * Focus VS Code and switch input method to Japanese and choose Hiragana:
 
-    [[images/ime/windows-japanese-ime.PNG]]
+    [[images/ime/windows-japanese-ime.png]]
 
 * Focus VS Code and type for example: `sennsei` or `konnichiha` or `mikann`
 
 ## [Windows] Korean
 * Add the Korean input method (`Settings > Time & Language > Region & language > Add a language > Korean`)
-    [[images/ime/windows-korean-ime.PNG]]
+    [[images/ime/windows-korean-ime.png]]
 
 * Type `gksrmf`(it should be "한글")
 * Press space
