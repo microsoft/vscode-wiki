@@ -41,7 +41,7 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
 * Select File > Preferences > Keyboard Shortcuts (OS X: Code > Preferences > Keyboard Shortcuts) 
   * Change a binding of an action and verify the new binding works. e.g. add:
 		{ "key": "ctrl+u", "command": "workbench.action.toggleSidebarPosition" }
-  * Verify that all navigation commands from Goto menu work
+* Verify that all navigation commands from Goto menu work
 	
 #### Search
 * Use Search (CTRL+SHIFT+F, ⌘+SHIFT+F) to find 'body'
