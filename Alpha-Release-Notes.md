@@ -6,6 +6,6 @@ The release notes are contained in the following queries.
 
 > Issues are ordered by most recently closed. 
 
-## [current month's iteration plan](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aclosed+label%3Aiteration-plan)
+## [current month's iteration plan](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Aiteration-plan+)
 
 > Select the current month. 
