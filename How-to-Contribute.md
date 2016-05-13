@@ -31,7 +31,7 @@ For native compilation, you will need [Python](https://www.python.org/downloads/
 * [native-keymap](https://www.npmjs.com/package/native-keymap) needs `libx11-dev`.
  * On Debian-based Linux: `sudo apt-get install libx11-dev`
  * On Red Hat-based Linux: `sudo yum install libx11-devel.x86_64 # or .i686`.
-* Building deb and rpm packages requires `fakeroot`, run: `sudo apt-get install fakeroot`
+* Building deb and rpm packages requires `fakeroot` and `rpm`, run: `sudo apt-get install fakeroot rpm`
 
 After you have these tools installed, run the following commands to check out Code and install dependencies:
 
