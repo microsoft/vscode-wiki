@@ -2,6 +2,8 @@ The Alpha build is designed for early adopters wanting a nightly release. Alpha 
 
 The release notes are contained in the following queries. 
 
+## [commit log](https://github.com/Microsoft/vscode/commits/master)
+
 ## [recently closed commits](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed) 
 
 > Issues are ordered by most recently closed. 
@@ -10,4 +12,3 @@ The release notes are contained in the following queries.
 
 > Select the current month. 
 
-## [commit log]
