@@ -1,5 +1,3 @@
-#Coding Guidelines
-
 ## Git
 
 We prefer a **rebase workflow** and occasional **feature branches**. Most work happens directly on the `master` branch. For that reason, we recommend setting the `pull.rebase` setting to true.
