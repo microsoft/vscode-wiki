@@ -1,5 +1,6 @@
 ## May
 * [Iteration Plan](../issues/6105) 
+* [Test Plan](https://github.com/Microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22May+2016%22)
 
 ## April
 * [Iteration Plan](../issues/4888) 
