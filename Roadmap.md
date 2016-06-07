@@ -23,7 +23,7 @@ VS Code is a young product and there still missing features and experiences that
 * Global Replace
 * Fast switching between workspaces 
 * Multiple folders inside a single workspace
-* [Accessiblity](https://github.com/Microsoft/vscode/issues/6583) 
+* [Accessibility](https://github.com/Microsoft/vscode/issues/6583) 
 
 ## Improved Extension creation, discovery and management
 
