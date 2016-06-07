@@ -1,5 +1,3 @@
-# Roadmap
-
 With the "1.0" release behind us, now is a good time to look towards the future. We typically look out 6 to 12 months, establish a set of themes we want to work towards, and then schedule work each milestone supporting those themes. VS Code will continue to ship monthly and we'll make progress against each of the following themes during each iteration.
 
 ## Improve the Getting Started Experience
