@@ -57,6 +57,12 @@ We will continue to improve our code editing and navigation experiences by partn
 * Node Debugger: Step over uninteresting (generated) code
 * Improved npm support and help to keep the `package.json` consistent with the installed node modules
 
+## Engineering Items
+
+We will continue to improve the engineering of VS Code itself and add items as needed:
+* Improve crash logging
+* Improve crash diagnostics (e.g. client side log).
+
 ## Summary
 
 These are examples of just some of the work we will be focusing on in the next 6 to 12 months. We will provide much more detail in each of our [monthly iteration plans](https://github.com/Microsoft/vscode/wiki/Iteration-Plans) so follow along and let us know what you think!
