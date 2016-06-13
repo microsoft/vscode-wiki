@@ -8,9 +8,15 @@ At the end of each iteration we want to have a version of Code that can be used 
 
 ## Planning
 
-Before each milestone we will prioritize features to implement and bugs to fix in the upcoming iteration. The result of this meeting will be a set of features on the [[Roadmap]] along with a set of bugs marked to be fixed in the upcoming Milestone. Together, this encompasses the planned work for the upcoming month.
-
-Each feature should have design or description of the feature that can be contributed by, augmented, and commented upon by the community. 
+Before each milestone we will prioritize features to implement and bugs to fix in the upcoming iteration. Bugs are assigned the milestone for the iteration. For new features we create new issues and label them with `Plan Item`. Together, this encompasses the planned work for the upcoming month.
+ 
+The `Definition of Done` criteria for a plan item are:
+- [ ] Test Plan Item created
+- [ ] Key board accessible
+- [ ] Screen reader accessible
+- [ ] Works with the different themes, including the high contrast theme
+- [ ] Telemetry events in place
+- [ ] Release notes updated
 
 ## Inside an Iteration
 We work in weekly segments:
