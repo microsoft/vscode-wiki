@@ -63,6 +63,10 @@ cd vscode
 
 **Note:** For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
 
+### Packaging
+
+VS Code can be built into platform-specific packages via `gulp` tasks. See [gulpfile.vscode.js](https://github.com/Microsoft/vscode/blob/master/build/gulpfile.vscode.js) for the available packaging tasks.
+
 ## Development Workflow
 
 ### Incremental Build
