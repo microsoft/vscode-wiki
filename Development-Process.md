@@ -8,9 +8,9 @@ At the end of each iteration we want to have a version of Code that can be used 
 
 ## Planning
 
-Before each milestone we will prioritize features to implement and bugs to fix in the upcoming iteration. Bugs are assigned the milestone for the iteration. For new features we create new issues and label them with `Plan Item`. Together, this encompasses the planned work for the upcoming month.
+Before each milestone we will prioritize features to implement and bugs to fix in the upcoming iteration. Bugs are assigned the milestone for the iteration. For new features we create new issues and label them with `Plan Item`. Plan Items include a check list for the `Definition of Done`. The Bugs, Plan Items, and Feature Requests assigned to a milestone encompasses the planned work for the upcoming month. For each Plan Item we include the check list for b
  
-The `Definition of Done` criteria for a plan item are:
+### Definition of Done
 - [ ] Test Plan Item created
 - [ ] Key board accessible
 - [ ] Screen reader accessible
