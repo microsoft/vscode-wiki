@@ -10,4 +10,4 @@ Over the course of an iteration the contents of the Insiders builds will change 
 
 * [Current month's iteration plan](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Aiteration-plan+)
 
-* [Current month's Release Notes on GitHub](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/June_2016.md)
+* [Current month's Release Notes on GitHub](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes)
