@@ -14,6 +14,7 @@ We use tabs, not spaces.
 * Use PascalCase for `enum` values
 * Use camelCase for `function` and `method` names
 * Use camelCase for `property` names and `local variables`
+* Use ALL_CAPS for `const`
 * Use whole words in names when possible
 
 ## Types
