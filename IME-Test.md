@@ -52,7 +52,7 @@ The golden standard is Word
     [[images/ime/windows-vietnamese-word.gif]]
 
 ---
-## [Windows] Chinese
+## [Windows] Chinese Test 1
 * Add the Chinese (Simplified) input method
  * `Settings > Time & Language > Region & language > Add a language > Chinese (Simplified)`
 
@@ -63,6 +63,19 @@ The golden standard is Word
 * Type `.` or `,` in full width form. They should be typed in immediately. Here is how Word looks like doing this:
 
     [[images/ime/windows-chinese-word.gif]]
+
+---
+## [Windows] Chinese Test 2
+* Add the Chinese (Simplified) input method
+ * `Settings > Time & Language > Region & language > Add a language > Chinese (Simplified)`
+
+* Focus VS Code and switch OS input method to Chinese and choose Chinese mode and make sure the input method's name is Microsoft Pinyin:
+
+    [[images/ime/windows-chinese-ime.png]]
+
+* Type `ni` press `Space` and then `hao` and press `Space`. They should be typed in immediately. Here is how Word looks like doing this:
+
+    [[images/ime/windows-chinese2-word.gif]]
 
 
 ---
