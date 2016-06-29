@@ -50,7 +50,7 @@ Verification is a service that you request from others either implicitly with th
 - [bugs to be verified, all GitHub projects](https://github.com/issues?utf8=✓&q=is%3Aissue+is%3Aclosed+-label%3Averified+label%3Abug+repo%3AMicrosoft%2Fvscode)
 - [verification needed, all GitHub projects](https://github.com/issues?utf8=✓&q=is%3Aissue+is%3Aclosed+-label%3Averified+label%3Averification-needed)
 
-Follow the following rules:
+Follow the these rules:
 
 1. Query for issues that are to be verified
 2. Preferably start with issues you created but didn't close
