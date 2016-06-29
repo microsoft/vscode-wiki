@@ -3,9 +3,9 @@ This page describes how we track issues in the `vscode` repository.
 ## Popular queries
 
 - [Inbox tracking](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Atestplan-item+)
-- [To be Verified by Me](https://github.com/issues/assigned?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+-label%3Averified+-label%3Atestplan-item+-label%3Aquestion+-label%3A%22needs+more+info%22+-label%3Aduplicate+-label%3Afeature-request+-label%3Aerror-telemetry+repo%3AMicrosoft%2Fvscode) - [Microsoft/vscode](https://github.com/Microsoft/vscode) only
-- [To be Verified by all](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+-label%3Averified+-label%3Atestplan-item+-label%3Aquestion+-label%3A%22needs+more+info%22+-label%3Aduplicate+-label%3Afeature-request+-label%3Aerror-telemetry+repo%3AMicrosoft%2Fvscode) - [Microsoft/vscode](https://github.com/Microsoft/vscode) only
-- [To be Verified by Me](https://github.com/issues/assigned?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+-label%3Averified+-label%3Atestplan-item+-label%3Aquestion+-label%3A%22needs+more+info%22+-label%3Aduplicate+-label%3Afeature-request+-label%3Aerror-telemetry) - all of GitHub
+- [Bugs to be Verified](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+label%3Abug+-label%3Averified+is%3Aclosed) - VS Code only
+- [Verification Needed](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed) - VS Code only
+
 
 ## Inbox tracking and Issue triage
 New issues or pull requests submitted by the community are triaged by a team member. The team rotates the inbox tracker on a weekly basis.
@@ -46,7 +46,7 @@ Issues need to be verified.
 Verification is a service that you request from others either implicitly with the `bug`-label or explicitly with the `verification-needed`-label. Find issue that are to be verified with these queries
 
 1. [bugs to be verified, VS Code](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+label%3Abug+-label%3Averified+is%3Aclosed)
-2. [verification needed, VS Code](https://github.com/Microsoft/vscode/issues?utf8=✓&q=is%3Aissue%20label%3Averification-needed%20-label%3Averified%20is%3Aclosed%20)
+2. [verification needed, VS Code](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed)
 3. [bugs to be verified, all GitHub projects](https://github.com/issues?utf8=✓&q=is%3Aissue+is%3Aclosed+-label%3Averified+label%3Abug+repo%3AMicrosoft%2Fvscode)
 4. [verification needed, all GitHub projects](https://github.com/issues?utf8=✓&q=is%3Aissue+is%3Aclosed+-label%3Averified+label%3Averification-needed)
 
