@@ -43,12 +43,23 @@ When team members files a bug they perform steps of the inbox tracker for the is
 
 Issues need to be verified.
 
-The issues that need verification or reassignment from your part on [VSCode](https://github.com/issues/assigned?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+-label%3Averified+-label%3Atestplan-item+-label%3Aquestion+-label%3A%22needs+more+info%22+-label%3Aduplicate+-label%3Afeature-request+-label%3Aerror-telemetry+repo%3AMicrosoft%2Fvscode) and [across all GitHub projects](https://github.com/issues/assigned?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+-label%3Averified+-label%3Atestplan-item+-label%3Aquestion+-label%3A%22needs+more+info%22+-label%3Aduplicate+-label%3Afeature-request+-label%3Aerror-telemetry) follow the following rules:
+Verification is a service that you request from others either implicitly with the `bug`-label or explicitly with the `verification-needed`-label. Find issue that are to be verified with these queries
 
-- Once an issue is fixed its state is changed to `closed`
-- If you are the issue's resolver, please reassign the issue to someone else for verification
-- Once an issue is verified the `verified` label is added to it
-- Invalid, duplicates, etc should also be added the `verified` label so they get out of the queries
+1. [bugs to be verified, VS Code](https://github.com/issues?utf8=✓&q=is%3Aissue+is%3Aclosed+-label%3Averified+label%3Abug+repo%3AMicrosoft%2Fvscode)
+2. [verification needed, VS Code](https://github.com/issues?utf8=✓&q=is%3Aissue+is%3Aclosed+-label%3Averified+label%3Averification-needed)
+3. [bugs to be verified, all GitHub projects](https://github.com/issues?utf8=✓&q=is%3Aissue+is%3Aclosed+-label%3Averified+label%3Abug+repo%3AMicrosoft%2Fvscode)
+4. [verification needed, all GitHub projects](https://github.com/issues?utf8=✓&q=is%3Aissue+is%3Aclosed+-label%3Averified+label%3Averification-needed)
+
+Follow the following rules:
+
+1. Query for issues that are to be verified
+2. Preferably start with issues you created but didn't close
+3. Pick an item
+  - Start with setting `verified`-label (prevents duplicate verifications)
+  - Verify the issue
+  - If the issue still shows, add the `verification-found`-label and remove the `verified`-label
+  - Go back to #3
+
 
 ## Duplicates
 Duplicate bugs are closed with a comment `duplicates #issue`. Please try to reference an earlier issue **unless** a later issue is more appropriate (has more context, better scenarios, repro steps, etc.).
