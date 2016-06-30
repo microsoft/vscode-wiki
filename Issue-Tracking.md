@@ -53,7 +53,7 @@ Verification is a service that you request from others either implicitly with th
 Follow the these rules:
 
 1. Query for issues that are to be verified
-2. Preferably start with issues you created but didn't close
+2. Start with issues you created (filter by `Author`) but didn't close
 3. Pick an item
   - Start with setting `verified`-label (prevents duplicate verifications)
   - Verify the issue
