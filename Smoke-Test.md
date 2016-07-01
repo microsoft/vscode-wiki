@@ -4,10 +4,10 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
 
 * For the best debugging experience you'll need node version 0.12.x (or higher)
 * Restore some default settings of VS Code
+  * Enable Tabs and the Opened Editors view in the explorer
   * Disable "Auto Save" so that dirty files get some coverage
-  * Show working files in explorer
   * Open the chrome console and watch for exceptions
-	
+
 #### Setup
 
 * Clone the 'express' smoke test repository:
@@ -18,8 +18,9 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
 
 #### Data Loss
 
-* Have dirty & untitled files
-  * Make sure you get asked and can save when closed from working files
+* Verify the following both with dirty files and untitled files
+  * Make sure you get asked and can save when closing the editor itself
+  * Make sure you get asked and can save when closing from Opened Editors view
   * Make sure you get asked and can save on window close
   * Make sure you get asked and can save on file > quit
 
@@ -30,39 +31,38 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
 * Move README.txt to another folder and then delete it and verify it ends up in the trash
 * Quick open (CTRL+P, ⌘+P) to find the .js files and other files with a similar extension
   * Verify quick open sorting makes sense and it respects fuzzy matching (e.g. 'a.s' should produce 3 results)
-* Make changes in a file and verify it shows in the working set
-  * Verify you get dirty indicators when you mark files dirty.
-  * Verify you can remove items from it
-	
+* Verify the Opened Editors view reflects your state of opened editors
+
 #### Configuration and views
 
-* Select File > Preferences > User Settings (OS X: Code > Preferences > User Settings) 
+* Select File > Preferences > User Settings (OS X: Code > Preferences > User Settings)
   * Under editor, change line number to false, save the file, verify that line numbers are turned off without refresh.
-* Select File > Preferences > Keyboard Shortcuts (OS X: Code > Preferences > Keyboard Shortcuts) 
+* Select File > Preferences > Keyboard Shortcuts (OS X: Code > Preferences > Keyboard Shortcuts)
   * Change a binding of an action and verify the new binding works. e.g. add:
 		{ "key": "ctrl+u", "command": "workbench.action.toggleSidebarPosition" }
 * Verify that all navigation commands from Goto menu work
-	
+
 #### Search
 * Use Search (CTRL+SHIFT+F, ⌘+SHIFT+F) to find 'body'
   * Verify that 7 results in 4 files show up
   * Verify you can run the search filtering for *.js files
   * Verify you can dismiss files from search results
-		
-#### CSS 
+
+#### CSS
 * Open file style.css
   * verify quick outline (CTRL-SHIFT-O, ⌘-SHIFT-O)
 * Add an empty rule .foo{}
-  * verify you can see a warning. 
-* Select File > Preferences > User Settings (OS X: Code > Preferences > User Settings) 
+  * verify you can see a warning in the editor
+  * verify you can see a warning from the Problems view
+* Select File > Preferences > User Settings (OS X: Code > Preferences > User Settings)
   * change 'css.lint.emptyRules' from warning to error
-  * Go back to style.css, verify that the warning turns into an error. 
+  * Go back to style.css, verify that the warning turns into an error.
   * Verify you get css intellisense
-	
+
 #### Markdown
 * Open readme.md and open the preview side by side
 * Make changes to the readme.md and verify they are reflected live on the preview
-	
+
 #### JavaScript
 * Open bin/www
   * Show the quick outline (CTRL-SHIFT-O, ⌘-SHIFT-O) verify that entries show up and make sense
@@ -80,7 +80,7 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
 * set a breakpoint in index.js:6
 * press F5 to start debugging. Verify:
   * workbench transforms into "debug mode" - glyph margin and status bar turns orange
-* open browser at http://localhost:3000/ 
+* open browser at http://localhost:3000/
   * verify the breakpoint in index.js gets hit
 * Verify step over, step in, continue work
 * While stopped, verify:
@@ -100,6 +100,10 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
   * verify that an outgoing change shows up in the status bar of VSCode
 * Clean up: click on the ellipses in the git viewlet and choose 'Undo Last Commit'
 
+#### Integrated Terminal
+* Open the integrated terminal
+* Run a command and verify the output makes sense (e.g. ls or dir)
+
 #### Status bar
 * Quickly click on all the actions in the status bar and verify they behave as expected
 * Execute various commands from the status bar (change language mode, indentation…)
@@ -110,7 +114,7 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
   * Verify you can switch output to 'git'
 * Ensure that the executed task detects errors in routes/index.js
   * List all errors with CTRL+SHIFT+M,  ⌘-SHIFT-M
-		
+
 #### Extensions
 * Install an extension that you can easily verify works (e.g. new theme)
   * Verify that the extension gets installed and that on restart of VSCode it works
@@ -120,9 +124,9 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
 * Turn on
   * OS X: Voice Over
   * Windows: nvda, command palette > 'Toggle use of tab key for setting focus'
-* Tab through the whole workbench and verify what you hear makes sense. Also verify you can tab back into the location from where you started 
-* Check high contrast theme 
-	
+* Tab through the whole workbench and verify what you hear makes sense. Also verify you can tab back into the location from where you started
+* Check high contrast theme
+
 #### Localization
 * Start code from the command line with --locale=DE
 * Verify all menus and viewlets are in German (or your language of choice)
