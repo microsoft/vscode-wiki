@@ -42,3 +42,13 @@ class Client {
 ```
 
 Use the instantiation service to create instances for service consumers, like so `instantiationService.createInstance(Client)`. Usually, this is done for you when being registered as a contribution, like a Viewlet or Language.
+
+# Workbench Parts
+
+The VS Code workbench (`vs/workbench`) is composed of many things to provide a rich development experience. Examples include full text search, integrated git and debug. At its core, the workbench does not have direct dependencies to all these parts. Instead, we use an internal (as opposed to real extension API) mechanism to contribute these parts to the workbench. 
+
+Parts that are contributed to the workbench all live inside the `vs/workbench/parts` folder. There are some rules around this folder:
+- there cannot be any dependency from outside `vs/workbench/parts` into `vs/workbench/parts`
+- every part should expose its internal API from a single file (e.g. `vs/workbench/parts/search/common/search.ts`)
+- a part is allowed to depend on the internal API of another part (e.g. the git part may depend on  `vs/workbench/parts/search/common/search.ts`)
+- a part should never reach into the internals of another part (internal is anything inside a part that is not in the single common API file)
