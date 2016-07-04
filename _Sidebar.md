@@ -4,7 +4,6 @@
 * [[Development Process]]
 * [[Issue Tracking]]
 * [[Release Process]]
-* [[Breaking Changes]]
 * [[Previous Releases]]
 * [[Related Projects]]
 
