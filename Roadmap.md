@@ -13,16 +13,16 @@ It should be quick and natural to customize VS Code to the way you work so that 
 
 VS Code is a young product and there still missing features and experiences that you are asking for and that we want to deliver.
 
-* [Tabs](https://github.com/Microsoft/vscode/issues/224)
-* [Integrated Terminal](https://github.com/Microsoft/vscode/issues/143)
-* [Move error list from Quick Box to a panel](https://github.com/Microsoft/vscode/issues/6679)
-* [Indent guides](https://github.com/Microsoft/vscode/issues/2192)
+* [x] [Tabs](https://github.com/Microsoft/vscode/issues/224)
+* [x] [Integrated Terminal](https://github.com/Microsoft/vscode/issues/143)
+* [x] [Move error list from Quick Box to a panel](https://github.com/Microsoft/vscode/issues/6679)
+* [x] [Indent guides](https://github.com/Microsoft/vscode/issues/2192)
+* [x] Global Replace
+* Fast switching between workspaces 
+* Multiple folders inside a single workspace
 * Editor layout (e.g. horizontal split)
 * [VIM style key binding support](https://github.com/Microsoft/vscode/issues/3600)
 * Search performance improvements
-* Global Replace
-* Fast switching between workspaces 
-* Multiple folders inside a single workspace
 * [Support icons in explorer](https://github.com/Microsoft/vscode/issues/211)
 * [Accessibility](https://github.com/Microsoft/vscode/issues/6583) 
 
@@ -30,7 +30,7 @@ VS Code is a young product and there still missing features and experiences that
 
 We want to make it easy for developers to create extensions and for users to discover extensions. And, once you have discovered a set of extensions, we want to make it easy for you to manage them.
 
-* [In product extension management experience](https://github.com/Microsoft/vscode/issues/637)
+* [x] [In product extension management experience](https://github.com/Microsoft/vscode/issues/637)
 * Improved extension recommendation experience
 * Support for "extension packs”, collections of extensions and settings
 * Improved documentation to feature extensions and extension packs appropriately
@@ -42,7 +42,7 @@ For extension developers:
 * Expand the core VS Code extensibility APIs, for example source code control
 * Expand the diagnostics experience and API to support additional debugging scenario requirements, such as a [attach to process](https://github.com/Microsoft/vscode/issues/6569)
 
-We will also make it easy to [consume and ship the core code editor ("Monaco")](https://github.com/Microsoft/vscode/issues/446) as a library.
+- [x] We will also make it easy to [consume and ship the core code editor ("Monaco")](https://github.com/Microsoft/vscode/issues/446) as a library.
 
 ## TypeScript, JavaScript, and Node development
 
