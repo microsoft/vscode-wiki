@@ -1,3 +1,8 @@
+## July
+* [Iteration Plan](../issues/8760) 
+* [Test Plan](https://github.com/Microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22July+2016%22)
+
+
 ## June
 * [Iteration Plan](../issues/7253) 
 * [Test Plan](https://github.com/Microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22June+2016%22)
