@@ -9,7 +9,9 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 ### Installing Prerequisites
 
-You'll need [Node.JS](https://nodejs.org/en/), at least `v5.10`. **Warning:** [npm/npm#12698](https://github.com/npm/npm/issues/12698) prevents us from using `npm >= 3.9`, be sure to install `npm < 3.9`.
+You'll need [Node.JS](https://nodejs.org/en/), at least `v5.10`.
+
+**Warning:** [npm/npm#12698](https://github.com/npm/npm/issues/12698) prevents us from using `npm >= 3.9`, be sure to install `npm < 3.9`.
 
 Code includes node module dependencies that require native compilation. To ensure the compilation is picking up the right version of header files from the Electron Shell, we have our own script to run the installation via `npm`.
 
