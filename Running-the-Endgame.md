@@ -1,5 +1,3 @@
-# Running the Endgame
-
 Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki/Development-Process#end-game).
 
 ## Duties of the endgame master
