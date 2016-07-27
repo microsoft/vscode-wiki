@@ -36,6 +36,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ##### Wednesday
 - [x] Testing
+- [x] Remind team members to assign issues that they intend to fix to the July milestone
 - [x] Fixing (self-assigned, milestone assigned, and labeled as `candidate`)
 - [x] [Verification](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
 
