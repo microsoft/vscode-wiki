@@ -7,7 +7,6 @@ It should be quick and natural to customize VS Code to the way you work so that 
 * Help to configure key bindings, themes, common settings on first run of VS Code
 * Ability to create new and populated Workspaces from within VS Code
 * "Open in VS Code" from a git repository
-* Installation improvements such as auto move to Applications on OSX, Linux auto-update, and in product release notes
 
 ## Eliminate Adoption Blockers
 
