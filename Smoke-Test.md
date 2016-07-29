@@ -47,6 +47,7 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
   * Verify that 7 results in 4 files show up
   * Verify you can run the search filtering for *.js files
   * Verify you can dismiss files from search results
+  * Verify you can replace search results with a replace term
 
 #### CSS
 * Open file style.css
