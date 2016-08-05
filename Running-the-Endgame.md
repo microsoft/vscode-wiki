@@ -25,75 +25,77 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - *Month/Day* Endgame done
 
 ##### Monday
-- [x] Code freeze at 5pm PT
-- [x] Ensure we have a green build on all platforms
-- [x] All test items contain sufficiently comprehensive test descriptions by 6pm PT
+- [ ] Code freeze at 5pm PT
+- [ ] Ensure we have a green build on all platforms
+- [ ] All test items contain sufficiently comprehensive test descriptions by 6pm PT
 
 ##### Tuesday
-- [x] Test build starts at 7am CET / 10pm PT on Monday
-- [x] Test plan ready by 8am CET / 11pm PT on Monday
-- [x] Testing
+- [ ] Test build starts at 7am CET / 10pm PT on Monday
+- [ ] Test plan ready by 8am CET / 11pm PT on Monday
+- [ ] Testing
 
 ##### Wednesday
-- [x] Testing
-- [x] Remind team members to assign issues that they intend to fix to the July milestone
-- [x] Fixing (self-assigned, milestone assigned, and labeled as `candidate`)
-- [x] [Verification](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
+- [ ] Testing
+- [ ] Remind team members to assign issues that they intend to fix to the July milestone
+- [ ] Fixing (self-assigned, milestone assigned)
+- [ ] [Verification](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
 
 ##### Thursday
-- [x] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting)
-- [x] [Verification](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
-- [x] Update release notes
+- [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
+- [ ] [Verification](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
+- [ ] Update release notes
    - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
-- [x] Add/update shrink-wrap files for built-in extensions if needed (see [instructions](https://github.com/Microsoft/vscode/issues/8570#issuecomment-229669456))
-- [x] Update `OSSREADME.json` for built-in extensions based on differences to generated `npm-shrinkwrap.json` files if needed
-- [x] Run [OSS tool](https://github.com/Microsoft/vscode-distro/blob/master/distro-tools/README.md) after merging shrink-wrap findings **@owner**
+- [ ] Add/update shrink-wrap files for built-in extensions if needed (see [instructions](https://github.com/Microsoft/vscode/issues/8570#issuecomment-229669456))
+- [ ] Update `OSSREADME.json` for built-in extensions based on differences to generated `npm-shrinkwrap.json` files if needed
+- [ ] Run [OSS tool](https://github.com/Microsoft/vscode-distro/blob/master/distro-tools/README.md) after merging shrink-wrap findings **@owner**
   - *The LCA review of the ThirdPartyNotices.txt files is not needed anymore*
-- [x] Check new OSS usage is entered into the [OSS registry](https://ossmsft.visualstudio.com/_apps/hub/ms.vss-oss-web.hub-oss) **@owner**
+- [ ] Check new OSS usage is entered into the [OSS registry](https://ossmsft.visualstudio.com/_apps/hub/ms.vss-oss-web.hub-oss) **@owner**
 
 ##### Friday
-- [x] Pause scheduled `insider` builds **@zurich**
+- [ ] Pause scheduled `insider` builds **@zurich**
 - Satellite modules/npm packages ready, version updated, smoke tested
-  - [x] vscode **@bpasero**
-  - [x] yo generator **@aeschli**
-  - [x] vsce **@joaomoreno**
-  - [x] node debug **@weinand**
-- [x] Translation input - **@dbaeumer**
-- [x] All issues [verified](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
-- [x] Fixing (only critical bugs - no string changes)
+  - [ ] vscode **@bpasero**
+  - [ ] yo generator **@aeschli**
+  - [ ] vsce **@joaomoreno**
+  - [ ] node debug **@weinand**
+- [ ] Translation input - **@dbaeumer**
+- [ ] All issues [verified](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
+- [ ] Fixing (only critical bugs - no string changes)
 - [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test)
-  - [x] Windows - **@owner**
-  - [x] OS X - **@owner**
-  - [x] Linux - **@owner**
-- [x] All release notes updated
+  - [ ] Windows - **@owner**
+  - [ ] OS X - **@owner**
+  - [ ] Linux - **@owner**
+- [ ] All release notes updated
   - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
-- [x] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. **owner**
-- [x] Mention notable fixes in the release notes **@all**
+- [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. **owner**
+- [ ] Mention notable fixes in the release notes **@all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
-  - [x] Trigger new insider build and publish it manually **@owner**
+  - [ ] Trigger new insider build and publish it manually **@owner**
 
 ##### Friday/Monday
-- [x] Tag code with release number **@zurich**
-- [x] Announce master is open for business **@zurich**
-- [x] Polish release notes **@redmond**
+- [ ] Branch code to `release/<x.y> **@zurich**
+- [ ] Announce master is open for business **@zurich**
+- [ ] Polish release notes **@redmond**
 
 ##### Monday/Tuesday
-- [x] Publish `Insider` with hand-picked and reviewed candidate fixes **@owner**
+- [ ] Publish `Insider` with hand-picked and reviewed candidate fixes **@owner**
 
 ##### Thursday/Friday
-- [x] Merge translations **@zurich**
-- [x] Rebuild for all platforms **@owner**
-- [x] Sanity check of installable bits
-  - [x] Windows
-    - [x] signed installer **@owner**
-    - [x] zip **@owner**
-  - [x] OS X - **@owner**
-  - [x] Linux
-    - [x] deb packages **@owner**
-    - [x] rpm packages 64-bit **@owner**
-    - [x] rpm packages 32-bit **@owner**
-    - [x] archives **@owner**
-- [x] Publish website **@gregvanl**
-- [x] Publish to stable **@owner**
-- [x] Enable scheduled `insider` builds **@owner**
-- [x] Twitter announcement **@seanmcbreen**
+- [ ] Merge translations **@zurich**
+- [ ] Rebuild for all platforms **@owner**
+- [ ] Sanity check of installable bits
+  - [ ] Windows
+    - [ ] signed installer **@owner**
+    - [ ] zip **@owner**
+  - [ ] OS X - **@owner**
+  - [ ] Linux
+    - [ ] deb package 32-bit **@owner**
+    - [ ] deb package 64-bit **@owner**
+    - [ ] rpm package 64-bit **@owner**
+    - [ ] rpm package 32-bit **@owner**
+    - [ ] archives **@owner**
+- [ ] Publish website **@gregvanl**
+- [ ] Publish to stable **@owner**
+- [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`
+- [ ] Enable scheduled `insider` builds **@owner**
+- [ ] Twitter announcement **@seanmcbreen**
