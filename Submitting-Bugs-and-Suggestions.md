@@ -9,14 +9,17 @@ If your issue is a question consider asking it on [Stack Overflow](https://stack
 
 ## Writing Great Issues and Suggestions
 
-File a single issue per problem and feature request, do not file combo issues.
+Always file a single issue per problem and feature request
+* do not list multiple issues or requests in the same bug.
+* do not add your issue as a comment to an existing issue unless it's for the identical input. Many issues look similar, but have different causes. 
 
 The more information you can provide, the more likely someone will be successful reproducing the issue and finding a fix.  Consider the following:
 
-* Provide reproducable steps, what the result of the steps was, an what you would have expected.
+* Provide reproducible steps, what the result of the steps was, an what you would have expected.
 * Description of what you expect to happen
 * Animated GIFs
 * Code that demonstrates the issue
+* For syntax highlighting issues, always add a copy of the code as well as a screenshot. Don't forget to mention for which language this is
 * Version of VS Code
 * Errors in the Dev Tools Console (Help | Toggle Developer Tools)
 * When you have extensions installed, can you reproduce the issue when starting vscode without extensions by using `--disable-extensions`? 
