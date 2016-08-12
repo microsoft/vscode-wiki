@@ -24,7 +24,7 @@ For native compilation, you will need [Python](https://www.python.org/downloads/
 **OS X** 
 * Command line developer tools
 * Python should be installed already
-* [XCode](https://developer.apple.com/xcode/downloads/) and the Command Line Tools (XCode -> Preferences -> Downloads), which will install `gcc` and the related toolchain containing `make`
+* [Xcode](https://developer.apple.com/xcode/downloads/) and the Command Line Tools (Xcode -> Preferences -> Downloads), which will install `gcc` and the related toolchain containing `make`
 
 **Linux**
 * Python v2.7
