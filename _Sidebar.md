@@ -5,7 +5,6 @@
 * [[Issue Tracking]]
 * [[Release Process]]
 * [[Running the Endgame]]
-* [[Previous Releases]]
 * [[Related Projects]]
 
 **Contributing**
