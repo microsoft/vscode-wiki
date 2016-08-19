@@ -2,7 +2,7 @@ Use this issue to discuss the contents of this wiki [#2789](https://github.com/M
 
 ## Community Requested Extensions
 
-This is a list of community requested extensions collected from a variety of sources (twitter, user voice, etc.). 
+This is a list of community requested extensions collected from a variety of sources (twitter, issues, etc.). 
 
 For discussions on specific extensions and to add more information, link a newly created issue to one of the extensions names below. 
 
