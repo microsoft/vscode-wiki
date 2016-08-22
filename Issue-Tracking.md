@@ -20,24 +20,32 @@ The [Inbox query](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is
 The **inbox tracker** should do the following initial triage:
 - Is the issue **invalid**? Close it and justify the reason.
 - Is the issue **a general question**, like *How can I compile TypeScript*? Close it and redirect the user to [Stack Overflow](http://stackoverflow.com/questions/tagged/vscode) with [this message](https://gist.github.com/joaomoreno/960b4f643b2ff09bcdf7).
-- Is it a feature request? Label it as a feature request and assign to an owner. The owner will unassign himself if he does not plan to work on the feature **and** assign a feature area label.
-- Else, assign the issue to an **owner**.
+- NEW: Is the issue best covered by an extension then add the `extension-request` label.
+- Else, assign the issue to the **owner** of a feature area.
 
 **Everyone** should do the following secondary triage to their assigned issues (the **inbox tracker** may do some of these steps too, if obvious):
 - If an issue needs more info, assign the `needs more info` and ask for more information in a comment.
-- If the issue is a bug, add the `bug` label.
-- If the issue is a feature request, add the label `feature request` and @-mention if someone from the team should be aware of the feature request.
-- If needed, edit the title to improve it.
-- If possible, assign the issue with a feature/topic area label.
-- If the issue is important, assign an `important` label and optionally mention @microsoft/vscode to get the attention of the entire team.
-- If the issue needs to be fixed in this release, assign it to the current milestone (eg: blocks a scenario, completes a new feature, etc.). Else, assign it to the **Backlog**.
+- NEW: Ensure that the issue has a **type** label, that is, `bug`, `feature-request`, `debt`, `needs more info`
+- NEW: Ensure that the issue has a **feature-area** label **TO-DO** update feature areas
+- NEW: Do a best effort to identify duplicates
+- NEW: If the issue is a feature-request then the initial owner optionally unassigns himself from the issue. 
+- If the issue is an important `bug`, assign an `important` label and optionally mention @microsoft/vscode to get the attention of the entire team.
+- If the issue needs to be fixed in this release, assign it to the current milestone (eg: blocks a scenario, completes a new feature, etc.). 
 - If needed, follow-up with the author.
 
-### Planning
-During planning we review the open issues and assign the ones we plan to work on to the current milestone. Issues that do not make it for the current milestone are either assigned to the next milestone or they are moved back to the backlog milestone. 
+### NEW: Ongoing Issue Management
+- The PM team monitors feature requests and participate in discussions
+- Feature requests on the 6 month roadmap are assigned to the `On Deck` milestone. The `On Deck` milestone has a cap of 100 issues.
+- We close issues that we are not planning to work during the next 12 months 
+
+### CHANGED: Planning
+During the iteration planning process we use the following sources as input:
+- The `On Deck` back log
+- Review feature requests with many reactions.
+Issues we plan to work on during an iteration are assigned to the current milestone.
 
 ## Filing bugs as development team member
-When team members files a bug they perform steps of the inbox tracker for the issue they filed. Therefore bugs filed by the development team do not need to be triged by the inbox tracker.
+When team members files a bug they perform steps of the inbox tracker for the issue they filed. Therefore bugs filed by the development team do not need to be triged by the inbox tracker. 
  
 ## Verification
 
