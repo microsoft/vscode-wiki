@@ -7,7 +7,7 @@ In addition there can be feature sub areas which are colored light blue.
 ## Feature Area
 |Label|Description|Sub Areas|
 |---|---|------|
-|languages-basic|languages with only coloring support||
+|languages-basic|languages with coloring support only||
 |css-less-sass|support for CSS, LESS, SASS||
 |html|HTML support||
 |js|JavaScript support||
