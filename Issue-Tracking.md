@@ -26,19 +26,19 @@ The **inbox tracker** should do the following initial triage:
 **Everyone** should do the following secondary triage to their assigned issues (the **inbox tracker** may do some of these steps too, if obvious):
 - If an issue needs more info, assign the `needs more info` and ask for more information in a comment.
 - Ensure that the issue has a **type** label, that is, `bug`, `feature-request`, `debt`, `needs more info`
-- NEW: Ensure that the issue has a **feature-area** label and optionally a sub area, see [Feature Areas](https://github.com/Microsoft/vscode/wiki/Feature-Areas).
-- NEW: Do a best effort to identify duplicates
-- NEW: If the issue is a feature-request then the initial owner optionally unassigns himself from the issue. 
+- Ensure that the issue has a **feature-area** label and optionally a sub area, see [Feature Areas](https://github.com/Microsoft/vscode/wiki/Feature-Areas).
+- Do a best effort to identify duplicates
+- If the issue is a feature-request then the initial owner optionally unassigns himself from the issue. 
 - If the issue is an important `bug`, assign an `important` label and optionally mention @microsoft/vscode to get the attention of the entire team.
 - If the issue needs to be fixed in this release, assign it to the current milestone (eg: blocks a scenario, completes a new feature, etc.). 
 - If needed, follow-up with the author.
 
-### NEW: Ongoing Issue Management
+### Ongoing Issue Management
 - The PM team monitors feature requests and participate in discussions
 - Feature requests on the 6 month roadmap are assigned to the `On Deck` milestone. The `On Deck` milestone has a cap of 100 issues.
 - We close issues that we are not planning to work during the next 12 months 
 
-### CHANGED: Planning
+### Planning
 During the iteration planning process we use the following sources as input:
 - The `On Deck` back log
 - Review feature requests with many reactions.
