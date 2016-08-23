@@ -16,7 +16,7 @@ In addition there can be feature sub areas which are colored light blue.
 |php|PHP support||
 |typescript|TypeScript support||
 |||
-|workbench|overall workbench UI|themes, tabs, color-palette, keybindings, proxy, webview|
+|workbench|overall workbench UI|themes, workbench-tabs, color-palette, keybindings, proxy, webview, telemetry|
 |explorer-files|explorer and general file management||
 |git|git support||
 |debug|debugging, launching support||
