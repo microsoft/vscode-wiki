@@ -15,16 +15,17 @@ In addition there can be feature sub areas which are colored light blue.
 |markdown|markdown support|
 |php|PHP support|
 |typescript|TypeScript support|
+||
 |workbench|overall workbench UI|
 |explorer-files|explorer and general file management|
 |git|git support|
-|themes|theming support|
 |debug|debugging, launching support|
 |search|full text search support|
 |editor|vscode editor support|
 |task|task support|
 |error-list|the error list|
-|extensions|extension support, viewlet, details, install search|
+|integrated-terminal|integrated terminal panel|
+|extensions|extension UI, details, install|
+||
 |api|vscode extension API|
 |install-update|install and update of vscode|
-|integrated-terminal|integrated terminal panel|
