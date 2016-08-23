@@ -20,13 +20,13 @@ The [Inbox query](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is
 The **inbox tracker** should do the following initial triage:
 - Is the issue **invalid**? Close it and justify the reason.
 - Is the issue **a general question**, like *How can I compile TypeScript*? Close it and redirect the user to [Stack Overflow](http://stackoverflow.com/questions/tagged/vscode) with [this message](https://gist.github.com/joaomoreno/960b4f643b2ff09bcdf7).
-- NEW: Is the issue best covered by an extension then add the `extension-request` label.
+- Is the issue best covered by an extension then add the `extension-request` label.
 - Else, assign the issue to the **owner** of a feature area.
 
 **Everyone** should do the following secondary triage to their assigned issues (the **inbox tracker** may do some of these steps too, if obvious):
 - If an issue needs more info, assign the `needs more info` and ask for more information in a comment.
-- NEW: Ensure that the issue has a **type** label, that is, `bug`, `feature-request`, `debt`, `needs more info`
-- NEW: Ensure that the issue has a **feature-area** label **TO-DO** update feature areas
+- Ensure that the issue has a **type** label, that is, `bug`, `feature-request`, `debt`, `needs more info`
+- NEW: Ensure that the issue has a **feature-area** label and optionally a sub area [Feature Areas](https://github.com/Microsoft/vscode/wiki/Feature-Areas).
 - NEW: Do a best effort to identify duplicates
 - NEW: If the issue is a feature-request then the initial owner optionally unassigns himself from the issue. 
 - If the issue is an important `bug`, assign an `important` label and optionally mention @microsoft/vscode to get the attention of the entire team.
