@@ -26,7 +26,7 @@ The **inbox tracker** should do the following initial triage:
 **Everyone** should do the following secondary triage to their assigned issues (the **inbox tracker** may do some of these steps too, if obvious):
 - If an issue needs more info, assign the `needs more info` and ask for more information in a comment.
 - Ensure that the issue has a **type** label, that is, `bug`, `feature-request`, `debt`, `needs more info`
-- NEW: Ensure that the issue has a **feature-area** label and optionally a sub area [Feature Areas](https://github.com/Microsoft/vscode/wiki/Feature-Areas).
+- NEW: Ensure that the issue has a **feature-area** label and optionally a sub area, see [Feature Areas](https://github.com/Microsoft/vscode/wiki/Feature-Areas).
 - NEW: Do a best effort to identify duplicates
 - NEW: If the issue is a feature-request then the initial owner optionally unassigns himself from the issue. 
 - If the issue is an important `bug`, assign an `important` label and optionally mention @microsoft/vscode to get the attention of the entire team.
