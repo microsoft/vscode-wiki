@@ -5,27 +5,29 @@ The feature area labels have a dark blue label.
 In addition there can be feature sub areas which are colored light blue.
 
 ## Feature Area
-|Label|Description|
-|---|---|
-|languages-basic|languages with only coloring support|
-|css-less-sass|support for CSS, LESS, SASS|
-|html|HTML support|
-|js|JavaScript support|
-|json|JSON support|
-|markdown|markdown support|
-|php|PHP support|
-|typescript|TypeScript support|
-||
-|workbench|overall workbench UI|
-|explorer-files|explorer and general file management|
-|git|git support|
-|debug|debugging, launching support|
-|search|full text search support|
-|editor|vscode editor support|
-|task|task support|
-|error-list|the error list|
-|integrated-terminal|integrated terminal panel|
-|extensions|extension UI, details, install|
-||
-|api|vscode extension API|
-|install-update|install and update of vscode|
+|Label|Description|Sub Areas|
+|---|---|------|
+|languages-basic|languages with only coloring support||
+|css-less-sass|support for CSS, LESS, SASS||
+|html|HTML support||
+|js|JavaScript support||
+|json|JSON support||
+|markdown|markdown support||
+|php|PHP support||
+|typescript|TypeScript support||
+|||
+|workbench|overall workbench UI|themes, tabs, color-palette, keybindings, proxy, webview|
+|explorer-files|explorer and general file management||
+|git|git support||
+|debug|debugging, launching support||
+|search|full text search support||
+|editor|vscode editor support|brackets, monaco-editor, diff-editor,editor-contrib, editor-core-commands, editor-core-settings, editor-core-view, editor-multicursor, find-diwdget, folding, intellisense, ligatures, snippets, tokenization, intellisense???, VIM|
+|task|task support||
+|error-list|the error list||
+|integrated-terminal|integrated terminal panel||
+|extensions|extension UI, details, install|marketplace|
+|||
+|api|vscode extension API||
+|install-update|install and update of vscode||
+|accessiblity|accessibility support||
+|i18n|internationalization||
