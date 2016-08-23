@@ -15,6 +15,10 @@ The golden standard is Word
 
     [[images/ime/windows-japanese-word.gif]]
 
+* `sennsei` should result in `せんせい`
+* `konnichiha` should result in `こんいちは`
+* `mikann` should result in `みかん`
+
 ---
 ## [Windows] Korean
 * Add the Korean input method
