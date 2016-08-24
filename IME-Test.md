@@ -81,6 +81,7 @@ The golden standard is Word
 
     [[images/ime/windows-chinese2-word.gif]]
 
+* Type `hazni` press `Space`. It should result into `哈祝你`
 
 ---
 ## [Mac] Zhuyin Input Method (Chinese)
