@@ -44,7 +44,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] [Verification](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
 - [ ] Update release notes
-   - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
+   - release notes are collected in a file named *`Major_Minor.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
 - [ ] Add/update shrink-wrap files for built-in extensions if needed (see [instructions](https://github.com/Microsoft/vscode/issues/8570#issuecomment-229669456))
 - [ ] Update `OSSREADME.json` for built-in extensions based on differences to generated `npm-shrinkwrap.json` files if needed
 - [ ] Run [OSS tool](https://github.com/Microsoft/vscode-distro/blob/master/distro-tools/README.md) after merging shrink-wrap findings **@owner**
