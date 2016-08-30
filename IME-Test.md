@@ -8,6 +8,8 @@ The golden standard is Word
  * [[Windows] Korean](#windows-korean)
  * [[Windows] Vietnamese with UniKey](#windows-vietnamese-with-unikey)
  * [[Windows] Chinese](#windows-chinese)
+ * [[Windows] Sogou pinyin Chinese input method](#windows-sogou-pinyin-chinese-input-method)
+ * [[Mac] Zhuyin Input Method (Chinese)](#mac-zhuyin-input-method-chinese)
 
 ---
 ## [Windows/Mac] Japanese
@@ -94,11 +96,11 @@ The golden standard is Word
 
 --
 ## [Windows] Sogou pinyin Chinese input method
-* Download Sogou pinyin Chinese input method from [this link](http://pinyin.sogou.com/)
+* Install Sogou pinyin Chinese input method
+
+  * Download Sogou pinyin Chinese input method from [this link](http://pinyin.sogou.com/)
 
     ![download Sogou](images/ime/sogou-install.png)
-
-* Install Sogou pinyin Chinese input method
 
   * Double click downloaded install exe
 
@@ -122,11 +124,11 @@ The golden standard is Word
 
 * Focus VS Code and switch OS input method to Chinese and choose Chinese mode and make sure the input method's name is Sogou Pinyin:
 
-    ![sogou pinyin statusbar](images/ime/sogou-statusbar.png)
+  ![sogou pinyin statusbar](images/ime/sogou-statusbar.png)
 
 * Type `ni` press `Space` and then `hao` and press `Space`. They should be typed in immediately. Here is how Word looks like doing this: 
 
-    ![sogou word](images/ime/sogou-word.gif)
+  ![sogou word](images/ime/sogou-word.gif)
 
 * It should result into `你好`
 
@@ -134,15 +136,16 @@ The golden standard is Word
 ## [Mac] Zhuyin Input Method (Chinese)
 * `System Preferences > Keyboard > Input Sources > Add > Chinese, Tranditional > Zhuyin`
 
-    [[images/ime/mac-zhuyin-setup1.png]]
+  ![mac Zhuyin setup 1](images/ime/mac-zhuyin-setup1.png)
+
 
 * Focus VS Code and switch OS input method to Zhuyin (press Command + space)
 
-    [[images/ime/mac-zhuyin-setup2.png]]
+  ![mac Zhuyin setup 2](images/ime/mac-zhuyin-setup2.png)
 
 * Type `su3cl3` and press Enter. Here is how World looks like doing this (It should be "你好")
 
-    [[images/ime/mac-zhuyin-word.gif]]
+  ![mac Zhuyin Word](images/ime/mac-zhuyin-word.gif)
 
 ---
 ## [Mac] The hold input method
