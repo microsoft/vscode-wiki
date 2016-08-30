@@ -4,9 +4,10 @@ The golden standard is Word
 
 # Table of Contents
 
- * [[Windows/Mac] Japanese](#windows-mac-japanese)
+ * [[Windows/Mac] Japanese](#windowsmac-japanese)
  * [[Windows] Korean](#windows-korean)
  * [[Windows] Vietnamese with UniKey](#windows-vietnamese-with-unikey)
+ * [[Windows] Chinese](#windows-chinese)
 
 ---
 ## [Windows/Mac] Japanese
@@ -71,33 +72,25 @@ The golden standard is Word
 
 
 ---
-## [Windows] Chinese Test 1
-* Add the Chinese (Simplified) input method
- * `Settings > Time & Language > Region & language > Add a language > Chinese (Simplified)`
-
-* Focus VS Code and switch OS input method to Chinese and choose Chinese mode:
-
-    [[images/ime/windows-chinese-ime.png]]
-
-* Type `.` or `,` in full width form. They should be typed in immediately. Here is how Word looks like doing this:
-
-    [[images/ime/windows-chinese-word.gif]]
-せんせい
-
----
-## [Windows] Chinese Test 2
+## [Windows] Chinese
 * Add the Chinese (Simplified) input method
  * `Settings > Time & Language > Region & language > Add a language > Chinese (Simplified)`
 
 * Focus VS Code and switch OS input method to Chinese and choose Chinese mode and make sure the input method's name is Microsoft Pinyin:
 
-    [[images/ime/windows-chinese-ime.png]]
+  ![Windows Chinese Setup](images/ime/windows-chinese-ime.png)
+
+* Type `.` or `,` in full width form. They should be typed in immediately. Here is how Word looks like doing this:
+
+  ![Windows Chinese Word](images/ime/windows-chinese-word.gif)
 
 * Type `ni` press `Space` and then `hao` and press `Space`. They should be typed in immediately. Here is how Word looks like doing this:
 
-    [[images/ime/windows-chinese2-word.gif]]
+  ![Windows Chinese Word](images/ime/windows-chinese2-word.gif)
 
 * Type `hazni` press `Space`. It should result into `哈祝你`
+
+
 
 --
 ## [Windows] Sogou pinyin Chinese input method
