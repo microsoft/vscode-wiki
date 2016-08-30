@@ -5,41 +5,46 @@ The golden standard is Word
 # Table of Contents
 
  * [[Windows] Japanese](#windows-japanese)
+ * [[Windows] Korean](#windows-korean)
 
 ---
 ## [Windows] Japanese
 
 * Add the Japanese input method
- * `Settings > Time & Language > Region & language > Add a language > Japanese`
+  * `Settings > Time & Language > Region & language > Add a language > Japanese`
 
 * Focus VS Code and switch OS input method to Japanese and choose Hiragana:
 
-    [[images/ime/windows-japanese-ime.png]]
+  ![Windows Japanese statusbar](images/ime/windows-japanese-ime.png)
 
 * Type the following words: `sennsei` or `konnichiha` or `mikann`. Here is how Word looks like doing this:
+  * `sennsei` should result in `せんせい`
+  * `konnichiha` should result in `こんいちは`
+  * `mikann` should result in `みかん`
 
-    [[images/ime/windows-japanese-word.gif]]
+  ![Windows Japanese Word](images/ime/windows-japanese-word.gif)
 
-* `sennsei` should result in `せんせい`
-* `konnichiha` should result in `こんいちは`
-* `mikann` should result in `みかん`
+
 
 ---
 ## [Windows] Korean
+
 * Add the Korean input method
- * `Settings > Time & Language > Region & language > Add a language > Korean`
+  * `Settings > Time & Language > Region & language > Add a language > Korean`
 
 * Focus VS Code and switch OS input method to Korean and choose Hangul:
 
-    [[images/ime/windows-korean-ime.png]]
+  ![Windows Korean statusbar](images/ime/windows-korean-ime.png)
 
 * Type `gksrmf` and press space. Here is how Word looks like doing this (it should be "한글"):
 
-    [[images/ime/windows-korean-word1.gif]]
+  ![Windows Korean Word 1](images/ime/windows-korean-word1.gif)
 
 * Type `dkssudgktpdy` in a new file. Here is how Word looks like doing this:
 
-    [[images/ime/windows-korean-word2.gif]]
+  ![Windows Korean Word 2](images/ime/windows-korean-word2.gif)
+
+
 
 ---
 ## [Windows] Vietnamese with UniKey
@@ -118,7 +123,7 @@ The golden standard is Word
 
 * Focus VS Code and switch OS input method to Chinese and choose Chinese mode and make sure the input method's name is Sogou Pinyin:
 
-    ![sogou pinyin](images/ime/sogou-statusbar.png)
+    ![sogou pinyin statusbar](images/ime/sogou-statusbar.png)
 
 * Type `ni` press `Space` and then `hao` and press `Space`. They should be typed in immediately. Here is how Word looks like doing this: 
 
