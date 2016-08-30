@@ -83,6 +83,33 @@ The golden standard is Word
 
 * Type `hazni` press `Space`. It should result into `哈祝你`
 
+--
+## [Windows] Sogou pinyin Chinese input method
+* Download Sogou pinyin Chinese input method from [this link](http://pinyin.sogou.com/)
+
+    ![download Sogou](images/ime/sogou-install.png)
+
+* Install Sogou pinyin Chinese input method
+
+ * Double click downloaded install exe
+
+    [[images/ime/sogou-install2.png]]  
+        ![install exe](https://github.com/Ruikuan/Img/raw/master/install_exe.png)  
+      - Click YES if UAC dialog show  
+        ![accept uac](https://github.com/Ruikuan/Img/raw/master/accept_uac.png)
+      - Click Install immediately in the install UI  
+        ![install immediately](https://github.com/Ruikuan/Img/raw/master/clickinstall.png)
+      - Wait for the process complete, UNCHECK the "install the Sogou browser"  
+        ![uncheck sogou browser](https://github.com/Ruikuan/Img/raw/master/uncheck.png)  
+      - Uncheck all options, click finish  
+        ![uncheck all options](https://github.com/Ruikuan/Img/raw/master/uncheck2.png)
+      - Sogou pinyin Chinese input method install successfully
+- Focus VS Code and switch OS input method to Chinese and choose Chinese mode and make sure the input method's name is Sogou Pinyin:  
+   ![sogou pinyin](https://github.com/Ruikuan/Img/raw/master/input_status.png)
+- Type ni press Space and then hao and press Space. They should be typed in immediately. Here is how Word looks like doing this:  
+   ![input to word](https://github.com/Ruikuan/Img/raw/master/word_input.gif)
+- Type nihao press Space. It should result into 你好  
+
 ---
 ## [Mac] Zhuyin Input Method (Chinese)
 * `System Preferences > Keyboard > Input Sources > Add > Chinese, Tranditional > Zhuyin`
