@@ -102,60 +102,24 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ### OS Test Availability
 
-| Name          | Alias         | Linux | Mac | Windows |
-| :------------ |:--------------|:-----:|:---:|:-------:|
-| Alex          | alexandrudima |       |     | x       |
-
-Andre 
-weinand 
- 
-Ben 
-bpasero 
-out from Wednesday to Friday 
-Chris 
-cdias 
-ooo 
-Christof 
-chrmarti 
- 
-Daniel  
-Tyriar 
- 
-Dirk  
-dbaeumer 
- 
-Erich 
-egamma 
- 
-Greg  
-gregvanl 
-not on Mac 
-Isidor  
-isidorn 
- 
-Joao 
-joaomoreno 
-OOO 
-Johannes 
-jrieken 
- 
-Kai  
-kieferrm 
-limited availability on Thursday and Friday 
-Martin  
-aeschli 
- 
-Peng 
-@rebornix 
- 
-Sandeep  
-sandy081 
- 
-Sean  
-seanmcbreen 
- 
-Steven  
-stevencl 
- 
-Wade  
-waderyan 
+| Name          | GitHub Alias   | Linux | Mac | Windows |
+| :------------ |:---------------|:-----:|:---:|:-------:|
+| Alex          | @alexandrudima |       |     |    x    |
+| Andre         | @weinand       |  x    |  x  |    x    |
+| Ben           | @bpasero       |  x    |  x  |    x    |
+| Chris         | @cdias         |  x    |  x  |    x    |
+| Christof      | @chrmarti      |  x    |  x  |    x    |
+| Daniel        | @tyriar        |  x    |     |    x    |
+| Dirk          | @dbaeumer      |       |     |    x    |
+| Erich         | @egamma        |       |     |    x    |
+| Greg          | @gregvanl      |  x    |  x  |    x    |
+| Isidor        | @isidorn       |  x    |  x  |    x    |
+| Joao          | @joaomoreno    |  x    |  x  |    x    |
+| Johannes      | @jrieken       |  x    |  x  |    x    |
+| Kai           | @kieferrm      |  x    |  x  |    x    |
+| Martin        | @aeschli       |  x    |  x  |    x    |
+| Peng          | @rebornix      |  x    |     |    x    |
+| Sandeep       | @sandy081      |  x    |  x  |    x    |
+| Sean          | @seanmcbreen   |  x    |  x  |    x    |
+| Steven        | @stevencl      |       |     |    x    |
+| Wade          | @waderyan      |  x    |  x  |    x    |
