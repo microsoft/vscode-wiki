@@ -12,7 +12,8 @@ The golden standard is Word
  * [[Mac] Zhuyin Input Method (Chinese)](#mac-zhuyin-input-method-chinese)
  * [[Linux] Japanese](#linux-japanese)
  * [[Linux] Korean (Hangul)](#linux-korean)
-
+ * [[Linux] Chinese (Pinyin)](#linux-chinese-pinyin)
+ * [[Linux] Chinese (Sogou Pinyin)](#linux-chinese-sogou-pinyin)
 ***
 
 ---
@@ -178,6 +179,15 @@ The golden standard is Word
 
 * Type `gksrmf`. It should be "한글"
 
+## [Linux] Chinese (Pinyin)
+* Install lfcitx: Follow instructions [here](https://www.reddit.com/r/elementaryos/comments/33cfha/multiple_inputs_under_freya_chinese_case_pinyin/)
+* Select Google Pinyin
+* Type `ni` press `Space` and then `hao` and press `Space`, should become: 你好
+
+## [Linux] Chinese (Sogou Pinyin)
+* Install lftcitx as above
+* Install the deb images (32/64 bit) from http://pinyin.sogou.com/linux/?r=pinyin
+* Type `ni` press `Space` and then `hao` and press `Space`, should become: 你好
 
 Content created from:
 * [#1168](https://github.com/Microsoft/vscode/issues/1168)
