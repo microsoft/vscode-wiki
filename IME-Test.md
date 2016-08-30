@@ -11,6 +11,7 @@ The golden standard is Word
  * [[Windows] Sogou pinyin Chinese input method](#windows-sogou-pinyin-chinese-input-method)
  * [[Mac] Zhuyin Input Method (Chinese)](#mac-zhuyin-input-method-chinese)
  * [[Linux] Japanese](#linux-japanese)
+ * [[Linux] Korean (Hangul)](#linux-korean)
 
 ***
 
@@ -165,12 +166,19 @@ The golden standard is Word
 * Use [mozc](https://wiki.archlinux.org/index.php/Mozc)
 * Information for [elementary](http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-input)
 
+
   * `sennsei` should result in "せんせい" or "先生"
   * `konnichiha` should result in "こんいちは"
   * `mikann` should result in "みかん" or "橘"
 
+## [Linux] Korean
 
----
+* Install lfcitx: Follow instructions [here](https://www.reddit.com/r/elementaryos/comments/33cfha/multiple_inputs_under_freya_chinese_case_pinyin/)
+* Install Korean-Hangul support: `sudo apt-get install fcitx-hangul`
+
+* Type `gksrmf`. It should be "한글"
+
+
 Content created from:
 * [#1168](https://github.com/Microsoft/vscode/issues/1168)
 * [#2250](https://github.com/Microsoft/vscode/issues/2250)
