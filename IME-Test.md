@@ -2,9 +2,11 @@ Input method smoke test
 
 The golden standard is Word
 
----
-<details><summary>[Windows] Japanese</summary>
+# Table of Contents
 
+ * [[Windows] Japanese](#windows-japanese)
+
+---
 ## [Windows] Japanese
 
 * Add the Japanese input method
@@ -21,7 +23,6 @@ The golden standard is Word
 * `sennsei` should result in `せんせい`
 * `konnichiha` should result in `こんいちは`
 * `mikann` should result in `みかん`
-</details>
 
 ---
 ## [Windows] Korean
