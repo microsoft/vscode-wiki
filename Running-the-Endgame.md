@@ -99,3 +99,63 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`
 - [ ] Enable scheduled `insider` builds **@owner**
 - [ ] Twitter announcement **@seanmcbreen**
+
+### OS Test Availability
+
+| Name          | Alias         | Linux | Mac | Windows |
+| :------------ |:--------------|:-----:|:---:|:-------:|
+| Alex          | alexandrudima |       |     | x       |
+
+Andre 
+weinand 
+ 
+Ben 
+bpasero 
+out from Wednesday to Friday 
+Chris 
+cdias 
+ooo 
+Christof 
+chrmarti 
+ 
+Daniel  
+Tyriar 
+ 
+Dirk  
+dbaeumer 
+ 
+Erich 
+egamma 
+ 
+Greg  
+gregvanl 
+not on Mac 
+Isidor  
+isidorn 
+ 
+Joao 
+joaomoreno 
+OOO 
+Johannes 
+jrieken 
+ 
+Kai  
+kieferrm 
+limited availability on Thursday and Friday 
+Martin  
+aeschli 
+ 
+Peng 
+@rebornix 
+ 
+Sandeep  
+sandy081 
+ 
+Sean  
+seanmcbreen 
+ 
+Steven  
+stevencl 
+ 
+Wade  
+waderyan 
