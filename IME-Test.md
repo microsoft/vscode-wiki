@@ -14,7 +14,6 @@ The golden standard is Word
  * [[Linux] Korean (Hangul)](#linux-korean)
  * [[Linux] Chinese (Pinyin)](#linux-chinese-pinyin)
  * [[Linux] Chinese (Sogou Pinyin)](#linux-chinese-sogou-pinyin)
-***
 
 ---
 ## [Windows/Mac] Japanese
