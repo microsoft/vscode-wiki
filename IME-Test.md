@@ -3,7 +3,10 @@ Input method smoke test
 The golden standard is Word
 
 ---
+<details><summary>[Windows] Japanese</summary>
+
 ## [Windows] Japanese
+
 * Add the Japanese input method
  * `Settings > Time & Language > Region & language > Add a language > Japanese`
 
@@ -18,6 +21,7 @@ The golden standard is Word
 * `sennsei` should result in `せんせい`
 * `konnichiha` should result in `こんいちは`
 * `mikann` should result in `みかん`
+</details>
 
 ---
 ## [Windows] Korean
@@ -157,3 +161,4 @@ Content created from:
 * [#2374](https://github.com/Microsoft/vscode/issues/2374)
 * [#5615](https://github.com/Microsoft/vscode/issues/5615)
 * [#7997](https://github.com/Microsoft/vscode/issues/7997)
+* [#10937](https://github.com/Microsoft/vscode/issues/10937)
