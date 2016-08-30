@@ -110,7 +110,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 | Brad          | @bgashler1     |  x    |  x  |    x    |
 | Chris         | @cdias         |  x    |  x  |    x    |
 | Christof      | @chrmarti      |  x    |  x  |    x    |
-| Daniel        | @tyriar        |  x    |     |    x    |
+| Daniel        | @tyriar        |  x    |  x  |    x    |
 | Dirk          | @dbaeumer      |       |     |    x    |
 | Erich         | @egamma        |       |     |    x    |
 | Greg          | @gregvanl      |  x    |  x  |    x    |
@@ -119,10 +119,10 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 | Johannes      | @jrieken       |  x    |  x  |    x    |
 | Kai           | @kieferrm      |  x    |  x  |    x    |
 | Martin        | @aeschli       |  x    |  x  |    x    |
-| Peng          | @rebornix      |  x    |     |    x    |
-| Pine          | @octref        |       |     |    x    |
+| Peng          | @rebornix      |  x    |  x  |    x    |
+| Pine          | @octref        |  x    |  x  |    x    |
 | Ramya         | @ramya-rao-a   |  x    |  x  |    x    | 
-| Rob           | @roblourens    |  x    |     |    x    |
+| Rob           | @roblourens    |  x    |  x  |    x    |
 | Sandeep       | @sandy081      |  x    |  x  |    x    |
 | Sean          | @seanmcbreen   |  x    |  x  |    x    |
 | Steven        | @stevencl      |       |     |    x    |
