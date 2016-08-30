@@ -16,11 +16,11 @@ The golden standard is Word
 
 * Add the Japanese input method
   * Windows: `Settings > Time & Language > Region & language > Add a language > Japanese`
-  * Mac:
+  * Mac: `Settings > Keyboard > Input Sources > Add a language > Japanese`
 
 * Focus VS Code and switch OS input method to Japanese and choose Hiragana:
   * Windows:  ![Windows Japanese statusbar](images/ime/windows-japanese-ime.png)
-  * Mac: Choose Hiragama
+  * Mac: Choose Hiragana in the menu bar
 
 * Type the following words: `sennsei` or `konnichiha` or `mikann`. Here is how Word looks like doing this:
   * `sennsei` should result in "せんせい" or "先生"
