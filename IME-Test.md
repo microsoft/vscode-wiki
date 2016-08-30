@@ -91,24 +91,35 @@ The golden standard is Word
 
 * Install Sogou pinyin Chinese input method
 
- * Double click downloaded install exe
+  * Double click downloaded install exe
 
-    [[images/ime/sogou-install2.png]]  
-        ![install exe](https://github.com/Ruikuan/Img/raw/master/install_exe.png)  
-      - Click YES if UAC dialog show  
-        ![accept uac](https://github.com/Ruikuan/Img/raw/master/accept_uac.png)
-      - Click Install immediately in the install UI  
-        ![install immediately](https://github.com/Ruikuan/Img/raw/master/clickinstall.png)
-      - Wait for the process complete, UNCHECK the "install the Sogou browser"  
-        ![uncheck sogou browser](https://github.com/Ruikuan/Img/raw/master/uncheck.png)  
-      - Uncheck all options, click finish  
-        ![uncheck all options](https://github.com/Ruikuan/Img/raw/master/uncheck2.png)
-      - Sogou pinyin Chinese input method install successfully
-- Focus VS Code and switch OS input method to Chinese and choose Chinese mode and make sure the input method's name is Sogou Pinyin:  
-   ![sogou pinyin](https://github.com/Ruikuan/Img/raw/master/input_status.png)
-- Type ni press Space and then hao and press Space. They should be typed in immediately. Here is how Word looks like doing this:  
-   ![input to word](https://github.com/Ruikuan/Img/raw/master/word_input.gif)
-- Type nihao press Space. It should result into 你好  
+    ![install exe](images/ime/sogou-install2.png)
+
+  * Click YES if UAC dialog show  
+
+    ![accept uac](images/ime/sogou-install3.png)
+
+  * Click Install immediately in the install UI
+
+    ![install immediately](images/ime/sogou-install4.png)
+
+  * Wait for the process complete, UNCHECK the "install the Sogou browser"  
+
+    ![uncheck sogou browser](images/ime/sogou-install5.png)
+
+  * Uncheck all options, click finish  
+
+    ![uncheck all options](images/ime/sogou-install6.png)
+
+* Focus VS Code and switch OS input method to Chinese and choose Chinese mode and make sure the input method's name is Sogou Pinyin:
+
+    ![sogou pinyin](images/ime/sogou-statusbar.png)
+
+* Type `ni` press `Space` and then `hao` and press `Space`. They should be typed in immediately. Here is how Word looks like doing this: 
+
+    ![sogou word](images/ime/sogou-word.gif)
+
+* It should result into `你好`
 
 ---
 ## [Mac] Zhuyin Input Method (Chinese)
