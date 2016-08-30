@@ -10,7 +10,9 @@ The golden standard is Word
  * [[Windows] Chinese](#windows-chinese)
  * [[Windows] Sogou pinyin Chinese input method](#windows-sogou-pinyin-chinese-input-method)
  * [[Mac] Zhuyin Input Method (Chinese)](#mac-zhuyin-input-method-chinese)
- * [[Linux] Japanese](#linux-japanese)
+
+***
+
 ---
 ## [Windows/Mac] Japanese
 
@@ -158,7 +160,7 @@ The golden standard is Word
 ## [Mac] The emoji inserter
 
 ---
-##  v
+## [Linux] Japanese
 * Use [mozc](https://wiki.archlinux.org/index.php/Mozc)
 * Information for [elementary](http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-input)
 
