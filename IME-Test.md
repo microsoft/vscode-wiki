@@ -4,23 +4,25 @@ The golden standard is Word
 
 # Table of Contents
 
- * [[Windows] Japanese](#windows-japanese)
+ * [[Windows/Mac] Japanese](#windows-mac-japanese)
  * [[Windows] Korean](#windows-korean)
+ * [[Windows] Vietnamese with UniKey](#windows-vietnamese-with-unikey)
 
 ---
-## [Windows] Japanese
+## [Windows/Mac] Japanese
 
 * Add the Japanese input method
-  * `Settings > Time & Language > Region & language > Add a language > Japanese`
+  * Windows: `Settings > Time & Language > Region & language > Add a language > Japanese`
+  * Mac:
 
 * Focus VS Code and switch OS input method to Japanese and choose Hiragana:
-
-  ![Windows Japanese statusbar](images/ime/windows-japanese-ime.png)
+  * Windows:  ![Windows Japanese statusbar](images/ime/windows-japanese-ime.png)
+  * Mac: Choose Hiragama
 
 * Type the following words: `sennsei` or `konnichiha` or `mikann`. Here is how Word looks like doing this:
-  * `sennsei` should result in `せんせい`
-  * `konnichiha` should result in `こんいちは`
-  * `mikann` should result in `みかん`
+  * `sennsei` should result in "せんせい" or "先生"
+  * `konnichiha` should result in "こんいちは"
+  * `mikann` should result in "みかん" or "橘"
 
   ![Windows Japanese Word](images/ime/windows-japanese-word.gif)
 
@@ -49,21 +51,24 @@ The golden standard is Word
 ---
 ## [Windows] Vietnamese with UniKey
 * Download and Run [UniKey](http://www.unikey.org/bdownload.php#uk)
+
 * Click the button with a down arrow:
 
-    [[images/ime/windows-vietnamese-ime-1.png]]
+  ![Windows Vietnamese UniKey Setup 1](images/ime/windows-vietnamese-ime-1.png)
 
 * Get the following settings:
 
-    [[images/ime/windows-vietnamese-ime-2.png]]
+  ![Windows Vietnamese UniKey Setup 2](images/ime/windows-vietnamese-ime-2.png)
 
 * Focus VS Code and click once UniKey's system tray entry (next to the date) to toggle on Vietnamese mode (get it to be a V):
 
-    [[images/ime/windows-vietnamese-ime-3.png]]
+  ![Windows Vietnamese UniKey StatusBar](images/ime/windows-vietnamese-ime-3.png)
 
 * Type `Tooi` => it should transform to => Tôi. Here is how Word looks like doing this:
 
-    [[images/ime/windows-vietnamese-word.gif]]
+  ![Windows Vietnamese UniKey Word](images/ime/windows-vietnamese-word.gif)
+
+
 
 ---
 ## [Windows] Chinese Test 1
@@ -77,6 +82,7 @@ The golden standard is Word
 * Type `.` or `,` in full width form. They should be typed in immediately. Here is how Word looks like doing this:
 
     [[images/ime/windows-chinese-word.gif]]
+せんせい
 
 ---
 ## [Windows] Chinese Test 2
