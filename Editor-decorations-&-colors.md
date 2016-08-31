@@ -25,29 +25,29 @@
   - [ ] `detected-link-active`
 - [x] `editorQuickOpen.ts`
   - [x] `rangeHighlight` => `rangeHighlight` in TM
-* `referencesWidget.ts`
-  * `reference-decoration`
-* `snippetController.ts`
-  * `new-snippet`
-  * `finish-snippet-placeholder`
-  * `snippet-placeholder`
-* `wordHighlighter`
-  * `wordHighlightStrong`
-  * `selectionHighlight`
-  * `wordHighlight`
+- [ ] `referencesWidget.ts`
+  - [ ] `reference-decoration`
+- [ ] `snippetController.ts`
+  - [ ] `new-snippet`
+  - [ ] `finish-snippet-placeholder`
+  - [ ]placeholder`
+- [x] `wordHighlighter`
+  - [x] `wordHighlightStrong` => `wordHighlightStrong` in TM
+  - [x] `selectionHighlight` => `selectionHighlight` in TM
+  - [x] `wordHighlight` => `wordHighlight` in TM
 * `debugEditorModelManager.ts`
-  * `debug-top-stack-frame-line`
-  * `debug-top-stack-frame-exception-line`
-  * `debug-top-stack-frame-column`
-  * `debug-focused-stack-frame-line`
-* `debugHover`
-  * `hoverHighlight`
+  * ~~`debug-top-stack-frame-line`~~
+  * ~~`debug-top-stack-frame-exception-line`~~
+  * ~~`debug-top-stack-frame-column`~~
+  * ~~`debug-focused-stack-frame-line`~~
+- [ ] `debugHover`
+  - [ ]`hoverHighlight`
 * `gitEditorContributions`:
-  * `git-merge-control-decoration`
+  * ~~`git-merge-control-decoration`~~
 * `gitWorkbenchContributions`:
-  * `git-dirty-modified-diff-glyph`
-  * `git-dirty-added-diff-glyph`
-  * `git-dirty-deleted-diff-glyph`
-* `searchModel`:
-  * `findMatch`
-  * `currentFindMatch`
+  * ~~`git-dirty-modified-diff-glyph`~~
+  * ~~`git-dirty-added-diff-glyph`~~
+  * ~~`git-dirty-deleted-diff-glyph`~~
+- [x] `searchModel`:
+  - [x] `findMatch` => `findMatchHighlight` in TM
+  - [x] `currentFindMatch` => `currentFindMatchHighlight` in TM
