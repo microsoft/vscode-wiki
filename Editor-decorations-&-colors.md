@@ -1,9 +1,9 @@
 
 * `oneCursor.ts`
-  * `bracket-match`
+  * ~~`bracket-match`~~
 * `modelServiceImpl.ts`
-  * `greensquiggly`
-  * `redsquiggly`
+  * ~~`greensquiggly`~~
+  * ~~`redsquiggly`~~
 * `defineKeybinding.ts`
   * `keybindingError`
   * `inlineKeybindingError`
