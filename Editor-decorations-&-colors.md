@@ -20,9 +20,9 @@
   - [ ] `goto-definition-link`
 - [x] `modesContentHover`
   - [x] `hoverHighlight` => `hoverHighlight` in TM
-- [ ] `links.ts`
-  - [ ] `detected-link`
-  - [ ] `detected-link-active`
+- [x] `links.ts`
+  - [ ] ~~`detected-link`~~
+  - [x] `detected-link-active` => `activeLinkForeground` in TM
 - [x] `editorQuickOpen.ts`
   - [x] `rangeHighlight` => `rangeHighlight` in TM
 - [x] `referencesWidget.ts`
@@ -41,8 +41,8 @@
   * ~~`debug-top-stack-frame-exception-line`~~
   * ~~`debug-top-stack-frame-column`~~
   * ~~`debug-focused-stack-frame-line`~~
-- [ ] `debugHover`
-  - [ ]`hoverHighlight`
+- [x] `debugHover`
+  - [x]`hoverHighlight`
 * `gitEditorContributions`:
   * ~~`git-merge-control-decoration`~~
 * `gitWorkbenchContributions`:
