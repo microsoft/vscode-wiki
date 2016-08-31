@@ -9,22 +9,22 @@
   * ~~`inlineKeybindingError`~~
   * ~~`keybindingInfo`~~
   * ~~`inlineKeybindingInfo`~~
-* `findController.ts`
-  [x] `selectionHighlight`
-* `findDecorations.ts`
-  * `findMatch`
-  * `currentFindMatch`
-  * `rangeHighlight`
-  * `findScope`
-* `goToDeclaration`
-  * `goto-definition-link`
-* `modesContentHover`
-  * `hoverHighlight`
-* `links.ts`
-  * `detected-link`
-  * `detected-link-active`
-* `editorQuickOpen.ts`
-  * `rangeHighlight`
+- [x] `findController.ts`
+  - [x] `selectionHighlight` => `selectionHighlight` in TM
+- [x] `findDecorations.ts`
+  - [x] `findMatch` => `findMatchHighlight` in TM
+  - [x] `currentFindMatch` => `currentFindMatchHighlight` in TM
+  - [x] `rangeHighlight` => `rangeHighlight` in TM
+  - [x] `findScope` => `findRangeHighlight` in TM
+- [ ] `goToDeclaration`
+  - [ ] `goto-definition-link`
+- [ ] `modesContentHover`
+  - [ ] `hoverHighlight`
+- [ ] `links.ts`
+  - [ ] `detected-link`
+  - [ ] `detected-link-active`
+- [x] `editorQuickOpen.ts`
+  - [x] `rangeHighlight` => `rangeHighlight` in TM
 * `referencesWidget.ts`
   * `reference-decoration`
 * `snippetController.ts`
