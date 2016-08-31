@@ -5,12 +5,12 @@
   * ~~`greensquiggly`~~
   * ~~`redsquiggly`~~
 * `defineKeybinding.ts`
-  * `keybindingError`
-  * `inlineKeybindingError`
-  * `keybindingInfo`
-  * `inlineKeybindingInfo`
+  * ~~`keybindingError`~~
+  * ~~`inlineKeybindingError`~~
+  * ~~`keybindingInfo`~~
+  * ~~`inlineKeybindingInfo`~~
 * `findController.ts`
-  * `selectionHighlight`
+  [x] `selectionHighlight`
 * `findDecorations.ts`
   * `findMatch`
   * `currentFindMatch`
