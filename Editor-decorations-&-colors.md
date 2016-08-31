@@ -16,8 +16,8 @@
   - [x] `currentFindMatch` => `currentFindMatchHighlight` in TM
   - [x] `rangeHighlight` => `rangeHighlight` in TM
   - [x] `findScope` => `findRangeHighlight` in TM
-- [ ] `goToDeclaration`
-  - [ ] `goto-definition-link`
+- [x] `goToDeclaration`
+  - [x] `goto-definition-link`
 - [x] `modesContentHover`
   - [x] `hoverHighlight` => `hoverHighlight` in TM
 - [x] `links.ts`
