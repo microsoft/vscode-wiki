@@ -18,19 +18,20 @@
   - [x] `findScope` => `findRangeHighlight` in TM
 - [ ] `goToDeclaration`
   - [ ] `goto-definition-link`
-- [ ] `modesContentHover`
-  - [ ] `hoverHighlight`
+- [x] `modesContentHover`
+  - [x] `hoverHighlight` => `hoverHighlight` in TM
 - [ ] `links.ts`
   - [ ] `detected-link`
   - [ ] `detected-link-active`
 - [x] `editorQuickOpen.ts`
   - [x] `rangeHighlight` => `rangeHighlight` in TM
-- [ ] `referencesWidget.ts`
-  - [ ] `reference-decoration`
+- [x] `referencesWidget.ts`
+  - [x] `reference-decoration`=> `referenceHighlight` in TM
+  - [x] `referenceMatch`=> `findMatchHighlight` in TM
 - [ ] `snippetController.ts`
   - [ ] `new-snippet`
   - [ ] `finish-snippet-placeholder`
-  - [ ]placeholder`
+  - [ ] `placeholder`
 - [x] `wordHighlighter`
   - [x] `wordHighlightStrong` => `wordHighlightStrong` in TM
   - [x] `selectionHighlight` => `selectionHighlight` in TM
@@ -51,3 +52,5 @@
 - [x] `searchModel`:
   - [x] `findMatch` => `findMatchHighlight` in TM
   - [x] `currentFindMatch` => `currentFindMatchHighlight` in TM
+  - [x] `findInFileMatch` => `findMatchHighlight` in TM
+  - [x] `highlight` => `findMatchHighlight` in TM
