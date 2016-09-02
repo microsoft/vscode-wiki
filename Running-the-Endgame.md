@@ -127,3 +127,12 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 | Sean          | @seanmcbreen   |  x    |  x  |    x    |
 | Steven        | @stevencl      |       |     |    x    |
 | Wade          | @waderyan      |  x    |  x  |    x    |
+
+### Dev Matrix
+
+|:-------------------|:-------------------|:-------------------|:-------------------|
+| [ ] @alexandrudima | [ ] @weinand       | [ ] @bpasero       | [ ] @chrmarti      |
+| [ ] @tyriar        | [ ] @dbaeumer      | [ ] @egamma        | [ ] @isidorn       |
+| [ ] @joaomoreno    | [ ] @jrieken       | [ ] @kieferrm      | [ ] @aeschli       |
+| [ ] @rebornix      | [ ] @octref        | [ ] @ramya-rao-a   | [ ] @roblourens    |
+| [ ] @sandy081      |                    |                    |                    |
