@@ -130,6 +130,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ### Dev Matrix
 
+| [ ] @alexandrudima | [ ] @weinand       | [ ] @bpasero       | [ ] @chrmarti      |
 |:-------------------|:-------------------|:-------------------|:-------------------|
 | [ ] @alexandrudima | [ ] @weinand       | [ ] @bpasero       | [ ] @chrmarti      |
 | [ ] @tyriar        | [ ] @dbaeumer      | [ ] @egamma        | [ ] @isidorn       |
