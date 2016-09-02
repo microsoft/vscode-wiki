@@ -137,3 +137,9 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 | [ ] @joaomoreno    | [ ] @jrieken       | [ ] @kieferrm      | [ ] @aeschli       |
 | [ ] @rebornix      | [ ] @octref        | [ ] @ramya-rao-a   | [ ] @roblourens    |
 | [ ] @sandy081      |                    |                    |                    |
+
+| [ ] @alexandrudima | [ ] @weinand       | [ ] @bpasero       | [ ] @chrmarti      |
+| [ ] @tyriar        | [ ] @dbaeumer      | [ ] @egamma        | [ ] @isidorn       |
+| [ ] @joaomoreno    | [ ] @jrieken       | [ ] @kieferrm      | [ ] @aeschli       |
+| [ ] @rebornix      | [ ] @octref        | [ ] @ramya-rao-a   | [ ] @roblourens    |
+| [ ] @sandy081      |                    |                    |                    |
