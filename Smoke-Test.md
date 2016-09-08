@@ -125,6 +125,7 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
 * Turn on
   * OS X: Voice Over
   * Windows: nvda, command palette > 'Toggle use of tab key for setting focus'
+  * Linus: n/a
 * Tab through the whole workbench and verify what you hear makes sense. Also verify you can tab back into the location from where you started
 * Check high contrast theme
 
