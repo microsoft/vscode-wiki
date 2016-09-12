@@ -9,14 +9,14 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 ### Installing Prerequisites
 
-You'll need [git](https://git-scm.com) and a recent verison of [Node.JS](https://nodejs.org/en/) (`v5.10` is highly recommended). `nvm` is also highly recommended.
+You'll need [git](https://git-scm.com) and a recent verison of [Node.JS](https://nodejs.org/en/) (`v5.10` is highly recommended, on Windows you need `v6.x`). `nvm` is also highly recommended.
 
 Code includes node module dependencies that require native compilation. To ensure the compilation is picking up the right version of header files from the Electron Shell, we have our own script to run the installation via `npm`.
 
 For native compilation, you will need [Python](https://www.python.org/downloads/) (version `v2.7` recommended, `v3.x.x` is __*not*__ supported), as well as a C/C++ compiler tool chain.
 
 **Windows**
-* **Warning:** [nodejs/node-gyp#972](https://github.com/nodejs/node-gyp/issues/972) causes compile errors if you are using Visual Studio 2015 (`error C2373: '__pfnDliNotifyHook2': redefinition;`) so make sure to have at least node.js 6.x installed that includes the fix
+* **Warning:** [nodejs/node-gyp#972](https://github.com/nodejs/node-gyp/issues/972) causes compile errors if you are using Visual Studio 2015 (`error C2373: '__pfnDliNotifyHook2': redefinition;`) so make sure to have at least node.js v6.x installed that includes the fix
 * **Warning:** [npm/npm#12698](https://github.com/npm/npm/issues/12698) prevents us from using `npm < 3.10.8`, be sure to install `npm >= 3.10.8` (`npm install -g npm@3.10.8`) after you have installed node.js.
 * In addition to [Python v2.7](https://www.python.org/downloads/release/python-279/), make sure you have a PYTHON environment variable set to `drive:\path\to\python.exe`, not to a folder
 * [Visual Studio 2013 for Windows Desktop](https://www.visualstudio.com/en-us/news/vs2013-community-vs.aspx?wt.mc_id=github_microsoft_vscode) or [Visual Studio 2015](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx?wt.mc_id=github_microsoft_vscode), make sure to select the option to install all C++ tools and the Windows SDK
