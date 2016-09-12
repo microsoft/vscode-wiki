@@ -9,7 +9,7 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 ### Installing Prerequisites
 
-You'll need [git](https://git-scm.com) and `v5.10` or greater of [Node.JS](https://nodejs.org/en/).
+You'll need [git](https://git-scm.com) and a recent verison of [Node.JS](https://nodejs.org/en/) (`v5.10` is highly recommended). `nvm` is also highly recommended.
 
 **Warning:** [npm/npm#12698](https://github.com/npm/npm/issues/12698) prevents us from using `npm >= 3.9`, be sure to install `npm < 3.9`.
 
