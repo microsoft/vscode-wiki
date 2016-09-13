@@ -9,7 +9,7 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 ### Installing Prerequisites
 
-You'll need [git](https://git-scm.com) and a recent verison of [Node.JS](https://nodejs.org/en/) (`v5.10` is highly recommended, on Windows you need `v6.x`). `nvm` is also highly recommended.
+You'll need [git](https://git-scm.com) and a recent verison of [Node.JS](https://nodejs.org/en/) (any `v6.x` is recommended, on Windows you need at least `v6.x`). `nvm` is also highly recommended.
 
 Code includes node module dependencies that require native compilation. To ensure the compilation is picking up the right version of header files from the Electron Shell, we have our own script to run the installation via `npm`.
 
