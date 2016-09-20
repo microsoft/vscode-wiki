@@ -6,7 +6,7 @@ It should be quick and natural to customize VS Code to the way you work so that 
 
 * Help to configure key bindings, themes, common settings on first run of VS Code
 * Ability to create new and populated Workspaces from within VS Code
-* "Open in VS Code" from a git repository
+* [ ] :runner: "Open in VS Code" from a git repository
 
 ## Eliminate Adoption Blockers
 
@@ -17,29 +17,34 @@ VS Code is a young product and there still missing features and experiences that
 * [x] [Move error list from Quick Box to a panel](https://github.com/Microsoft/vscode/issues/6679)
 * [x] [Indent guides](https://github.com/Microsoft/vscode/issues/2192)
 * [x] Global Replace
-* [ ] :runner: [VIM style key binding support](https://github.com/Microsoft/vscode/issues/3600)
-* Fast switching between workspaces 
+* [ ] :runner: [Support for VIM style key bindings](https://github.com/Microsoft/vscode/issues/3600)
+* [ ] :runner: Temp file storage when editor is closed 
 * Multiple folders inside a single workspace
-* Editor layout (e.g. horizontal split)
-* Search performance improvements file list/contents
-* Workbench theming, e.g.,[support icons in explorer](https://github.com/Microsoft/vscode/issues/211)
+* [ ] :runner: Editor layout (e.g. horizontal split)
+* [x] Search performance improvements file list/contents
+* [ ] :runner: Workbench theming, e.g.,[support icons in explorer](https://github.com/Microsoft/vscode/issues/211)
 * [Accessibility](https://github.com/Microsoft/vscode/issues/6583) 
+* [ ] Improved settings and configuration experiences
 
 ## Improved Extension creation, discovery and management
 
 We want to make it easy for developers to create extensions and for users to discover extensions. And, once you have discovered a set of extensions, we want to make it easy for you to manage them.
 
 * [x] [In product extension management experience](https://github.com/Microsoft/vscode/issues/637)
-* [x] Improved extension recommendation experience
-* Support for "extension packs”, collections of extensions and settings
-* Improved documentation to feature extensions and extension packs appropriately
+* [ ] Improved extension recommendation experience
+* [ ] :runner: Support for disabling an extensions vs. uninstall
+* [X] Update all extensions and keep all extensisons up-to-date actions
+* [ ] :runner: Support for "extension packs”, collections of extensions and settings
+* [x] Improved documentation for [language based extensions](http://code.visualstudio.com/docs/extensions/language-support)
 * Improve the [Marketplace](https://marketplace.visualstudio.com/vscode) experience for discovering and installing extensions
 
 For extension developers:
 
 * SDK: Improve extension README authoring and quality
 * Expand the core VS Code extensibility APIs
- - [x] menu contributions
+ - [x] Menu contributions
+ - [x] File Icon sets
+ - [ ] :runner: Support for extensions to programmatically update settings files
 * Expand the diagnostics experience and API to support additional debugging scenario requirements, such as
  - [x] [attach to process](https://github.com/Microsoft/vscode/issues/6569)
 
@@ -52,10 +57,10 @@ We will continue to improve our code editing and navigation experiences by partn
 
 * Work with the TypeScript team on the JavaScript language service which powers our JavaScript and TypeScript editing experiences to:
 
-  * Automatic acquisition of .d.ts files to enable IntelliSense "out of the box"
+  * [ ] :runner: Suggest imports of .d.ts files to enable IntelliSense "out of the box"
   * Angular IntelliSense
-  * Diagnostics on project configuration files (`jsconfig.json`, `tsconfig.json`)
-  * [ ] :runner: Show errors for the entire project and not only the file that is currently edited.
+  * [ ] Suggest project configuration files (`jsconfig.json`, `tsconfig.json`)
+  * [ ] Show errors for the entire project and not only the file that is currently edited.
 
 * [x] Node Debugger: Step over uninteresting (generated) code
 * Improved npm support and help to keep the `package.json` consistent with the installed node modules
