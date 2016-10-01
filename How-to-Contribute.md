@@ -67,7 +67,7 @@ cd vscode
 
 ### Packaging
 
-VSCode can be packaged for the following platforms: `win32 | darwin | linux-ia32 | linux-x64 | linux-arm`
+Code can be packaged for the following platforms: `win32 | darwin | linux-ia32 | linux-x64 | linux-arm`
 
 These `gulp` tasks are available:
 
