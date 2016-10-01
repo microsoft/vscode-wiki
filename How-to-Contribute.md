@@ -67,7 +67,12 @@ cd vscode
 
 ### Packaging
 
-VS Code can be built into platform-specific packages via `gulp` tasks. See [gulpfile.vscode.js](https://github.com/Microsoft/vscode/blob/master/build/gulpfile.vscode.js) for the available packaging tasks.
+VSCode can be packaged for the following platforms: `win32 | darwin | linux-ia32 | linux-x64 | linux-arm`
+
+These `gulp` tasks are available:
+
+* `vscode-[platform]`: Builds a packaged version for `[platform]`.
+* `vscode-[platform]-min`: Builds a packaged and minified version for `[platform]`.
 
 ## Development Workflow
 
