@@ -14,7 +14,7 @@ New issues or pull requests submitted by the community are triaged by a team mem
 
 The [Inbox query](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen%20no%3Aassignee%20-label%3Afeature-request%20-label%3Atestplan-item%20-label%3Aplan-item%20-label%3Aextension-candidate) contains all the
 - **open issues or pull requests** that
-- are **not feature requests** nor **test plan items** and
+- are **not feature requests** nor **test plan items** nor **plan items** nor **extension candidates** and
 - have **no owner assignment**.
 
 The **inbox tracker** should do the following initial triage:
