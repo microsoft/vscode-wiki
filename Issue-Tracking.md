@@ -12,7 +12,7 @@ New issues or pull requests submitted by the community are triaged by a team mem
 
 ### Inbox Tracking
 
-The [Inbox query](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Atestplan-item+) contains all the
+The [Inbox query](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Atestplan-item+-label%3plan-item+-label%3extension-candidate+) contains all the
 - **open issues or pull requests** that
 - are **not feature requests** nor **test plan items** and
 - have **no owner assignment**.
