@@ -65,6 +65,8 @@ cd vscode
 
 **Note:** For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
 
+**Note:** To install Code's dependencies as `root` (eg: Docker environments) make sure you use `--unsafe-perm` when invoking `./scripts/npm.sh`.
+
 ### Packaging
 
 Code can be packaged for the following platforms: `win32 | darwin | linux-ia32 | linux-x64 | linux-arm`
