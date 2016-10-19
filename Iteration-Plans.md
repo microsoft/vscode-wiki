@@ -1,3 +1,6 @@
+### October 2016
+* [Iteration Plan](../issues/13342)
+
 ### September 2016
 * [Iteration Plan](../issues/11917)
 
