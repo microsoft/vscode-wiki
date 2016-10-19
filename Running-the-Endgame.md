@@ -67,8 +67,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] Linux - **@owner**
 - [ ] All release notes updated
   - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
-- [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. **owner**
-- [ ] Mention notable fixes in the release notes **@all**
+- [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. Use the [thankyou](https://github.com/Microsoft/vscode-tools/tree/master/thankyou) utility to generate the initial contents of the section. **owner**
+- [ ] Anotable fixes in the release notes **@all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Trigger new insider build and publish it manually **@owner**
 
