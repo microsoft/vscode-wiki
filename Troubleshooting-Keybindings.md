@@ -50,7 +50,7 @@ Here is the information that module gives us for the US standard layout:
 | <kbd>VKEY_OEM_2</kbd> | <kbd>/</kbd> | <kbd>?</kbd> |  |  |
 | <kbd>VKEY_OEM_3</kbd> | <kbd>\`</kbd> | <kbd>~</kbd> |  |  |
 | <kbd>VKEY_OEM_4</kbd> | <kbd>[</kbd> | <kbd>{</kbd> |  |  |
-| <kbd>VKEY_OEM_5</kbd> | <kbd>\\</kbd> | <kbd>|</kbd> |  |  |
+| <kbd>VKEY_OEM_5</kbd> | <kbd>\\</kbd> | <kbd>\|</kbd> |  |  |
 | <kbd>VKEY_OEM_6</kbd> | <kbd>]</kbd> | <kbd>}</kbd> |  |  |
 | <kbd>VKEY_OEM_7</kbd> | <kbd>'</kbd> | <kbd>"</kbd> |  |  |
 | <kbd>VKEY_OEM_102</kbd> | <kbd>\\</kbd> | <kbd>\|</kbd> | | |  
