@@ -38,7 +38,7 @@ We have therefore written a native node module, [`native-keymap`](https://github
 
 The native node module can be basically queried to get the key code -> produced characters mapping with the current keyboard layout. **For performance reasons, we query this mapping only on VS Code window startup, therefore if you change your keyboard layout while VS Code is running, please restart VS Code**.
 
-Here is the information that module gives us for the US standard layout:
+### Here is the information that module gives us for the US standard layout:
 
 | Key Code | Produced | Shift+ | AltGr+ | Shift+AltGr+ |
 |----------|----------|--------|--------|--------------|
@@ -55,67 +55,19 @@ Here is the information that module gives us for the US standard layout:
 | <kbd>VKEY_OEM_7</kbd> | <kbd>'</kbd> | <kbd>"</kbd> |  |  |
 | <kbd>VKEY_OEM_102</kbd> | <kbd>\\</kbd> | <kbd>\|</kbd> | | |  
 
+### Here is the information that module gives us for the German (Germany) layout:
 
-```
+| Key Code | Produced | Shift+ | AltGr+ | Shift+AltGr+ |
+|----------|----------|--------|--------|--------------|
+| <kbd>VKEY_OEM_1</kbd> | <kbd>ü</kbd> | <kbd>Ü</kbd> |  | 
+| <kbd>VKEY_OEM_PLUS</kbd> | <kbd>+</kbd> | <kbd>*</kbd> | <kbd>~</kbd> | 
+| <kbd>VKEY_OEM_COMMA</kbd> | <kbd>,</kbd> | <kbd>;</kbd> |  | 
+| <kbd>VKEY_OEM_MINUS</kbd> | <kbd>-</kbd> | <kbd>_</kbd> |  | 
+| <kbd>VKEY_OEM_PERIOD</kbd> | <kbd>.</kbd> | <kbd>:</kbd> |  | 
+| <kbd>VKEY_OEM_2</kbd> | <kbd>#</kbd> | <kbd>\'</kbd> |  | 
+| <kbd>VKEY_OEM_3</kbd> | <kbd>ö</kbd> | <kbd>Ö</kbd> |  | 
+| <kbd>VKEY_OEM_4</kbd> | <kbd>ß</kbd> | <kbd>?</kbd> | <kbd>\\</kbd> | <kbd>ẞ</kbd>
+| <kbd>VKEY_OEM_5</kbd> | <kbd><span style="color:red">^</span></kbd> | <kbd>°</kbd> |  | 
+| <kbd>VKEY_OEM_7</kbd> | <kbd>ä</kbd> | <kbd>Ä</kbd> |  | 
+| <kbd>VKEY_OEM_102</kbd> | <kbd><</kbd> | <kbd>></kbd> | <kbd>|</kbd> | 
 
-  { key_code: 'VKEY_OEM_1',
-    value: 'ü',
-    withShift: 'Ü',
-    withAltGr: '',
-    withShiftAltGr: '' },
-  { key_code: 'VKEY_OEM_PLUS',
-    value: '+',
-    withShift: '*',
-    withAltGr: '~',
-    withShiftAltGr: '' },
-
-  { key_code: 'VKEY_OEM_COMMA',
-    value: ',',
-    withShift: ';',
-    withAltGr: '',
-    withShiftAltGr: '' },
-  { key_code: 'VKEY_OEM_MINUS',
-    value: '-',
-    withShift: '_',
-    withAltGr: '',
-    withShiftAltGr: '' },
-
-  { key_code: 'VKEY_OEM_PERIOD',
-    value: '.',
-    withShift: ':',
-    withAltGr: '',
-    withShiftAltGr: '' },
-  { key_code: 'VKEY_OEM_2',
-    value: '#',
-    withShift: '\'',
-    withAltGr: '',
-    withShiftAltGr: '' },
-
-  { key_code: 'VKEY_OEM_3',
-    value: 'ö',
-    withShift: 'Ö',
-    withAltGr: '',
-    withShiftAltGr: '' },
-  { key_code: 'VKEY_OEM_4',
-    value: 'ß',
-    withShift: '?',
-    withAltGr: '\\',
-    withShiftAltGr: 'ẞ' },
-
-  { key_code: 'VKEY_OEM_5',
-    value: '',
-    withShift: '°',
-    withAltGr: '',
-    withShiftAltGr: '' },
-  { key_code: 'VKEY_OEM_7',
-    value: 'ä',
-    withShift: 'Ä',
-    withAltGr: '',
-    withShiftAltGr: '' },
-
-  { key_code: 'VKEY_OEM_102',
-    value: '<',
-    withShift: '>',
-    withAltGr: '|',
-    withShiftAltGr: '' } ]
-    ```
