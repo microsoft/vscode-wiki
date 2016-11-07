@@ -2,6 +2,8 @@
 
 This guide will explain how VS Code handles keybindings and guide you through identifying keybindings issues (especially related to different keyboard layouts).
 
+Please take the time to read through this detailed explanation before proceeding to troubleshooting.
+
 ## How VS Code dispatches keybindings
 
 * Our keybindings work with key codes (as defined [here](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731(v=vs.85).aspx)). e.g.:
@@ -95,3 +97,74 @@ We try to be somewhat helpful and point out mismatches when we detect them. Here
 
   [[images/keyboard/default-kb-Germany.png]]
 
+## Troubleshooting 1: pressing a key -> running a command
+
+This section describes what to do when you want to press a key on your keyboard and you'd like it to result in a command being executed in VS Code.
+
+**Use the Define Keybinding widget**:
+
+  [[images/keyboard/define-keybinding.gif]]
+
+## Troubleshooting 2: command -> what key to press
+
+This section describes what to do when you'd like to find out what key a command is bound to. Let's pick Toggle Line Comment (`editor.action.commentLine`) as an example.
+
+#### 1. Find the key code it is bound to out-of-the-box
+
+
+Go to the default keybindings and find the entry for the command:
+
+```
+{ "key": "ctrl+/",  "command": "editor.action.commentLine",
+                       "when": "editorTextFocus && !editorReadonly" }
+```
+
+| `keybindings.json` | Key Code | Value |
+|----------|----------|--------|--------|
+| <kbd>;</kbd> | <kbd>VKEY_OEM_1</kbd> | 186 |
+| <kbd>=</kbd> | <kbd>VKEY_OEM_PLUS</kbd> | 187 |
+| <kbd>,</kbd> | <kbd>VKEY_OEM_COMMA</kbd> | 188 |
+| <kbd>-</kbd> | <kbd>VKEY_OEM_MINUS</kbd> | 189 |
+| <kbd>.</kbd> | <kbd>VKEY_OEM_PERIOD</kbd> | 190 |
+| <kbd>/</kbd> | <kbd>VKEY_OEM_2</kbd> | 191 |
+| <kbd>\`</kbd> | <kbd>VKEY_OEM_3</kbd> | 192 |
+| <kbd>[</kbd> | <kbd>VKEY_OEM_4</kbd> | 219 |
+| <kbd>\\</kbd> | <kbd>VKEY_OEM_5</kbd> | 220 |
+| <kbd>]</kbd> | <kbd>VKEY_OEM_6</kbd> | 221 |
+| <kbd>'</kbd> | <kbd>VKEY_OEM_7</kbd> | 222 |
+| <kbd>\\</kbd> | <kbd>VKEY_OEM_102</kbd> | 226 |  
+
+Use the above table and deduce that the command is bound to <kbd>Ctrl</kbd> + <kbd>VKEY_OEM_2</kbd>:
+
+#### 2. Find which key on your keyboard layout is mapped to `VKEY_OEM_2`
+
+Use the above table and deduce that we're looking for a `keydown` event that generates the `keyCode = 191`. Go to https://www.w3.org/2002/09/tests/keys.html with Chrome and press keys until you see one that generates `keyCode = 191`.
+
+For the US standard layout, that is the key next to Shift <kbd>/?</kbd>.
+
+For the German (Germany) layout, that is the key next to Shift <kbd>#'</kbd>.
+
+#### 3. Correlate with VS Code
+
+VS Code should have informed you and should have rendered `VKEY_OEM_2` in your current keyboard layout correctly. If that is not the case, proceed to the next troubleshooting section.
+
+## Troubleshooting 3: verifying that Chromium is sending the correct key code
+
+Open https://www.w3.org/2002/09/tests/keys.html in both Chromium and Firefox (or IE). Press the key you are interested in. It should produce the same `keyCode` in both browsers. If that's not the case, then most likely this is an issue with Chromium.
+
+## Troubleshooting 4: verifying that VS Code renders key codes as expected
+
+You will need node.js and a good (node compatible) C++ toolchain.
+
+```
+git clone https://github.com/Microsoft/node-native-keymap.git
+cd node-native-keymap
+npm install -g node-gyp
+node-gyp configure
+node-gyp build
+npm test
+```
+
+This should print out the mapping table that VS Code is using to render the key codes.
+
+This mapping table could be incorrect, in which case this is an issue with `node-native-keymap`.
