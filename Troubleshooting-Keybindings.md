@@ -27,8 +27,95 @@ As you can see, different keyboard layouts do various things (and it varies acro
  * sometimes they change what a key code produces.
    * e.g. <kbd>Shift</kbd> + <kbd>COMMA</kbd> produces `<` on the US layout, but produces `;` on the German layout. 
  * sometimes they rearrange/remove/add key codes on the keyboard.
-   * e.g. On the US layout, the key next to <kbd>1</kbd> is <kbd>OEM_3</kbd>, meanwhile on the German layout it is <kbd>OEM_5</kbd>
+   * e.g. On the US layout, the key next to <kbd>1</kbd> is <kbd>OEM_3</kbd>, on the German layout it is <kbd>OEM_5</kbd>
    * e.g. the German layout has <kbd>OEM_102</kbd>, which the US layout does not
 
----
+## Key Code rendering in the UI
 
+It would not be very friendly if we were to render in the UI that the keybinding for Toggle Line Comment is <kbd>Ctrl</kbd> + <kbd>VKEY_OEM_2</kbd>. Unfortunately, Chromium does not have any API that would give us the keyboard layout and the mappings from key code to produced characters.
+
+We have therefore written a native node module, [`native-keymap`](https://github.com/Microsoft/node-native-keymap). The module has distinct implementations for each OS (mac, windows, linux) and it basically works by creating fake keyboard events and then scanning the produced characters (each OS has its own particular way of doing this).
+
+The native node module can be basically queried to get the key code -> produced characters mapping with the current keyboard layout. **For performance reasons, we query this mapping only on VS Code window startup, therefore if you change your keyboard layout while VS Code is running, please restart VS Code**.
+
+Here is the information that module gives us for the US standard layout:
+
+| Key Code | Produced | Shift+ | AltGr+ | Shift+AltGr+ |
+|----------|----------|--------|--------|--------------|
+| <kbd>VKEY_OEM_1</kbd> | <kbd>;</kbd> | <kbd>:</kbd> |  |  |
+| <kbd>VKEY_OEM_PLUS</kbd> | <kbd>=</kbd> | <kbd>+</kbd> |  |  |
+| <kbd>VKEY_OEM_COMMA</kbd> | <kbd>,</kbd> | <kbd><</kbd> |  |  |
+| <kbd>VKEY_OEM_MINUS</kbd> | <kbd>-</kbd> | <kbd>_</kbd> |  |  |
+| <kbd>VKEY_OEM_PERIOD</kbd> | <kbd>.</kbd> | <kbd>></kbd> |  |  |
+| <kbd>VKEY_OEM_2</kbd> | <kbd>/</kbd> | <kbd>?</kbd> |  |  |
+| <kbd>VKEY_OEM_3</kbd> | <kbd>\`</kbd> | <kbd>~</kbd> |  |  |
+| <kbd>VKEY_OEM_4</kbd> | <kbd>[</kbd> | <kbd>{</kbd> |  |  |
+| <kbd>VKEY_OEM_5</kbd> | <kbd>\\</kbd> | <kbd>|</kbd> |  |  |
+| <kbd>VKEY_OEM_6</kbd> | <kbd>]</kbd> | <kbd>}</kbd> |  |  |
+| <kbd>VKEY_OEM_7</kbd> | <kbd>'</kbd> | <kbd>"</kbd> |  |  |
+| <kbd>VKEY_OEM_102</kbd> | <kbd>\\</kbd> | <kbd>\|</kbd> | | |  
+
+
+```
+
+  { key_code: 'VKEY_OEM_1',
+    value: 'ü',
+    withShift: 'Ü',
+    withAltGr: '',
+    withShiftAltGr: '' },
+  { key_code: 'VKEY_OEM_PLUS',
+    value: '+',
+    withShift: '*',
+    withAltGr: '~',
+    withShiftAltGr: '' },
+
+  { key_code: 'VKEY_OEM_COMMA',
+    value: ',',
+    withShift: ';',
+    withAltGr: '',
+    withShiftAltGr: '' },
+  { key_code: 'VKEY_OEM_MINUS',
+    value: '-',
+    withShift: '_',
+    withAltGr: '',
+    withShiftAltGr: '' },
+
+  { key_code: 'VKEY_OEM_PERIOD',
+    value: '.',
+    withShift: ':',
+    withAltGr: '',
+    withShiftAltGr: '' },
+  { key_code: 'VKEY_OEM_2',
+    value: '#',
+    withShift: '\'',
+    withAltGr: '',
+    withShiftAltGr: '' },
+
+  { key_code: 'VKEY_OEM_3',
+    value: 'ö',
+    withShift: 'Ö',
+    withAltGr: '',
+    withShiftAltGr: '' },
+  { key_code: 'VKEY_OEM_4',
+    value: 'ß',
+    withShift: '?',
+    withAltGr: '\\',
+    withShiftAltGr: 'ẞ' },
+
+  { key_code: 'VKEY_OEM_5',
+    value: '',
+    withShift: '°',
+    withAltGr: '',
+    withShiftAltGr: '' },
+  { key_code: 'VKEY_OEM_7',
+    value: 'ä',
+    withShift: 'Ä',
+    withAltGr: '',
+    withShiftAltGr: '' },
+
+  { key_code: 'VKEY_OEM_102',
+    value: '<',
+    withShift: '>',
+    withAltGr: '|',
+    withShiftAltGr: '' } ]
+    ```
