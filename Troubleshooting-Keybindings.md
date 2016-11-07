@@ -75,9 +75,23 @@ The native node module can be basically queried to get the key code -> produced 
 
 We use this information **for rendering purposes**. e.g. in the `F1` list:
 
- * when under the US standard layout:
+ * when under the US standard layout, <kbd>VKEY_OEM_2</kbd> -> <kbd>/</kbd> :
     [[images/keyboard/toggle-line-comment-US.png]]
- * when under the German (Germany) layout:
+ * when under the German (Germany) layout, <kbd>VKEY_OEM_2</kbd> -> <kbd>#</kbd>:
     [[images/keyboard/toggle-line-comment-German.png]]
 
-  
+
+## Key Codes in `keybindings.json`
+
+Most software I know does not expose in any human readable, much less editable format its keybindings table. VS Code is minimalistic in terms of UI and exposes the keybindings in a JSON format, in `keybindings.json`.
+
+This file must be keyboard layout agnostic, as it is written to disk. We therefore store, represent, and refer to key codes in there. Again, it would not be very friendly if we would represent the keybinding for Toggle Line Comment (`editor.action.commentLine`) as <kbd>Ctrl</kbd> + <kbd>VKEY_OEM_2</kbd> (`"ctrl+oem_2"`).
+
+We've chosen to use the US produced characters to refer to key codes, i.e. although we can parse `"ctrl+oem_2"`, we have chosen to represent it as `"ctrl+/"`. This is definitely unexpected and confusing when using a different keyboard layout, and IMHO can be alleviated only by building a custom UI for keybindings customization.
+
+Long story short, when you see `"ctrl+/"` in `keybindings.json`, it means `"ctrl+oem_2"`, and the same is true for the rest of the keys.
+
+We try to be somewhat helpful and point out mismatches when we detect them. Here is how the default keybindings look like when being opened with the German (Germany) layout:
+
+  [[images/keyboard/default-kb-Germany.png]]
+
