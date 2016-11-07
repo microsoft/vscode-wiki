@@ -11,10 +11,10 @@ For discussions on specific extensions and to add more information, link a newly
 - [ ] [Sublime-Style-Column-Selection](https://atom.io/packages/Sublime-Style-Column-Selection)
 - [ ] [atom-beautify](https://atom.io/packages/atom-beautify). Lots of language support for code formatting. 
 - [ ] [atom-typescript](https://atom.io/packages/atom-typescript). Feature that is missing is compile on save with no task runner configuration. Good task candidate. 
-- [ ] [hex](https://atom.io/packages/hex). View the hex of any dump file. 
 - [ ] [qmake / Qt project file](http://doc.qt.io/qt-5/qmake-project-files.html).  Syntax highlighting and auto-complete.
 
 ## Complete
+- [X] [hex dump](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-hexdump)
 - [x] Auto complete relative paths in Javascript files. See [SO question](https://stackoverflow.com/questions/35415444/is-it-possible-to-auto-complete-relative-paths-in-vscode) for details. Covered by the [Path Intellisense Extension](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 - [x] docblockr, doxy-commenting -> VS Code [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis) extension
 - [x] atom alignment -> VS Code [Align](https://marketplace.visualstudio.com/items?itemName=steve8708.Align)
