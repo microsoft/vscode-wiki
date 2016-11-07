@@ -17,11 +17,11 @@ This guide will explain how VS Code handles keybindings and guide you through id
 
 Most of the keyboard layouts show only the **produced** characters. Here is, for example the US standard keyboard layout:
 
-    [[images/keyboard/KB_United_States-NoAltGr.png]]
+  [[images/keyboard/KB_United_States-NoAltGr.png]]
 
 Here I have annotated the US standard keyboard layout with the key codes "behind" the produced characters:
 
-    [[images/keyboard/KB_United_States-NoAltGr-keycodes.png]]
+  [[images/keyboard/KB_United_States-NoAltGr-keycodes.png]]
 
 Different keyboard layouts do various things (and it varies across OSes):
  * sometimes they change what a key code produces.
@@ -31,11 +31,18 @@ Different keyboard layouts do various things (and it varies across OSes):
 
 Here is, for example, the GER (Germany) keyboard layout on Windows:
 
-    [[images/keyboard/900px-KB_Germany.png]]
+  [[images/keyboard/900px-KB_Germany.png]]
 
 Here I have annotated the GER (Germany) keyboard layout with the key codes:
 
-    [[images/keyboard/900px-KB_Germany-keycodes.png]]
+  [[images/keyboard/900px-KB_Germany-keycodes.png]]
+
+Let's see them side-by-side:
+
+| Standard US | GER (Germany) |
+|----|----|
+| [[images/keyboard/KB_United_States-NoAltGr-keycodes.png]] | [[images/keyboard/900px-KB_Germany-keycodes.png]]|
+
 
 * Different keyboard layouts do various things:
   * sometimes they change what a key code produces:
