@@ -64,10 +64,20 @@ The native node module can be basically queried to get the key code -> produced 
 | <kbd>VKEY_OEM_COMMA</kbd> | <kbd>,</kbd> | <kbd>;</kbd> |  | 
 | <kbd>VKEY_OEM_MINUS</kbd> | <kbd>-</kbd> | <kbd>_</kbd> |  | 
 | <kbd>VKEY_OEM_PERIOD</kbd> | <kbd>.</kbd> | <kbd>:</kbd> |  | 
-| <kbd>VKEY_OEM_2</kbd> | <kbd>#</kbd> | <kbd>\'</kbd> |  | 
+| <kbd>VKEY_OEM_2</kbd> | <kbd>#</kbd> | <kbd>'</kbd> |  | 
 | <kbd>VKEY_OEM_3</kbd> | <kbd>ö</kbd> | <kbd>Ö</kbd> |  | 
 | <kbd>VKEY_OEM_4</kbd> | <kbd>ß</kbd> | <kbd>?</kbd> | <kbd>\\</kbd> | <kbd>ẞ</kbd>
 | <kbd>VKEY_OEM_5</kbd> | <kbd><span style="color:red">^</span></kbd> | <kbd>°</kbd> |  | 
 | <kbd>VKEY_OEM_7</kbd> | <kbd>ä</kbd> | <kbd>Ä</kbd> |  | 
-| <kbd>VKEY_OEM_102</kbd> | <kbd><</kbd> | <kbd>></kbd> | <kbd>|</kbd> | 
+| <kbd>VKEY_OEM_102</kbd> | <kbd><</kbd> | <kbd>></kbd> | <kbd>\|</kbd> | 
 
+### Finally, the rendering
+
+We use this information **for rendering purposes**. e.g. in the `F1` list:
+
+ * when under the US standard layout:
+    [[images/keyboard/toggle-line-comment-US.png]]
+ * when under the German (Germany) layout:
+    [[images/keyboard/toggle-line-comment-German.png]]
+
+  
