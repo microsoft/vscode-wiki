@@ -131,7 +131,7 @@ Go to the default keybindings and find the entry for the command:
 | <kbd>\\</kbd> | <kbd>VKEY_OEM_5</kbd> | 220 |
 | <kbd>]</kbd> | <kbd>VKEY_OEM_6</kbd> | 221 |
 | <kbd>'</kbd> | <kbd>VKEY_OEM_7</kbd> | 222 |
-| <kbd>\\</kbd> | <kbd>VKEY_OEM_102</kbd> | 226 |  
+| <kbd>oem_102</kbd> | <kbd>VKEY_OEM_102</kbd> | 226 |  
 
 Use the above table and deduce that the command is bound to <kbd>Ctrl</kbd> + <kbd>VKEY_OEM_2</kbd>:
 
