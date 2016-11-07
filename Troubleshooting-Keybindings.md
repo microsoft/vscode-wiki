@@ -1,4 +1,3 @@
-# Troubleshooting keybindings
 
 This guide will explain how VS Code handles keybindings and guide you through identifying keybindings issues (especially related to different keyboard layouts).
 
