@@ -115,7 +115,7 @@ Go to the default keybindings and find the entry for the command:
 
 ```
 { "key": "ctrl+/",  "command": "editor.action.commentLine",
-                       "when": "editorTextFocus && !editorReadonly" }
+                    "when": "editorTextFocus && !editorReadonly" }
 ```
 
 | `keybindings.json` | Key Code | Value |
