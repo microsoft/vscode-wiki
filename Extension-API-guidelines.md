@@ -25,11 +25,11 @@ Events aren’t defined on the types they occur on but in the best matching name
 
 Event naming
 -
-Event following the `on[Did|Will]VerbSubject` patterns, like `onDidChangeActiveEditor` or `onWillSaveTextDocument`. It doesn’t hurt to be explicit with names.  
+Events follow the `on[Did|Will]VerbSubject` patterns, like `onDidChangeActiveEditor` or `onWillSaveTextDocument`. It doesn’t hurt to be explicit with names.  
 
 Creating Objects
 -
-Objects that live in the main thread but can be controlled/instantiated by extensions are declared as interfaces, e.g. `TextDocument` or `StatusBarItem`. When you allow to create such objects you API must following the `createXYZ(args): XYZ` pattern. Because this is a constructor-replacement the call must return synchronously. 
+Objects that live in the main thread but can be controlled/instantiated by extensions are declared as interfaces, e.g. `TextDocument` or `StatusBarItem`. When you allow to create such objects your API must follow the `createXYZ(args): XYZ` pattern. Because this is a constructor-replacement the call must return synchronously. 
 
 Shy Objects
 -
@@ -57,7 +57,7 @@ We usually don’t expose the fact that setting state is asynchronous and try to
 
 Data Driven
 -
-Whenever possible you should define a data model and define provider-interfaces. This puts VS Code into control as we can decide when to ask those providers, how to deal with multiple provider etc. The `ReferenceProvider` interface is a good sample for this.
+Whenever possible you should define a data model and define provider-interfaces. This puts VS Code into control as we can decide when to ask those providers, how to deal with multiple providers etc. The `ReferenceProvider` interface is a good sample for this.
 
 Enrich Data Incrementally
 -
@@ -76,7 +76,7 @@ Data that we accept in methods calls, like `registerRenameProvider` or `showQuic
 
 Strict and relaxed data
 -
-Data the API returns is strict, e.g `activeTextEditor` is an editor or undefined, but not null. On the other side, providers can return relaxed data. We usually accept 4 types: The actual type, like `RenameResult`, a thenable of that type, `undefined` or `null`. With that we want to make it easy to implement a provider, e.g. if you can compute results synchronous you don’t need to wrap things into a promise or if a certain condition isn’t met simple return etc. 
+Data the API returns is strict, e.g `activeTextEditor` is an editor or undefined, but not null. On the other side, providers can return relaxed data. We usually accept 4 types: The actual type, like `Hover`, a thenable of that type, `undefined` or `null`. With that we want to make it easy to implement a provider, e.g. if you can compute results synchronous you don’t need to wrap things into a promise or if a certain condition isn’t met simple return etc. 
 
 Validate data
 -
@@ -84,7 +84,7 @@ Although providers can return ‘relaxed’ data you verify it. The same is true
 
 Copy data
 -
-Don’t send data a provider returned over the wire as is. Often they contain more data we need and often there are cyclic dependencies. With provider data fill objects that your protocol speaks
+Don’t send data a provider returned over the wire as is. Often they contain more data we need and often there are cyclic dependencies. With provider data, fill objects that your protocol speaks.
 
 
 JSDOC
