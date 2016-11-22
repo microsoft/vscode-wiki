@@ -1,7 +1,7 @@
 Extension API Guidelines
 =
 
-This is a loose collection of guidelines that you should be following when proposing API. The process for adding API the following
+This is a loose collection of guidelines that you should be following when proposing API. The process for adding API is the following
 
 1. read and understand this document
 2. add API into the `vscode.proposed.d.ts` file
@@ -9,31 +9,31 @@ This is a loose collection of guidelines that you should be following when propo
 
 Breakage
 -
-We DO NOT want to break the API. Therefore be very careful and conservative when adding API. Expose only the minimum but still try to design for potential requests. 
+We DO NOT want to break API. Therefore be careful and conservative when proposing new API. It needs to hold up in the long term. Expose only the minimum but still try to anticipate potential future requests. 
 
 Namespaces
 -
-The API is structured into different namespaces, like `commands`, `window`, `workspace` etc. Namespaces contain functions, constants, and events. All types (classes, enum, interfaces) are defined the global, `vscode`, namespace.
+The API is structured into different namespaces, like `commands`, `window`, `workspace` etc. Namespaces contain functions, constants, and events. All types (classes, enum, interfaces) are defined in the global, `vscode`, namespace.
 
 JavaScript
 -
-The API should have JavaScript’ish feel. While that is harder to put in rules, it means we use namespaces, properties, functions, and globals instead of object-factories and services. Also take inspiration from popular existing JS API, for instance `window.createStatusBarItem` is like `document.createElement`, the members of `DiagnosticsCollection` are similar to ES6 maps etc. 
+The API should have a JavaScript’ish feel. While that is harder to put in rules, it means we use namespaces, properties, functions, and globals instead of object-factories and services. Also take inspiration from popular existing JS API, for instance `window.createStatusBarItem` is like `document.createElement`, the members of `DiagnosticsCollection` are similar to ES6 maps etc. 
 
 Global Events
 -
-Events aren’t defined on the types they occur on but in the best matching namespace. For instance, document changes aren’t send by a document but via the `workspace.onDidChangeTextDocument` event. The event type will contain the document in question. This *global-event* pattern makes it easier to manage event subscriptions because it happens lot less frequent. 
+Events aren’t defined on the types they occur on but in the best matching namespace. For instance, document changes aren’t send by a document but via the `workspace.onDidChangeTextDocument` event. The event will contain the document in question. This **global event** pattern makes it easier to manage event subscriptions because changes happen less frequently. 
 
 Event naming
 -
-Events follow the `on[Did|Will]VerbSubject` patterns, like `onDidChangeActiveEditor` or `onWillSaveTextDocument`. It doesn’t hurt to be explicit with names.  
+Events follow the `on[Did|Will]VerbSubject` patterns, like `onDidChangeActiveEditor` or `onWillSaveTextDocument`. It doesn’t hurt to use explicit names.  
 
 Creating Objects
 -
-Objects that live in the main thread but can be controlled/instantiated by extensions are declared as interfaces, e.g. `TextDocument` or `StatusBarItem`. When you allow to create such objects your API must follow the `createXYZ(args): XYZ` pattern. Because this is a constructor-replacement the call must return synchronously. 
+Objects that live in the main thread but can be controlled/instantiated by extensions are declared as interfaces, e.g. `TextDocument` or `StatusBarItem`. When you allow to create such objects your API must follow the `createXYZ(args): XYZ` pattern. Because this is a constructor-replacement, the call must return synchronously. 
 
 Shy Objects
 -
-Objects the API hands out to extensions should not contain more than the API defined. Don’t expect everyone to read `vscode.d.ts` but also expect folks to use debugging-aided-intellisense, meaning whatever the debugger shows as properties is programmed against. We don’t wanna appear as making false promises. Prefix your private members with `_` as that is a common rule or even better use function-scopes to hide information.
+Objects the API hands out to extensions should not contain more than what the API defines. Don’t expect everyone to read `vscode.d.ts` but also expect folks to use debugging-aided-intellisense, meaning whatever the debugger shows developers will program against. We don’t want to appear as making false promises. Prefix your private members with `_` as that is a common rule or even better use function-scopes to hide information.
 
 Sync vs Async
 -
@@ -52,7 +52,7 @@ Reading data, like an editor selection, a configuration value, etc is synchronou
  4. On the API object set the value again
 ```
 
-We usually don’t expose the fact that setting state is asynchronous and try to kept and API that feels sync -`editor.selection` is a getter/setter and not a method. 
+We usually don’t expose the fact that setting state is asynchronous. We try to have API that feels sync -`editor.selection` is a getter/setter and not a method. 
 
 
 Data Driven
@@ -61,7 +61,7 @@ Whenever possible you should define a data model and define provider-interfaces.
 
 Enrich Data Incrementally
 -
-Sometimes it is expensive for a provider to compute some data. For instance, creating a full `CompletionItem` (with all the documentation and symbols resolved) conflicts with being able to compute a large list of them quickly. In those cases, providers should offer a resolve-method that allows extensions to enrich data. The `CodeLensProvider` and `CompletionItemProvider` interfaces are good samples for this.
+Sometimes it is expensive for a provider to compute parts of its data. For instance, creating a full `CompletionItem` (with all the documentation and symbols resolved) conflicts with being able to compute a large list of them quickly. In those cases, providers should return a lightweight version and offer a `resolve` method that allows extensions to enrich data. The `CodeLensProvider` and `CompletionItemProvider` interfaces are good samples for this.
 
 Cancellation
 -
@@ -69,24 +69,24 @@ Calls into a provider should always include a `CancellationToken` as the last pa
 
 Objects vs Interfaces
 -
-Objects that should be returned by a provider are usally implemented as class which extensions can instantiate, e.g. `CodeLens`. We do that to provide convience constructors and to able to populate default values. 
+Objects that should be returned by a provider are usally represented by a class that extensions can instantiate, e.g. `CodeLens`. We do that to provide convience constructors and to be able to populate default values. 
 
-Data that we accept in methods calls, like `registerRenameProvider` or `showQuickPick` is declared as interfaces. That makes it easy to fullfill the API contract using class-instances or plain object literals.
+Data that we accept in methods calls, i.e. parameter types, like in `registerRenameProvider` or `showQuickPick`, are declared as interfaces. That makes it easy to fullfill the API contract using class-instances or plain object literals.
 
 
-Strict and relaxed data
+Strict and Relaxed Data
 -
-Data the API returns is strict, e.g `activeTextEditor` is an editor or undefined, but not null. On the other side, providers can return relaxed data. We usually accept 4 types: The actual type, like `Hover`, a thenable of that type, `undefined` or `null`. With that we want to make it easy to implement a provider, e.g. if you can compute results synchronous you don’t need to wrap things into a promise or if a certain condition isn’t met simple return etc. 
+Data the API returns is strict, e.g `activeTextEditor` is an editor or `undefined`, but not `null`. On the other side, providers can return relaxed data. We usually accept 4 types: The actual type, like `Hover`, a `Thenable` of that type, `undefined` or `null`. With that we want to make it easy to implement a provider, e.g. if you can compute results synchronous you don’t need to wrap things into a promise or if a certain condition isn’t met simple return etc. 
 
-Validate data
+Validate Data
 -
-Although providers can return ‘relaxed’ data you verify it. The same is true for arguments etc. Throw validation errors when possible, drop data object when invalid. 
+Although providers can return ‘relaxed’ data you need to verify it. The same is true for arguments etc. Throw validation errors when possible, drop data object when invalid. 
 
-Copy data
+Copy Data
 -
-Don’t send data a provider returned over the wire as is. Often they contain more data we need and often there are cyclic dependencies. With provider data, fill objects that your protocol speaks.
+Don’t send the data that a provider returned over the wire. Often it containa more information than we need and often there are cyclic dependencies. Use the provider data to create objects that your protocol speaks.
 
 
 JSDOC
 -
-We add JSDoc for all parts of the API. The doc is supported by markdown syntax. When document string-datatypes which end up in the UI use the phrase ‘Human-readable string…’
+We add JSDoc for all parts of the API. The doc is supported by markdown syntax. When document string-datatypes that end up in the UI, use the phrase ‘Human-readable string…’
