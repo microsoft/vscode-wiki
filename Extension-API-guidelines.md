@@ -87,6 +87,10 @@ Copy Data
 Don’t send the data that a provider returned over the wire. Often it containa more information than we need and often there are cyclic dependencies. Use the provider data to create objects that your protocol speaks.
 
 
+Strict Null
+-
+We define the API with strictNull-checks in mind. That means we use the optional annotation `foo?: number` and `null` or `undefined` in type annotations. For instance, its `activeTextEditor: TextEditor | undefined`. Again, be strict for types we define and relaxed when accepting data.
+
 JSDOC
 -
 We add JSDoc for all parts of the API. The doc is supported by markdown syntax. When document string-datatypes that end up in the UI, use the phrase ‘Human-readable string…’
