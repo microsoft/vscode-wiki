@@ -8,5 +8,6 @@
 * [issue #9409](https://github.com/Microsoft/vscode/issues/9409): Outdent issue with Typescript
 * [issue #15598](https://github.com/Microsoft/vscode/issues/15598): Multi-line indents do not preserve partial indents
 
-
-
+## Find widget
+* [issue #15579](https://github.com/Microsoft/vscode/issues/15579): Regex search issue
+  * seed search string only if the selection is created explicitly (i.e. not due to a find match)
