@@ -12,3 +12,6 @@
 ## Find widget
 * [issue #15579](https://github.com/Microsoft/vscode/issues/15579): Regex search issue
   * seed search string only if the selection is created explicitly (i.e. not due to a find match)
+
+## DVORAK on mac
+* multiple keybindings issues, involves Chromium implementing a very poor w3c recommendation
