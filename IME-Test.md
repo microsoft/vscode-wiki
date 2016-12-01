@@ -26,13 +26,14 @@ The golden standard is Word
   * Windows:  ![Windows Japanese statusbar](images/ime/windows-japanese-ime.png)
   * Mac: Choose Hiragana in the menu bar
 
-* Type the following words: `sennsei` or `konnichiha` or `mikann`. Here is how Word looks like doing this:
+* Type the following words: `sennsei` or `konnichiha` or `mikann` followed by the enter key. Here is how Word looks like doing this:
   * `sennsei` should result in "せんせい" or "先生"
   * `konnichiha` should result in "こんいちは"
   * `mikann` should result in "みかん" or "橘"
 
   ![Windows Japanese Word](images/ime/windows-japanese-word.gif)
 
+* Try to type space or enter key a few times to see if the composition works correctly.
 
 
 ---
@@ -96,7 +97,7 @@ The golden standard is Word
 
 * Type `hazni` press `Space`. It should result into `哈祝你`
 
-
+* Type `a` and press space key twice. The result should be `啊 `(Please note it ends with a single space)。
 
 --
 ## [Windows] Sogou pinyin Chinese input method
