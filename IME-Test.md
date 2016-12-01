@@ -34,7 +34,7 @@ The golden standard is Word
   ![Windows Japanese Word](images/ime/windows-japanese-word.gif)
 
 * After typing some Japanese words, try to type space or enter key a few times to see if the composition works correctly.
-
+  ![Japanese Composition](images/ime/windows-japanese-composition.gif)
 
 ---
 ## [Windows] Korean
