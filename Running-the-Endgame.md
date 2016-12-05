@@ -121,7 +121,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 | Martin        | @aeschli       |  x    |  x  |    x    |
 | Peng          | @rebornix      |  x    |  x  |    x    |
 | Pine          | @octref        |  x    |  x  |    x    |
-| Ramya         | @ramya-rao-a   |  x    |  x  |    x    | 
+| Ramya         | @ramya-rao-a   |       |  x  |    x    | 
+| Matt          | @mjbvz         |       |  x  |    x    | 
 | Rob           | @roblourens    |  x    |  x  |    x    |
 | Sandeep       | @sandy081      |  x    |  x  |    x    |
 | Sean          | @seanmcbreen   |  x    |  x  |    x    |
@@ -135,5 +136,5 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 | [ ] @alexandrudima | [ ] @weinand       | [ ] @bpasero       | [ ] @chrmarti      |
 | [ ] @tyriar        | [ ] @dbaeumer      | [ ] @egamma        | [ ] @isidorn       |
 | [ ] @joaomoreno    | [ ] @jrieken       | [ ] @kieferrm      | [ ] @aeschli       |
-| [ ] @rebornix      | [ ] @octref        | [ ] @ramya-rao-a   | [ ] @roblourens    |
-| [ ] @sandy081      |                    |                    |                    |
+| [ ] @rebornix      | [ ] @mjbvz         | [ ] @ramya-rao-a   | [ ] @roblourens    |
+| [ ] @sandy081      | [ ] @mousetraps    |                    |                    |
