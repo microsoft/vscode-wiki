@@ -222,12 +222,6 @@ http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-in
 
 ## [Linux] Chinese (Sogou Pinyin)
 
-### Ubuntu
-
-* Follow [this guide](http://ubuntuhandbook.org/index.php/2016/07/2-best-chinese-pinyin-im-ubuntu-16-04/) to install and setup fcitx.
-
-### Elementary OS
-
 * Install fcitx as above
 * Install the deb images (32/64 bit) from http://pinyin.sogou.com/linux/?r=pinyin
 
