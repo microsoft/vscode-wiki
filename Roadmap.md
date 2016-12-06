@@ -5,6 +5,8 @@ With the "1.0" release behind us, now is a good time to look towards the future.
 It should be quick and natural to customize VS Code to the way you work so that you can quickly get started working on your code.
 
 * [ ] Help to configure key bindings, themes, common settings on first run of VS Code
+* [ ] Improve discoverability of Commands
+* [ ] :runner: Improved settings and configuration experiences
 * [ ] :runner: "Open in VS Code" from a git repository
 
 ## Eliminate Adoption Blockers
@@ -17,13 +19,12 @@ VS Code is a young product and there still missing features and experiences that
 * [x] [Indent guides](https://github.com/Microsoft/vscode/issues/2192)
 * [x] Global Replace
 * [x] [Support for VIM style key bindings](https://github.com/Microsoft/vscode/issues/3600)
-* [x] emp file storage when editor is closed 
+* [x] temp file storage when editor is closed `hot exit`
 * [x] Editor layout (e.g. horizontal split)
 * [x] Search performance improvements file list/contents
 * [x] [support icons in explorer](https://github.com/Microsoft/vscode/issues/211)
 * [ ] Multiple folders inside a single workspace
 * [ ] [Accessibility](https://github.com/Microsoft/vscode/issues/6583) 
-* [ ] Improved settings and configuration experiences
 
 ## Improved Extension creation, discovery and management
 
@@ -41,6 +42,8 @@ For extension developers:
 
 * SDK: Improve extension README authoring and quality
 * Expand the core VS Code extensibility APIs
+ - [ ] Explorer contribution API
+ - [ ] SCM provider API
  - [x] Menu contributions
  - [x] File Icon sets
  - [x] Support for extensions to programmatically update settings files
@@ -57,7 +60,6 @@ We will continue to improve our code editing and navigation experiences by partn
 * Work with the TypeScript team on the JavaScript language service which powers our JavaScript and TypeScript editing experiences to:
 
   * [x] Suggest imports of .d.ts files to enable IntelliSense "out of the box"
-  * Angular IntelliSense
   * [ ] Show errors for the entire project and not only the file that is currently edited.
 
 * [x] Node Debugger: Step over uninteresting (generated) code
@@ -68,6 +70,7 @@ We will continue to improve our code editing and navigation experiences by partn
 We will continue to improve the engineering of VS Code itself and add items as needed:
 * [ ] :runner: Improve crash logging
 * [ ] :runner: Improve crash diagnostics (e.g. client side log).
+* [ ] :runner: Improve start up performance
 
 ## Summary
 
