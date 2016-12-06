@@ -174,18 +174,18 @@ The golden standard is Word
 
 ## [Linux] Korean
 
-* Install lfcitx: Follow instructions [here](https://www.reddit.com/r/elementaryos/comments/33cfha/multiple_inputs_under_freya_chinese_case_pinyin/)
+* Install fcitx: Follow instructions [here](https://www.reddit.com/r/elementaryos/comments/33cfha/multiple_inputs_under_freya_chinese_case_pinyin/)
 * Install Korean-Hangul support: `sudo apt-get install fcitx-hangul`
 
 * Type `gksrmf`. It should be "한글"
 
 ## [Linux] Chinese (Pinyin)
-* Install lfcitx: Follow instructions [here](https://www.reddit.com/r/elementaryos/comments/33cfha/multiple_inputs_under_freya_chinese_case_pinyin/)
+* Install fcitx: Follow instructions [here](https://www.reddit.com/r/elementaryos/comments/33cfha/multiple_inputs_under_freya_chinese_case_pinyin/)
 * Select Google Pinyin
 * Type `ni` press `Space` and then `hao` and press `Space`, should become: 你好
 
 ## [Linux] Chinese (Sogou Pinyin)
-* Install lftcitx as above
+* Install fcitx as above
 * Install the deb images (32/64 bit) from http://pinyin.sogou.com/linux/?r=pinyin
 * Type `ni` press `Space` and then `hao` and press `Space`, should become: 你好
 
