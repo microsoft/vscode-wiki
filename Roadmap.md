@@ -25,6 +25,7 @@ VS Code is a young product and there still missing features and experiences that
 * [x] [support icons in explorer](https://github.com/Microsoft/vscode/issues/211)
 * [ ] Multiple folders inside a single workspace
 * [ ] [Accessibility](https://github.com/Microsoft/vscode/issues/6583) 
+* [ ] Language specific settings
 
 ## Improved Extension creation, discovery and management
 
