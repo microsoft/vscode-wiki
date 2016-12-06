@@ -188,20 +188,60 @@ http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-in
 
 ## [Linux] Korean
 
+### Ubuntu
+
+* Follow [this guide](http://ubuntuhandbook.org/index.php/2016/07/2-best-chinese-pinyin-im-ubuntu-16-04/) to install and setup fcitx.
+
+### Elementary OS
+
 * Install fcitx: Follow instructions [here](https://www.reddit.com/r/elementaryos/comments/33cfha/multiple_inputs_under_freya_chinese_case_pinyin/)
 * Install Korean-Hangul support: `sudo apt-get install fcitx-hangul`
 
 * Type `gksrmf`. It should be "한글"
 
+### Test
+
+| Input  | Output  |
+|---|---|
+| `gksrmf`  | "한글"  |
+
 ## [Linux] Chinese (Pinyin)
+
+### Ubuntu
+
+* Follow [this guide](http://ubuntuhandbook.org/index.php/2016/07/2-best-chinese-pinyin-im-ubuntu-16-04/) to install and setup fcitx.
+
+### Elementary OS
+
 * Install fcitx: Follow instructions [here](https://www.reddit.com/r/elementaryos/comments/33cfha/multiple_inputs_under_freya_chinese_case_pinyin/)
 * Select Google Pinyin
 * Type `ni` press `Space` and then `hao` and press `Space`, should become: 你好
 
+### Test
+
+| Input  | Output  |
+|---|---|
+| `ni` <kbd>Space</kbd> `hao` <kbd>Space</kbd>  | "你好"  |
+
 ## [Linux] Chinese (Sogou Pinyin)
+
+### Ubuntu
+
+* Follow [this guide](http://ubuntuhandbook.org/index.php/2016/07/2-best-chinese-pinyin-im-ubuntu-16-04/) to install and setup fcitx.
+
+### Elementary OS
+
 * Install fcitx as above
 * Install the deb images (32/64 bit) from http://pinyin.sogou.com/linux/?r=pinyin
 * Type `ni` press `Space` and then `hao` and press `Space`, should become: 你好
+
+### Test
+
+| Input  | Output  |
+|---|---|
+| `ni` <kbd>Space</kbd> `hao` <kbd>Space</kbd>  | "你好"  |
+
+---
 
 Content created from:
 * [#1168](https://github.com/Microsoft/vscode/issues/1168)
