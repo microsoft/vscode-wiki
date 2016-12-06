@@ -5,7 +5,7 @@ With the "1.0" release behind us, now is a good time to look towards the future.
 It should be quick and natural to customize VS Code to the way you work so that you can quickly get started working on your code.
 
 * [ ] Help to configure key bindings, themes, common settings on first run of VS Code
-* [ ] Improve discoverability of Commands
+* [ ] :runner: Improve discoverability of Commands
 * [ ] :runner: Improved settings and configuration experiences
 * [ ] :runner: "Open in VS Code" from a git repository
 
@@ -36,7 +36,6 @@ We want to make it easy for developers to create extensions and for users to dis
 * [x] Update all extensions and keep all extensisons up-to-date actions
 * [x Support for "extension packs”, collections of extensions and settings
 * [x] Improved documentation for [language based extensions](http://code.visualstudio.com/docs/extensions/language-support)
-* Improve the [Marketplace](https://marketplace.visualstudio.com/vscode) experience for discovering and installing extensions
 
 For extension developers:
 
@@ -44,6 +43,8 @@ For extension developers:
 * Expand the core VS Code extensibility APIs
  - [ ] Explorer contribution API
  - [ ] SCM provider API
+ - [ ] Language Server Protocol v3
+ - [ ] Debugger Protocol improvements 
  - [x] Menu contributions
  - [x] File Icon sets
  - [x] Support for extensions to programmatically update settings files
