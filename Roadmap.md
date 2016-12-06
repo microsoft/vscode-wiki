@@ -4,8 +4,7 @@ With the "1.0" release behind us, now is a good time to look towards the future.
 
 It should be quick and natural to customize VS Code to the way you work so that you can quickly get started working on your code.
 
-* Help to configure key bindings, themes, common settings on first run of VS Code
-* Ability to create new and populated Workspaces from within VS Code
+* [ ] Help to configure key bindings, themes, common settings on first run of VS Code
 * [ ] :runner: "Open in VS Code" from a git repository
 
 ## Eliminate Adoption Blockers
