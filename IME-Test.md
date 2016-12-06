@@ -95,7 +95,7 @@ The golden standard is Word
 
   ![Windows Chinese Word](images/ime/windows-chinese2-word.gif)
 
-* Type `hazni` press `Space`. It should result into `哈祝你`
+* Type `hazni` press `Space`. It should result into `哈祝你` or `汉子` or `哈子你`. The result might differ due to different implementation of the algorithm the IME uses, just make sure it's the same as what you get in Notepad or whatever.
 
 * Type `a` and press space key twice. The result should be `啊 `(Please note it ends with a single space)。
 
