@@ -15,3 +15,6 @@
 
 ## DVORAK on mac
 * multiple keybindings issues, involves Chromium implementing a very poor w3c recommendation
+
+## multicursor
+* [issue #16486](https://github.com/Microsoft/vscode/issues/16486): Deselect one of multi-cursors
