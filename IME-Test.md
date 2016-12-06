@@ -164,13 +164,21 @@ The golden standard is Word
 
 ---
 ## [Linux] Japanese
-* Use [mozc](https://wiki.archlinux.org/index.php/Mozc)
-* Information for [elementary](http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-input)
+Use [mozc](https://wiki.archlinux.org/index.php/Mozc).
 
+In Ubuntu, you can follow [this guide](https://moritzmolch.com/1453), from the **Mozc** section:
 
-  * `sennsei` should result in "せんせい" or "先生"
-  * `konnichiha` should result in "こんいちは"
-  * `mikann` should result in "みかん" or "橘"
+- `sudo apt-get install ibus-mozc`
+- `System Settings > Text Entry`, add `Japanese (Mozc)(IBus)` to the list
+- In the system menu bar, switch the input language to Mozc and the input mode to Hiragana
+
+Information for [elementary](http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-input).
+
+| Input  | Output  |
+|---|---|
+| `sennsei`  | "せんせい" or "先生"  |
+|  `konnichiha` |  "こんいちは" |
+| `mikann`  |   "みかん" or "橘" |
 
 ## [Linux] Korean
 
