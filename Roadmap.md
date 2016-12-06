@@ -35,7 +35,7 @@ We want to make it easy for developers to create extensions and for users to dis
 * [x] Improved extension recommendation experience
 * [x] Support for disabling an extensions vs. uninstall
 * [x] Update all extensions and keep all extensisons up-to-date actions
-* [x Support for "extension packs”, collections of extensions and settings
+* [x] Support for "extension packs”, collections of extensions and settings
 * [x] Improved documentation for [language based extensions](http://code.visualstudio.com/docs/extensions/language-support)
 
 For extension developers:
