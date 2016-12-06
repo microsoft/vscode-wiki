@@ -166,13 +166,19 @@ The golden standard is Word
 ## [Linux] Japanese
 Use [mozc](https://wiki.archlinux.org/index.php/Mozc).
 
-In Ubuntu, you can follow [this guide](https://moritzmolch.com/1453), from the **Mozc** section:
+### Ubuntu
+
+Follow [this guide](https://moritzmolch.com/1453), from the **Mozc** section:
 
 - `sudo apt-get install ibus-mozc`
 - `System Settings > Text Entry`, add `Japanese (Mozc)(IBus)` to the list
 - In the system menu bar, switch the input language to Mozc and the input mode to Hiragana
 
-Information for [elementary](http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-input).
+### Elementary OS
+
+http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-input
+
+### Test
 
 | Input  | Output  |
 |---|---|
