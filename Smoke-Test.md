@@ -21,8 +21,8 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
 * Verify the following both with dirty files and untitled files
   * Make sure you get asked and can save when closing the editor itself
   * Make sure you get asked and can save when closing from Opened Editors view
-  * Make sure you get asked and can save on window close
-  * Make sure you get asked and can save on file > quit
+  * Mac only: Make sure you get asked and can save on window close
+  * Make sure that when you file > quit and reopen, dirty files and untitled restore properly ("hot exit")
 
 #### Explorer
 
