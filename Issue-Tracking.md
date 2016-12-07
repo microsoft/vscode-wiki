@@ -76,6 +76,12 @@ Duplicate bugs are closed with a comment `duplicates #issue`. Please try to refe
 ## Moving issues to another repository
 Use the [issue mover](https://github-issue-mover.appspot.com/) tool to move bugs to another repository.
 
+### Debug type to extension mapping
+
+- `lldb`: `vadimcn.vscode-lldb`
+- `gdb`: `webfreak.debug`
+- `cppdbg`, `cppvsdbg`: `ms-vscode.cpptools`
+
 ## Consistent labels across vscode repositories
 
 Visual Studio Code consists of multiple repositories and we should use consistent work flows and labels across all our repositories.
