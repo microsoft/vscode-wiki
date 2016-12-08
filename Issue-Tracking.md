@@ -79,7 +79,7 @@ Use the [issue mover](https://github-issue-mover.appspot.com/) tool to move bugs
 ### Debug type to extension mapping
 
 - `lldb`: `vadimcn.vscode-lldb`
-- `gdb`: `webfreak.debug`
+- `gdb`, `lldb-mi`: `webfreak.debug`
 - `cppdbg`, `cppvsdbg`: `ms-vscode.cpptools`
 
 ## Consistent labels across vscode repositories
