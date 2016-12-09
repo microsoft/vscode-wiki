@@ -3,10 +3,9 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
 #### Prereqs
 
 * For the best debugging experience you'll need node version 0.12.x (or higher)
-* Restore some default settings of VS Code
-  * Enable Tabs and the Opened Editors view in the explorer
-  * Disable "Auto Save" so that dirty files get some coverage
-  * Open the chrome console and watch for exceptions
+* Quickly sanity-check the new version with your existing user data and installed extensions
+* For the remainder start from the command line with a new user data dir and a new extensions dir
+  * `<code executable> --user-data-dir <new user data dir> --extensions-dir <new extensions dir>`
 
 #### Setup
 
