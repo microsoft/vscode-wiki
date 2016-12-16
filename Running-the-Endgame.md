@@ -99,7 +99,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ##### Thursday/Friday
 - [ ] Merge translations **@zurich**
-- [ ] Rebuild for all platforms **@owner**
+- [ ] Build stable for all platforms **@owner**
 - [ ] Sanity check of installable bits
   - [ ] Windows
     - [ ] signed installer **@owner**
