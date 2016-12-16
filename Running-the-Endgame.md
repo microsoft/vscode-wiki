@@ -28,6 +28,25 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Code freeze at 5pm PT
 - [ ] Ensure we have a green build on all platforms
 - [ ] All test items contain sufficiently comprehensive test descriptions by 6pm PT
+- [ ] If there were any new extensions pulled into the core product, add them to the list in the next 2 points about shrink-wrap and OSSREADME **@owner**
+- [ ] Update shrink-wrap files for built-in extensions if needed (see [instructions](https://github.com/Microsoft/vscode/issues/8570#issuecomment-229669456))
+   - [ ] typescript @dbaeumer 
+   - [ ] javascript @kieferrm
+   - [ ] php @aeschli 
+   - [ ] markdown @kieferrm 
+   - [ ] json @aeschli 
+   - [ ] css @aeschli 
+   - [ ] configuration-editing @jrieken 
+   - [ ] node-debug @weinand
+- [ ] Update `OSSREADME.json` for built-in extensions based on differences to generated `npm-shrinkwrap.json` files if needed
+   - [ ] typescript @dbaeumer 
+   - [ ] javascript @kieferrm
+   - [ ] php @aeschli 
+   - [ ] markdown @kieferrm 
+   - [ ] json @aeschli 
+   - [ ] css @aeschli 
+   - [ ] configuration-editing @jrieken 
+   - [ ] node-debug @weinand
 
 ##### Tuesday
 - [ ] Test build starts at 7am CET / 10pm PT on Monday
@@ -45,8 +64,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] [Verification](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
 - [ ] Update release notes
    - release notes are collected in a file named *`Major_Minor.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
-- [ ] Add/update shrink-wrap files for built-in extensions if needed (see [instructions](https://github.com/Microsoft/vscode/issues/8570#issuecomment-229669456))
-- [ ] Update `OSSREADME.json` for built-in extensions based on differences to generated `npm-shrinkwrap.json` files if needed
 - [ ] Run [OSS tool](https://github.com/Microsoft/vscode-distro/blob/master/distro-tools/README.md) after merging shrink-wrap findings **@owner**
   - *The LCA review of the ThirdPartyNotices.txt files is not needed anymore*
 - [ ] Check new OSS usage is entered into the [OSS registry](https://ossmsft.visualstudio.com/_apps/hub/ms.vss-oss-web.hub-oss) **@owner**
