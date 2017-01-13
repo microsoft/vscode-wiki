@@ -10,12 +10,12 @@
 **Contributing**
 * [[How to Contribute]]
 * [[Submitting Bugs and Suggestions]]
+* [[Feedback Channels]]
 * [[Code Organization]]
 * [[Coding Guidelines]]
 * [[Smoke Test]]
 * [[Contributor License Agreement]]
 * [Requested Extensions](https://github.com/Microsoft/vscode/wiki/Requested-Extensions)
-* [[Feedback Channels]]
 
 **Documentation**
 * [Extensions](https://code.visualstudio.com/docs/extensions/overview)
