@@ -49,7 +49,7 @@ Status | Style | TM Setting
 Status | Style | TM Setting
 ---|--------|--------
 :white_check_mark: | `detected-link-active` | `activeLinkForeground`
-:x: | `detected-link` | 
+:white_check_mark: | `detected-link` | `linkForeground`
 
 **Markers**
 
