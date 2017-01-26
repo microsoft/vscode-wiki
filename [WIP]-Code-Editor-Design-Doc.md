@@ -14,6 +14,21 @@
 - [ ] Extensibility
 - [ ] Patterns and Principles
 
+# Overview
+
+## Code structure
+Like other parts of VS Code, the code is organized by the target runtime environment in Monaco. We distinguish between the following target environments
+
+```
+|-- editor
+|	|-- browser				// source code that requires the browser APIs like access to the DOM
+|	|-- common				// the core part of the editor, source code that only requires basic JavaScript APIs and run in all the other target environments
+|	|-- contrib				// first class *extensions* of the editor
+|	|-- electron-browser 	// source code that requires the Electron renderer-process APIs
+|	|-- node				// source code that requires nodejs APIs
+|	|-- test
+```
+
 
 # Model-View-ViewModel in Monaco
 
