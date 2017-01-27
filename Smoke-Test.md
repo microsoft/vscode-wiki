@@ -46,31 +46,31 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
 * Verify that "Go to line" works (ctrl+g)
 
 #### Search
-* Use Search (CTRL+SHIFT+F, ⌘+SHIFT+F) to find 'body'
+* Use Search (CTRL+SHIFT+F, ⌘+SHIFT+F) to find `body`
   * Verify that 7 results in 4 files show up
-  * Verify you can run the search filtering for *.js files
+  * Verify you can run the search filtering for `*.js` files
   * Verify you can dismiss files from search results
   * Verify you can replace search results with a replace term
 
 #### CSS
 * Open file style.css
   * verify quick outline (CTRL-SHIFT-O, ⌘-SHIFT-O)
-* Add an empty rule .foo{}
+* Add an empty rule `.foo{}`
   * verify you can see a warning in the editor
   * verify you can see a warning from the Problems view
 * Select File > Preferences > User Settings (OS X: Code > Preferences > User Settings)
-  * change 'css.lint.emptyRules' from warning to error
+  * change `css.lint.emptyRules` from warning to error
   * Go back to style.css, verify that the warning turns into an error.
   * Verify you get css intellisense
 
 #### Markdown
-* Open readme.md and open the preview side by side
-* Make changes to the readme.md and verify they are reflected live on the preview
+* Open `readme.md` and open the preview side by side
+* Make changes to the `readme.m`d and verify they are reflected live on the preview
 
 #### JavaScript
-* Open bin/www
+* Open `bin/www`
   * Show the quick outline (CTRL-SHIFT-O, ⌘-SHIFT-O) verify that entries show up and make sense
-  * From the context select Find All References to 'app'
+  * From the context select Find All References to `app`
   * From context menu use Rename Symbol to rename a local variable
   * Verify code folding works
 * Open app.js
