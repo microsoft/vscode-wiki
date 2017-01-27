@@ -38,7 +38,11 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
   * Under editor, change line number to off, save the file, verify that line numbers are turned off without refresh.
 * Select File > Preferences > Keyboard Shortcuts (OS X: Code > Preferences > Keyboard Shortcuts)
   * Change a binding of an action and verify the new binding works. e.g. add:
-		{ "key": "ctrl+u", "command": "workbench.action.toggleSidebarPosition" }
+
+```json
+{ "key": "ctrl+u", "command": "workbench.action.toggleSidebarPosition" }
+```
+
 * Verify that "Go to line" works (ctrl+g)
 
 #### Search
