@@ -4,9 +4,9 @@ With the "1.0" release behind us, now is a good time to look towards the future.
 
 It should be quick and natural to customize VS Code to the way you work so that you can quickly get started working on your code.
 
-* [ ] Help to configure key bindings, themes, common settings on first run of VS Code
-* [ ] :runner: Improve discoverability of Commands
-* [ ] :runner: Improved settings and configuration experiences
+* [x] Help to configure key bindings, themes, common settings on first run of VS Code
+* [x] :runner: Improve discoverability of Commands
+* [x] :runner: Improved settings and configuration experiences
 * [ ] :runner: "Open in VS Code" from a git repository
 
 ## Eliminate Adoption Blockers
@@ -24,8 +24,8 @@ VS Code is a young product and there still missing features and experiences that
 * [x] Search performance improvements file list/contents
 * [x] [support icons in explorer](https://github.com/Microsoft/vscode/issues/211)
 * [ ] Multiple folders inside a single workspace
-* [ ] [Accessibility](https://github.com/Microsoft/vscode/issues/6583) 
-* [ ] Language specific settings
+* [x] [Accessibility](https://github.com/Microsoft/vscode/issues/6583) 
+* [x] Language specific settings
 
 ## Improved Extension creation, discovery and management
 
@@ -43,7 +43,7 @@ For extension developers:
 * SDK: Improve extension README authoring and quality
 * Expand the core VS Code extensibility APIs
  - [ ] Explorer contribution API
- - [ ] SCM provider API
+ - [x] SCM provider API
  - [ ] Language Server Protocol v3
  - [ ] Debugger Protocol improvements 
  - [x] Menu contributions
