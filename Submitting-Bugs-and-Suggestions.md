@@ -33,7 +33,7 @@ Please include the following with each issue.
 > **Tip:** You can easily add the list of extensions by creating the issue using `Report Issues` from VS Code's Help menu. 
 
 * Reproducible steps (1... 2... 3...) and what you expected versus what you actually saw. 
-* Images, animations, or a link to a video. 
+* Images, animations, or a link to a video. Note that images and animations illustrate repro-steps but *do not* replace them.
 * A code snippet that demonstrates the issue or a link to a code repository we can easily pull down onto our machine to recreate the issue. 
 
 > **Note:** Because we need to copy and paste the code snippet, including a code snippet as a media file (i.e. .gif) is not sufficient. 
