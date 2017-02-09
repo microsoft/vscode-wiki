@@ -65,7 +65,7 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
 
 #### Markdown
 * Open `readme.md` and open the preview side by side
-* Make changes to the `readme.m`d and verify they are reflected live on the preview
+* Make changes to the `readme.md` and verify they are reflected live on the preview
 
 #### JavaScript
 * Open `bin/www`
