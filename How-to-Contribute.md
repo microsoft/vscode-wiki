@@ -69,6 +69,43 @@ cd vscode
 
 **Note:** To install Code's dependencies as `root` (eg: Docker environments) make sure you use `--unsafe-perm` when invoking `./scripts/npm.sh`.
 
+### Cross-Compiling on/for Debian-Based Linux
+
+To build for a target architecture different than the host (e.g. using x64 to build for ARM), you'll need to do the following:
+
+**One-Time Setup**
+
+1. install prerequisites:
+
+  `sudo apt-get install qemu qemu-user-static debootstrap gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf`
+
+1. create a chroot/rootfs for the target architecture:
+
+  `sudo qemu-debootstrap --arch=armhf --variant=minbase xenial rootfs`
+
+1. install libx11-dev on the chroot/rootfs:
+
+  `sudo chroot rootfs apt-get install -y libx11-dev`
+
+**Build**
+
+1. point to the target toolchain on the build host:
+
+  `export CC=$(which arm-linux-gnueabihf-gcc)`
+  
+  `export CXX="$(which arm-linux-gnueabihf-g++) -L$(pwd)/rootfs/usr/lib/arm-linux-gnueabihf/"`
+  
+  *note the -L linker argument pointing to the absolute path of libx11 on the chroot/rootfs*
+
+1. install prerequisites for the target architecture:
+
+  `scripts/npm.sh install --arch=armhf`
+
+1. create a .deb file for easy installation on the target device:
+
+  `gulp vscode-linux-arm-build-deb`
+
+
 ### Packaging
 
 Code can be packaged for the following platforms: `win32 | darwin | linux-ia32 | linux-x64 | linux-arm`
