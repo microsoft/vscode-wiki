@@ -11,7 +11,7 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 You'll need [git](https://git-scm.com) and a recent version of [Node.JS](https://nodejs.org/en/) (any `v6.x` is recommended, on Windows you need at least `v6.x`). `nvm` is also highly recommended.
 
-**Note:** on Windows you might want to set `core.autocrlf=true`, to keep the line endings we have in our source files.
+**Note:** on Windows you might want to set `core.autocrlf=false`, to keep the line endings we have in our source files.
 
 Code includes node module dependencies that require native compilation. To ensure the compilation is picking up the right version of header files from the Electron Shell, we have our own script to run the installation via `npm`.
 
