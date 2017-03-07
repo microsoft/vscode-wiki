@@ -30,19 +30,19 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] All test items contain sufficiently comprehensive test descriptions by 6pm PT
 - [ ] If there were any new extensions pulled into the core product, add them to the list in the next 2 points about shrink-wrap and OSSREADME **@owner**
 - [ ] Update shrink-wrap files for built-in extensions if needed (see [instructions](https://github.com/Microsoft/vscode/issues/8570#issuecomment-229669456))
-   - [ ] typescript **@dbaeumer** 
-   - [ ] javascript **@kieferrm**
-   - [ ] php **@aeschli** 
-   - [ ] markdown **@kieferrm** 
+   - [ ] typescript **@mjbvz** 
+   - [ ] javascript **@mjbvz**
+   - [ ] php **@mousetraps** 
+   - [ ] markdown **@mjbvz**
    - [ ] json **@aeschli** 
    - [ ] css **@aeschli** 
    - [ ] configuration-editing **@jrieken** 
    - [ ] node-debug **@weinand**
 - [ ] Update `OSSREADME.json` for built-in extensions based on differences to generated `npm-shrinkwrap.json` files if needed
-   - [ ] typescript **@dbaeumer** 
-   - [ ] javascript **@kieferrm**
-   - [ ] php **@aeschli** 
-   - [ ] markdown **@kieferrm** 
+   - [ ] typescript **@mjbvz** 
+   - [ ] javascript **@mjbvz**
+   - [ ] php **@mousetraps** 
+   - [ ] markdown **@mjbvz** 
    - [ ] json **@aeschli** 
    - [ ] css **@aeschli** 
    - [ ] configuration-editing **@jrieken** 
@@ -119,26 +119,32 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ### Recovery Build
 
-We release a recovery build with a handful of critical fixes and translation updates a couple of days after a release. The candidates to be included are reviewed by the development team and assigned to the recovery milestone. We want to be restrictive about the included candidates. The mindset is "we will loose users if we do not include the fix". Here are some examples:
+We release a recovery build with a handful of critical fixes and translation updates a few days after a release. The candidate fixes are reviewed by the development team and are assigned to the recovery milestone. We want to be restrictive about the included candidates. The mindset is "we will lose users if we do not include the fix". Here are some examples:
 - data loss
 - a regression that users complain loudly about in issues or twitter
 - a significant performance regressions
-- the issue impacts many users as indicated by telemetry data
+- an issue that impacts many users as indicated by telemetry data
 - an embarrassing UI glitch
 - critical security fixes
-- impacts extensions, API regressions
+- an issue that impacts extensions or is an API regression
 
 #### Check list
-- [ ] Create a milestone "XXX Recovery" **@owner**
+- [ ] Create a milestone `<Month> Recovery <year>` **@owner**
 - [ ] Include an issue 'update translations' **@owner**
-- [ ] Assign candidate issues to the Recovery milestone **@team**
-- [ ] Review the `candidate` issues and assign them to the recovery milestone **@team**
-- [ ] All recovery build fixes are merged back into the stable **@team** 
-- [ ] Initiate builds of master
-- [ ] Issues are verified and reviewed and have the `verified` label **@owner**
+- [ ] Assign candidate issues to the recovery milestone **@team**
+- [ ] Review the `candidate` issues, and if they pass the review assign them to the recovery milestone **@team**
+- [ ] All `candiate` fixes are peer reviewed and pushed to `master` and then cherry-picked into the release branch **@team** 
+- [ ] Initiate `insiders` build from `master`
+- [ ] Issues are tested in the `insiders` **@team**
+- [ ] Build `stable` for all platforms from release branch **@owner**
+- [ ] Issues are verified on `stable` build and the `verified` label is added **@owner**
+- [ ] Check `https://github.com/Microsoft/vscode/compare/release/<x.y>` to ensure no other commits have been made in the release branch **@owner**
 - [ ] Update the release notes and include a link to a query for the fixed issues **@gregvanl**
-- [ ] Build stable for all platforms **@owner**
-- [ ] Sanity check of installable bits
+- [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) stable bits
+  - [ ] Windows - **@owner**
+  - [ ] OS X - **@owner**
+  - [ ] Linux - **@owner**
+- [ ] Sanity check installable stable bits that have not been smoke tested
   - [ ] Windows
     - [ ] signed installer **@owner**
     - [ ] zip **@owner**
@@ -150,7 +156,7 @@ We release a recovery build with a handful of critical fixes and translation upd
     - [ ] rpm package 32-bit **@owner**
     - [ ] archives **@owner**
 - [ ] Publish website **@gregvanl**
-- [ ] Publish to stable **@owner**
+- [ ] Publish stable build **@owner**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`   
 
 ### OS Test Availability
