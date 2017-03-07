@@ -117,6 +117,39 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Enable scheduled `insider` builds **@owner**
 - [ ] Twitter announcement **@seanmcbreen**
 
+### Recovery Build
+
+We release a recovery build with a handful of critical fixes and translation updates a couple of days after a release. The candidates to be included are reviewed by the development team and assigned to the recovery milestone. We want to be restrictive about the included candidates and only include a fix when:
+- users loose data
+- a regression that users complain loudly about in issues or twitter
+- issues that impact many users as indicated by telemetry data
+- embarassing glitches in the UI 
+- important security fixes
+
+#### Check list
+- [ ] Create a milestone "XXX Recovery" **@owner**
+- [ ] Include an issue 'update translations' **@owner**
+- [ ] Label candidate issues with the `candidate` label **@team**
+- [ ] Review the `candidate` issues and assign them to the recovery milestone **@team**
+- [ ] All recovery build fixes are merged back into the stable **@team** 
+- [ ] Issues are verified and reviewed and have the `verified` label **@owner**
+- [ ] Update the release notes and include a link to a query for the fixed issues **@gregvanl**
+- [ ] Build stable for all platforms **@owner**
+- [ ] Sanity check of installable bits
+  - [ ] Windows
+    - [ ] signed installer **@owner**
+    - [ ] zip **@owner**
+  - [ ] OS X - **@owner**
+  - [ ] Linux
+    - [ ] deb package 32-bit **@owner**
+    - [ ] deb package 64-bit **@owner**
+    - [ ] rpm package 64-bit **@owner**
+    - [ ] rpm package 32-bit **@owner**
+    - [ ] archives **@owner**
+- [ ] Publish website **@gregvanl**
+- [ ] Publish to stable **@owner**
+- [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`   
+
 ### OS Test Availability
 
 | Name          | GitHub Alias   | Linux | Mac | Windows |
