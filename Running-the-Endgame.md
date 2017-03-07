@@ -30,19 +30,19 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] All test items contain sufficiently comprehensive test descriptions by 6pm PT
 - [ ] If there were any new extensions pulled into the core product, add them to the list in the next 2 points about shrink-wrap and OSSREADME **@owner**
 - [ ] Update shrink-wrap files for built-in extensions if needed (see [instructions](https://github.com/Microsoft/vscode/issues/8570#issuecomment-229669456))
-   - [ ] typescript **@dbaeumer** 
-   - [ ] javascript **@kieferrm**
-   - [ ] php **@aeschli** 
-   - [ ] markdown **@kieferrm**
+   - [ ] typescript **@mjbvz** 
+   - [ ] javascript **@mjbvz**
+   - [ ] php **@mousetraps** 
+   - [ ] markdown **@mjbvz**
    - [ ] json **@aeschli** 
    - [ ] css **@aeschli** 
    - [ ] configuration-editing **@jrieken** 
    - [ ] node-debug **@weinand**
 - [ ] Update `OSSREADME.json` for built-in extensions based on differences to generated `npm-shrinkwrap.json` files if needed
-   - [ ] typescript **@dbaeumer** 
-   - [ ] javascript **@kieferrm**
-   - [ ] php **@aeschli** 
-   - [ ] markdown **@kieferrm** 
+   - [ ] typescript **@mjbvz** 
+   - [ ] javascript **@mjbvz**
+   - [ ] php **@mousetraps** 
+   - [ ] markdown **@mjbvz** 
    - [ ] json **@aeschli** 
    - [ ] css **@aeschli** 
    - [ ] configuration-editing **@jrieken** 
