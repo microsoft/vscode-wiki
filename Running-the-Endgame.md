@@ -119,17 +119,18 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ### Recovery Build
 
-We release a recovery build with a handful of critical fixes and translation updates a couple of days after a release. The candidates to be included are reviewed by the development team and assigned to the recovery milestone. We want to be restrictive about the included candidates and only include a fix when:
+We release a recovery build with a handful of critical fixes and translation updates a couple of days after a release. The candidates to be included are reviewed by the development team and assigned to the recovery milestone. We want to be restrictive about the included candidates. The mindset is "we will loose users if we do not include the fix":
 - users loose data
 - a regression that users complain loudly about in issues or twitter
+- significant performance regressions
 - issues that impact many users as indicated by telemetry data
-- embarassing glitches in the UI 
-- important security fixes
+- embarrassing UI glitches
+- critical security fixes
 
 #### Check list
 - [ ] Create a milestone "XXX Recovery" **@owner**
 - [ ] Include an issue 'update translations' **@owner**
-- [ ] Label candidate issues with the `candidate` label **@team**
+- [ ] Assign candidate issues to the Recovery mileste label **@team**
 - [ ] Review the `candidate` issues and assign them to the recovery milestone **@team**
 - [ ] All recovery build fixes are merged back into the stable **@team** 
 - [ ] Issues are verified and reviewed and have the `verified` label **@owner**
