@@ -119,12 +119,12 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ### Recovery Build
 
-We release a recovery build with a handful of critical fixes and translation updates a couple of days after a release. The candidates to be included are reviewed by the development team and assigned to the recovery milestone. We want to be restrictive about the included candidates. The mindset is "we will loose users if we do not include the fix":
-- users loose data
+We release a recovery build with a handful of critical fixes and translation updates a couple of days after a release. The candidates to be included are reviewed by the development team and assigned to the recovery milestone. We want to be restrictive about the included candidates. The mindset is "we will loose users if we do not include the fix". Here are some examples:
+- data loss
 - a regression that users complain loudly about in issues or twitter
-- significant performance regressions
-- issues that impact many users as indicated by telemetry data
-- embarrassing UI glitches
+- a significant performance regressions
+- the issue impacts many users as indicated by telemetry data
+- an embarrassing UI glitch
 - critical security fixes
 
 #### Check list
