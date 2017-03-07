@@ -126,13 +126,15 @@ We release a recovery build with a handful of critical fixes and translation upd
 - the issue impacts many users as indicated by telemetry data
 - an embarrassing UI glitch
 - critical security fixes
+- impacts extensions, API regressions
 
 #### Check list
 - [ ] Create a milestone "XXX Recovery" **@owner**
 - [ ] Include an issue 'update translations' **@owner**
-- [ ] Assign candidate issues to the Recovery mileste label **@team**
+- [ ] Assign candidate issues to the Recovery milestone **@team**
 - [ ] Review the `candidate` issues and assign them to the recovery milestone **@team**
 - [ ] All recovery build fixes are merged back into the stable **@team** 
+- [ ] Initiate builds of master
 - [ ] Issues are verified and reviewed and have the `verified` label **@owner**
 - [ ] Update the release notes and include a link to a query for the fixed issues **@gregvanl**
 - [ ] Build stable for all platforms **@owner**
