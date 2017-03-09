@@ -3,9 +3,11 @@
 
 ### February 2017
 * [Iteration Plan](../issues/20021)
+* [Endgame](../issues/20981)
 
 ### January 2017
 * [Iteration Plan](../issues/17608)
+* [Endgame](../issues/19031)
 
 ### November/December 2016
 * [Iteration Plan](../issues/15099)
