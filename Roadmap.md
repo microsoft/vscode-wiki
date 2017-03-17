@@ -1,79 +1,123 @@
-With the "1.0" release behind us, now is a good time to look towards the future. We typically look out 6 to 12 months, establish a set of themes we want to work towards, and then schedule work each milestone supporting those themes. VS Code will continue to ship monthly and we'll make progress against each of the following themes during each iteration.
+# The VS Code Roadmap 2017
+With a very successful 2016 behind us, now is the good time to look towards the future. We typically look out 6 to 12 months, establish a set of themes we want to work towards, and then schedule work each milestone supporting those themes. When planning, we typically look at potential work from three perspectives:
 
-## Improve the Getting Started Experience
+* **Happy Coding:** At its core VS Code is a lightweight, keyboard focused, multi-language code editor. Features such as tabs, , the task system, and the integrated terminal are all core experiences every developer uses on a daily basis. VS Code is already pleasant to code with, and we want to make the experience even more pleasant.
+* **Node, JavaScript, and TypeScript:** On top of the core editor, we want to enable great end-to-end experiences for individual languages and frameworks. We build the Node, JavaScript, and TypeScript end-to-end experiences on top of the core platform and want to provide a great experience out of the box.
+* **A Rich Extension Ecosystem:** Because we cannot deliver an experience for every language, VS Code has a rich extensibility system which enables an ecosystem of great end-to-end experiences for the breadth of modern languages and frameworks such as C#, Go, Python, C++, and more. In fact, we deliver the Node, TypeScript, and JavaScript experience using the exact same public APIs ensuring that developers have consistent experiences across the breadth of languages they use. 
 
-It should be quick and natural to customize VS Code to the way you work so that you can quickly get started working on your code.
+VS Code will continue to ship monthly, and we'll make progress against each of the following themes during each iteration. We describe some initiatives as "investigations" which simply means our goal in the next few months is to better understand the problem and potential solutions before committing to real feature work. Once an investigation is done, we will update our plan, either deferring the initiative or committing to it. Initiatives described with a :muscle: are a stretch goal. 
 
-* [x] Help to configure key bindings, themes, common settings on first run of VS Code
-* [x] :runner: Improve discoverability of Commands
-* [x] :runner: Improved settings and configuration experiences
-* [ ] :runner: "Open in VS Code" from a git repository
+## Happy Coding with VS Code
+Over the past year, we have worked hard to eliminate core adoption blockers - the addition of Tabs and an Integrated Terminal are two good examples, but there is still work to do here. 
+Customers often tell us that the lack of multiple root folder workspaces means that they can't use VS Code as their day-to-day editor. We will continue to address missing features, we will continue to make it easy for first time users to instantly be productive with VS Code, and we'll continue to add new experiences to make VS Code even more pleasant to use.  
 
-## Eliminate Adoption Blockers
+### Workbench
+* Support multiple root folder workspaces
+* Support opening multiple instances of VS Code on same the same workspace
+* Support more flexible layouts, e.g., vertical panels
+* Improve UI notification system
+* Improve key binding customization experience (hide keycodes, inconsistent command names from user)
+* Import, export of settings (VS Code as well as other tools) 
 
-VS Code is a young product and there still missing features and experiences that you are asking for and that we want to deliver.
+### Core Editor
+* [x] Drag and drop
+* [x] Copy and paste as formatted HTML
+* [x] Minimap
+* Mouse map settings - support to customize commands bound to the mouse
+* Workbench theming
+* [Spell Checker](https://github.com/Microsoft/vscode/issues/20266)
 
-* [x] [Tabs](https://github.com/Microsoft/vscode/issues/224)
-* [x] [Integrated Terminal](https://github.com/Microsoft/vscode/issues/143)
-* [x] [Move error list from Quick Box to a panel](https://github.com/Microsoft/vscode/issues/6679)
-* [x] [Indent guides](https://github.com/Microsoft/vscode/issues/2192)
-* [x] Global Replace
-* [x] [Support for VIM style key bindings](https://github.com/Microsoft/vscode/issues/3600)
-* [x] temp file storage when editor is closed `hot exit`
-* [x] Editor layout (e.g. horizontal split)
-* [x] Search performance improvements file list/contents
-* [x] [support icons in explorer](https://github.com/Microsoft/vscode/issues/211)
-* [ ] Multiple folders inside a single workspace
-* [x] [Accessibility](https://github.com/Microsoft/vscode/issues/6583) 
-* [x] Language specific settings
+### Terminal
+* [x] Link detection
+* Support splitting, viewing multiple terminals
+* Improve selection in the terminal
 
-## Improved Extension creation, discovery and management
 
-We want to make it easy for developers to create extensions and for users to discover extensions. And, once you have discovered a set of extensions, we want to make it easy for you to manage them.
+### Tasks
+* Task output in Terminal
+* [x] Bind tasks to keyboard shortcuts
+* Simplify running and managing multiple tasks
+* Simplify the creation of task definitions (e.g. templates similar to launch.json templates)
 
-* [x] [In product extension management experience](https://github.com/Microsoft/vscode/issues/637)
-* [x] Improved extension recommendation experience
-* [x] Support for disabling an extensions vs. uninstall
-* [x] Update all extensions and keep all extensisons up-to-date actions
-* [x] Support for "extension packs”, collections of extensions and settings
-* [x] Improved documentation for [language based extensions](http://code.visualstudio.com/docs/extensions/language-support)
+### Performance
+* Monitor and improve startup time (on-going)
 
-For extension developers:
+### Source Code Control
+* SCM provider API
+* Git support as an extension (ships with VS Code)
+* Enable Explorer decorations for SCM status (e.g. colorize modified files) 
+* Support to view incoming changes
+* Support partners building new SCM providers (e.g. Visual Studio Team Services)
 
-* SDK: Improve extension README authoring and quality
-* Expand the core VS Code extensibility APIs
- - [ ] Explorer contribution API
- - [x] SCM provider API
- - [ ] Language Server Protocol v3
- - [ ] Debugger Protocol improvements 
- - [x] Menu contributions
- - [x] File Icon sets
- - [x] Support for extensions to programmatically update settings files
-* Expand the diagnostics experience and API to support additional debugging scenario requirements, such as
- - [x] [attach to process](https://github.com/Microsoft/vscode/issues/6569)
 
-Monaco Editor
-- [x] We will also make it easy to [consume and ship the core code editor ("Monaco")](https://github.com/Microsoft/vscode/issues/446) as a library.
+### Accessibility
+* Improve usability of VS Code using NVDA on Windows
+* Ensure all commands are accessible from the Command Palette
+* Ensure keyboard accessibility in all dialogs
+* :muscle: Narrator support
 
-## TypeScript, JavaScript, and Node development
+### Setup
+* [x] Linux auto update
+* Investigate 64bit support
 
-We will continue to improve our code editing and navigation experiences by partnering with the TypeScript team on the Salsa language service. We will also continue to enhance our end-to-end debugging experiences for Node applications.
+## TypeScript, JavaScript, and Node Development
+We want VS Code to be a great tool for developing modern MEAN/MERN applications with JavaScript and TypeScript. We will continue to collaborate deeply with the TypeScript team to deliver the richest code editing, navigation, and understanding experiences for both TypeScript and JavaScript. We will continue to make it easy to configure debugging of your Node based applications while adding support for both client and server side debugging, asynchronous call stacks, and even live editing of your applications during a debug session. 
+  
+### JavaScript and TypeScript 
+* Code actions and refactorings (partner with TypeScript) 
+* `tsconfig.json` and `jsconfig.json` IntelliSense (completions) and validation
+* IntelliSense (completions) support for HTML embedded in JavaScript and TypeScript (Angular, React), partner with TypeScript
+* [x] Assist user entering JSDoc comments
+* Improve JavaScript Linting 
+* TypeScript compile on save
+* Enable semantic colorization (see Extensibility)
+* Investigate improving support for popular JS technologies (webpack, Babel)
 
-* Work with the TypeScript team on the JavaScript language service which powers our JavaScript and TypeScript editing experiences to:
+### HTML, SASS, CSS, LESS
+* Color picker for CSS/LESS/SASS/HTML
+* Auto close end tag in HTML
+* Investigate SASS/LESS/CSS multi-file support (understand imports)
+* Investigate live preview of HTML
 
-  * [x] Suggest imports of .d.ts files to enable IntelliSense "out of the box"
-  * [ ] Show errors for the entire project and not only the file that is currently edited.
+### Node
+* Provide Node/MEAN Extension packs
+* Update recommended Node extension triggers (e.g. on package.json, recommend Node extension pack)
+* Include the [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) extension functionality
+* Continue to enhance the Chrome debugger
+* Investigate an HTML Request/REST client experience within the tool or as an extension 
+* Node Debugging
+  * Async stacks
+  * [x] Column break points
+  * Live edit
+  * :muscle: into profiling support 
+* :muscle: Investigate a Mocha test runner
+* :muscle: MongoDB extension
+ 
+## Extension creation, discovery, and management
+Of course, VS Code is not just a Node, JavaScript, and TypeScript tool. Our rich extensibility model and extension ecosystem means that you can install support for just about every modern language and framework, from C++ to C# to Go, Python, and more. Looking ahead, we want to make acquiring extensions for these languages (and more!) as easy as possible. We want to enable extension authors to be able to be more productive and deliver richer experiences to developers. And at the same time, we want to give users more control over how those extensions contribute to their environment. 
 
-* [x] Node Debugger: Step over uninteresting (generated) code
-* [x] Improved npm support and help to keep the `package.json` consistent with the installed node modules
+### For extension authors
+* Investigate support for extensions that need to install additional tools on first run (e.g. .NET Core debugger, Go tools)
+* Continue to improve and expand extension samples
+* Investigate native module support
+* Add recently installed or recently updated extensions to the Welcome page, with links to open the extension's README
+* Support extensions contributing an interactive playground
+* Progress API
+* Formalize HTML Preview API (command support, theming, persisted UI state, native context menus, etc.)
+* :muscle: Support explorer like contributions (refining the Custom explorer API exploration)
 
-## Engineering Items
+### For language extension authors
+* Enable language services to contribute semantic coloring
+* Evolve the Language Server Protocol
 
-We will continue to improve the engineering of VS Code itself and add items as needed:
-* [ ] :runner: Improve crash logging
-* [ ] :runner: Improve crash diagnostics (e.g. client side log).
-* [ ] :runner: Improve start up performance
+### Provide users with more control over extension contributions
+* Identify and resolve keybindings conflicts
+* Identify and resolve setting conflicts
+
+### Contribute to Extensions
+* [GO](https://github.com/microsoft/vscode-go)
+* [Docker](https://github.com/microsoft/vscode-docker)
 
 ## Summary
+These are examples of just some of the work we will be focusing on in the next 6 to 12 months. We continuously tune the plan based on feedback and we will provide more detail in each of our monthly iteration plans. Please follow along and let us know what you think!
 
-These are examples of just some of the work we will be focusing on in the next 6 to 12 months. We will provide much more detail in each of our [monthly iteration plans](https://github.com/Microsoft/vscode/wiki/Iteration-Plans) so follow along and let us know what you think!
