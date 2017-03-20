@@ -58,7 +58,7 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 
 ### Setup
 * [x] Linux auto update
-* Investigate 64bit support
+* Investigate Windows 64bit support
 
 ## TypeScript, JavaScript, and Node Development
 We want VS Code to be a great tool for developing modern MEAN/MERN applications with JavaScript and TypeScript. We will continue to collaborate deeply with the TypeScript team to deliver the richest code editing, navigation, and understanding experiences for both TypeScript and JavaScript. We will continue to make it easy to configure debugging of your Node based applications while adding support for both client and server side debugging, asynchronous call stacks, and even live editing of your applications during a debug session. 
