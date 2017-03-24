@@ -13,7 +13,7 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 
 ### Workbench
 * Support multiple root folder workspaces
-* Support opening multiple instances of VS Code on same the same workspace
+* Support opening multiple instances of VS Code on the same workspace
 * Support more flexible layouts, e.g., vertical panels
 * Improve UI notification system
 * Improve key binding customization experience (hide keycodes, inconsistent command names from user)
