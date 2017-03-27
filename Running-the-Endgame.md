@@ -52,12 +52,13 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Test build starts at 7am CET / 10pm PT on Monday
 - [ ] Test plan ready by 8am CET / 11pm PT on Monday
 - [ ] Testing
+- [ ] [Verification needed](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed)
 
 ##### Wednesday
 - [ ] Testing
 - [ ] Remind team members to assign issues that they intend to fix to the July milestone
 - [ ] Fixing (self-assigned, milestone assigned)
-- [ ] [Verification](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
+- [ ] [Verification](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+label%3Abug+-label%3Averified+is%3Aclosed+-label%3Aduplicate+-label%3Ainvalid+-label%3Aas-designed+milestone%3A%22March+2017%22)
 
 ##### Thursday
 - [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
