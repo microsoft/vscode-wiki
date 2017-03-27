@@ -34,9 +34,9 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 
 
 ### Tasks
-* Task output in Terminal
+* [x] Task output in Terminal
 * [x] Bind tasks to keyboard shortcuts
-* Simplify running and managing multiple tasks
+* [x] Simplify running and managing multiple tasks
 * Simplify the creation of task definitions (e.g. templates similar to launch.json templates)
 
 ### Performance
