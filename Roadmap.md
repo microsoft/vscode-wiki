@@ -17,6 +17,7 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 * Support more flexible layouts, e.g., vertical panels
 * Improve UI notification system
 * [x] Improve key binding customization experience (hide keycodes, inconsistent command names from user)
+* :runner: Support theming of the workbench
 * Import, export of settings (VS Code as well as other tools) 
 
 ### Core Editor
@@ -24,8 +25,7 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 * [x] Copy and paste as formatted HTML
 * [x] Minimap
 * Mouse map settings - support to customize commands bound to the mouse
-* Workbench theming
-* [Spell Checker](https://github.com/Microsoft/vscode/issues/20266)
+* :runner: [Spell Checker](https://github.com/Microsoft/vscode/issues/20266)
 
 ### Terminal
 * [x] Link detection
@@ -43,11 +43,11 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 * Monitor and improve startup time (on-going)
 
 ### Source Code Control
-* SCM provider API
-* Git support as an extension (ships with VS Code)
+* :runner: SCM provider API
+* [x] Git support as an extension (ships with VS Code)
 * Enable Explorer decorations for SCM status (e.g. colorize modified files) 
 * Support to view incoming changes
-* Support partners building new SCM providers (e.g. Visual Studio Team Services)
+* [x] Support partners building new SCM providers (e.g. Visual Studio Team Services)
 
 
 ### Accessibility
@@ -83,10 +83,9 @@ We want VS Code to be a great tool for developing modern MEAN/MERN applications 
 * Provide Node/MEAN Extension packs
 * Update recommended Node extension triggers (e.g. on package.json, recommend Node extension pack)
 * Include the [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) extension functionality
-* Continue to enhance the Chrome debugger
 * Investigate an HTML Request/REST client experience within the tool or as an extension 
 * Node Debugging
-  * Async stacks
+  * [x] Async stacks
   * [x] Column break points
   * Live edit
   * :muscle: into profiling support 
@@ -102,8 +101,7 @@ Of course, VS Code is not just a Node, JavaScript, and TypeScript tool. Our rich
 * Investigate native module support
 * Add recently installed or recently updated extensions to the Welcome page, with links to open the extension's README
 * Support extensions contributing an interactive playground
-* Progress API
-* Formalize HTML Preview API (command support, theming, persisted UI state, native context menus, etc.)
+* Formalize HTML Preview API
 * :muscle: Support explorer like contributions (refining the Custom explorer API exploration)
 
 ### For language extension authors
