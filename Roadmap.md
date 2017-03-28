@@ -16,7 +16,7 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 * Support opening multiple instances of VS Code on the same workspace
 * Support more flexible layouts, e.g., vertical panels
 * Improve UI notification system
-* Improve key binding customization experience (hide keycodes, inconsistent command names from user)
+* [x] Improve key binding customization experience (hide keycodes, inconsistent command names from user)
 * Import, export of settings (VS Code as well as other tools) 
 
 ### Core Editor
