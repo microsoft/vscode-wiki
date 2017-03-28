@@ -49,7 +49,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
    - [ ] node-debug **@weinand**
 
 ##### Tuesday
-- [ ] Test-plan issues assigned
+- [ ] Test plan items assigned
 - [ ] All closed feature-requests either have a verification-needed or on-testplan tag
 - [ ] Test build starts at 7am CET / 10pm PT on Monday
 - [ ] Test plan ready by 8am CET / 11pm PT on Monday
