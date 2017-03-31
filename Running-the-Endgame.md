@@ -25,9 +25,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - *Month/Day* Endgame done
 
 ##### Monday
-- [ ] Code freeze at 5pm PT
-- [ ] Ensure we have a green build on all platforms
-- [ ] All test items contain sufficiently comprehensive test descriptions by 6pm PT
 - [ ] If there were any new extensions pulled into the core product, add them to the list in the next 2 points about shrink-wrap and OSSREADME **@owner**
 - [ ] Update shrink-wrap files for built-in extensions if needed (see [instructions](https://github.com/Microsoft/vscode/issues/8570#issuecomment-229669456))
    - [ ] typescript **@mjbvz** 
@@ -47,6 +44,9 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
    - [ ] css **@aeschli** 
    - [ ] configuration-editing **@jrieken** 
    - [ ] node-debug **@weinand**
+- [ ] Code freeze at 5pm PT
+- [ ] Ensure we have a green build on all platforms
+- [ ] All test items contain sufficiently comprehensive test descriptions by 6pm PT
 
 ##### Tuesday
 - [ ] Test plan items assigned
@@ -58,9 +58,9 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ##### Wednesday
 - [ ] Testing
-- [ ] Remind team members to assign issues that they intend to fix to the July milestone
+- [ ] Remind team members to assign issues that they intend to fix to the current milestone
 - [ ] Fixing (self-assigned, milestone assigned)
-- [ ] [Verification](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+label%3Abug+-label%3Averified+is%3Aclosed+-label%3Aduplicate+-label%3Ainvalid+-label%3Aas-designed+milestone%3A%22March+2017%22)
+- [ ] [Verification (pls update the query)](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+label%3Abug+-label%3Averified+is%3Aclosed+-label%3Aduplicate+-label%3Ainvalid+-label%3Aas-designed+milestone%3A%22March+2017%22)
 
 ##### Thursday
 - [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
@@ -72,7 +72,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Check new OSS usage is entered into the [OSS registry](https://ossmsft.visualstudio.com/_apps/hub/ms.vss-oss-web.hub-oss) **@owner**
 
 ##### Friday
-- [ ] Pause scheduled `insider` builds **@zurich**
+- [ ] Pause scheduled `insider` builds **@owner**
 - Satellite modules/npm packages ready, version updated, smoke tested
   - [ ] vscode **@bpasero**
   - [ ] yo generator **@aeschli**
@@ -88,17 +88,20 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] All release notes updated
   - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
 - [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. Use the [thankyou](https://github.com/Microsoft/vscode-tools/tree/master/thankyou) utility to generate the initial contents of the section. **owner**
-- [ ] Anotable fixes in the release notes **@all**
+- [ ] Add notable fixes to the release notes **@all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Trigger new insider build and publish it manually **@owner**
 
 ##### Friday/Monday
-- [ ] Branch code to `release/<x.y> **@zurich**
-- [ ] Announce master is open for business **@zurich**
+- [ ] Branch code to `release/<x.y> **@owner**
+- [ ] Announce master is open for business **@owner**
 - [ ] Polish release notes **@redmond**
 
-##### Monday/Tuesday
-- [ ] Publish `Insider` with hand-picked and reviewed candidate fixes **@owner**
+##### Monday - Wednesday
+- [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>`
+- [ ] Publish `Insider` from `release/<x.y>` **@owner**
+
+> **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
 
 ##### Thursday/Friday
 - [ ] Merge translations **@zurich**
@@ -174,7 +177,7 @@ We release a recovery build with a handful of critical fixes and translation upd
 | Christof      | @chrmarti      |  x    |  x  |    x    |
 | Daniel        | @tyriar        |  x    |  x  |    x    |
 | Dirk          | @dbaeumer      |       |     |    x    |
-| Erich         | @egamma        |       |     |    x    |
+| Erich         | @egamma        |  x    |  x  |    x    |
 | Greg          | @gregvanl      |  x    |  x  |    x    |
 | Isidor        | @isidorn       |  x    |  x  |    x    |
 | Joao          | @joaomoreno    |  x    |  x  |    x    |
