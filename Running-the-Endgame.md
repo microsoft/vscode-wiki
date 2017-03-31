@@ -98,7 +98,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Polish release notes **@redmond**
 
 ##### Monday - Wednesday
-- [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>`
+- [ ] Polish release notes **@redmond**
+- [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **@owner**
 - [ ] Publish `Insider` from `release/<x.y>` **@owner**
 
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
@@ -119,7 +120,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
     - [ ] archives **@owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish to stable **@owner**
-- [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`
+- [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`  **@owner**
 - [ ] Enable scheduled `insider` builds **@owner**
 - [ ] Twitter announcement **@seanmcbreen**
 
