@@ -100,7 +100,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ##### Monday - Wednesday
 - [ ] Polish release notes **@redmond**
 - [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **@owner**
-- [ ] Publish `Insider` from `release/<x.y>` **@owner**
+- [ ] Build `Insider` from `release/<x.y>` **@owner**
+- [ ] Manually release `Insider` **@owner**
 
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
 
