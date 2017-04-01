@@ -147,6 +147,7 @@ We release a recovery build with a handful of critical fixes and translation upd
 - [ ] Initiate `insiders` build from `master`
 - [ ] Issues are tested in the `insiders` **@team**
 - [ ] Build `stable` for all platforms from release branch **@owner**
+- [ ] Make rpm signing request **@Tyriar**
 - [ ] Issues are verified on `stable` build and the `verified` label is added **@owner**
 - [ ] Check `https://github.com/Microsoft/vscode/compare/release/<x.y>` to ensure no other commits have been made in the release branch **@owner**
 - [ ] Update the release notes and include a link to a query for the fixed issues **@gregvanl**
@@ -167,6 +168,7 @@ We release a recovery build with a handful of critical fixes and translation upd
     - [ ] archives **@owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish stable build **@owner**
+- [ ] Publish deb and rpms to repositories manually **@Tyriar**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`   
 
 ### OS Test Availability
