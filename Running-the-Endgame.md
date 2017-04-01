@@ -108,6 +108,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ##### Thursday/Friday
 - [ ] Merge translations **@zurich**
 - [ ] Build stable for all platforms **@owner**
+- [ ] Make rpm signing request **@Tyriar**
 - [ ] Sanity check of installable bits
   - [ ] Windows
     - [ ] signed installer **@owner**
@@ -121,6 +122,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
     - [ ] archives **@owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish to stable **@owner**
+- [ ] Publish deb and rpms to repositories manually **@Tyriar**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`  **@owner**
 - [ ] Enable scheduled `insider` builds **@owner**
 - [ ] Twitter announcement **@seanmcbreen**
