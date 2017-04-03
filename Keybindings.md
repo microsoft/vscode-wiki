@@ -166,7 +166,7 @@ If the native node module fails to run (i.e. the mappings cannot be obtained), k
 Most of the keybindings serialized in `keybindings.json` refer to `e.keyCode`. Here is the table to figure them out:
 
 | `keybindings.json` | Key Code Name | Key Code Value |
-|----------|----------|--------|--------|
+|----------|----------|--------|
 | <kbd>;</kbd> | <kbd>VK_OEM_1</kbd> | `0xBA` |
 | <kbd>=</kbd> | <kbd>VK_OEM_PLUS</kbd> | `0xBB` |
 | <kbd>,</kbd> | <kbd>VK_OEM_COMMA</kbd> | `0xBC` |
