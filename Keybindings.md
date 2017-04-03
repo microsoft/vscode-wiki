@@ -18,24 +18,24 @@ Here is an example for `e.code`, `e.keyCode` and `e.key` values on Chromium, on 
 <td colspan="2"><code>e.code: string</code></td>
 </tr>
 <tr>
-<td><a target="_blank" href="images/keyboard/scan_en_us.png"<img src="images/keyboard/scan_en_us.png" /></a></td>
-<td><a target="_blank" href="images/keyboard/scan_de_de.png"<img src="images/keyboard/scan_de_de.png" /></a></td>
+<td><a target="_blank" href="images/keyboard/scan_en_us.png"><img src="images/keyboard/scan_en_us.png" /></a></td>
+<td><a target="_blank" href="images/keyboard/scan_de_de.png"><img src="images/keyboard/scan_de_de.png" /></a></td>
 </tr>
 
 <tr>
 <td colspan="2"><code>e.keyCode: number</code></td>
 </tr>
 <tr>
-<td><a target="_blank" href="images/keyboard/keycode_en_us.png"<img src="images/keyboard/keycode_en_us.png" /></a></td>
-<td><a target="_blank" href="images/keyboard/keycode_de_de.png"<img src="images/keyboard/keycode_de_de.png" /></a></td>
+<td><a target="_blank" href="images/keyboard/keycode_en_us.png"><img src="images/keyboard/keycode_en_us.png" /></a></td>
+<td><a target="_blank" href="images/keyboard/keycode_de_de.png"><img src="images/keyboard/keycode_de_de.png" /></a></td>
 </tr>
 
 <tr>
 <td colspan="2"><code>e.key: string</code></td>
 </tr>
 <tr>
-<td><a target="_blank" href="images/keyboard/key_en_us.png"<img src="images/keyboard/key_en_us.png" /></a></td>
-<td><a target="_blank" href="images/keyboard/key_de_de.png"<img src="images/keyboard/key_de_de.png" /></a></td>
+<td><a target="_blank" href="images/keyboard/key_en_us.png"><img src="images/keyboard/key_en_us.png" /></a></td>
+<td><a target="_blank" href="images/keyboard/key_de_de.png"><img src="images/keyboard/key_de_de.png" /></a></td>
 </tr>
 
 </table>
@@ -120,13 +120,13 @@ All built-in commands, extensions and user settings register keybindings in term
 </tr>
 
 <tr>
-<td><a target="_blank" href="images/keyboard/scan_en_us.png"<img src="images/keyboard/scan_en_us.png" /></a></td>
-<td><a target="_blank" href="images/keyboard/scan_de_de.png"<img src="images/keyboard/scan_de_de.png" /></a></td>
+<td><a target="_blank" href="images/keyboard/scan_en_us.png"><img src="images/keyboard/scan_en_us.png" /></a></td>
+<td><a target="_blank" href="images/keyboard/scan_de_de.png"><img src="images/keyboard/scan_de_de.png" /></a></td>
 </tr>
 
 <tr>
-<td><a target="_blank" href="images/keyboard/key_en_us.png"<img src="images/keyboard/key_en_us.png" /></a></td>
-<td><a target="_blank" href="images/keyboard/key_de_ch.png"<img src="images/keyboard/key_de_ch.png" /></a></td>
+<td><a target="_blank" href="images/keyboard/key_en_us.png"><img src="images/keyboard/key_en_us.png" /></a></td>
+<td><a target="_blank" href="images/keyboard/key_de_ch.png"><img src="images/keyboard/key_de_ch.png" /></a></td>
 </tr>
 
 </table>
