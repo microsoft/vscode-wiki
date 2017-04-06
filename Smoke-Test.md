@@ -25,7 +25,7 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
 
 #### Data Migration
 
-This task is about running the new version over the same data of the stable released version. Specifically we want to see that the new version is starting up properly, restores all state including dirty files from a previous session.
+This task is about running the new version over the same data of the stable released version. Specifically we want to see that the new version is starting up properly, restores all state including dirty files from a previous session. You can use the same user data dir (using the --user-data-dir command line flag) as long as you use the same directory for both stable and new version:
 
 * Run the released stable version of VS Code and leave some files and untitled files dirty before you exit
 * After exit, run the new version of VS Code over the same data directory of the released stable one
