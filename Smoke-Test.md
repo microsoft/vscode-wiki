@@ -23,6 +23,15 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
   * Mac only: Make sure you get asked and can save on window close
   * Make sure that when you file > quit and reopen, dirty files and untitled restore properly ("hot exit")
 
+#### Data Migration
+
+This task is about running the new version over the same data of the stable released version. Specifically we want to see that the new version is starting up properly, restores all state including dirty files from a previous session.
+
+* Run the released stable version of VS Code and leave some files and untitled files dirty before you exit
+* After exit, run the new version of VS Code over the same data directory of the released stable one
+* Verify the new version of VS Code starts properly and UI state is restored (if you had a folder opened)
+* Verify dirty files and untitled are being restored (hot exit)
+
 #### Explorer
 
 * On the desktop create an info.txt file
