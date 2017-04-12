@@ -43,14 +43,10 @@ This task is about running the new version over the same data of the stable rele
 
 #### Configuration and views
 
-* Select File > Preferences > User Settings (OS X: Code > Preferences > User Settings)
+* Select File > Preferences > Settings (OS X: Code > Preferences > Settings)
   * Under editor, change line number to off, save the file, verify that line numbers are turned off without refresh.
 * Select File > Preferences > Keyboard Shortcuts (OS X: Code > Preferences > Keyboard Shortcuts)
-  * Change a binding of an action and verify the new binding works. e.g. add:
-
-```json
-{ "key": "ctrl+u", "command": "workbench.action.toggleSidebarPosition" }
-```
+  * Change a binding of an action and verify the new binding works. e.g. Look for command `workbench.action.toggleSidebarPosition` and change the keybinding to `ctrl+u`
 
 * Verify that "Go to line" works (ctrl+g)
 
