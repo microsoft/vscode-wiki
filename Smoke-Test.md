@@ -46,7 +46,7 @@ This task is about running the new version over the same data of the stable rele
 * Select File > Preferences > Settings (OS X: Code > Preferences > Settings)
   * Under editor, change line number to off, save the file, verify that line numbers are turned off without refresh.
 * Select File > Preferences > Keyboard Shortcuts (OS X: Code > Preferences > Keyboard Shortcuts)
-  * Change a binding of an action and verify the new binding works. e.g. Look for command `workbench.action.toggleSidebarPosition` and change the keybinding to `ctrl+u`
+  * Change a binding of an action and verify the new binding works. e.g. Look for command `workbench.action.toggleSidebarPosition` and change its keybinding to `ctrl+u` and verify it works.
 
 * Verify that "Go to line" works (ctrl+g)
 
