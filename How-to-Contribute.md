@@ -52,7 +52,7 @@ cd vscode
 ```bash
 git clone https://github.com/microsoft/vscode
 cd vscode
-scripts\npm install
+scripts\npm.bat install
 ```
 
 **Linux**
