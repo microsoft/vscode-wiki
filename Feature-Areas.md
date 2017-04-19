@@ -21,7 +21,7 @@ In addition there can be feature sub areas which are colored light blue.
 |git|git support||
 |debug|debugging, launching support||
 |search|full text search support||
-|editor|vscode editor support|brackets, monaco-editor, diff-editor,editor-contrib, editor-core-commands, editor-core-settings, editor-core-view, editor-multicursor, find-diwdget, folding, intellisense, ligatures, snippets, tokenization, intellisense???, VIM|
+|editor|vscode editor support|brackets, monaco-editor, diff-editor,editor-contrib, editor-core-commands, editor-core-settings, editor-core-view, editor-multicursor, find-widget, folding, intellisense, ligatures, snippets, tokenization, intellisense???, VIM|
 |task|task support||
 |error-list|the error list||
 |integrated-terminal|integrated terminal panel||
