@@ -28,6 +28,9 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 |C#|[Omnisharp](https://github.com/OmniSharp/omnisharp-vscode)
 |Go|[vscode-go](https://github.com/microsoft/vscode-go)|
 |LaTeX|[vscode-latex](https://github.com/microsoft/vscode-latex)|
+|CSS/LESS/SCSS Language Service|[vscode-css-languageservice](https://github.com/microsoft/vscode-css-languageservice)|
+|JSON Language Service|[vscode-json-languageservice](https://github.com/microsoft/vscode-json-languageservice)|
+|HTML Language Service|[vscode-html-languageservice](https://github.com/microsoft/vscode-html-languageservice)|
 
 ## Linters
 |Linter|Repository|
