@@ -25,6 +25,7 @@ In addition there can be feature sub areas which are colored light blue.
 |task|task support||
 |error-list|the error list||
 |integrated-terminal|integrated terminal panel||
+|hot-exit|hot exit||
 |extensions|extension UI, details, install|marketplace|
 |||
 |api|vscode extension API||
