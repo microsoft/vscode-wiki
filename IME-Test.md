@@ -54,6 +54,7 @@ The golden standard is Word
 
   ![Windows Korean Word 2](images/ime/windows-korean-word2.gif)
 
+* Type `dks`, it should be read `안`. Now backspace should result in `아`, backspace again should result in `ㅇ`
 
 
 ---
