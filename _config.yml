@@ -1,1 +1,49 @@
-theme: jekyll-theme-slate
+git clone -q --branch=master https://github.com/davidgreens/vscode-wiki.git C:\projects\vscode-wiki
+git checkout -qf b668fa5a82d848702ee797faea2384e9466a84e1
+[Node Version v4.4.7]<br>
+<br>
+[env.file secret]:<br>
+<br>
+[https://glitch.com/edit/#!/equable-speedboat](url)<br>
+<br>
+[![bitHound Code](https://www.bithound.io/github/howdyai/botkit/badges/code.svg)](https://www.bithound.io/github/howdyai/botkit)<br>
+<br>
+[invite collaberators]:<br>
+<br>
+[https://glitch.com/edit/#!/join/6e622467-a48f-450f-a214-3c91f26cd870](url)<br>
+<br>
+[JIRA | Cloud]<br>
+<br>
+[https://slack.atlassian.io/](url)<br>
+<br>
+[Trello | Power-Ups Admin]<br>
+<br>
+[https://trello.com/power-ups/admin/58c3b1954c64a77d602aef3d#](url)<br>
+<br>
+[Power-Ups Architecture | Trello Developers]<br>
+<br>
+[https://developers.trello.com/power-ups/architecture#manifest](url)<br>
+<br>
+[Power-Ups Capabilities | Trello Developers]<br>
+<br>
+[https://developers.trello.com/power-ups/capabilities](url)<br>
+<br>
+[Existing Webhooks]<br>
+<br>
+[https://community.developer.atlassian.com/t/webhook-not-available-when-is-created-from-add-on-descriptor/2751/3?u=dgreens](url)<br>
+<br>
+[https://community.developer.atlassian.com/t/about-the-hipchat-development-category/21?u=dgreens](url)<br>
+<br>
+[Trello | BuildKiteChat Slack]<br>
+<br>
+[https://buildkitechatteam.slack.com/team/Trello](url)<br>
+<br>
+[Embeddable webslack button]<br>
+<br>
+[&lt;&quot;https://slack.com/oauth/authorize?&amp;client_id=9070339414.152964871427&amp;scope=incoming-webhook,bot&quot;&gt;<br>
+&lt;&quot;https://platform.slack-edge.com/img/add_to_slack.png&quot; &quot;https://platform.slack-edge.com/img/add_to_slack.png, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x&quot;&gt;<br>
+&lt;/img&gt;<br>
+&lt;/a&gt;](url)<br>
+<br>
+ns/summary<br>
+[=com.sand.airdroid](url) [=com.tuyware.jsongen­ie](url)
