@@ -3,17 +3,24 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
 #### Prereqs
 
 * For the best debugging experience you'll need node version 6.5 (or higher)
-* Quickly sanity-check the new version with your existing user data and installed extensions
-* For the remainder start from the command line with a new user data dir and a new extensions dir
-  * `<code executable> --user-data-dir <new user data dir> --extensions-dir <new extensions dir>`
-
-#### Setup
-
 * Clone the 'express' smoke test repository:
-  * git clone https://github.com/Microsoft/vscode-smoketest-express.git
-  * cd vscode-smoketest-express
-  * npm install
-  * launch VSCode and open the vscode-smoketest-express folder
+  * `git clone https://github.com/Microsoft/vscode-smoketest-express.git`
+  * `cd vscode-smoketest-express`
+  * `npm install`
+* Produce a data directory and extensions directory from the latest **stable** release
+  * we want to use **stable** to test the update behaviour from that version to our new version!
+  * run `code --user-data-dir <new user data dir> --extensions-dir <new extensions dir> <vscode-smoketest-express-folder>`
+  * open some files and untitled files and leave them dirty
+  * have some UI state (e.g. panel open, multiple editors)
+  * close stable
+
+#### Data Migration
+
+This task is about running the new version over the same data of the stable released version. Specifically we want to see that the new version is starting up properly, restores all state including dirty files from a previous session.
+
+* run `code-insiders --user-data-dir <data dir from prereq step> --extensions-dir <extensions dir from prereq step> <vscode-smoketest-express-folder>`
+* Verify the new version of VS Code starts properly and all of the UI state is restored from when you used stable in the previous step
+* Verify dirty files and untitled are being restored (hot exit)
 
 #### Data Loss
 
@@ -23,17 +30,16 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
   * Mac only: Make sure you get asked and can save on window close
   * Make sure that when you file > quit and reopen, dirty files and untitled restore properly ("hot exit")
 
-#### Data Migration
+#### First User Experience
 
-This task is about running the new version over the same data of the stable released version. Specifically we want to see that the new version is starting up properly, restores all state including dirty files from a previous session. You can use the same user data dir (using the --user-data-dir command line flag) as long as you use the same directory for both stable and new version:
-
-* Run the released stable version of VS Code and leave some files and untitled files dirty before you exit
-* After exit, run the new version of VS Code over the same data directory of the released stable one
-* Verify the new version of VS Code starts properly and UI state is restored (if you had a folder opened)
-* Verify dirty files and untitled are being restored (hot exit)
+This task is about verifying how a first launch behaves for new users that never started Code before.
+* delete the user-data-dir and extensions dir from previous steps
+* run `code-insiders --user-data-dir <data dir> --extensions-dir <extensions dir> <vscode-smoketest-express-folder>`
+* verify you see a welcome page and the experience is pleasant
 
 #### Explorer
 
+* launch VSCode and open the vscode-smoketest-express folder
 * On the desktop create an info.txt file
 * Drag it to the explorer then rename it to README.txt
 * Move README.txt to another folder and then delete it and verify it ends up in the trash
