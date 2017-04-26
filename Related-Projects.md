@@ -3,8 +3,8 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 ## Core Repositories
 |Component|Repository|
 |---|---|
-|Node Debug|[vscode-node-debug](https://github.com/microsoft/vscode-node-debug)|
-|Mono Debug|[vscode-mono-debug](https://github.com/microsoft/vscode-mono-debug)|
+|Node Debug (< node v8.0)|[vscode-node-debug](https://github.com/microsoft/vscode-node-debug)|
+|Node Debug (>= node v6.3)|[vscode-node-debug2](https://github.com/microsoft/vscode-node-debug2)|
 |File Watcher|[vscode-filewatcher-windows](https://github.com/microsoft/vscode-filewatcher-windows)|
 |`vscode.d.ts`|[vscode-extension-code](https://github.com/microsoft/vscode-extension-vscode)|
 |`vscode-languageserver`|[vscode-languageserver-node](https://github.com/microsoft/vscode-languageserver-node)|
