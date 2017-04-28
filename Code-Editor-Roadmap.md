@@ -14,6 +14,25 @@
 ## Find widget
 * [issue #15579](https://github.com/Microsoft/vscode/issues/15579): Regex search issue
   * seed search string only if the selection is created explicitly (i.e. not due to a find match)
+* Widget size/position
+  * Make it resizeable: [#22270](https://github.com/Microsoft/vscode/issues/22270), [#2657](https://github.com/Microsoft/vscode/issues/2657), [#5467](https://github.com/Microsoft/vscode/issues/5467)
+  * Too small: [#20447](https://github.com/Microsoft/vscode/issues/20447), Tool wide: [#2220](https://github.com/Microsoft/vscode/issues/2220)
+  * Replace Box in Current File Truncated [#9407](https://github.com/Microsoft/vscode/issues/9407), [#5861](https://github.com/Microsoft/vscode/issues/5861)
+  * Cover search result: [#7039](https://github.com/Microsoft/vscode/issues/7039), [#5525](https://github.com/Microsoft/vscode/issues/5525), [#10662](https://github.com/Microsoft/vscode/issues/10662), [#11102](https://github.com/Microsoft/vscode/issues/11102)
+* Multiline search
+  * [ ] [#15727](https://github.com/Microsoft/vscode/issues/15727), [#9051](https://github.com/Microsoft/vscode/issues/9051), [#10588](https://github.com/Microsoft/vscode/issues/10588)
+* Find in selection
+  * [ ] Closing the find widget via x does not clear find in selection toggle [#15959](https://github.com/Microsoft/vscode/issues/15959)
+  * [ ] Create command for find in selection [#8843](https://github.com/Microsoft/vscode/issues/8843) [#24887](https://github.com/Microsoft/vscode/issues/24887)
+* Persist search settings
+  * [ ] [#10344](https://github.com/Microsoft/vscode/issues/10344), [#8843](https://github.com/Microsoft/vscode/issues/8843), [#6158](https://github.com/Microsoft/vscode/issues/6158), [#9798](https://github.com/Microsoft/vscode/issues/9798), [#11574](https://github.com/Microsoft/vscode/issues/11574), [#11897](https://github.com/Microsoft/vscode/issues/12897)
+* Feature requests
+  * [ ] [Introduce an universal newline character like \R](https://github.com/Microsoft/vscode/issues/8601)
+  * [ ] [Support Multicursor](https://github.com/Microsoft/vscode/issues/9584)
+  * [ ] [Find all](https://github.com/Microsoft/vscode/issues/10161)
+  * [ ] [Replace with new line](https://github.com/Microsoft/vscode/issues/11237)
+  * [ ] [Ignore comments in search](https://github.com/Microsoft/vscode/issues/11688)
+  
 
 ## DVORAK on mac
 * multiple keybindings issues, involves Chromium implementing a very poor w3c recommendation
