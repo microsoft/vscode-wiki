@@ -17,7 +17,7 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 * Support more flexible layouts, e.g., vertical panels
 * Improve UI notification system
 * [x] Improve key binding customization experience (hide keycodes, inconsistent command names from user)
-* :runner: Support theming of the workbench
+* [x] Support theming of the workbench
 * Import, export of settings (VS Code as well as other tools) 
 
 ### Core Editor
@@ -40,10 +40,10 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 * Simplify the creation of task definitions (e.g. templates similar to launch.json templates)
 
 ### Performance
-* Monitor and improve startup time (on-going)
+* :runner: Monitor and improve startup time (on-going)
 
 ### Source Code Control
-* :runner: SCM provider API
+* [x] SCM provider API
 * [x] Git support as an extension (ships with VS Code)
 * Enable Explorer decorations for SCM status (e.g. colorize modified files) 
 * Support to view incoming changes
@@ -69,7 +69,7 @@ We want VS Code to be a great tool for developing modern MEAN/MERN applications 
 * `tsconfig.json` and `jsconfig.json` IntelliSense (completions) and validation
 * IntelliSense (completions) support for HTML embedded in JavaScript and TypeScript (Angular, React), partner with TypeScript
 * [x] Assist user entering JSDoc comments
-* Improve JavaScript Linting 
+* [x] Improve JavaScript Linting/type checking
 * TypeScript compile on save
 * Enable semantic colorization (see Extensibility)
 * Investigate improving support for popular JS technologies (webpack, Babel)
@@ -91,7 +91,7 @@ We want VS Code to be a great tool for developing modern MEAN/MERN applications 
   * Live edit
   * :muscle: into profiling support 
 * :muscle: Investigate a Mocha test runner
-* :muscle: MongoDB extension
+* :muscle: Investigate MongoDB extension
  
 ## Extension creation, discovery, and management
 Of course, VS Code is not just a Node, JavaScript, and TypeScript tool. Our rich extensibility model and extension ecosystem means that you can install support for just about every modern language and framework, from C++ to C# to Go, Python, and more. Looking ahead, we want to make acquiring extensions for these languages (and more!) as easy as possible. We want to enable extension authors to be able to be more productive and deliver richer experiences to developers. And at the same time, we want to give users more control over how those extensions contribute to their environment. 
@@ -110,7 +110,7 @@ Of course, VS Code is not just a Node, JavaScript, and TypeScript tool. Our rich
 * Evolve the Language Server Protocol
 
 ### Provide users with more control over extension contributions
-* Identify and resolve keybindings conflicts
+* [x] Identify and resolve keybindings conflicts
 * Identify and resolve setting conflicts
 
 ### Contribute to Extensions
