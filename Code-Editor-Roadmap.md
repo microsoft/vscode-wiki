@@ -25,7 +25,7 @@
   * [ ] Closing the find widget via x does not clear find in selection toggle [#15959](https://github.com/Microsoft/vscode/issues/15959)
   * [ ] Create command for find in selection [#8843](https://github.com/Microsoft/vscode/issues/8843) [#24887](https://github.com/Microsoft/vscode/issues/24887)
 * Persist search settings
-  * [ ] [#10344](https://github.com/Microsoft/vscode/issues/10344), [#8843](https://github.com/Microsoft/vscode/issues/8843), [#6158](https://github.com/Microsoft/vscode/issues/6158), [#9798](https://github.com/Microsoft/vscode/issues/9798), [#11574](https://github.com/Microsoft/vscode/issues/11574), [#11897](https://github.com/Microsoft/vscode/issues/12897)
+  * [ ] [#10344](https://github.com/Microsoft/vscode/issues/10344), [#8843](https://github.com/Microsoft/vscode/issues/8843), [#6158](https://github.com/Microsoft/vscode/issues/6158), [#9798](https://github.com/Microsoft/vscode/issues/9798), [#11574](https://github.com/Microsoft/vscode/issues/11574), [#11897](https://github.com/Microsoft/vscode/issues/12897), [#17505](https://github.com/Microsoft/vscode/issues/17505)
 * Feature requests
   * [ ] [Introduce an universal newline character like \R](https://github.com/Microsoft/vscode/issues/8601)
   * [ ] [Support Multicursor](https://github.com/Microsoft/vscode/issues/9584)
