@@ -4,7 +4,7 @@ If you have used the experimental setting `workspace.experimental.colorCustomiza
 | ------------- | ------------- |
 | activeTabActiveGroupForeground | tab.activeForeground |
 | activeTabBackground | tab.activeBackground |
-| activeTabInactiveGroupForeground | null |
+| activeTabInactiveGroupForeground | No longer available |
 | activityBadgeBackground | activityBarBadge.background |
 | activityBadgeForeground | activityBarBadge.foreground |
 | activityBarBackground | activityBar.background |
@@ -22,9 +22,9 @@ If you have used the experimental setting `workspace.experimental.colorCustomiza
 | editorFindMatch | editor.findMatchBackground |
 | editorFindMatchHighlight | editor.findMatchHighlightBackground |
 | editorFindRangeHighlight | editor.findRangeHighlightBackground |
-| editorFindWidgetBackground | null |
+| editorFindWidgetBackground | editorWidget.background |
 | editorForeground | editor.foreground |
-| editorGroupBackground | null |
+| editorGroupBackground | editorGroup.background |
 | editorGroupBorder | editorGroup.border |
 | editorHeaderBackground | null |
 | editorHoverBackground | editorHoverWidget.background |
@@ -35,7 +35,7 @@ If you have used the experimental setting `workspace.experimental.colorCustomiza
 | editorLineHighlight | editor.lineHighlightBackground |
 | editorLineHighlightBorder | editor.lineHighlightBorder |
 | editorLineNumbers | editorLineNumber.foreground |
-| editorLinkForeground | null |
+| editorLinkForeground | No longer supported |
 | editorMarkerNavigationBackground | editorMarkerNavigation.background |
 | editorMarkerNavigationError | editorMarkerNavigationError.background |
 | editorMarkerNavigationWarning | editorMarkerNavigationWarning.background |
@@ -46,10 +46,10 @@ If you have used the experimental setting `workspace.experimental.colorCustomiza
 | editorWhitespaces | editorWhitespace.foreground |
 | editorWordHighlight | editor.wordHighlightBackground |
 | editorWordHighlightStrong | editor.wordHighlightStrongBackground |
-| focusedElementOutline | null |
+| focusedElementOutline | focusBorder |
 | foreground | foreground |
-| highContrastBorder | null |
-| highContrastOutline | null |
+| highContrastBorder | contrastBorder |
+| highContrastOutline | contrastActiveBorder |
 | inactiveTabActiveGroupForeground | tab.inactiveForeground |
 | inactiveTabBackground | tab.inactiveBackground |
 | inactiveTabInactiveGroupForeground | null |
@@ -66,8 +66,8 @@ If you have used the experimental setting `workspace.experimental.colorCustomiza
 | peekViewEditorBackground | peekViewEditor.background |
 | peekViewEditorMatchHighlight | peekViewEditor.matchHighlightBackground |
 | peekViewResultsBackground | peekViewResult.background |
-| peekViewResultsFileForeground | null |
-| peekViewResultsMatchForeground | null |
+| peekViewResultsFileForeground | peekViewResult.fileForeground |
+| peekViewResultsMatchForeground | peekViewResult.lineForeground |
 | peekViewResultsMatchHighlight | peekViewResult.matchHighlightBackground |
 | peekViewResultsSelectionBackground | peekViewResult.selectionBackground |
 | peekViewResultsSelectionForeground | peekViewResult.selectionForeground |
