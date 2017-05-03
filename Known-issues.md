@@ -6,7 +6,7 @@ Scrolling with two fingers on the touchpad feels "janky". The root cause lies wi
  * https://github.com/Microsoft/vscode/issues/13612
  * https://github.com/Microsoft/vscode/issues/12637
 
-#### *** Confirmed workaround reported by [**@alexpaluzzi**](https://github.com/Microsoft/vscode/issues/13612#issuecomment-263730443)
+### *** Confirmed workaround reported by [**@alexpaluzzi**](https://github.com/Microsoft/vscode/issues/13612#issuecomment-263730443)
  > During my testing, I discovered that the lag occurs if you start VS Code maximized. I thought maybe I was going crazy, but all I did was restore the window and then re-maximize it and all of the scroll jank was gone.
 
 ### Unconfirmed workarounds:
