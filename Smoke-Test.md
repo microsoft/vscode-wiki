@@ -10,6 +10,7 @@ This page describes the VS Code Smoke test, a manual test case that we execute b
 * Produce a data directory and extensions directory from the latest **stable** release
   * we want to use **stable** to test the update behaviour from that version to our new version!
   * run `code --user-data-dir <new user data dir> --extensions-dir <new extensions dir> <vscode-smoketest-express-folder>`
+  * on OSX set `"update.channel": "none"` to disable the automatic update
   * open some files and untitled files and leave them dirty
   * have some UI state (e.g. panel open, multiple editors)
   * close stable
