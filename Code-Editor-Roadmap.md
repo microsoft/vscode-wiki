@@ -16,7 +16,7 @@
   * seed search string only if the selection is created explicitly (i.e. not due to a find match)
 * Widget size/position
   * Make it resizeable: [#2657](https://github.com/Microsoft/vscode/issues/2657), [#2220](https://github.com/Microsoft/vscode/issues/2220)
-  * Bug, Replace Box in Current File Truncated [#9407](https://github.com/Microsoft/vscode/issues/9407), [#5861](https://github.com/Microsoft/vscode/issues/5861)
+  * Bug, Replace Box in Current File Truncated [#5861](https://github.com/Microsoft/vscode/issues/5861)
   * Cover search result: [#5525](https://github.com/Microsoft/vscode/issues/5525)
 * Multiline search
   * [ ] [#15727](https://github.com/Microsoft/vscode/issues/15727), [#9051](https://github.com/Microsoft/vscode/issues/9051), [#10588](https://github.com/Microsoft/vscode/issues/10588)
