@@ -1,5 +1,10 @@
+### Mary 2017
+
+* [Iteration Plan](https://github.com/Microsoft/vscode/issues/26068)
+
 ### April 2017
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/24111)
+* [Endgame](https://github.com/Microsoft/vscode/issues/25250)
 
 ### March 2017
 * [Iteration Plan](../issues/21923)
