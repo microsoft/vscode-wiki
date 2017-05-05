@@ -15,10 +15,9 @@
 * [issue #15579](https://github.com/Microsoft/vscode/issues/15579): Regex search issue
   * seed search string only if the selection is created explicitly (i.e. not due to a find match)
 * Widget size/position
-  * Make it resizeable: [#22270](https://github.com/Microsoft/vscode/issues/22270), [#2657](https://github.com/Microsoft/vscode/issues/2657), [#5467](https://github.com/Microsoft/vscode/issues/5467)
-  * Too small: [#20447](https://github.com/Microsoft/vscode/issues/20447), Tool wide: [#2220](https://github.com/Microsoft/vscode/issues/2220)
-  * Replace Box in Current File Truncated [#9407](https://github.com/Microsoft/vscode/issues/9407), [#5861](https://github.com/Microsoft/vscode/issues/5861)
-  * Cover search result: [#7039](https://github.com/Microsoft/vscode/issues/7039), [#5525](https://github.com/Microsoft/vscode/issues/5525), [#10662](https://github.com/Microsoft/vscode/issues/10662), [#11102](https://github.com/Microsoft/vscode/issues/11102), [#16644](https://github.com/Microsoft/vscode/issues/16644)
+  * Make it resizeable: [#2657](https://github.com/Microsoft/vscode/issues/2657), [#2220](https://github.com/Microsoft/vscode/issues/2220)
+  * Bug, Replace Box in Current File Truncated [#9407](https://github.com/Microsoft/vscode/issues/9407), [#5861](https://github.com/Microsoft/vscode/issues/5861)
+  * Cover search result: [#5525](https://github.com/Microsoft/vscode/issues/5525)
 * Multiline search
   * [ ] [#15727](https://github.com/Microsoft/vscode/issues/15727), [#9051](https://github.com/Microsoft/vscode/issues/9051), [#10588](https://github.com/Microsoft/vscode/issues/10588)
 * Find in selection
