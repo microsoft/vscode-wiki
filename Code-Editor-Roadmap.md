@@ -22,7 +22,7 @@
   * [ ] [#15727](https://github.com/Microsoft/vscode/issues/15727), [#9051](https://github.com/Microsoft/vscode/issues/9051), [#10588](https://github.com/Microsoft/vscode/issues/10588)
 * Find in selection
   * [x] Closing the find widget via x does not clear find in selection toggle [#15959](https://github.com/Microsoft/vscode/issues/15959)
-  * [x] Create command for find in selection [#8843](https://github.com/Microsoft/vscode/issues/8843) [#24887](https://github.com/Microsoft/vscode/issues/24887)
+  * [ ] Find selected or Find in selection [#8843](https://github.com/Microsoft/vscode/issues/8843) [#24887](https://github.com/Microsoft/vscode/issues/24887)
   * [ ] Toggle Find in selection option automatically when there is selection in editor, [#15148](https://github.com/Microsoft/vscode/issues/15148), [#17560](https://github.com/Microsoft/vscode/issues/17560)
 * Persist search settings
   * [ ] [#10344](https://github.com/Microsoft/vscode/issues/10344), [#8843](https://github.com/Microsoft/vscode/issues/8843), [#6158](https://github.com/Microsoft/vscode/issues/6158), [#9798](https://github.com/Microsoft/vscode/issues/9798), [#11574](https://github.com/Microsoft/vscode/issues/11574), [#11897](https://github.com/Microsoft/vscode/issues/12897), [#17505](https://github.com/Microsoft/vscode/issues/17505)
