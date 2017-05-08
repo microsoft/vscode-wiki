@@ -1,4 +1,4 @@
-### Mary 2017
+### May 2017
 
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/26068)
 
