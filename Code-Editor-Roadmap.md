@@ -25,7 +25,7 @@
   * [ ] Find selected or Find in selection [#8843](https://github.com/Microsoft/vscode/issues/8843) [#24887](https://github.com/Microsoft/vscode/issues/24887)
   * [ ] Toggle Find in selection option automatically when there is selection in editor, [#15148](https://github.com/Microsoft/vscode/issues/15148), [#17560](https://github.com/Microsoft/vscode/issues/17560)
 * Persist search settings
-  * [ ] [#6158](https://github.com/Microsoft/vscode/issues/6158)
+  * [x] [#6158](https://github.com/Microsoft/vscode/issues/6158)
 * Feature requests
   * [ ] [Introduce an universal newline character like \R](https://github.com/Microsoft/vscode/issues/8601)
   * [ ] [Support Multicursor](https://github.com/Microsoft/vscode/issues/9584)
