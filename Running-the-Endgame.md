@@ -108,7 +108,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ##### Thursday/Friday
 - [ ] Merge translations **@zurich**
 - [ ] Build stable for all platforms **@owner**
-- [ ] **new** Make sure that the [vsda module](https://github.com/Microsoft/vscode-distro/tree/master/quality/stable/node_modules/vsda) matches the version in insiders that matches the version of electron
+- [ ] **new** Make sure that the [vsda module](https://github.com/Microsoft/vscode-distro/tree/master/quality/stable/node_modules/vsda) version in stable is the same as in insiders (which matches the latest electron)
 - [ ] Make rpm signing request **@Tyriar**
 - [ ] Sanity check of installable bits
   - [ ] Windows
