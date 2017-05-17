@@ -88,7 +88,6 @@ This page documents workarounds for known issues related to VS Code keybindings 
     * **explanation**: VS Code does not ship with default keybindings optimized per keyboard layout. Keyboard layouts under Windows are free to more, remove, or add a set of key codes and it is possible that under your keyboard layout a specific key code, e.g. `VK_OEM_3` is not used. You can upvote in [issue #1240](https://github.com/Microsoft/vscode/issues/1240).
 
   * Experiencing any other issue?
-    * **try**: use `"keyboard.dispatch": "keyCode"` in your settings and restart VS Code.
     * **further troubleshooting**: [Troubleshoot generic keybindings](#troubleshoot-generic-keybindings)
 
 ### Troubleshoot generic Keybindings
