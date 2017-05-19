@@ -17,7 +17,7 @@
 * Widget size/position
   * [ ] Make it resizeable: [#2657](https://github.com/Microsoft/vscode/issues/2657), [#2220](https://github.com/Microsoft/vscode/issues/2220)
   * [x] Bug, Replace Box in Current File Truncated [#5861](https://github.com/Microsoft/vscode/issues/5861)
-  * [ ] Cover search result: [#5525](https://github.com/Microsoft/vscode/issues/5525)
+  * [x] Cover search result: [#5525](https://github.com/Microsoft/vscode/issues/5525)
 * Multiline search
   * [ ] [#15727](https://github.com/Microsoft/vscode/issues/15727), [#9051](https://github.com/Microsoft/vscode/issues/9051), [#10588](https://github.com/Microsoft/vscode/issues/10588)
 * Find in selection
