@@ -3,6 +3,7 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 ## Core Repositories
 |Component|Repository|
 |---|---|
+|Standalone Monaco Editor|[monaco-editor](https://github.com/Microsoft/monaco-editor)|
 |Node Debug (for node < v8.0)|[vscode-node-debug](https://github.com/microsoft/vscode-node-debug)|
 |Node Debug (for node >= v6.3)|[vscode-node-debug2](https://github.com/microsoft/vscode-node-debug2)|
 |File Watcher|[vscode-filewatcher-windows](https://github.com/microsoft/vscode-filewatcher-windows)|
@@ -25,6 +26,7 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 ## Languages
 |Language|Repository|
 |---|---|
+|Language server protocol|[Language Server Protocol](https://github.com/Microsoft/language-server-protocol)
 |C#|[Omnisharp](https://github.com/OmniSharp/omnisharp-vscode)
 |Go|[vscode-go](https://github.com/microsoft/vscode-go)|
 |LaTeX|[vscode-latex](https://github.com/microsoft/vscode-latex)|
