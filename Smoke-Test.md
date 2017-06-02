@@ -4,7 +4,7 @@ This page describes the VS Code Smoke test, an automatic and a manual test cases
 ### Prerequisites
 * Update stable to its latest version.
 * Close all VS Code instances that will be used in a test (e.g. latest insiders, stable), not to have any interference with the running test that will spawn them itself.
-* Switch to English keyboard layout.
+* Switch to US-International keyboard layout (due to #27841).
 
 ### Running
 1. Download current released stable and to-be-released latest VS Code.
