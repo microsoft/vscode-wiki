@@ -1,6 +1,11 @@
 This page describes the VS Code Smoke test, an automatic and a manual test cases that we execute before we release VS Code to the public on all platforms.
 
 ## Automated Smoke Test
+### Prerequisites
+* Update stable to the latest version.
+* Close all VS Code instances that will be used in a test (e.g. latest insiders, stable) not to have any interference with the running test that will spawn them itself.
+* Switch to English keyboard layout.
+
 ### Running
 1. Download current released stable and to-be-released latest VS Code.
 1. Go to `/test/smoke` folder in `vscode` repository.
@@ -15,6 +20,8 @@ _Example commands:_
 * OS X:
 
 `npm test -- --latest "/Applications/Visual Studio Code - Insiders.app/Contents/MacOS/Electron" --stable "/Applications/Visual Studio Code.app/Contents/MacOS/Electron"`
+
+**Running time:** Depending on the amount of test failures, around 10-15 minutes when all tests are successful.
 
 ## Manual Smoke Test
 #### Prereqs
