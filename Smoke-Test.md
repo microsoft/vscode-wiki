@@ -1,5 +1,22 @@
-This page describes the VS Code Smoke test, a manual test case that we execute before we release VS Code to the public on all platforms.
+This page describes the VS Code Smoke test, an automatic and a manual test cases that we execute before we release VS Code to the public on all platforms.
 
+## Automated Smoke Test
+### Running
+1. Download current released stable and to-be-released latest VS Code.
+1. Go to `/test/smoke` folder in `vscode` repository.
+1. Perform `npm install` in the folder.
+1. Execute the following command to run the smoke test:
+`npm test -- --latest path/to/latest/binary --stable path/to/current/stable`. 
+
+_Example commands:_
+* Windows:
+
+`npm test -- --latest "C:\Program Files (x86)\Microsoft VS Code Insiders\Code - Insiders.exe" --stable "C:\Program Files (x86)\Microsoft VS Code\Code.exe"`
+* OS X:
+
+`npm test -- --latest "/Applications/Visual Studio Code - Insiders.app/Contents/MacOS/Electron" --stable "/Applications/Visual Studio Code.app/Contents/MacOS/Electron"`
+
+## Manual Smoke Test
 #### Prereqs
 
 * For the best debugging experience you'll need node version 6.5 (or higher)
