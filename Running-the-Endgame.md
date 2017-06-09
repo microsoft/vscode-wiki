@@ -78,7 +78,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] yo generator **@aeschli**
   - [ ] vsce **@joaomoreno**
   - [ ] node debug **@weinand**
-- [ ] Translation input - **@dbaeumer**
 - [ ] All issues [verified](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
 - [ ] Fixing (only critical bugs - no string changes)
 - [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test)
@@ -106,7 +105,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
 
 ##### Thursday/Friday
-- [ ] Merge translations **@zurich**
+- [ ] Check translations (build locally and see the amount of untranslated strings) **@zurich**
 - [ ] Build stable for all platforms **@owner**
 - [ ] **new** Make sure that the [vsda module](https://github.com/Microsoft/vscode-distro/tree/master/quality/stable/node_modules/vsda) version in stable is the same as in insiders (which matches the latest electron)
 - [ ] Make rpm signing request **@Tyriar**
