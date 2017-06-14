@@ -18,9 +18,14 @@ _Example commands:_
 * Windows:
 
 `npm test -- --latest "C:\Program Files (x86)\Microsoft VS Code Insiders\Code - Insiders.exe" --stable "C:\Program Files (x86)\Microsoft VS Code\Code.exe"`
+
 * OS X:
 
 `npm test -- --latest "/Applications/Visual Studio Code - Insiders.app/Contents/MacOS/Electron" --stable "/Applications/Visual Studio Code.app/Contents/MacOS/Electron"`
+
+* Linux:
+
+`npm test -- --latest /usr/share/code-insiders/bin/code-insiders --stable /usr/share/code/bin/code`
 
 **Running time:** Depending on the amount of test failures, around 10-15 minutes when all tests are successful.
 
