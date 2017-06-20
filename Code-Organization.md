@@ -43,6 +43,14 @@ class Client {
 
 Use the instantiation service to create instances for service consumers, like so `instantiationService.createInstance(Client)`. Usually, this is done for you when being registered as a contribution, like a Viewlet or Language.
 
+# Code Editor source organization
+
+* the `vs/editor` folder should not have any `node` or `electron-browser` dependencies.
+* `vs/editor/common` and `vs/editor/browser` - the code editor core (critical code without which an editor does not make sense).
+* `vs/editor/contrib` - code editor contributions that ship in both VS Code and the standalone editor. They depend on `browser` by convention and an editor can be crafted without them which results in the feature brought in being removed.
+* `vs/editor/standalone` - code that ships only with the standalone editor. Nothing else should depend on `vs/editor/standalone`
+* `vs/workbench/parts/codeEditor` - code editor contributions that ship in VS Code.
+
 # Workbench Parts
 
 The VS Code workbench (`vs/workbench`) is composed of many things to provide a rich development experience. Examples include full text search, integrated git and debug. At its core, the workbench does not have direct dependencies to all these parts. Instead, we use an internal (as opposed to real extension API) mechanism to contribute these parts to the workbench. 
