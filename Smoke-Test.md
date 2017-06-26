@@ -94,6 +94,11 @@ This task is about verifying how a first launch behaves for new users that never
   * Verify you can dismiss files from search results
   * Verify you can replace search results with a replace term
 
+#### Multi Root
+* Add more than one folder to the workspace
+  * Verify you can use the explorer to open files from all folders
+  * Verify you can search across all folders
+
 #### CSS
 * Open file style.css
   * verify quick outline (CTRL-SHIFT-O, ⌘-SHIFT-O)
