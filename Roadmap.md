@@ -12,7 +12,7 @@ Over the past year, we have worked hard to eliminate core adoption blockers - th
 Customers often tell us that the lack of multiple root folder workspaces means that they can't use VS Code as their day-to-day editor. We will continue to address missing features, we will continue to make it easy for first time users to instantly be productive with VS Code, and we'll continue to add new experiences to make VS Code even more pleasant to use.  
 
 ### Workbench
-* Support multiple root folder workspaces
+* 🏃 Support multiple root folder workspaces
 * Support opening multiple instances of VS Code on the same workspace
 * Support more flexible layouts, e.g., vertical panels
 * Improve UI notification system
@@ -24,20 +24,19 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 * [x] Drag and drop
 * [x] Copy and paste as formatted HTML
 * [x] Minimap
-* Mouse map settings - support to customize commands bound to the mouse
-* :runner: [Spell Checker](https://github.com/Microsoft/vscode/issues/20266)
+* [x] Mouse map settings - support to customize commands bound to the mouse
 
 ### Terminal
 * [x] Link detection
 * Support splitting, viewing multiple terminals
-* Improve selection in the terminal
+* [x] Improve selection in the terminal
 
 
 ### Tasks
 * [x] Task output in Terminal
 * [x] Bind tasks to keyboard shortcuts
 * [x] Simplify running and managing multiple tasks
-* Simplify the creation of task definitions (e.g. templates similar to launch.json templates)
+* [x] Simplify the creation of task definitions (e.g. templates similar to launch.json templates)
 
 ### Performance
 * :runner: Monitor and improve startup time (on-going)
@@ -48,26 +47,26 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 * Enable Explorer decorations for SCM status (e.g. colorize modified files) 
 * Support to view incoming changes
 * [x] Support partners building new SCM providers (e.g. Visual Studio Team Services)
-* :muscle: Support for merging changes
+* [] 🏃 Support for merging changes
 
 
 ### Accessibility
-* Improve usability of VS Code using NVDA on Windows
+* 🏃 Improve usability of VS Code using NVDA on Windows
 * Ensure all commands are accessible from the Command Palette
 * Ensure keyboard accessibility in all dialogs
-* :muscle: Narrator support
+* :muscle: Narrator support (monaco-editor)
 
 ### Setup
 * [x] Linux auto update
-* Investigate Windows 64bit support
+* [x] Investigate Windows 64bit support
 
 ## TypeScript, JavaScript, and Node Development
 We want VS Code to be a great tool for developing modern MEAN/MERN applications with JavaScript and TypeScript. We will continue to collaborate deeply with the TypeScript team to deliver the richest code editing, navigation, and understanding experiences for both TypeScript and JavaScript. We will continue to make it easy to configure debugging of your Node based applications while adding support for both client and server side debugging, asynchronous call stacks, and even live editing of your applications during a debug session. 
   
 ### JavaScript and TypeScript 
-* Code actions and refactorings (partner with TypeScript) 
-* `tsconfig.json` and `jsconfig.json` IntelliSense (completions) and validation
-* IntelliSense (completions) support for HTML embedded in JavaScript and TypeScript (Angular, React), partner with TypeScript
+* 🏃 Code actions and refactorings (partner with TypeScript) 
+* [x] `tsconfig.json` and `jsconfig.json` IntelliSense (completions) and validation
+* 🏃 IntelliSense (completions) support for HTML embedded in JavaScript and TypeScript (Angular, React), partner with TypeScript
 * [x] Assist user entering JSDoc comments
 * [x] Improve JavaScript Linting/type checking
 * TypeScript compile on save
@@ -78,44 +77,44 @@ We want VS Code to be a great tool for developing modern MEAN/MERN applications 
 * Color picker for CSS/LESS/SASS/HTML
 * Auto close end tag in HTML
 * Investigate SASS/LESS/CSS multi-file support (understand imports)
-* Investigate live preview of HTML
+* [x] Investigate live preview of HTML
 
 ### Node
-* Provide Node/MEAN Extension packs
+* [x] Provide Node/MEAN Extension packs
 * Update recommended Node extension triggers (e.g. on package.json, recommend Node extension pack)
 * Include the [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) extension functionality
 * Investigate an HTML Request/REST client experience within the tool or as an extension 
 * Node Debugging
   * [x] Async stacks
   * [x] Column break points
-  * Live edit
+  * 🏃 Live edit
   * :muscle: into profiling support 
 * :muscle: Investigate a Mocha test runner
-* :muscle: Investigate MongoDB extension
+* [x] Investigate MongoDB extension
  
 ## Extension creation, discovery, and management
 Of course, VS Code is not just a Node, JavaScript, and TypeScript tool. Our rich extensibility model and extension ecosystem means that you can install support for just about every modern language and framework, from C++ to C# to Go, Python, and more. Looking ahead, we want to make acquiring extensions for these languages (and more!) as easy as possible. We want to enable extension authors to be able to be more productive and deliver richer experiences to developers. And at the same time, we want to give users more control over how those extensions contribute to their environment. 
 
 ### For extension authors
 * Investigate support for extensions that need to install additional tools on first run (e.g. .NET Core debugger, Go tools)
-* Continue to improve and expand extension samples
+* 🏃 Continue to improve and expand extension samples
 * Investigate native module support
 * Add recently installed or recently updated extensions to the Welcome page, with links to open the extension's README
 * Support extensions contributing an interactive playground
 * Formalize HTML Preview API
-* :muscle: Support explorer like contributions (refining the Custom explorer API exploration)
+* [x] Support explorer like contributions (refining the Custom explorer API exploration)
 
 ### For language extension authors
 * Enable language services to contribute semantic coloring
-* Evolve the Language Server Protocol
+* 🏃 Evolve the Language Server Protocol
 
 ### Provide users with more control over extension contributions
 * [x] Identify and resolve keybindings conflicts
 * Identify and resolve setting conflicts
 
 ### Contribute to Extensions
-* [GO](https://github.com/microsoft/vscode-go)
-* [Docker](https://github.com/microsoft/vscode-docker)
+* 🏃 [GO](https://github.com/microsoft/vscode-go)
+* 🏃 [Docker](https://github.com/microsoft/vscode-docker)
 
 ## Summary
 These are examples of just some of the work we will be focusing on in the next 6 to 12 months. We continuously tune the plan based on feedback and we will provide more detail in each of our monthly iteration plans. Please follow along and let us know what you think!
