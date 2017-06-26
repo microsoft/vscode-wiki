@@ -47,7 +47,7 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 * Enable Explorer decorations for SCM status (e.g. colorize modified files) 
 * Support to view incoming changes
 * [x] Support partners building new SCM providers (e.g. Visual Studio Team Services)
-* [] 🏃 Support for merging changes
+* 🏃 Support for merging changes
 
 
 ### Accessibility
