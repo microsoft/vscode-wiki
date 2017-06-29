@@ -82,7 +82,7 @@ We want VS Code to be a great tool for developing modern MEAN/MERN applications 
 ### Node
 * [x] Provide Node/MEAN Extension packs
 * Update recommended Node extension triggers (e.g. on package.json, recommend Node extension pack)
-* Include the [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) extension functionality
+* [x] Include the [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) extension functionality
 * Investigate an HTML Request/REST client experience within the tool or as an extension 
 * Node Debugging
   * [x] Async stacks
