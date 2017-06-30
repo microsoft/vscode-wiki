@@ -29,6 +29,8 @@ _Example commands:_
 
 **Running time:** Depending on the amount of test failures, around 10-15 minutes when all tests are successful.
 
+**Troubleshooting:** Described in [smoke test readme](https://github.com/Microsoft/vscode/blob/master/test/smoke/README.md)
+
 ## Manual Smoke Test
 #### Prereqs
 
