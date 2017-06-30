@@ -35,6 +35,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
    - [ ] css **@aeschli** 
    - [ ] configuration-editing **@jrieken** 
    - [ ] node-debug **@weinand**
+   - [ ] node-debug2 **@roblourens**
+   - [ ] emmet **@ramya-ray-a**
 - [ ] Update `OSSREADME.json` for built-in extensions based on differences to generated `npm-shrinkwrap.json` files if needed
    - [ ] typescript **@mjbvz** 
    - [ ] javascript **@mjbvz**
@@ -44,6 +46,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
    - [ ] css **@aeschli** 
    - [ ] configuration-editing **@jrieken** 
    - [ ] node-debug **@weinand**
+   - [ ] node-debug2 **@roblourens**
+   - [ ] emmet **@ramya-ray-a**
 - [ ] Code freeze at 5pm PT
 - [ ] Ensure we have a green build on all platforms
 - [ ] All test items contain sufficiently comprehensive test descriptions by 6pm PT
