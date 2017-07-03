@@ -139,6 +139,19 @@ The **render** process runs the UI code inside the Shell window. To debug code r
 
 The **extension host** process runs code implemented by a plugin. To debug extensions (including those packaged with Code) which run in the extension host process, you can use VS Code itself. Switch to the Debug viewlet, choose the `Attach to Extension Host` configuration, and press <kbd>F5</kbd>.
 
+#### Debugging VSCode against marketplace extensions
+
+You might need to debug VSCode components that deal with extensions directly. In a case like this you could configure the `extensionsGallery` key in the main
+`product.json` under the root directory to allow you to install extensions off the marketplace.
+
+```
+	"extensionsGallery": {
+		"serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+		"cacheUrl": "https://vscode.blob.core.windows.net/gallery/index",
+		"itemUrl": "https://marketplace.visualstudio.com/items"
+	}
+```
+
 ### Unit Testing
 Run the tests directly from a terminal by running `./scripts/test.sh` from the `vscode` folder (`scripts\test` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/master/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
 
