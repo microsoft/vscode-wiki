@@ -1,6 +1,11 @@
+### July 2017
+
+* [Iteration Plan](https://github.com/Microsoft/vscode/issues/30209)
+
 ### June 2017
 
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/28387)
+* [Endgame](https://github.com/Microsoft/vscode/issues/29518)
 
 ### May 2017
 
