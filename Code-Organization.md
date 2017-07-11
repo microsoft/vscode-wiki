@@ -60,3 +60,4 @@ Parts that are contributed to the workbench all live inside the `vs/workbench/pa
 - every part should expose its internal API from a single file (e.g. `vs/workbench/parts/search/common/search.ts`)
 - a part is allowed to depend on the internal API of another part (e.g. the git part may depend on  `vs/workbench/parts/search/common/search.ts`)
 - a part should never reach into the internals of another part (internal is anything inside a part that is not in the single common API file)
+- think twice before letting a part depend on another part: is that really needed and does it make sense? Can the dependency be avoided by using the workbench extensibility story maybe?
