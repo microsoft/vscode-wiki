@@ -111,6 +111,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ##### Thursday/Friday
 - [ ] Check translations (build locally and see the amount of untranslated strings) **@zurich**
 - [ ] Build stable for all platforms **@owner**
+- [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **@owner**
 - [ ] **new** Make sure that the [vsda module](https://github.com/Microsoft/vscode-distro/tree/master/quality/stable/node_modules/vsda) version in stable is the same as in insiders (which matches the latest electron)
 - [ ] Make rpm signing request **@Tyriar**
 - [ ] Sanity check of installable bits
@@ -127,7 +128,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Publish website **@gregvanl**
 - [ ] Publish to stable **@owner**
 - [ ] Publish deb and rpms to repositories manually **@Tyriar**
-- [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`  **@owner**
 - [ ] Enable scheduled `insider` builds **@owner**
 - [ ] Twitter announcement **@seanmcbreen**
 
