@@ -13,7 +13,6 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 
 ### Workbench
 * 🏃 Support multiple root folder workspaces
-* Support opening multiple instances of VS Code on the same workspace
 * Support more flexible layouts, e.g., vertical panels
 * Improve UI notification system
 * [x] Improve key binding customization experience (hide keycodes, inconsistent command names from user)
@@ -24,6 +23,7 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 * [x] Drag and drop
 * [x] Copy and paste as formatted HTML
 * [x] Minimap
+* [x] Improve support for large files
 * [x] Mouse map settings - support to customize commands bound to the mouse
 
 ### Terminal
@@ -36,7 +36,7 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 * [x] Task output in Terminal
 * [x] Bind tasks to keyboard shortcuts
 * [x] Simplify running and managing multiple tasks
-* [x] Simplify the creation of task definitions (e.g. templates similar to launch.json templates)
+* [x] Provide an API for TaskProviders so that extensions can contribute task detection for particular task runners
 
 ### Performance
 * :runner: Monitor and improve startup time (on-going)
@@ -44,21 +44,22 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 ### Source Code Control
 * [x] SCM provider API
 * [x] Git support as an extension (ships with VS Code)
+* [x] Support partners building new SCM providers (e.g. Visual Studio Team Services)
+* [x] Support for merging changes
 * Enable Explorer decorations for SCM status (e.g. colorize modified files) 
 * Support to view incoming changes
-* [x] Support partners building new SCM providers (e.g. Visual Studio Team Services)
-* 🏃 Support for merging changes
+
 
 
 ### Accessibility
 * 🏃 Improve usability of VS Code using NVDA on Windows
 * Ensure all commands are accessible from the Command Palette
 * Ensure keyboard accessibility in all dialogs
-* :muscle: Narrator support (monaco-editor)
+* [x] Narrator support (monaco-editor)
 
 ### Setup
 * [x] Linux auto update
-* [x] Investigate Windows 64bit support
+* [x] Windows 64bit support
 
 ## TypeScript, JavaScript, and Node Development
 We want VS Code to be a great tool for developing modern MEAN/MERN applications with JavaScript and TypeScript. We will continue to collaborate deeply with the TypeScript team to deliver the richest code editing, navigation, and understanding experiences for both TypeScript and JavaScript. We will continue to make it easy to configure debugging of your Node based applications while adding support for both client and server side debugging, asynchronous call stacks, and even live editing of your applications during a debug session. 
@@ -71,10 +72,10 @@ We want VS Code to be a great tool for developing modern MEAN/MERN applications 
 * [x] Improve JavaScript Linting/type checking
 * TypeScript compile on save
 * Enable semantic colorization (see Extensibility)
-* Investigate improving support for popular JS technologies (webpack, Babel)
+* :runner: Investigate improving support for popular JS technologies (webpack, Babel)
 
 ### HTML, SASS, CSS, LESS
-* Color picker for CSS/LESS/SASS/HTML
+* :runner: Color picker for CSS/LESS/SASS/HTML
 * Auto close end tag in HTML
 * Investigate SASS/LESS/CSS multi-file support (understand imports)
 * [x] Investigate live preview of HTML
@@ -83,11 +84,9 @@ We want VS Code to be a great tool for developing modern MEAN/MERN applications 
 * [x] Provide Node/MEAN Extension packs
 * Update recommended Node extension triggers (e.g. on package.json, recommend Node extension pack)
 * [x] Include the [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) extension functionality
-* Investigate an HTML Request/REST client experience within the tool or as an extension 
 * Node Debugging
   * [x] Async stacks
   * [x] Column break points
-  * 🏃 Live edit
   * :muscle: into profiling support 
 * :muscle: Investigate a Mocha test runner
 * [x] Investigate MongoDB extension
@@ -98,7 +97,6 @@ Of course, VS Code is not just a Node, JavaScript, and TypeScript tool. Our rich
 ### For extension authors
 * Investigate support for extensions that need to install additional tools on first run (e.g. .NET Core debugger, Go tools)
 * 🏃 Continue to improve and expand extension samples
-* Investigate native module support
 * Add recently installed or recently updated extensions to the Welcome page, with links to open the extension's README
 * Support extensions contributing an interactive playground
 * Formalize HTML Preview API
