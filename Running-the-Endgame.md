@@ -116,8 +116,10 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Make rpm signing request **@Tyriar**
 - [ ] Sanity check of installable bits
   - [ ] Windows
-    - [ ] signed installer **@owner**
-    - [ ] zip **@owner**
+    - [ ] signed installer 32-bit **@owner**
+    - [ ] signed installer 64-bit **@owner**
+    - [ ] zip 32-bit **@owner**
+    - [ ] zip 64-bit **@owner**
   - [ ] OS X - **@owner**
   - [ ] Linux
     - [ ] deb package 32-bit **@owner**
@@ -161,8 +163,10 @@ We release a recovery build with a handful of critical fixes and translation upd
   - [ ] Linux - **@owner**
 - [ ] Sanity check installable stable bits that have not been smoke tested
   - [ ] Windows
-    - [ ] signed installer **@owner**
-    - [ ] zip **@owner**
+    - [ ] signed installer 32-bit **@owner**
+    - [ ] signed installer 64-bit **@owner**
+    - [ ] zip 32-bit **@owner**
+    - [ ] zip 64-bit **@owner**
   - [ ] OS X - **@owner**
   - [ ] Linux
     - [ ] deb package 32-bit **@owner**
