@@ -35,6 +35,9 @@ For native compilation, you will need [Python](https://www.python.org/downloads/
 * [native-keymap](https://www.npmjs.com/package/native-keymap) needs `libx11-dev` and `libxkbfile-dev`.
   * On Debian-based Linux: `sudo apt-get install libx11-dev libxkbfile-dev`
   * On Red Hat-based Linux: `sudo yum install libX11-devel.x86_64 libxkbfile-devel.x86_64 # or .i686`.
+* [keytar](https://www.npmjs.com/package/keytar) needs `libsecret-1-dev`.
+  * On Debian-based Linux: `sudo apt-get install libsecret-1-dev`.
+  * On Red Hat-based Linux: `sudo yum install libsecret-devel`.
 * Building deb and rpm packages requires `fakeroot` and `rpm`, run: `sudo apt-get install fakeroot rpm`
 
 After you have these tools installed, run the following commands to check out Code and install dependencies:
