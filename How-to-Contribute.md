@@ -64,7 +64,7 @@ scripts\npm.bat install
 git clone https://github.com/microsoft/vscode
 cd vscode
 ./scripts/npm.sh install --arch=x64
-# for 32bit Linux
+# for 32bit Linux or Windows
 #./scripts/npm.sh install --arch=ia32
 ```
 
