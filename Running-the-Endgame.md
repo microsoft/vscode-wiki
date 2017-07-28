@@ -109,7 +109,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
 
 ##### Thursday/Friday
-- [ ] Check translations (build locally and see the amount of untranslated strings) **@zurich**
+- [ ] Check translations (check `i18n` folder git history for latest translations, then build locally and see the amount of untranslated strings) **@zurich**
 - [ ] Build stable for all platforms **@owner**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **@owner**
 - [ ] **new** Make sure that the [vsda module](https://github.com/Microsoft/vscode-distro/tree/master/quality/stable/node_modules/vsda) version in stable is the same as in insiders (which matches the latest electron)
