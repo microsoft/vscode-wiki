@@ -9,7 +9,7 @@ This page describes the VS Code Smoke test, an automatic and a manual test cases
 
 ### Running
 1. Download current released stable and to-be-released latest VS Code.
-1. Go to `/test/smoke` folder in `vscode` repository.
+1. Go to `test/smoke` folder in `vscode` repository.
 1. Perform `npm install` in the folder.
 1. Execute the following command to run the smoke test:
 `npm test -- --latest path/to/latest/binary --stable path/to/current/stable`. 
