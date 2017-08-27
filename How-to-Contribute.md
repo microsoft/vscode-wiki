@@ -9,7 +9,7 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 ### Installing Prerequisites
 
-You'll need [git](https://git-scm.com) and a recent version of [Node.JS](https://nodejs.org/en/) (any `v7.x` is recommended, on Windows you need at least `v7.x`). `nvm` is also highly recommended.
+You'll need [git](https://git-scm.com) and a recent version of [Node.JS](https://nodejs.org/en/) (any `v7.2.1+` is recommended with npm `v3.10.10`+). `nvm` is also highly recommended.
 
 **Note:** on Windows you might want to set `core.autocrlf=false` and `core.safecrlf=true`, to keep the line endings we have in our source files.
 
