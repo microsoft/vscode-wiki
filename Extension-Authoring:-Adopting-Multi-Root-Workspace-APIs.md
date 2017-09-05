@@ -6,6 +6,8 @@ This wiki page explains the impact of the new multi-root-workspace feature on ex
 
 A multi-root workspace is a new way how to work with VS Code. At its core it allows to open multiple folders in the same instance. All pieces of user interface adapt to the number of folders opened, e.g. the file explorer will show all folders in a single tree and the full text search will search across all folders.
 
+![explorer](https://user-images.githubusercontent.com/900690/30064942-9dc2e608-9253-11e7-9f01-5b18f3e90065.png)
+
 There are numerous ways how to create a multi-root workspace. The simplest one is to just open multiple folders from the command line: 
 
 ```
