@@ -48,11 +48,13 @@ The basic APIs to work with multi root workspaces are:
 
 Method|Description
 ---|-------
-`workspace.workspaceFolders`| access to all `WorkspaceFolder` (can be `undefined` when workspace is opened!)
+`workspace.workspaceFolders`| access to all `WorkspaceFolder` (can be `undefined` when no workspace is opened!)
 `workspace.onDidChangeWorkspaceFolders`| be notified when `WorkspaceFolder` are added or removed
 `workspace.getWorkspaceFolder(uri)`|get the closest `WorkspaceFolder` for a given resource
 
 Your extension should be capable of working with any number of `WorkspaceFolder`, including 0, 1 or many folders. The `WorkspaceFoldersChangeEvent` carries information about the added or removed `WorkspaceFolder`.
+
+**Note:** today we require at least one `WorkspaceFolder` within the workspace, so as a user you cannot open a workspace without folders. However, we will likely lift this limitation soon. 
 
 Each `WorkspaceFolder` provides access to some metadata:
 
@@ -62,7 +64,9 @@ Property|Description
 `index`| the 0-based index of the folder as configured by the user
 `name`| the name of the folder (defaults to the folder name)
 
-The [`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample) extension is demonstrating the use of this API by showing the WorkspaceFolder of the currently active file opened in the editor. 
+**Note:** a user is free to configure folders for a workspace that are overlapping. E.g. a workspace can consist of a parent folder as well as any of its children. It is up to the extension to be clever here and avoid duplicate work. For example, a task that scans all files of a folder should not duplicate the work by scanning again for a child folder if any. 
+
+The [`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample) extension is demonstrating the use of this API by showing the WorkspaceFolder of the currently active file opened in the editor.
 
 ## Settings
 
