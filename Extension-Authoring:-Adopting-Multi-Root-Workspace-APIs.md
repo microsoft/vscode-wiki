@@ -40,7 +40,7 @@ This guide will help you as extension author to make your extension ready for mu
 
 If your extension is making use of the (now deprecated) `workspace.rootPath` property to work on the currently opened folder, you should read on. 
 
-In addition, if your extension is providing settings that can apply on a resource level instead of the window, you should also consider to adopt the new APIs. Resource settings are much more powerful because they can apply differently to each folder of a workspace.
+In addition, if your extension is providing settings that can apply on a resource (= file location) level instead of being global, you should also consider to adopt the new APIs. Resource settings are much more powerful because they can apply differently to each folder of a workspace.
 
 ## Basics
 
@@ -67,6 +67,8 @@ Property|Description
 **Note:** a user is free to configure folders for a workspace that are overlapping. E.g. a workspace can consist of a parent folder as well as any of its children. It is up to the extension to be clever here and avoid duplicate work. For example, a task that scans all files of a folder should not duplicate the work by scanning again for a child folder if any. 
 
 The [`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample) extension is demonstrating the use of this API by showing the WorkspaceFolder of the currently active file opened in the editor.
+
+![Show the folder of the active file](https://raw.githubusercontent.com/Microsoft/vscode-extension-samples/master/basic-multi-root-sample/preview.gif)
 
 ## Settings
 
