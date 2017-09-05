@@ -4,7 +4,7 @@
 
 This wiki page explains the impact of the new multi-root-workspace feature on extensions. You will learn the concepts, new APIs and understand if and how to make your extension ready for multi-root-workspace support.
 
-A multi-root workspace is a new way how to work with VS Code. At its core it allows to open multiple folders in the same instance. All pieces of user interface adapt to the number of folders opened, e.g. the file explorer will show all folders in a single tree and the full text search will search across all folders.
+A multi-root workspace is a new way how to work with VS Code. At its core it allows to open multiple folders in the same instance from any location that is accessible on disk. All parts of the VS Code user interface adapt to the number of folders opened, e.g. the file explorer will show all folders in a single tree and the full text search will search across all folders. It is in the best interest for the users that extensions also adapt to supporting multiple folders.
 
 ![explorer](https://user-images.githubusercontent.com/900690/30064942-9dc2e608-9253-11e7-9f01-5b18f3e90065.png)
 
@@ -14,7 +14,7 @@ There are numerous ways how to create a multi-root workspace. The simplest one i
 code-insiders <folder1> <folder2>...
 ```
 
-All workspace metadata is stored in a simple JSON file that can be saved and shared with others:
+All workspace metadata is stored in a simple JSON file that can be saved and shared (`File | Save Workspace As...`) with others:
 
 ```json
 {
@@ -32,7 +32,7 @@ All workspace metadata is stored in a simple JSON file that can be saved and sha
 }
 ```
 
-In its most simple form a VS Code workspace is just a collection of folders (called `WorkspaceFolder` in the API) and associated settings that should apply whenever the workspace is opened.
+In its most simple form a VS Code workspace is just a collection of folders (called `WorkspaceFolder` in the API) and associated settings that should apply whenever the workspace is opened. Each `WorkspaceFolder` can have additional metadata associated (for example a `name`).
 
 This guide will help you as extension author to make your extension ready for multi-root workspaces. It touches on three major pieces (basics, settings, language client/server) and is joined by samples from our [samples repository](https://github.com/Microsoft/vscode-extension-samples). 
 
@@ -43,6 +43,19 @@ If your extension is making use of the (now deprecated) `workspace.rootPath` pro
 In addition, if your extension is providing settings that can apply on a resource level instead of the window, you should also consider to adopt the new APIs. Resource settings are much more powerful because they can apply differently to each folder of a workspace.
 
 ## Basics
+
+The basic APIs to work with multi root workspaces are:
+Key|Command|Command id
+---|-------|----------
+`kb(workbench.files.action.compareWithSaved)`|Compare a dirty file with the version on disk|`workbench.files.action.compareWithSaved`
+`kb(workbench.action.terminal.deleteWordLeft)`|Delete word left in terminal|`workbench.action.terminal.deleteWordLeft`
+`kb(workbench.action.terminal.deleteWordRight)`|Delete word right in terminal|`workbench.action.terminal.deleteWordRight`
+
+
+
+The API to access workspace folders is `workspace.workspaceFolders` and to react to changes use `workspace.onDidChangeWorkspaceFolders`. Given any resource you can use workspace.getWorkspaceFolder(uri) to find its associated `WorkspaceFolder`. 
+
+The [`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample) extension is demonstrating the use of this API by showing the WorkspaceFolder of the currently active file opened in the editor. 
 
 ## Settings
 
