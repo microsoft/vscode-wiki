@@ -45,15 +45,22 @@ In addition, if your extension is providing settings that can apply on a resourc
 ## Basics
 
 The basic APIs to work with multi root workspaces are:
-Key|Command|Command id
----|-------|----------
-`kb(workbench.files.action.compareWithSaved)`|Compare a dirty file with the version on disk|`workbench.files.action.compareWithSaved`
-`kb(workbench.action.terminal.deleteWordLeft)`|Delete word left in terminal|`workbench.action.terminal.deleteWordLeft`
-`kb(workbench.action.terminal.deleteWordRight)`|Delete word right in terminal|`workbench.action.terminal.deleteWordRight`
 
+Method|Description
+---|-------
+`workspace.workspaceFolders`| access to all `WorkspaceFolder` (can be `undefined` when workspace is opened!)
+`workspace.onDidChangeWorkspaceFolders`| be notified when `WorkspaceFolder` are added or removed
+`workspace.getWorkspaceFolder(uri)`|get the closest `WorkspaceFolder` for a given resource
 
+Your extension should be capable of working with any number of `WorkspaceFolder`, including 0, 1 or many folders. The `WorkspaceFoldersChangeEvent` carries information about the added or removed `WorkspaceFolder`.
 
-The API to access workspace folders is `workspace.workspaceFolders` and to react to changes use `workspace.onDidChangeWorkspaceFolders`. Given any resource you can use workspace.getWorkspaceFolder(uri) to find its associated `WorkspaceFolder`. 
+Each `WorkspaceFolder` provides access to some metadata:
+
+Property|Description
+---|-------
+`uri`| the resource of the folder (use `uri.fsPath` for the file path)
+`index`| the 0-based index of the folder as configured by the user
+`name`| the name of the folder (defaults to the folder name)
 
 The [`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample) extension is demonstrating the use of this API by showing the WorkspaceFolder of the currently active file opened in the editor. 
 
