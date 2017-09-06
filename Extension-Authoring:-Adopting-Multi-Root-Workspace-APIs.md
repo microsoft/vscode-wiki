@@ -50,7 +50,7 @@ Method|Description
 ---|-------
 `workspace.workspaceFolders`| access to all `WorkspaceFolder` (can be `undefined` when no workspace is opened!)
 `workspace.onDidChangeWorkspaceFolders`| be notified when `WorkspaceFolder` are added or removed
-`workspace.getWorkspaceFolder(uri)`|get the closest `WorkspaceFolder` for a given resource
+`workspace.getWorkspaceFolder(uri)`|get the `WorkspaceFolder` for a given resource (can be `undefined` when resource is not part of any workspace folder!)
 
 Your extension should be capable of working with any number of `WorkspaceFolder`, including 0, 1 or many folders. The `WorkspaceFoldersChangeEvent` carries information about the added or removed `WorkspaceFolder`.
 
