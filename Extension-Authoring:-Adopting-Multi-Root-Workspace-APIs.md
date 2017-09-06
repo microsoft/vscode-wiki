@@ -40,7 +40,7 @@ This guide will help you as extension author to make your extension ready for mu
 
 If your extension is making use of the (now deprecated) `workspace.rootPath` property to work on the currently opened folder, you should read on. 
 
-In addition, if your extension is providing settings that can apply on a resource (= file location) level instead of being global, you should also consider to adopt the new APIs. Resource settings are much more powerful because they can apply differently to each folder of a workspace.
+In addition, if your extension is providing settings that can apply on a resource (= file location) level instead of being global, you should also consider to adopt the new APIs. Resource settings are much more powerful because a user can choose to configure settings differently per workspace folder.
 
 ## Basics
 
