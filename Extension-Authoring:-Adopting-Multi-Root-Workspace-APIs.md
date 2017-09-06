@@ -66,7 +66,7 @@ Property|Description
 
 **Note:** a user is free to configure folders for a workspace that are overlapping. E.g. a workspace can consist of a parent folder as well as any of its children. It is up to the extension to be clever here and avoid duplicate work. For example, a task that scans all files of a folder should not duplicate the work by scanning again for a child folder if any. 
 
-The [`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample) extension is demonstrating the use of this API by showing the WorkspaceFolder of the currently active file opened in the editor.
+The [`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample) extension is demonstrating the use of this API by showing the workspace folder of the currently active file opened in the editor.
 
 ![Show the folder of the active file](https://raw.githubusercontent.com/Microsoft/vscode-extension-samples/master/basic-multi-root-sample/preview.gif)
 
