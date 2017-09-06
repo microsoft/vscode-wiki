@@ -72,4 +72,48 @@ The [`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-sa
 
 ## Settings
 
+With the introduction of multi-root workspaces, we also revisited how settings can apply. We differentiate between where a setting is persisted and how a setting applies.
+
+Settings can be stored in various locations:
+
+Location|Description
+---|-------
+User Data|Global `settings.json` file in the user data directory that applies to any VS Code instance
+Workspace File (*new*)|Settings stored within the `.code-workspace` file of a multi-root workspace which apply whenever the workspace is opened
+Workspace Folder|Settings stored inside a `.vscode` folder of a workspace folder which apply depending on opening the folder or a workspace with that folder (see below).
+
+Let's have a closer look at **Workspace Folder** settings that are stored within the `.vscode` folder: If you are opening just that folder in VS Code, all the settings of this folder apply to VS Code as before. However, once you make this folder part of a multi-root workspace, the situation is different. We no longer support all settings in this setup simply because you could have multiple folders configured in the workspace, each having settings that could potentially conflict.
+
+To solve this, we distinguish between scopes a setting can have. You as extension author have to make the decision which scope applies for your settings: 
+
+Scope|Description
+---|-------
+`window`|the setting is applied to the entire VS Code instance
+`resource`|the setting is applied depending on an active resource
+
+By default, all settings have the `window` scope, however we encourage you to support settings on the `resource` scope. Settings that apply on the window level are not supported once they are defined within a workspace folder and as soon as the user entered a multi-root workspace. Settings that apply on a resource level however are supported and as such, each workspace folder can have different values for these settings.
+
+In order to declare a setting scope, simply define the scope as part of your setting from the `package.json` file (copied from the `basic-multi-root`(https://github.com/Microsoft/vscode-extension-samples/blob/master/basic-multi-root-sample/package.json#L23) sample):
+
+```
+"contributes": {
+    "configuration": {
+        "type": "object",
+        "title": "Basic Multi Root Sample",
+        "properties": {
+            "multiRootSample.statusColor": {
+                "type": [
+                    "string"
+                ],
+                "default": "#FFFFFF",
+                "description": "Color to use for the status bar item. Can be set per workspace folder.",
+                "scope": "resource"
+            }
+        }
+    }
+}
+```
+
+To use this setting accordingly, use the `workspace.getConfiguration()` API and pass the URI of the resource as second parameter. You can see [here](https://github.com/Microsoft/vscode-extension-samples/blob/master/basic-multi-root-sample/src/extension.ts#L68) how the setting is used in the basic-multi-root sample.
+
 ## Language Server
