@@ -93,7 +93,7 @@ Scope|Description
 
 By default, all settings have the `window` scope, however we encourage you to support settings on the `resource` scope. Settings that apply on the window level are not supported once they are defined within a workspace folder and as soon as the user entered a multi-root workspace. Settings that apply on a resource level however are supported and as such, each workspace folder can have different values for these settings.
 
-In order to declare a setting scope, simply define the scope as part of your setting from the `package.json` file (copied from the `basic-multi-root`(https://github.com/Microsoft/vscode-extension-samples/blob/master/basic-multi-root-sample/package.json#L23) sample):
+In order to declare a setting scope, simply define the scope as part of your setting from the `package.json` file. The example below is copied from the [`basic-multi-root`](https://github.com/Microsoft/vscode-extension-samples/blob/master/basic-multi-root-sample/package.json#L23) sample:
 
 ```
 "contributes": {
