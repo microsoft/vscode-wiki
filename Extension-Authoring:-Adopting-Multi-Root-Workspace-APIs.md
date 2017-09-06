@@ -116,4 +116,8 @@ In order to declare a setting scope, simply define the scope as part of your set
 
 To use this setting accordingly, use the `workspace.getConfiguration()` API and pass the URI of the resource as second parameter. You can see [here](https://github.com/Microsoft/vscode-extension-samples/blob/master/basic-multi-root-sample/src/extension.ts#L68) how the setting is used in the basic-multi-root sample.
 
+Under the hood, resource settings are resolved with a simple logic: We try to find a `WorkspaceFolder` for the resource that is passed into the `getConfiguration` API. If such a folder exists and that folder defines the setting, it will be returned. Otherwise the normal logic applies for finding the setting on a parent level: it could be defined within the workspace file or on the user level.
+
+**Note:** You do not have to be aware if the user has opened a workspace or not when using the `getConfiguration` API with resource scope. Just make sure to always pass the resource scope URI around and we will do the resolution of the setting based on the user's setup.
+
 ## Language Server
