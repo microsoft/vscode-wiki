@@ -122,7 +122,7 @@ Under the hood, resource settings are resolved with a simple logic: We try to fi
 
 ## Language Client / Language Server
 
-Since language servers usually act on a workspace they are also affected by the introduction of multi-root folders. As for normal extension the author of a language server needs to check for the following things and adopt the code accordingly:
+Since language servers usually act on a workspace they are also affected by the introduction of multi-root workspaces. A language server extension needs to check for the following items and adopt its code accordingly:
 
 - if the server accesses the `rootPath` or `rootURI` property of the `InitializeParams` passed in the [`initialize` request](https://github.com/Microsoft/language-server-protocol/blob/master/protocol.md#initialize) then the language server must instead use the proposed property `workspaceFolders`. Since workspace folders can come and go dynamically the server also need to register for `workspace/didChangeWorkspaceFolders` notifications. The corresponding protocol is still in proposed state. The documentation can be found [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.workspaceFolders.proposed.md).
 
