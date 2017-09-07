@@ -121,4 +121,11 @@ Under the hood, resource settings are resolved with a simple logic: We try to fi
 **Note:** You do not have to be aware if the user has opened a workspace or not when using the `getConfiguration` API with resource scope. Just make sure to always pass the resource scope URI around and we will do the resolution of the setting based on the user's setup.
 
 ## Language Client / Language Server
-To be done...
+
+Since language servers usually act on a workspace they are also affected by the introduction of multi-root folders. As for normal extension the author of a language server needs to check for the following things and adopt the code accordingly:
+
+- if the server accesses the `rootPath` or `rootURI` property of the `InitializeParams` passed in the [`initialize` request](https://github.com/Microsoft/language-server-protocol/blob/master/protocol.md#initialize) then the language server must instead use the proposed property `workspaceFolders`. Since workspace folders can come and go dynamically the server also need to register for `workspace/didChangeWorkspaceFolders` notifiactions. The corresponding protocol is still in proposed satet. Therefore the documentation can be found [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.workspaceFolders.proposed.md).
+
+- if the server is using configuration settings the author also has to make the decision which scope applies for the settings (e.g. whether a setting has a 'window' or 'resource' scope).
+
+- In the current version of the language server protocol the client pushes settings to the server. With the introduction of a resource scope this is not possible anymore since the actual settings values can depend on a resource. We introduce proposed protocol which allow servers to fetch settings from a client comparable to the `getConfiguration` API in the extension host. The protocol addition is documented [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.configuration.proposed.md).
