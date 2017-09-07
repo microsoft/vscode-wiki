@@ -120,4 +120,5 @@ Under the hood, resource settings are resolved with a simple logic: We try to fi
 
 **Note:** You do not have to be aware if the user has opened a workspace or not when using the `getConfiguration` API with resource scope. Just make sure to always pass the resource scope URI around and we will do the resolution of the setting based on the user's setup.
 
-## Language Server
+## Language Client / Language Server
+To be done...
