@@ -9,25 +9,21 @@ This page describes the VS Code Smoke test, an automatic and a manual test cases
 
 ### Running
 1. Download current released stable and to-be-released latest VS Code.
-1. Go to `test/smoke` folder in `vscode` repository.
-1. Perform `npm install` in the folder.
 1. Execute the following command to run the smoke test:
-`npm test -- --latest path/to/latest/binary --stable path/to/current/stable`. 
+`npm run smoketest -- --build path/to/latest/binary`. 
 
 _Example commands:_
 * Windows:
 
-`npm test -- --latest "C:\Program Files (x86)\Microsoft VS Code Insiders\Code - Insiders.exe" --stable "C:\Program Files (x86)\Microsoft VS Code\Code.exe"`
+`npm run smoketest -- --build "C:\Program Files\Microsoft VS Code Insiders\Code - Insiders.exe"`
 
 * OS X:
 
-`npm test -- --latest "/Applications/Visual Studio Code - Insiders.app/Contents/MacOS/Electron" --stable "/Applications/Visual Studio Code.app/Contents/MacOS/Electron"`
+`npm run smoketest -- --build "/Applications/Visual Studio Code - Insiders.app/Contents/MacOS/Electron"`
 
 * Linux:
 
-`npm test -- --latest /usr/share/code-insiders/bin/code-insiders --stable /usr/share/code/bin/code`
-
-**Running time:** Depending on the amount of test failures, around 10-15 minutes when all tests are successful.
+`npm run smoketest -- --build /usr/share/code-insiders/bin/code-insiders`
 
 **Troubleshooting:** Described in [smoke test readme](https://github.com/Microsoft/vscode/blob/master/test/smoke/README.md)
 
@@ -160,13 +156,6 @@ This task is about verifying how a first launch behaves for new users that never
 #### Status bar
 * Quickly click on all the actions in the status bar and verify they behave as expected
 * Execute various commands from the status bar (change language mode, indentation…)
-
-#### Tasks
-* Press (CTRL+SHIFT+B,  ⌘-SHIFT-B)
-  * Verify the output panel opens and shows errors
-  * Verify you can switch output to 'git'
-* Ensure that the executed task detects errors in routes/index.js
-  * List all errors with CTRL+SHIFT+M,  ⌘-SHIFT-M
 
 #### Extensions
 * Install an extension that you can easily verify works (e.g. new theme)
