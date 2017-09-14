@@ -30,4 +30,7 @@ To build for a target architecture different than the host (e.g. using x64 to bu
 
 3. create a .deb file for easy installation on the target device:
 
-  `gulp vscode-linux-arm-build-deb`
+  ```
+  npm run gulp vscode-linux-arm-min
+  npm run gulp vscode-linux-arm-build-deb
+  ```
