@@ -65,7 +65,7 @@ Sometimes it is expensive for a provider to compute parts of its data. For insta
 
 Cancellation
 -
-Calls into a provider should always include a `CancellationToken` as the last parameter. With that the main thread can signal to the provider that its result won’t be needed anymore.
+Calls into a provider should always include a `CancellationToken` as the last parameter. With that the main thread can signal to the provider that its result won’t be needed anymore. When adding new parameters to provider-functions it is OK to have the token not at the end anymore. 
 
 Objects vs Interfaces
 -
