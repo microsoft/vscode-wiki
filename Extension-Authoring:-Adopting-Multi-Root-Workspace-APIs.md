@@ -74,6 +74,47 @@ The [`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-sa
 
 ![Show the folder of the active file](https://raw.githubusercontent.com/Microsoft/vscode-extension-samples/master/basic-multi-root-sample/preview.gif)
 
+### New helpful API
+
+In order to make it easier to work with multiple-roots from your extension, we added some new API. For example, if you need to ask the user for a specific `WorkspaceFolder`, you can use the new `showWorkspaceFolderPick` method that will open a picker and returns the result. This method will return `undefined` in case the user did not pick any folder or in case no workspace is opened. 
+
+![Workspace Folder Picker](https://github.com/Microsoft/vscode-docs/raw/vnext/release-notes/images/1_17/picker.png)
+
+In addition, we introduced the `RelativePattern` type and support it in the API where we ask for glob patterns to match on file paths. There maybe scenarios where you want to restrict the glob matching on a specific `WorkspaceFolder` and `RelativePattern` allows this by providing a `base` for the pattern to match against. You can use `RelativePattern` in:
+* `workspace.createFileSystemWatcher(pattern)`
+* `workspace.findFiles(include, exclude))`
+* `DocumentFilter#pattern`
+
+The type is a class as follows:
+
+```typescript
+class RelativePattern {
+
+	/**
+	 * A base file path to which the pattern will be matched against relatively.
+	 */
+	base: string;
+
+	/**
+	 * A file glob pattern like `*.{ts,js}` that will be matched on file paths
+	 * relative to the base path.
+	 *
+	 * Example: Given a base of `/home/work/folder` and a file path of `/home/work/folder/index.js`,
+	 * the file glob pattern will match on `index.js`.
+	 */
+	pattern: string;
+
+	constructor(pattern: string, base: WorkspaceFolder | string)
+}
+```
+
+You can create a relative pattern via the following call:
+
+```typescript
+// Construct a relative pattern for the first root folder
+const relativePattern = new vscode.RelativePattern('*.ts', vscode.workspace.workspaceFolders[0].uri.fsPath);
+```
+
 ## Settings
 
 With the introduction of multi-root workspaces, we also revisited how settings can apply. We differentiate between where a setting is persisted and how a setting applies.
