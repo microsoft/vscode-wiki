@@ -32,7 +32,7 @@ All workspace metadata is stored in a simple JSON file that can be saved and sha
 }
 ```
 
-In its most simple form a VS Code workspace is just a collection of folders (called `WorkspaceFolder` in the API) and associated settings that should apply whenever the workspace is opened. Each `WorkspaceFolder` can have additional metadata associated (for example a `name`).
+In its most simple form a VS Code workspace is just a collection of folders (called `WorkspaceFolder` in the API) and associated settings that should apply whenever the workspace is opened. Each `WorkspaceFolder` can have additional metadata associated (for example a `name` property).
 
 This guide will help you as extension author to make your extension ready for multi-root workspaces. It touches on three major pieces (basics, settings, language client/server) and is joined by samples from our [samples repository](https://github.com/Microsoft/vscode-extension-samples). 
 
@@ -41,6 +41,8 @@ This guide will help you as extension author to make your extension ready for mu
 If your extension is making use of the (now deprecated) `workspace.rootPath` property to work on the currently opened folder, you should read on. 
 
 In addition, if your extension is providing settings that can apply on a resource (= file location) level instead of being global, you should also consider adopting the new APIs. Resource settings are much more powerful because a user can choose to configure settings differently per workspace folder.
+
+Finally, if you are leveraging the language client/server SDKs, you should also read this guide to learn which changes were done to support multi-root there.
 
 ## Basics
 
@@ -52,9 +54,9 @@ Method|Description
 `workspace.onDidChangeWorkspaceFolders`| be notified when `WorkspaceFolder` are added or removed
 `workspace.getWorkspaceFolder(uri)`|get the `WorkspaceFolder` for a given resource (can be `undefined` when resource is not part of any workspace folder!)
 
-Your extension should be capable of working with any number of `WorkspaceFolder`, including 0, 1 or many folders. The `WorkspaceFoldersChangeEvent` carries information about the added or removed `WorkspaceFolder`.
+Your extension should be capable of working with any number of `WorkspaceFolder`, including 0, 1 or many folders. The `WorkspaceFoldersChangeEvent` carries information about the added or removed `WorkspaceFolder`. To find out to which `WorkspaceFolder` a given resource belongs to, use the `workspace.getWorkspaceFolder(uri)` method.
 
-**Note:** today we require at least one `WorkspaceFolder` within the workspace, so as a user you cannot open a workspace without folders. However, we will likely lift this limitation soon. 
+**Note**: Using `workspace.getWorkspaceFolder(uri)` with the URI of a `WorkspaceFolder` will return `undefined` unless another `WorkspaceFolder` is configured that is the parent of that folder. See the note below on overlapping workspace folders.
 
 Each `WorkspaceFolder` provides access to some metadata:
 
@@ -64,7 +66,7 @@ Property|Description
 `index`| the 0-based index of the folder as configured by the user
 `name`| the name of the folder (defaults to the folder name)
 
-**Note:** a user is free to configure folders for a workspace that are overlapping. E.g. a workspace can consist of a parent folder as well as any of its children. It is up to the extension to be clever here and avoid duplicate work. For example, a task that scans all files of a folder should not duplicate the work by scanning again for a child folder if any. 
+**Note:** a user is free to configure folders for a workspace that are overlapping. E.g. a workspace can consist of a parent folder as well as any of its children. It is up to the extension to be clever here and avoid duplicate work. For example, a task that scans all files of a folder should not duplicate the work by scanning again for a child folder if any. You can use the `workspace.getWorkspaceFolder(uri)` method to find out if a `WorkspaceFolder` URI has a parent `WorkspaceFolder` or not.
 
 The [`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample) extension is demonstrating the use of this API by showing the workspace folder of the currently opened file in the left hand side of the status bar.
 
