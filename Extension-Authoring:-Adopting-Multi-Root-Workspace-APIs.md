@@ -62,7 +62,7 @@ Each `WorkspaceFolder` provides access to some metadata:
 
 Property|Description
 ---|-------
-`uri`| the resource of the folder (use `uri.fsPath` for the file path)
+`uri`| the associated uri for this workspace folder. The Uri-type was intentionally chosen such that future releases of the editor can support workspace folders that are not stored on the local disk, e.g. `ftp://server/workspaces/foo`.
 `index`| the 0-based index of the folder as configured by the user
 `name`| the name of the folder (defaults to the folder name)
 
