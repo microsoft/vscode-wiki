@@ -126,6 +126,7 @@ This task is about verifying how a first launch behaves for new users that never
 * in VSCode switch to debugging viewlet
 * Click on the gear to create a default launch.json file:
   * make sure that VSCode automatically detects ${workspaceRoot}/bin/www as the 'program' attribute
+  * add `"protocol": "inspector"` to `launch.json`
 * set a breakpoint in index.js:6
 * press F5 to start debugging. Verify:
   * workbench transforms into "debug mode" - glyph margin and status bar turns orange
