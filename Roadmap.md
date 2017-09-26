@@ -17,7 +17,7 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 * Improve UI notification system
 * [x] Improve key binding customization experience (hide keycodes, inconsistent command names from user)
 * [x] Support theming of the workbench
-* Import, export of settings (VS Code as well as other tools) 
+* 🏃 Import, export of settings (VS Code as well as other tools) 
 
 ### Core Editor
 * [x] Drag and drop
@@ -75,8 +75,8 @@ We want VS Code to be a great tool for developing modern MEAN/MERN applications 
 * :runner: Investigate improving support for popular JS technologies (webpack, Babel)
 
 ### HTML, SASS, CSS, LESS
-* :runner: Color picker for CSS/LESS/SASS/HTML
-* Auto close end tag in HTML
+* [x] Color picker for CSS/LESS/SASS/HTML
+* [x] close end tag in HTML
 * Investigate SASS/LESS/CSS multi-file support (understand imports)
 * [x] Investigate live preview of HTML
 
@@ -108,7 +108,6 @@ Of course, VS Code is not just a Node, JavaScript, and TypeScript tool. Our rich
 
 ### Provide users with more control over extension contributions
 * [x] Identify and resolve keybindings conflicts
-* Identify and resolve setting conflicts
 
 ### Contribute to Extensions
 * 🏃 [GO](https://github.com/microsoft/vscode-go)
