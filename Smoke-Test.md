@@ -19,7 +19,7 @@ _Example commands:_
 
 * OS X:
 
-`npm run smoketest -- --build "/Applications/Visual Studio Code - Insiders.app/Contents/MacOS/Electron"`
+`npm run smoketest -- --build "/Applications/Visual Studio Code - Insiders.app"`
 
 * Linux:
 
