@@ -177,7 +177,7 @@ Since language servers usually act on a workspace they are also affected by the 
 
 - In the current version of the language server protocol the client pushes settings to the server. With the introduction of a resource scope this is not possible anymore since the actual settings values can depend on a resource. We introduce proposed protocol which allow servers to fetch settings from a client comparable to the `getConfiguration` API in the extension host. The protocol addition is documented [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.configuration.proposed.md).
 
-### Single language server or server per folder
+### Single language server or server per folder?
 
 The first decision the author of a language server must make is whether a single server can handle all the folders in a multi-root folder setup or whether you want to run a server per root folder. Using a single server is the recommended way. It enables to share memory resources across the different folders. 
 
@@ -185,7 +185,7 @@ Language servers that operate on a single file like a CSS or JSON file or linter
 
 Language servers that operate on multiple files with interdependencies can be different and you need to evaluate whether you want to start a server per workspace folder to isolate folders from each other. We have migrated the TypeScript/JavaScript language server and we were able to use a single server for multiple folders. We added support to this to the `vscode-languageclient` library and the [lsp-multi-server-sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-server-sample) example demonstrates the use of a server per folder. 
 
-### Settings
+### Language settings
 
 In a workspace with a single root folder the `vscode-languageclient` and `vscode-languageserver` implemented that the settings are pushed from the client to server. In a multi-root folder setup this would mean to push the settings for multiple folders from the client to the server. We have found that in such a setup it is simpler to pull the settings for a resource from the client and to cache the settings for some resources on the server. The bundled CSS or HTML language extensions illustrate this approach. These servers use the `vscode-languageclient/lib/configuration.proposed` module.
 
