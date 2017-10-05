@@ -179,7 +179,7 @@ Since language servers usually act on a workspace they are also affected by the 
 
 ### Single language server or server per folder?
 
-The first decision the author of a language server must make is whether a single server can handle all the folders in a multi-root folder setup or whether you want to run a server per root folder. Using a single server is the recommended way. It enables to share memory resources across the different folders. 
+The first decision the author of a language server must make is whether a single server can handle all the folders in a multi-root folder setup or whether you want to run a server per root folder. Using a single server is the recommended way. Sharing a single server is more resource friendly than running multiple servers. 
 
 Language servers that operate on a single file like a CSS or JSON file or linters that validate a single file at a time can easily handle multiple folders. We have already migrated the HTML, JSON, CSS language servers and the 'eslint' and 'tslint' Language servers. We have implemented them all as a single language server. The [lsp-multi-root-sample example](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-root-sample) demonstrates the use of the new protocol workspace folder and configuration protocol. We recommend that you also review the corresponding extensions when migrating your server. 
 
