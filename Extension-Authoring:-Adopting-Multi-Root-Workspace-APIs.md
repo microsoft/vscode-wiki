@@ -136,7 +136,9 @@ Scope|Description
 `window`|the setting is applied to the entire VS Code instance
 `resource`|the setting is applied depending on an active resource
 
-By default, all settings have the `window` scope, however we encourage you to support settings on the `resource` scope. Settings that apply on the window level are not supported once they are defined within a workspace folder and as soon as the user entered a multi-root workspace. Settings that apply on a resource level however are supported and as such, each workspace folder can have different values for these settings.
+By default, all settings have the `window` scope, however we encourage you to support settings on the `resource` scope. Settings that apply on the window level are not supported once they are defined within a workspace folder and as soon as the user entered a multi-root workspace. Settings that apply on a resource level however are supported and as such, each workspace folder can have different values for these settings. 
+
+**Note:** When a setting is defined as a `resource` scoped setting, then you have to use the new configuration API that fetches the setting that applies to a resource (see the Settings API section below).
 
 ### Settings Configuration
 To declare a setting scope, simply define the scope as part of your setting from the `package.json` file. The example below is copied from the [`basic-multi-root`](https://github.com/Microsoft/vscode-extension-samples/blob/master/basic-multi-root-sample/package.json#L23) sample:
@@ -161,7 +163,7 @@ To declare a setting scope, simply define the scope as part of your setting from
 ```
 
 ### Settings API
-To use this setting accordingly, use the `workspace.getConfiguration()` API and pass the URI of the resource as second parameter. You can see [here](https://github.com/Microsoft/vscode-extension-samples/blob/master/basic-multi-root-sample/src/extension.ts#L68) how the setting is used in the basic-multi-root sample.
+The configuration example above defines a setting scoped to a resource. To fetch its value you use the `workspace.getConfiguration()` API and pass the URI of the resource as second parameter. You can see [here](https://github.com/Microsoft/vscode-extension-samples/blob/master/basic-multi-root-sample/src/extension.ts#L68) how the setting is used in the basic-multi-root sample.
 
 Under the hood, resource settings are resolved with a simple logic: We try to find a `WorkspaceFolder` for the resource that is passed into the `getConfiguration` API. If such a folder exists and that folder defines the setting, it will be returned. Otherwise the normal logic applies for finding the setting on a parent level: it could be defined within the workspace file or on the user level.
 
