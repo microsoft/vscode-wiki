@@ -38,13 +38,13 @@ This guide will help you as extension author to make your extension ready for mu
 
 ## Do I need to do anything?
 
-If your extension is making use of the (now deprecated) `workspace.rootPath` property to work on the currently opened folder, you should read on. 
+Here is a simple check list:
+* If your extension is making use of the (now deprecated) `workspace.rootPath` property to work on the currently opened folder, then you are affected. See the section 'Eliminating workspace.rootPath below'.
+* If your extension contributes settings then you should review whether some of the settings can be applied on a resource (= file location) level instead of being global. Resource settings are more powerful because a user can choose to configure settings differently per workspace folder. Similarly, if you do not contribute settings but you modify settings programmatically, then you should review that you modify the settings using the proper scope. See the 'Settings' section below.
+* If you are implementing a language server then you are affected since up to now a language server only had to handle a single folder. In the new multi-folder setup, a language server should be able to handle multiple folders. See the section 'Language Client/Language Server' below.
 
-In addition, if your extension is providing settings that can apply on a resource (= file location) level instead of being global, you should also consider adopting the new APIs. Resource settings are much more powerful because a user can choose to configure settings differently per workspace folder.
 
-Finally, if you are leveraging the language client/server SDKs, you should also read this guide to learn which changes were done to support multi-root there.
-
-## Basics
+## Eliminating `rootPath`
 
 The basic APIs to work with multi root workspaces are:
 
@@ -138,6 +138,7 @@ Scope|Description
 
 By default, all settings have the `window` scope, however we encourage you to support settings on the `resource` scope. Settings that apply on the window level are not supported once they are defined within a workspace folder and as soon as the user entered a multi-root workspace. Settings that apply on a resource level however are supported and as such, each workspace folder can have different values for these settings.
 
+### Settings Configuration
 To declare a setting scope, simply define the scope as part of your setting from the `package.json` file. The example below is copied from the [`basic-multi-root`](https://github.com/Microsoft/vscode-extension-samples/blob/master/basic-multi-root-sample/package.json#L23) sample:
 
 ```
@@ -159,6 +160,7 @@ To declare a setting scope, simply define the scope as part of your setting from
 }
 ```
 
+### Settings API
 To use this setting accordingly, use the `workspace.getConfiguration()` API and pass the URI of the resource as second parameter. You can see [here](https://github.com/Microsoft/vscode-extension-samples/blob/master/basic-multi-root-sample/src/extension.ts#L68) how the setting is used in the basic-multi-root sample.
 
 Under the hood, resource settings are resolved with a simple logic: We try to find a `WorkspaceFolder` for the resource that is passed into the `getConfiguration` API. If such a folder exists and that folder defines the setting, it will be returned. Otherwise the normal logic applies for finding the setting on a parent level: it could be defined within the workspace file or on the user level.
