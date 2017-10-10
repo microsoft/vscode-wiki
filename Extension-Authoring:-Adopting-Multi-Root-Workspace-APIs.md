@@ -43,7 +43,6 @@ Here is a simple check list:
 * If your extension contributes settings then you should review whether some of the settings can be applied on a resource (= file location) level instead of being global. Resource settings are more powerful because a user can choose to configure settings differently per workspace folder. Similarly, if you do not contribute settings but you modify settings programmatically, then you should review that you modify the settings using the proper scope. See the 'Settings' section below.
 * If you are implementing a language server then you are affected since up to now a language server only had to handle a single folder. In the new multi-folder setup, a language server should be able to handle multiple folders. See the section 'Language Client/Language Server' below.
 
-
 ## Eliminating `rootPath`
 
 The basic APIs to work with multi root workspaces are:
@@ -190,3 +189,13 @@ Language servers that operate on multiple files with interdependencies can be di
 In the current version of the language server protocol the client pushes settings to the server. With the introduction of a resource scope this is not possible anymore since the actual settings values can depend on a resource. We introduce proposed protocol which allow servers to fetch settings from a client comparable to the `getConfiguration` API in the extension host. The protocol addition is documented [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.configuration.proposed.md). The bundled CSS or HTML language extensions illustrate this approach. 
 
 A setting that supports file paths relative to a workspace needs special treatment. In the single folder case the language server process is started in the root folder of the workspace. A relative path can then be resolved easily since the server's home directory corresponds to the workspace root. In the multi-root folder setup this is no longer the case and when the setting is defined as a resource scoped setting, then the path needs to be resolved per root folder. One approach that has worked well for us, is to resolve the relative file path of a setting on the client using the new settings API. In this way the server only sees absolute paths. An example for this can be found in [vscode-tslint](https://github.com/Microsoft/vscode-tslint/blob/2a9b46d57489b180f3fc0ad0acc15c3071541acf/tslint/extension.ts#L199). It uses the `vscode-languageclient` middleware to transform the relative file paths.
+
+## Samples
+
+Sample|Description
+------|-----------|
+**[Basic multi root](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample)**|Illustrates the `WorkspaceFolder` API and how to work with a resource scoped configuration setting.|
+**[Language Server Settings](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-root-sample)**|Demonstrates how to handle configuration settings in a language server.|
+**[Multi Language Server](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-server-sample)**|Starts a language server for each root folder in a workspace.|
+
+
