@@ -55,7 +55,7 @@ Method|Description
 
 Your extension should be capable of working with any number of `WorkspaceFolder`, including 0, 1 or many folders. The `WorkspaceFoldersChangeEvent` carries information about the added or removed `WorkspaceFolder`. To find out to which `WorkspaceFolder` a given resource belongs to, use the `workspace.getWorkspaceFolder(uri)` method.
 
-**Note**: Using `workspace.getWorkspaceFolder(uri)` with the URI of a `WorkspaceFolder` will return `undefined` unless another `WorkspaceFolder` is configured that is the parent of that folder. See the note below on overlapping workspace folders.
+**Note**: Using `workspace.getWorkspaceFolder(uri)` with the URI of a `WorkspaceFolder` will return that instance of the `WorkspaceFolder`. 
 
 Each `WorkspaceFolder` provides access to some metadata:
 
@@ -65,7 +65,7 @@ Property|Description
 `index`| the 0-based index of the folder as configured by the user
 `name`| the name of the folder (defaults to the folder name)
 
-**Note 1:** a user is free to configure folders for a workspace that are overlapping. E.g. a workspace can consist of a parent folder as well as any of its children. It is up to the extension to be clever here and avoid duplicate work. For example, a task that scans all files of a folder should not duplicate the work by scanning again for a child folder if any. You can use the `workspace.getWorkspaceFolder(uri)` method to find out if a `WorkspaceFolder` URI has a parent `WorkspaceFolder` or not.
+**Note 1:** a user is free to configure folders for a workspace that are overlapping. E.g. a workspace can consist of a parent folder as well as any of its children. It is up to the extension to be clever here and avoid duplicate work. For example, a task that scans all files of a folder should not duplicate the work by scanning again for a child folder if any.
 
 **Note 2:** a workspace folder might use a `uri` which does *not* resolve to a file on disk. So, it must not always be a `file`-uri, but VSCode will soon support workspace folders from remote locations.
 
