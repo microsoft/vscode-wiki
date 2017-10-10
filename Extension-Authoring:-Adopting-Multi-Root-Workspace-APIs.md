@@ -87,23 +87,36 @@ In addition, we introduced the `RelativePattern` type and support it in the API 
 The type is a class as follows:
 
 ```typescript
+/**
+ * A relative pattern is a helper to construct glob patterns that are matched
+ * relatively to a base path. The base path can either be an absolute file path
+ * or a [workspace folder](#WorkspaceFolder).
+ */
 class RelativePattern {
 
-	/**
-	 * A base file path to which the pattern will be matched against relatively.
-	 */
-	base: string;
+  /**
+   * A base file path to which this pattern will be matched against relatively.
+   */
+  base: string;
 
-	/**
-	 * A file glob pattern like `*.{ts,js}` that will be matched on file paths
-	 * relative to the base path.
-	 *
-	 * Example: Given a base of `/home/work/folder` and a file path of `/home/work/folder/index.js`,
-	 * the file glob pattern will match on `index.js`.
-	 */
-	pattern: string;
+  /**
+   * A file glob pattern like `*.{ts,js}` that will be matched on file paths
+   * relative to the base path.
+   *
+   * Example: Given a base of `/home/work/folder` and a file path of `/home/work/folder/index.js`,
+   * the file glob pattern will match on `index.js`.
+   */
+  pattern: string;
 
-	constructor(pattern: string, base: WorkspaceFolder | string)
+  /**
+   * Creates a new relative pattern object with a base path and pattern to match. This pattern
+   * will be matched on file paths relative to the base path.
+   *
+   * @param base A base file path to which this pattern will be matched against relatively.
+   * @param pattern A file glob pattern like `*.{ts,js}` that will be matched on file paths
+   * relative to the base path.
+   */
+  constructor(base: WorkspaceFolder | string, pattern: string)
 }
 ```
 
@@ -111,7 +124,7 @@ You can create a relative pattern via the following call:
 
 ```typescript
 // Construct a relative pattern for the first root folder
-const relativePattern = new vscode.RelativePattern('*.ts', vscode.workspace.workspaceFolders[0].uri.fsPath);
+const relativePattern = new vscode.RelativePattern(vscode.workspace.workspaceFolders[0], '*.ts');
 ```
 
 ## Settings
