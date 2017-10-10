@@ -1,4 +1,4 @@
->**Note:** Multi-root functionality is currently only available in the Insiders build until we are confident enough that we can make it available in Stable. To try it out, grab our Insiders build from [https://code.visualstudio.com/insiders](https://code.visualstudio.com/insiders).
+>**Note:** Multi-root functionality is currently only available in the Insiders build. We will make it available in Stable at the end of the October iteration. We are now inviting extension authors to update their extensions if they are impacted. To try it out, grab our Insiders build from [https://code.visualstudio.com/insiders](https://code.visualstudio.com/insiders).
 
 ## Synopsis
 
