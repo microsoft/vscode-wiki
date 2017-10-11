@@ -214,4 +214,18 @@ Sample|Description
 ## Writing Tests
 Today we do not provide any extension API to add or remove workspace folders. However, you are free to run your extension tests against a `code-workspace.json` file that can contain any number of workspace folders. Modifying this file programmatically will cause the workspace to change, however you have to account for the changes to the file bubbling through to VS Code for the update to happen (this can take up to a second). 
 
-To start your extension tests on a workspace, open the `launch.json` and add the path to the file to the `args` property.
+To start your extension tests on a workspace, open the `launch.json` and add the path to the file to the `args` property:
+
+```json
+{
+    "name": "Launch Extension",
+    "type": "extensionHost",
+    "request": "launch",
+    "runtimeExecutable": "${execPath}",
+    "args": ["${workspaceRoot}/test/test.code-workspace", "--extensionDevelopmentPath=${workspaceRoot}" ],
+    "stopOnEntry": false,
+    "sourceMaps": true,
+    "outFiles": [ "${workspaceRoot}/out/src/**/*.js" ],
+    "preLaunchTask": "npm"
+}
+```
