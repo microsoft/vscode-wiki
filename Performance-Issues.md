@@ -1,4 +1,9 @@
-This page contains a set of questions, experiments, and measurements that will help us to track down performance issues.
+# Summary
+
+This page documents how you can help us to track down performance issues. It contains:
+- Questions about your setup
+- Experiments you can make to reproduce and narrow down 
+- Measurements you can provide us for further analysis.
 
 ### Questions
 To help us narrow down the issue please include answers for the following questions:
