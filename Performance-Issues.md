@@ -1,10 +1,4 @@
-This page contains a set of questions, experiments, and measurements that can be useful in issues mentioning a performance issue. 
-
-The contents below is verbatim so that you can copy & paste the applicable sections to the issue. 
-
-For a preview of the contents see this [issue](https://github.com/Microsoft/vscode/issues/36542).
-
-```
+This page contains a set of questions, experiments, and measurements that will help us to track down performance issues.
 
 ### Questions
 To help us narrow down the issue please include answers for the following questions:
@@ -13,6 +7,8 @@ To help us narrow down the issue please include answers for the following questi
 - Do you run Code on a single-CPU environment (e.g. VM)? We know that processes can go crazy and startup times can be super slow.
 
 ### Experiments
+Please try to reproduce the performance problems in different setups:
+
 - Can you reproduce the issue when you start VS Code with extensions disabled? You can start VS Code with extension disabled using the `--disable-extensions` command line argument, e.g., `code --disable-extensions`. 
 
 - If you cannot reproduce the issue when the extensions are disabled, then can you narrow down the extension by selectively disabling extensions? You can disable extensions in the Extensions Viewlet ![image](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png) and restart/reload. Once you found the extension please file an issue against the extension. To file an issue against an extension: find the issue in the market place, select the `Issues` link thin the Resources section.
@@ -26,6 +22,7 @@ To help us narrow down the issue please include answers for the following questi
 - Run VS Code in verbose mode and check whether there is any suspicious output in the console or the developer tools. You start VS Code in verbose mode with `code --verbose`. Also open the DevTools ("Help>Toggle Developer Tools") and open the console there.
 
 ### Measurements
+When you cannot share the workspace exposing the problem with us, then you can help us by providing performance profiles that we can analyze:
 
 - If VS Code feels not responsive then please create a CPU profile of the VS Code core (_renderer_ process) and attach it to the issue. To create a profile:
   -  Execute "F1 > Toggle Developer Tools." In the overflow menu of the developer tools <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
@@ -46,4 +43,4 @@ To help us narrow down the issue please include answers for the following questi
 ![image](https://cloud.githubusercontent.com/assets/900690/18907063/65806550-856a-11e6-8b2e-83da9111445d.png)
 On Windows open the Task Manager, switch to the Details tab and make the "Command Line" column visible as shown below. Please attach the command line to this issue.
 ![image](https://user-images.githubusercontent.com/172399/31660413-9fac1f02-b337-11e7-96fb-859c659b28f9.png)
-```
+
