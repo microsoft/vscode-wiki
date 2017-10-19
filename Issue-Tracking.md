@@ -8,7 +8,7 @@ This page describes how we track issues in the `vscode` repository.
 
 
 ## Inbox tracking and Issue triage
-New issues or pull requests submitted by the community are triaged by a team member. The team rotates the inbox tracker on a weekly basis.
+New issues or pull requests submitted by the community are triaged by a team member. The team rotates the inbox tracker on a weekly basis. A bot assists the inbox tracker.
 
 ### Inbox Tracking
 
@@ -33,15 +33,14 @@ The **inbox tracker** should do the following initial triage:
 - If the issue is an important `bug`, assign an `important` label and optionally mention @microsoft/vscode to get the attention of the entire team.
 - If the issue needs to be fixed in this release, assign it to the current milestone (eg: blocks a scenario, completes a new feature, etc.). 
 - If needed, follow-up with the author.
+- If the issue is a performance issue use some of the questions, experiments, measurements collected here [[Performance Issues]].
 
 ### Ongoing Issue Management
-- The PM team monitors feature requests and participate in discussions
-- Feature requests on the 6 month roadmap are assigned to the `On Deck` milestone. The `On Deck` milestone has a cap of 100 issues.
+- Issues labelled with `needs more information` are automatically closed by the bot when no additional information is provided for 7 days.
 - We close issues that we are not planning to work during the next 12 months 
 
 ### Planning
 During the iteration planning process we use the following sources as input:
-- The `On Deck` back log
 - Review feature requests with many reactions.
 Issues we plan to work on during an iteration are assigned to the current milestone.
 
