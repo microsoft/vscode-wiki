@@ -10,6 +10,12 @@ To help us narrow down the issue please include answers for the following questi
 - What is the size of your workspace/project (how many files)? 
 - What languages are used in this project?
 - Do you run Code on a single-CPU environment (e.g. VM)? We know that processes can go crazy and startup times can be super slow.
+- Which Code process consumes consumes the most resources? VS Code is a multi process architecture and we need to know which process is causing the issue. You can identify the process based on the command line arguments that were used to start the process. On Mac, the **Activity Monitor** allows to find the `PID` of the process and from a terminal you can run `ps aux | grep <pid>` reveals its arguments. 
+![image](https://cloud.githubusercontent.com/assets/900690/18907063/65806550-856a-11e6-8b2e-83da9111445d.png)
+On Windows open the Task Manager, switch to the Details tab and make the "Command Line" column visible as shown below. Please attach the command line to this issue.
+![image](https://user-images.githubusercontent.com/172399/31660413-9fac1f02-b337-11e7-96fb-859c659b28f9.png)
+
+
 
 ### Experiments
 Please try to reproduce the performance problems in different setups:
@@ -43,9 +49,4 @@ When you cannot share the workspace exposing the problem with us, then you can h
   - Open that link in Chrome for dedicated DevTools for the extension host.
   - Use the Memory and CPU profiler to understand how memory and compute resource are being used.
   - Save the profile to a file and attach the file to your issue. 
-
-- If a VS Code process consumes a lot of resources we need to identify the process based on the command line arguments that were used to start the process. On Mac, the **Activity Monitor** allows to find the `PID` of the process and from a terminal you can run `ps aux | grep <pid>` reveals its arguments. 
-![image](https://cloud.githubusercontent.com/assets/900690/18907063/65806550-856a-11e6-8b2e-83da9111445d.png)
-On Windows open the Task Manager, switch to the Details tab and make the "Command Line" column visible as shown below. Please attach the command line to this issue.
-![image](https://user-images.githubusercontent.com/172399/31660413-9fac1f02-b337-11e7-96fb-859c659b28f9.png)
 
