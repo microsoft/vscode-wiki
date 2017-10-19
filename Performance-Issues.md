@@ -9,7 +9,7 @@ For a preview of the contents see this [issue](https://github.com/Microsoft/vsco
 ### Questions
 To help us narrow down the issue please include answers for the following questions:
 - What is the size of your workspace/project (how many files)? 
-- What languages are used in this this project?
+- What languages are used in this project?
 - Do you run Code on a single-CPU environment (e.g. VM)? We know that processes can go crazy and startup times can be super slow.
 
 ### Experiments
