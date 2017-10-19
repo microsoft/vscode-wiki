@@ -3,6 +3,7 @@
 * [[Iteration Plans]]
 * [[Development Process]]
 * [[Issue Tracking]]
+  * [[Performance Issues]]
 * [[Release Process]]
 * [[Running the Endgame]]
 * [[Related Projects]]
