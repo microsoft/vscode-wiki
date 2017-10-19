@@ -1,5 +1,7 @@
 This page contains a set of questions, experiments, and measurements that can be useful in issues mentioning a performance issue. 
 
+The contents below is verbatim so that you can copy & paste the applicable sections easily. For a preview of the contents see this [issue](https://github.com/Microsoft/vscode/issues/36542)
+
 ```
 
 ### Questions
