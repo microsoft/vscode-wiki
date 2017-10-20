@@ -3,7 +3,7 @@
 This page documents how you can help us to track down performance issues. It contains:
 - Questions about your setup
 - Experiments you can make to reproduce and narrow down 
-- Measurements you can provide us for further analysis.
+- How to create performance profiles you can provide to us for further analysis.
 
 ### Questions
 To help us narrow down the issue please include answers for the following questions:
@@ -33,7 +33,7 @@ and restart/reload. Once you found the extension please file an issue against th
 
 - Run VS Code in verbose mode and check whether there is any suspicious output in the console or the developer tools. You start VS Code in verbose mode with `code --verbose`. Also open the DevTools ("Help>Toggle Developer Tools") and open the console there.
 
-### Measurements
+### Creating Performance Profiles
 When you cannot share the workspace exposing the problem with us, then you can help us by providing performance profiles that we can analyze:
 
 - If VS Code feels not responsive then please create a CPU profile of the VS Code core (_renderer_ process) and attach it to the issue. To create a profile:
