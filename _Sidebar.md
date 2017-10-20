@@ -4,7 +4,7 @@
 * [[Development Process]]
 * [[Issue Tracking]]
   * [[Performance Issues]]
-  * [[Keybindings]]
+  * [[Keybinding Issues]]
 * [[Release Process]]
 * [[Running the Endgame]]
 * [[Related Projects]]
