@@ -153,7 +153,7 @@ By default, all settings have the `window` scope, however we encourage you to su
 **Note:** When a setting is defined as a `resource` scoped setting, then you have to use the new configuration API that fetches the setting that applies to a resource (see the Settings API section below).
 
 ### Settings Configuration
-To declare a setting scope, simply define the scope as part of your setting from the `package.json` file. The example below is copied from the [configuration-sample](https://github.com/Microsoft/vscode-extension-samples/blob/master/configuration-sample/package.json) extension:
+To declare a setting scope, simply define the scope as part of your setting from the `package.json` file. The example below is copied from the [Configuration Sample](https://github.com/Microsoft/vscode-extension-samples/blob/master/configuration-sample/package.json) extension:
 
 ```json
 "contributes": {
@@ -192,6 +192,8 @@ The configuration example above defines a setting scoped to a resource. To fetch
 Under the hood, resource settings are resolved with a simple logic: We try to find a `WorkspaceFolder` for the resource that is passed into the `getConfiguration` API. If such a folder exists and that folder defines the setting, it will be returned. Otherwise the normal logic applies for finding the setting on a parent level: it could be defined within the workspace file or on the user level.
 
 **Note:** You do not have to be aware if the user has opened a workspace or not when using the `getConfiguration` API with resource scope. Just make sure to always pass the resource scope URI around and we will do the resolution of the setting based on the user's setup.
+
+Refer to [Configuration Sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/configuration-sample) extension for more information.
 
 ## Language Client / Language Server
 
