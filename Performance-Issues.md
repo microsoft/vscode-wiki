@@ -21,7 +21,9 @@ Please try to reproduce the performance problems in different setups:
 
 - Can you reproduce the issue when you start VS Code with extensions disabled? You can start VS Code with extension disabled using the `--disable-extensions` command line argument, e.g., `code --disable-extensions`. 
 
-- If you cannot reproduce the issue when the extensions are disabled, then can you narrow down the extension by selectively disabling extensions? You can disable extensions in the Extensions Viewlet ![image](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png) and restart/reload. Once you found the extension please file an issue against the extension. To file an issue against an extension: find the issue in the market place, select the `Issues` link thin the Resources section.
+- If you cannot reproduce the issue when the extensions are disabled, then can you narrow down the extension by selectively disabling extensions? You can disable extensions in the Extensions Viewlet 
+![image](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png) 
+and restart/reload. Once you found the extension please file an issue against the extension. To file an issue against an extension: find the issue in the market place, select the `Issues` link thin the Resources section.
 
 - Try to reproduce the problem on different folders; a folder with less files, a folder that is not under source control, or open a single file?
 
