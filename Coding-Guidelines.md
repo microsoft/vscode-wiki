@@ -34,7 +34,7 @@ We use tabs, not spaces.
 
 ```javascript
 x => x + x
-(x,y) => x + y
+(x, y) => x + y
 <T>(x: T, y: T) => x === y
 ```
 
