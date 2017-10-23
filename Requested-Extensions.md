@@ -29,7 +29,5 @@ For discussions on specific extensions and to add more information, link a newly
 - [x] [pretty-json](https://atom.io/packages/pretty-json) => VS Code [Pretty JSON](https://marketplace.visualstudio.com/items?itemName=mohsen1.prettify-json)
 - [x] [tabs-to-spaces](https://atom.io/packages/tabs-to-spaces) => [Untabify](https://marketplace.visualstudio.com/items?itemName=ilich8086.Untabify)
 - [x] [todo-show](https://atom.io/packages/todo-show). Show todo, fixme, and changed. -> [vscode-todo](https://marketplace.visualstudio.com/items/MattiasPernhult.vscode-todo)
-- [x] [color-picker](https://atom.io/packages/color-picker). Sleek color picking UI widget. [Color Picker](https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color) 
-
-# Currently not implementable
-- [activate-power-mode](https://atom.io/packages/activate-power-mode) - not possible without DOM access in the API
+- [x] [color-picker](https://atom.io/packages/color-picker). Sleek color picking UI widget. [Color Picker](https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color)
+- [x] [activate-power-mode](https://atom.io/packages/activate-power-mode) => VS Code [Power Mode](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-power-mode)
