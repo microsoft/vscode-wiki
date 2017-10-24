@@ -193,6 +193,13 @@ Under the hood, resource settings are resolved with a simple logic: We try to fi
 
 **Note:** You do not have to be aware if the user has opened a workspace or not when using the `getConfiguration` API with resource scope. Just make sure to always pass the resource scope URI around and we will do the resolution of the setting based on the user's setup.
 
+### Perspectives
+An extension author, you should have following two perspectives while defining a setting
+
+1. **End User:** Given a setting, an end user should know where he/she can customise this setting. By defining a setting as `resource` or `window` scoped, user can be able customise it at right targets. It means, User can open settings and can customise a window (`window.zoomLevel`) or resource (`editor.wordWrap`) setting  in User/Workspace Settings. But when user lands into Folder Settings, user can only customise resource settings (`editor.wordWrap`). VS Code will use the setting's classification information to provide right proposals in intelli-sense and will warn user if customising `window` settings in Folder settings. 
+
+2. **Extension author:** Extension author's main purpose is to define a setting and read its value and apply it. As mentioned before now, there is a new target `Folder Settings` where a resource scoped setting can only be customisable. So extension author should be knowing if a setting is associated to a resource or not and thereby, classify the setting. If it is a resource setting, ask for the value of the setting by passing the resource for which the value has to be applied. Otherwise you can just ask for the value without passing any resource. API will give you back the value user customised for this setting.
+
 Refer to [Configuration Sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/configuration-sample) extension for more information.
 
 ## Language Client / Language Server
