@@ -33,7 +33,7 @@ and restart/reload. Once you found the extension please file an issue against th
 
 - Run VS Code in verbose mode and check whether there is any suspicious output in the console or the developer tools. You start VS Code in verbose mode with `code --verbose`. Also open the DevTools ("Help>Toggle Developer Tools") and open the console there.
 
-### Creating Performance Profiles
+### Profile a VS Code window
 When you cannot share the workspace exposing the problem with us, then you can help us by providing performance profiles that we can analyze:
 
 - If VS Code feels not responsive then please create a CPU profile of the VS Code core (_renderer_ process) and attach it to the issue. To create a profile:
@@ -42,6 +42,8 @@ When you cannot share the workspace exposing the problem with us, then you can h
   - Let it profile for 30 to 60 seconds, stop it.
   - When the performance issue happens on startup, start the profiler and then reload the window using "F1>Reload Window."
   - Save the profile to a file and attach the file to your issue. 
+
+### Profile the extension process
 
 - If VS Code feels not responsive and the CPU profile doesn't provide insights then please a create a CPU profile of the extension host process. The extension host process is the process that executes your installed extensions. To create a profile:
   - Start VS Code from the command line the with `--inspect-extensions=<port>`-flag, for example `code --inspect-extensions=9333`.
