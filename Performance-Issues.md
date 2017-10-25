@@ -43,7 +43,15 @@ When you cannot share the workspace exposing the problem with us, then you can h
   - When the performance issue happens on startup, start the profiler and then reload the window using "F1>Reload Window."
   - Save the profile to a file and attach the file to your issue. 
 
-### Profile the extension process
+### Profile Startup
+
+- If VS Code is slow to start then please create a startup CPU profile. Do the following
+  - Make sure to only have one window open
+  - Quit VS Code (Cmd+Q for Mac, closing the last window on Linux/Windows)
+  - Start VS Code from the command line like so `code --prof-startup`
+  - VS Code will start and create two profile-files in your home-directory. Please attach these files to your issue or create a new issue with these two files
+
+### Profile the Extension Process
 
 - If VS Code feels not responsive and the CPU profile doesn't provide insights then please a create a CPU profile of the extension host process. The extension host process is the process that executes your installed extensions. To create a profile:
   - Start VS Code from the command line the with `--inspect-extensions=<port>`-flag, for example `code --inspect-extensions=9333`.
@@ -52,4 +60,3 @@ When you cannot share the workspace exposing the problem with us, then you can h
   - Open that link in Chrome for dedicated DevTools for the extension host.
   - Use the Memory and CPU profiler to understand how memory and compute resource are being used.
   - Save the profile to a file and attach the file to your issue. 
-
