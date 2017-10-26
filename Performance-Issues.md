@@ -23,9 +23,9 @@ Please try to reproduce the performance problems in different setups:
 
 - If you cannot reproduce the issue when the extensions are disabled, then can you narrow down the extension by selectively disabling extensions? You can disable extensions in the Extensions Viewlet 
 ![image](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png) 
-and restart/reload. Once you found the extension please file an issue against the extension. To file an issue against an extension: find the issue in the market place, select the `Issues` link thin the Resources section.
+and restart/reload. Once you found the extension please file an issue against the extension. To file an issue against an extension: find the extension in the market place, and use the `Issues` link in the Resources section.
 
-- Try to reproduce the problem on different folders; a folder with less files, a folder that is not under source control, or open a single file?
+- Try to reproduce the problem on different folders; a folder with less files, a folder that is not under source control, or open a single file.
 
 - Try to reproduce the issue in the VS Code **Insider** version. This will run our latest code and use a different setup (settings, extensions). You can install the insider version here https://code.visualstudio.com/insiders.
 
