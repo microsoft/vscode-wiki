@@ -35,7 +35,11 @@ and restart/reload. Once you found the extension please file an issue against th
 
 ### Read Startup Timers
 
-When VS Code feels slow to start you can check the startup timers. Hit "F1" and select "Startup Performance". This will open developer tools and print some startup stats onto the the "Console". Please share these numbers with us as they often allows us to understand what is slow.
+When VS Code feels slow to start you can check the startup timers. Hit "F1" and select "Startup Performance". This will open developer tools and print some startup stats onto the the "Console". 
+
+![image](https://user-images.githubusercontent.com/172399/32089769-3df19924-baec-11e7-9654-e199e1ab8c92.png)
+
+Please share these numbers with us as they often allows us to understand what is slow.
 
 ### Profile a VS Code window
 When you cannot share the workspace exposing the problem with us, then you can help us by providing performance profiles that we can analyze:
