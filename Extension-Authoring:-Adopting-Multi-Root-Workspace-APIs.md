@@ -208,7 +208,7 @@ Since language servers usually act on a workspace they are also affected by the 
 
 - if the server accesses the `rootPath` or `rootURI` property of the `InitializeParams` passed in the [`initialize` request](https://github.com/Microsoft/language-server-protocol/blob/master/protocol.md#initialize) then the language server must instead use the proposed property `workspaceFolders`. Since workspace folders can come and go dynamically the server also need to register for `workspace/didChangeWorkspaceFolders` notifications. The corresponding protocol is still in proposed state. The documentation can be found [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.workspaceFolders.proposed.md).
 
-- if the server is using configuration settings the author also has to review the scope o the settings (see the Settings section above). For a language server 'resource' scope is typically preferred, since it enables a user to configure that language settings on a per folder basis. In addition, the server has to change the way settings are accessed (see the Language Settings section below).
+- if the server is using configuration settings the author also has to review the scope of the settings (see the [Settings section](#settings) above). For a language server 'resource' scope is typically preferred, since it enables a user to configure that language settings on a per folder basis. In addition, the server has to change the way settings are accessed (see the [Language Settings section](#language-settings) below).
 
 ### Single language server or server per folder?
 
