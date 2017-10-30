@@ -22,7 +22,7 @@ The **inbox tracker** should do the following initial triage:
 - Is the issue **a general question**, like *How can I compile TypeScript*? Close it and redirect the user to [Stack Overflow](http://stackoverflow.com/questions/tagged/vscode) with [this message](https://gist.github.com/joaomoreno/960b4f643b2ff09bcdf7).
 - Is the issue best covered by an extension then add the `extension-request` label.
 - Else, assign the issue to the **owner** of a feature area.
-- Note: Assign JS/TS issues to @wade
+- Note: Assign JS/TS issues to @mjbvz
 
 **Everyone** should do the following secondary triage to their assigned issues (the **inbox tracker** may do some of these steps too, if obvious):
 - If an issue needs more info, assign the `needs more info` and ask for more information in a comment.
