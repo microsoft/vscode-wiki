@@ -1,8 +1,10 @@
->**Note:** Multi-root functionality is currently only available in the Insiders build. We will make it available in Stable at the end of the October iteration. We are now inviting extension authors to update their extensions if they are impacted. To try it out, grab our Insiders build from [https://code.visualstudio.com/insiders](https://code.visualstudio.com/insiders).
+>**Request:** if you have prepared your extension for Multi-root Workspaces we would love you to add `multi-root ready` to your `package.json` i.e. `"keywords": ["multi-root ready"]`.  If you upgrade to `VSCE 1.32.0` this can be added to any existing keywords and will not be counted against the maximum of 5 allowed keywords.
 
 ## Synopsis
 
 This wiki page explains the impact of the new multi-root-workspace feature on extensions. You will learn the concepts, new APIs and understand if and how to make your extension ready for multi-root-workspace support.
+
+>**Note:** Multi-root functionality is currently only available in the Insiders build. We will make it available in Stable at the end of the October iteration. We are now inviting extension authors to update their extensions if they are impacted. To try it out, grab our Insiders build from [https://code.visualstudio.com/insiders](https://code.visualstudio.com/insiders).  Help for extension builders is also available in the VS Code Extenders Community Slack channel, you can [join via this link](https://vscode-dev-community.slack.com/join/shared_invite/enQtMjIxOTgxNDE3NzM0LWU5M2ZiZDU1YjBlMzdlZjA2YjBjYzRhYTM5NTgzMTAxMjdiNWU0ZmQzYWI3MWU5N2Q1YjBiYmQ4MzY0NDE1MzY).
 
 A multi-root workspace is a new way how to work with VS Code. At its core, it allows to open multiple folders in the same instance from any location that is accessible on disk. All parts of the VS Code user interface adapt to the number of folders opened, e.g. the file explorer will show all folders in a single tree and the full text search will search across all folders. It is in the best interest for the users that extensions also adapt to supporting multiple folders.
 
