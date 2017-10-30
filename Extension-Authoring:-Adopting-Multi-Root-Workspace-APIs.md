@@ -1,4 +1,4 @@
->**Note:** Multi-root functionality is currently only available in the Insiders build. We will make it available in Stable at the end of the October iteration. We are now inviting extension authors to update their extensions if they are impacted. To try it out, grab our Insiders build from [https://code.visualstudio.com/insiders](https://code.visualstudio.com/insiders).
+>**Note:** Multi-root functionality is currently only available in the Insiders build. We will make it available in Stable at the end of the October iteration. We are now inviting extension authors to update their extensions if they are impacted. To try it out, grab our Insiders build from [https://code.visualstudio.com/insiders](https://code.visualstudio.com/insiders).  Help for extension builders is also available in the VS Code Extenders Community Slack channel, you can [join via this link](https://vscode-dev-community.slack.com/join/shared_invite/enQtMjIxOTgxNDE3NzM0LWU5M2ZiZDU1YjBlMzdlZjA2YjBjYzRhYTM5NTgzMTAxMjdiNWU0ZmQzYWI3MWU5N2Q1YjBiYmQ4MzY0NDE1MzY).
 
 ## Synopsis
 
