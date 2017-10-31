@@ -92,7 +92,7 @@ We want VS Code to be a great tool for developing modern web applications with J
 We closely collaborate with TypeScript, see also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap) 
 
 * Organize imports, remove unused imports
-* tag completion in `jsx` and `tsx` files 
+* Tag completion in `jsx` and `tsx` files 
 * Investigate into improving TypeScript Source Maps so that they are more precise and includes variable mappings.
  
 #### Webpack
