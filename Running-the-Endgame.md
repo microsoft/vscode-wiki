@@ -4,21 +4,21 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 > Proactive communication is key to a smooth and successful endgame.
 
-- update iteration plan issue with the endgame schedule (see template below and potentially last month's schedule)
-  - ensure each plan item is linked to a test item
-- discuss the endgame schedule in Monday's planning call
-  - find an endgame buddy in the other lab
-  - determine the pool of testers and their availability
-- ensure each test item has meaningful content
-- assign test items to testers (usually platform specific); ensure fair distribution across testers ([see this example](https://microsoft.sharepoint.com/teams/DD_OTP/_layouts/OneNote.aspx?id=%2Fteams%2FDD_OTP%2FDocuments%2FTicino%2FNotebooks%2FTicino&wd=target%28Sprints.one%7C97CC4DED-1C83-4716-A6D1-C080F036F75D%2FJuneTest%20Load%20Balancer%7CBAABAED7-7FC1-6E47-A901-D2E514241DD6%2F%29))
-- communicate test assignments in the `release` slack channel by posting the test item queries ([example query](https://github.com/Microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22June+2016%22+is%3Aclosed))
-- communicate end of day progress in the `release` slack by communicating
+- Update iteration plan issue with the endgame schedule (see template below and potentially last month's schedule)
+  - Ensure each plan item is linked to a test item
+- Discuss the endgame schedule in Monday's planning call
+  - Find an endgame buddy in the other lab
+  - Determine the pool of testers and their availability
+- Ensure each test item has meaningful content
+- Assign test items to testers (usually platform specific); ensure fair distribution across testers ([see this example](https://microsoft.sharepoint.com/teams/DD_OTP/_layouts/OneNote.aspx?id=%2Fteams%2FDD_OTP%2FDocuments%2FTicino%2FNotebooks%2FTicino&wd=target%28Sprints.one%7C97CC4DED-1C83-4716-A6D1-C080F036F75D%2FJuneTest%20Load%20Balancer%7CBAABAED7-7FC1-6E47-A901-D2E514241DD6%2F%29))
+- Communicate test assignments in the `release` slack channel by posting the test item queries ([example query](https://github.com/Microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22June+2016%22+is%3Aclosed))
+- Communicate end of day progress in the `release` slack by communicating
    - the number of issues filed
    - the number of test items not yet completed ([example query](https://github.com/Microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22June+2016%22+is%3Aclosed))
    - number of issues to be [verified](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
-- assign owners to checklist items for each day (if not owned by the endgame master)
-- track progress on test items and checklist items
-- adjust schedule, particularly the publishing dates, based on defects found, fixes made, holidays, vacations, etc.
+- Assign owners to checklist items for each day (if not owned by the endgame master)
+- Track progress on test items and checklist items
+- Adjust schedule, particularly the publishing dates, based on defects found, fixes made, holidays, vacations, etc.
 
 ## Schedule Template
 - *Month/Day* Code freeze for the endgame
