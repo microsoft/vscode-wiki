@@ -33,11 +33,11 @@ However, we’re not done. You have asked for more flexibility in how you positi
 A key attribute of an 'editor' is performance and stability, if we add features at the expense of these fundamentals we risk losing a large part of what keeps us competitive in the 'editor' category.
 
 * Improve startup performance: keep start-up times within a predictable and suitable range for users across all platforms
-* Reduce resource/memory consumption: what can we do to reduce reduce and control resource consumption of helper processes
+* Reduce resource/memory consumption: what can we do to reduce and control resource consumption of helper processes
 * Continue to improve accessibility, e.g. of the terminal, of the menu bar on Windows
 * Support language packs for community-contributed translation 
 * Improve the Windows update experience
-* Improve servicability by providing additional diagnostics 
+* Improve serviceability by providing additional diagnostics 
 
 ### Workbench
 
