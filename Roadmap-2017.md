@@ -5,12 +5,7 @@ With a very successful 2016 behind us, now is the good time to look towards the 
 * **Node, JavaScript, and TypeScript:** On top of the core editor, we want to enable great end-to-end experiences for individual languages and frameworks. We build the Node, JavaScript, and TypeScript end-to-end experiences on top of the core platform and want to provide a great experience out of the box.
 * **A Rich Extension Ecosystem:** Because we cannot deliver an experience for every language, VS Code has a rich extensibility system which enables an ecosystem of great end-to-end experiences for the breadth of modern languages and frameworks such as C#, Go, Python, C++, and more. In fact, we deliver the Node, TypeScript, and JavaScript experience using the exact same public APIs ensuring that developers have consistent experiences across the breadth of languages they use. 
 
-VS Code will continue to ship monthly, and we'll make progress against each of the following themes during each iteration. We describe some initiatives as "investigations" which simply means our goal in the next few months is to better understand the problem and potential solutions before committing to real feature work. Once an investigation is done, we will update our plan, either deferring the initiative or committing to it. Initiatives described with a :muscle: are a stretch goal. 
-
-## Happy Coding with VS Code
-Over the past year, we have worked hard to eliminate core adoption blockers - the addition of Tabs and an Integrated Terminal are two good examples, but there is still work to do here. 
-Customers often tell us that the lack of multiple root folder workspaces means that they can't use VS Code as their day-to-day editor. We will continue to address missing features, we will continue to make it easy for first time users to instantly be productive with VS Code, and we'll continue to add new experiences to make VS Code even more pleasant to use.  
-
+VS Code will continue to ship monthly, and we'll make progress against each of the following themes during each iteration. We describe some initiatives as "investigations" which simply means our goal in the next few months is to better understand the problem and potential solutions before committing to real feature work. Once an investigation is done, we will update our plan, either deferring the initiative or committing to it.
 
 Legend of annotations:
 
@@ -21,6 +16,10 @@ Legend of annotations:
 | :runner: | on-going work |
 | :muscle: | stretch goal |
 
+
+## Happy Coding with VS Code
+Over the past year, we have worked hard to eliminate core adoption blockers - the addition of Tabs and an Integrated Terminal are two good examples, but there is still work to do here. 
+Customers often tell us that the lack of multiple root folder workspaces means that they can't use VS Code as their day-to-day editor. We will continue to address missing features, we will continue to make it easy for first time users to instantly be productive with VS Code, and we'll continue to add new experiences to make VS Code even more pleasant to use.  
 
 ### Workbench
 * [x] Support multiple root folder workspaces
