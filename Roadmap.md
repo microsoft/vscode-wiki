@@ -11,13 +11,24 @@ VS Code will continue to ship monthly, and we'll make progress against each of t
 Over the past year, we have worked hard to eliminate core adoption blockers - the addition of Tabs and an Integrated Terminal are two good examples, but there is still work to do here. 
 Customers often tell us that the lack of multiple root folder workspaces means that they can't use VS Code as their day-to-day editor. We will continue to address missing features, we will continue to make it easy for first time users to instantly be productive with VS Code, and we'll continue to add new experiences to make VS Code even more pleasant to use.  
 
+
+Legend of annotations:
+
+| Mark | Description |
+| ------------- | ------------- |
+| bullet | work not started |
+| check mark | work completed |
+| :runner: | on-going work |
+| :muscle: | stretch goal |
+
+
 ### Workbench
-* 🏃 Support multiple root folder workspaces
-* Support more flexible layouts, e.g., vertical panels
+* [x] Support multiple root folder workspaces
+* :runner: Support more flexible layouts, e.g., vertical panels
 * Improve UI notification system
 * [x] Improve key binding customization experience (hide keycodes, inconsistent command names from user)
 * [x] Support theming of the workbench
-* 🏃 Import, export of settings (VS Code as well as other tools) 
+* :runner: Import, export of settings (VS Code as well as other tools) 
 
 ### Core Editor
 * [x] Drag and drop
@@ -39,20 +50,20 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 * [x] Provide an API for TaskProviders so that extensions can contribute task detection for particular task runners
 
 ### Performance
-* :runner: Monitor and improve startup time (on-going)
+* :runner: Monitor and improve startup time
 
 ### Source Code Control
 * [x] SCM provider API
 * [x] Git support as an extension (ships with VS Code)
 * [x] Support partners building new SCM providers (e.g. Visual Studio Team Services)
 * [x] Support for merging changes
-* Enable Explorer decorations for SCM status (e.g. colorize modified files) 
+* [x] Enable Explorer decorations for SCM status (e.g. colorize modified files) 
 * Support to view incoming changes
 
 
 
 ### Accessibility
-* 🏃 Improve usability of VS Code using NVDA on Windows
+* :runner: Improve usability of VS Code using NVDA on Windows
 * Ensure all commands are accessible from the Command Palette
 * Ensure keyboard accessibility in all dialogs
 * [x] Narrator support (monaco-editor)
@@ -82,13 +93,13 @@ We want VS Code to be a great tool for developing modern MEAN/MERN applications 
 
 ### Node
 * [x] Provide Node/MEAN Extension packs
-* Update recommended Node extension triggers (e.g. on package.json, recommend Node extension pack)
+* Update recommended Node extension triggers (e.g. on `package.json`, recommend Node extension pack)
 * [x] Include the [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) extension functionality
 * Node Debugging
   * [x] Async stacks
   * [x] Column break points
-  * :muscle: into profiling support 
-* :muscle: Investigate a Mocha test runner
+  * :muscle: Investigate profiling support 
+* [x] Investigate a Mocha test runner
 * [x] Investigate MongoDB extension
  
 ## Extension creation, discovery, and management
@@ -96,7 +107,7 @@ Of course, VS Code is not just a Node, JavaScript, and TypeScript tool. Our rich
 
 ### For extension authors
 * Investigate support for extensions that need to install additional tools on first run (e.g. .NET Core debugger, Go tools)
-* 🏃 Continue to improve and expand extension samples
+* :runner: Continue to improve and expand extension samples
 * Add recently installed or recently updated extensions to the Welcome page, with links to open the extension's README
 * Support extensions contributing an interactive playground
 * Formalize HTML Preview API
@@ -104,15 +115,14 @@ Of course, VS Code is not just a Node, JavaScript, and TypeScript tool. Our rich
 
 ### For language extension authors
 * Enable language services to contribute semantic coloring
-* 🏃 Evolve the Language Server Protocol
+* :runner: Evolve the Language Server Protocol
 
 ### Provide users with more control over extension contributions
 * [x] Identify and resolve keybindings conflicts
 
 ### Contribute to Extensions
-* 🏃 [GO](https://github.com/microsoft/vscode-go)
-* 🏃 [Docker](https://github.com/microsoft/vscode-docker)
+* :runner: [GO](https://github.com/microsoft/vscode-go)
+* :runner: [Docker](https://github.com/microsoft/vscode-docker)
 
 ## Summary
 These are examples of just some of the work we will be focusing on in the next 6 to 12 months. We continuously tune the plan based on feedback and we will provide more detail in each of our monthly iteration plans. Please follow along and let us know what you think!
-
