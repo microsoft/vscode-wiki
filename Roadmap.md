@@ -74,7 +74,7 @@ We want VS Code to be a great tool for developing modern web applications with J
 ### Language Server Protocol
 
 * Continue to refine and improve to Language Server Protocol with support from the community.
-* [x] Enable proposed protocol additions from the community. 
+* [x] Enable [proposed protocol additions](https://github.com/Microsoft/language-server-protocol/blob/master/contributing.md) from the community. 
 
 ### Debug Adaptor Protocol
 
@@ -104,7 +104,6 @@ We closely collaborate with TypeScript, see also the [TypeScript roadmap](https:
 
 * Improve hovering and inline values by leveraging language knowledge
 * Support hot code replace for non-JS scenarios e.g. Java.
-* Ship the Chrome debugger extension out-of-the-box
 * Continue to invest in documenting debugging recipes for common configurations
  
 ## Extension creation, discovery, and management
