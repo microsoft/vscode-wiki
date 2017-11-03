@@ -23,7 +23,7 @@ _Example commands:_
 
 * Linux:
 
-`npm run smoketest -- --build /usr/share/code-insiders/bin/code-insiders`
+`npm run smoketest -- --build /usr/share/code-insiders/`
 
 **Troubleshooting:** Described in [smoke test readme](https://github.com/Microsoft/vscode/blob/master/test/smoke/README.md)
 
