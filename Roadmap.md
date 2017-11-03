@@ -119,7 +119,7 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
 * Simplify tracking down issues caused by installed extensions and make it easier to file issues
 * Show the user more information about the usage of a extension (startup time, error rate, etc.).
 
-### For extension author
+### For extension authors
 
 * Improve the language API to support a hierarchical navigation to the symbols in a document 
 * Make extension contributions attributable to an extension (e.g. error messages, commands)
