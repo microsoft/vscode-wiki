@@ -44,6 +44,7 @@ Here is a simple check list:
 * If your extension is making use of the (now deprecated) `workspace.rootPath` property to work on the currently opened folder, then you are affected. See the section 'Eliminating workspace.rootPath below'.
 * If your extension contributes settings then you should review whether some of the settings can be applied on a resource (= file location) level instead of being global. Resource settings are more powerful because a user can choose to configure settings differently per workspace folder. Similarly, if you do not contribute settings but you modify settings programmatically, then you should review that you modify the settings using the proper scope. See the 'Settings' section below.
 * If you are implementing a language server then you are affected since up to now a language server only had to handle a single folder. In the new multi-folder setup, a language server should be able to handle multiple folders. See the section 'Language Client/Language Server' below.
+* If you are implementing a debug adapter then you are most likely not affected because a debug adapter cannot access the extension APIs and debug configuration variables like `workspaceFolder` (or the deprecated `workspaceRoot`) are already resolved into full paths before they reach the debug adapter.
 
 ## Eliminating `rootPath`
 
