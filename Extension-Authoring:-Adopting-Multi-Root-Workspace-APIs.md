@@ -159,32 +159,32 @@ To declare a setting scope, simply define the scope as part of your setting from
 
 ```json
 "contributes": {
-    "configuration": [
-			{
-				"title": "Configuration Samples",
-				"properties": {
-					"conf.view.showOnWindowOpen": {
-						"type": "string",
-						"enum": [
-							"explorer",
-							"search",
-							"scm",
-							"debug",
-							"extensions"
-						],
-						"default": "explorer",
-						"description": "Window configuration: View to show always when a window opens",
-						"scope": "window"
-					},
-					"conf.resource.insertEmptyLastLine": {
-						"type": "object",
-						"default": {},
-						"description": "Resource configurtion: Configure files using glob patterns to have an empty last line always",
-						"scope": "resource"
-					}
-				}
-			}
-		]
+  "configuration": [
+    {
+      "title": "Configuration Samples",
+      "properties": {
+        "conf.view.showOnWindowOpen": {
+          "type": "string",
+          "enum": [
+            "explorer",
+            "search",
+            "scm",
+            "debug",
+            "extensions"
+          ],
+          "default": "explorer",
+          "description": "Window configuration: View to show always when a window opens",
+          "scope": "window"
+        },
+        "conf.resource.insertEmptyLastLine": {
+          "type": "object",
+          "default": {},
+          "description": "Resource configurtion: Configure files using glob patterns to have an empty last line always",
+          "scope": "resource"
+        }
+      }
+    }
+  ]
 }
 ```
 
