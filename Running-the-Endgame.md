@@ -29,6 +29,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ##### Monday
 - [ ] If there were any new extensions pulled into the core product, add them to the list in the next 2 points about shrink-wrap and OSSREADME **@owner**
+- [ ] Let Daniel Ye (danyeh@microsoft.com) know that you are the end game master to merge in translations **@owner**
 - [ ] Update shrink-wrap files for built-in extensions if needed (see [instructions](https://github.com/Microsoft/vscode/issues/8570#issuecomment-229669456))
    - [ ] typescript **@mjbvz** 
    - [ ] javascript **@mjbvz**
@@ -101,6 +102,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ##### Friday/Monday
 - [ ] Branch code to `release/<x.y> **@owner**
 - [ ] Announce master is open for business **@owner**
+- [ ] Let Daniel Ye know that the release branch `release/<x.y>` got created and that translation should be pulled from there and that the pull request has to be created against that branch **@owner** 
 - [ ] Polish release notes **@redmond**
 
 ##### Monday - Wednesday
@@ -108,6 +110,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **@owner**
 - [ ] Build `Insider` from `release/<x.y>` **@owner**
 - [ ] Manually release `Insider` **@owner**
+- [ ] Merge the translation pull request into the release/<x.y> and master branch **@owner**
 
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
 
