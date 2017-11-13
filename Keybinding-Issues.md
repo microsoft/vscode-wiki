@@ -18,10 +18,10 @@ This page documents workarounds for known issues related to VS Code keybindings 
 
 ### Troubleshoot Linux Keybindings
 
-  * Are you connecting to the Linux machine via some form of virtualization or remote desktoping software?
+  * Are you connecting to the Linux machine via some form of virtualization or remote desktop software?
     * **symptoms**: e.g. pressing `AltGr` acts as `Backspace`, pressing `C` acts as `ArrowLeft`, etc.
     * **solution**: use `"keyboard.dispatch": "keyCode"` in your settings and restart VS Code.
-    * **explanation**: VS Code on Linux dispatches keybindings using scan codes to accomodate various keyboard layouts. This works well when sitting physically at the machine and the OS is the one creating keyboard events, but some virtualization / remote desktoping software create keyboard events with incorrect scan codes.
+    * **explanation**: VS Code on Linux dispatches keybindings using scan codes to accomodate various keyboard layouts. This works well when sitting physically at the machine and the OS is the one creating keyboard events, but some virtualization / remote desktop software creates keyboard events with incorrect scan codes.
 
   * Are you switching keyboard layouts while VS Code is running?
     * **symptoms**: VS Code keybindings reflect the keyboard layout that was active when VS Code was launched.
@@ -34,7 +34,7 @@ This page documents workarounds for known issues related to VS Code keybindings 
     * **solution 1**: make sure `setxkbmap -query` returns as the first keyboard layout the one you want to work with in VS Code.
     * **solution 2**: use `"keyboard.dispatch": "keyCode"` in your settings and restart VS Code. This will prevent VS Code from trying to determine your keyboard layout whatsoever.
     * **explanation**: Switching keyboard layouts under some Linux window managers does not result in a change in the low level X window APIs VS Code uses to read the current keyboard layout. This means that VS Code ends up sometimes reading one of the other configured keyboard layouts and not the current active one. PR welcome: [#23505](https://github.com/Microsoft/vscode/issues/23505), [#24166](https://github.com/Microsoft/vscode/issues/24166)
-  
+
   * Are you customizing keyboard mappings via `setxkbmap` or equivalents?
     * **symptoms**: customizations done via `setxkbmap` or equivalents have no effect in VS Code.
     * **solution**: use `"keyboard.dispatch": "keyCode"` in your settings and restart VS Code.
@@ -46,7 +46,7 @@ This page documents workarounds for known issues related to VS Code keybindings 
     * **explanation**: VS Code only looks at scan codes that usually produce printable characters in determining what scan codes to listen to. [Ideas and PR welcome - #24043](https://github.com/Microsoft/vscode/issues/24043)
 
   * An important action is not mapped to a good keybinding by default.
-    * **symptomps**: e.g. the Toggle Integrated Terminal action has no default keybinding on the Ukrainian keyboard layout, the Comment Line action is bound to `ctrl+shift+7` on the German keyboard layout.
+    * **symptoms**: e.g. the Toggle Integrated Terminal action has no default keybinding on the Ukrainian keyboard layout, the Comment Line action is bound to `ctrl+shift+7` on the German keyboard layout.
     * **solution**: use the Keybinding UI or `keybindings.json` file to define a custom keybinding that suits your needs.
     * **explanation**: VS Code does not ship with default keybindings optimized per keyboard layout. For example, ``ctrl + ` `` cannot be mapped by VS Code automatically to a scan code on the Ukrainian keyboard layout because no modifier + scan code combination produces `` ` `` on the Ukrainian keyboard layout. You can upvote in [issue #1240](https://github.com/Microsoft/vscode/issues/1240).
 
@@ -62,7 +62,7 @@ This page documents workarounds for known issues related to VS Code keybindings 
     * **explanation**: using custom keyboard layouts with their own sub-layouts cannot be detected by VS Code because the keyboard layout reports the same identifier when the sub-layout is changed.
 
   * Are you using an external ISO keyboard attached to a laptop with an ANSI keyboard?
-    * **symptomps**: `[Backquote]` and `[IntlBackslash]` are "swapped".
+    * **symptoms**: `[Backquote]` and `[IntlBackslash]` are "swapped".
     * **solution**: press a key on the keyboard you want to use. Wait up to 3s and VS Code should catch up.
     * **explanation**: On ISO keyboards, OSX swaps the scan codes for `[Backquote]` and `[IntlBackslash]`. We respect this swapping. However, Chromium, in order to stay w3c spec compliant, decided to unswap the two scan codes. We cannot detect when Chromium unswaps the scan codes on a keyboard event basis, we need to poll and check if the last keyboard event came from an ISO keyboard and then expect that Chromium swaps the scan codes such that we can un-un-swap them. [Read more in issue #26506](https://github.com/Microsoft/vscode/issues/26506)
 
@@ -72,7 +72,7 @@ This page documents workarounds for known issues related to VS Code keybindings 
     * **explanation**: VS Code only looks at scan codes that usually produce printable characters in determining what scan codes to listen to. [Ideas and PR welcome - #24043](https://github.com/Microsoft/vscode/issues/24043)
 
   * An important action is not mapped to a good keybinding by default.
-    * **symptomps**: e.g. the Toggle Integrated Terminal action has no default keybinding on the Ukrainian keyboard layout, the Comment Line action is bound to `ctrl+shift+7` on the German keyboard layout.
+    * **symptoms**: e.g. the Toggle Integrated Terminal action has no default keybinding on the Ukrainian keyboard layout, the Comment Line action is bound to `ctrl+shift+7` on the German keyboard layout.
     * **solution**: use the Keybinding UI or `keybindings.json` file to define a custom keybinding that suits your needs.
     * **explanation**: VS Code does not ship with default keybindings optimized per keyboard layout. For example, ``ctrl + ` `` cannot be mapped by VS Code automatically to a scan code on the Ukrainian keyboard layout because no modifier + scan code combination produces `` ` `` on the Ukrainian keyboard layout. You can upvote in [issue #1240](https://github.com/Microsoft/vscode/issues/1240).
 
@@ -83,7 +83,7 @@ This page documents workarounds for known issues related to VS Code keybindings 
 ### Troubleshoot Windows Keybindings
 
   * An important action is not mapped to a good keybinding by default.
-    * **symptomps**: e.g. an important action has no keybinding on a specific keyboard layout out of the box or it is an unfortunate one.
+    * **symptoms**: e.g. an important action has no keybinding on a specific keyboard layout out of the box or it is an unfortunate one.
     * **solution**: use the Keybinding UI or `keybindings.json` file to define a custom keybinding that suits your needs.
     * **explanation**: VS Code does not ship with default keybindings optimized per keyboard layout. Keyboard layouts under Windows are free to more, remove, or add a set of key codes and it is possible that under your keyboard layout a specific key code, e.g. `VK_OEM_3` is not used. You can upvote in [issue #1240](https://github.com/Microsoft/vscode/issues/1240).
 
@@ -93,17 +93,17 @@ This page documents workarounds for known issues related to VS Code keybindings 
 ### Troubleshoot generic Keybindings
 
   * When I press a key combination, VS Code does not react
-    * **symptomps**: e.g. `ctrl+alt+up` does not add a cursor up, it rotates the screen.
+    * **symptoms**: e.g. `ctrl+alt+up` does not add a cursor up, it rotates the screen.
     * **solution**: check what key combination we receive from the OS. If we don't receive a good key combination, you need to configure your OS or drivers to release that key combination to applications. e.g.:
    ![keyboard-input](https://cloud.githubusercontent.com/assets/5047891/25478333/fe31c830-2b40-11e7-865c-b2c3bb10dd75.gif)
 
   * A keybinding does something unexpected.
-    * **symptomps**: e.g. `cmd+q` does not quit on mac.
+    * **symptoms**: e.g. `cmd+q` does not quit on mac.
     * **solution**: identify and remove the keybinding rule that runs on that specific keypress. run `code --disable-extensions` or try to identify the keybinding rule that you don't like and remove it via the Keybindings UI or via editing directly `keybindings.json`. The keybindings contributed by extensions are always near the bottom of the Default keybindings.json file.
     * **explanation**: VS Code extensions can overwrite the defaults VS Code ships with. We do our best to present only valid keybindings in dialogs and hovers, but sometimes a keybinding rule contributed by an extension *shadows* a built-in rule in a certain context.
 
   * I cannot type a character via `AltGr+Key` or `Alt+Key` or `Ctrl+Alt+Key`
-    * **symptomps**: e.g. I cannot type `[` via `AltGr+8` on the German keyboard layout.
+    * **symptoms**: e.g. I cannot type `[` via `AltGr+8` on the German keyboard layout.
     * **solution**: identify and remove the keybinding rule that runs on that specific keypress. run `code --disable-extensions` or try to identify the keybinding rule that you don't like and remove it via the Keybindings UI or via editing directly `keybindings.json`. The keybindings contributed by extensions are always near the bottom of the Default keybindings.json file. e.g. `{ "key": "ctrl+alt+8" }` in `keybindings.json` will completely free up that keypress.
     * **explanation**: VS Code does not contain default keybindings that are of the form `ctrl+alt+Key` on Windows, since these might produce vital characters. Some extensions, however, do not do so. You are in total control of the keybinding rules and you can remove the ones you don't want.
 
