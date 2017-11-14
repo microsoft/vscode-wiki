@@ -207,11 +207,11 @@ An extension author, you should have following two perspectives while defining a
 
 While extension development, we provide some run time assistance by logging warnings when we detect the extension is accessing configuration not in an expected way. Following are the diagnostics we show and actions to be taken when you see them.
 
-> [ext.name]: Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '<key>', provide the URI of a resource or 'null' for any resource.
+> [ext.name]: Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '${key}', provide the URI of a resource or 'null' for any resource.
 
 It is suggested to pass in a resource when you are accessing a resource scoped configuration. In case of getting the value for any resource, pass `null` for resource.
 
-> [ext.name]: Accessing a window scoped configuration for a resource is not expected. To associate '<key>' to a resource, define its scope to 'resource' in configuration contributions in 'package.json'.
+> [ext.name]: Accessing a window scoped configuration for a resource is not expected. To associate '${key}' to a resource, define its scope to 'resource' in configuration contributions in 'package.json'.
 
 - If they are not resource scoped settings, you do not need to pass in a resource while accessing the setting.
 
