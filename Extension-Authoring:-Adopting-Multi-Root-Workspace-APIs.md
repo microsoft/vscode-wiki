@@ -203,6 +203,20 @@ An extension author, you should have following two perspectives while defining a
 
 2. **Extension author:** Extension author's main purpose is to define a setting and read its value and apply it. As mentioned before now, there is a new target `Folder Settings` where a resource scoped setting can only be customisable. So extension author should be knowing if a setting is associated to a resource or not and thereby, classify the setting. If it is a resource setting, ask for the value of the setting by passing the resource for which the value has to be applied. Otherwise you can just ask for the value without passing any resource. API will give you back the value user customised for this setting.
 
+### Run time Diagnostics
+
+While extension development, we provide some run time assistance by logging warnings when we detect the extension is accessing configuration not in an expected way. Following are the diagnostics we show and actions to be taken when you see them.
+
+> [ext.name]: Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '<key>', provide the URI of a resource or 'null' for any resource.
+
+It is suggested to pass in a resource when you are accessing a resource scoped configuration. In case of getting the value for any resource, pass `null` for resource.
+
+> [ext.name]: Accessing a window scoped configuration for a resource is not expected. To associate '<key>' to a resource, define its scope to 'resource' in configuration contributions in 'package.json'.
+
+- If they are not resource scoped settings, you do not need to pass in a resource while accessing the setting.
+
+- If they are resource scoped settings, you have to define them as Resource scoped while registering in the package.json
+
 Refer to [Configuration Sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/configuration-sample) extension for more information.
 
 ## Language Client / Language Server
