@@ -17,7 +17,7 @@ Here's what you need to do to pull your changes into VS Code:
   ```bash
   git clone https://github.com/Tyriar/xterm.js
   cd xterm.js
-  git checkout vscode-release/1.14 # whatever version 
+  git checkout vscode-release/1.14 # whatever version
   git remote add branch_source https://github.com/<yourname>/xterm.js
   git fetch branch_source
   git merge branch_source/<pr_branch>

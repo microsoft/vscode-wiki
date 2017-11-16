@@ -28,18 +28,18 @@ To build for a target architecture different than the host (e.g. using x64 to bu
    export CC=$(which arm-linux-gnueabihf-gcc)
    export CXX="$(which arm-linux-gnueabihf-g++) -L$(pwd)/rootfs/usr/lib/arm-linux-gnueabihf/"
    ```
-  
+
    *note the -L linker argument pointing to the absolute path of libx11 on the chroot/rootfs*
 
 2. install prerequisites for the target architecture:
 
    ```
-   scripts/npm.sh install --arch=armhf
+   yarn --arch=armhf
    ```
 
 3. create a .deb file for easy installation on the target device:
 
    ```
-   npm run gulp vscode-linux-arm-min
-   npm run gulp vscode-linux-arm-build-deb
+   yarn run gulp vscode-linux-arm-min
+   yarn run gulp vscode-linux-arm-build-deb
    ```

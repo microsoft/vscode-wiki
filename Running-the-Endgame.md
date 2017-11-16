@@ -31,24 +31,24 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] If there were any new extensions pulled into the core product, add them to the list in the next 2 points about shrink-wrap and OSSREADME **@owner**
 - [ ] Let Daniel Ye (danyeh@microsoft.com) know that you are the end game master to merge in translations **@owner**
 - [ ] Update shrink-wrap files for built-in extensions if needed (see [instructions](https://github.com/Microsoft/vscode/issues/8570#issuecomment-229669456))
-   - [ ] typescript **@mjbvz** 
+   - [ ] typescript **@mjbvz**
    - [ ] javascript **@mjbvz**
-   - [ ] php **@mousetraps** 
+   - [ ] php **@mousetraps**
    - [ ] markdown **@mjbvz**
-   - [ ] json **@aeschli** 
-   - [ ] css **@aeschli** 
-   - [ ] configuration-editing **@jrieken** 
+   - [ ] json **@aeschli**
+   - [ ] css **@aeschli**
+   - [ ] configuration-editing **@jrieken**
    - [ ] node-debug **@weinand**
    - [ ] node-debug2 **@roblourens**
    - [ ] emmet **@ramya-ray-a**
-- [ ] Update `OSSREADME.json` for built-in extensions based on differences to generated `npm-shrinkwrap.json` files if needed
-   - [ ] typescript **@mjbvz** 
+- [ ] Update `OSSREADME.json` for built-in extensions based on differences to `yarn-lock` files if needed
+   - [ ] typescript **@mjbvz**
    - [ ] javascript **@mjbvz**
-   - [ ] php **@mousetraps** 
-   - [ ] markdown **@mjbvz** 
-   - [ ] json **@aeschli** 
-   - [ ] css **@aeschli** 
-   - [ ] configuration-editing **@jrieken** 
+   - [ ] php **@mousetraps**
+   - [ ] markdown **@mjbvz**
+   - [ ] json **@aeschli**
+   - [ ] css **@aeschli**
+   - [ ] configuration-editing **@jrieken**
    - [ ] node-debug **@weinand**
    - [ ] node-debug2 **@roblourens**
    - [ ] emmet **@ramya-ray-a**
@@ -102,7 +102,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ##### Friday/Monday
 - [ ] Branch code to `release/<x.y> **@owner**
 - [ ] Announce master is open for business **@owner**
-- [ ] Let Daniel Ye know that the release branch `release/<x.y>` got created and that translation should be pulled from there and that the pull request has to be created against that branch **@owner** 
+- [ ] Let Daniel Ye know that the release branch `release/<x.y>` got created and that translation should be pulled from there and that the pull request has to be created against that branch **@owner**
 - [ ] Polish release notes **@redmond**
 
 ##### Monday - Wednesday
@@ -155,7 +155,7 @@ We release a recovery build with a handful of critical fixes and translation upd
 - [ ] Include an issue 'update translations' **@owner**
 - [ ] Assign candidate issues to the recovery milestone **@team**
 - [ ] Review the `candidate` issues, and if they pass the review assign them to the recovery milestone **@team**
-- [ ] All `candiate` fixes are peer reviewed and pushed to `master` and then cherry-picked into the release branch **@team** 
+- [ ] All `candiate` fixes are peer reviewed and pushed to `master` and then cherry-picked into the release branch **@team**
 - [ ] Initiate `insiders` build from `master`
 - [ ] Issues are tested in the `insiders` **@team**
 - [ ] Build `stable` for all platforms from release branch **@owner**
@@ -183,7 +183,7 @@ We release a recovery build with a handful of critical fixes and translation upd
 - [ ] Publish website **@gregvanl**
 - [ ] Publish stable build **@owner**
 - [ ] Publish deb and rpms to repositories manually **@Tyriar**
-- [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`   
+- [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`
 
 ### OS Test Availability
 
@@ -206,8 +206,8 @@ We release a recovery build with a handful of critical fixes and translation upd
 | Martin        | @aeschli       |  x    |  x  |    x    |
 | Peng          | @rebornix      |  x    |  x  |    x    |
 | Sara          | @mousetraps    |  x    |  x  |    x    |
-| Ramya         | @ramya-rao-a   |  x    |  x  |    x    | 
-| Matt          | @mjbvz         |  x    |  x  |    x    | 
+| Ramya         | @ramya-rao-a   |  x    |  x  |    x    |
+| Matt          | @mjbvz         |  x    |  x  |    x    |
 | Rob           | @roblourens    |  x    |  x  |    x    |
 | Sandeep       | @sandy081      |  x    |  x  |    x    |
 | Sean          | @seanmcbreen   |  x    |  x  |    x    |
