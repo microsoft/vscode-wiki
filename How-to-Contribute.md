@@ -19,7 +19,7 @@ git clone https://github.com/Microsoft/vscode.git
 
 - [Git](https://git-scm.com)
 - [Node.JS](https://nodejs.org/en/), at least version 8
-- [Yarn](https://yarnpkg.com/en/), simply run `npm i -g yarn`
+- [Yarn](https://yarnpkg.com/en/), follow the [installation guide](https://yarnpkg.com/en/docs/install)
 - [Python](https://www.python.org/downloads/), at least version 2.7 (version 3 is __*not*__ supported)
 - C/C++ compiler tool chain
   - **Windows**
