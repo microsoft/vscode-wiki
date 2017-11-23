@@ -32,7 +32,7 @@ However, we’re not done. You have asked for more flexibility in how you positi
 
 A key attribute of an 'editor' is performance and stability, if we add features at the expense of these fundamentals we risk losing a large part of what keeps us competitive in the 'editor' category.
 
-* Improve startup performance: keep start-up times within a predictable and suitable range for users across all platforms
+* :runner: Improve startup performance: keep start-up times within a predictable and suitable range for users across all platforms
 * Reduce resource/memory consumption: what can we do to reduce and control resource consumption of helper processes
 * Continue to improve accessibility, e.g. of the terminal, of the menu bar on Windows
 * Support language packs for community-contributed translation 
@@ -41,9 +41,9 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 
 ### Workbench
 
-* :runner: Finish Multi-root folder Workspaces support and support extension authors in adopting it
+* [x] Finish Multi-root folder Workspaces support and support extension authors in adopting it
 * [x] Show SCM status in the explorer (including `.gitignored` files)
-* :runner: Support vertical panel layout
+* [x] Support vertical panel layout
 * Support multi-selection in the  explorer for common actions e.g. delete
 * Improve intra-file navigation (outline, bread crumb)
 * Improve notification UI
@@ -73,12 +73,12 @@ We want VS Code to be a great tool for developing modern web applications with J
 
 ### Language Server Protocol
 
-* Continue to refine and improve to Language Server Protocol with support from the community.
+* :runner: Continue to refine and improve to Language Server Protocol with support from the community.
 * [x] Enable [proposed protocol additions](https://github.com/Microsoft/language-server-protocol/blob/master/contributing.md) from the community. 
 
 ### Debug Adaptor Protocol
 
-* Continue to refine and improve to Debug Adapter Protocol with support from the community.
+* :runner: Continue to refine and improve to Debug Adapter Protocol with support from the community.
 * Expose more UI for DAP features that are currently not surfaced in the VS Code debugging UI. This includes moving the loaded scripts UI into the core. 
 
 
@@ -104,7 +104,7 @@ We closely collaborate with TypeScript, see also the [TypeScript roadmap](https:
 
 * Improve hovering and inline values by leveraging language knowledge
 * Support hot code replace for non-JS scenarios e.g. Java.
-* Continue to invest in documenting debugging recipes for common configurations
+* :runner: Continue to invest in documenting debugging recipes for common configurations
  
 ## Extension creation, discovery, and management
 
@@ -123,7 +123,7 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
 
 * Improve the language API to support a hierarchical navigation to the symbols in a document 
 * Make extension contributions attributable to an extension (e.g. error messages, commands)
-* :runner: Support migrating the publisher of an extension to another publisher
+* [x] Support migrating the publisher of an extension to another publisher
 * Investigate contributing explorer viewlets as a first class element in the activity bar
 * Investigate Quick pick improvements (e.g. multi-step, forms, commands, grouping)
 * :runner: Continue to invest into API that enables remote development 
@@ -133,7 +133,7 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
 ## Documentation
 
 - Make it easier for extension authors to find their way around. Improve our API documentation, and integrate samples and documentation more closely. 
-- Refresh all of our dated overview videos. 
+- :runner: Refresh all of our dated overview videos. 
 - We will constantly review poorly performing pages and improve them.
  
 ## Summary
