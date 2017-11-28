@@ -9,7 +9,6 @@ This page documents how you can help us to track down performance issues. It con
 To help us narrow down the issue please include answers for the following questions:
 - What is the size of your workspace/project (how many files)? 
 - What languages are used in this project?
-- Do you run Code on a single-CPU environment (e.g. VM)? We know that processes can go crazy and startup times can be super slow.
 - Which Code process consumes the most resources? VS Code is a multi process architecture and we need to know which process is causing the issue. You can identify the process based on the command line arguments that were used to start the process. 
   - On Mac/Linux, we recommend to use the [htop](http://hisham.hm/htop/) process viewer. You can also use the **Activity Monitor** to find the `PID` of the process and from a terminal you can run `ps aux | grep <pid>` to find its arguments. 
 ![image](https://cloud.githubusercontent.com/assets/900690/18907063/65806550-856a-11e6-8b2e-83da9111445d.png).
