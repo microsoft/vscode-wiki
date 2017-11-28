@@ -26,6 +26,8 @@ git clone https://github.com/Microsoft/vscode.git
     - Set a `PYTHON` environment variable pointing to your `python.exe`. Eg: `C:\Python27\python.exe`
     - [Visual Studio 2013 for Windows Desktop](https://www.visualstudio.com/en-us/news/vs2013-community-vs.aspx?wt.mc_id=github_microsoft_vscode) or [Visual Studio 2015](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx?wt.mc_id=github_microsoft_vscode), make sure to select the option to install all C++ tools and the Windows SDK.
     - You can also use Felix Rieseberg's [Windows Build Tools npm module](https://github.com/felixrieseberg/windows-build-tools) instead of Visual Studio
+  - **Windows Linux Subsystem (WSL)**
+    - *This platform is not currently supported. Merely re-implementing install steps for Linux **will not be successful**. The blocking issues are being tracked in https://github.com/Microsoft/WSL/issues/2293*
   - **OS X**
     - [Xcode](https://developer.apple.com/xcode/downloads/) and the Command Line Tools (Xcode -> Preferences -> Downloads), which will install `gcc` and the related toolchain containing `make`
   - **Linux**
