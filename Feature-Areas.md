@@ -16,16 +16,15 @@ In addition there can be feature sub areas which are colored light blue.
 |php|PHP support||
 |typescript|TypeScript support||
 |||
-|workbench|overall workbench UI|themes, workbench-tabs, color-palette, keybindings, proxy, webview, telemetry|
+|workbench|overall workbench UI|themes, workbench-tabs, editor groups, color-palette, keybindings, proxy, webview, telemetry|
 |explorer-files|explorer and general file management|explorer-custom|
 |git|git support||
 |debug|debugging, launching support||
 |search|full text search support||
-|editor|vscode editor support|brackets, monaco-editor, diff-editor,editor-contrib, editor-core-commands, editor-core-settings, editor-core-view, editor-multicursor, find-widget, folding, intellisense, ligatures, snippets, tokenization, intellisense???, VIM|
+|editor|vscode editor support|brackets, monaco-editor, diff-editor,editor-contrib, editor-core-commands, editor-core-settings, editor-core-view, editor-multicursor, find-widget, folding, intellisense, ligatures, snippets, tokenization, intellisense, VIM enablement|
 |task|task support||
 |error-list|the error list||
 |integrated-terminal|integrated terminal panel||
-|hot-exit|hot exit||
 |extensions|extension UI, details, install|marketplace|
 |||
 |api|vscode extension API||
