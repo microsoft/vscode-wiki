@@ -35,9 +35,9 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 * :runner: Improve startup performance: keep start-up times within a predictable and suitable range for users across all platforms
 * Reduce resource/memory consumption: what can we do to reduce and control resource consumption of helper processes
 * Continue to improve accessibility, e.g. of the terminal, of the menu bar on Windows
-* Support language packs for community-contributed translation 
+* :runner: Support language packs for community-contributed translation 
 * Improve the Windows update experience
-* Improve serviceability by providing additional diagnostics 
+* :runner: Improve serviceability by providing additional diagnostics 
 
 ### Workbench
 
@@ -46,7 +46,7 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 * [x] Support vertical panel layout
 * Support multi-selection in the  explorer for common actions e.g. delete
 * Improve intra-file navigation (outline, bread crumb)
-* Improve notification UI
+* :runner: Improve notification UI
 * :runner: Investigate improved settings discovery and editing
 * Allow users to manage contributions to the status bar: show, hide, reorder, overflow design
  
@@ -115,9 +115,9 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
 ### For extension users
 
 * :runner: Improve extension recommendation system
-* Improve extension searching 
-* Simplify tracking down issues caused by installed extensions and make it easier to file issues
-* Show the user more information about the usage of a extension (startup time, error rate, etc.).
+* Improve searching for extensions 
+* :runner: Simplify tracking down issues caused by installed extensions and make it easier to file issues
+* :runner: Show the user more information about the usage of a extension (startup time, error rate, etc.).
 
 ### For extension authors
 
