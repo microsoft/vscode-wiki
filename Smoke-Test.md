@@ -12,7 +12,8 @@ This page describes the VS Code Smoke test, an automatic and a manual test cases
 ### Running
 1. Download current released stable and to-be-released latest VS Code.
 1. Execute the following command to run the smoke test:
-`npm run smoketest -- --build path/to/latest/binary`. 
+`npm run smoketest -- --build path/to/latest/binary`.
+1. **Under Windows** do not interact with the machine while the smoke test is running 
 
 _Example commands:_
 * Windows:
