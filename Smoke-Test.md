@@ -2,6 +2,8 @@ This page describes the VS Code Smoke test, an automatic and a manual test cases
 
 ## Automated Smoke Test
 ### Prerequisites
+* Pull latest from vscode
+* Run yarn install
 * Update stable and the testable VS Code to theirs latest versions.
 * Close all VS Code instances that will be used in a test (e.g. latest insiders, stable), not to have any interference with the running test that will spawn them itself.
 * Switch to US-International keyboard layout (due to #27841) if you are on any other layout.
@@ -15,7 +17,7 @@ This page describes the VS Code Smoke test, an automatic and a manual test cases
 _Example commands:_
 * Windows:
 
-`npm run smoketest -- --build "C:\Program Files\Microsoft VS Code Insiders\Code - Insiders.exe"`
+`npm run smoketest -- --build "C:\Program Files\Microsoft VS Code Insiders"`
 
 * OS X:
 
