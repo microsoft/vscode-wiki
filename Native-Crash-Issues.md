@@ -31,7 +31,7 @@ On Windows, you will need to install a program in order to collect more informat
 ![image](https://user-images.githubusercontent.com/900690/33835702-9b6766ce-de87-11e7-8822-9e4d1bcaa87e.png)
 * finish the wizard by stepping through without changing any option but note the directory that is picked to store dumps
 * wait until the crash happens
-* check for the contents of the crash folder (e.g. `C:\Program Files\DebugDiag\Logs\Crash rule for process id 9624`)
+* check for the contents of the crash folder (e.g. `C:\Program Files\DebugDiag\Logs\Crash rule for all instances of Code.exe`)
 * if the crash was recorded you should see a very large file (`*.dmp`) and a `*_log.txt` file with the same process ID
 * attach the smaller `*_log.txt` file
 
