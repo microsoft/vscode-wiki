@@ -5,6 +5,7 @@
 * [[Issue Tracking]]
   * [[Performance Issues]]
   * [[Keybinding Issues]]
+  * [[Native Crash Issues]]
 * [[Release Process]]
 * [[Running the Endgame]]
 * [[Related Projects]]
