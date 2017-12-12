@@ -36,4 +36,15 @@ On Windows, you will need to install a program in order to collect more informat
 * attach the smaller `*_log.txt` file
 
 ## Linux
-Please check the contents of `/var/crash` for crash dumps. 
+On Linux we need to temporarily increase the limit for crash dumps. From a terminal:
+* run `ulimit -c unlimited`
+* then start code from the terminal
+* wait for the crash
+* watch for a file called `core` produced in the current working directory
+
+With the core dump in hand we can use `gdb` to find out more about the crash:
+* run `gdb <path to code binary> <path to core>`
+* from the GDB session type bt
+* attach the output, you should see a full stacktrace like the one in the image below:
+
+![image](https://user-images.githubusercontent.com/900690/33883192-43ba0026-df3b-11e7-8ebc-e21f59058990.png)
