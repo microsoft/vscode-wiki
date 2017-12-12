@@ -2,10 +2,11 @@
 
 **Note:** this document assumes you are running VS Code version 1.19 or newer. For older versions please refer to [[Performance Issues (old)]]
 
-This page documents how you can help us to track down performance issues. It contains:
+This page documents how you can help us to track down performance issues:
 - Collect information about the running VS Code
-- Experiments you can make to reproduce and narrow down 
-- How to create performance profiles you can provide to us for further analysis.
+- Tracking down issues with extensions
+- Tracking down issues in the main renderer/window process
+- Tracking down slow startup issues
 
 ### Collect Information about the running VS Code
 
@@ -50,16 +51,34 @@ To analyze the performance yourself:
 
 ### The Renderer/Window process consumes a lot of CPU
 
+![image](https://user-images.githubusercontent.com/172399/33888504-89fde40a-df4d-11e7-90f4-bff73c281ec8.png)
 
-- Try to reproduce the problem on different folders; a folder with less files, a folder that is not under source control, or open a single file.
+Try to reproduce the problem on different folders; a folder with less files, a folder that is not under source control, or open a single file.
 
-- Try to reproduce the issue in the VS Code **Insider** version. This will run our latest code and use a different setup (settings, extensions). You can install the insider version here https://code.visualstudio.com/insiders.
+Try to reproduce the issue in the VS Code **Insider** version. This will run our latest code and use a different setup (settings, extensions). You can install the insider version here https://code.visualstudio.com/insiders.
 
-- Run VS Code when your settings are reset/empty. Open your settings, copy your customizations and then emtpy the JSON contents so that only `{}` is left.
+Run VS Code when your settings are reset/empty. Open your settings, copy your customizations and then emtpy the JSON contents so that only `{}` is left.
 
-- Run VS Code in verbose mode and check whether there is any suspicious output in the console or the developer tools. You start VS Code in verbose mode with `code --verbose`. Also open the DevTools ("Help>Toggle Developer Tools") and open the console there.
+Run VS Code in verbose mode and check whether there is any suspicious output in the console or the developer tools. You start VS Code in verbose mode with `code --verbose`. Also open the DevTools ("Help>Toggle Developer Tools") and open the console there.
 
-### Read Startup Timers
+When you cannot share the workspace exposing the problem with us, then you can help us by providing performance profiles that we can analyze:
+
+Finally, please create a CPU profile of the VS Code core (_renderer_ process) and attach it to the issue. To create a profile:
+  -  Execute "F1 > Toggle Developer Tools." In the overflow menu of the developer tools <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
+  - Select 'More Tools > JavaScript Profiler'. In there select start.
+  - Let it profile for 30 to 60 seconds, stop it.
+  - When the performance issue happens on startup, start the profiler and then reload the window using "F1>Reload Window."
+  - Save the profile to a file and attach the file to your issue. 
+
+### Slow startup 
+
+If VS Code is slow to start then please create a startup CPU profile. Do the following
+  - Make sure to only have one window open
+  - Quit VS Code (Cmd+Q for Mac, closing the last window on Linux/Windows)
+  - Start VS Code from the command line like so `code --prof-startup`
+  - VS Code will start and create two profile-files in your home-directory. Please attach these files to your issue or create a new issue with these two files
+
+#### Read Startup Timers
 
 When VS Code feels slow to start you can check the startup timers. Hit "F1" and select "Startup Performance". This will open developer tools and print some startup stats onto the the "Console". 
 
@@ -67,23 +86,4 @@ When VS Code feels slow to start you can check the startup timers. Hit "F1" and 
 
 Please share these numbers with us as they often allows us to understand what is slow.
 
-### Profile a VS Code window
-When you cannot share the workspace exposing the problem with us, then you can help us by providing performance profiles that we can analyze:
-
-- If VS Code feels not responsive then please create a CPU profile of the VS Code core (_renderer_ process) and attach it to the issue. To create a profile:
-  -  Execute "F1 > Toggle Developer Tools." In the overflow menu of the developer tools <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
-  - Select 'More Tools > JavaScript Profiler'. In there select start.
-  - Let it profile for 30 to 60 seconds, stop it.
-  - When the performance issue happens on startup, start the profiler and then reload the window using "F1>Reload Window."
-  - Save the profile to a file and attach the file to your issue. 
-
-### Profile Startup
-
-- If VS Code is slow to start then please create a startup CPU profile. Do the following
-  - Make sure to only have one window open
-  - Quit VS Code (Cmd+Q for Mac, closing the last window on Linux/Windows)
-  - Start VS Code from the command line like so `code --prof-startup`
-  - VS Code will start and create two profile-files in your home-directory. Please attach these files to your issue or create a new issue with these two files
-
-### Profile the Extension Process
 
