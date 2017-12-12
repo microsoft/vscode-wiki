@@ -15,14 +15,41 @@ To help us understand your setup please run `code --status` while VS Code is run
 
 The output includes information about the environment, all running VS Code processes, and the counts of some typical files in the workspace.
 
-### The 
-Please try to reproduce the performance problems in different setups:
+### The Extension host process consumes a lot of CPU
 
-- Can you reproduce the issue when you start VS Code with extensions disabled? You can start VS Code with extension disabled using the `--disable-extensions` command line argument, e.g., `code --disable-extensions`. 
+![image](https://user-images.githubusercontent.com/172399/33882358-1b6a7590-df38-11e7-887c-1c6f1a0b0954.png)
 
-- If you cannot reproduce the issue when the extensions are disabled, then can you narrow down the extension by selectively disabling extensions? You can disable extensions in the Extensions Viewlet 
+When `code --status` shows a high percentage CPU usage of the extension host process then you can try to reproduce the problem with VS Code extensions disabled. You can start VS Code with extension disabled using the `--disable-extensions` command line argument, e.g., `code --disable-extensions`. 
+
+If you cannot reproduce the issue when the extensions are disabled, then can you narrow down the extension by selectively disabling extensions? You can disable extensions in the Extensions Viewlet and restart/reload.
+
 ![image](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png) 
-and restart/reload. Once you found the extension please file an issue against the extension. To file an issue against an extension: find the extension in the market place, and use the `Issues` link in the Resources section.
+
+Once you found the extension please file an issue against the extension. To file an issue against an extension: find the extension in the market place, and use the `Issues` link in the Resources section.
+
+You can also create a CPU profile and share it in the issue with us or the extension author. To create a CPU profile:
+- Execute the `Developer: Show Running Extensions Command`. This command opens an editor with all the running extensions.
+- To start recording a profile click the run control in the editor's title bar:
+
+![image](https://user-images.githubusercontent.com/172399/33882668-212c793c-df39-11e7-9844-6e2f4abf194f.png)
+- Perform some steps in VS Code that expose the slow down
+- Stop the recording using the same control.
+- Save the extension host profile:
+
+![image](https://user-images.githubusercontent.com/172399/33882757-831a321a-df39-11e7-899e-032ab9174fab.png)
+- Attach the profile to a Github issue.
+
+To analyze the performance yourself:
+- remove the trailing `.txt` suffix from the profile name.
+- Toggle the developer tools `Help > Toggle Developer Tools`
+- Open the JavaScript profiler as shown below:
+
+<img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
+
+- Load the profile using the `Load` button.
+
+### The Renderer/Window process consumes a lot of CPU
+
 
 - Try to reproduce the problem on different folders; a folder with less files, a folder that is not under source control, or open a single file.
 
@@ -60,27 +87,3 @@ When you cannot share the workspace exposing the problem with us, then you can h
 
 ### Profile the Extension Process
 
-When `code --status` shows a high percentage CPU usage of the extension host process then please create a CPU profile and share it in the issue.
-
-![image](https://user-images.githubusercontent.com/172399/33882358-1b6a7590-df38-11e7-887c-1c6f1a0b0954.png)
-
-To create a CPU profile:
-- Execute the `Developer: Show Running Extensions Command`. This command opens an editor with all the running extensions.
-- To start recording a profile click the run control in the editor's title bar:
-
-![image](https://user-images.githubusercontent.com/172399/33882668-212c793c-df39-11e7-9844-6e2f4abf194f.png)
-- Perform some steps in VS Code that expose the slow down
-- Stop the recording using the same control.
-- Save the extension host profile:
-
-![image](https://user-images.githubusercontent.com/172399/33882757-831a321a-df39-11e7-899e-032ab9174fab.png)
-- Attach the profile to a Github issue.
-
-To analyze the performance yourself:
-- remove the trailing `.txt` suffix from the profile name.
-- Toggle the developer tools `Help > Toggle Developer Tools`
-- Open the JavaScript profiler as shown below:
-
-<img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
-
-- Load the profile using the `Load` button.
