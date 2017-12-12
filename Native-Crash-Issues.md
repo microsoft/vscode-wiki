@@ -48,3 +48,31 @@ With the core dump in hand we can use `gdb` to find out more about the crash:
 * attach the output, you should see a full stacktrace like the one in the image below:
 
 ![image](https://user-images.githubusercontent.com/900690/33883192-43ba0026-df3b-11e7-8ebc-e21f59058990.png)
+
+## Read the Stacktrace
+Once we have a stack trace of a crash we can user another tool for converting the cryptic messages into something useful. 
+
+Let us consider a stack like this one:
+```
+0   libnode.dylib                 	0x000000010cfd7bf6 0x10cef5000 + 928758
+1   libnode.dylib                 	0x000000010cfd3946 0x10cef5000 + 911686
+2   libnode.dylib                 	0x000000010d122551 0x10cef5000 + 2282833
+3   libnode.dylib                 	0x000000010d1ee24e 0x10cef5000 + 3117646
+4   libnode.dylib                 	0x000000010d1ed76b 0x10cef5000 + 3114859
+```
+
+We can use [electron-atos](https://github.com/kevinsawicki/electron-atos) to print the actual stack trace:
+* `npm install -g electron-atos`
+* save the stack to a file e.g. `crash.txt`
+* run `electron-atos --file /path/to/crash.txt --version 1.7.9`
+* this will take some time but eventually print this:
+
+```
+node::EnvEnumerator(v8::PropertyCallbackInfo<v8::Array> const&) (in libnode.dylib) (node.cc:2849)
+node::MakeCallback(node::Environment*, v8::Local<v8::Value>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*) (in libnode.dylib) (node.cc:1225)
+v8::Module::Evaluate(v8::Local<v8::Context>) (in libnode.dylib) (counters-inl.h:67)
+v8::internal::Builtin_Impl_DataViewPrototypeSetFloat64(v8::internal::BuiltinArguments, v8::internal::Isolate*) (in libnode.dylib) (objects-inl.h:0)
+v8::internal::Builtin_Impl_Stats_DataViewPrototypeSetFloat32(int, v8::internal::Object**, v8::internal::Isolate*) (in libnode.dylib) (builtins-dataview.cc:335)
+```
+
+**Note**: if the command shows an error, try to remove some lines from the stack trace. It can be picky about the format. 
