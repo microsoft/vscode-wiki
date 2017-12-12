@@ -1,19 +1,17 @@
 # Summary
 
+**Note: ** this document assumes you are running VS Code version 1.19 or newer. For older versions please refer to [[Performance Issues (old)]]
+
 This page documents how you can help us to track down performance issues. It contains:
 - Questions about your setup
 - Experiments you can make to reproduce and narrow down 
 - How to create performance profiles you can provide to us for further analysis.
 
-### Questions
-To help us narrow down the issue please include answers for the following questions:
-- What is the size of your workspace/project (how many files)? 
-- What languages are used in this project?
-- Which Code process consumes the most resources? VS Code is a multi process architecture and we need to know which process is causing the issue. You can identify the process based on the command line arguments that were used to start the process. 
-  - On Mac/Linux, we recommend to use the [htop](http://hisham.hm/htop/) process viewer. You can also use the **Activity Monitor** to find the `PID` of the process and from a terminal you can run `ps aux | grep <pid>` to find its arguments. 
-![image](https://cloud.githubusercontent.com/assets/900690/18907063/65806550-856a-11e6-8b2e-83da9111445d.png).
-  - On Windows, we recommend to use the [process explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer). You can also use open the Task Manager, switch to the Details tab and make the "Command Line" column visible as shown below. 
-![image](https://user-images.githubusercontent.com/172399/31660413-9fac1f02-b337-11e7-96fb-859c659b28f9.png)
+### What is your setup?
+
+To help us understand your setup please run `code --status` while VS Code is running. This command collects status about your running VS Code and the workspace you have opened. You can attach this information when reporting a performance issue.
+![image](https://raw.githubusercontent.com/Microsoft/vscode-docs/vnext/release-notes/images/1_19/status.png).
+The output includes information about the environment, all running VS Code processes, and the counts of some typical files in the workspace.
 
 ### Experiments
 Please try to reproduce the performance problems in different setups:
@@ -60,10 +58,23 @@ When you cannot share the workspace exposing the problem with us, then you can h
 
 ### Profile the Extension Process
 
-- If VS Code feels not responsive and the CPU profile doesn't provide insights then please a create a CPU profile of the extension host process. The extension host process is the process that executes your installed extensions. To create a profile:
-  - Start VS Code from the command line the with `--inspect-extensions=<port>`-flag, for example `code --inspect-extensions=9333`.
-  - In VS Code, from the 'Command Palette (F1)', select 'Developer: Toggle Developer Tools', hit Enter.
-  - Select the Console tab and find a message that starts with "Debugger listening on port 9333" and that ends with a chrome-devtools-link.
-  - Open that link in Chrome for dedicated DevTools for the extension host.
-  - Use the Memory and CPU profiler to understand how memory and compute resource are being used.
-  - Save the profile to a file and attach the file to your issue. 
+When `code --status` shows a high percentage CPU usage of the extension host process then please create a CPU profile and share it in the issue.
+
+![image](https://user-images.githubusercontent.com/172399/33882358-1b6a7590-df38-11e7-887c-1c6f1a0b0954.png)
+
+To create a CPU profile:
+- Execute the `Developer: Show Running Extensions Command`. This command opens an editor with all the running extensions.
+- To start recording a profile click the run control in the editor's title bar:
+![image](https://user-images.githubusercontent.com/172399/33882668-212c793c-df39-11e7-9844-6e2f4abf194f.png)
+- Perform some steps in VS Code that expose the slow down
+- Stop the recording using the same control.
+- Save the extension host profile:
+![image](https://user-images.githubusercontent.com/172399/33882757-831a321a-df39-11e7-899e-032ab9174fab.png)
+- Attach the profile to a Github issue.
+
+To analyze the performance yourself:
+- remove the trailing `.txt` suffix from the profile name.
+- Toggle the developer tools `Help > Toggle Developer Tools`
+- Open the JavaScript profiler as shown below:
+![image](https://user-images.githubusercontent.com/172399/33883081-aaf6d544-df3a-11e7-9742-d2e597a37198.png)
+- Load the profile using the `Load` button.
