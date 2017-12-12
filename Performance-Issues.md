@@ -1,19 +1,21 @@
 # Summary
 
-**Note: ** this document assumes you are running VS Code version 1.19 or newer. For older versions please refer to [[Performance Issues (old)]]
+**Note:** this document assumes you are running VS Code version 1.19 or newer. For older versions please refer to [[Performance Issues (old)]]
 
 This page documents how you can help us to track down performance issues. It contains:
-- Questions about your setup
+- Collect information about the running VS Code
 - Experiments you can make to reproduce and narrow down 
 - How to create performance profiles you can provide to us for further analysis.
 
-### What is your setup?
+### Collect Information about the running VS Code
 
 To help us understand your setup please run `code --status` while VS Code is running. This command collects status about your running VS Code and the workspace you have opened. You can attach this information when reporting a performance issue.
+
 ![image](https://raw.githubusercontent.com/Microsoft/vscode-docs/vnext/release-notes/images/1_19/status.png).
+
 The output includes information about the environment, all running VS Code processes, and the counts of some typical files in the workspace.
 
-### Experiments
+### The 
 Please try to reproduce the performance problems in different setups:
 
 - Can you reproduce the issue when you start VS Code with extensions disabled? You can start VS Code with extension disabled using the `--disable-extensions` command line argument, e.g., `code --disable-extensions`. 
@@ -65,10 +67,12 @@ When `code --status` shows a high percentage CPU usage of the extension host pro
 To create a CPU profile:
 - Execute the `Developer: Show Running Extensions Command`. This command opens an editor with all the running extensions.
 - To start recording a profile click the run control in the editor's title bar:
+
 ![image](https://user-images.githubusercontent.com/172399/33882668-212c793c-df39-11e7-9844-6e2f4abf194f.png)
 - Perform some steps in VS Code that expose the slow down
 - Stop the recording using the same control.
 - Save the extension host profile:
+
 ![image](https://user-images.githubusercontent.com/172399/33882757-831a321a-df39-11e7-899e-032ab9174fab.png)
 - Attach the profile to a Github issue.
 
@@ -76,5 +80,7 @@ To analyze the performance yourself:
 - remove the trailing `.txt` suffix from the profile name.
 - Toggle the developer tools `Help > Toggle Developer Tools`
 - Open the JavaScript profiler as shown below:
-![image](https://user-images.githubusercontent.com/172399/33883081-aaf6d544-df3a-11e7-9742-d2e597a37198.png)
+
+<img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
+
 - Load the profile using the `Load` button.
