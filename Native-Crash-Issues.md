@@ -44,7 +44,7 @@ On Linux we need to temporarily increase the limit for crash dumps. From a termi
 
 With the core dump in hand we can use `gdb` to find out more about the crash:
 * run `gdb <path to code binary> <path to core>`
-* from the GDB session type bt
+* from the GDB session type `bt`
 * attach the output, you should see a full stacktrace like the one in the image below:
 
 ![image](https://user-images.githubusercontent.com/900690/33883192-43ba0026-df3b-11e7-8ebc-e21f59058990.png)
