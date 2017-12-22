@@ -105,6 +105,7 @@ We closely collaborate with TypeScript, see also the [TypeScript roadmap](https:
 * Improve hovering and inline values by leveraging language knowledge
 * Support hot code replace for non-JS scenarios e.g. Java.
 * :runner: Continue to invest in documenting debugging recipes for common configurations
+* Investigate custom breakpoints and gutter customizations for custom breakpoints
  
 ## Extension creation, discovery, and management
 
