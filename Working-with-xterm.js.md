@@ -26,6 +26,7 @@ Here's what you need to do to pull your changes into VS Code:
   Note that there is an individual release branch for each version unlike many other modules we use. This is the case so that there can be a "clean slate" on the following version based off master.
 
 2. If the release branch is a new branch we need to modify `.gitignore` to remove the `lib` so we can commit the compiled javascript.
+
 3. Build the library:
 
   ```bash
@@ -41,25 +42,22 @@ Here's what you need to do to pull your changes into VS Code:
   git push
   ```
 
-5. Get the commit hash:
+5. Update `package.json`, the name should be `vscode-xterm` and the version should be `<x>.<y>.<z>-beta<n>`
 
   ```bash
-  git show # record the commit hash
+  "name": "vscode-xterm",
+  "version": "3.0.0-beta1",
   ```
 
-6. Go to the vscode repo and update the `xterm` entry in `npm-shrinkwrap.json` to point to the new commit:
+6. Publish `vscode-xterm` to npm:
 
-  ```js
-  {
-    "xterm": {
-    "version": "2.7.0",
-    "from": "Tyriar/xterm.js#vscode-release/1.14",
-    "resolved": "git+https://github.com/Tyriar/xterm.js.git#<commit>"
-  },
   ```
-7. Reinstall the xterm module
+  npm publish
+  ```
 
-  ```bash
+7. Go to the vscode repo and add the new version:
+
+  ```
   rm -rf node_modules/xterm
-  ./scripts/npm.sh install
+  yarn add vscode-xterm@3.0.0-beta1
   ```
