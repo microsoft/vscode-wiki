@@ -52,8 +52,10 @@ Here's what you need to do to pull your changes into VS Code:
 6. Publish `vscode-xterm` to npm:
 
    ```
-   npm publish # if you don't have permissions ask someone who has published before
+   npm publish
    ```
+
+   If you don't have permissions ask someone who has published before to add you.
 
 7. Go to the vscode repo and add the new version:
 
