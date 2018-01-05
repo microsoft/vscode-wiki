@@ -1,7 +1,5 @@
 # Summary
 
-**Note:** this document assumes you are running VS Code version 1.19 or newer. For older versions please refer to [[Performance Issues (old)]]
-
 This page documents how you can help us to track down performance issues:
 - Collect information about the running VS Code
 - Tracking down issues with extensions
