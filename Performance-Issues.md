@@ -27,7 +27,7 @@ If you cannot reproduce the issue when the extensions are disabled, then can you
 Once you found the extension please file an issue against the extension. To file an issue against an extension: find the extension in the market place, and use the `Issues` link in the Resources section.
 
 You can also create a CPU profile and share it in the issue with us or the extension author. To create a CPU profile:
-- Execute the `Developer: Show Running Extensions Command`. This command opens an editor with all the running extensions.
+- Execute the `Developer: Show Running Extensions` Command. This command opens an editor with all the running extensions.
 - To start recording a profile click the run control in the editor's title bar:
 
 ![image](https://user-images.githubusercontent.com/172399/33882668-212c793c-df39-11e7-9844-6e2f4abf194f.png)
