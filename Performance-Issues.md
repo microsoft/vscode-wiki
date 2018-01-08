@@ -18,11 +18,11 @@ The output includes information about the environment, all running VS Code proce
 
 ![image](https://user-images.githubusercontent.com/172399/33882358-1b6a7590-df38-11e7-887c-1c6f1a0b0954.png)
 
-When `code --status` shows a high percentage CPU usage of the extension host process then you can try to reproduce the problem with VS Code extensions disabled. You can start VS Code with extension disabled using the `--disable-extensions` command line argument, e.g., `code --disable-extensions`. 
+When `code --status` shows a high percentage CPU usage of the extension host process then you can try to reproduce the problem with VS Code extensions disabled. You can start VS Code with extension disabled using the `--disable-extensions` command line argument, e.g., `code --disable-extensions`.
 
 If you cannot reproduce the issue when the extensions are disabled, then can you narrow down the extension by selectively disabling extensions? You can disable extensions in the Extensions Viewlet and restart/reload.
 
-![image](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png) 
+![image](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png)
 
 Once you found the extension please file an issue against the extension. To file an issue against an extension: find the extension in the market place, and use the `Issues` link in the Resources section.
 
@@ -66,9 +66,9 @@ Finally, please create a CPU profile of the VS Code core (_renderer_ process) an
   - Select 'More Tools > JavaScript Profiler'. In there select start.
   - Let it profile for 30 to 60 seconds, stop it.
   - When the performance issue happens on startup, start the profiler and then reload the window using "F1>Reload Window."
-  - Save the profile to a file and attach the file to your issue. 
+  - Save the profile to a file and attach the file to your issue.
 
-### Slow startup 
+### Slow startup
 
 If VS Code is slow to start then please create a startup CPU profile. Do the following
   - Make sure to only have one window open
@@ -78,7 +78,7 @@ If VS Code is slow to start then please create a startup CPU profile. Do the fol
 
 #### Read Startup Timers
 
-When VS Code feels slow to start you can check the startup timers. Hit "F1" and select "Startup Performance". This will open developer tools and print some startup stats onto the the "Console". 
+When VS Code feels slow to start you can check the startup timers. Hit "F1" and select "Startup Performance". This will open developer tools and print some startup stats onto the the "Console".
 
 ![image](https://user-images.githubusercontent.com/172399/32089769-3df19924-baec-11e7-9654-e199e1ab8c92.png)
 
