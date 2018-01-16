@@ -16,15 +16,17 @@ The output includes information about the environment, all running VS Code proce
 
 ### The Extension host process consumes a lot of CPU
 
+The Extension host process runs the extensions. When `code --status` shows a high percentage CPU usage of the extension host process then this is a hint that you have a misbehaving extension installed. 
+
 ![image](https://user-images.githubusercontent.com/172399/33882358-1b6a7590-df38-11e7-887c-1c6f1a0b0954.png)
 
-When `code --status` shows a high percentage CPU usage of the extension host process then you can try to reproduce the problem with VS Code extensions disabled. You can start VS Code with extension disabled using the `--disable-extensions` command line argument, e.g., `code --disable-extensions`.
+The first step is to try to reproduce the problem with all extensions disabled. You can start VS Code with extension disabled using the `--disable-extensions` command line argument, e.g., `code --disable-extensions`. 
 
 If you cannot reproduce the issue when the extensions are disabled, then can you narrow down the extension by selectively disabling extensions? You can disable extensions in the Extensions Viewlet and restart/reload.
 
 ![image](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png)
 
-Once you found the extension please file an issue against the extension. To file an issue against an extension: find the extension in the market place, and use the `Issues` link in the Resources section.
+Once you found the extension please file an issue against the extension. To file an issue against an extension open the Running Extensions editor `Developer: Show Running Extensions` and use `Report Issue` button or find the extension in the market place, and use the `Issues` link in the Resources section.
 
 You can also create a CPU profile and share it in the issue with us or the extension author. To create a CPU profile:
 - Execute the `Developer: Show Running Extensions` Command. This command opens an editor with all the running extensions.
