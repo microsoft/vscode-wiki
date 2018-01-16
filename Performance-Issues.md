@@ -8,7 +8,7 @@ The first step is to try to reproduce the problem with all extensions disabled. 
 
 ![image](https://user-images.githubusercontent.com/172399/34978338-33e7bf98-fa9e-11e7-9c79-1138936c5c34.png)
 
-If you cannot reproduce the issue when the extensions are disabled, then can you narrow down the extension by selectively disabling extensions? You can disable extensions in the Extensions Viewlet and restart/reload.
+If you cannot reproduce the issue when **all** extensions are disabled, then can you narrow down the extension by selectively disabling extensions? You can disable extensions in the Extensions Viewlet and restart/reload.
 
 ![image](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png)
 
