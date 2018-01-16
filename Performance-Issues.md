@@ -14,7 +14,7 @@ To help us understand your setup please run `code --status` while VS Code is run
 
 The output includes information about the environment, all running VS Code processes, and the counts of some typical files in the workspace.
 
-### The Extension host process consumes a lot of CPU
+### Misbehaving Extension
 
 The Extension host process runs the extensions. When `code --status` shows a high percentage CPU usage of the extension host process then this is a hint that you have a misbehaving extension installed. 
 
