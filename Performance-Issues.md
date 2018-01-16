@@ -1,6 +1,6 @@
 ## Visual Studio Code is consuming a lot of CPU
 
-High CPU consumption is often caused by a misbehaving extension.
+High CPU consumption is often caused by an issue in an extension.
 
 ### Run with Extensions Disabled
 
