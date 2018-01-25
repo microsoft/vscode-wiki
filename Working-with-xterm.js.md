@@ -25,16 +25,14 @@ Here's what you need to do to pull your changes into VS Code:
 
    Note that there is an individual release branch for each version unlike many other modules we use. This is the case so that there can be a "clean slate" on the following version based off master.
 
-2. If the release branch is a new branch we need to modify `.gitignore` to remove the `lib` so we can commit the compiled javascript.
-
-3. Build the library:
+2. Build the library:
 
    ```bash
    npm i
    npm run build
    ```
 
-4. Commit and push
+3. Commit and push
 
    ```bash
    git add .
@@ -42,14 +40,14 @@ Here's what you need to do to pull your changes into VS Code:
    git push
    ```
 
-5. Update `package.json`, the name should be `vscode-xterm` and the version should be `<x>.<y>.<z>-beta<n>`
+4. Update `package.json`, the name should be `vscode-xterm` and the version should be `<x>.<y>.<z>-beta<n>`
 
    ```bash
    "name": "vscode-xterm",
    "version": "3.0.0-beta1",
    ```
 
-6. Publish `vscode-xterm` to npm:
+5. Publish `vscode-xterm` to npm:
 
    ```
    npm publish
@@ -57,7 +55,7 @@ Here's what you need to do to pull your changes into VS Code:
 
    If you don't have permissions ask someone who has published before to add you.
 
-7. Go to the vscode repo and add the new version:
+6. Go to the vscode repo and add the new version:
 
    ```
    rm -rf node_modules/xterm
