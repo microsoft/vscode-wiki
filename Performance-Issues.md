@@ -12,16 +12,16 @@ If you cannot reproduce the issue when **all** extensions are disabled, then can
 
 ![image](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png)
 
-Once you found the extension please file an issue against the extension. To file an issue against an extension open the Running Extensions editor `Developer: Show Running Extensions` and use the `Report Issue` button or find the extension in the market place, and use the `Issues` link in the `Resources` section.
+Once you found the extension, please file an issue against the extension. To file an issue against an extension open the Running Extensions editor `Developer: Show Running Extensions` and use the `Report Issue` button or find the extension in the marketplace, and use the `Issues` link in the `Resources` section.
 
 ### Profile the Running Extensions
 
-You can create a CPU profile and share it in the issue with us or the extension author. To create a CPU profile:
+You can create a CPU profile and share it in the issue with the extension author or us. To create a CPU profile:
 - Execute the `Developer: Show Running Extensions` Command. This command opens an editor with all the running extensions.
 - To start recording a profile click the run control in the editor's title bar:
 
 ![image](https://user-images.githubusercontent.com/172399/33882668-212c793c-df39-11e7-9844-6e2f4abf194f.png)
-- Perform some steps in VS Code that expose the slow down
+- Perform some steps in VS Code that expose the slowdown
 - Stop the recording using the same control.
 - Save the extension host profile:
 
@@ -39,7 +39,7 @@ To analyze the performance yourself:
 
 ### Collect Information about the running VS Code
 
-If you can reproduce the problem with extensions disabled then use `code --status` from the command line. 
+If you can reproduce the problem with extensions disabled, then use `code --status` from the command line. 
 
 > Notice: this command requires that VS Code is already running
 
@@ -57,9 +57,9 @@ Try to reproduce the problem on different folders; a folder with less files, a f
 
 Try to reproduce the issue in the VS Code **Insider** version. This will run our latest code and use a different setup (settings, extensions). You can install the insider version here https://code.visualstudio.com/insiders.
 
-Run VS Code when your settings are reset/empty. Open your settings, copy your customizations and then emtpy the JSON contents so that only `{}` is left.
+Run VS Code when your settings are reset/empty. Open your settings, copy your customizations and then empty the JSON contents so that only `{}` is left.
 
-Run VS Code in verbose mode and check whether there is any suspicious output in the console or the developer tools. You start VS Code in verbose mode with `code --verbose`. Also open the DevTools ("Help>Toggle Developer Tools") and open the console there.
+Run VS Code in verbose mode and check whether there is any suspicious output in the console or the developer tools. You start VS Code in verbose mode with `code --verbose`. Also, open the DevTools ("Help>Toggle Developer Tools") and open the console there.
 
 When you cannot share the workspace exposing the problem with us, then you can help us by providing performance profiles that we can analyze:
 
@@ -80,7 +80,7 @@ If VS Code is slow to start then please create a startup CPU profile. Do the fol
 
 ### Read the Startup Timers
 
-When VS Code feels slow to start you can check the startup timers. Hit "F1" and select "Startup Performance". This will open developer tools and print some startup stats onto the the "Console".
+When VS Code feels slow to start, you can check the startup timers. Hit "F1" and select "Startup Performance." This will open developer tools and print some startup stats onto the "Console."
 
 ![image](https://user-images.githubusercontent.com/172399/32089769-3df19924-baec-11e7-9654-e199e1ab8c92.png)
 
