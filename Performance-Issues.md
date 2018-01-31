@@ -17,6 +17,7 @@ Once you found the extension, please file an issue against the extension. To fil
 ### Profile the Running Extensions
 
 You can create a CPU profile and share it in the issue with the extension author or us. To create a CPU profile:
+- Close all instances of VSCode and start with `code --inspect-extensions=9993` or any other port number.
 - Execute the `Developer: Show Running Extensions` Command. This command opens an editor with all the running extensions.
 - To start recording a profile click the run control in the editor's title bar:
 
