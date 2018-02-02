@@ -76,7 +76,7 @@ This task is about verifying how a first launch behaves for new users that never
 * Drag it to the explorer then rename it to README.txt
 * Move README.txt to another folder and then delete it and verify it ends up in the trash
 * Quick open (CTRL+P, ⌘+P) to find the .js files and other files with a similar extension
-  * Verify quick open sorting makes sense and it respects fuzzy matching (e.g. 'a.s' should produce 3 results)
+  * Verify quick open sorting makes sense and it respects fuzzy matching (e.g. 'a.s' should produce 4 results)
 * Verify the Opened Editors view reflects your state of opened editors
 
 #### Configuration and views
@@ -90,7 +90,7 @@ This task is about verifying how a first launch behaves for new users that never
 
 #### Search
 * Use Search (CTRL+SHIFT+F, ⌘+SHIFT+F) to find `body`
-  * Verify that 7 results in 4 files show up
+  * Verify that 14 results in 5 files show up
   * Verify you can run the search filtering for `*.js` files
   * Verify you can dismiss files from search results
   * Verify you can replace search results with a replace term
@@ -106,7 +106,7 @@ This task is about verifying how a first launch behaves for new users that never
 * Add an empty rule `.foo{}`
   * verify you can see a warning in the editor
   * verify you can see a warning from the Problems view
-* Select File > Preferences > User Settings (OS X: Code > Preferences > User Settings)
+* Select File > Preferences > Settings (OS X: Code > Preferences > User Settings)
   * change `css.lint.emptyRules` from warning to error
   * Go back to style.css, verify that the warning turns into an error.
   * Verify you get css intellisense
@@ -169,8 +169,8 @@ This task is about verifying how a first launch behaves for new users that never
 #### Accessibility
 * Turn on
   * OS X: Voice Over
-  * Windows: nvda, command palette > 'Toggle use of tab key for setting focus'
-  * Linus: n/a
+  * Windows: nvda, command palette > 'Toggle Tab Key Moves Focus' (CTRL+M)
+  * Linux: n/a
 * Tab through the whole workbench and verify what you hear makes sense. Also verify you can tab back into the location from where you started
 * Check high contrast theme
 
