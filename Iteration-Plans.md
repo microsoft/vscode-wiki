@@ -1,3 +1,8 @@
+### February 2018
+
+* Iteration Plan
+* Endgame
+
 ### January 2018
 
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/41061)
