@@ -34,9 +34,9 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 
 * :runner: Improve startup performance: keep start-up times within a predictable and suitable range for users across all platforms
 * Reduce resource/memory consumption: what can we do to reduce and control resource consumption of helper processes
-* Continue to improve accessibility, e.g. of the terminal, of the menu bar on Windows
-* :runner: Support language packs for community-contributed translation 
-* Improve the Windows update experience
+* :runner: Continue to improve accessibility, e.g. of the terminal, of the menu bar on Windows
+* [x] Support language packs for community-contributed translation 
+* :runner: Improve the Windows update experience
 * :runner: Improve serviceability by providing additional diagnostics 
 
 ### Workbench
@@ -44,7 +44,7 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 * [x] Finish Multi-root folder Workspaces support and support extension authors in adopting it
 * [x] Show SCM status in the explorer (including `.gitignored` files)
 * [x] Support vertical panel layout
-* Support multi-selection in the  explorer for common actions e.g. delete
+* [x] Support multi-selection in the  explorer for common actions e.g. delete
 * Improve intra-file navigation (outline, bread crumb)
 * :runner: Improve notification UI
 * :runner: Investigate improved settings discovery and editing
@@ -60,7 +60,7 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 
 ### Terminal
 
-* Support splitting and viewing of multiple terminals
+* :runner: Support splitting and viewing of multiple terminals
 
 ### Source Control Integration
 
@@ -105,7 +105,7 @@ We closely collaborate with TypeScript, see also the [TypeScript roadmap](https:
 * Improve hovering and inline values by leveraging language knowledge
 * Support hot code replace for non-JS scenarios e.g. Java.
 * :runner: Continue to invest in documenting debugging recipes for common configurations
-* Investigate custom breakpoints and gutter customizations for custom breakpoints
+* :runner: Investigate custom breakpoints and gutter customizations for custom breakpoints
  
 ## Extension creation, discovery, and management
 
@@ -117,18 +117,18 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
 
 * :runner: Improve extension recommendation system
 * Improve searching for extensions 
-* :runner: Simplify tracking down issues caused by installed extensions and make it easier to file issues
-* :runner: Show the user more information about the usage of a extension (startup time, error rate, etc.).
+* [x] Simplify tracking down issues caused by installed extensions and make it easier to file issues
+* [x] Show the user more information about the usage of a extension (startup time, error rate, etc.).
 
 ### For extension authors
 
 * Improve the language API to support a hierarchical navigation to the symbols in a document 
 * Make extension contributions attributable to an extension (e.g. error messages, commands)
 * [x] Support migrating the publisher of an extension to another publisher
-* Investigate contributing explorer viewlets as a first class element in the activity bar
+* :runner: Investigate contributing explorer viewlets as a first class element in the activity bar
 * Investigate Quick pick improvements (e.g. multi-step, forms, commands, grouping)
 * :runner: Continue to invest into API that enables remote development 
-* :runner: Add API for contributing decorations on resources shown in the explorer (like the Source Control decorations)
+* [x] Add API for contributing decorations on resources shown in the explorer (like the Source Control decorations)
 
 
 ## Documentation
