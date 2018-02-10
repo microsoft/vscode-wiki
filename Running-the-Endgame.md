@@ -75,6 +75,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] yo generator **@aeschli**
   - [ ] vsce **@joaomoreno**
   - [ ] node debug **@weinand**
+  - [ ] node debug2 **@roblourens**
+  - [ ] node debugadapter node **@weinand**
 - [ ] All issues [verified](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
 - [ ] Fixing (only critical bugs - no string changes)
 - [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test)
