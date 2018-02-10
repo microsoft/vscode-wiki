@@ -115,6 +115,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ##### Friday/Monday
 - [ ] Branch code to `release/<x.y> **@owner**
+- [ ] Bump up the version in package.json - **owner**
 - [ ] Announce master is open for business **@owner**
 - [ ] Let Daniel Ye know that the release branch `release/<x.y>` got created and that translation should be pulled from there and that the pull request has to be created against that branch **@owner**
 - [ ] Polish release notes **@redmond**
@@ -150,6 +151,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Publish website **@gregvanl**
 - [ ] Publish to stable **@owner**
 - [ ] Publish deb and rpms to repositories manually **@Tyriar**
+- [ ] Add version with symbols to HockeyApp @Tyriar
 - [ ] Enable scheduled `insider` builds **@owner**
 - [ ] Twitter announcement **@seanmcbreen**
 
