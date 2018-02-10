@@ -86,6 +86,29 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] All release notes updated
   - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
 - [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. Use the [thankyou](https://vscode-tools.azurewebsites.net/#acknowledgePRs) tool to generate the initial contents of the section. **owner**
+  - [ ] vscode **endgame master**
+  - [ ] vscode-node-debug **@weinand**
+  - [ ] vscode-node-debug2 **@roblourens**
+  - [ ] vscode-debugadapter-node **@weinand**
+  - [ ] vscode-filewatcher-windows **@bpasero**
+  - [ ] vscode-languageserver-node **@dbaeumer**
+  - [ ] language-server-protocol **@dbaeumer**
+  - [ ] vscode-textmate **@alexandrudima**
+  - [ ] vscode-loader **@alexandrudima**
+  - [ ] vscode-generator-code **@aeschli**
+  - [ ] vscode-vsce **@joaomoreno**
+  - [ ] vscode-docs **@gregvanl**
+  - [ ] vscode-css-languageservice **@aeschli**
+  - [ ] vscode-json-languageservice **@aeschli**
+  - [ ] vscode-html-languageservice **@aeschli**
+  - [ ] jsonc-parser **@aeschli**
+  - [ ] vscode-jscs **@chrisdias**
+  - [ ] vscode-tslint **@egamma**
+  - [ ] vscode-eslint **@dbaeumer**
+  - [ ] vscode-jshint **@rmacfarlane**
+  - [ ] vscode-recipes **@auchenberg**
+  - [ ] localization **@danyeh**
+  - vscode-github-issues-prs **@chrmarti**
 - [ ] Add notable fixes to the release notes **@all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Trigger new insider build and publish it manually **@owner**
