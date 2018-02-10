@@ -30,17 +30,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ##### Monday
 - [ ] If there were any new extensions pulled into the core product, add them to the list in the next 2 points about shrink-wrap and OSSREADME **@owner**
 - [ ] Let Daniel Ye (danyeh@microsoft.com) know that you are the end game master to merge in translations **@owner**
-- [ ] Update shrink-wrap files for built-in extensions if needed (see [instructions](https://github.com/Microsoft/vscode/issues/8570#issuecomment-229669456))
-   - [ ] typescript **@mjbvz**
-   - [ ] javascript **@mjbvz**
-   - [ ] php **@mousetraps**
-   - [ ] markdown **@mjbvz**
-   - [ ] json **@aeschli**
-   - [ ] css **@aeschli**
-   - [ ] configuration-editing **@jrieken**
-   - [ ] node-debug **@weinand**
-   - [ ] node-debug2 **@roblourens**
-   - [ ] emmet **@ramya-ray-a**
 - [ ] Update `OSSREADME.json` for built-in extensions based on differences to `yarn-lock` files if needed
    - [ ] typescript **@mjbvz**
    - [ ] javascript **@mjbvz**
@@ -86,6 +75,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] yo generator **@aeschli**
   - [ ] vsce **@joaomoreno**
   - [ ] node debug **@weinand**
+  - [ ] node debug2 **@roblourens**
+  - [ ] node debugadapter node **@weinand**
 - [ ] All issues [verified](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
 - [ ] Fixing (only critical bugs - no string changes)
 - [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test)
@@ -95,12 +86,36 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] All release notes updated
   - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
 - [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. Use the [thankyou](https://vscode-tools.azurewebsites.net/#acknowledgePRs) tool to generate the initial contents of the section. **owner**
+  - [ ] vscode **endgame master**
+  - [ ] vscode-node-debug **@weinand**
+  - [ ] vscode-node-debug2 **@roblourens**
+  - [ ] vscode-debugadapter-node **@weinand**
+  - [ ] vscode-filewatcher-windows **@bpasero**
+  - [ ] vscode-languageserver-node **@dbaeumer**
+  - [ ] language-server-protocol **@dbaeumer**
+  - [ ] vscode-textmate **@alexandrudima**
+  - [ ] vscode-loader **@alexandrudima**
+  - [ ] vscode-generator-code **@aeschli**
+  - [ ] vscode-vsce **@joaomoreno**
+  - [ ] vscode-docs **@gregvanl**
+  - [ ] vscode-css-languageservice **@aeschli**
+  - [ ] vscode-json-languageservice **@aeschli**
+  - [ ] vscode-html-languageservice **@aeschli**
+  - [ ] jsonc-parser **@aeschli**
+  - [ ] vscode-jscs **@chrisdias**
+  - [ ] vscode-tslint **@egamma**
+  - [ ] vscode-eslint **@dbaeumer**
+  - [ ] vscode-jshint **@rmacfarlane**
+  - [ ] vscode-recipes **@auchenberg**
+  - [ ] localization **@danyeh**
+  - vscode-github-issues-prs **@chrmarti**
 - [ ] Add notable fixes to the release notes **@all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Trigger new insider build and publish it manually **@owner**
 
 ##### Friday/Monday
 - [ ] Branch code to `release/<x.y> **@owner**
+- [ ] Bump up the version in package.json - **owner**
 - [ ] Announce master is open for business **@owner**
 - [ ] Let Daniel Ye know that the release branch `release/<x.y>` got created and that translation should be pulled from there and that the pull request has to be created against that branch **@owner**
 - [ ] Polish release notes **@redmond**
@@ -136,6 +151,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Publish website **@gregvanl**
 - [ ] Publish to stable **@owner**
 - [ ] Publish deb and rpms to repositories manually **@Tyriar**
+- [ ] Add version with symbols to HockeyApp @Tyriar
 - [ ] Enable scheduled `insider` builds **@owner**
 - [ ] Twitter announcement **@seanmcbreen**
 
