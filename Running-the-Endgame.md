@@ -30,17 +30,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ##### Monday
 - [ ] If there were any new extensions pulled into the core product, add them to the list in the next 2 points about shrink-wrap and OSSREADME **@owner**
 - [ ] Let Daniel Ye (danyeh@microsoft.com) know that you are the end game master to merge in translations **@owner**
-- [ ] Update shrink-wrap files for built-in extensions if needed (see [instructions](https://github.com/Microsoft/vscode/issues/8570#issuecomment-229669456))
-   - [ ] typescript **@mjbvz**
-   - [ ] javascript **@mjbvz**
-   - [ ] php **@mousetraps**
-   - [ ] markdown **@mjbvz**
-   - [ ] json **@aeschli**
-   - [ ] css **@aeschli**
-   - [ ] configuration-editing **@jrieken**
-   - [ ] node-debug **@weinand**
-   - [ ] node-debug2 **@roblourens**
-   - [ ] emmet **@ramya-ray-a**
 - [ ] Update `OSSREADME.json` for built-in extensions based on differences to `yarn-lock` files if needed
    - [ ] typescript **@mjbvz**
    - [ ] javascript **@mjbvz**
