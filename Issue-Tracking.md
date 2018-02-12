@@ -35,6 +35,11 @@ The **inbox tracker** should do the following initial triage:
 - If needed, follow-up with the author.
 - If the issue is a performance issue use some of the questions, experiments, measurements collected here [[Performance Issues]].
 
+#### GitHub issue tracking tip
+
+Use `l` and `a` to quickly edit labels and assignees.  
+See a complete list of GitHub shortcuts [here](https://help.github.com/articles/using-keyboard-shortcuts/#issues-and-pull-requests). (Or try pressing `?` when not focusing any input field on GitHub's UI)
+
 ### Ongoing Issue Management
 - Issues labelled with `needs more information` are automatically closed by the bot when no additional information is provided for 7 days.
 - We close issues that we are not planning to work during the next 12 months 
