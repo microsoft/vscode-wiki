@@ -53,7 +53,7 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 ### Editor
 
 * [x] Improve the performance and scalability of editor decorations
-* :runner: Investigate into a native model layer
+* :runner: Improve Text Storage implementation
 * Investigate into improved column selection  
 * :muscle: Investigate into semantic coloring support
 * :muscle: Render more than text in the minimap
