@@ -48,7 +48,6 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 * Improve intra-file navigation (outline, bread crumb)
 * :runner: Improve notification UI
 * :runner: Investigate improved settings discovery and editing
-* Allow users to manage contributions to the status bar: show, hide, reorder, overflow design
  
 ### Editor
 
