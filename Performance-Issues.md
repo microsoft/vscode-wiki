@@ -2,6 +2,10 @@
 
 High CPU consumption is often caused by an issue in an extension.
 
+Find out whether an extension is causing the high CPU load. Run `code --status` from the command line when this is happening. When the process listing shows that the `extensionHost` is consuming a high percentage of CPU (see below) then this is likely caused by an extension.
+
+![image](https://user-images.githubusercontent.com/172399/36384870-1aac63c2-1591-11e8-8924-b30756643f3f.png)
+
 ### Run with Extensions Disabled
 
 The first step is to try to reproduce the problem with all extensions disabled. You can disable the extensions either from the command line using the `--disable-extensions` command line argument, e.g., `code --disable-extensions` or from the `...` menu in the Extensions Viewlet:
