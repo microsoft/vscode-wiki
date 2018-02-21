@@ -2,7 +2,7 @@
 
 High CPU consumption is often caused by an issue in an extension.
 
-Find out whether an extension is causing the high CPU load. Run `code --status` from the command line when this is happening. When the process listing shows that the `extensionHost` is consuming a high percentage of CPU (see below) then this is likely caused by an extension.
+Find out whether an extension is causing the high CPU load. Run `code --status` from the command line when this is happening. For information on how to run `code` from the command line on OS X please see the [setup documentation](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line). When the process listing shows that the `extensionHost` is consuming a high percentage of CPU (see below) then this is likely caused by an extension.
 
 ![image](https://user-images.githubusercontent.com/172399/36384870-1aac63c2-1591-11e8-8924-b30756643f3f.png)
 
