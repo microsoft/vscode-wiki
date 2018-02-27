@@ -86,6 +86,9 @@ Copy Data
 -
 Don’t send the data that a provider returned over the wire. Often it containa more information than we need and often there are cyclic dependencies. Use the provider data to create objects that your protocol speaks.
 
+Enums
+-
+When API-work started only numeric-enums were supported, today TypeScript supports string-or-types and string-enums. Because fewer concepts is better, we stick to numeric-enums. 
 
 Strict Null
 -
