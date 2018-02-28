@@ -77,9 +77,6 @@ Follow the these rules:
 ## Duplicates
 Duplicate bugs are closed with a comment `duplicates #issue`. Please try to reference an earlier issue **unless** a later issue is more appropriate (has more context, better scenarios, repro steps, etc.).
 
-## Moving issues to another repository
-Use the [issue mover](https://github-issue-mover.appspot.com/) tool to move bugs to another repository.
-
 ### Debug type to extension mapping
 
 - `lldb`: `vadimcn.vscode-lldb`
