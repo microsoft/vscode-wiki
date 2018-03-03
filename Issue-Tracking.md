@@ -68,12 +68,11 @@ Follow the these rules:
 1. Query for issues that are to be verified
 2. Start with issues you created (filter by `Author`) but didn't close
 3. Pick an item
-  - Start with setting `verified`-label (prevents duplicate verifications)
-  - Verify the issue
-  - If the issue still shows, add the `verification-found`-label and remove the `verified`-label
-  - Go back to #3
-4. If you cannot verify the issue due to missing or hard-to-understand repro steps, add a `verification-steps-needed` label.
-
+    - Start with setting `verified`-label (prevents duplicate verifications)
+    - Verify the issue
+    - If you cannot verify the issue due to missing or hard-to-understand repro steps, add a `verification-steps-needed` label and remove the `verified` label
+    - If the issue still shows, add the `verification-found`-label and remove the `verified` label
+    - Go back to #3
 
 ## Duplicates
 Duplicate bugs are closed with a comment `duplicates #issue`. Please try to reference an earlier issue **unless** a later issue is more appropriate (has more context, better scenarios, repro steps, etc.).
