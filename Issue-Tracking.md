@@ -72,6 +72,7 @@ Follow the these rules:
   - Verify the issue
   - If the issue still shows, add the `verification-found`-label and remove the `verified`-label
   - Go back to #3
+4. If you cannot verify the issue due to missing or hard-to-understand repro steps, add a `verification-steps-needed` label.
 
 
 ## Duplicates
