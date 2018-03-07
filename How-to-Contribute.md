@@ -9,8 +9,6 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 ### Getting the sources
 
-**Note:** on Windows you might want to set `core.autocrlf=false` and `core.safecrlf=true`, to keep the line endings we have in our source files.
-
 ```
 git clone https://github.com/Microsoft/vscode.git
 ```
