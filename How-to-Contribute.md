@@ -41,6 +41,7 @@ git clone https://github.com/Microsoft/vscode.git
 Finally, install all dependencies using `Yarn`:
 
 ```
+cd vscode
 yarn
 ```
 
