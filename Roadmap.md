@@ -46,20 +46,20 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 * [x] Support vertical panel layout
 * [x] Support multi-selection in the  explorer for common actions e.g. delete
 * Improve intra-file navigation (outline, bread crumb)
-* :runner: Improve notification UI
+* [x] Improve notification UI
 * :runner: Investigate improved settings discovery and editing
  
 ### Editor
 
 * [x] Improve the performance and scalability of editor decorations
-* :runner: Improve Text Storage implementation
+* [x] Improve Text Storage implementation
 * Investigate into improved column selection  
 * :muscle: Investigate into semantic coloring support
 * :muscle: Render more than text in the minimap
 
 ### Terminal
 
-* :runner: Support splitting and viewing of multiple terminals
+* [x] Support splitting and viewing of multiple terminals
 
 ### Source Control Integration
 
@@ -114,7 +114,7 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
 
 ### For extension users
 
-* :runner: Improve extension recommendation system
+* [x] Improve extension recommendation system
 * Improve searching for extensions 
 * [x] Simplify tracking down issues caused by installed extensions and make it easier to file issues
 * [x] Show the user more information about the usage of a extension (startup time, error rate, etc.).
@@ -125,7 +125,7 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
 * Make extension contributions attributable to an extension (e.g. error messages, commands)
 * [x] Support migrating the publisher of an extension to another publisher
 * :runner: Investigate contributing explorer viewlets as a first class element in the activity bar
-* Investigate Quick pick improvements (e.g. multi-step, forms, commands, grouping)
+* :runner: Investigate Quick pick improvements (e.g. multi-step, forms, commands, grouping)
 * :runner: Continue to invest into API that enables remote development 
 * [x] Add API for contributing decorations on resources shown in the explorer (like the Source Control decorations)
 
