@@ -84,7 +84,9 @@ To test the changes you launch a development version of VS Code on the workspace
 .\scripts\code.bat
 ```
 
-You can identify the development version of Code by the Electron icon in the Dock or Taskbar.
+You can identify the development version of Code ("Code - OSS") by the Electron icon in the Dock or Taskbar:
+
+[![VS Code default icon](https://i.imgur.com/D2CeX0y.png)](https://i.imgur.com/D2CeX0y.png)
 
 👉 **Tip!** If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `yarn run watch` first.
 
