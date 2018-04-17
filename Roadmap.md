@@ -83,15 +83,14 @@ We want VS Code to be a great tool for developing modern web applications with J
 
 ### JavaScript
 
-* Using TypeScript to type check JavaScript is powerful (`//@ ts-check`), we want to improve its discoverability. 
 * Improve go-to-definition/implementation of a JavaScript symbol when a type cannot be precisely resolved 
  
 ### TypeScript (and JavaScript)
 
 We closely collaborate with TypeScript, see also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap) 
 
-* Organize imports, remove unused imports
-* Tag completion in `jsx` and `tsx` files 
+* :runner: Organize imports, remove unused imports
+* [x] Tag completion in `jsx` and `tsx` files 
 * Investigate into improving TypeScript Source Maps so that they are more precise and includes variable mappings.
  
 #### Webpack
@@ -104,7 +103,7 @@ We closely collaborate with TypeScript, see also the [TypeScript roadmap](https:
 * Improve hovering and inline values by leveraging language knowledge
 * [x] Support hot code replace for non-JS scenarios e.g. Java.
 * :runner: Continue to invest in documenting debugging recipes for common configurations
-* :runner: Investigate custom breakpoints and gutter customizations for custom breakpoints
+* :runner: Support LogPoints
  
 ## Extension creation, discovery, and management
 
