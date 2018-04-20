@@ -83,6 +83,21 @@ To test the changes you launch a development version of VS Code on the workspace
 ```bat
 .\scripts\code.bat
 ```
+### Run the cli changes
+
+To test the changes you made to the cli, run the following script 
+
+**OS X and Linux**
+
+```bash
+./scripts/code-cli.sh
+```
+
+**Windows**
+
+```bat
+.\scripts\code-cli.bat
+```
 
 You can identify the development version of Code ("Code - OSS") by the following icon in the Dock or Taskbar:
 
