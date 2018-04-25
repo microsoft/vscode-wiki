@@ -18,4 +18,15 @@ GUI Based: Navigate to Control Panel -> Programs -> Program and Features. Search
 
 ## Linux
 
-Remove `.deb` or `.rpm` package. 
+Remove `.deb` or `.rpm` package.
+
+#### Debian / Ubuntu
+
+
+go to `/usr/share` and find the folder of installation of vscode, which would be `code-insiders` for `insider preview` and `code` for `normal` version. Remove the folder which u don't find necessary. 
+
+Don't forget to remove the start menu entry in `/usr/share/applications/`
+
+To remove the application settings go to your home folder and remove the .vscode folder.
+
+**** Please make sure you backup your settings if you are planning to use vscode later
