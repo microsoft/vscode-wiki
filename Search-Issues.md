@@ -2,7 +2,7 @@
 
 This document applies to search (`cmd+shift+f`/`ctrl+shift+f`) and quickopen (`cmd+p`/`ctrl+p`). By default, VS Code uses the [ripgrep](https://github.com/BurntSushi/ripgrep) tool to drive search. Learn more about how to use search in [the documentation](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files).
 
-## Search missing results
+## Missing search results
 
 By far, the most common reason that expected search results don't appear is because of **exclude settings and ignore files**. Search and quickopen ignore files using patterns specified in the `search.exclude` and `files.exclude` settings, or covered by a pattern in a `.gitignore` file. So the very first thing to do is to carefully check these settings at the user and workspace levels, and your `.gitignore` file.
 
