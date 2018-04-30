@@ -8,7 +8,8 @@ By far, the most common reason that expected search results don't appear is beca
 
 > **Tip**: You can set `"search.useIgnoreFiles": false` to disable using the `.gitignore` file for search
 
-An easy way to validate whether exclude setttings or ignore files are affecting your search is to turn off the "Use Exclude Settings and Ignore Files" button in the search viewlet. [screenshot here]
+An easy way to validate whether exclude setttings or ignore files are affecting your search is to turn off the "Use Exclude Settings and Ignore Files" button in the search viewlet. The button in the lower right corner:
+![screen shot 2018-04-30 at 2 41 17 pm](https://user-images.githubusercontent.com/323878/39452556-7356f906-4c87-11e8-8886-8f4629503405.png)
 
 Another thing to watch for is that **it's possible to add a file covered by a `.gitignore` file to git**, and some tools like `git grep` will still search these files. Ripgrep is looking at the `.gitignore` file but doesn't know whether a file has been added to git. So if a file is covered by the `.gitignore` file, it won't be searched, whether or not it's in git.
 
@@ -38,6 +39,8 @@ On Windows, the **Windows Defender** tool can sometimes kick in during a search 
 
 You can start VS Code from the command line with the `--status` flag, or use the Process Explorer (Help > Open Process Explorer) to see running processes owned by VS Code. **The ripgrep process** will show up as a command that invokes the `rg` binary inside the VS Code install directory. The arguments passed to `rg` tell you why it was started and are useful to include in an issue report. You can even copy the command and run it yourself to check for the correct output.
 
+The steps on the [[Performance Issues]] wiki page may also be useful.
+
 ## Filing a search issue
 
 When filing a search-related issue on the VS Code repo, please try the steps above and include as many details as possible to help us diagnose the issue.
@@ -47,6 +50,8 @@ When filing a search-related issue on the VS Code repo, please try the steps abo
 
 **Collecting search logs**
 
-Some details are logged for each search. To see these logs, run the command `"Developer: Set Log Level..."`, select "Trace", and run the search again. Then in the output pane, see the logs in the channel named `"Log (Window)"`.
+Some details are logged for each search. To see these logs, run the command `"Developer: Set Log Level..."`, select "Trace", and run the search again. Then in the output pane, see the logs in the channel named `"Log (Window)"`. The logs show VS Code's internal query object, the arguments with which ripgrep was invoked, and any errors produced by ripgrep.
+
+![screen shot 2018-04-30 at 2 15 35 pm](https://user-images.githubusercontent.com/323878/39452722-1e2a6f48-4c88-11e8-84f8-5afad938d357.png)
 
 There may also be errors that only show up in the developer tools. Open the developer tools (Help > Toggle Developer Tools) and check the Console for errors.
