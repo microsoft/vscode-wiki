@@ -9,6 +9,7 @@ By far, the most common reason that expected search results don't appear is beca
 > **Tip**: You can set `"search.useIgnoreFiles": false` to disable using the `.gitignore` file for search
 
 An easy way to validate whether exclude setttings or ignore files are affecting your search is to turn off the "Use Exclude Settings and Ignore Files" button in the search viewlet. The button in the lower right corner:
+
 ![screen shot 2018-04-30 at 2 41 17 pm](https://user-images.githubusercontent.com/323878/39452556-7356f906-4c87-11e8-8886-8f4629503405.png)
 
 Another thing to watch for is that **it's possible to add a file covered by a `.gitignore` file to git**, and some tools like `git grep` will still search these files. Ripgrep is looking at the `.gitignore` file but doesn't know whether a file has been added to git. So if a file is covered by the `.gitignore` file, it won't be searched, whether or not it's in git.
