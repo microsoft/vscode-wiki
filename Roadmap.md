@@ -36,8 +36,8 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 * Reduce resource/memory consumption: what can we do to reduce and control resource consumption of helper processes
 * :runner: Continue to improve accessibility, e.g. of the terminal, of the menu bar on Windows
 * [x] Support language packs for community-contributed translation 
-* :runner: Improve the Windows update experience
-* :runner: Improve serviceability by providing additional diagnostics 
+* [x] Improve the Windows update experience
+* [x] Improve serviceability by providing additional diagnostics 
 
 ### Workbench
 
@@ -53,7 +53,7 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 
 * [x] Improve the performance and scalability of editor decorations
 * [x] Improve Text Storage implementation
-* Investigate into improved column selection  
+* [x] Investigate into improved column selection  
 * :muscle: Investigate into semantic coloring support
 * :muscle: Render more than text in the minimap
 
@@ -89,7 +89,7 @@ We want VS Code to be a great tool for developing modern web applications with J
 
 We closely collaborate with TypeScript, see also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap) 
 
-* :runner: Organize imports, remove unused imports
+* [x] Organize imports, remove unused imports
 * [x] Tag completion in `jsx` and `tsx` files 
 * Investigate into improving TypeScript Source Maps so that they are more precise and includes variable mappings.
  
@@ -103,7 +103,7 @@ We closely collaborate with TypeScript, see also the [TypeScript roadmap](https:
 * Improve hovering and inline values by leveraging language knowledge
 * [x] Support hot code replace for non-JS scenarios e.g. Java.
 * :runner: Continue to invest in documenting debugging recipes for common configurations
-* :runner: Support LogPoints
+* [x] Support LogPoints
  
 ## Extension creation, discovery, and management
 
@@ -123,7 +123,7 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
 * Improve the language API to support a hierarchical navigation to the symbols in a document 
 * Make extension contributions attributable to an extension (e.g. error messages, commands)
 * [x] Support migrating the publisher of an extension to another publisher
-* :runner: Investigate contributing explorer viewlets as a first class element in the activity bar
+* [x] Investigate contributing explorer viewlets as a first class element in the activity bar
 * :runner: Investigate Quick pick improvements (e.g. multi-step, forms, commands, grouping)
 * :runner: Continue to invest into API that enables remote development 
 * [x] Add API for contributing decorations on resources shown in the explorer (like the Source Control decorations)
