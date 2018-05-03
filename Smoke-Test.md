@@ -1,17 +1,11 @@
 This page describes the VS Code Smoke test, an automatic and a manual test cases that we execute before we release VS Code to the public on all platforms.
 
 ## Automated Smoke Test
-### Prerequisites
-* Pull latest from vscode
-* Run yarn install
-* Switch to US-International keyboard layout (due to #27841) if you are on any other layout.
-* Ensure you have Node > v6
 
-### Running
-
-Follow the steps in https://github.com/Microsoft/vscode/blob/master/test/smoke/README.md
+https://github.com/Microsoft/vscode/blob/master/test/smoke/README.md
 
 ## Manual Smoke Test
+
 #### Prereqs
 
 * For the best debugging experience you'll need node version 6.5 (or higher)
