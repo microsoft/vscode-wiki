@@ -1,8 +1,12 @@
 ## Visual Studio Code is consuming a lot of CPU
 
-High CPU consumption is often caused by an issue in an extension.
+High CPU consumption is often caused by an issue in an extension. VS Code is running multiple processes and extensions are executed by the `Extension Host` process.
 
-Find out whether an extension is causing the high CPU load. You can use the `Developer: Open Process Explorer` command to open a new window with a continuously updating list of VS Code processes. Try to reproduce the issue with this window open, or take a snapshot of the processes by running `code --status` from the command line. For information on how to run `code` from the command line on OS X please see the [setup documentation](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line). When the process listing in the Process Explorer or the output of `code --status` shows that the `extensionHost` is consuming a high percentage of CPU (see below) then this is likely caused by an extension.
+Find out whether an extension is causing the high CPU load. You can open the Process Explorer using `Help>Open Process Explorer` to open a new window with a continuously updating list of VS Code processes. 
+
+![image](https://user-images.githubusercontent.com/172399/40024023-383afbfa-57cd-11e8-91cc-24e14e5566df.png)
+
+Try to reproduce the issue with this window open, or take a snapshot of the processes by running `code --status` from the command line. For information on how to run `code` from the command line on OS X please see the [setup documentation](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line). When the process listing in the Process Explorer or the output of `code --status` shows that the `extensionHost` is consuming a high percentage of CPU (see below) then this is likely caused by an extension.
 
 ![image](https://user-images.githubusercontent.com/172399/36384870-1aac63c2-1591-11e8-8924-b30756643f3f.png)
 
