@@ -25,7 +25,7 @@ Events aren’t defined on the types they occur on but in the best matching name
 
 Private Events
 -
-Private or instance events aren't accessible via globals but exist on objects, e.g. `FileSystemWatcher#onDidCreate`.  *Don't* use private events unless the sender of the event and the events are private. The rule of thumb is: 'Objects that can accessed globally (editors, tasks, terminals, documents, etc)' should not have private events, objects that are private (only known by its creators, like tree views, web views) can send private events' 
+Private or instance events aren't accessible via globals but exist on objects, e.g. `FileSystemWatcher#onDidCreate`.  *Don't* use private events unless the sender of the event is private. The rule of thumb is: 'Objects that can accessed globally (editors, tasks, terminals, documents, etc)' should not have private events, objects that are private (only known by its creators, like tree views, web views) can send private events' 
 
 Event naming
 -
