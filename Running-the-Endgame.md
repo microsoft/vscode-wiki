@@ -33,7 +33,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Update `OSSREADME.json` for built-in extensions based on differences to `yarn-lock` files if needed
    - [ ] typescript **@mjbvz**
    - [ ] javascript **@mjbvz**
-   - [ ] php **@mousetraps**
+   - [ ] php **@roblourens**
    - [ ] markdown **@mjbvz**
    - [ ] json **@aeschli**
    - [ ] css **@aeschli**
