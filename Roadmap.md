@@ -41,14 +41,15 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 
 ### Workbench
 
+* :runner: Support to layout the editor area as a grid
+* :runner: Improve intra-file navigation (outline, bread crumb)
+* :runner: Investigate improved settings discovery and editing
 * [x] Finish Multi-root folder Workspaces support and support extension authors in adopting it
 * [x] Show SCM status in the explorer (including `.gitignored` files)
 * [x] Support vertical panel layout
 * [x] Support multi-selection in the  explorer for common actions e.g. delete
-* Improve intra-file navigation (outline, bread crumb)
 * [x] Improve notification UI
-* :runner: Investigate improved settings discovery and editing
- 
+
 ### Editor
 
 * [x] Improve the performance and scalability of editor decorations
@@ -91,6 +92,7 @@ We closely collaborate with TypeScript, see also the [TypeScript roadmap](https:
 
 * [x] Organize imports, remove unused imports
 * [x] Tag completion in `jsx` and `tsx` files 
+* :runner: Add more refactorings
 * Investigate into improving TypeScript Source Maps so that they are more precise and includes variable mappings.
  
 #### Webpack
@@ -101,8 +103,8 @@ We closely collaborate with TypeScript, see also the [TypeScript roadmap](https:
 ### Debug
 
 * Improve hovering and inline values by leveraging language knowledge
-* [x] Support hot code replace for non-JS scenarios e.g. Java.
 * :runner: Continue to invest in documenting debugging recipes for common configurations
+* [x] Support hot code replace for non-JS scenarios e.g. Java.
 * [x] Support LogPoints
  
 ## Extension creation, discovery, and management
@@ -120,11 +122,11 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
 
 ### For extension authors
 
-* Improve the language API to support a hierarchical navigation to the symbols in a document 
+* :runner: Improve the language API to support a hierarchical navigation to the symbols in a document 
 * Make extension contributions attributable to an extension (e.g. error messages, commands)
 * [x] Support migrating the publisher of an extension to another publisher
 * [x] Investigate contributing explorer viewlets as a first class element in the activity bar
-* :runner: Investigate Quick pick improvements (e.g. multi-step, forms, commands, grouping)
+* :runner: Investigate Quick pick improvements (e.g. multi-select, multi-step, commands, grouping)
 * :runner: Continue to invest into API that enables remote development 
 * [x] Add API for contributing decorations on resources shown in the explorer (like the Source Control decorations)
 
