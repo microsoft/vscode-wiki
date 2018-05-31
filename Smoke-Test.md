@@ -12,7 +12,7 @@ https://github.com/Microsoft/vscode/blob/master/test/smoke/README.md
 * Clone the 'express' smoke test repository:
   * `git clone https://github.com/Microsoft/vscode-smoketest-express.git`
   * `cd vscode-smoketest-express`
-  * `npm install`
+  * `yarn`
 * In the following steps we'll produce a data directory and extensions directory from the latest **stable** release
   * we want to use **stable** to test the update behaviour from that version to our new version!
   * run `code --user-data-dir <new user data dir> --extensions-dir <new extensions dir> <vscode-smoketest-express-folder>`
