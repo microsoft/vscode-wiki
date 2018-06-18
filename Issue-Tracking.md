@@ -25,7 +25,7 @@ The **inbox tracker** should do the following initial triage:
 - Note: Assign JS/TS issues to @mjbvz
 
 **Everyone** should do the following secondary triage to their assigned issues (the **inbox tracker** may do some of these steps too, if obvious):
-- If an issue needs more info, assign the `needs more info` and ask for more information in a comment.
+- If an issue needs more info, assign the `needs more info` label, add an assignee (yourself if still unknown) and ask for more information in a comment.
 - Ensure that the issue has a **type** label, that is, `bug`, `feature-request`, `debt`, `needs more info`
 - Ensure that the issue has a **feature-area** label and optionally a sub area, see [Feature Areas](https://github.com/Microsoft/vscode/wiki/Feature-Areas).
 - Do a best effort to identify duplicates
