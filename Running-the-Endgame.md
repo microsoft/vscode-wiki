@@ -29,7 +29,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ##### Monday
 - [ ] If there were any new extensions pulled into the core product, add them to the list in the next 2 points about shrink-wrap and OSSREADME **@owner**
-- [ ] Let Daniel Ye (danyeh@microsoft.com) know that you are the end game master to merge in translations **@owner**
 - [ ] Update `OSSREADME.json` for built-in extensions based on differences to `yarn-lock` files if needed
    - [ ] typescript **@mjbvz**
    - [ ] javascript **@mjbvz**
