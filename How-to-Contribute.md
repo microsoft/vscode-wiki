@@ -9,8 +9,24 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 ### Getting the sources
 
+There are two options for getting the source code.  You can clone the official Code project or you can create a fork of the official project and get the source code from your fork. Unless you have received contribute permissions to the Code project, it will be easier to submit pull requests from a forked repository. Note: if you choose to fork the project, you should probably also add add the official Code project url as additional git remote url and rebase your fork periodically from the official master branch.
+
+How to clone/download the official Code project:
+
 ```
 git clone https://github.com/Microsoft/vscode.git
+```
+
+How to fork the project and get the url for your forked version of the Code project:
+
+- Go to https://github.com/Microsoft/vscode
+- Click the "Fork" button in the top right corner. GitHub will create a fork and open your new fork in the browser.
+- Click the "Clone or download" button to get the url for your fork.  Alternatively, after you have created the fork, you can enter the same command in the terminal but substitute your GitHub login for {yourGitHubAccount}. See the command below.
+
+How to clone/download your forked project:
+
+```
+git clone https://github.com/{yourGitHubAccount}/vscode.git
 ```
 
 ### Prerequisites
@@ -56,7 +72,7 @@ From a terminal, where you have cloned the `vscode` repository, execute the foll
 yarn run watch
 ```
 
-It will do an initial full build and then watch for file changes, compiling those changes incrementally, enabling a fast, iterative coding experience.
+The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will then continue to run in the terminal. It will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience.
 
 👉 **Tip!** Linux users may hit a ENOSPC error when running `yarn run watch`, to get around this follow instructions in the [Common Questions](https://code.visualstudio.com/docs/setup/linux#_common-questions).
 
