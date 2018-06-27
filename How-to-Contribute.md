@@ -11,17 +11,17 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 There are two options for getting the source code.  You can clone the official Code project or you can create a fork of the official project and get the source code from your fork.  Note: if you choose to fork the project, you should probably also add add the official Code project url as additional git remote url and rebase your fork periodically from the official master branch.
 
-How to clone/download the Code project:
+How to clone/download the official Code project:
 
 ```
 git clone https://github.com/Microsoft/vscode.git
 ```
 
-How to fork the project and clone your version of the Code project:
+How to fork the project and get the url for your forked version of the Code project:
 
 - Go to https://github.com/Microsoft/vscode
 - Click the "Fork" button in the top right corner. GitHub will create a fork and open your new fork in the browser.
-- Click the "Clone or download" button to get the url for your fork.  Alternatively, after you have created the fork, you can enter the same command in the terminal but substitute your GitHub login for {yourGitHubAccount}.
+- Click the "Clone or download" button to get the url for your fork.  Alternatively, after you have created the fork, you can enter the same command in the terminal but substitute your GitHub login for {yourGitHubAccount}. See the command below.
 
 How to clone/download your forked project:
 
