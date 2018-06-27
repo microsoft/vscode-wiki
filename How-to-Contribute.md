@@ -9,7 +9,7 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 ### Getting the sources
 
-There are two options for getting the source code.  You can clone the official Code project or you can create a fork of the official project and get the source code from your fork.  Note: if you choose to fork the project, you should probably also add add the official Code project url as additional git remote url and rebase your fork periodically from the official master branch.
+There are two options for getting the source code.  You can clone the official Code project or you can create a fork of the official project and get the source code from your fork. Unless you have received contribute permissions to the Code project, it will be easier to submit pull requests from a forked repository. Note: if you choose to fork the project, you should probably also add add the official Code project url as additional git remote url and rebase your fork periodically from the official master branch.
 
 How to clone/download the official Code project:
 
