@@ -56,7 +56,7 @@ From a terminal, where you have cloned the `vscode` repository, execute the foll
 yarn run watch
 ```
 
-It will do an initial full build and then watch for file changes, compiling those changes incrementally, enabling a fast, iterative coding experience.
+The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will then continue to run in the terminal. It will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience.
 
 👉 **Tip!** Linux users may hit a ENOSPC error when running `yarn run watch`, to get around this follow instructions in the [Common Questions](https://code.visualstudio.com/docs/setup/linux#_common-questions).
 
