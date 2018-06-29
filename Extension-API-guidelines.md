@@ -1,11 +1,9 @@
 Extension API Guidelines
 =
 
-This is a loose collection of guidelines that you should be following when proposing API. The process for adding API is the following
+This is a loose collection of guidelines that you should be following when proposing API. The process for adding API is described here: https://github.com/Microsoft/vscode/wiki/Extension-API-process. 
 
-1. read and understand this document
-2. add API into the `vscode.proposed.d.ts` file
-3. trigger a discussion about the proposed API
+
 
 Breakage
 -
