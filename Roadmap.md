@@ -34,16 +34,20 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 
 * :runner: Improve startup performance: keep start-up times within a predictable and suitable range for users across all platforms
 * Reduce resource/memory consumption: what can we do to reduce and control resource consumption of helper processes
-* :runner: Continue to improve accessibility, e.g. of the terminal, of the menu bar on Windows
-* [x] Support language packs for community-contributed translation 
+* :runner: Continue to improve accessibility,
+  * [x] terminal
+  * [ ] : runner: menu bar on Windows
+* [x] Support language packs for community-contributed translations 
 * [x] Improve the Windows update experience
 * [x] Improve serviceability by providing additional diagnostics 
 
 ### Workbench
 
-* :runner: Support to layout the editor area as a grid
-* :runner: Improve intra-file navigation (outline, bread crumb)
-* :runner: Investigate improved settings discovery and editing
+* :runner: Improve intra-file navigation 
+  * [x] outline
+  * [ ] :runner: brean crumb
+* [x] Support to layout the editor area as a grid
+* [ ] :runner: Investigate improved settings discovery and editing
 * [x] Finish Multi-root folder Workspaces support and support extension authors in adopting it
 * [x] Show SCM status in the explorer (including `.gitignored` files)
 * [x] Support vertical panel layout
@@ -122,7 +126,7 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
 
 ### For extension authors
 
-* :runner: Improve the language API to support a hierarchical navigation to the symbols in a document 
+* [x] Improve the language API to support a hierarchical navigation to the symbols in a document 
 * Make extension contributions attributable to an extension (e.g. error messages, commands)
 * [x] Support migrating the publisher of an extension to another publisher
 * [x] Investigate contributing explorer viewlets as a first class element in the activity bar
@@ -135,7 +139,6 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
 
 - Make it easier for extension authors to find their way around. Improve our API documentation, and integrate samples and documentation more closely. 
 - :runner: Refresh all of our dated overview videos. 
-- We will constantly review poorly performing pages and improve them.
  
 ## Summary
 
