@@ -14,3 +14,9 @@ Weekly API call:
 * If an API topic needs more time than what we have in the API call, we’ll schedule separate calls for these topics. These calls are open to everyone, just like the API call. 
 
 
+Phases of a proposal
+--
+
+1. Idea -> _Ask yourself:_ How does this fit into the existing API? Is this a one-off-API that solves only your one problem? Does this reuse a concept, like providers or commands, or does this add a new concept? 
+2. Proposal -> _Ask yourself:_ Does my proposal alter existing API and/or violates it our [API guidelines](https://github.com/Microsoft/vscode/wiki/Extension-API-guidelines)?
+3. Finalization -> _ Ask yourself:_ Do I have a non-trivial usage-sample for this? Do we use this new API ourselves? 
