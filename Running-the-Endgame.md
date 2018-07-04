@@ -61,27 +61,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ##### Thursday
 - [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] [Verification](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
-- [ ] Update release notes
-   - release notes are collected in a file named *`Major_Minor.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
-  - [ ] @aeschli
-  - [ ] @alexandrudima
-  - [ ] @bpasero
-  - [ ] @chrmarti
-  - [ ] @dbaeumer
-  - [ ] @egamma
-  - [ ] @isidorn
-  - [ ] @joaomoreno
-  - [ ] @jrieken
-  - [ ] @kieferrm
-  - [ ] @mjbvz
-  - [ ] @octref
-  - [ ] @ramya-rao-a
-  - [ ] @rebornix 
-  - [ ] @rmacfarlane
-  - [ ] @roblourens
-  - [ ] @sandy081
-  - [ ] @tyriar
-  - [ ] @weinand
 - [ ] Run [OSS tool](https://github.com/Microsoft/vscode-distro/blob/master/distro-tools/README.md) after merging shrink-wrap findings **@owner**
   - *The LCA review of the ThirdPartyNotices.txt files is not needed anymore*
 - [ ] Check new OSS usage is entered into the [OSS registry](https://ossmsft.visualstudio.com/_apps/hub/ms.vss-oss-web.hub-oss) **@owner**
@@ -103,6 +82,25 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] Linux - **@owner**
 - [ ] All release notes updated
   - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
+  - [ ] @aeschli
+  - [ ] @alexandrudima
+  - [ ] @bpasero
+  - [ ] @chrmarti
+  - [ ] @dbaeumer
+  - [ ] @egamma
+  - [ ] @isidorn
+  - [ ] @joaomoreno
+  - [ ] @jrieken
+  - [ ] @kieferrm
+  - [ ] @mjbvz
+  - [ ] @octref
+  - [ ] @ramya-rao-a
+  - [ ] @rebornix 
+  - [ ] @rmacfarlane
+  - [ ] @roblourens
+  - [ ] @sandy081
+  - [ ] @tyriar
+  - [ ] @weinand
 - [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. Use the [thankyou](https://vscode-tools.azurewebsites.net/#acknowledgePRs) tool to generate the initial contents of the section. **owner**
   - [ ] vscode **endgame master**
   - [ ] vscode-node-debug **@weinand**
@@ -128,8 +126,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] localization **@danyeh**
   - vscode-github-issues-prs **@chrmarti**
 - [ ] Add notable fixes to the release notes **@all**
-- When done fixing/verifying and there are changes since last build at the end of day PT
-  - [ ] Trigger new insider build and publish it manually **@owner**
 - [ ] Documentation updated
   - [ ] @aeschli
   - [ ] @alexandrudima
@@ -150,6 +146,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] @sandy081
   - [ ] @tyriar
   - [ ] @weinand
+- When done fixing/verifying and there are changes since last build at the end of day PT
+  - [ ] Trigger new insider build and publish it manually **@owner**
 
 ##### Friday/Monday
 - [ ] Branch code to `release/<x.y> **@owner**
