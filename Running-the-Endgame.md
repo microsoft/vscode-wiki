@@ -169,7 +169,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Build stable for all platforms **@owner**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **@owner**
 - [ ] **new** Make sure that the [vsda module](https://github.com/Microsoft/vscode-distro/tree/master/quality/stable/node_modules/vsda) version in stable is the same as in insiders (which matches the latest electron)
-- [ ] Make rpm signing request **@Tyriar**
+- [ ] Make [rpm signing request](https://github.com/Microsoft/vscode-distro/blob/master/linux-repo/README.md) **@Tyriar**
 - [ ] Sanity check of installable bits
   - [ ] Windows
     - [ ] signed installer 32-bit **@owner**
