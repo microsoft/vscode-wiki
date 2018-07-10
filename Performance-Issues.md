@@ -1,6 +1,6 @@
 ## Reporting a Performance Issue
 
-To report a performance issue please use the 'Report Issue' command available in the 'Help' menu and set the issue type to 'Performance Issue'.
+To report a performance issue please use the 'Report Issue' command available in the 'Help' menu. In the Issue Reporter window that shows up, set the issue type to 'Performance Issue'.
 
 ![image](https://user-images.githubusercontent.com/172399/42494913-e3532ece-8421-11e8-9f37-2da879c80ed6.png)
 
