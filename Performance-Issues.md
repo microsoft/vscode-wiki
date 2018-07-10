@@ -1,3 +1,11 @@
+## Reporting a Performance Issue
+
+To report a performance issue please use the 'Report Issue' command available in the 'Help' menu and set the issue type to 'Performance Issue'.
+
+![image](https://user-images.githubusercontent.com/172399/42494913-e3532ece-8421-11e8-9f37-2da879c80ed6.png)
+
+The following sections describe how you can narrow down a performance issue.
+
 ## Visual Studio Code is consuming a lot of CPU
 
 High CPU consumption is often caused by an issue in an extension. VS Code is running multiple processes and extensions are executed by the `Extension Host` process.
