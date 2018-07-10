@@ -13,6 +13,11 @@ Weekly API call:
 * In each API call, we’ll work through the remaining open ‘api-finalization’ items before we look at ‘api-proposal’ items.
 * If an API topic needs more time than what we have in the API call, we’ll schedule separate calls for these topics. These calls are open to everyone, just like the API call. 
 
+Flow Chart of the Process
+---
+
+![Flow](https://user-images.githubusercontent.com/1794099/42496119-5cecdc82-8425-11e8-8b03-48e95716bf2d.png)
+
 
 Phases of a proposal
 --
