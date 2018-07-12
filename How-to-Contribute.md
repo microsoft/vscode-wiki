@@ -21,10 +21,10 @@ git clone https://github.com/Microsoft/vscode.git
 - [Python](https://www.python.org/downloads/), at least version 2.7 (version 3 is __*not*__ supported)
 - C/C++ compiler tool chain
   - **Windows**
-    - Make sure your profile path only contains ACSII letters, eg *John*, otherwise it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - Set a `PYTHON` environment variable pointing to your `python.exe`. Eg: `C:\Python27\python.exe`
     - [Visual Studio Community 2017](https://www.visualstudio.com/downloads/), make sure to select the option to install all C++ tools and the Windows SDK. Alternatively, you can also use Felix Rieseberg's [Windows Build Tools npm module](https://github.com/felixrieseberg/windows-build-tools) instead of Visual Studio 2017. The `--debug` flag is helpful if you encounter any problems during installation.
-    - Please note that building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
+    - **Warning:** Make sure your profile path only contains ACSII letters, eg *John*, otherwise it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
+    - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
   - **OS X**
     - [Xcode](https://developer.apple.com/xcode/downloads/) and the Command Line Tools (Xcode -> Preferences -> Downloads), which will install `gcc` and the related toolchain containing `make`
   - **Linux**
