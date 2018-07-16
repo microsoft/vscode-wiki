@@ -36,7 +36,7 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 * Reduce resource/memory consumption: what can we do to reduce and control resource consumption of helper processes
 * :runner: Continue to improve accessibility,
   * [x] terminal
-  * [ ] : runner: menu bar on Windows
+  * [ ] :runner: menu bar on Windows
 * [x] Support language packs for community-contributed translations 
 * [x] Improve the Windows update experience
 * [x] Improve serviceability by providing additional diagnostics 
@@ -45,7 +45,7 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 
 * :runner: Improve intra-file navigation 
   * [x] outline
-  * [ ] :runner: brean crumb
+  * [ ] :runner: bread crumb
 * [x] Support to layout the editor area as a grid
 * [ ] :runner: Investigate improved settings discovery and editing
 * [x] Finish Multi-root folder Workspaces support and support extension authors in adopting it
@@ -70,6 +70,7 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 
 * [x] Support to view changes directly inside the editor using a peek/inline experience
 * Investigate integrated history view
+* :runner: Investigate support to better collaborate on pull requests
 
 ## Node, JavaScript, and TypeScript Development
 
@@ -120,7 +121,7 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
 ### For extension users
 
 * [x] Improve extension recommendation system
-* Improve searching for extensions 
+* :runner: Improve searching for extensions 
 * [x] Simplify tracking down issues caused by installed extensions and make it easier to file issues
 * [x] Show the user more information about the usage of a extension (startup time, error rate, etc.).
 
