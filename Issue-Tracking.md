@@ -25,7 +25,7 @@ The **inbox tracker** should do the following initial triage:
 - Note: Assign JS/TS issues to @mjbvz
 
 **Everyone** should do the following secondary triage to their assigned issues (the **inbox tracker** may do some of these steps too, if obvious):
-- If an issue needs more info, assign the `needs more info` label, add an assignee (yourself if still unknown) and ask for more information in a comment.
+- If an issue needs more info, assign the `needs more info` label, add an assignee (yourself if still unknown) and ask for more information in a comment. (Adding a comment `/needsMoreInfo` lets the bot add the label and a generic comment asking for more info and a review of the issue guidelines.)
 - Ensure that the issue has a **type** label, that is, `bug`, `feature-request`, `debt`, `needs more info`
 - Ensure that the issue has a **feature-area** label and optionally a sub area, see [Feature Areas](https://github.com/Microsoft/vscode/wiki/Feature-Areas).
 - Do a best effort to identify duplicates
@@ -42,7 +42,7 @@ See a complete list of GitHub shortcuts [here](https://help.github.com/articles/
 
 ### Ongoing Issue Management
 - Issues labelled with `needs more information` are automatically closed by the bot when no additional information is provided for 7 days.
-- We close issues that we are not planning to work during the next 12 months 
+- We close issues that we are not planning to work during the next 12 months. (Adding the `*out-of-scope` label lets the bot close the issue and add a generic comment.)
 
 ### Planning
 During the iteration planning process we use the following sources as input:
