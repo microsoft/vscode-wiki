@@ -1,7 +1,7 @@
 ### July 2018
 
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/53850)
-* Endgame **TBD**
+* [Endgame](https://github.com/Microsoft/vscode/issues/55349)
 
 ### June 2018
 
