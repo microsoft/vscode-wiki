@@ -1,3 +1,5 @@
+# Setting description styleguide
+
 This page describes style guidelines for writing descriptions for settings.
 
 - Descriptions should be understandable by non-developers or users who don't know everything about vscode.
