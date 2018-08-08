@@ -2,11 +2,12 @@
 
 This page describes style guidelines for writing descriptions for settings.
 
+- `description`/`enumDescriptions` is rendered as plain text. `markdownDescription`/`markdownEnumDescriptions` is rendered as markdown. Be careful to use the correct one. If you are using links, backticks, lists, etc use the markdown property.
+- Commands, keycodes, code snippets, or other "data items" must be in backticks with no quotes.
 - Descriptions should be understandable by non-developers or users who don't know everything about vscode.
 - Don't use "we" to mean "vscode".
 - Use "macOS" instead of "OS X"
 - Descriptions and enumDescriptions must end in a period.
-- Commands, keycodes, code snippets, or other "data items" must be in backticks with no quotes.
 - Bools
   - Use "Controls whether" instead of "Controls if". (Other wordings are ok)
   - Use enabled/disabled or other language instead of true/false.
