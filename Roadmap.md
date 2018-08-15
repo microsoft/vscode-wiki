@@ -43,9 +43,9 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 
 ### Workbench
 
-* :runner: Improve intra-file navigation 
+* [x] Improve intra-file navigation 
   * [x] outline
-  * [ ] :runner: bread crumb
+  * [x] bread crumb
 * [x] Support to layout the editor area as a grid
 * [ ] :runner: Investigate improved settings discovery and editing
 * [x] Finish Multi-root folder Workspaces support and support extension authors in adopting it
@@ -53,6 +53,7 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 * [x] Support vertical panel layout
 * [x] Support multi-selection in the  explorer for common actions e.g. delete
 * [x] Improve notification UI
+* [x] Support diagnostics with multiple error locations
 
 ### Editor
 
@@ -72,6 +73,10 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 * Investigate integrated history view
 * :runner: Investigate support to better collaborate on pull requests
 
+### WSL Support
+
+* [ ] :runner: Improve the WSL support. Investigate how we can enable extensions to leverage tools available in WSL.
+
 ## Node, JavaScript, and TypeScript Development
 
 We want VS Code to be a great tool for developing modern web applications with JavaScript and TypeScript and we will continue to collaborate deeply with the TypeScript team to deliver the richest code editing, navigation, and understanding experiences for both TypeScript and JavaScript. We will continue to make it easy to configure debugging of your Node based applications and include support for both client and server side debugging in the box. 
@@ -85,6 +90,7 @@ We want VS Code to be a great tool for developing modern web applications with J
 
 * :runner: Continue to refine and improve to Debug Adapter Protocol with support from the community.
 * Expose more UI for DAP features that are currently not surfaced in the VS Code debugging UI. This includes moving the loaded scripts UI into the core. 
+* [x] Move the Debug Adapter Protocol into a separate repository and provide a web site.
 
 
 ### JavaScript
@@ -128,7 +134,7 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
 ### For extension authors
 
 * [x] Improve the language API to support a hierarchical navigation to the symbols in a document 
-* Make extension contributions attributable to an extension (e.g. error messages, commands)
+* :runner: Make extension contributions attributable to an extension (e.g. error messages, commands)
 * [x] Support migrating the publisher of an extension to another publisher
 * [x] Investigate contributing explorer viewlets as a first class element in the activity bar
 * :runner: Investigate Quick pick improvements (e.g. multi-select, multi-step, commands, grouping)
