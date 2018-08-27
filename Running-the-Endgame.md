@@ -30,7 +30,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
 
 ##### Monday
-- [ ] If there were any new extensions pulled into the core product, add them to the list in the next 2 points about shrink-wrap and OSSREADME **@owner**
+- [ ] If there were any new extensions pulled into the core product, add them to the list in the next 2 points about shrink-wrap and OSSREADME **owner**
 - [ ] Update `OSSREADME.json` for built-in extensions based on differences to `yarn-lock` files if needed
    - [ ] typescript **@mjbvz**
    - [ ] javascript **@mjbvz**
@@ -66,7 +66,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ##### Thursday
 - [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] [Verification](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
-- [ ] Check new OSS usage is entered into the [OSS registry](https://ossmsft.visualstudio.com/_apps/hub/ms.vss-oss-web.hub-oss) **@owner**
+- [ ] Check new OSS usage is entered into the [OSS registry](https://ossmsft.visualstudio.com/_apps/hub/ms.vss-oss-web.hub-oss) **owner**
 
 ##### Friday
 - [ ] Pause scheduled `insider` builds **endgame master**
@@ -80,9 +80,9 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] All issues [verified](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
 - [ ] Fixing (only critical bugs - no string changes)
 - [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test)
-  - [ ] Windows - **@owner**
-  - [ ] OS X - **@owner**
-  - [ ] Linux - **@owner**
+  - [ ] Windows - **owner**
+  - [ ] OS X - **owner**
+  - [ ] Linux - **owner**
 - [ ] All release notes updated
   - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
   - [ ] @aeschli
@@ -141,9 +141,9 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ##### Monday - Wednesday
 - [ ] Polish release notes **@redmond**
-- [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **@endgame master**
-- [ ] Build `Insider` from `release/<x.y>` **@endgame master**
-- [ ] Manually release `Insider` **@endgame master**
+- [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **endgame master**
+- [ ] Build `Insider` from `release/<x.y>` **endgame master**
+- [ ] Manually release `Insider` **endgame master**
 - [ ] Documentation updated
   - [ ] @aeschli
   - [ ] @alexandrudima
@@ -175,19 +175,19 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Make [rpm signing request](https://github.com/Microsoft/vscode-distro/blob/master/linux-repo/README.md) **@Tyriar**
 - [ ] Sanity check of installable bits
   - [ ] Windows
-    - [ ] signed installer 32-bit **@owner**
-    - [ ] signed installer 64-bit **@owner**
-    - [ ] signed user installer 32-bit **@owner**
-    - [ ] signed user installer 64-bit **@owner**
-    - [ ] zip 32-bit **@owner**
-    - [ ] zip 64-bit **@owner**
-  - [ ] OS X - **@owner**
+    - [ ] signed installer 32-bit **owner**
+    - [ ] signed installer 64-bit **owner**
+    - [ ] signed user installer 32-bit **owner**
+    - [ ] signed user installer 64-bit **owner**
+    - [ ] zip 32-bit **owner**
+    - [ ] zip 64-bit **owner**
+  - [ ] OS X - **owner**
   - [ ] Linux
-    - [ ] deb package 32-bit **@owner**
-    - [ ] deb package 64-bit **@owner**
-    - [ ] rpm package 64-bit **@owner**
-    - [ ] rpm package 32-bit **@owner**
-    - [ ] archives **@owner**
+    - [ ] deb package 32-bit **owner**
+    - [ ] deb package 64-bit **owner**
+    - [ ] rpm package 64-bit **owner**
+    - [ ] rpm package 32-bit **owner**
+    - [ ] archives **owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish to stable **endgame master**
 - [ ] Publish deb and rpms to repositories manually **@Tyriar**
@@ -207,37 +207,37 @@ We release a recovery build with a handful of critical fixes and translation upd
 - an issue that impacts extensions or is an API regression
 
 #### Check list
-- [ ] Create a milestone `<Month> Recovery <year>` **@owner**
-- [ ] Include an issue 'update translations' **@owner**
+- [ ] Create a milestone `<Month> Recovery <year>` **owner**
+- [ ] Include an issue 'update translations' **owner**
 - [ ] Assign candidate issues to the recovery milestone **@team**
 - [ ] Review the `candidate` issues, and if they pass the review assign them to the recovery milestone **@team**
 - [ ] All `candiate` fixes are peer reviewed and pushed to `master` and then cherry-picked into the release branch **@team**
 - [ ] Initiate `insiders` build from `master`
 - [ ] Issues are tested in the `insiders` **@team**
-- [ ] Build `stable` for all platforms from release branch **@owner**
+- [ ] Build `stable` for all platforms from release branch **owner**
 - [ ] Make rpm signing request **@Tyriar**
-- [ ] Issues are verified on `stable` build and the `verified` label is added **@owner**
-- [ ] Check `https://github.com/Microsoft/vscode/compare/release/<x.y>` to ensure no other commits have been made in the release branch **@owner**
+- [ ] Issues are verified on `stable` build and the `verified` label is added **owner**
+- [ ] Check `https://github.com/Microsoft/vscode/compare/release/<x.y>` to ensure no other commits have been made in the release branch **owner**
 - [ ] Update the release notes and include a link to a query for the fixed issues **@gregvanl**
 - [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) stable bits
-  - [ ] Windows - **@owner**
-  - [ ] OS X - **@owner**
-  - [ ] Linux - **@owner**
+  - [ ] Windows - **owner**
+  - [ ] OS X - **owner**
+  - [ ] Linux - **owner**
 - [ ] Sanity check installable stable bits that have not been smoke tested
   - [ ] Windows
-    - [ ] signed installer 32-bit **@owner**
-    - [ ] signed installer 64-bit **@owner**
-    - [ ] zip 32-bit **@owner**
-    - [ ] zip 64-bit **@owner**
-  - [ ] OS X - **@owner**
+    - [ ] signed installer 32-bit **owner**
+    - [ ] signed installer 64-bit **owner**
+    - [ ] zip 32-bit **owner**
+    - [ ] zip 64-bit **owner**
+  - [ ] OS X - **owner**
   - [ ] Linux
-    - [ ] deb package 32-bit **@owner**
-    - [ ] deb package 64-bit **@owner**
-    - [ ] rpm package 64-bit **@owner**
-    - [ ] rpm package 32-bit **@owner**
-    - [ ] archives **@owner**
+    - [ ] deb package 32-bit **owner**
+    - [ ] deb package 64-bit **owner**
+    - [ ] rpm package 64-bit **owner**
+    - [ ] rpm package 32-bit **owner**
+    - [ ] archives **owner**
 - [ ] Publish website **@gregvanl**
-- [ ] Publish stable build **@owner**
+- [ ] Publish stable build **owner**
 - [ ] Publish deb and rpms to repositories manually **@Tyriar**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`
 
