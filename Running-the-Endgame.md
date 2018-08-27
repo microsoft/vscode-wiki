@@ -30,18 +30,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
 
 ##### Monday
-- [ ] If there were any new extensions pulled into the core product, add them to the list in the next 2 points about shrink-wrap and OSSREADME **owner**
-- [ ] Update `OSSREADME.json` for built-in extensions based on differences to `yarn-lock` files if needed
-   - [ ] typescript **@mjbvz**
-   - [ ] javascript **@mjbvz**
-   - [ ] php **@roblourens**
-   - [ ] markdown **@mjbvz**
-   - [ ] json **@aeschli**
-   - [ ] css **@aeschli**
-   - [ ] configuration-editing **@jrieken**
-   - [ ] node-debug **@weinand**
-   - [ ] node-debug2 **@roblourens**
-   - [ ] emmet **@ramya-ray-a**
+- [ ] Run [OSS tool](https://github.com/Microsoft/vscode-distro/blob/master/distro-tools/README.md) **endgame master**
+  - *The LCA review of the ThirdPartyNotices.txt files is not needed anymore*
 - [ ] Code freeze at 5pm PT
 - [ ] Ensure we have a green build on all platforms at 5pm PT
 - [ ] All test items contain sufficiently comprehensive test descriptions by 6pm PT
@@ -54,8 +44,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Test plan ready by 8am CET / 11pm PT on Monday
 - [ ] Testing
 - [ ] [Verification needed](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed)
-- [ ] Run [OSS tool](https://github.com/Microsoft/vscode-distro/blob/master/distro-tools/README.md) **endgame master**
-  - *The LCA review of the ThirdPartyNotices.txt files is not needed anymore*
 
 ##### Wednesday
 - [ ] Testing
