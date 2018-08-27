@@ -40,8 +40,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ##### Tuesday
 - [ ] Test plan items assigned
 - [ ] All closed feature-requests either have a verification-needed or on-testplan tag
-- [ ] Test build starts at 7am CET / 10pm PT on Tuesday
-- [ ] Test plan ready by 8am CET / 11pm PT on Tuesday
+- [ ] Test build starts at 7am CET
+- [ ] Test plan ready by 8am CET
 - [ ] Testing
 - [ ] [Verification needed](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed)
 
