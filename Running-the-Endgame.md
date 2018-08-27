@@ -27,6 +27,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - *Month/Day* Code freeze for the endgame
 - *Month/Day* Endgame done
 
+> **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
+
 ##### Monday
 - [ ] If there were any new extensions pulled into the core product, add them to the list in the next 2 points about shrink-wrap and OSSREADME **@owner**
 - [ ] Update `OSSREADME.json` for built-in extensions based on differences to `yarn-lock` files if needed
@@ -41,8 +43,9 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
    - [ ] node-debug2 **@roblourens**
    - [ ] emmet **@ramya-ray-a**
 - [ ] Code freeze at 5pm PT
-- [ ] Ensure we have a green build on all platforms
+- [ ] Ensure we have a green build on all platforms at 5pm PT
 - [ ] All test items contain sufficiently comprehensive test descriptions by 6pm PT
+- [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/
 
 ##### Tuesday
 - [ ] Test plan items assigned
@@ -51,6 +54,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Test plan ready by 8am CET / 11pm PT on Monday
 - [ ] Testing
 - [ ] [Verification needed](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed)
+- [ ] Run [OSS tool](https://github.com/Microsoft/vscode-distro/blob/master/distro-tools/README.md) **endgame master**
+  - *The LCA review of the ThirdPartyNotices.txt files is not needed anymore*
 
 ##### Wednesday
 - [ ] Testing
@@ -61,12 +66,10 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ##### Thursday
 - [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] [Verification](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
-- [ ] Run [OSS tool](https://github.com/Microsoft/vscode-distro/blob/master/distro-tools/README.md) after merging shrink-wrap findings **@owner**
-  - *The LCA review of the ThirdPartyNotices.txt files is not needed anymore*
 - [ ] Check new OSS usage is entered into the [OSS registry](https://ossmsft.visualstudio.com/_apps/hub/ms.vss-oss-web.hub-oss) **@owner**
 
 ##### Friday
-- [ ] Pause scheduled `insider` builds **@owner**
+- [ ] Pause scheduled `insider` builds **endgame master**
 - Satellite modules/npm packages ready, version updated, smoke tested
   - [ ] vscode **@bpasero**
   - [ ] yo generator **@aeschli**
@@ -99,6 +102,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] @rmacfarlane
   - [ ] @roblourens
   - [ ] @sandy081
+  - [ ] @sbatten
   - [ ] @tyriar
   - [ ] @weinand
 - [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. Use the [thankyou](https://vscode-tools.azurewebsites.net/#acknowledgePRs) tool to generate the initial contents of the section. **owner**
@@ -106,7 +110,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] vscode-node-debug **@weinand**
   - [ ] vscode-node-debug2 **@roblourens**
   - [ ] vscode-debugadapter-node **@weinand**
-  - [ ] vscode-filewatcher-windows **@bpasero**
   - [ ] vscode-languageserver-node **@dbaeumer**
   - [ ] language-server-protocol **@dbaeumer**
   - [ ] vscode-textmate **@alexandrudima**
@@ -124,8 +127,23 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] vscode-jshint **@rmacfarlane**
   - [ ] vscode-recipes **@auchenberg**
   - [ ] localization **@danyeh**
-  - vscode-github-issues-prs **@chrmarti**
+  - [ ] vscode-github-issues-prs **@chrmarti**
 - [ ] Add notable fixes to the release notes **@all**
+- When done fixing/verifying and there are changes since last build at the end of day PT
+  - [ ] Trigger new insider build and publish it manually **endgame master**
+
+##### Friday/Monday
+- [ ] Branch code to `release/<x.y> **endgame master**
+- [ ] Bump up the version in package.json - **endgame master**
+- [ ] Announce master is open for business **endgame master**
+- [ ] Let Daniel Ye know that the release branch `release/<x.y>` got created and that translation should be pulled from there and that the pull request has to be created against that branch **endgame master**
+- [ ] Polish release notes **@redmond**
+
+##### Monday - Wednesday
+- [ ] Polish release notes **@redmond**
+- [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **@endgame master**
+- [ ] Build `Insider` from `release/<x.y>` **@endgame master**
+- [ ] Manually release `Insider` **@endgame master**
 - [ ] Documentation updated
   - [ ] @aeschli
   - [ ] @alexandrudima
@@ -144,36 +162,23 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] @rmacfarlane
   - [ ] @roblourens
   - [ ] @sandy081
+  - [ ] @sbatten
   - [ ] @tyriar
   - [ ] @weinand
-- When done fixing/verifying and there are changes since last build at the end of day PT
-  - [ ] Trigger new insider build and publish it manually **@owner**
-
-##### Friday/Monday
-- [ ] Branch code to `release/<x.y> **@owner**
-- [ ] Bump up the version in package.json - **owner**
-- [ ] Announce master is open for business **@owner**
-- [ ] Let Daniel Ye know that the release branch `release/<x.y>` got created and that translation should be pulled from there and that the pull request has to be created against that branch **@owner**
-- [ ] Polish release notes **@redmond**
-
-##### Monday - Wednesday
-- [ ] Polish release notes **@redmond**
-- [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **@owner**
-- [ ] Build `Insider` from `release/<x.y>` **@owner**
-- [ ] Manually release `Insider` **@owner**
 
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
 
-##### Thursday/Friday
+##### Wednesday/Thursday
 - [ ] Check translations (check `i18n` folder git history for latest translations, then build locally and see the amount of untranslated strings) **@zurich**
-- [ ] Build stable for all platforms **@owner**
-- [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **@owner**
-- [ ] **new** Make sure that the [vsda module](https://github.com/Microsoft/vscode-distro/tree/master/quality/stable/node_modules/vsda) version in stable is the same as in insiders (which matches the latest electron)
+- [ ] Build stable for all platforms **endgame master**
+- [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **endgame master**
 - [ ] Make [rpm signing request](https://github.com/Microsoft/vscode-distro/blob/master/linux-repo/README.md) **@Tyriar**
 - [ ] Sanity check of installable bits
   - [ ] Windows
     - [ ] signed installer 32-bit **@owner**
     - [ ] signed installer 64-bit **@owner**
+    - [ ] signed user installer 32-bit **@owner**
+    - [ ] signed user installer 64-bit **@owner**
     - [ ] zip 32-bit **@owner**
     - [ ] zip 64-bit **@owner**
   - [ ] OS X - **@owner**
@@ -184,10 +189,10 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
     - [ ] rpm package 32-bit **@owner**
     - [ ] archives **@owner**
 - [ ] Publish website **@gregvanl**
-- [ ] Publish to stable **@owner**
+- [ ] Publish to stable **endgame master**
 - [ ] Publish deb and rpms to repositories manually **@Tyriar**
 - [ ] Add version with symbols to HockeyApp @Tyriar
-- [ ] Enable scheduled `insider` builds **@owner**
+- [ ] Enable scheduled `insider` builds **endgame master**
 - [ ] Twitter announcement **@seanmcbreen**
 
 ### Recovery Build
