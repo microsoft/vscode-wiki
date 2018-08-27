@@ -116,7 +116,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] vscode-recipes **@auchenberg**
   - [ ] localization **@danyeh**
   - [ ] vscode-github-issues-prs **@chrmarti**
-- [ ] Add notable fixes to the release notes **@all**
+- [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Trigger new insider build and publish it manually **endgame master**
 
@@ -125,10 +125,10 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Bump up the version in package.json - **endgame master**
 - [ ] Announce master is open for business **endgame master**
 - [ ] Let Daniel Ye know that the release branch `release/<x.y>` got created and that translation should be pulled from there and that the pull request has to be created against that branch **endgame master**
-- [ ] Polish release notes **@redmond**
+- [ ] Polish release notes **redmond**
 
 ##### Monday - Wednesday
-- [ ] Polish release notes **@redmond**
+- [ ] Polish release notes **redmond**
 - [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **endgame master**
 - [ ] Build `Insider` from `release/<x.y>` **endgame master**
 - [ ] Manually release `Insider` **endgame master**
@@ -157,7 +157,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
 
 ##### Wednesday/Thursday
-- [ ] Check translations (check `i18n` folder git history for latest translations, then build locally and see the amount of untranslated strings) **@zurich**
+- [ ] Check translations (check `i18n` folder git history for latest translations, then build locally and see the amount of untranslated strings) **zurich**
 - [ ] Build stable for all platforms **endgame master**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **endgame master**
 - [ ] Make [rpm signing request](https://github.com/Microsoft/vscode-distro/blob/master/linux-repo/README.md) **@Tyriar**
@@ -197,11 +197,11 @@ We release a recovery build with a handful of critical fixes and translation upd
 #### Check list
 - [ ] Create a milestone `<Month> Recovery <year>` **owner**
 - [ ] Include an issue 'update translations' **owner**
-- [ ] Assign candidate issues to the recovery milestone **@team**
-- [ ] Review the `candidate` issues, and if they pass the review assign them to the recovery milestone **@team**
-- [ ] All `candiate` fixes are peer reviewed and pushed to `master` and then cherry-picked into the release branch **@team**
+- [ ] Assign candidate issues to the recovery milestone **team**
+- [ ] Review the `candidate` issues, and if they pass the review assign them to the recovery milestone **team**
+- [ ] All `candiate` fixes are peer reviewed and pushed to `master` and then cherry-picked into the release branch **team**
 - [ ] Initiate `insiders` build from `master`
-- [ ] Issues are tested in the `insiders` **@team**
+- [ ] Issues are tested in the `insiders` **team**
 - [ ] Build `stable` for all platforms from release branch **owner**
 - [ ] Make rpm signing request **@Tyriar**
 - [ ] Issues are verified on `stable` build and the `verified` label is added **owner**
