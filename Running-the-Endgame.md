@@ -38,7 +38,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/
 
 ##### Tuesday
-- [ ] Test plan items assigned
+- [ ] Test plan items assigned (using https://vscode-tools.azurewebsites.net/)
+  - Run the tool multiple times to balance load if test items come in later and assignments are already made
 - [ ] All closed feature-requests either have a verification-needed or on-testplan tag
 - [ ] Test build starts at 7am CET
 - [ ] Test plan ready by 8am CET
