@@ -21,6 +21,7 @@ This page describes style guidelines for writing descriptions for settings.
 
     - Enum values mentioned in a description must be in backticks with no quotes.
     - Note - if an enum setting has more than 10 options, its enum descriptions will be rendered inline inside the dropdown control (or in the old settings editor, only in the suggest widget). As far as I can tell, this only affects `files.encoding`.
+    - Avoid using links in enumDescriptions, because they will not be clickable.
 - Links
 	- Settings should have a markdown-style link to documentation when relevant docs exist
     - Example:
