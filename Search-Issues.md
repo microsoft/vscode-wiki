@@ -10,7 +10,7 @@ By far, the most common reason that expected search results don't appear is beca
 
 An easy way to validate whether exclude setttings or ignore files are affecting your search is to turn off the "Use Exclude Settings and Ignore Files" button in the search viewlet. The button in the lower right corner:
 
-![screen shot 2018-04-30 at 2 41 17 pm](https://user-images.githubusercontent.com/323878/39452556-7356f906-4c87-11e8-8886-8f4629503405.png)
+![Use Exclude Settings and Ignore Files button](https://user-images.githubusercontent.com/323878/39452556-7356f906-4c87-11e8-8886-8f4629503405.png)
 
 Another thing to watch for is that **it's possible to add a file covered by a `.gitignore` file to git**, and some tools like `git grep` will still search these files. Ripgrep is looking at the `.gitignore` file but doesn't know whether a file has been added to git. So if a file is covered by the `.gitignore` file, it won't be searched, whether or not it's in git.
 
@@ -34,7 +34,7 @@ Does your workspace have lots of **symlinks**? Search can take a long time if it
 
 Does your search return results on **very long lines**? This will cause some slowdown and can even cause VS Code to hang. There is an [open bug](https://github.com/Microsoft/vscode/issues/31551) for this.
 
-If your workspace is **very large**, you might want to use the exclude settings, or the "files to include/exclude" text boxes to narrow down your search to the parts you care about.
+If your workspace is **very large**, you might want to use the exclude settings, or the "files to include/exclude" text boxes to narrow down your search to the parts you care about. Make sure the "Use Exclude Settings and Ignore Files" button is toggled on so your exclude settings are respected.
 
 On Windows, the **Windows Defender** tool can sometimes kick in during a search and slow down searching. Look for a process named using high CPU named `MsMpEng.exe` in the Task Manager to tell whether Defender is active.
 
