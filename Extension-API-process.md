@@ -3,6 +3,16 @@ Extension API Process
 
 The goal of this process is to be transparent about how API is created, what phases a proposal goes through, and to know what proposals are finalised when. Still, we want to maintain flexibility in making API. 
 
+About Proposed API
+--
+We work with API proposals on which we iterate a few time before making stable API. Those proposals can be tested by extension authors. This is what you have to do to try out a proposed API:
+
+* You must use [Insiders](https://code.visualstudio.com/insiders/) because proposed APIs change frequently.
+* You must have this line in the package.json file of your extension: `"enableProposedAPI": true.`
+* Copy the latest version of the [`vscode.proposed.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts)-file into your project.
+
+Note that you cannot publish an extension that uses a proposed API. We may likely make breaking changes in the next release and we never want to break existing extensions.
+
 Weekly API call: 
 --
 
