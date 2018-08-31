@@ -54,7 +54,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ##### Thursday
 - [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
-- [ ] [Verification](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
+- [ ] [Verification](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Abug+-label%3Averified+-label%3Aon-testplan+is%3Aclosed+-label%3Aerror-telemetry+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+milestone%3A%22August+2018%22+)
 - [ ] Check new OSS usage is entered into the [OSS registry](https://ossmsft.visualstudio.com/_apps/hub/ms.vss-oss-web.hub-oss) **owner**
 
 ##### Friday
@@ -66,7 +66,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] node debug **@weinand**
   - [ ] node debug2 **@roblourens**
   - [ ] node debugadapter node **@weinand**
-- [ ] All issues [verified](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
+- [ ] All issues [verified](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Abug+-label%3Averified+-label%3Aon-testplan+is%3Aclosed+-label%3Aerror-telemetry+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+milestone%3A%22August+2018%22+)
 - [ ] Fixing (only critical bugs - no string changes)
 - [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test)
   - [ ] Windows - **owner**
