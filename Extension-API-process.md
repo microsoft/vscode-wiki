@@ -5,7 +5,7 @@ The goal of this process is to be transparent about how API is created, what pha
 
 About Proposed API
 --
-We work with API proposals on which we iterate a few times before making stable API. Those proposals can be tested by extension authors. This is what you have to do to try out a proposed API:
+We work with API proposals on which we iterate a few times before making stable API. Those proposals can be tested by extension authors. The proposed API is defined in [`vscode.proposed.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts). This is what you have to do to try out a proposed API:
 
 * You must use [Insiders](https://code.visualstudio.com/insiders/) because proposed APIs change frequently.
 * You must have this line in the package.json file of your extension: `"enableProposedAPI": true.`
