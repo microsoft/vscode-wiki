@@ -180,7 +180,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Publish website **@gregvanl**
 - [ ] Publish to stable **endgame master**
 - [ ] Publish deb and rpms to repositories manually **@Tyriar**
-- [ ] Add version with symbols to HockeyApp @Tyriar
 - [ ] Enable scheduled `insider` builds **endgame master**
 - [ ] Twitter announcement **@seanmcbreen**
 
