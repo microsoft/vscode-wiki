@@ -158,7 +158,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
 
 ##### Wednesday/Thursday
-- [ ] Check translations (check `i18n` folder git history for latest translations, then build locally and see the amount of untranslated strings) **zurich**
 - [ ] Build stable for all platforms **endgame master**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **endgame master**
 - [ ] Make [rpm signing request](https://github.com/Microsoft/vscode-distro/blob/master/linux-repo/README.md) **@Tyriar**
