@@ -159,7 +159,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ##### Wednesday/Thursday
 - [ ] Build stable for all platforms **endgame master**
-- [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **endgame master**
 - [ ] Make [rpm signing request](https://github.com/Microsoft/vscode-distro/blob/master/linux-repo/README.md) **@Tyriar**
 - [ ] Sanity check of installable bits
   - [ ] Windows
@@ -178,6 +177,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
     - [ ] archives **owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish to stable **endgame master**
+- [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **endgame master**
 - [ ] Publish deb and rpms to repositories manually **@Tyriar**
 - [ ] Enable scheduled `insider` builds **endgame master**
 - [ ] Twitter announcement **@seanmcbreen**
