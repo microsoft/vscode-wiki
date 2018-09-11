@@ -35,7 +35,7 @@ If the answer to all three of them is `yes` we keep the feature request open. If
 
 When we close feature requests as out of scope, we'll unsubscribe from these issues to reduce the overall number of issue notifications we receive every day.
 
-If you are the author of a feature request you might feel differently about whether or not it's a good idea to close your issue. We understand that. Be assured, we love all of your input. So, don't take personal offense when we decide to close your issue :peace_symbol:. If you think we made a mistake, please let us know and we'll consider reopening the feature request. 
+If you are the author of a feature request you might feel differently about whether or not it's a good idea to close your issue. We understand that. Be assured, we love all of your input. So, don't take personal offense when we decide to close your issue :peace_symbol:. If you feel your feature request deserves to stay open, feel free to improve your use case or gather more up-votes. Then ping us and we'll consider reopening the feature request.
 
 # Categorizing Issues
 
