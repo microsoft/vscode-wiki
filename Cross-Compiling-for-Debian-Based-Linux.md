@@ -32,23 +32,17 @@ Because cross-compiling isn't officially supported by the VSCode team, some work
    ```
 
    *note the -L linker argument pointing to the absolute path of libx11 on the chroot/rootfs*
+
+1. Tell `yarn` you want to cross-compile native modules for ARM:
    
-1. Remove the `yarn` check, since `yarn` doesn't currently support cross-compiling:
-
    ```bash
-   echo > build/npm/preinstall.js
-   ```
-
-1. Set the electron version and install prerequisites for the target architecture using `npm` (instead of `yarn`):
-
-   ```bash
-   export npm_config_target="$(grep target .yarnrc | sed 's/[^0-9.]*//g')"
-   npm install --target_arch=armhf
+   export npm_config_arch=arm
    ```
 
 1. Build VSCode and create a .deb file (for easier installation on the target device) as usual:
 
    ```bash
+   yarn
    yarn run gulp vscode-linux-arm-min
    yarn run gulp vscode-linux-arm-build-deb
    ```
