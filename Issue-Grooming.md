@@ -29,7 +29,7 @@ Thus we think it's better if the set of feature requests is not open ended but r
 Here are the criteria we use to make a decision.
 - Does the functionality described in the feature request have any reasonable change to be on the next roadmap?
 - Are the costs to implement the functionality reasonable given the size of our team? I.e. can we afford the feature?
-- Has the community at large expressed interest in this functionality? I.e. has it gathered more than 10 up-votes or more than 10 comments over the last 6 months? Just for reference, the up-vote criterion alone covers more than 500 feature requests as of right now, September 10th, 2018.
+- Has the community at large expressed interest in this functionality? I.e. has it gathered more than 10 up-votes or more than 10 comments over the last 6 months? Just for reference, the up-vote criterion alone covers more than 500 feature requests as of right now, September 10th, 2018. We also look at the duplicates for this analysis.
 
 If the answer to all three of them is `yes` we keep the feature request open. If an issue has a strong affinity with our roadmap or describes an interesting competitive advantage we might keep it open even if it has not yet gathered sufficient community support. In this case, the decision clearly is more subjective.
 
