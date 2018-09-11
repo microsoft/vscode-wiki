@@ -50,7 +50,7 @@ Issues are classified into following types and the owner of the issues must make
 
 - `bug` - the implementation of a feature is not correct
 - `feature-request` - request to change the proper implementation of a feature or a request for a new feature that needs to be implemented.
-- `under discussion` - not decided whether the issue is a bug or feature
+- `under-discussion` - not decided whether the issue is a bug or feature
 - `debt` - improve the implementation/architecture
 - `needs more info` - not possible to assign a type label due to missing information
 - `question` - we should direct questions to SO
