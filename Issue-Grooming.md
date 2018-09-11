@@ -24,11 +24,14 @@ We close issues with the help of a bot that responds to a particular comment suc
 
 For the health of our project it's better if the number of feature requests is not open ended but reflects what has a reasonable chance to be considered in the next 12-24 months. 24 months is longer than our [roadmap](https://github.com/Microsoft/vscode/wiki/Roadmap) which outlines the next 6-12 months. Thus, there is some crystal ball reading on our part, and we'll most likely keep more feature requests open than what we can accomplish in 24 months.
 
-Here are the criteria we use to make a decision:
+Here are the criteria we use to make a decision.
 - Does the functionality described in the feature request have any reasonable change to be on the next roadmap?
-- Has the community at large expressed interest in this functionality? I.e. has it gathered more than 10 up-votes or more than 10 comments? Just for reverence, the up-vote criterion alone covers more than 500 feature requests.
 - Are the costs to implement the functionality reasonable given the size of our team? I.e. can we afford the feature?
+- Has the community at large expressed interest in this functionality? I.e. has it gathered more than 10 up-votes or more than 10 comments? Just for reverence, the up-vote criterion alone covers more than 500 feature requests.
 
+If the answer to all three of them is `yes` we keep the feature request open. If an issue has a strong affinity with our roadmap or describes an interesting competitive advantage we might keep it open even if it has not yet gathered sufficient community support. In this case, the decision clearly is more subjective. We understand that if you are the author of an issue you might feel differently. We love all of your input. So, don't take personal offense when we decide to close your issue :peace_symbol:.
+
+ 
 When we close feature requests as out of scope, we'll unsubscribe from these issues to reduce the overall number of issue notifications we receive every day.
 
 # Categorizing Issues
