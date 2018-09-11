@@ -27,7 +27,7 @@ Issues serve two purposes: they are a means of communication between us and our 
 Thus we think it's better if the set of feature requests is not open ended but reflects what has a reasonable chance to be considered in the next 12-24 months. 24 months is longer than our [roadmap](https://github.com/Microsoft/vscode/wiki/Roadmap) which outlines the next 6-12 months. Thus, there is some crystal ball reading on our part, and we'll most likely keep more feature requests open than what we can accomplish in 24 months.
 
 Here are the criteria we use to make a decision.
-- Does the functionality described in the feature request have any reasonable change to be on the next roadmap?
+- Does the functionality described in the feature request have any reasonable chance to be on the next roadmap?
 - Are the costs to implement the functionality reasonable given the size of our team? I.e. can we afford the feature?
 - Has the community at large expressed interest in this functionality? I.e. has it gathered more than 10 up-votes or more than 10 comments over the last 6 months? Just for reference, the up-vote criterion alone covers more than 500 feature requests as of right now, September 10th, 2018. We also look at the duplicates for this analysis.
 
