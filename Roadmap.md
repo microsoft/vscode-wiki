@@ -89,7 +89,7 @@ We want VS Code to be a great tool for developing modern web applications with J
 ### Debug Adaptor Protocol
 
 * :runner: Continue to refine and improve to Debug Adapter Protocol with support from the community.
-* Expose more UI for DAP features that are currently not surfaced in the VS Code debugging UI. This includes moving the loaded scripts UI into the core. 
+* :runner: Expose more UI for DAP features that are currently not surfaced in the VS Code debugging UI. This includes moving the loaded scripts UI into the core. 
 * [x] Move the Debug Adapter Protocol into a separate repository and provide a web site.
 
 
@@ -144,7 +144,7 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
 
 ## Documentation
 
-- Make it easier for extension authors to find their way around. Improve our API documentation, and integrate samples and documentation more closely. 
+- :runner: Make it easier for extension authors to find their way around. Improve our API documentation, and integrate samples and documentation more closely. 
 - :runner: Refresh all of our dated overview videos. 
  
 ## Summary
