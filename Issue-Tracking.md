@@ -48,14 +48,14 @@ See a complete list of GitHub shortcuts [here](https://help.github.com/articles/
 
 Issues are classified into following types and the owner of the issues must make sure that the issues are assigned to one of these labels.
 
-- Bug - the implementation of a feature is not correct
-- Feature-Request - request to change the proper implementation of a feature or a request for a new feature that needs to be implemented.
-- Under Discussion - not decided whether the issue is a bug or feature
-- Debt - improve the implementation/architecture
-- Needs more info - not possible to assign a type label due to missing information
-- Question - we should direct questions to SO
-- upstream - an issue used to track an issue in an upstream component
-- engineering - an issue used to track changes to the engineering areas
+- `bug` - the implementation of a feature is not correct
+- `feature-request` - request to change the proper implementation of a feature or a request for a new feature that needs to be implemented.
+- `under discussion` - not decided whether the issue is a bug or feature
+- `debt` - improve the implementation/architecture
+- `needs more info` - not possible to assign a type label due to missing information
+- `question` - we should direct questions to SO
+- `upstream` - an issue used to track an issue in an upstream component
+- `engineering` - an issue used to track changes to the engineering areas
 - others - All labels coloured grey (#dcdcdc)
 
 
