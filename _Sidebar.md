@@ -7,6 +7,7 @@
   * [[Keybinding Issues]]
   * [[Native Crash Issues]]
   * [[Search Issues]]
+  * [[Issue Grooming]]
 * [[Release Process]]
 * [[Running the Endgame]]
 * [[Related Projects]]
