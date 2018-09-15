@@ -1,6 +1,8 @@
 {
+  "license": "MIT",
   "dependencies": {
     "flow": "^0.2.3",
+    "license": "^0.0.3",
     "lint": "^1.1.2",
     "prettier": "^1.14.2"
   }
