@@ -1,9 +1,6 @@
 ## Terminal Issues
-
 This document is about reporting issues for the integrated terminal (ctrl+\`). Learn more about how to use the terminal in the [documentation](https://code.visualstudio.com/docs/editor/integrated-terminal).
-
 ### Common questions
-
 Make sure you read over the [common questions section on the website](https://code.visualstudio.com/docs/editor/integrated-terminal#_common-questions).
 
 ### Enabling trace logging
