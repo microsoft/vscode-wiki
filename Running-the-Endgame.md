@@ -19,13 +19,10 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - Assign owners to checklist items for each day (if not owned by the endgame master)
 - Track progress on test items and checklist items
 - Adjust schedule, particularly the publishing dates, based on defects found, fixes made, holidays, vacations, etc.
-
 ## Schedule Template
 - *Month/Day* Code freeze for the endgame
 - *Month/Day* Endgame done
-
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
-
 ##### Monday
 - [ ] Run [OSS tool](https://github.com/Microsoft/vscode-distro/blob/master/distro-tools/README.md) **endgame master**
   - *The LCA review of the ThirdPartyNotices.txt files is not needed anymore*
@@ -33,7 +30,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Ensure we have a green build on all platforms at 5pm PT
 - [ ] All test items contain sufficiently comprehensive test descriptions by 6pm PT
 - [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/
-
 ##### Tuesday
 - [ ] Test plan items assigned (using https://vscode-tools.azurewebsites.net/)
   - Run the tool multiple times to balance load if test items come in later and assignments are already made
@@ -42,13 +38,11 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Test plan ready by 8am CET
 - [ ] Testing
 - [ ] [Verification needed](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed)
-
 ##### Wednesday
 - [ ] Testing
 - [ ] Remind team members to assign issues that they intend to fix to the current milestone
 - [ ] Fixing (self-assigned, milestone assigned)
 - [ ] [Verification (pls update the milestone in the query)](https://github.com/Microsoft/vscode/issues?utf8=✓&q=is%3Aissue+label%3Abug+-label%3Averified+-label%3Aon-testplan+is%3Aclosed+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+milestone%3A%22August+2018%22+)
-
 ##### Thursday
 - [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] [Verification](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Abug+-label%3Averified+-label%3Aon-testplan+is%3Aclosed+-label%3Aerror-telemetry+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+milestone%3A%22August+2018%22+)
