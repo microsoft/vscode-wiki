@@ -1,0 +1,26 @@
+{
+  "name" : "linc",
+  "description" : "execution controller",
+  "version" : "0.1.0",
+  "main" : "linc.js",
+  "devDependencies" : {
+    "jasmine-node" : ">= 1.0.20",
+    "coffee-script" : ">= 1.2.0",
+    "smoosh"       : ">= 0.3.1"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/weblinc/linc"
+  },
+  "keywords" : [
+    "controller"
+  ],
+  "author" : {
+    "name" : "Jordan Santell",
+    "url" : "http://github.com/jsantell"
+  },
+  "homepage" : {
+    "url" : "http://github.com/weblinc/linc"
+  },
+  "license" : "MIT"
+}

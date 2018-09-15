@@ -1,9 +1,6 @@
 Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki/Development-Process#end-game).
-
 ## Duties of the endgame master
-
 > Proactive communication is key to a smooth and successful endgame.
-
 - Update iteration plan issue with the endgame schedule (see template below and potentially last month's schedule)
   - Ensure each plan item is linked to a test item
 - Discuss the endgame schedule in Monday's planning call

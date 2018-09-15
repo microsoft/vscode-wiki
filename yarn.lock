@@ -18,6 +18,10 @@ license@^0.0.3:
     optimist "~0.3.5"
     underscore "~1.4.4"
 
+linc@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/linc/-/linc-0.1.0.tgz#936ded64cfab91aa9114a2c996cc65d452432c87"
+
 lint@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/lint/-/lint-1.1.2.tgz#35ed064f322547c331358d899868664968ba371f"
@@ -31,6 +35,10 @@ optimist@~0.3.5:
 prettier@^1.14.2:
   version "1.14.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.14.2.tgz#0ac1c6e1a90baa22a62925f41963c841983282f9"
+
+typescript@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.0.3.tgz#4853b3e275ecdaa27f78fda46dc273a7eb7fc1c8"
 
 underscore@~1.4.4:
   version "1.4.4"
