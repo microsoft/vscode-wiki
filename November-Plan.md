@@ -13,7 +13,6 @@ Before `Connect();` finish:
 - [x] Provide beta version of the extension API
 - [x] Make the gallery available
 - [x] Initial version of the extension documentation
-
 After `Connect();` decompress:
 - [ ] Support the extender community
 - [ ] React to feedback from the community
