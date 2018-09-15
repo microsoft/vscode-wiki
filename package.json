@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "flow": "^0.2.3",
+    "lint": "^1.1.2",
+    "prettier": "^1.14.2"
+  }
+}

@@ -23,12 +23,11 @@ Like other parts of VS Code, the code is organized by the target runtime environ
 |-- editor
 |	|-- browser				// source code that requires the browser APIs like access to the DOM
 |	|-- common				// the core part of the editor, source code that only requires basic JavaScript APIs and run in all the other target environments
-|	|-- contrib				// first class *extensions* of the editor
+|	|-- contrib				// first class extensions of the editor
 |	|-- electron-browser 	// source code that requires the Electron renderer-process APIs
 |	|-- node				// source code that requires nodejs APIs
 |	|-- test
 ```
-
 
 # Model-View-ViewModel in Monaco
 
@@ -37,13 +36,11 @@ Although we don't adopt any framework during the development, Monaco's design fi
 * View: User interface. It display information to users (Text, Cursor, Selection, etc) and handle user interactions. The View elements here are actually HTML DOM nodes.
 * Model: Provides a view-independent representation of business entities. In Monaco it usually represents the file you are editing.
 * ViewModel: The bridge between the View and the Model. It retrieves data from the Model and manipulates it into the format required by the View. A good **example** to help understand ViewModel is that `\t` is always a single character in Model while it takes several columns in ViewModel and it's determined by option `tabSize`.
-
 Here we'd like to take the outside-in approach to describe the architecture of Monaco, the relationship and dependencies of different components and even the source code structure, from [View](#view) to [ViewModel](#viewmodel) then finally [Model](#model).
 
 ## View
 
 ![View Components with details](images/monaco/Monaco-View-Details.png)
-
 Above is what users usually see while working on source code files. This particular view is a CodeEditorWidget and it consists of multiple view parts, including but not limited to:
 
 

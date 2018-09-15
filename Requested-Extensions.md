@@ -1,5 +1,4 @@
 Use this issue to discuss the contents of this wiki [#2789](https://github.com/Microsoft/vscode/issues/2789).
-
 ## Community Requested Extensions
 
 This is a list of community requested extensions collected from a variety of sources (twitter, issues, etc.). 
