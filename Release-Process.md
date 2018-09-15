@@ -1,7 +1,5 @@
 This page describes how we use branches and tags with every new release.
-
 **Example**
-
 1. During endgame, a release branch is created: `release/1.10`.
 2. VS Code is functionally and smoke tested with a build from that branch.
 3. Any critical issues should have fixed delivered to both `master` and `release/1.10` and properly verified with step 2.
