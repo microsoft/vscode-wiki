@@ -68,7 +68,6 @@ Customers often tell us that the lack of multiple root folder workspaces means t
 * [x] Windows 64bit support
 ## TypeScript, JavaScript, and Node Development
 We want VS Code to be a great tool for developing modern MEAN/MERN applications with JavaScript and TypeScript. We will continue to collaborate deeply with the TypeScript team to deliver the richest code editing, navigation, and understanding experiences for both TypeScript and JavaScript. We will continue to make it easy to configure debugging of your Node based applications while adding support for both client and server side debugging, asynchronous call stacks, and even live editing of your applications during a debug session. 
-  
 ### JavaScript and TypeScript 
 * 🏃 Code actions and refactorings (partner with TypeScript) 
 * [x] `tsconfig.json` and `jsconfig.json` IntelliSense (completions) and validation
@@ -78,13 +77,11 @@ We want VS Code to be a great tool for developing modern MEAN/MERN applications 
 * TypeScript compile on save
 * Enable semantic colorization (see Extensibility)
 * :runner: Investigate improving support for popular JS technologies (webpack, Babel)
-
 ### HTML, SASS, CSS, LESS
 * [x] Color picker for CSS/LESS/SASS/HTML
 * [x] close end tag in HTML
 * Investigate SASS/LESS/CSS multi-file support (understand imports)
 * [x] Investigate live preview of HTML
-
 ### Node
 * [x] Provide Node/MEAN Extension packs
 * Update recommended Node extension triggers (e.g. on `package.json`, recommend Node extension pack)
@@ -95,10 +92,9 @@ We want VS Code to be a great tool for developing modern MEAN/MERN applications 
   * :muscle: Investigate profiling support 
 * [x] Investigate a Mocha test runner
 * [x] Investigate MongoDB extension
- 
+
 ## Extension creation, discovery, and management
 Of course, VS Code is not just a Node, JavaScript, and TypeScript tool. Our rich extensibility model and extension ecosystem means that you can install support for just about every modern language and framework, from C++ to C# to Go, Python, and more. Looking ahead, we want to make acquiring extensions for these languages (and more!) as easy as possible. We want to enable extension authors to be able to be more productive and deliver richer experiences to developers. And at the same time, we want to give users more control over how those extensions contribute to their environment. 
-
 ### For extension authors
 * Investigate support for extensions that need to install additional tools on first run (e.g. .NET Core debugger, Go tools)
 * :runner: Continue to improve and expand extension samples
@@ -113,10 +109,8 @@ Of course, VS Code is not just a Node, JavaScript, and TypeScript tool. Our rich
 
 ### Provide users with more control over extension contributions
 * [x] Identify and resolve keybindings conflicts
-
 ### Contribute to Extensions
 * :runner: [GO](https://github.com/microsoft/vscode-go)
 * :runner: [Docker](https://github.com/microsoft/vscode-docker)
-
 ## Summary
 These are examples of just some of the work we will be focusing on in the next 6 to 12 months. We continuously tune the plan based on feedback and we will provide more detail in each of our monthly iteration plans. Please follow along and let us know what you think!
