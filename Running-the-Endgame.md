@@ -111,14 +111,12 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Trigger new insider build and publish it manually **endgame master**
-
 ##### Friday/Monday
 - [ ] Branch code to `release/<x.y> **endgame master**
 - [ ] Bump up the version in package.json - **endgame master**
 - [ ] Announce master is open for business **endgame master**
 - [ ] Let Daniel Ye know that the release branch `release/<x.y>` got created and that translation should be pulled from there and that the pull request has to be created against that branch **endgame master**
 - [ ] Polish release notes **redmond**
-
 ##### Monday - Wednesday
 - [ ] Polish release notes **redmond**
 - [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **endgame master**
@@ -145,9 +143,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] @sbatten
   - [ ] @tyriar
   - [ ] @weinand
-
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
-
 ##### Wednesday/Thursday
 - [ ] Build stable for all platforms **endgame master**
 - [ ] Make [rpm signing request](https://github.com/Microsoft/vscode-distro/blob/master/linux-repo/README.md) **@Tyriar**
@@ -172,9 +168,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Publish deb and rpms to repositories manually **@Tyriar**
 - [ ] Enable scheduled `insider` builds **endgame master**
 - [ ] Twitter announcement **@seanmcbreen**
-
 ### Recovery Build
-
 We release a recovery build with a handful of critical fixes and translation updates a few days after a release. The candidate fixes are reviewed by the development team and are assigned to the recovery milestone. We want to be restrictive about the included candidates. The mindset is "we will lose users if we do not include the fix". Here are some examples:
 - data loss
 - a regression that users complain loudly about in issues or twitter
@@ -218,9 +212,7 @@ We release a recovery build with a handful of critical fixes and translation upd
 - [ ] Publish stable build **owner**
 - [ ] Publish deb and rpms to repositories manually **@Tyriar**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`
-
 ### OS Test Availability
-
 | Name          | GitHub Alias   | Linux | Mac | Windows |
 | :------------ |:---------------|:-----:|:---:|:-------:|
 | Alex          | @alexandrudima |       |     |    x    |
@@ -247,9 +239,7 @@ We release a recovery build with a handful of critical fixes and translation upd
 | Sean          | @seanmcbreen   |  x    |  x  |    x    |
 | Steven        | @stevencl      |       |     |    x    |
 | Wade          | @waderyan      |  x    |  x  |    x    |
-
 ### Dev Matrix
-
 |                    |                    |                    |                    |
 |:-------------------|:-------------------|:-------------------|:-------------------|
 | [ ] @alexandrudima | [ ] @weinand       | [ ] @bpasero       | [ ] @chrmarti      |
