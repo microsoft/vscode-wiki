@@ -1,0 +1,48 @@
+{
+  "name": "test",
+  "version": "0.6.0",
+  "description": "(Un)CommonJS test runner.",
+  "keywords": [
+    "test",
+    "commonjs",
+    "uncommonjs",
+    "unit"
+  ],
+  "homepage": "https://github.com/Gozala/test-commonjs/",
+  "author": "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)",
+  "contributors": [
+    "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)",
+    "Kris Kowal <kris@cixar.com> (http://github.com/kriskowal/)",
+    "Zach Carter",
+    "Felix Geisendörfer",
+    "Karl Guertin",
+    "Ash Berlin",
+    "Francois Lafortune"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gozala/test-commonjs.git",
+    "web": "https//github.com/Gozala/test-commonjs"
+  },
+  "bugs": {
+    "url": "http://github.com/Gozala/test-commonjs/issues/"
+  },
+  "scripts": {
+    "test": "npm run test-node && npm run test-browser",
+    "test-browser": "node ./node_modules/phantomify/bin/cmd.js ./test/index.js",
+    "test-node": "node ./test/index.js"
+  },
+  "main": "./test.js",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Gozala/test-commonjs/License.md"
+    }
+  ],
+  "dependencies": {
+    "ansi-font": "0.0.2"
+  },
+  "devDependencies": {
+    "phantomify": "~0.x.0"
+  }
+}

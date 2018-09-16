@@ -1,0 +1,25 @@
+{
+  "name": "ansi-font",
+  "id": "ansi-font",
+  "version": "0.0.2",
+  "description": "ANSI font styling utils",
+  "keywords": [ "ANSI", "font", "style", "colors" ],
+  "author": "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)",
+  "homepage": "https://github.com/Gozala/ansi-font",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gozala/ansi-font.git",
+    "web": "https://github.com/Gozala/ansi-font"
+  },
+  "bugs": {
+    "url": "http://github.com/Gozala/ansi-font/issues/"
+  },
+  "main": "./index.js",
+  "engines": {
+    "node": ">=0.4.x"
+  },
+  "licenses": [{
+    "type" : "MIT",
+    "url" : "http://jeditoolkit.com/LICENSE"
+  }]
+}
