@@ -6,6 +6,7 @@
     "license": "^0.0.3",
     "linc": "^0.1.0",
     "lint": "^1.1.2",
+    "package": "^1.0.1",
     "prettier": "^1.14.2",
     "typescript": "^3.0.3"
   }
