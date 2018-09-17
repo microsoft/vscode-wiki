@@ -34,6 +34,8 @@ Here's what you need to do to pull your changes into VS Code:
    yarn test
    ```
 
+   If needed also run `yarn start` and verify the incoming changes.
+
 3. Update `package.json`, the name should be `vscode-xterm` and the version should be `<x>.<y>.0-beta<n>`
 
    ```bash
