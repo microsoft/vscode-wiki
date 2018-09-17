@@ -72,6 +72,6 @@ Here's what you need to do to pull your changes into VS Code:
    yarn add vscode-xterm@3.0.0-beta1
    ```
 
-7. Update vscode-xterm.d.ts if needed, note that the bottom of that file is customizations that should remain in place.
+7. Update `vscode-xterm.d.ts` if needed by manually copying over from `./typings/xterm.d.ts` in the `vscode-release/...` branch. Note that the bottom of `vscode-xterm.d.ts` is VS Code customizations that should remain in place.
 
-8. Verify the changes in VS Code
+8. Build VS Code and verify the changes.
