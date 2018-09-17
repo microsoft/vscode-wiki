@@ -31,7 +31,6 @@ Here's what you need to do to pull your changes into VS Code:
 
    ```bash
    yarn
-   yarn build
    yarn test
    ```
 
