@@ -68,5 +68,10 @@ Here's what you need to do to pull your changes into VS Code:
 
    ```
    rm -rf node_modules/vscode-xterm
+   # Windows: rmdir /S node_modules\vscode-xterm 
    yarn add vscode-xterm@3.0.0-beta1
    ```
+
+7. Update vscode-xterm.d.ts if needed, note that the bottom of that file is customizations that should remain in place.
+
+8. Verify the changes in VS Code
