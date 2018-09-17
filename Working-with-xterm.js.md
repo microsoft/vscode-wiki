@@ -66,7 +66,7 @@ Here's what you need to do to pull your changes into VS Code:
 
 6. Go to the vscode repo and add the new version:
 
-   ```
+   ```bash
    rm -rf node_modules/vscode-xterm
    # Windows: rmdir /S node_modules\vscode-xterm 
    yarn add vscode-xterm@3.0.0-beta1
