@@ -23,6 +23,8 @@ Here's what you need to do to pull your changes into VS Code:
    git merge branch_source/<pr_branch>
    ```
 
+   You can also use `git cherry-pick` if that's easier or if the PR's base branch differs with `vscode-release/<...>`.
+
    Note that there is an individual release branch for each version unlike many other modules we use. This is the case so that there can be a "clean slate" on the following version based off master.
 
 2. Build the library and make sure tests pass:
