@@ -34,12 +34,17 @@ Here's what you need to do to pull your changes into VS Code:
    yarn test
    ```
 
-3. Update `package.json`, the name should be `vscode-xterm` and the version should be `<x>.<y>.<z>-beta<n>`
+3. Update `package.json`, the name should be `vscode-xterm` and the version should be `<x>.<y>.0-beta<n>`
 
    ```bash
    "name": "vscode-xterm",
    "version": "3.0.0-beta1",
    ```
+
+   Update the version numbers under the following circumstances:
+
+   - `x` and `y`: When updating `vscode-xterm` for a new version of vscode, this should match the upcoming, not yet released, version of xterm.js
+   - `n`: Increment this when `x` and `y` don't change.
 
 4. Commit and push
 
