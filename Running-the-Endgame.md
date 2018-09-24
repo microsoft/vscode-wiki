@@ -10,10 +10,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - Find an endgame buddy in the other lab
   - Determine the pool of testers and their availability
 - Ensure each test item has meaningful content
-- Assign test items to testers (usually platform specific); ensure fair distribution across testers
-  - Use the [testplan-helper](https://github.com/roblourens/testplan-helper) to download info from all the testplan items
-  - Make a copy of the [endgame spreadsheet template](https://microsoft.sharepoint.com/:x:/t/DD_OTP/EXHnEJw_c2pGtDgjNTT5zDYBg4lGFD5qjT4hb7M9rxRx0Q?e=8e4f47108edd43efa7a415adfbdde91d), and paste the testplan-helper's output into it
-  - Use it to assign testplan items evenly to the team - see the [June 2017 endgame](https://microsoft.sharepoint.com/:x:/t/DD_OTP/ERMhUazQBxVGjcHmvzFHq1sBn-dsuxbWxce3ABwQbS5Dkg?e=6efd3c33939d45b58709fe75287083be) for example usage
+- Assign test items to testers (usually platform specific) using the [testplan tool](https://vscode-tools.azurewebsites.net/); ensure fair distribution across testers
 - Communicate test assignments in the `release` Slack channel by posting the test item queries ([example query](https://github.com/Microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22June+2016%22+is%3Aclosed))
 - Communicate end of day progress in the `release` Slack channel by communicating
    - the number of issues filed
