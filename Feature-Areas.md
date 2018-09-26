@@ -30,4 +30,5 @@ In addition there can be feature sub areas which are colored light blue.
 |api|vscode extension API||
 |install-update|install and update of vscode||
 |accessiblity|accessibility support||
-|i18n|internationalization||
+|i18n|internationalization - Code, translation error||
+|L10N|New UI language request in loc platform for language pack extension||
