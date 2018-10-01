@@ -122,7 +122,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Branch code to `release/<x.y> **endgame master**
 - [ ] Bump up the version in package.json - **endgame master**
 - [ ] Announce master is open for business **endgame master**
-- [ ] Let Daniel Ye know that the release branch `release/<x.y>` got created and that translation should be pulled from there and that the pull request has to be created against that branch **endgame master**
 - [ ] Polish release notes **redmond**
 
 ##### Monday - Wednesday
