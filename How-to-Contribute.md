@@ -25,7 +25,7 @@ git clone https://github.com/Microsoft/vscode.git
     - [Visual Studio Community 2017](https://www.visualstudio.com/downloads/), make sure to select the option to install all C++ tools and the Windows SDK. Alternatively, you can also use Felix Rieseberg's [Windows Build Tools npm module](https://github.com/felixrieseberg/windows-build-tools) instead of Visual Studio 2017. The `--debug` flag is helpful if you encounter any problems during installation.
     - **Warning:** Make sure your profile path only contains ASCII letters, eg *John*, otherwise it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
-  - **OS X**
+  - **macOS**
     - [Xcode](https://developer.apple.com/xcode/downloads/) and the Command Line Tools (Xcode -> Preferences -> Downloads), which will install `gcc` and the related toolchain containing `make`
   - **Linux**
     * `make`
@@ -72,7 +72,7 @@ Errors and warnings will show in the console while developing Code. If you use V
 
 To test the changes you launch a development version of VS Code on the workspace `vscode`, which you are currently editing.
 
-**OS X and Linux**
+**macOS and Linux**
 
 ```bash
 ./scripts/code.sh
