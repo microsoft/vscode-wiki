@@ -73,6 +73,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
   - [ ] @aeschli
   - [ ] @alexandrudima
+  - [ ] @alexr00
   - [ ] @bpasero
   - [ ] @chrmarti
   - [ ] @dbaeumer
@@ -133,6 +134,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Documentation updated
   - [ ] @aeschli
   - [ ] @alexandrudima
+  - [ ] @alexr00
   - [ ] @bpasero
   - [ ] @chrmarti
   - [ ] @dbaeumer
@@ -262,4 +264,4 @@ We release a recovery build with a handful of critical fixes and translation upd
 | [ ] @tyriar        | [ ] @dbaeumer      | [ ] @egamma        | [ ] @isidorn       |
 | [ ] @joaomoreno    | [ ] @jrieken       | [ ] @kieferrm      | [ ] @aeschli       |
 | [ ] @rebornix      | [ ] @mjbvz         | [ ] @ramya-rao-a   | [ ] @roblourens    |
-| [ ] @sandy081      | [ ] @mousetraps    |                    |                    |
+| [ ] @sandy081      | [ ] @mousetraps    | [ ] @ alexr00      |                    |
