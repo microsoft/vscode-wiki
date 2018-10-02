@@ -247,14 +247,12 @@ We release a recovery build with a handful of critical fixes and translation upd
 | Kai           | @kieferrm      |  x    |  x  |    x    |
 | Martin        | @aeschli       |  x    |  x  |    x    |
 | Peng          | @rebornix      |  x    |  x  |    x    |
-| Sara          | @mousetraps    |  x    |  x  |    x    |
 | Ramya         | @ramya-rao-a   |  x    |  x  |    x    |
 | Matt          | @mjbvz         |  x    |  x  |    x    |
 | Rob           | @roblourens    |  x    |  x  |    x    |
 | Sandeep       | @sandy081      |  x    |  x  |    x    |
-| Sean          | @seanmcbreen   |  x    |  x  |    x    |
 | Steven        | @stevencl      |       |     |    x    |
-| Wade          | @waderyan      |  x    |  x  |    x    |
+| Alex          | @alexr00       |  x    |  x  |    x    |
 
 ### Dev Matrix
 
@@ -264,4 +262,4 @@ We release a recovery build with a handful of critical fixes and translation upd
 | [ ] @tyriar        | [ ] @dbaeumer      | [ ] @egamma        | [ ] @isidorn       |
 | [ ] @joaomoreno    | [ ] @jrieken       | [ ] @kieferrm      | [ ] @aeschli       |
 | [ ] @rebornix      | [ ] @mjbvz         | [ ] @ramya-rao-a   | [ ] @roblourens    |
-| [ ] @sandy081      | [ ] @mousetraps    | [ ] @ alexr00      |                    |
+| [ ] @sandy081      | [ ] @mousetraps    | [ ] @alexr00       |                    | 
