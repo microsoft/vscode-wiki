@@ -195,7 +195,7 @@ We release a recovery build with a handful of critical fixes and translation upd
 - [ ] Include an issue 'update translations' **owner**
 - [ ] Assign candidate issues to the recovery milestone **team**
 - [ ] Review the `candidate` issues, and if they pass the review assign them to the recovery milestone **team**
-- [ ] All `candiate` fixes are peer reviewed and pushed to `master` and then cherry-picked into the release branch **team**
+- [ ] All `candidate` fixes are peer reviewed and pushed to `master` and then cherry-picked into the release branch **team**
 - [ ] Initiate `insiders` build from `master`
 - [ ] Issues are tested in the `insiders` **team**
 - [ ] Build `stable` for all platforms from release branch **owner**
