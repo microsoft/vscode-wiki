@@ -21,12 +21,10 @@ Follow [these steps](https://code.visualstudio.com/Docs/supporting/FAQ#_how-can-
 
 ### Getting the update on Linux
 On Linux you must manually update (no support for auto-update):
-
 1. Download Code from this location [Linux 64](https://az764295.vo.msecnd.net/public/0.10.4/VSCode-linux64.zip), [Linux 32](https://az764295.vo.msecnd.net/public/0.10.4/VSCode-linux32.zip).
 2. Open the Zip and run Code.
 3. Code will require a manual update each time we release.
 
 ## Reverting back to the most recent stable version
 To revert to the standard build, reverse the updates you made to your storage.json i.e. back to stable from insiders.   At that point you will receive the 0.10.3 update again. 
-
 If all else fails, uninstall the Update and re-install from http://code.visualstudio.com.
