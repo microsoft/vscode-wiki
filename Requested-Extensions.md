@@ -1,7 +1,6 @@
 Use this issue to discuss the contents of this wiki [#2789](https://github.com/Microsoft/vscode/issues/2789).
 
 ## Community Requested Extensions
-
 This is a list of community requested extensions collected from a variety of sources (twitter, issues, etc.). 
 
 For discussions on specific extensions and to add more information, link a newly created issue to one of the extensions names below. 
@@ -30,4 +29,4 @@ For discussions on specific extensions and to add more information, link a newly
 - [x] [tabs-to-spaces](https://atom.io/packages/tabs-to-spaces) => [Untabify](https://marketplace.visualstudio.com/items?itemName=ilich8086.Untabify)
 - [x] [todo-show](https://atom.io/packages/todo-show). Show todo, fixme, and changed. -> [vscode-todo](https://marketplace.visualstudio.com/items/MattiasPernhult.vscode-todo)
 - [x] [color-picker](https://atom.io/packages/color-picker). Sleek color picking UI widget. [Color Picker](https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color)
-- [x] [activate-power-mode](https://atom.io/packages/activate-power-mode) => VS Code [Power Mode](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-power-mode)
+- [x] [activate-power-mode](https:w://atom.io/packages/activate-power-mode) => VS Code [Power Mode](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-power-mode)

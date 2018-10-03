@@ -1,13 +1,8 @@
 # The VS Code Roadmap 2018
-
 As [2017](https://github.com/Microsoft/vscode/wiki/Roadmap-2017) comes to an end, now is the time to look towards the future. We typically look out 6 to 12 months, establish a set of themes we want to work towards, and then schedule work each milestone supporting those themes. When planning, we look at potential work from three perspectives:
-
 * **Happy Coding:** At its core VS Code is a lightweight, keyboard focused, multi-language code editor. VS Code is already pleasant to code with, and we want to make the experience even more pleasant, for both new and existing users.
-
 * **Node, JavaScript, and TypeScript:** On top of the core editor, we want to enable great end-to-end experiences for individual languages and frameworks. We build the Node, JavaScript, and TypeScript end-to-end experiences on top of the core platform and want to provide a great experience out of the box.
-
 * **A Rich Extension Ecosystem:** Because we cannot build support for every language, VS Code has a rich extensibility system which enables an ecosystem of great end-to-end experiences for the breadth of languages and frameworks such as C#, Go, Python, C++, Java, and more. In fact, we deliver the Node, TypeScript, and JavaScript support using the exact same public APIs ensuring that developers have consistent experiences across the breadth of languages they use. 
-
 VS Code will continue to ship monthly, and we'll make progress against each of the following themes during each iteration. We describe some initiatives as "investigations" which simply means our goal in the next few months is to better understand the problem and potential solutions before scheduling real feature work. Once an investigation is done, we will update our plan, either deferring the initiative or committing to it.
 
 

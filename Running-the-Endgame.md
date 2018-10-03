@@ -1,9 +1,7 @@
 Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki/Development-Process#end-game).
 
 ## Duties of the endgame master
-
 > Proactive communication is key to a smooth and successful endgame.
-
 - Update iteration plan issue with the endgame schedule (see template below and potentially last month's schedule)
   - Ensure each plan item is linked to a test item
 - Discuss the endgame schedule in Monday's planning call
@@ -26,7 +24,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ## Schedule Template
 - *Month/Day* Code freeze for the endgame
 - *Month/Day* Endgame done
-
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
 
 ##### Monday
@@ -120,7 +117,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Trigger new insider build and publish it manually **endgame master**
-
 ##### Friday/Monday
 - [ ] Branch code to `release/<x.y> **endgame master**
 - [ ] Bump up the version in package.json - **endgame master**
@@ -183,7 +179,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Twitter announcement **@seanmcbreen**
 
 ### Recovery Build
-
 We release a recovery build with a handful of critical fixes and translation updates a few days after a release. The candidate fixes are reviewed by the development team and are assigned to the recovery milestone. We want to be restrictive about the included candidates. The mindset is "we will lose users if we do not include the fix". Here are some examples:
 - data loss
 - a regression that users complain loudly about in issues or twitter
@@ -192,7 +187,6 @@ We release a recovery build with a handful of critical fixes and translation upd
 - an embarrassing UI glitch
 - critical security fixes
 - an issue that impacts extensions or is an API regression
-
 #### Check list
 - [ ] Create a milestone `<Month> Recovery <year>` **owner**
 - [ ] Include an issue 'update translations' **owner**
@@ -229,7 +223,6 @@ We release a recovery build with a handful of critical fixes and translation upd
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`
 
 ### OS Test Availability
-
 | Name          | GitHub Alias   | Linux | Mac | Windows |
 | :------------ |:---------------|:-----:|:---:|:-------:|
 | Alex          | @alexandrudima |       |     |    x    |
@@ -258,7 +251,6 @@ We release a recovery build with a handful of critical fixes and translation upd
 | Wade          | @waderyan      |  x    |  x  |    x    |
 
 ### Dev Matrix
-
 |                    |                    |                    |                    |
 |:-------------------|:-------------------|:-------------------|:-------------------|
 | [ ] @alexandrudima | [ ] @weinand       | [ ] @bpasero       | [ ] @chrmarti      |

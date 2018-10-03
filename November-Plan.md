@@ -3,7 +3,6 @@
 ## Theme
 Get ready for [Connect(); //2015](http://connect2015.visualstudio.com/) and then recover.
 
-
 ## Items
 Before `Connect();` finish:
 - [x] Improve Theming support, make themes work better with the tokens we produce
@@ -13,7 +12,6 @@ Before `Connect();` finish:
 - [x] Provide beta version of the extension API
 - [x] Make the gallery available
 - [x] Initial version of the extension documentation
-
 After `Connect();` decompress:
 - [ ] Support the extender community
 - [ ] React to feedback from the community

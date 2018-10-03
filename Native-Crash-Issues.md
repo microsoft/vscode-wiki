@@ -1,8 +1,6 @@
 # Summary
-
 This page documents how you can help us to track down native crash issues. It contains:
 - How to get at the native crash information so that you can share it with us
-
 The solutions are split across each operating system we support.
 
 ## macOS
@@ -11,7 +9,6 @@ On macOS, application crashes can easily be looked at from the Console applicati
 * click on User Reports
 * find the crash from Code
 * attach it here
-
 It should look something like this:
 
 ![image](https://cloud.githubusercontent.com/assets/900690/24793769/89c9ef12-1b83-11e7-83b6-b7e1bfafab1a.png)
@@ -51,7 +48,6 @@ With the core dump in hand we can use `gdb` to find out more about the crash:
 
 ## Read the Stacktrace
 Once we have a stack trace of a crash we can user another tool for converting the cryptic messages into something useful. 
-
 Let us consider a stack like this one:
 ```
 0   libnode.dylib                 	0x000000010cfd7bf6 0x10cef5000 + 928758

@@ -40,11 +40,8 @@ and restart/reload. Once you found the extension please file an issue against th
 - Run VS Code in verbose mode and check whether there is any suspicious output in the console or the developer tools. You start VS Code in verbose mode with `code --verbose`. Also open the DevTools ("Help>Toggle Developer Tools") and open the console there.
 
 ### Read Startup Timers
-
 When VS Code feels slow to start you can check the startup timers. Hit "F1" and select "Startup Performance". This will open developer tools and print some startup stats onto the the "Console". 
-
 ![image](https://user-images.githubusercontent.com/172399/32089769-3df19924-baec-11e7-9654-e199e1ab8c92.png)
-
 Please share these numbers with us as they often allows us to understand what is slow.
 
 ### Profile a VS Code window
@@ -58,7 +55,6 @@ When you cannot share the workspace exposing the problem with us, then you can h
   - Save the profile to a file and attach the file to your issue. 
 
 ### Profile Startup
-
 - If VS Code is slow to start then please create a startup CPU profile. Do the following
   - Make sure to only have one window open
   - Quit VS Code (Cmd+Q for Mac, closing the last window on Linux/Windows)
@@ -66,7 +62,6 @@ When you cannot share the workspace exposing the problem with us, then you can h
   - VS Code will start and create two profile-files in your home-directory. Please attach these files to your issue or create a new issue with these two files
 
 ### Profile the Extension Process
-
 - If VS Code feels not responsive and the CPU profile doesn't provide insights then please a create a CPU profile of the extension host process. The extension host process is the process that executes your installed extensions. To create a profile:
   - Start VS Code from the command line the with `--inspect-extensions=<port>`-flag, for example `code --inspect-extensions=9333`.
   - In VS Code, from the 'Command Palette (F1)', select 'Developer: Toggle Developer Tools', hit Enter.
