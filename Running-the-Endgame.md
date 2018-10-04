@@ -179,7 +179,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **endgame master**
 - [ ] Publish deb and rpms to repositories manually **@Tyriar**
 - [ ] Enable scheduled `insider` builds **endgame master**
-- [ ] Twitter announcement **@seanmcbreen**
+- [ ] Twitter announcement **@auchenberg**
 
 ### Recovery Build
 
