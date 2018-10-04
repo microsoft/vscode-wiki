@@ -131,6 +131,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **endgame master**
 - [ ] Build `Insider` from `release/<x.y>` **endgame master**
 - [ ] Manually release `Insider` **endgame master**
+- [ ] Build stable for all platforms as new candidate issues come in **endgame master**
 - [ ] Documentation updated
   - [ ] @aeschli
   - [ ] @alexandrudima
