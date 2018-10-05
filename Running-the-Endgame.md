@@ -22,7 +22,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ## Schedule Template
 - *Month/Day* Code freeze for the endgame
-- *Month/Day* Endgame done
+- *Month/Day* [Endgame done](https://github.com/Microsoft/vscode/wiki/Development-Process#inside-an-iteration)
+- *Month/Day* Expected release date (this may change)
 
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
 
