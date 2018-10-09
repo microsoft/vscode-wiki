@@ -36,7 +36,7 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 * Reduce resource/memory consumption: what can we do to reduce and control resource consumption of helper processes
 * :runner: Continue to improve accessibility,
   * [x] terminal
-  * [ ] :runner: menu bar on Windows
+  * [x] menu bar on Windows
 * [x] Support language packs for community-contributed translations 
 * [x] Improve the Windows update experience
 * [x] Improve serviceability by providing additional diagnostics 
