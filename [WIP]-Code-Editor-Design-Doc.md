@@ -35,7 +35,7 @@ Like other parts of VS Code, the code is organized by the target runtime environ
 Although we don't adopt any framework during the development, Monaco's design finally turns out to be MVVM (Model-View-ViewModel). With this design pattern in mind, we can simply separate components in the core into three layers:
 
 * View: User interface. It display information to users (Text, Cursor, Selection, etc) and handle user interactions. The View elements here are actually HTML DOM nodes.
-* Model: Provides a view-independent representation of business entities. In Monaco it usually represents the file you are editing.
+* Model: Provides a view-independent representation of business entities. In Monaco, it usually represents the file you are editing.
 * ViewModel: The bridge between the View and the Model. It retrieves data from the Model and manipulates it into the format required by the View. A good **example** to help understand ViewModel is that `\t` is always a single character in Model while it takes several columns in ViewModel and it's determined by option `tabSize`.
 
 Here we'd like to take the outside-in approach to describe the architecture of Monaco, the relationship and dependencies of different components and even the source code structure, from [View](#view) to [ViewModel](#viewmodel) then finally [Model](#model).
