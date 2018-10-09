@@ -14,7 +14,7 @@ We use tabs, not spaces.
 * Use PascalCase for `enum` values
 * Use camelCase for `function` and `method` names
 * Use camelCase for `property` names and `local variables`
-* Use whole words in names when possible
+* Use whole words in names wherever possible
 
 ## Types
 * Do not export `types` or `functions` unless you need to share it across multiple components
@@ -39,7 +39,7 @@ x => x + x
 ```
 
 * Always surround loop and conditional bodies with curly braces
-* Open curly braces always go on the same line as whatever necessitates them
+* Open curly braces always goes in the same line as whatever necessitates them
 * Parenthesized constructs should have no surrounding whitespace. A single space follows commas, colons, and semicolons in those constructs. For example:
 
 ```javascript
