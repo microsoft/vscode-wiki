@@ -79,7 +79,7 @@ Note that there is an individual release branch for each version unlike many oth
    npm publish
    ```
 
-   If you don't have permissions ask someone who has published before to add you.
+   If you don't have permissions, ask someone who has published before to add you.
 
 5. Go to the vscode repo and add the new version:
 
