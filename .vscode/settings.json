@@ -1,3 +1,7 @@
-// Place your settings in this file to overwrite default and user settings.
 {
+    "name":"vscode",
+    "author":"Microsoft coporation",
+    "license":"MIT",
+    "description":"vscode-wiki for contributors in https://github.com/microsoft/vscode",
+    "version":"1.0.1"
 }

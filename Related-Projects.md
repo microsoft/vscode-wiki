@@ -19,7 +19,6 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 |yo code generator|[vscode-generator-code](https://github.com/microsoft/vscode-generator-code)|
 |vsce publishing tool|[vscode-vsce](https://github.com/microsoft/vscode-vsce)|
 |Telemetry for extensions|[vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry)|
-
 ## Documentation
 |Repository|
 |---|
@@ -45,14 +44,9 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 |Debugger|Repository|
 |---|---|
 |Chrome Debugger |[vscode-chrome-debug](https://github.com/Microsoft/vscode-chrome-debug)|
-
 ## Themes
-|Theme|
-|---|
-|[`vscode-themes`](https://github.com/microsoft/vscode-themes)
-
+|Theme||---||[`vscode-themes`](https://github.com/microsoft/vscode-themes)
 ## Samples
 |Sample|Repository|
-|---|---|
-|Mock Debug Adapter|[vscode-mock-debug](https://github.com/microsoft/vscode-mock-debug)|
-|Samples|[vscode-extension-samples](https://github.com/microsoft/vscode-extension-samples)|
+|---|---||Mock Debug Adapter|[vscode-mock-debug](https://github.com/microsoft/vscode-mock-debug)|
+|Sample[vscode-extension-samples](https://github.com/microsoft/vscode-extension-samples)|

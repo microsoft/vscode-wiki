@@ -3,8 +3,6 @@ Extension API Guidelines
 
 This is a loose collection of guidelines that you should be following when proposing API. The process for adding API is described here: https://github.com/Microsoft/vscode/wiki/Extension-API-process. 
 
-
-
 Breakage
 -
 We DO NOT want to break API. Therefore be careful and conservative when proposing new API. It needs to hold up in the long term. Expose only the minimum but still try to anticipate potential future requests. 

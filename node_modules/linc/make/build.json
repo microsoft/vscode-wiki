@@ -1,0 +1,8 @@
+{
+  "JAVASCRIPT" : {
+    "DIST_DIR" : "./",
+    "linc" : [
+      { "src" : "./linc.js", "jshint" : false }
+    ]
+  }
+}

@@ -1,9 +1,6 @@
 Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki/Development-Process#end-game).
-
 ## Duties of the endgame master
-
 > Proactive communication is key to a smooth and successful endgame.
-
 - Update iteration plan issue with the endgame schedule (see template below and potentially last month's schedule)
   - Ensure each plan item is linked to a test item
 - Discuss the endgame schedule in Monday's planning call
@@ -19,13 +16,10 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - Assign owners to checklist items for each day (if not owned by the endgame master)
 - Track progress on test items and checklist items
 - Adjust schedule, particularly the publishing dates, based on defects found, fixes made, holidays, vacations, etc.
-
 ## Schedule Template
 - *Month/Day* Code freeze for the endgame
 - *Month/Day* Endgame done
-
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
-
 ##### Monday
 - [ ] Run [OSS tool](https://github.com/Microsoft/vscode-distro/blob/master/distro-tools/README.md) **endgame master**
   - *The LCA review of the ThirdPartyNotices.txt files is not needed anymore*
@@ -33,7 +27,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Ensure we have a green build on all platforms at 5pm PT
 - [ ] All test items contain sufficiently comprehensive test descriptions by 6pm PT
 - [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/
-
 ##### Tuesday
 - [ ] Test plan items assigned (using https://vscode-tools.azurewebsites.net/)
   - Run the tool multiple times to balance load if test items come in later and assignments are already made
@@ -42,13 +35,11 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Test plan ready by 8am CET
 - [ ] Testing
 - [ ] [Verification needed](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed)
-
 ##### Wednesday
 - [ ] Testing
 - [ ] Remind team members to assign issues that they intend to fix to the current milestone
 - [ ] Fixing (self-assigned, milestone assigned)
 - [ ] [Verification (pls update the milestone in the query)](https://github.com/Microsoft/vscode/issues?utf8=✓&q=is%3Aissue+label%3Abug+-label%3Averified+-label%3Aon-testplan+is%3Aclosed+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+milestone%3A%22August+2018%22+)
-
 ##### Thursday
 - [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] [Verification](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Abug+-label%3Averified+-label%3Aon-testplan+is%3Aclosed+-label%3Aerror-telemetry+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+milestone%3A%22August+2018%22+)
@@ -117,14 +108,12 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Trigger new insider build and publish it manually **endgame master**
-
 ##### Friday/Monday
 - [ ] Branch code to `release/<x.y> **endgame master**
 - [ ] Bump up the version in package.json - **endgame master**
 - [ ] Announce master is open for business **endgame master**
 - [ ] Let Daniel Ye know that the release branch `release/<x.y>` got created and that translation should be pulled from there and that the pull request has to be created against that branch **endgame master**
 - [ ] Polish release notes **redmond**
-
 ##### Monday - Wednesday
 - [ ] Polish release notes **redmond**
 - [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **endgame master**
@@ -151,9 +140,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] @sbatten
   - [ ] @tyriar
   - [ ] @weinand
-
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
-
 ##### Wednesday/Thursday
 - [ ] Build stable for all platforms **endgame master**
 - [ ] Make [rpm signing request](https://github.com/Microsoft/vscode-distro/blob/master/linux-repo/README.md) **@Tyriar**
@@ -178,9 +165,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Publish deb and rpms to repositories manually **@Tyriar**
 - [ ] Enable scheduled `insider` builds **endgame master**
 - [ ] Twitter announcement **@seanmcbreen**
-
 ### Recovery Build
-
 We release a recovery build with a handful of critical fixes and translation updates a few days after a release. The candidate fixes are reviewed by the development team and are assigned to the recovery milestone. We want to be restrictive about the included candidates. The mindset is "we will lose users if we do not include the fix". Here are some examples:
 - data loss
 - a regression that users complain loudly about in issues or twitter
@@ -224,9 +209,7 @@ We release a recovery build with a handful of critical fixes and translation upd
 - [ ] Publish stable build **owner**
 - [ ] Publish deb and rpms to repositories manually **@Tyriar**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`
-
 ### OS Test Availability
-
 | Name          | GitHub Alias   | Linux | Mac | Windows |
 | :------------ |:---------------|:-----:|:---:|:-------:|
 | Alex          | @alexandrudima |       |     |    x    |
@@ -253,9 +236,7 @@ We release a recovery build with a handful of critical fixes and translation upd
 | Sean          | @seanmcbreen   |  x    |  x  |    x    |
 | Steven        | @stevencl      |       |     |    x    |
 | Wade          | @waderyan      |  x    |  x  |    x    |
-
 ### Dev Matrix
-
 |                    |                    |                    |                    |
 |:-------------------|:-------------------|:-------------------|:-------------------|
 | [ ] @alexandrudima | [ ] @weinand       | [ ] @bpasero       | [ ] @chrmarti      |

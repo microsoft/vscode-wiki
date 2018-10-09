@@ -17,19 +17,13 @@ If your issue is a question then please ask the question on [Stack Overflow](htt
 If you cannot find an existing issue that describes your bug or feature, submit an issue using the guidelines below.
 
 ## Writing Good Bug Reports and Feature Requests
-
 File a single issue per problem and feature request.
-
 * Do not enumerate multiple bugs or feature requests in the same issue.
 * Do not add your issue as a comment to an existing issue unless it's for the identical input. Many issues look similar, but have different causes.
-
 The more information you can provide, the more likely someone will be successful reproducing the issue and finding a fix. 
-
 Please include the following with each issue. 
-
 * Version of VS Code
 * List of extensions that you have installed. 
-
 > **Tip:** You can easily add the list of extensions by creating the issue using `Report Issues` from VS Code's Help menu. 
 
 * Reproducible steps (1... 2... 3...) and what you expected versus what you actually saw. 
@@ -45,11 +39,8 @@ Please remember to do the following:
 * Search the issue repository to see if there exists a duplicate. 
 * Recreate the issue after disabling all extensions (see the [docs for how to do this](https://code.visualstudio.com/docs/editor/extension-gallery#_disable-an-extension)). If you find the issue is caused by an extension you have installed please file an issue on the extension respectively. 
 * Simplify your code around the issue so we can better isolate the problem. 
-
 Don't feel bad if we can't reproduce the issue and ask for more information!
-
 Finally, this is our [issue tracking](https://github.com/Microsoft/vscode/wiki/Issue-Tracking) work flow that describes what happens once you submitted an issue.
-
 ## Contributing Fixes
 If you are interested in fixing issues and contributing directly to the code base,
 please see the document [How to Contribute](https://github.com/Microsoft/vscode/wiki/How-to-Contribute).

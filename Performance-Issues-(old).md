@@ -1,12 +1,7 @@
 # Summary
-
-
 ***
-
 **Note:** this document applies to VS Code version 1.18 or older. For newer version please refer to the [[Performance Issues]] page.
-
 ***
-
 This page documents how you can help us to track down performance issues. It contains:
 - Questions about your setup
 - Experiments you can make to reproduce and narrow down 

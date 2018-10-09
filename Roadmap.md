@@ -62,77 +62,48 @@ A key attribute of an 'editor' is performance and stability, if we add features 
 * [x] Investigate into improved column selection  
 * :muscle: Investigate into semantic coloring support
 * :muscle: Render more than text in the minimap
-
 ### Terminal
-
 * [x] Support splitting and viewing of multiple terminals
-
 ### Source Control Integration
-
 * [x] Support to view changes directly inside the editor using a peek/inline experience
 * Investigate integrated history view
 * :runner: Investigate support to better collaborate on pull requests
-
 ### WSL Support
-
 * [ ] :runner: Improve the WSL support. Investigate how we can enable extensions to leverage tools available in WSL.
-
 ## Node, JavaScript, and TypeScript Development
-
 We want VS Code to be a great tool for developing modern web applications with JavaScript and TypeScript and we will continue to collaborate deeply with the TypeScript team to deliver the richest code editing, navigation, and understanding experiences for both TypeScript and JavaScript. We will continue to make it easy to configure debugging of your Node based applications and include support for both client and server side debugging in the box. 
-
 ### Language Server Protocol
-
 * :runner: Continue to refine and improve to Language Server Protocol with support from the community.
 * [x] Enable [proposed protocol additions](https://github.com/Microsoft/language-server-protocol/blob/master/contributing.md) from the community. 
-
 ### Debug Adaptor Protocol
-
 * :runner: Continue to refine and improve to Debug Adapter Protocol with support from the community.
 * :runner: Expose more UI for DAP features that are currently not surfaced in the VS Code debugging UI. This includes moving the loaded scripts UI into the core. 
 * [x] Move the Debug Adapter Protocol into a separate repository and provide a web site.
-
-
 ### JavaScript
-
 * Improve go-to-definition/implementation of a JavaScript symbol when a type cannot be precisely resolved 
- 
 ### TypeScript (and JavaScript)
-
 We closely collaborate with TypeScript, see also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap) 
-
 * [x] Organize imports, remove unused imports
 * [x] Tag completion in `jsx` and `tsx` files 
 * :runner: Add more refactorings
 * Investigate into improving TypeScript Source Maps so that they are more precise and includes variable mappings.
- 
 #### Webpack
-
 * Linting/validation of configuration
 * Make it easier to configure `jsconfig.json`/`tsconfig.json` for webpack
-
 ### Debug
-
 * Improve hovering and inline values by leveraging language knowledge
 * :runner: Continue to invest in documenting debugging recipes for common configurations
 * [x] Support hot code replace for non-JS scenarios e.g. Java.
 * [x] Support LogPoints
- 
 ## Extension creation, discovery, and management
-
 Of course, VS Code is not just a Node, JavaScript, and TypeScript tool. Our rich extensibility model and extension ecosystem means that you can install support for just about every language and framework, from C++ to C# to Go, Python, and more. 
-
 Looking ahead, we want to make acquiring extensions for these languages (and more!) as easy as possible. We want to enable extension authors to be able to be more productive and deliver richer experiences to developers. At the same time, we want to give users more control over how those extensions contribute to their environment.
-
 ### For extension users
-
 * [x] Improve extension recommendation system
 * :runner: Improve searching for extensions 
 * [x] Simplify tracking down issues caused by installed extensions and make it easier to file issues
-* [x] Show the user more information about the usage of a extension (startup time, error rate, etc.).
-
+* [x] Show the user more information about the usage of a extension (startup time, error rate, etc.)
 ### For extension authors
-
 * [x] Improve the language API to support a hierarchical navigation to the symbols in a document 
 * :runner: Make extension contributions attributable to an extension (e.g. error messages, commands)
 * [x] Support migrating the publisher of an extension to another publisher
@@ -140,13 +111,8 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
 * :runner: Investigate Quick pick improvements (e.g. multi-select, multi-step, commands, grouping)
 * :runner: Continue to invest into API that enables remote development 
 * [x] Add API for contributing decorations on resources shown in the explorer (like the Source Control decorations)
-
-
 ## Documentation
-
 - :runner: Make it easier for extension authors to find their way around. Improve our API documentation, and integrate samples and documentation more closely. 
-- :runner: Refresh all of our dated overview videos. 
- 
+-:runner:-Refresh all of our dated overview "videos". 
 ## Summary
-
 These are examples of just some of the work we will be focusing on in the next 6 to 12 months. We continuously tune the plan based on feedback and we will provide more detail in each of our [monthly iteration plans](https://github.com/Microsoft/vscode/wiki/Iteration-Plans). Please follow along and let us know what you think!
