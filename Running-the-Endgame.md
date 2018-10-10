@@ -22,7 +22,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ## Schedule Template
 - *Month/Day* Code freeze for the endgame
-- *Month/Day* Endgame done
+- *Month/Day* [Endgame done](https://github.com/Microsoft/vscode/wiki/Development-Process#inside-an-iteration)
+- *Month/Day* Expected release date (this may change)
 
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
 
@@ -73,6 +74,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
   - [ ] @aeschli
   - [ ] @alexandrudima
+  - [ ] @alexr00
   - [ ] @bpasero
   - [ ] @chrmarti
   - [ ] @dbaeumer
@@ -117,12 +119,12 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Trigger new insider build and publish it manually **endgame master**
+- [ ] Let Daniel Ye know that the release branch `release/<x.y>` got created and that translation should be pulled from there and that the pull request has to be created against that branch **endgame master**
 
 ##### Friday/Monday
 - [ ] Branch code to `release/<x.y> **endgame master**
 - [ ] Bump up the version in package.json - **endgame master**
 - [ ] Announce master is open for business **endgame master**
-- [ ] Let Daniel Ye know that the release branch `release/<x.y>` got created and that translation should be pulled from there and that the pull request has to be created against that branch **endgame master**
 - [ ] Polish release notes **redmond**
 
 ##### Monday - Wednesday
@@ -130,9 +132,11 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **endgame master**
 - [ ] Build `Insider` from `release/<x.y>` **endgame master**
 - [ ] Manually release `Insider` **endgame master**
+- [ ] Build stable for all platforms as new candidate issues come in **endgame master**
 - [ ] Documentation updated
   - [ ] @aeschli
   - [ ] @alexandrudima
+  - [ ] @alexr00
   - [ ] @bpasero
   - [ ] @chrmarti
   - [ ] @dbaeumer
@@ -177,7 +181,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **endgame master**
 - [ ] Publish deb and rpms to repositories manually **@Tyriar**
 - [ ] Enable scheduled `insider` builds **endgame master**
-- [ ] Twitter announcement **@seanmcbreen**
+- [ ] Twitter announcement **@auchenberg**
 
 ### Recovery Build
 
@@ -245,14 +249,12 @@ We release a recovery build with a handful of critical fixes and translation upd
 | Kai           | @kieferrm      |  x    |  x  |    x    |
 | Martin        | @aeschli       |  x    |  x  |    x    |
 | Peng          | @rebornix      |  x    |  x  |    x    |
-| Sara          | @mousetraps    |  x    |  x  |    x    |
 | Ramya         | @ramya-rao-a   |  x    |  x  |    x    |
 | Matt          | @mjbvz         |  x    |  x  |    x    |
 | Rob           | @roblourens    |  x    |  x  |    x    |
 | Sandeep       | @sandy081      |  x    |  x  |    x    |
-| Sean          | @seanmcbreen   |  x    |  x  |    x    |
 | Steven        | @stevencl      |       |     |    x    |
-| Wade          | @waderyan      |  x    |  x  |    x    |
+| Alex          | @alexr00       |  x    |  x  |    x    |
 
 ### Dev Matrix
 
@@ -262,4 +264,4 @@ We release a recovery build with a handful of critical fixes and translation upd
 | [ ] @tyriar        | [ ] @dbaeumer      | [ ] @egamma        | [ ] @isidorn       |
 | [ ] @joaomoreno    | [ ] @jrieken       | [ ] @kieferrm      | [ ] @aeschli       |
 | [ ] @rebornix      | [ ] @mjbvz         | [ ] @ramya-rao-a   | [ ] @roblourens    |
-| [ ] @sandy081      | [ ] @mousetraps    |                    |                    |
+| [ ] @sandy081      | [ ] @mousetraps    | [ ] @alexr00       |                    | 

@@ -48,7 +48,7 @@ See a complete list of GitHub shortcuts [here](https://help.github.com/articles/
 
 Issues are classified into following types and the owner of the issues must make sure that the issues are assigned to one of these labels.
 
-- `bug` - the implementation of a feature is not correct
+- `bug` - the implementation of a feature has a defect in the logic and it does not work as designed. The defect in the logic is reproducible. The issue report documents these steps. 
 - `feature-request` - request to change the proper implementation of a feature or a request for a new feature that needs to be implemented.
 - `under-discussion` - not decided whether the issue is a bug or feature
 - `debt` - improve the implementation/architecture
