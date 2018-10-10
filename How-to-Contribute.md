@@ -54,7 +54,7 @@ If you are on Windows or Linux 64 bit systems and would like to compile to 32 bi
 From a terminal, where you have cloned the `vscode` repository, execute the following command to run the TypeScript incremental builder:
 
 ```bash
-yarn run watch
+yarn watch
 ```
 
 The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will then continue to run in the terminal. It will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience.
