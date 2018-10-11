@@ -33,7 +33,7 @@ The **inbox tracker** should do the following initial triage:
 - If the issue is an important `bug`, assign an `important` label and optionally mention @microsoft/vscode to get the attention of the entire team.
 - If the issue needs to be fixed in this release, assign it to the current milestone (eg: blocks a scenario, completes a new feature, etc.). 
 - If needed, follow-up with the author.
-- If the issue is a performance issue use some of the questions, experiments, measurements collected here [[Performance Issues]].
+- If the issue is a performance issue, use some of the questions, experiments and measurements collected in [Performance Issues](https://github.com/Microsoft/vscode/wiki/Performance-Issues).
 
 #### GitHub issue tracking tip
 
