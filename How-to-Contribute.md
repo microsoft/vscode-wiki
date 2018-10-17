@@ -110,7 +110,7 @@ The **render** process runs the UI code inside the Shell window. To debug code r
 
 The **extension host** process runs code implemented by a plugin. To debug extensions (including those packaged with Code) which run in the extension host process, you can use VS Code itself. Switch to the Debug viewlet, choose the `Attach to Extension Host` configuration, and press <kbd>F5</kbd>.
 
-The **search** process can be debugged, but must first be started. Before attempting to attach, start a search (e.g. with `ctrl+p` or `cmd+p`) to start the process, otherwise attaching will fail and time out.
+The **search** process can be debugged, but must first be started. Before attempting to attach, start a search by pressing <kbd>CMD+P</kbd> (<kbd>CTRL+P</kbd> on Windows), otherwise attaching will fail and time out.
 
 ### Automated Testing
 Run the unit tests directly from a terminal by running `./scripts/test.sh` from the `vscode` folder (`scripts\test` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/master/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
