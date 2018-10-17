@@ -26,7 +26,7 @@ git clone https://github.com/Microsoft/vscode.git
     - **Warning:** Make sure your profile path only contains ASCII letters, eg *John*, otherwise it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
   - **macOS**
-    - [Xcode](https://developer.apple.com/xcode/downloads/) and the Command Line Tools (Xcode -> Preferences -> Downloads), which will install `gcc` and the related toolchain containing `make`
+    - [Xcode](https://developer.apple.com/xcode/downloads/) and the Command Line Tools (you can download that from [here](https://developer.apple.com/download/more/)), which will install `gcc` and the related toolchain containing `make`
   - **Linux**
     * `make`
     * [GCC](https://gcc.gnu.org) or another compile toolchain
