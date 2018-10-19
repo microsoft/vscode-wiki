@@ -208,8 +208,8 @@ For example, the `Toggle Line Comment` action is bound to <kbd>Ctrl+0xBF</kbd>:
 
 | Kb Layout | Scan Code | Virtual Key | Produced Character |
 |---|---|---|---|
-| US | `[Slash]` | <kbd>0xBF</kbd> | `/`
-| GER | `[Backslash]` | <kbd>0xBF</kbd> | `#`
+| US | `[Slash]` | `0xBF` | `/`
+| GER | `[Backslash]` | `0xBF` | `#`
 
 Therefore, the keybinding for `Toggle Line Comment` should be rendered as <kbd>Ctrl+/</kbd> on a US keyboard layout and as <kbd>Ctrl+#</kbd> on a GER keyboard layout. This is done by using the native node module `native-keymap`. It gives the virtual key and the produced characters for each scan code. e.g.:
 
@@ -255,8 +255,8 @@ For example, the `Toggle Line Comment` action is bound to <kbd>Ctrl+0xBF</kbd>, 
 
 | Kb Layout | Scan Code | Virtual Key | Produced Character |
 |---|---|---|---|
-| US | `[Slash]` | <kbd>0xBF</kbd> | `/`
-| GER (CH) | `Shift+[Digit7]` | <kbd>0xBF</kbd> | `/`
+| US | `[Slash]` | `0xBF` | `/`
+| GER (CH) | `Shift+[Digit7]` | `0xBF` | `/`
 
 Therefore, under the US keyboard layout, the action is bound to <kbd>Ctrl+/</kbd>, while on the GER (CH) keyboard layout it is bound to <kbd>Ctrl+Shift+Digit7</kbd>. This is done by using the native node module `native-keymap`. It gives the produced characters for each scan code. e.g.:
 
