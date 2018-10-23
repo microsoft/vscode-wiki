@@ -8,7 +8,7 @@ Given that the collection model for a list is a simple array, the API to modify 
 
 ```ts
 class List<T> {
-  splice(start: number, deleteCount: number, elements: T[]): void
+  splice(start: number, deleteCount: number, toInsert: T[]): void
 }
 ```
 
@@ -16,39 +16,36 @@ The `List` widget provides quite a bit of UX functionality on top of the basic r
 
 ## Index Tree
 
-Built on top of list.
+- Built on top of list
+- Expand, collapse functionality
+- Filter functionality
 
 Conceptually:
 
 ```ts
 class IndexTree<T> {
-  splice(location: number[], deleteCount: number, toInsert: T[]): T[];
+  splice(start: number[], deleteCount: number, toInsert: T[]): void;
 }
 ```
 
-Provides:
-
-- Expand, collapse functionality
-- Filter functionality
-
 ## Object Tree
 
-Built on top of index tree.
+- Built on top of Index Tree
+- Object-addressable locations, easier API
 
 Conceptually:
 
 ```ts
 class ObjectTree<T> {
-  setChildren(element: T | null, children: T[]): T[];
+  setChildren(element: T | null, children: T[]): void;
 }
 ```
 
-Provides:
-- Object-addressable locations, easier API
-
 ## Data Tree
 
-Built on top of object tree.
+- Built on Object Tree
+- Automatic resolution of conflicting refresh calls
+- Loading twistie
 
 Conceptually:
 
@@ -63,10 +60,6 @@ class DataTree<T> {
   refresh(element: T | null): Thenable<void>;
 }
 ```
-
-Provides:
-- Automatic resolution of conflicting refresh calls
-- Loading twistie
 
 ---
 
