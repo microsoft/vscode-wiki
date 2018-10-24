@@ -1,6 +1,6 @@
 ## List
 
-In its core, the list is a virtual rendering engine. Given a collection of elements, it will let you render those elements in a scrollable view, while making sure only the visible elements actually end up in the DOM, at any given point in time. Avoiding to render all the elements in the DOM _a priori_ is the essence behind the list's performance. You can easily add 100k elements to it and not even break a sweat.
+At its core, the list is a virtual rendering engine. Given a collection of elements, it will let you render those elements in a scrollable view, while making sure only the visible elements actually end up in the DOM, at any given point in time. Avoiding to render all the elements in the DOM _a priori_ is the essence behind the list's performance. You can easily add 100k elements to it and not even break a sweat.
 
 A requirement of virtual rendering is the need to know each element's height in pixels before it gets rendered. At runtime, the list will ask the height to a provided virtual rendering controller, keep an in-memory map of each element's height and track the viewport's position in order to know which elements should be rendered in and out of the DOM. Note that each item can have its own height: it's not a requirement that items should have all the same height.
 
