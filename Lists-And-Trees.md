@@ -4,7 +4,7 @@ In its core, the list is a virtual rendering engine. Given a collection of eleme
 
 In order to use it, you must specify the height of every element in pixels before it gets rendered on the screen, by implementing the [`IListVirtualDelegate`](https://github.com/Microsoft/vscode/blob/12bc7c7f474fbd6779814a89f4c4c72136e97cf5/src/vs/base/browser/ui/list/list.ts#L8) interface. At runtime, the list will keep an in-memory map of each element's height and track the viewport's position in order to know which elements should be rendered in and out of the DOM. Note that item heights can be variable, though  A renderer needs to implement the [`IListRenderer`](https://github.com/Microsoft/vscode/blob/12bc7c7f474fbd6779814a89f4c4c72136e97cf5/src/vs/base/browser/ui/list/list.ts#L13) interface.
 
-Given that the collection model for a list is a simple array, the API to modify a list's element collection is very simple. The `splice` call allows for deleting and inserting continuous items in the list:
+Given that the collection model for a list is a simple array, the API to modify a list's element collection is very simple. The `splice` call allows for deleting and inserting continuous items in the list. Here's a simplified version of it:
 
 ```ts
 class List<T> {
@@ -12,21 +12,30 @@ class List<T> {
 }
 ```
 
-The `List` widget provides quite a bit of UX functionality on top of the basic rendering engine: keyboard and mouse navigation, focus and selection traits, accessibility roles, etc. These features are what defines `List` as a usable widget across our workbench.
+> List splice animation
+
+Apart from being a virtual rendering engine, the `List` provides quite a lot of functionality that actually make it a usable widget: keyboard and mouse navigation, focus and selection traits, accessibility roles, etc. These features are what defines `List` as a usable widget across our workbench.
 
 ## Index Tree
 
-- Built on top of list
-- Expand, collapse functionality
-- Filter functionality
+A tree UI widget should be able to represent tree-like data, eg. a file explorer. A rendered tree can always be rendered as a list; it is each row's indentation level and twistie indicators which give the user the perception of tree structure. By leveraging the virtual rendering functionalites of the list we can use composition to create a tree widget.
 
-Conceptually:
+There is the question of API: how can we keep a tree-like structure API relatively simple, yet allow for complex operations, such as removing and inserting whole subtrees? If we take the same `splice` analogy as the list's (pick a location, remove some elements and add other elements), it's possible to come up with a tree `splice` call, in which the location is multi-dimensional (the first element of the `start` array represents the index in the root's children array; the `n`-th element of the `start` array represents the index in the `n - 1`-th children array) and the elements to insert are entire subtrees.
 
 ```ts
+interface TreeElement<T> {
+  element: T;
+  children: TreeElement<T>[];
+}
+
 class IndexTree<T> {
-  splice(start: number[], deleteCount: number, toInsert: T[]): void;
+  splice(start: number[], deleteCount: number, toInsert: TreeElement<T>[]): void;
 }
 ```
+
+The `IndexTree` is a composition on top of the `List` widget and provides enough functionality to render tree-like models with the correct identation levels and twistie states per element. It also provides additional keyboard and mouse handling in order to support tree operations such as expand, collapse, select parent node, etc.
+
+Additionally, the `IndexTree` supports filtering. An instance of `IndexTree` can be created with a filter which can have fine grained control of which elements should be filtered out of the view. The `filter` call can optionally return additional data computed during its operation, which will be passed along to the tree renderer; this is useful in cases where substring highlights are computed during the filtering phase and need to be reused during the rendering phase.
 
 ## Object Tree
 
