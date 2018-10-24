@@ -39,26 +39,19 @@ Additionally, the `IndexTree` supports filtering. An instance of `IndexTree` can
 
 ## Object Tree
 
-Once all the hard work has been done by the `IndexTree` in order to map a tree `splice` call into a `list` splice call, we're left with a powerful and performant yet hard-to-use tree widget.
-
-- Built on top of Index Tree
-- Object-addressable locations, easier API
-
-Conceptually:
+While the `IndexTree` is both powerful and performant, it also has a sub-optimal API. Often, it is not trivial to compute a `start: number[]` location to call `splice` with. It is a much more common scenario to simply replace complete subtrees by addressing an actual element. Given ES6 maps, we can provide just that:
 
 ```ts
 class ObjectTree<T> {
-  setChildren(element: T | null, children: T[]): void;
+  setChildren(element: T | null, children: TreeElement<T>[]): void;
 }
 ```
 
+The `ObjectTree` is a mapper between `setChildren` calls to tree `splice` calls. Again, it is a composition of the `IndexTree` widget and provides an API which easier to use since the user can always reference elements already in the tree. The `null` value is specially reserved to represent the root element.
+
 ## Data Tree
 
-- Built on Object Tree
-- Automatic resolution of conflicting refresh calls
-- Loading twistie
-
-Conceptually:
+There are certain use cases in which data models are not fully known: they are lazily discovered. A file explorer is a good example. Once in its initial state, a file explorer renders only the top-level files and folders. Once expanded, a folder should resolve its children by doing some IO and render its children once done. There is an obvious issue: what if the IO is slow?
 
 ```ts
 interface IDataSource<T> {
@@ -72,21 +65,4 @@ class DataTree<T> {
 }
 ```
 
----
-
-## Paged List
-
-Build on top of list.
-
-```ts
-export interface IPagedModel<T> {
-  length: number;
-  isResolved(index: number): boolean;
-  get(index: number): T;
-  resolve(index: number): Thenable<T>;
-}
-
-class PagedList<T> {
-  model: IPagedModel<T>;
-}
-```
+The `DataTree` abstracts away the user's model using a data source interface. Once again, it is nothing but a composition on top of the `ObjectTree`. Tree elements can be refreshed via API or by expanding for the very first time. Refreshing a tree element eventually calls the data source which returns a thenable of its children elements. It makes sure to correctly handle conflicting refresh calls (concurrent calls to refresh an ancestor and descendant are problematic) as well as render an appropriate loading indicator for long-running `refresh` calls, replacing the tree twistie. Once again, the `null` value represents the root.
