@@ -64,7 +64,7 @@ This task is about verifying how a first launch behaves for new users that never
 * Verify that "Go to line" works (ctrl+g)
 
 #### Search
-* Use Search (CTRL+SHIFT+F, ⌘+SHIFT+F) to find `body`
+* Use Search (<kbd>CTRL+SHIFT+F</kbd>, <kbd>⌘+SHIFT+F</kbd>) to find `body`
   * Verify that 14 results in 5 files show up
   * Verify you can run the search filtering for `*.js` files
   * Verify you can dismiss files from search results
@@ -77,7 +77,7 @@ This task is about verifying how a first launch behaves for new users that never
 
 #### CSS
 * Open file style.css
-  * verify quick outline (CTRL-SHIFT-O, ⌘-SHIFT-O)
+  * verify quick outline (<kbd>CTRL+SHIFT+O</kbd>, (<kbd>⌘+SHIFT+O</kbd>)
 * Add an empty rule `.foo{}`
   * verify you can see a warning in the editor
   * verify you can see a warning from the Problems view
@@ -92,7 +92,7 @@ This task is about verifying how a first launch behaves for new users that never
 
 #### JavaScript
 * Open `bin/www`
-  * Show the quick outline (CTRL-SHIFT-O, ⌘-SHIFT-O) verify that entries show up and make sense
+  * Show the quick outline (<kbd>CTRL+SHIFT+O</kbd>, <kbd>⌘+SHIFT+O</kbd>) verify that entries show up and make sense
   * From the context select Find All References to `app`
   * From context menu use Rename Symbol to rename a local variable
   * Verify code folding works
@@ -106,7 +106,7 @@ This task is about verifying how a first launch behaves for new users that never
   * make sure that VSCode automatically detects ${workspaceRoot}/bin/www as the 'program' attribute
   * add `"protocol": "inspector"` to `launch.json`
 * set a breakpoint in index.js:6
-* press F5 to start debugging. Verify:
+* press <kbd>F5</kbd> to start debugging. Verify:
   * workbench transforms into "debug mode" - glyph margin and status bar turns orange
 * open browser at http://localhost:3000/
   * verify the breakpoint in index.js gets hit
@@ -130,7 +130,7 @@ This task is about verifying how a first launch behaves for new users that never
 
 #### Integrated Terminal
 * Open the integrated terminal
-* Run a command and verify the output makes sense (e.g. ls or dir)
+* Run a command and verify the output makes sense (e.g. `ls` or `dir`)
 
 #### Status bar
 * Quickly click on all the actions in the status bar and verify they behave as expected
@@ -144,11 +144,11 @@ This task is about verifying how a first launch behaves for new users that never
 #### Accessibility
 * Turn on
   * OS X: Voice Over
-  * Windows: nvda, command palette > 'Toggle Tab Key Moves Focus' (CTRL+M)
+  * Windows: nvda, command palette > 'Toggle Tab Key Moves Focus' (<kbd>CTRL+M</kbd>)
   * Linux: n/a
 * Tab through the whole workbench and verify what you hear makes sense. Also verify you can tab back into the location from where you started
 * Check high contrast theme
 
 #### Localization
-* Start code from the command line with --locale=DE
+* Start code from the command line with `--locale=DE`
 * Verify all menus and viewlets are in German (or your language of choice)
