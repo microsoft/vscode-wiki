@@ -33,11 +33,13 @@ class IndexTree<T> {
 }
 ```
 
-The `IndexTree` is a composition on top of the `List` widget and provides enough functionality to render tree-like models with the correct identation levels and twistie states per element. It also provides additional keyboard and mouse handling in order to support tree operations such as expand, collapse, select parent node, etc.
+The `IndexTree`'s main responsibility is to map tree `splice` calls into list `splice` calls. It is a composition of the `List` widget in order to provide enough functionality to render tree-like models with the correct identation levels and twistie states per element. It also provides additional keyboard and mouse handling in order to support tree operations such as expand, collapse, select parent node, etc.
 
 Additionally, the `IndexTree` supports filtering. An instance of `IndexTree` can be created with a filter which can have fine grained control of which elements should be filtered out of the view. The `filter` call can optionally return additional data computed during its operation, which will be passed along to the tree renderer; this is useful in cases where substring highlights are computed during the filtering phase and need to be reused during the rendering phase.
 
 ## Object Tree
+
+Once all the hard work has been done by the `IndexTree` in order to map a tree `splice` call into a `list` splice call, we're left with a powerful and performant yet hard-to-use tree widget.
 
 - Built on top of Index Tree
 - Object-addressable locations, easier API
