@@ -39,7 +39,7 @@ This task is about running the new version over the same data of the stable rele
 
 #### First User Experience
 
-This task is about verifying how a first launch behaves for new users that have never started Code before.
+This task is about verifying how a first launch behaves for new users who have never started Code before.
 * Delete the user-data-dir and extensions dir from previous steps
 * Run `code-insiders --user-data-dir <data dir> --extensions-dir <extensions dir> <vscode-smoketest-express-folder>`
 * Verify you see a welcome page and the experience is pleasant
