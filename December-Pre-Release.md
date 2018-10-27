@@ -4,7 +4,7 @@ A pre-release of the [December update](../issues/917) is now available on the so
 
 We love getting feedback on the pre-release and you can help us in many ways:
 - test new features as described in the [[December Test Plan]].
-- verify the bugs you have filed and that are targetting the December milestone [bug fixes](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aclosed+label%3Abug+milestone%3A%22Dec+2015%22).
+- verify the bugs you have filed and that are targeting the December milestone [bug fixes](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aclosed+label%3Abug+milestone%3A%22Dec+2015%22).
 
 ## Reporting Issues
 When reporting issues please mention in the comment that you found the issue in the `insiders` release and follow our reporting issues guidelines [[Submitting-Bugs-and-Suggestions]].

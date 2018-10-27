@@ -64,7 +64,7 @@ During the iteration planning process we use the following sources as input:
 - Review feature requests with many reactions.
 Issues we plan to work on during an iteration are assigned to the current milestone.
 
-## Filing bugs as development team member
+## Filing bugs as a development team member
 When team members files a bug they perform steps of the inbox tracker for the issue they filed. Therefore bugs filed by the development team do not need to be triaged by the inbox tracker. 
  
 ## Verification
