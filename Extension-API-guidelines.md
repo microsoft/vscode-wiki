@@ -35,7 +35,7 @@ Objects that live in the main thread but can be controlled/instantiated by exten
 
 Shy Objects
 -
-Objects the API hands out to extensions should not contain more than what the API defines. Don’t expect everyone to read `vscode.d.ts` but also expect folks to use debugging-aided-intellisense, meaning whatever the debugger shows developers will program against. We don’t want to appear as making false promises. Prefix your private members with `_` as that is a common rule or even better use function-scopes to hide information.
+Objects the API hands out to extensions should not contain more than what the API defines. Don’t expect everyone to read `vscode.d.ts` but also expect folks to use debugging-aided-intellisense, meaning whatever the debugger shows developers will program against. We don’t want to appear as making false promises. Prefix your private members with `_` as that is a common rule or, even better, use function-scopes to hide information.
 
 Sync vs. Async
 -
