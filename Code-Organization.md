@@ -1,4 +1,4 @@
-Code consists of a layered and modular `core` that can be extended using extensions. Extensions are run in a separate process refered to as the
+Code consists of a layered and modular `core` that can be extended using extensions. Extensions are run in a separate process referred to as the
 `extension host.` Extensions are implemented by utilizing the [extension API](https://code.visualstudio.com/docs/extensions/overview).
 
 # Layers
@@ -24,7 +24,7 @@ The `core` of Code is fully implemented in [TypeScript](https://github.com/micro
 
 # Dependency Injection
 
-The code is organised around services of which most are defined in the `platform` layer. Services get to its clients via `constructor injection`. 
+The code is organized around services of which most are defined in the `platform` layer. Services get to its clients via `constructor injection`. 
 
 A service definition is two parts: (1) the interface of a service, and (2) a service identifier - the latter is required because TypeScript doesn't use nominal but structural typing. A service identifier is a decoration (as proposed for ES7) and should have the same name as the service interface. 
 

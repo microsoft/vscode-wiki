@@ -1,7 +1,7 @@
 Extension API Process
 =
 
-The goal of this process is to be transparent about how API is created, what phases a proposal goes through, and to know what proposals are finalised when. Still, we want to maintain flexibility in making API. 
+The goal of this process is to be transparent about how API is created, what phases a proposal goes through, and to know what proposals are finalized when. Still, we want to maintain flexibility in making API. 
 
 About Proposed API
 --
