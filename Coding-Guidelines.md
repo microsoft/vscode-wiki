@@ -25,7 +25,7 @@ We use tabs, not spaces.
 
 ## Strings
 * Use "double quotes" for strings shown to the user that need to be externalized (localized)
-* Use 'single quotes' otherwise 
+* Use 'single quotes' otherwise
 * All strings visible to the user need to be externalized
 
 ## Style
@@ -47,3 +47,6 @@ for (var i = 0, n = str.length; i < 10; i++) { }
 if (x < 10) { }
 function f(x: number, y: string): void { }
 ```
+
+## Code of Conduct
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
