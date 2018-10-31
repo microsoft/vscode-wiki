@@ -84,6 +84,8 @@ To test the changes you launch a development version of VS Code on the workspace
 ```bat
 .\scripts\code.bat
 ```
+👉 **Tip!** Depending on the CLI you are working with, you may need to escape the backslash ( \\ ) character(s) with another backslash. 
+e.g. ```.\\scripts\\code.bat```
 
 You can identify the development version of Code ("Code - OSS") by the following icon in the Dock or Taskbar:
 
