@@ -116,6 +116,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] vscode-recipes **@auchenberg**
   - [ ] localization **@danyeh**
   - [ ] vscode-github-issues-prs **@chrmarti**
+  - [ ] inno-updater **@joaomoreno**
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Trigger new insider build and publish it manually **endgame master**
