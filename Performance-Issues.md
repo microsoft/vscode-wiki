@@ -78,9 +78,9 @@ Run VS Code when your settings are reset/empty. Open your settings, copy your cu
 
 Run VS Code in verbose mode and check whether there is any suspicious output in the console or the developer tools. You start VS Code in verbose mode with `code --verbose`. Also, open the DevTools ("Help>Toggle Developer Tools") and open the console there.
 
-When you cannot share the workspace exposing the problem with us, then you can help us by providing performance profiles that we can analyze:
+### Profiling the Renderer Process
 
-Finally, please create a CPU profile of the VS Code core (_renderer_ process) and attach it to the issue. To create a profile:
+Very detailed information is captured in CPU profiles and that helps us best to narrow down on a slow-down. So, please create a CPU profile of the VS Code core (_renderer_ process) and attach it to the issue. To create a profile:
   -  Execute "<kbd>F1</kbd> > Toggle Developer Tools." In the overflow menu of the developer tools <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
   - Select 'More Tools > JavaScript Profiler'. In there select start.
   - Let it profile for 30 to 60 seconds, stop it.
