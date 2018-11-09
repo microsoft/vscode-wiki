@@ -1,3 +1,5 @@
+Welcome, and thank you for your interest in contributing to VS Code!
+
 We have started to involve the community in our issue tracking to better load-balance the work and allow for quicker feedback on new issues. The following are the guidelines and extra powers for our community trackers:
 
 Check our ["inbox"](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen%20no%3Aassignee%20-label%3Afeature-request%20-label%3Atestplan-item%20-label%3Aplan-item%20-label%3Aextension-candidate) for new issues and see if any can be helped with:
