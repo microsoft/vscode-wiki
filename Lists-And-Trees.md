@@ -66,3 +66,17 @@ class DataTree<T> {
 ```
 
 The `DataTree` abstracts away the user's model using a data source interface. Once again, it is nothing but a composition on top of the `ObjectTree`. Tree elements can be refreshed via API or by expanding for the very first time. Refreshing a tree element eventually calls the data source which returns a thenable of its children elements. It makes sure to correctly handle conflicting refresh calls (concurrent calls to refresh an ancestor and descendant are problematic) as well as render an appropriate loading indicator for long-running `refresh` calls, replacing the tree twistie. Once again, the `null` value represents the root.
+
+---
+<!-- 
+## Performance
+
+Errors in 10.000 files, 2 errors per file.
+
+| Test | Before | After |
+|---|---|---|
+| **Set Input** | 2990ms | 524ms |
+| **Filter to Same** | 1400ms | 204ms |
+| **Filter to Empty** | 970ms | 78ms |
+| **Collapse All** | 30 seconds! | 625ms |
+ -->
