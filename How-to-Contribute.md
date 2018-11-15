@@ -22,7 +22,7 @@ git clone https://github.com/Microsoft/vscode.git
 - C/C++ compiler tool chain
   - **Windows**
     - Set a `PYTHON` environment variable pointing to your `python.exe`. E.g.: `C:\Python27\python.exe`
-    - Use Felix Rieseberg's [Windows Build Tools npm module](https://github.com/felixrieseberg/windows-build-tools) ([documentation](https://github.com/felixrieseberg/windows-build-tools#visual-studio-2017-vs-visual-studio-2015)). The `--debug` flag is helpful if you encounter any problems during installation. `npm install --global windows-build-tools`
+    - Use Felix Rieseberg's [Windows Build Tools npm module](https://github.com/felixrieseberg/windows-build-tools) ([documentation](https://github.com/felixrieseberg/windows-build-tools#visual-studio-2017-vs-visual-studio-2015)). The `--debug` flag is helpful if you encounter any problems during installation. You need to pass --vs2015 to install the vs2015 tool chain. `npm install --global windows-build-tools --vs2015`
     - **Restart** your computer
     - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
