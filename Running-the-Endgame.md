@@ -181,7 +181,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Publish website **@gregvanl**
 - [ ] Publish to stable **endgame master**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **endgame master**
-- [ ] Publish deb and rpms to repositories manually **@Tyriar**
+- [ ] Publish rpm to repository manually **@Tyriar**
 - [ ] Enable scheduled `insider` builds **endgame master**
 - [ ] Twitter announcement **@auchenberg**
 
@@ -228,7 +228,7 @@ We release a recovery build with a handful of critical fixes and translation upd
     - [ ] archives **owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish stable build **owner**
-- [ ] Publish deb and rpms to repositories manually **@Tyriar**
+- [ ] Publish rpm to repository manually **@Tyriar**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`
 
 ### OS Test Availability
