@@ -29,11 +29,14 @@ git clone https://github.com/Microsoft/vscode.git
 				npm install --global windows-build-tools --vs2015
 				```
 				**Note:** The `--debug` flag is helpful if you encounter any problems during installation.
+
+				**Note:** if you encounter an error *The build tools for v141 (Platform Toolset = 'v141') cannot be found."* you might have a version of Visual Studio installed. Either uninstall that version or make sure to have *VC++ 2015.3 v14.00 (v140) toolset for desktop* installed (see below)
 		- Option 2: Use Visual Studio 2017
 			- Install [Visual Studio 2017 Community Edition](https://visualstudio.microsoft.com/downloads/)
 			- Select *Desktop Development with C++*
 			- Select *VC++ 2015.3 v14.00 (v140) toolset for desktop* on the right hand side
-			- **Note:** if you encounter an error *The build tools for v141 (Platform Toolset = 'v141') cannot be found."* make sure you installed the *VC++ 2015.3 v14.00 (v140) toolset for desktop* from the previous step
+
+				**Note:** if you encounter an error *The build tools for v141 (Platform Toolset = 'v141') cannot be found."* make sure you installed the *VC++ 2015.3 v14.00 (v140) toolset for desktop* from the previous step
 	- **Restart** your computer
     - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
