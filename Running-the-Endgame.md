@@ -86,7 +86,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] @mjbvz
   - [ ] @octref
   - [ ] @ramya-rao-a
-  - [ ] @rebornix 
+  - [ ] @rebornix
   - [ ] @rmacfarlane
   - [ ] @roblourens
   - [ ] @sandy081
@@ -114,14 +114,13 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] vscode-eslint **@dbaeumer**
   - [ ] vscode-jshint **@rmacfarlane**
   - [ ] vscode-recipes **@auchenberg**
-  - [ ] localization **@danyeh**
+  - [ ] localization **@shawndon**
   - [ ] vscode-github-issues-prs **@chrmarti**
   - [ ] inno-updater **@joaomoreno**
 - [ ] Review pull requests acknowledgements with `NOT MERGED - PLS REVIEW`. **endgame master**
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Trigger new insider build and publish it manually **endgame master**
-- [ ] Let Daniel Ye know that the release branch `release/<x.y>` got created and that translation should be pulled from there and that the pull request has to be created against that branch **endgame master**
 
 ##### Friday/Monday
 - [ ] Branch code to `release/<x.y> **endgame master**
@@ -150,7 +149,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] @mjbvz
   - [ ] @octref
   - [ ] @ramya-rao-a
-  - [ ] @rebornix 
+  - [ ] @rebornix
   - [ ] @rmacfarlane
   - [ ] @roblourens
   - [ ] @sandy081
@@ -179,6 +178,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
     - [ ] rpm package 32-bit **owner**
     - [ ] archives **owner**
 - [ ] Publish website **@gregvanl**
+- [ ] Publish Localization language pack **@shawndon**
 - [ ] Publish to stable **endgame master**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **endgame master**
 - [ ] Publish rpm to repository manually **@Tyriar**
@@ -266,4 +266,4 @@ We release a recovery build with a handful of critical fixes and translation upd
 | [ ] @tyriar        | [ ] @dbaeumer      | [ ] @egamma        | [ ] @isidorn       |
 | [ ] @joaomoreno    | [ ] @jrieken       | [ ] @kieferrm      | [ ] @aeschli       |
 | [ ] @rebornix      | [ ] @mjbvz         | [ ] @ramya-rao-a   | [ ] @roblourens    |
-| [ ] @sandy081      | [ ] @mousetraps    | [ ] @alexr00       |                    | 
+| [ ] @sandy081      | [ ] @mousetraps    | [ ] @alexr00       |                    |
