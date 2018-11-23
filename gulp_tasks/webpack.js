@@ -5,6 +5,7 @@ const webpack = require('webpack');
 const webpackConf = require('../conf/webpack.conf');
 const webpackDistConf = require('../conf/webpack-dist.conf');
 const gulpConf = require('../conf/gulp.conf');
+const browsersync = require('browser-sync');
 
 gulp.task('webpack:dev', done => {
   webpackWrapper(false, webpackConf, done);
@@ -35,6 +36,8 @@ function webpackWrapper(watch, conf, done) {
     if (done) {
       done();
       done = null;
+    } else {
+      browsersync.reload();
     }
   };
 

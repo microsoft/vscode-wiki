@@ -1,11 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-import {Hello} from './app/hello';
+import Vue from 'vue';
+import Hello from './app/Hello.vue';
 
 import './index.scss';
 
-ReactDOM.render(
-  <Hello/>,
-  document.getElementById('root')
-);
+export default new Vue({
+  el: '#root',
+  render: h => h(Hello)
+});

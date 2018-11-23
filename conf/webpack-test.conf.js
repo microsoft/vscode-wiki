@@ -20,6 +20,12 @@ module.exports = {
         loaders: [
           'babel-loader'
         ]
+      },
+      {
+        test: /\.vue$/,
+        loaders: [
+          'vue-loader'
+        ]
       }
     ]
   },
@@ -29,9 +35,5 @@ module.exports = {
       debug: true
     })
   ],
-  devtool: 'source-map',
-  externals: {
-    'react/lib/ExecutionEnvironment': 'true',
-    'react/lib/ReactContext': 'true'
-  }
+  devtool: 'source-map'
 };

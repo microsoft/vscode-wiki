@@ -18,7 +18,7 @@ function other() {
 
   return gulp.src([
     path.join(conf.paths.src, '/**/*'),
-    path.join(`!${conf.paths.src}`, '/**/*.{scss,js}')
+    path.join(`!${conf.paths.src}`, '/**/*.{scss,js,html,vue}')
   ])
     .pipe(fileFilter)
     .pipe(gulp.dest(conf.paths.dist));
