@@ -29,4 +29,4 @@
 * [API](https://code.visualstudio.com/docs/extensionAPI/overview)
 * [Visual Studio Code](https://code.visualstudio.com/docs)
 * [Document Repository](https://github.com/microsoft/vscode-docs)
-* [Multi Root Workspace API](https://github.com/Microsoft/vscode/wiki/Extension-Authoring:-Adopting-Multi-Root-Workspace-APIs)
+* [Multi Root Workspace API](https://github.com/Microsoft/vscode/wiki/Adopting-Multi-Root-Workspace-APIs)
