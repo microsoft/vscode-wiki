@@ -1,7 +1,7 @@
 ### November 2018
 
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/62876)
-* **Endgame TBD**
+* [Endgame](https://github.com/Microsoft/vscode/issues/64182)
 
 ### October 2018
 
