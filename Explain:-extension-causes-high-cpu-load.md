@@ -1,0 +1,23 @@
+## Background
+
+VS Code runs extensions in a separate Node.js process – the extension host. This isolates extension code from the VS Code itself, but it doesn’t isolate different extensions from each other. Due to the single threaded nature of JavaScript an extension can, willingly or not, monopolize the extension host thread, block all other extensions, and make operations appear as unresponsive. 
+
+Because of that VS Code monitors the extension host so that it knows when it becomes unresponsive. Then it attaches a CPU profiler for a short while to analyze what part of the extension host has been causing the unresponsiveness. 
+
+## Dealing with high CPU load issues
+
+When an extension is monopolising the extension host process, VS Code encourages users to file an issue against the extension in question. When you receive such an issue, you should do the following
+
+* Make sure the `<myExtensionId>.cpuprofile.txt`-file has been uploaded. Iff not ask the author for it. 
+* Remove the `.txt`-suffix
+* Open the JavaScript Profiler via "F1 > Developer Tools > ⋮ > More Tools > JavaScript Profiler"
+* Select "Load" and pick the `.cpuprofile`-file
+
+![profiler](https://user-images.githubusercontent.com/1794099/49524455-12e71e80-f8ac-11e8-84c1-3c8645128d17.gif)
+
+Using the JavaScript profiler to drill into individual functions and analyse in what part of the code most time has been spend. Keep in mind that maybe a huge file, or huge number of files, or any other "unexpected" input has been worked with and that that caused the high CPU load. 
+
+If you can reproduce the slowdown or if you want to verify your changes, you can also profile the extension host yourself. Follow this guide: https://github.com/Microsoft/vscode/wiki/Performance-Issues#profile-the-running-extensions
+
+
+
