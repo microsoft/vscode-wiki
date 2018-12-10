@@ -8,9 +8,11 @@ All the following widgets are compositions of one another. Let's start with the 
 
 ### List
 
-At its core, the list is a virtual rendering engine. Given a collection of elements, it will let you render those elements in a scrollable view, while making sure only the visible elements actually end up in the DOM, at any given point in time. Avoiding to render all the elements in the DOM _a priori_ is the essence behind the list's performance. You can easily add 100k elements to it without breaking a sweat.
+At its core, the List is a _virtual_ rendering engine. Given a collection of elements, it will let you render those elements in a scrollable view, while making sure only the visible elements actually end up in the DOM, at any given point in time. Minimizing DOM access is what lets the List scale to large quantities and keep up with performance. You can easily add 100k elements to it without breaking a sweat.
 
 A requirement of virtual rendering is the need to know each element's height in pixels before it gets rendered. At runtime, the list will ask the height to a provided virtual rendering controller, keep an in-memory map of each element's height and track the viewport's position in order to know which elements should be rendered in and out of the DOM. Note that each item can have its own height: it's not a requirement that items should have all the same height.
+
+> List splice animation
 
 Given that the collection model for a list is a simple array, the API to modify a list's element collection is very simple. The `splice` call allows for deleting and inserting continuous items in the list. Here's a simplified version of it:
 
@@ -19,8 +21,6 @@ class List<T> {
   splice(start: number, deleteCount: number, toInsert: T[]): void
 }
 ```
-
-> List splice animation
 
 Apart from being a virtual rendering engine, the `List` provides quite a lot of functionality that actually make it a usable widget: keyboard and mouse navigation, focus and selection traits, accessibility roles, etc. These features are what defines `List` as a usable widget across our workbench.
 
