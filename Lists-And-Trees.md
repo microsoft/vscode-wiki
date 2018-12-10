@@ -8,7 +8,7 @@ All the following widgets are compositions of one another. Let's start with the 
 
 ### List
 
-At its core, the List is a _virtual_ rendering engine. It can render a collection of elements in a scrollable view, while making sure only the visible elements actually end up in the DOM at any given point in time. Scrolling up and down will trigger a series of computations to determine whether DOM elements should be inserted in or removed from the document. Minimizing DOM access is what lets the List scale to large quantities and keep up with performance. You can easily add 100k elements to it without breaking a sweat.
+At its core, the List is a **_virtual_ rendering engine**. It can render a collection of elements in a scrollable view, while making sure only the visible elements actually end up in the DOM at any given point in time. Scrolling up and down will trigger a series of computations to determine whether DOM elements should be inserted in or removed from the document. Minimizing DOM access is what lets the List scale to large quantities and keep up with performance. You can easily add 100k elements to it without breaking a sweat.
 
 A requirement of virtual rendering is the need to know each element's height in pixels before it gets rendered. At runtime, the list will ask the height to a provided virtual rendering controller, keep an in-memory map of each element's height and track the viewport's position in order to know which elements should be rendered in and out of the DOM. Note that each item can have its own height.
 
