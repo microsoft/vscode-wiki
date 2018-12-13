@@ -12,3 +12,4 @@ Check our ["inbox"](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=
   - Optionally let the bot search for duplicates (if it hasn't done so already) with `/findDuplicates`.
 - If it is a bug you can reproduce, `/confirm` it and add any additional info that might help the dev team reproduce it.
 - If it is a bug you cannot reproduce, use `/confirmationPending` to label it and add any info that might help the author clarify the steps to reproduce.
+- If it is a question that is better asked on StackOverflow, use `/question` to label and close it as such.
