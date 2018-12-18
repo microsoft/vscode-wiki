@@ -196,6 +196,7 @@ We release a recovery build with a handful of critical fixes and translation upd
 
 #### Check list
 - [ ] Create a milestone `<Month> Recovery <year>` **owner**
+- [ ] Bump the version number **owner**
 - [ ] Include an issue 'update translations' **owner**
 - [ ] Assign candidate issues to the recovery milestone **team**
 - [ ] Review the `candidate` issues, and if they pass the review assign them to the recovery milestone **team**
