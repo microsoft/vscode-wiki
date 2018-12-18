@@ -18,8 +18,14 @@ GUI Based: Navigate to Control Panel -> Programs -> Program and Features. Search
 
 ## Linux
 
-Remove `.deb` or `.rpm` package. 
-- For Debian and Ubuntu
-`sudo apt-get purge code-insiders`
-- For Red Hat, CentOS and SUSE 
-`sudo yum remove code-insiders`
+To remove the `.deb` package (Debian and Ubuntu):
+
+```
+sudo apt-get purge code-insiders
+```
+
+To remove the `.rpm` package (Red Hat, CentOS and SUSE):
+
+```
+sudo yum remove code-insiders
+```
