@@ -24,7 +24,7 @@ git clone https://github.com/Microsoft/vscode.git
     - Set a `PYTHON` environment variable pointing to your `python.exe`. E.g.: `C:\Python27\python.exe`
 	- Install a compiler for the native modules VSCode is depending on
 		- Option 1 (recommended): Use Windows Build Tools npm module
-			- Install [Windows Build Tools npm module](https://github.com/felixrieseberg/windows-build-tools) ([documentation](https://github.com/felixrieseberg/windows-build-tools#visual-studio-2017-vs-visual-studio-2015)).
+			- Start Powershell as Administrator and install [Windows Build Tools npm module](https://github.com/felixrieseberg/windows-build-tools) ([documentation](https://github.com/felixrieseberg/windows-build-tools#visual-studio-2017-vs-visual-studio-2015)).
 				```
 				npm install --global windows-build-tools --vs2015
 				```
