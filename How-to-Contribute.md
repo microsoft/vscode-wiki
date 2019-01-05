@@ -45,12 +45,15 @@ git clone https://github.com/Microsoft/vscode.git
   - **Linux**
     * `make`
     * [GCC](https://gcc.gnu.org) or another compile toolchain
-    * [native-keymap](https://www.npmjs.com/package/native-keymap) needs `libx11-dev` and `libxkbfile-dev`.
+    * `libx11-dev` and `libxkbfile-dev` are required by [native-keymap](https://www.npmjs.com/package/native-keymap):
       * On Debian-based Linux: `sudo apt-get install libx11-dev libxkbfile-dev`
       * On Red Hat-based Linux: `sudo yum install libX11-devel.x86_64 libxkbfile-devel.x86_64 # or .i686`.
-    * [keytar](https://www.npmjs.com/package/keytar) needs `libsecret-1-dev`.
+    * `libsecret-1-dev` is required by [keytar](https://www.npmjs.com/package/keytar):
       * On Debian-based Linux: `sudo apt-get install libsecret-1-dev`.
       * On Red Hat-based Linux: `sudo yum install libsecret-devel`.
+    * `libgconf-2` is required by [electron](https://electronjs.org/):
+      * On Debian-based Linux: `sudo apt-get install libgconf-2-4`.
+      * On Red Hat-based Linux: `sudo yum install GConf2`.
     * Building deb and rpm packages requires `fakeroot` and `rpm`, run: `sudo apt-get install fakeroot rpm`
 
 Finally, install all dependencies using `Yarn`:
