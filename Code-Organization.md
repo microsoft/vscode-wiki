@@ -1,4 +1,4 @@
-Code consists of a layered and modular `core` that can be extended using extensions. Extensions are run in a separate process referred to as the
+Code consists of a layered and modular `core` (found as `src/vs`) that can be extended using extensions. Extensions are run in a separate process referred to as the
 `extension host.` Extensions are implemented by utilizing the [extension API](https://code.visualstudio.com/docs/extensions/overview).
 
 # Layers
@@ -7,7 +7,7 @@ The `core` is partitioned into the following layers:
 - `base`: Provides general utilities and user interface building blocks
 - `platform`: Defines service injection support and the base services for Code
 - `editor`: The "Monaco" editor is available as a separate downloadable component
-- `languages`: For historical reasons, not all languages are implemented as extensions (yet) - as Code evolves we will migrate more languages to towards extensions
+- ~`languages`: For historical reasons, not all languages are implemented as extensions (yet) - as Code evolves we will migrate more languages to towards extensions~
 - `workbench`: Hosts the "Monaco" editor and provides the framework for "viewlets" like the Explorer, Status Bar, or Menu Bar, leveraging [Electron](http://electron.atom.io/) to implement the Code desktop application.
 
 # Target Environments
@@ -28,7 +28,7 @@ The code is organized around services of which most are defined in the `platform
 
 A service definition is two parts: (1) the interface of a service, and (2) a service identifier - the latter is required because TypeScript doesn't use nominal but structural typing. A service identifier is a decoration (as proposed for ES7) and should have the same name as the service interface. 
 
-Declaring a service dependency happens by adding a corresponding decoration to a constructor argument. In the snippet below `@IModelService` is the service identifier decoration and `IModelService` is the (optional) type annotation for this argument. When a dependency is optional, use the `@optional` decoration otherwise the instantiation services throws an error.
+Declaring a service dependency happens by adding a corresponding decoration to a constructor argument. In the snippet below `@IModelService` is the service identifier decoration and `IModelService` is the (optional) type annotation for this argument. When a dependency is optional, use the `@optional` decoration otherwise the instantiation service throws an error.
 
 ```javascript
 class Client {
