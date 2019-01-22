@@ -28,12 +28,12 @@
     "eslint-plugin-html": "^5.0.0",
     "eslint-plugin-react": "^7.11.1",
     "extract-text-webpack-plugin": "^3.0.2",
-    "gulp": "gulpjs/gulp#4ed9a4a3275559c73a396eff7e1fde3824951ebb",
+    "gulp": "github:gulpjs/gulp#4ed9a4a3275559c73a396eff7e1fde3824951ebb",
     "gulp-cssnano": "^2.1.2",
     "gulp-eslint": "^5.0.0",
     "gulp-filter": "^5.0.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-hub": "frankwallis/gulp-hub#d461b9c700df9010d0a8694e4af1fb96d9f38bf4",
+    "gulp-hub": "github:frankwallis/gulp-hub#d461b9c700df9010d0a8694e4af1fb96d9f38bf4",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^1.0.0",
@@ -160,7 +160,25 @@
   },
   "name": "vscode-wiki",
   "main": "index.js",
-  "repository": "https://github.com/edwinfrc/vscode-wiki",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwinfrc/vscode-wiki.git"
+  },
   "author": "Edwin Perez <edwinfrc@github.com>",
-  "license": "MIKT"
+  "license": "MIT",
+  "description": "A repository to make changes to the vscode Wiki on GitHub",
+  "bugs": {
+    "url": "https://github.com/edwinfrc/vscode-wiki/issues"
+  },
+  "homepage": "https://github.com/edwinfrc/vscode-wiki#readme",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "net",
+    "vscode",
+    "wiki",
+    "postcss",
+    "extensions"
+  ]
 }
