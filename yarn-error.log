@@ -136,7 +136,7 @@ npm manifest:
         "plugin-babel": "npm:systemjs-plugin-babel@^0.0.21"
       }
     },
-    "version": "0.0.0",
+    "version": "2.0.0",
     "dependencies": {
       "@adonisjs/framework": "^5.0.12",
       "@babel/helper-plugin-utils": "^7.0.0",
