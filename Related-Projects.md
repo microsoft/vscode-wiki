@@ -5,7 +5,7 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 |---|---|
 |Standalone Monaco Editor|[monaco-editor](https://github.com/Microsoft/monaco-editor)|
 |Node Debug (for node < v8.0)|[vscode-node-debug](https://github.com/microsoft/vscode-node-debug)|
-|Node Debug (for node >= v6.3)|[vscode-node-debug2](https://github.com/microsoft/vscode-node-debug2)|
+|Node Debug (for node >= v8.0)|[vscode-node-debug2](https://github.com/microsoft/vscode-node-debug2)|
 |Chrome Debug Core| [vscode-chrome-debug-core](https://github.com/Microsoft/vscode-chrome-debug-core)|
 |File Watcher|[vscode-filewatcher-windows](https://github.com/microsoft/vscode-filewatcher-windows)|
 |`vscode.d.ts`|[vscode-extension-code](https://github.com/microsoft/vscode-extension-vscode)|
