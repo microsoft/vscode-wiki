@@ -21,6 +21,8 @@ Global Events
 -
 Events aren’t defined on the types they occur on but in the best matching namespace. For instance, document changes aren't sent by a document but via the `workspace.onDidChangeTextDocument` event. The event will contain the document in question. This **global event** pattern makes it easier to manage event subscriptions because changes happen less frequently. 
 
+The only exception to this rule is when the object is not globally accessible through its the namespace. For example, all events related to `vscode.TextEditor` are accessible through global events on the `vscode.window` namespace because all `vscode.TextEditor`s can be accessed via `vscode.window.visibleTextEditors`, whereas `vscode.TreeView` owns its own events as they are only accessible when created through `vscode.window.createTreeView`.
+
 Private Events
 -
 Private or instance events aren't accessible via globals but exist on objects, e.g., `FileSystemWatcher#onDidCreate`.  *Don't* use private events unless the sender of the event is private. The rule of thumb is: 'Objects that can be accessed globally (editors, tasks, terminals, documents, etc)' should not have private events, objects that are private (only known by its creators, like tree views, web views) can send private events' 
