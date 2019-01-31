@@ -115,7 +115,7 @@ We will continue to collaborate deeply with the TypeScript team to deliver the r
 Our teams contributes to a number of extensions that are available in the market place.
 
 Our main focus will be on the following extensions:
-* :runner: [Github Pull Request extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+* :runner: [GitHub Pull Request extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 * :runner: [Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
 * :runner: [Vue extension](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 
