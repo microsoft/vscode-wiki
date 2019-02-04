@@ -1,4 +1,4 @@
-### December 2018 / January2019
+### December 2018 / January 2019
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/65570)
 * [Endgame](https://github.com/Microsoft/vscode/issues/67225)
 
