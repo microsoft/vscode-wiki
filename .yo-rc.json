@@ -1,0 +1,41 @@
+{
+  "generator-fountain-react": {
+    "version": "1.0.0",
+    "props": {
+      "framework": "react",
+      "modules": "systemjs",
+      "js": "js",
+      "ci": "jenkins",
+      "css": "css",
+      "resolved": "C:\\Users\\edwin perez\\AppData\\Roaming\\npm\\node_modules\\generator-fountain-webapp\\node_modules\\generator-fountain-react\\generators\\app\\index.js",
+      "namespace": "fountain-react:app",
+      "_": [],
+      "sample": "hello",
+      "router": "none"
+    }
+  },
+  "generator-mocha": {
+    "ui": "bdd",
+    "rjs": false
+  },
+  "generator-code": {
+    "promptValues": {
+      "publisher": "y"
+    }
+  },
+  "generator-fountain-vue": {
+    "version": "1.0.0",
+    "props": {
+      "framework": "vue",
+      "modules": "webpack",
+      "js": "babel",
+      "ci": "jenkins",
+      "css": "scss",
+      "resolved": "C:\\Users\\edwin perez\\AppData\\Roaming\\npm\\node_modules\\generator-fountain-webapp\\node_modules\\generator-fountain-vue\\generators\\app\\index.js",
+      "namespace": "fountain-vue:app",
+      "_": [],
+      "sample": "hello",
+      "router": "none"
+    }
+  }
+}
