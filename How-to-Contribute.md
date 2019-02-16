@@ -16,7 +16,7 @@ git clone https://github.com/Microsoft/vscode.git
 ### Prerequisites
 
 - [Git](https://git-scm.com)
-- [Node.JS](https://nodejs.org/en/), **64-bit**, `>= 8.12.0, < 9.0.0`
+- [Node.JS](https://nodejs.org/en/), **64-bit**, `>= 10.0.0, < 11.0.0`
 - [Yarn](https://yarnpkg.com/en/), follow the [installation guide](https://yarnpkg.com/en/docs/install)
 - [Python](https://www.python.org/downloads/release/python-2715/), at least version 2.7 (version 3 is __*not*__ supported)
 - C/C++ compiler tool chain
