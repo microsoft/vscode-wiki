@@ -96,7 +96,7 @@ We will continue to collaborate deeply with the TypeScript team to deliver the r
 
 ### Extensions Users
 
-* Support installing an extension without having to reload the workbench. This is our 3rd most upvoted [feature request](https://github.com/Microsoft/vscode/issues/14444).
+* :runner: Support installing an extension without having to reload the workbench. This is our 3rd most upvoted [feature request](https://github.com/Microsoft/vscode/issues/14444).
 * Integrate the runtime information shown by `Developer: Show Running Extensions` into the existing extension UI such as Extension viewlet and Extension editor.
 * Improve the extension recommendation system.
 * Make the consumption of extensions more secure and improve the process for how we handle malicious extensions.
