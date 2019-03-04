@@ -117,6 +117,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] vscode-github-issues-prs **@chrmarti**
   - [ ] inno-updater **@joaomoreno**
 - [ ] Review pull requests acknowledgements with `NOT MERGED - PLS REVIEW`. **endgame master**
+- [ ] Acknowledge issue trackers from the community **@chrmarti**
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Trigger new insider build and publish it manually **endgame master**
