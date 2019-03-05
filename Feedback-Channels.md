@@ -16,7 +16,7 @@ The [Gitter Channel](https://gitter.im/Microsoft/vscode) provides a place where 
 The VS Code team's presence in the room will be optional, at least for the foreseeable future. We hope the Community will use the room and have discussions.
 
 ## Slack
-The [Visual Studio Code Development Community](https://join.slack.com/t/vscode-dev-community/shared_invite/enQtMjIxOTgxNDE3NzM0LWU5M2ZiZDU1YjBlMzdlZjA2YjBjYzRhYTM5NTgzMTAxMjdiNWU0ZmQzYWI3MWU5N2Q1YjBiYmQ4MzY0NDE1MzY) slack workspace is a community maintained place for VS Code contributors, extension developers, theme authors, etc to help one another and collaborate. This slack workspace contains many discussion channels including many for specific extensions.
+The [Visual Studio Code Development Community](https://aka.ms/vscode-dev-community) slack workspace is a community maintained place for VS Code contributors, extension developers, theme authors, etc to help one another and collaborate. This slack workspace contains many discussion channels including many for specific extensions.
 
 Here are a few of the main channels:
 - [vscode-dev](https://vscode-dev-community.slack.com/messages/C74E1CNGL) for general VS Code discussions.
