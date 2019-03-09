@@ -1,5 +1,3 @@
-#70102
-
 ### March 2019
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/70102)
 * Endgame: **TBD**
