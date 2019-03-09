@@ -45,6 +45,7 @@ git clone https://github.com/Microsoft/vscode.git
       - Run `xcode-select --install` to install the Command Line Tools
   - **Linux**
     * `make`
+    * [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/)
     * [GCC](https://gcc.gnu.org) or another compile toolchain
     * [native-keymap](https://www.npmjs.com/package/native-keymap) needs `libx11-dev` and `libxkbfile-dev`.
       * On Debian-based Linux: `sudo apt-get install libx11-dev libxkbfile-dev`
