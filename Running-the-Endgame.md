@@ -180,6 +180,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Publish Localization language pack **@shawndon**
 - [ ] Publish to stable **endgame master**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **endgame master**
+- [ ] [Send PR](https://github.com/Microsoft/vscode/wiki/Update-vscode.d.ts-on-DefinitelyTyped) to update vscode.d.ts on DefinitelyTyped **endgame master**
 - [ ] Publish rpm to repository manually **@Tyriar**
 - [ ] Enable scheduled `insider` builds **endgame master**
 - [ ] Twitter announcement **@auchenberg**
