@@ -7,3 +7,4 @@ For each release, we will need to publish a new version to DefinitelyTyped. Here
     - Replace the whole `declare module vscode` block with content from `vscode.d.ts`
     - Update the first line's version number `// Type definitions for Visual Studio Code <VERSION>`
     - Update the description's version number `Type Definition for Visual Studio Code <VERSION> Extension API`
+3. When the PR is approved and merged, `@types/vscode` will be automatically published in < 1 hour to NPM.
