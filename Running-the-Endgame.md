@@ -160,7 +160,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ##### Wednesday/Thursday
 - [ ] Build stable for all platforms **endgame master**
-- [ ] Make [rpm signing request](https://github.com/Microsoft/vscode-distro/blob/master/linux-repo/README.md) **@Tyriar**
+- [ ] Make [rpm signing request](https://github.com/Microsoft/vscode-build-tools/tree/master/linux-repo) **@Tyriar**
 - [ ] Sanity check of installable bits
   - [ ] Windows
     - [ ] signed installer 32-bit **owner**
