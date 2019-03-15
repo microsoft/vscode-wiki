@@ -66,7 +66,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] node debugadapter node **@weinand**
 - [ ] All issues [verified](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Abug+-label%3Averified+-label%3Aon-testplan+is%3Aclosed+-label%3Aerror-telemetry+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+milestone%3A%22August+2018%22+)
 - [ ] Fixing (only critical bugs - no string changes)
-- [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) (⚠️ MUST run with --stable-build argument ⚠️ )
+- [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) (⚠️ MUST run with `--stable-build` argument ⚠️ )
   - [ ] Windows - **owner**
   - [ ] OS X - **owner**
   - [ ] Linux - **owner**
@@ -210,7 +210,7 @@ We release a recovery build with a handful of critical fixes and translation upd
 - [ ] Issues are verified on `stable` build and the `verified` label is added **owner**
 - [ ] Check `https://github.com/Microsoft/vscode/compare/release/<x.y>` to ensure no other commits have been made in the release branch **owner**
 - [ ] Update the release notes and include a link to a query for the fixed issues **@gregvanl**
-- [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) stable bits  (⚠️ MUST run with --stable-build argument ⚠️ )
+- [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) stable bits  (⚠️ MUST run with `--stable-build` argument ⚠️ )
   - [ ] Windows - **owner**
   - [ ] OS X - **owner**
   - [ ] Linux - **owner**
