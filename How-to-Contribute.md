@@ -9,17 +9,31 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 ### Getting the sources
 
+First, fork the VS Code repository so that you can make a pull request. Then, clone your fork locally:
+
 ```
-git clone https://github.com/Microsoft/vscode.git
+git clone https://github.com/<<<your-github-account>>>/vscode.git
 ```
 
-### Prerequisites
+Occassionally you will want to merge changes in the upstream repository (the official code repo) with your fork.
+
+```
+cd vscode
+git checkout master
+git pull https://github.com/microsoft/vscode.git master
+```
+
+Manage any merge conflicts, commit them, and then commit them to your fork.
+
+### Build Prerequisites
+
+You'll need the following tools to build Code locally:
 
 - [Git](https://git-scm.com)
 - [Node.JS](https://nodejs.org/en/), **64-bit**, recommended `>=10.15.1, < 11.0.0`
 - [Yarn](https://yarnpkg.com/en/), follow the [installation guide](https://yarnpkg.com/en/docs/install)
 - [Python](https://www.python.org/downloads/release/python-2715/), at least version 2.7 (version 3 is __*not*__ supported)
-- C/C++ compiler tool chain
+- A C/C++ compiler tool chain for your platform:
   - **Windows**
     - Set a `PYTHON` environment variable pointing to your `python.exe`. E.g.: `C:\Python27\python.exe`
 	- Install a compiler for the native modules VSCode is depending on
@@ -40,6 +54,7 @@ git clone https://github.com/Microsoft/vscode.git
 	- **Restart** your computer
     - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
+
   - **macOS**
     - [Xcode](https://developer.apple.com/xcode/downloads/) and the Command Line Tools, which will install `gcc` and the related toolchain containing `make`
       - Run `xcode-select --install` to install the Command Line Tools
@@ -55,22 +70,23 @@ git clone https://github.com/Microsoft/vscode.git
       * On Red Hat-based Linux: `sudo yum install libsecret-devel`.
     * Building deb and rpm packages requires `fakeroot` and `rpm`, run: `sudo apt-get install fakeroot rpm`
 
-Finally, install all dependencies using `Yarn`:
+Install and build all of the dependencies using `Yarn`:
 
 ```
 cd vscode
 yarn
 ```
 
-If you are on Windows or Linux 64 bit systems and would like to compile to 32 bits, you'll need to set the `npm_config_arch` environment variable to `ia32` before running `yarn`. This will compile all native node modules for a 32 bit architecture. Similarly, when cross-compiling for ARM, set `npm_config_arch` to `arm`.
+> If you are on Windows or Linux 64 bit systems and would like to compile to 32 bit, you'll need to set the `npm_config_arch` environment variable to `ia32` before running `yarn`. This will compile all native node modules for a 32 bit architecture. Similarly, when cross-compiling for ARM, set `npm_config_arch` to `arm`.
 
-**Note:** For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
+> **Note:** For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
 
 ### Build
 
 From a terminal, where you have cloned the `vscode` repository, execute the following command to run the TypeScript incremental builder:
 
 ```bash
+cd vscode
 yarn watch
 ```
 
@@ -105,7 +121,7 @@ You can identify the development version of Code ("Code - OSS") by the following
 
 [![VS Code default icon](https://i.imgur.com/D2CeX0y.png)](https://i.imgur.com/D2CeX0y.png)
 
-👉 **Tip!** If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `yarn run watch` first.
+👉 **Tip!** If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `yarn watch` first.
 
 ### Debugging
 Code has a multi-process architecture and your code is executed in different processes.
