@@ -62,7 +62,7 @@ If you can reproduce the problem with extensions disabled, then use `code --stat
 
 This command collects status about your running VS Code and the workspace you have opened. You can attach this information when reporting a performance issue.
 
-![image](https://raw.githubusercontent.com/Microsoft/vscode-docs/vnext/release-notes/images/1_19/status.png).
+![image](https://github.com/Microsoft/vscode-docs/blob/master/release-notes/images/1_19/status.png)
 
 The output includes information about the environment, all running VS Code processes, and the counts of some typical files in the workspace.
 
