@@ -3,31 +3,9 @@ There are many ways to contribute to the Code project: logging bugs, submitting 
 
 After cloning and building the repo, check out the [issues list](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue). Issues labeled [`help wanted`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) are good issues to submit a PR for. Issues labeled [`good first issue`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) are great candidates to pick up if you are in the code for the first time. If you are contributing significant changes, please discuss with the assignee of the issue first before starting to work on the issue.
 
-## Build and Run
+## Prerequisites
 
-If you want to understand how Code works or want to debug an issue, you'll want to get the source, build it, and run the tool locally.
-
-### Getting the sources
-
-First, fork the VS Code repository so that you can make a pull request. Then, clone your fork locally:
-
-```
-git clone https://github.com/<<<your-github-account>>>/vscode.git
-```
-
-Occassionally you will want to merge changes in the upstream repository (the official code repo) with your fork.
-
-```
-cd vscode
-git checkout master
-git pull https://github.com/microsoft/vscode.git master
-```
-
-Manage any merge conflicts, commit them, and then commit them to your fork.
-
-### Build Prerequisites
-
-You'll need the following tools to build Code locally:
+You'll need the following tools to download and build Code locally:
 
 - [Git](https://git-scm.com)
 - [Node.JS](https://nodejs.org/en/), **64-bit**, recommended `>=10.15.1, < 11.0.0`
@@ -81,11 +59,35 @@ yarn
 
 > **Note:** For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
 
+## Build and Run
+
+If you want to understand how Code works or want to debug an issue, you'll want to get the source, build it, and run the tool locally.
+
+### Getting the sources
+
+First, fork the VS Code repository so that you can make a pull request. Then, clone your fork locally:
+
+```
+git clone https://github.com/<<<your-github-account>>>/vscode.git
+```
+
+Occassionally you will want to merge changes in the upstream repository (the official code repo) with your fork.
+
+```
+cd vscode
+git checkout master
+git pull https://github.com/microsoft/vscode.git master
+```
+
+Manage any merge conflicts, commit them, and then commit them to your fork.
+
 ### Build
 
-From a terminal, where you have cloned the `vscode` repository, execute the following command to run the TypeScript incremental builder:
+First, you need to run your command-line interpretter. If you are running Windows and have installed Visual Studio 2017 as your build tool, you need to open **x64 Native Tools Command Prompt for VS 2017**. Do not confuse it with *VS2015 x64 Native Tools Command Prompt* if installed.
 
-```bash
+Next, execute the following command to run the TypeScript incremental builder:
+
+``` powershell
 cd vscode
 yarn watch
 ```
