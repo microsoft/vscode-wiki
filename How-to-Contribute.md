@@ -67,13 +67,13 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 First, fork the VS Code repository so that you can make a pull request. Then, clone your fork locally:
 
-```sh
+```
 git clone https://github.com/<<<your-github-account>>>/vscode.git
 ```
 
 Occassionally you will want to merge changes in the upstream repository (the official code repo) with your fork.
 
-```sh
+```
 cd vscode
 git checkout master
 git pull https://github.com/microsoft/vscode.git master
@@ -83,16 +83,14 @@ Manage any merge conflicts, commit them, and then commit them to your fork.
 
 ### Build
 
-First, open a shell.
+Go into `vscode` and start the TypeScript incremental builder:
 
-👉 **Note:** If you are running Windows and have installed Visual Studio 2017 as your build tool, you need to open **x64 Native Tools Command Prompt for VS 2017**. Do not confuse it with *VS2015 x64 Native Tools Command Prompt*, if installed.
-
-Next, execute the following command to run the TypeScript incremental builder:
-
-```sh
+```
 cd vscode
 yarn watch
 ```
+
+👉 **Note:** If you are running Windows and have installed Visual Studio 2017 as your build tool, you need to open **x64 Native Tools Command Prompt for VS 2017**. Do not confuse it with *VS2015 x64 Native Tools Command Prompt*, if installed.
 
 The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will then continue to run in the terminal. It will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience.
 
