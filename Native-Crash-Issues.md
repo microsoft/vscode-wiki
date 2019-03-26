@@ -61,7 +61,7 @@ Let us consider a stack like this one:
 4   libnode.dylib                 	0x000000010d1ed76b 0x10cef5000 + 3114859
 ```
 
-We can use [electron-atos](https://github.com/kevinsawicki/electron-atos) to print the actual stack trace:
+On *macOS* we can use [electron-atos](https://github.com/kevinsawicki/electron-atos) to print the actual stack trace:
 * `npm install -g electron-atos`
 * save the stack to a file e.g. `crash.txt`
 * run `electron-atos --file /path/to/crash.txt --version 1.7.9`
