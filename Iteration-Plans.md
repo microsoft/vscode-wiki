@@ -1,103 +1,88 @@
+### April 2019
+* [Iteration Plan](https://github.com/Microsoft/vscode/issues/71830)
+* Endgame: **TBD**
+
 ### March 2019
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/70102)
-* Endgame: **TBD**
+* [Endgame](https://github.com/Microsoft/vscode/issues/71059)
 
 ### February 2019
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/68293)
 * [Endgame](https://github.com/Microsoft/vscode/issues/69177)
-
 
 ### December 2018 / January 2019
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/65570)
 * [Endgame](https://github.com/Microsoft/vscode/issues/67225)
 
 ### November 2018
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/62876)
 * [Endgame](https://github.com/Microsoft/vscode/issues/64182)
 
 ### October 2018
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/60106)
 * [Endgame](https://github.com/Microsoft/vscode/issues/62045)
 
 ### September 2018
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/58224)
 * [Endgame](https://github.com/Microsoft/vscode/issues/59271)
 
 ### August 2018
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/55927)
 * [Endgame](https://github.com/Microsoft/vscode/issues/57245)
 
 ### July 2018
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/53850)
 * [Endgame](https://github.com/Microsoft/vscode/issues/55349)
 
 ### June 2018
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/51483)
 * [Endgame](https://github.com/Microsoft/vscode/issues/52781)
 
 ### May 2018
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/49327)
 * [Endgame](https://github.com/Microsoft/vscode/issues/50477)
 
 ### April 2018
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/47369)
 * [Endgame](https://github.com/Microsoft/vscode/issues/48372)
 
 ### March 2018
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/45632)
 * [Endgame](https://github.com/Microsoft/vscode/issues/46620)
 
 ### February 2018
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/43361)
 * [Endgame](https://github.com/Microsoft/vscode/issues/44419)
 
 ### January 2018
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/41061)
 * [Endgame](https://github.com/Microsoft/vscode/issues/42374)
 
 ### November/December 2017
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/38268)
 * [Endgame](https://github.com/Microsoft/vscode/issues/39540)
 
 ### October 2017
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/35875)
 * [Endgame](https://github.com/Microsoft/vscode/issues/37117)
 
 ### September 2017
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/34160)
 * [Endgame](https://github.com/Microsoft/vscode/issues/34939)
 
 ### August 2017
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/32043)
 * [Endgame](https://github.com/Microsoft/vscode/issues/33215)
 
 ### July 2017
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/30209)
 * [Endgame](https://github.com/Microsoft/vscode/issues/31333)
 
 ### June 2017
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/28387)
 * [Endgame](https://github.com/Microsoft/vscode/issues/29518)
 
 ### May 2017
-
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/26068)
 * [Endgame](https://github.com/Microsoft/vscode/issues/27415)
 
