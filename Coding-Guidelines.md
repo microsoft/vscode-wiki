@@ -3,7 +3,7 @@
 We prefer a **rebase workflow** and occasional **feature branches**. Most work happens directly on the `master` branch. For that reason, we recommend setting the `pull.rebase` setting to true.
 
 ```bash
-git config --global pull.rebase true
+git config pull.rebase true
 ```
 
 ## Indentation
