@@ -18,7 +18,7 @@ It should look something like this:
 
 ## Windows
 On Windows, you will need to install a program in order to collect more information when a crash occurs.
-* download & install [Debug Diagnostic Tools for Windows](https://www.microsoft.com/en-us/download/details.aspx?id=49924) (pick the `DebugDiagx64.msi` option)
+* download & install [Debug Diagnostic Tools for Windows](https://www.microsoft.com/en-us/download/details.aspx?id=58210) (pick the `DebugDiagx64.msi` option)
 * run `DebugDiag 2 Collection`
 * select to capture crash dumps:
 
