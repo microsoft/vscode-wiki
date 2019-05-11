@@ -71,7 +71,7 @@ First, fork the VS Code repository so that you can make a pull request. Then, cl
 git clone https://github.com/<<<your-github-account>>>/vscode.git
 ```
 
-Occassionally you will want to merge changes in the upstream repository (the official code repo) with your fork.
+Occasionally you will want to merge changes in the upstream repository (the official code repo) with your fork.
 
 ```
 cd vscode
