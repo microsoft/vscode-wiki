@@ -2,9 +2,7 @@ We are using `@types/vscode` for publishing `vscode.d.ts`. See https://github.co
 
 For each release, we will need to publish a new version to DefinitelyTyped. Here are the steps:
 
-1. Copy `src/vs/vscode.d.ts` from `release/<VERSION>` branch.
-2. Prepare a PR for DefinitelyTyped. You only need to modify this [file](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/vscode/index.d.ts):
-    - Replace the whole `declare module vscode` block with content from `vscode.d.ts`
-    - Update the first line's version number `// Type definitions for Visual Studio Code <VERSION>`
-    - Update the description's version number `Type Definition for Visual Studio Code <VERSION> Extension API`
-3. When the PR is approved and merged, `@types/vscode` will be automatically published in < 1 hour to NPM.
+1. When you publish a tag such as `1.34.0`, a new commit will be created at https://github.com/microsoft/vscode-DefinitelyTyped with commit message `VS Code 1.34.0 Extension API`.
+2. Use [this link](https://github.com/DefinitelyTyped/DefinitelyTyped/compare/master...octref:master?quick_pull=1&body=Updating%20VS%20Code%20Extension%20API.%20See%20https%3A%2F%2Fgithub.com%2Fmicrosoft%2Fvscode%2Fissues%2F70175%20for%20details.) to send a PR to DefinitelyTyped.
+3. Ask either @octref, @jrieken, @kieferrm or @egamma to merge the PR.
+4. `@types/vscode` will be published in ~10 minutes.
