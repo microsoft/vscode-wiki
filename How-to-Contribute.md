@@ -96,6 +96,8 @@ The incremental builder will do an initial full build and will display a message
 
 👉 **Tip!** Linux users may hit a ENOSPC error when running `yarn run watch`, to get around this follow instructions in the [Common Questions](https://code.visualstudio.com/docs/setup/linux#_common-questions).
 
+👉 **Tip!** For users unfamiliar with yarn refer to [Yarn installation guide](https://yarnpkg.com/en/docs/getting-started)
+
 👉 **Tip!** Open VS Code on the folder where you have cloned the `vscode` repository and press <kbd>CMD+SHIFT+B</kbd> (<kbd>CTRL+SHIFT+B</kbd> on Windows, Linux) to start the builder. To view the build output open the Output stream by pressing <kbd>CMD+SHIFT+U</kbd>.
 
 #### Errors and Warnings
