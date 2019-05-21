@@ -1,16 +1,14 @@
 # Contributing to Code
 
-## Start Here
-
-If this is your first time contributing to the Code project or to Open Source Software, welcome!
+If this is your first time contributing to the Code project, welcome!
 
 There are many ways to contribute to the Code project: logging bugs, submitting pull requests, reporting issues, and creating suggestions.
 
 It is recommended you start by cloning and building the repository. Check out the [Prerequisites](#prerequisites) section below to set up your local environment first.  Then, follow the steps in the [Build and Run](#build-and-run) section to get the source code downloaded and running on your machine.
 
-After cloning and building the repo, check out the [issues list](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue).  If you are contributing to Code for the first time, issues labeled [`good first issue`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) are good candidates. Issues labeled [`help wanted`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) are good issues to submit a PR for.  If you are contributing significant changes, please discuss with the assignee of the issue first before starting to work on the issue.
+After cloning and building the repo, check out the [issues list](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue).  If you are contributing to Code for the first time, issues labeled [`good first issue`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) are good candidates. Issues labeled [`help wanted`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) are good issues to submit a PR (Pull Request) for.  If you are contributing significant changes, please discuss with the assignee of the issue first before starting to work on the issue.
 
-If you haven't already, make sure to read our [CONTRIBUTING.md](https://github.com/microsoft/vscode/blob/master/CONTRIBUTING.md) for more information on contributing and where to go for help.
+If you haven't already, make sure to read [CONTRIBUTING.md](https://github.com/microsoft/vscode/blob/master/CONTRIBUTING.md) for more information on ways to contribute and where to go for help.
 
 ## Prerequisites
 
