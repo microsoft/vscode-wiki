@@ -1,11 +1,7 @@
 # Contributing to Code
 
-There are many ways to contribute to the Code project: logging bugs, submitting pull requests, reporting issues, and creating suggestions.
-
-After cloning and building the repo, check out the [issues list](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue). Issues labeled [`help wanted`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) are good issues to submit a PR for. Issues labeled [`good first issue`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) are great candidates to pick up if you are in the code for the first time. If you are contributing significant changes, please discuss with the assignee of the issue first before starting to work on the issue.
-
 ## Table of Contents
-- [First Time Contributors](#first-time-contributors)
+- [Start Here](#start-here)
 - [Prerequisites](#prerequisites)
 - [Build And Run](#build-and-run)
 - [Work Branches](#work-branches)
@@ -15,11 +11,17 @@ After cloning and building the repo, check out the [issues list](https://github.
 - [Translations](#translations)
 - [Discussion Etiquette](#discussion-etiquette)
 
-## First Time Contributors
+## Start Here
 
-If this is your first time contributing to the Code project or to Open Source, welcome!
+If this is your first time contributing to the Code project or to Open Source Software, welcome!
 
-For contributing to Code for the first time, look for issues labeled [`good first issue`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) on our [issues tracker](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue).
+There are many ways to contribute to the Code project: logging bugs, submitting pull requests, reporting issues, and creating suggestions.
+
+It is recommended you start by cloning and building the repository. Check out the [Prerequisites](#prerequisites) section below to set up your local environment first.  Then, follow the steps in the [Build and Run](#build-and-run) section to get the source code downloaded and running on your machine.
+
+After cloning and building the repo, check out the [issues list](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue).  If you are contributing to Code for the first time, issues labeled [`good first issue`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) are good candidates. Issues labeled [`help wanted`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) are good issues to submit a PR for.  If you are contributing significant changes, please discuss with the assignee of the issue first before starting to work on the issue.
+
+If you haven't already, make sure to read our [CONTRIBUTING.md](https://github.com/microsoft/vscode/blob/master/CONTRIBUTING.md) for more information on contributing and where to go for help.
 
 ## Prerequisites
 
