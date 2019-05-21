@@ -1,6 +1,6 @@
 # Contributing to Code
 
-If this is your first time contributing to the Code project, welcome!
+If this is your first time contributing to Code, welcome!
 
 There are many ways to contribute to the Code project: logging bugs, submitting pull requests, reporting issues, and creating suggestions.
 
