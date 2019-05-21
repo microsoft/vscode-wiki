@@ -1,16 +1,5 @@
 # Contributing to Code
 
-## Table of Contents
-- [Start Here](#start-here)
-- [Prerequisites](#prerequisites)
-- [Build And Run](#build-and-run)
-- [Work Branches](#work-branches)
-- [Pull Requests](#pull-requests)
-- [Packaging](#packaging)
-- [Suggestions](#suggestions)
-- [Translations](#translations)
-- [Discussion Etiquette](#discussion-etiquette)
-
 ## Start Here
 
 If this is your first time contributing to the Code project or to Open Source Software, welcome!
