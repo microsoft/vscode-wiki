@@ -1,3 +1,7 @@
+### May 2019
+* [Iteration Plan](https://github.com/Microsoft/vscode/issues/74143)
+* **Endgame TBD**
+
 ### April 2019
 * [Iteration Plan](https://github.com/Microsoft/vscode/issues/71830)
 * [Endgame](https://github.com/microsoft/vscode/issues/73175)
