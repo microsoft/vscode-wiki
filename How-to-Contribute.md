@@ -65,7 +65,7 @@ If you want to understand how Code works or want to debug an issue, you'll want 
 
 ### Getting the sources
 
-First, fork the VS Code repository so that you can make a pull request. Then, clone your fork locally:
+First, fork the VS Code repository so that you can make a pull request. Then, clone your fork locally by running the following command in your terminal:
 
 ```
 git clone https://github.com/<<<your-github-account>>>/vscode.git
