@@ -1,5 +1,5 @@
 
-This article outlines the differences between this project at [`github.com/microsoft/vscode`](https://github.com/microsoft/vscode), which we refer to as `Code - OSS`, and Microsoft's Visual Studio Code distribution. 
+This article outlines the differences between this project at [`github.com/microsoft/vscode`](https://github.com/microsoft/vscode), which we refer to as `Code - OSS`, and Microsoft's [Visual Studio Code](https://code.visualstudio.com) distribution. 
 
 ## The "Code - OSS" Repository
 
