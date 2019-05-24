@@ -1,9 +1,9 @@
 
-This article outlines the differences between the project at `github.com/microsoft/vscode`, which we will refer to as "Code - OSS", and Microsoft's Visual Studio Code distribution (which is often referred to as "`VS Code`"...we know it is confusing, sorry). 
+This article outlines the differences between the project at `github.com/microsoft/vscode`, which we will refer to as `Code - OSS`, and Microsoft's Visual Studio Code distribution (which is often referred to as "`VS Code`"...we know it is confusing, sorry). 
 
 ## The "Code - OSS" Repository
 
-The ["Code - OSS"](https://github.com/Microsoft/vscode) repository is where we (Microsoft) develop the [Visual Studio Code](https://code.visualstudio.com) product. Not only do we work on code and issues here, we also publish our roadmap, monthly iteration plans, and our endgame plans. The source code is available to everyone under a standard [MIT license](https://github.com/microsoft/vscode/blob/master/LICENSE.txt). 
+The [`Code - OSS`](https://github.com/Microsoft/vscode) repository is where we (Microsoft) develop the [Visual Studio Code](https://code.visualstudio.com) product. Not only do we work on code and issues here, we also publish our roadmap, monthly iteration plans, and our endgame plans. The source code is available to everyone under a standard [MIT license](https://github.com/microsoft/vscode/blob/master/LICENSE.txt). 
  
 ## The Visual Studio Code Distribution
 
