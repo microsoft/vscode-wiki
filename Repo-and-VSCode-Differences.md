@@ -1,6 +1,5 @@
-# Visual Studio Code and "Code - OSS" Differences
 
-This article outlines the differences between the open source project `github.com/microsoft/vscode`, which we will refer to as "Code - OSS", and Microsoft's Visual Studio Code distribution (which is often referred to as "`VS Code`". We know, its confusing, sorry). 
+This article outlines the differences between the project at `github.com/microsoft/vscode`, which we will refer to as "Code - OSS", and Microsoft's Visual Studio Code distribution (which is often referred to as "`VS Code`"...we know it is confusing, sorry). 
 
 ## The "Code - OSS" Repository
 
