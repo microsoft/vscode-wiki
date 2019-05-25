@@ -79,7 +79,7 @@ git checkout master
 git pull https://github.com/microsoft/vscode.git master
 ```
 
-Manage any merge conflicts, commit them, and then commit them to your fork.
+Manage any merge conflicts, commit them, and then push them to your fork.
 
 ### Build
 
