@@ -7,7 +7,6 @@ This is a list of community requested extensions collected from a variety of sou
 For discussions on specific extensions and to add more information, link a newly created issue to one of the extensions names below. 
 
 - [ ] [GCC linting](https://atom.io/packages/linter-gcc)
-- [ ] [atom-alignment](https://atom.io/packages/atom-alignment). Aligning multi-line, multi-cursor and multiple selections.
 - [ ] [Sublime-Style-Column-Selection](https://atom.io/packages/Sublime-Style-Column-Selection)
 - [ ] [atom-beautify](https://atom.io/packages/atom-beautify). Lots of language support for code formatting. 
 - [ ] [atom-typescript](https://atom.io/packages/atom-typescript). Feature that is missing is compile on save with no task runner configuration. Good task candidate. 
@@ -17,7 +16,7 @@ For discussions on specific extensions and to add more information, link a newly
 - [X] [hex dump](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-hexdump)
 - [x] Auto complete relative paths in Javascript files. See [SO question](https://stackoverflow.com/questions/35415444/is-it-possible-to-auto-complete-relative-paths-in-vscode) for details. Covered by the [Path Intellisense Extension](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 - [x] docblockr, doxy-commenting -> VS Code [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis) extension
-- [x] atom alignment -> VS Code [Align](https://marketplace.visualstudio.com/items?itemName=steve8708.Align)
+- [x] [atom-alignment](https://atom.io/packages/atom-alignment) -> VS Code [Align](https://marketplace.visualstudio.com/items?itemName=steve8708.Align)
 - [x] [escape-utils](https://atom.io/packages/escape-utils) => VS Code [Encode Decode](https://marketplace.visualstudio.com/items?itemName=mitchdenny.ecdc)
 - [x] [html2jade-plus](https://atom.io/packages/html2jade-plus) => VS Code [html2jade](https://marketplace.visualstudio.com/items?itemName=wmaurer.html2jade)
 - [x] [jsfmt](https://atom.io/packages/atom-jsfmt) => VS Code [Javascript Standard Format](https://marketplace.visualstudio.com/items?itemName=chenxsan.vscode-standard-format)
