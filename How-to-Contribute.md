@@ -5,7 +5,9 @@ After cloning and building the repo, check out the [issues list](https://github.
 
 ## Prerequisites
 
-You'll need the following tools to download and build Code locally:
+In order to download necessary tools, clone the repository, and install dependencies via `yarn` you need network access. 
+
+You'll need the following tools:
 
 - [Git](https://git-scm.com)
 - [Node.JS](https://nodejs.org/en/), **x64**, version `>= 10.15.1`, `< 11.0.0`
