@@ -35,6 +35,8 @@ On Windows, you will need to install a program in order to collect more informat
 * if the crash was recorded you should see a very large file (`*.dmp`) and a `*_log.txt` file with the same process ID
 * attach the smaller `*_log.txt` file
 
+**Tip:** See https://felixrieseberg.com/debugging-electron-apps-on-windows/ for a good explanation for how to debug the produced `*.dmp` using Visual Studio
+
 ## Linux
 On Linux we need to temporarily increase the limit for crash dumps. From a terminal:
 * run `ulimit -c unlimited`
