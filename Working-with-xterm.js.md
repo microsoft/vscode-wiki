@@ -1,94 +1,25 @@
 ### Development
 
-Check out the [xterm.js contribution documentation](https://github.com/xtermjs/xterm.js#development-and-contribution) for how to work on the project.
+Check out the [xterm.js contribution documentation](https://github.com/xtermjs/xterm.js/wiki/Contributing) for how to work on the project.
 
 ### Managing issues
 
-Since bugs and/or features manifest themselves in both VS Code and xterm.js, it's a little unclear initially where the issue(s) should be created. After some experimentation I landed on the best way to deal with this is to create the an issue in both the Microsoft/vscode and xtermjs/xterm.js repositories. The reason this is the best workflow is because the changes will then be verified during endgame and it's much easier to compose release notes for the terminal changes.
+Since bugs and/or features manifest themselves in both VS Code and xterm.js, it's a little unclear initially where the issue(s) should be created. After some experimentation I landed on the best way to deal with this is to create the an issue in both the Microsoft/vscode and xtermjs/xterm.js repositories. The reason this is the best workflow is because the changes will then be verified during endgame and it's much easier to compose release notes for the terminal changes. This guideline is less important for more obscure terminal issues where it's typically easier to keep a single source of truth in the xterm.js repo.
 
-### Syncing with upstream
+### Updating `xterm`
 
-To sync with upstream run the following:
+Since June 2019 we use the official `xterm` module provided by the upstream project instead of the [`vscode-xterm`](https://github.com/microsoft/xterm.js) fork in order to save time it takes to update the module. Every commit that goes into the master branch of [xterm.js](https://github.com/xtermjs/xterm.js) is automatically released under the beta tag using Azure Pipelines. To update, follow these steps:
 
-```bash
-git clone https://github.com/Microsoft/xterm.js
-cd xterm.js
-git checkout vscode-release/1.14 # whatever version
-git remote add upstream https://github.com/xtermjs/xterm.js
-git fetch upstream
-git merge upstream/master
-git push
-```
+1. Identify the release to be used and install it. If you want the latest beta based on master you can run `yarn add xterm@beta`. If you want an older commit the easiest way to do this right now is to [identify the commit]() and then find the "Merge pull request" build on this [pipeline](https://dev.azure.com/xtermjs/xterm.js/_build?definitionId=3), click into the "Release" job and view the output of the "Publish to npm" step to find the version number then install it with `yarn add xterm@x.y.z-betaX`
+2. Update the typings in `./src/typings/xterm.d.ts` by copying over the content and replacing the top portion with `./node_modules/xterm/typings/xterm.d.ts`. Note that at the very bottom of `./src/typings/xterm.d.ts` are our modifications to the xterm typings which expose some private API, this must remain.
+3. Build/test locally to make sure it works or push a branch and do a PR so that tests are run automatically. If the version change is significant it's a good idea to do a product build and verify it passes fully.
 
-### Pulling changes into VS Code
+### Updating `xterm-addon-*`
 
-Since xterm.js is on a [month release cycle](https://github.com/xtermjs/xterm.js#releases) we need to do a little extra work to pull our changes into VS Code quickly in order to get better test coverage from Insiders. Since we're working with git, it's pretty easy to pull in changes that are blocked on PR.
+Similar to `xterm`, identify the release, pull it in and then update the typings. There are some typings hacks at the top due to issues with `gulp-tsb`.
 
-Here's what you need to do to pull your changes that are currently in review into VS Code:
+Once https://github.com/xtermjs/xterm.js/issues/2165 is done we can refine this process more.
 
-1. Checkout the release branch in the Microsoft fork of xterm.js and merge your change:
+### Building one off builds of xterm and addons
 
-```bash
-git clone https://github.com/Microsoft/xterm.js
-cd xterm.js
-git checkout vscode-release/1.14 # whatever version
-git remote add branch_source https://github.com/<yourname>/xterm.js
-git fetch branch_source
-git merge branch_source/<pr_branch>
-```
-
-You can also use `git cherry-pick` if that's easier or if the PR's base branch differs with `vscode-release/<...>`.
-
-Note that there is an individual release branch for each version unlike many other modules we use. This is the case so that there can be a "clean slate" on the following version based off master.
-
-
-### Publishing
-
-1. Build the library and make sure tests pass:
-
-   ```bash
-   yarn
-   yarn test
-   ```
-
-   If needed also run `yarn start` and verify the incoming changes.
-
-2. Update `package.json`, the name should be `vscode-xterm` and the version should be `<x>.<y>.0-beta<n>`
-
-   ```bash
-   "name": "vscode-xterm",
-   "version": "3.0.0-beta1",
-   ```
-
-   Update the version numbers under the following circumstances:
-
-   - `x` and `y`: When updating `vscode-xterm` for a new version of vscode, this should match the upcoming, not yet released, version of xterm.js
-   - `n`: Increment this when `x` and `y` don't change.
-
-3. Commit and push
-
-   ```bash
-   git add package.json
-   git commit -m "v3.0.0-beta1"
-   git push
-   ```
-
-4. Publish `vscode-xterm` to npm:
-
-   ```
-   npm publish
-   ```
-
-   If you don't have permissions, ask someone who has published before to add you.
-
-5. Go to the vscode repo and add the new version:
-
-   ```bash
-   rm -rf node_modules/vscode-xterm
-   # Windows: rmdir /S node_modules\vscode-xterm 
-   yarn add vscode-xterm@3.0.0-beta1
-   ```
-
-6. Update `vscode-xterm.d.ts` if needed by manually copying over from `./typings/xterm.d.ts` in the `vscode-release/...` branch. Note that the bottom of `vscode-xterm.d.ts` is VS Code customizations that should remain in place.
-
-7. Build VS Code and verify the changes.
+Right now one off builds are manual. https://github.com/xtermjs/xterm.js/issues/2154 will improve this.
