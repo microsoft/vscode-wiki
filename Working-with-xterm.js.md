@@ -18,8 +18,8 @@ Since June 2019 we use the official `xterm` module provided by the upstream proj
 
 Similar to `xterm`, identify the release, pull it in and then update the typings. There are some typings hacks at the top due to issues with `gulp-tsb`.
 
-Once https://github.com/xtermjs/xterm.js/issues/2165 is done we can refine this process more.
+Once [xtermjs/xterm.js#2165](https://github.com/xtermjs/xterm.js/issues/2165) is done we can refine this process more.
 
 ### Building one off builds of xterm and addons
 
-Right now one off builds are manual. https://github.com/xtermjs/xterm.js/issues/2154 will improve this.
+Right now one off builds are manual. [xtermjs/xterm.js#2154](https://github.com/xtermjs/xterm.js/issues/2154) will improve this.
