@@ -49,7 +49,7 @@ Our roadmap covers the following themes:
   * :runner: Explore flatting folder hierarchies in the explorer
 * Investigate how to safely provide richer customizability in the workbench
    * Investigate custom viewlets and panels.
-   * Investigate custom editors comparable to the Welcome page.
+   * Investigate [custom editors](https://github.com/Microsoft/vscode/issues/12176) comparable to the Welcome page.
 * :runner: Investigate `node`-free renderer processes to be ready for electron 5.0
 
 ## UX
