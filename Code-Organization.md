@@ -49,15 +49,15 @@ Use the instantiation service to create instances for service consumers, like so
 * `vs/editor/common` and `vs/editor/browser` - the code editor core (critical code without which an editor does not make sense).
 * `vs/editor/contrib` - code editor contributions that ship in both VS Code and the standalone editor. They depend on `browser` by convention and an editor can be crafted without them which results in the feature brought in being removed.
 * `vs/editor/standalone` - code that ships only with the standalone editor. Nothing else should depend on `vs/editor/standalone`
-* `vs/workbench/parts/codeEditor` - code editor contributions that ship in VS Code.
+* `vs/workbench/contrib/codeEditor` - code editor contributions that ship in VS Code.
 
-# Workbench Parts
+# Workbench Contrib
 
-The VS Code workbench (`vs/workbench`) is composed of many things to provide a rich development experience. Examples include full text search, integrated git and debug. At its core, the workbench does not have direct dependencies to all these parts. Instead, we use an internal (as opposed to real extension API) mechanism to contribute these parts to the workbench. 
+The VS Code workbench (`vs/workbench`) is composed of many things to provide a rich development experience. Examples include full text search, integrated git and debug. At its core, the workbench does not have direct dependencies to all these contributions. Instead, we use an internal (as opposed to real extension API) mechanism to contribute these contributions to the workbench. 
 
-Parts that are contributed to the workbench all live inside the `vs/workbench/parts` folder. There are some rules around this folder:
-- there cannot be any dependency from outside `vs/workbench/parts` into `vs/workbench/parts`
-- every part should expose its internal API from a single file (e.g. `vs/workbench/parts/search/common/search.ts`)
-- a part is allowed to depend on the internal API of another part (e.g. the git part may depend on  `vs/workbench/parts/search/common/search.ts`)
-- a part should never reach into the internals of another part (internal is anything inside a part that is not in the single common API file)
-- think twice before letting a part depend on another part: is that really needed and does it make sense? Can the dependency be avoided by using the workbench extensibility story maybe?
+Contributions that are contributed to the workbench all live inside the `vs/workbench/contrib` folder. There are some rules around this folder:
+- there cannot be any dependency from outside `vs/workbench/contrib` into `vs/workbench/contrib`
+- every contribution should expose its internal API from a single file (e.g. `vs/workbench/contrib/search/common/search.ts`)
+- a contribution is allowed to depend on the internal API of another contribution (e.g. the git contribution may depend on  `vs/workbench/contrib/search/common/search.ts`)
+- a contribution should never reach into the internals of another contribution (internal is anything inside a contribution that is not in the single common API file)
+- think twice before letting a contribution depend on another contribution: is that really needed and does it make sense? Can the dependency be avoided by using the workbench extensibility story maybe?
