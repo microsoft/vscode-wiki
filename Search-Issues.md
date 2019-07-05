@@ -6,6 +6,8 @@ This document applies to search (<kbd>CMD+SHIFT+F</kbd>/<kbd>CTRL+SHIFT+F</kbd>)
 
 By far, the most common reason that expected search results don't appear is because of **exclude settings and ignore files**. Search and quickopen ignore files using patterns specified in the `search.exclude` and `files.exclude` settings, or covered by a pattern in a `.gitignore` file. So the very first thing to do is to carefully check these settings at the user and workspace levels, and your `.gitignore` file.
 
+Besides `.gitignore`, we also look at the `.ignore`, `.rgignore`, and `.git/info/exclude` files. You can read more about ripgrep's ignore file logic [here](https://github.com/BurntSushi/ripgrep/blob/master/GUIDE.md#automatic-filtering).
+
 > **Tip**: You can set `"search.useIgnoreFiles": false` to disable using the `.gitignore` file for search
 
 An easy way to validate whether exclude setttings or ignore files are affecting your search is to turn off the "Use Exclude Settings and Ignore Files" button in the search viewlet. The button in the lower right corner:
