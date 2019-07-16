@@ -64,6 +64,8 @@ In case of issues, try deleting the contents of `~/.node-gyp` first and then run
 
 > **Note:** For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
 
+> If you have Visual Studio 2019 installed, you may face issues when using the default version of node-gyp. If you have Visual Studio 2019 installed, you may need to follow the solutions [here](https://github.com/nodejs/node-gyp/issues/1747)
+
 ## Build and Run
 
 If you want to understand how Code works or want to debug an issue, you'll want to get the source, build it, and run the tool locally.
