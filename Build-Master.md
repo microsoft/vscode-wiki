@@ -7,7 +7,7 @@ This page describes the Build Master role. This is a weekly rotating role.
 
 ## Process
 
-Make sure to pay attention to the #build Slack channel.
+Given build failures, make sure to pay attention to the [#build Slack channel](https://vscodeteam.slack.com/messages/C1Y427SES). It should notify who's likely responsible.
 
 When there are **hygiene** or **compilation errors**, push a commit that fixes them and ping the responsible dev. If the fix isn't trivial, bring in the related developer to come up with a fix.
 
