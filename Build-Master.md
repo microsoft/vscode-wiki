@@ -21,4 +21,9 @@ Else:
 
 ## FAQ
 
-TODO
+#### How do the builds run?
+
+All our builds run in Azure DevOps and are scripted using YAML build definition files:
+
+- [Product Build](https://dev.azure.com/monacotools/Monaco/_build/latest?definitionId=111&branchName=master): https://github.com/microsoft/vscode/blob/master/build/azure-pipelines/product-build.yml
+- [Continuous Build](https://dev.azure.com/vscode/VSCode/_build/latest?definitionId=12&branchName=master): https://github.com/microsoft/vscode/blob/master/azure-pipelines.yml
