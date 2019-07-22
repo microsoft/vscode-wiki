@@ -7,6 +7,8 @@ This page describes the Build Master role. This is a weekly rotating role.
 
 ## Process
 
+Make sure to pay attention to the #build Slack channel.
+
 When there are **hygiene** or **compilation errors**, push a commit that fixes them and ping the responsible dev. If the fix isn't trivial, bring in the related developer to come up with a fix.
 
 When there are **test failures**, comment out the test and create an issue for the test owner to fix. The same process applies even if the test is flaky. The rule is: _a flaky test is as good as a failing test_.
