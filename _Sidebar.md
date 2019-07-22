@@ -9,6 +9,7 @@
   * [[Native Crash Issues]]
   * [[Search Issues]]
   * [[Issue Grooming]]
+* [[Build Master]]
 * [[Release Process]]
 * [[Running the Endgame]]
 * [[Related Projects]]
