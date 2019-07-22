@@ -1,6 +1,6 @@
 This page describes the Build Master role. This is a weekly rotating role.
 
-## Goals
+## Daily Goals
 
 1. Make sure an Insider build is released daily [![Build Status](https://dev.azure.com/monacotools/Monaco/_apis/build/status/VS%20Code?branchName=master)](https://dev.azure.com/monacotools/Monaco/_build/latest?definitionId=111&branchName=master)
 2. Make sure the Continuous Build is green [![Build Status](https://dev.azure.com/vscode/VSCode/_apis/build/status/VS%20Code?branchName=master)](https://dev.azure.com/vscode/VSCode/_build/latest?definitionId=12&branchName=master)
