@@ -12,3 +12,9 @@ When there are **hygiene** or **compilation errors**, push a commit that fixes t
 When there are **test failures**, comment out the test and create an issue for the test owner to fix. This process still applies even if the test is flaky.
 
 When there are **code signing errors**, retrigger builds. If the errors persist, [file an issue to ESRP](https://microsoft.sharepoint.com/teams/prss/esrp/info/ESRP%20Onboarding%20Wiki/Engaging%20ESRP%20Support.aspx).
+
+Else:
+
+1. Try to reason about the failure and get familiar with the [build infrastructure](https://github.com/microsoft/vscode/tree/master/build/azure-pipelines).
+2. Reach out to the previous week's Build Master, they might know something.
+3. Reach out to João. Document whatever he tells you and improve the Build Master process.
