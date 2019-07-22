@@ -17,4 +17,4 @@ Else:
 
 1. Try to reason about the failure and get familiar with the [build infrastructure](https://github.com/microsoft/vscode/tree/master/build/azure-pipelines).
 2. Reach out to the previous week's Build Master, they might know something.
-3. Reach out to João. Document whatever he tells you and improve the Build Master process.
+3. Reach out to João. Improve the Build Master process by documenting whatever he tells you.
