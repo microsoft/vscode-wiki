@@ -112,7 +112,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] vscode-tslint **@egamma**
   - [ ] vscode-eslint **@dbaeumer**
   - [ ] vscode-jshint **@rmacfarlane**
-  - [ ] vscode-recipes **@auchenberg**
+  - [ ] vscode-recipes **@chrisdias**
   - [ ] localization **@shawndon**
   - [ ] vscode-github-issues-prs **@chrmarti**
   - [ ] inno-updater **@joaomoreno**
@@ -183,7 +183,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] [Publish @types/vscode](https://github.com/microsoft/vscode/wiki/Publish-vscode-types) **endgame master**
 - [ ] Publish rpm to repository manually **@Tyriar**
 - [ ] Enable scheduled `insider` builds **endgame master**
-- [ ] Twitter announcement **@auchenberg**
+- [ ] Twitter announcement **@chrisdias**
 
 ### Recovery Build
 
