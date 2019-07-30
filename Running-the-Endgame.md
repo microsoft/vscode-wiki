@@ -28,7 +28,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
 
 ##### Monday
-- [ ] Run [OSS tool](https://github.com/Microsoft/vscode-distro/blob/master/distro-tools/README.md) **endgame master**
+- [ ] Run [OSS tool](https://github.com/microsoft/vscode-build-tools/tree/master/distro-tools) **endgame master**
   - *The LCA review of the ThirdPartyNotices.txt files is not needed anymore*
 - [ ] Code freeze at 5pm PT
 - [ ] Ensure we have a green build on all platforms at 5pm PT
