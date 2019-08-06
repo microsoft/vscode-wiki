@@ -23,6 +23,13 @@ Else:
 
 ## FAQ
 
+#### Why do we have two builds?
+
+The [Continuous Build](https://dev.azure.com/vscode/VSCode/_build?definitionId=1) is a **public**, **lightweight** build which runs on every commit and PR and has access to no credentials. It exists to make sure our code base is clean, compilable and tests are happy on branches and pull requests.
+
+The [Product Build](https://dev.azure.com/monacotools/Monaco/_build?definitionId=111) is a **private**, **heavyweight** build which runs daily to produce Insiders, so it has access to credentials. It exists to create all VS Code distributable assets and place them on our [builds page](https://builds.code.visualstudio.com/). **Note:** it's important that it never runs on PRs of external forks of VS Code.
+
+
 #### How do the builds run?
 
 All our builds run in Azure DevOps and are scripted using YAML build definition files:
