@@ -13,6 +13,7 @@ You'll need the following tools:
 - [Node.JS](https://nodejs.org/en/), **x64**, version `>= 10.16.0`, `< 11.0.0`
 - [Yarn](https://yarnpkg.com/en/), follow the [installation guide](https://yarnpkg.com/en/docs/install)
 - [Python](https://www.python.org/downloads/release/python-2715/), at least version 2.7 (version 3 is __*not*__ supported)
+  - **Note:** Python 2.7 will be automatically installed for Windows users through installing `windows-build-tools` npm module (see below)
 - A C/C++ compiler tool chain for your platform:
   - **Windows**
     - Set a `PYTHON` environment variable pointing to your `python.exe`. E.g.: `C:\Python27\python.exe`
