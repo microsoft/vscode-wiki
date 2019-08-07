@@ -113,7 +113,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] vscode-eslint **@dbaeumer**
   - [ ] vscode-jshint **@rmacfarlane**
   - [ ] vscode-recipes **@chrisdias**
-  - [ ] localization **@shawndon**
+  - [ ] localization **@weeteckt**
   - [ ] vscode-github-issues-prs **@chrmarti**
   - [ ] inno-updater **@joaomoreno**
 - [ ] Review pull requests acknowledgements with `NOT MERGED - PLS REVIEW`. **endgame master**
@@ -177,7 +177,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
     - [ ] rpm package 32-bit **owner**
     - [ ] archives **owner**
 - [ ] Publish website **@gregvanl**
-- [ ] Publish Localization language pack **@shawndon**
+- [ ] Publish Localization language pack **@weeteckt**
 - [ ] Publish to stable **endgame master**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **endgame master**
 - [ ] [Publish @types/vscode](https://github.com/microsoft/vscode/wiki/Publish-vscode-types) **endgame master**
