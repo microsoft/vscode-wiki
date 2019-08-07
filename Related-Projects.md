@@ -68,7 +68,7 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 ## NPM
 |Repository|
 |---|
-|npm Scripts |[vscode-npm-scripts](https://github.com/Microsoft/vscode-npm-scripts)
+|[vscode-npm-scripts](https://github.com/Microsoft/vscode-npm-scripts)
 
 ## Keybindings
 |Tool|Repository|
