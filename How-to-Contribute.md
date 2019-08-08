@@ -190,6 +190,10 @@ To improve the chances to get a pull request merged you should select an issue t
 
 To avoid multiple pull requests resolving the same issue, let others know you are working on it by saying so in a comment.
 
+### Spell check errors
+
+Pull requests that fix spell check errors in **user facing** text are welcomed but please make sure it doesn't touch multiple areas, otherwise it will be difficult to review. Pull requests only fixing spell check errors in source code are **not** recommended.
+
 ## Packaging
 
 Code can be packaged for the following platforms: `win32-ia32 | win32-x64 | darwin | linux-ia32 | linux-x64 | linux-arm`
