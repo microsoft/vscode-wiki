@@ -192,7 +192,7 @@ To avoid multiple pull requests resolving the same issue, let others know you ar
 
 ### Spell check errors
 
-Pull requests that fix spell check errors in **user facing** text are welcomed but please make sure it doesn't touch multiple areas, otherwise it will be difficult to review. Pull requests only fixing spell check errors in source code are **not** recommended.
+Pull requests that fix spell check errors in **translatable strings** (strings in `nls.localize(...)` calls) are welcomed but please make sure it doesn't touch multiple [feature areas](https://github.com/microsoft/vscode/wiki/Feature-Areas), otherwise it will be difficult to review. Pull requests only fixing spell check errors in source code are **not** recommended.
 
 ## Packaging
 
