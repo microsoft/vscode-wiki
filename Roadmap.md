@@ -50,7 +50,7 @@ Our roadmap covers the following themes:
 * Investigate how to safely provide richer customizability in the workbench
    * Investigate custom viewlets and panels.
    * :runner: Investigate [custom editors](https://github.com/Microsoft/vscode/issues/12176) comparable to the Welcome page.
-* Investigate how to support synchronizing settings and extensions across VS Code installations on different machines. The plan is to support synchronizing settings in the UI and to provide a 'Synch Provider' API for extension authors.
+* Investigate how to support synchronizing settings and extensions across VS Code installations on different machines. This is a popular [feature request](https://github.com/microsoft/vscode/issues/2743). The plan is to support synchronizing settings in the [UI](https://github.com/microsoft/vscode/issues/78869) and to provide a 'Synch Provider' [API](https://github.com/microsoft/vscode/issues/78966) for extension authors.
 
 ## UX
 
