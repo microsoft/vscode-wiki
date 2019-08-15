@@ -50,7 +50,7 @@ Our roadmap covers the following themes:
 * Investigate how to safely provide richer customizability in the workbench
    * Investigate custom viewlets and panels.
    * :runner: Investigate [custom editors](https://github.com/Microsoft/vscode/issues/12176) comparable to the Welcome page.
-* :runner: Investigate `node`-free renderer processes to be ready for electron 5.0
+* Investigate how to support synchronizing settings and extensions across VS Code installations on different machines. The plan is to support synchronizing settings in the UI and to provide a 'Synch Provider' API for extension authors.
 
 ## UX
 
@@ -67,12 +67,6 @@ Our roadmap covers the following themes:
 * :runner: Investigate support for semantic coloring
 * Investigate how to simplify the maintenance of textmate grammars
 * [x] Bring back localization support in the standalone Monaco editor. This support had been suspended when we added support for language packs for VS Code.
-
-## WSL Support
-
-* [x] Improve the WSL support.
-   * [x] Investigate how we can enable extensions to leverage tools available in WSL.
-   * [x] Investigate which other scenarios are being enabled by the changes needed for WSL
 
 ## Languages
 
@@ -117,6 +111,10 @@ We will continue to collaborate deeply with the TypeScript team to deliver the r
 Our teams contributes to a number of extensions that are available in the market place.
 
 Our main focus will be on the following extensions:
+
+* :runner: [VS Code Remote SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
+* :runner: [VS Code Remote WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+* :runner: [VS Code Remote Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 * :runner: [GitHub Pull Request extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 * :runner: [Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
 * :runner: [Vue extension](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
