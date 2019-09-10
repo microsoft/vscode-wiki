@@ -108,7 +108,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] vscode-json-languageservice **@aeschli**
   - [ ] vscode-html-languageservice **@aeschli**
   - [ ] jsonc-parser **@aeschli**
-  - [ ] vscode-jscs **@chrisdias**
   - [ ] vscode-tslint **@egamma**
   - [ ] vscode-eslint **@dbaeumer**
   - [ ] vscode-jshint **@rmacfarlane**
@@ -162,21 +161,20 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ##### Wednesday/Thursday
 - [ ] Build stable for all platforms **endgame master**
 - [ ] Make [rpm signing request](https://github.com/Microsoft/vscode-build-tools/tree/master/linux-repo) **@Tyriar**
-- [ ] Sanity check of installable bits
-  - [ ] Windows
-    - [ ] signed installer 32-bit **owner**
-    - [ ] signed installer 64-bit **owner**
-    - [ ] signed user installer 32-bit **owner**
-    - [ ] signed user installer 64-bit **owner**
-    - [ ] zip 32-bit **owner**
-    - [ ] zip 64-bit **owner**
-  - [ ] OS X - **owner**
-  - [ ] Linux
-    - [ ] deb package 32-bit **owner**
-    - [ ] deb package 64-bit **owner**
-    - [ ] rpm package 64-bit **owner**
-    - [ ] rpm package 32-bit **owner**
-    - [ ] archives **owner**
+- [x] Sanity check of installable bits
+  - [x] Windows 32 bit **owner**
+    - [x] signed installer 32-bit
+    - [x] signed user installer 32-bit
+    - [x] zip 32-bit
+  - [x] Windows 64 bit **owner**
+    - [x] signed installer 64-bit
+    - [x] signed user installer 64-bit
+    - [x] zip 64-bit
+  - [x] OS X - **owner**
+  - [x] Linux
+    - [x] deb package 64-bit **owner**
+    - [x] rpm package 64-bit **owner**
+    - [x] archives **owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish Localization language pack **@weeteckt**
 - [ ] Publish to stable **endgame master**
