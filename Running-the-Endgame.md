@@ -29,7 +29,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ##### Monday
 - [ ] Run [OSS tool](https://github.com/microsoft/vscode-build-tools/tree/master/distro-tools) **endgame master**
-  - *The LCA review of the ThirdPartyNotices.txt files is not needed anymore*
 - [ ] Code freeze at 5pm PT
 - [ ] Ensure we have a green build on all platforms at 5pm PT
 - [ ] All test items contain sufficiently comprehensive test descriptions by 6pm PT
