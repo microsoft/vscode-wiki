@@ -160,20 +160,20 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ##### Wednesday/Thursday
 - [ ] Build stable for all platforms **endgame master**
 - [ ] Make [rpm signing request](https://github.com/Microsoft/vscode-build-tools/tree/master/linux-repo) **@Tyriar**
-- [x] Sanity check of installable bits
-  - [x] Windows 32 bit **owner**
-    - [x] signed installer 32-bit
-    - [x] signed user installer 32-bit
-    - [x] zip 32-bit
-  - [x] Windows 64 bit **owner**
-    - [x] signed installer 64-bit
-    - [x] signed user installer 64-bit
-    - [x] zip 64-bit
-  - [x] OS X - **owner**
-  - [x] Linux
-    - [x] deb package 64-bit **owner**
-    - [x] rpm package 64-bit **owner**
-    - [x] archives **owner**
+- [ ] Sanity check of installable bits
+  - [ ] Windows 32 bit **owner**
+    - [ ] signed installer 32-bit
+    - [ ] signed user installer 32-bit
+    - [ ] zip 32-bit
+  - [ ] Windows 64 bit **owner**
+    - [ ] signed installer 64-bit
+    - [ ] signed user installer 64-bit
+    - [ ] zip 64-bit
+  - [ ] OS X - **owner**
+  - [ ] Linux
+    - [ ] deb package 64-bit **owner**
+    - [ ] rpm package 64-bit **owner**
+    - [ ] archives **owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish Localization language pack **@weeteckt**
 - [ ] Publish to stable **endgame master**
@@ -212,18 +212,19 @@ We release a recovery build with a handful of critical fixes and translation upd
   - [ ] Windows - **owner**
   - [ ] OS X - **owner**
   - [ ] Linux - **owner**
-- [ ] Sanity check installable stable bits that have not been smoke tested
-  - [ ] Windows
-    - [ ] signed installer 32-bit **owner**
-    - [ ] signed installer 64-bit **owner**
-    - [ ] zip 32-bit **owner**
-    - [ ] zip 64-bit **owner**
+- [ ] Sanity check of installable bits
+  - [ ] Windows 32 bit **owner**
+    - [ ] signed installer 32-bit
+    - [ ] signed user installer 32-bit
+    - [ ] zip 32-bit
+  - [ ] Windows 64 bit **owner**
+    - [ ] signed installer 64-bit
+    - [ ] signed user installer 64-bit
+    - [ ] zip 64-bit
   - [ ] OS X - **owner**
   - [ ] Linux
-    - [ ] deb package 32-bit **owner**
     - [ ] deb package 64-bit **owner**
     - [ ] rpm package 64-bit **owner**
-    - [ ] rpm package 32-bit **owner**
     - [ ] archives **owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish stable build **owner**
