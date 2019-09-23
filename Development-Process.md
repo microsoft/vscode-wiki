@@ -12,7 +12,7 @@ Before each milestone, we will prioritize features to implement and bugs to fix 
  
 ### Definition of Done
 - [ ] Test Plan Item created
-- [ ] Key board accessible
+- [ ] Keyboard accessible
 - [ ] Screen reader accessible
 - [ ] Works with the different themes, including the high contrast theme
 - [ ] Telemetry events in place
