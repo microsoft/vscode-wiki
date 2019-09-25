@@ -1,6 +1,19 @@
 ## Terminal Issues
 
-This document is about reporting issues for the integrated terminal (ctrl+\`). Learn more about how to use the terminal in the [documentation](https://code.visualstudio.com/docs/editor/integrated-terminal).
+This document is about reporting issues for the integrated terminal (<kbd>ctrl</kbd>+<kbd>`</kbd>). Learn more about how to use the terminal in the [documentation](https://code.visualstudio.com/docs/editor/integrated-terminal).
+
+### Creating great terminal issues
+
+- Make sure you read the common questions and long-standing known issues sections below as you might be reporting an issue that is already known.
+- Include the VS Code version, Operating System version and a list of extensions you're using. Ideally you should use the issue reporter built into VS Code for this as it automatically includes this information in the report.
+- Including a screenshot or gif is normally a good idea.
+- Including your settings.json is also a good idea as many issues are normally related to bad configuration.
+- Take note if you're using an extension to launch the terminal, for example using a debugger to launch the terminal, language extension (eg. PowerShell Integrated Console) or something like Code Runner. If so there's a good chance it's an issue with the extension, not with VS Code.
+
+**Windows-specific additions:**
+
+- Be sure to include the build number if you're on Windows 10, this is attached automatically when using the builtin issue reporter or can be fetched manually by running `ver` in `cmd.exe`.
+- If you're on Windows 10 1809 and below then you will be on the old terminal backend called `winpty`, a lot of these issues will not be actionable and closed as the solution to them was to move to the new frontend `conpty`.
 
 ### Common questions
 
@@ -21,7 +34,7 @@ This was added in v1.26.
 
 For issues where text is misbehaving in the terminal you can enable logging of the data being sent to the emulator from the shell process. To enable escape sequence logging run the "Terminal: Toggle Escape Sequence Logging" command from the command palette (<kbd>F1</kbd>), the logs can then be viewed in the devtools console (Help &gt; Toggle Developer Tools).
 
-### Long standing known issues
+### Long-standing known issues
 
 Here are some long standing known issues in the terminal:
 
