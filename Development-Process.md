@@ -1,5 +1,5 @@
 ## Roadmap
-The team has a 6-month high level [[Roadmap]] which defines high level themes and features to be addressed in this timeframe.
+The team has a 6-12 months high level [[Roadmap]] which defines high level themes and features to be addressed in this timeframe.
 
 ## Iterations
 We will work in monthly iterations on the items on the roadmap. Iterations are roughly month based, rather than week based. We will begin a milestone on a Monday and end on a Friday, meaning that each milestone can have a different duration, depending on how the weeks align.
