@@ -33,9 +33,9 @@ Our roadmap covers the following themes:
 * :runner: Make VS Code an outstandingly accessible developer tool. We'll work with our community to get input and guidance, and we need you to keep us honest.
 * :runner: Keep start-up times within a predictable and suitable range for users across all platforms and improve the overall performance for large workspace:
   * Load less code on start-up and investigate improving the workbench restoration time by expanding on the [rapid render](https://code.visualstudio.com/updates/v1_26#_rapid-render) approach.
-  * :runner: Implement a new tree widget that scales better and adopt it across the workbench (explorer, search, settings, outline, debugger).
+  * :runner: Implement a new tree widget that scales better and adopt it across the workbench (explorer, search, settings, outline, debugger, comments, quick pick).
 * Improve serviceability
-  * :runner: Make it easy to identify extensions that negatively impact the overall performance of VS Code.
+  * [x] Make it easy to identify extensions that negatively impact the overall performance of VS Code.
 
 ## Workbench
 
@@ -83,9 +83,9 @@ We will continue to collaborate deeply with the TypeScript team to deliver the r
 
 ## Debug
 
-* :runner: Support data breakpoints
-* Improve hovering and inline values by leveraging the knowlegde about the programming language
-* :runner: Continue to invest in documenting debugging recipes for common configurations
+* [x] Support data breakpoints
+* Improve hovering and inline values by leveraging the knowledge about the programming language
+* [x] Continue to invest in documenting debugging recipes for common configurations
 
 
 ## Extensions
@@ -102,7 +102,7 @@ We will continue to collaborate deeply with the TypeScript team to deliver the r
 ### Extension Authors
 
 * :runner: Collaborate with extension authors to improve their extensions. Examples are: Use [Webpack](https://github.com/Microsoft/vscode-extension-samples/tree/master/webpack-sample) to improve install and activation, minimize dependencies of an extension, ensure `vscode` is only a development dependency.
-* :runner: Enable extensions to install additional platform specific components at extension installation time.
+* :runner: Enable extensions to install additional platform specific components.
 * Support publishing of signed extensions.
 * Add support for verified publishers.
 
@@ -122,6 +122,7 @@ Our main focus will be on the following extensions:
 We will continue to maintain the following extensions:
 * :runner: [Chrome Debug extension](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 * :runner: [ES Lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* :runner: [TS Lint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
 * :runner: [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 * :runner: [Markdown customization extensions](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview)
 
