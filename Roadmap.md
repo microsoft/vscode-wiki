@@ -1,4 +1,4 @@
-# The VS Code Roadmap 2019 - DRAFT 
+# The VS Code Roadmap 2019 - DRAFT UPDATE
 
 As [2018](https://github.com/Microsoft/vscode/wiki/Roadmap-2018) has come to an end, now is the time to look towards the future. We typically look out 6 to 12 months and establish topics we want to work on.
 
@@ -188,6 +188,10 @@ VS Code is made possible through a wide range of technologies. Below are example
 * [x] Adopt `conpty` on Windows
 * [x] Reflow lines when resizing the terminal
 
+## Engineering
+- Migrate from `tslint` to `eslint`. Tslint will be deprecated.
+- Improve the built-in issue reporter, support to paste/attach images.
+- Improve Smoke Tests, revisit the current approach on how we implement the automated smoke tests.
 
 ## Documentation
 
