@@ -1,4 +1,4 @@
-# DRAFT - The VS Code Roadmap 2019/2020 - DRAFT 
+# The VS Code Roadmap 2019/2020 - DRAFT 
 
 As [2018](https://github.com/Microsoft/vscode/wiki/Roadmap-2018) has come to an end, now is the time to look towards the future. We typically look out 6 to 12 months and establish topics we want to work on.
 
