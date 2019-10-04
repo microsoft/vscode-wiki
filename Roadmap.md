@@ -1,4 +1,4 @@
-# The VS Code Roadmap 2019
+# DRAFT - The VS Code Roadmap 2019/2020 - DRAFT 
 
 As [2018](https://github.com/Microsoft/vscode/wiki/Roadmap-2018) has come to an end, now is the time to look towards the future. We typically look out 6 to 12 months and establish topics we want to work on.
 
@@ -33,7 +33,16 @@ Our roadmap covers the following themes:
 * :runner: Make VS Code an outstandingly accessible developer tool. We'll work with our community to get input and guidance, and we need you to keep us honest.
 * :runner: Keep start-up times within a predictable and suitable range for users across all platforms and improve the overall performance for large workspace:
   * Load less code on start-up and investigate improving the workbench restoration time by expanding on the [rapid render](https://code.visualstudio.com/updates/v1_26#_rapid-render) approach.
-  * :runner: Implement a new tree widget that scales better and adopt it across the workbench (explorer, search, settings, outline, debugger, comments, quick pick).
+  * [x] Implement a new tree widget that scales better 
+  * Adopt the new tree widget across the workbench:
+    - [x] explorer 
+    - [x] search
+    - [x] settings
+    - [x] outline
+    - [x] debugger
+    - [ ] comments
+    - [ ] quick pick.
+
 * Improve serviceability
   * [x] Make it easy to identify extensions that negatively impact the overall performance of VS Code.
 
@@ -43,14 +52,14 @@ Our roadmap covers the following themes:
   * Support for detachable workbench parts is our most upvoted [feature request](https://github.com/Microsoft/vscode/issues/10121) which due to [architectural issues](https://github.com/Microsoft/vscode/issues/10121#issuecomment-345497635) is challenging to implement. We will explore how we can work around this limitation. This investigation will focus on detaching terminals (2nd most upvoted feature request) and editors.
   * :runner: Enable a more flexible panel/sidebar layout.
 * [x] Provide filtering and fast keyboard navigation in trees across the workbench.
-* Investigate showing search results not only in the side bar or a panel, but also in an editor. This allows us to show additional context information for each match.
-* Improve working with the file explorer in large workspaces
+* Show search results not only in the side bar or a panel, but also in an editor. This allows us to show additional context information for each match.
+* Improve working with the file explorer 
+  * :runner: Support to compress/flatten single child directories
   * Investigate 'working sets' of files and folders
-  * :runner: Explore flatting folder hierarchies in the explorer
 * Investigate how to safely provide richer customizability in the workbench
-   * Investigate custom viewlets and panels.
-   * :runner: Investigate [custom editors](https://github.com/Microsoft/vscode/issues/12176) comparable to the Welcome page.
-* Investigate how to support synchronizing settings and extensions across VS Code installations on different machines. This is a popular [feature request](https://github.com/microsoft/vscode/issues/2743). The plan is to support synchronizing settings in the [UI](https://github.com/microsoft/vscode/issues/78869) and to provide an  [API](https://github.com/microsoft/vscode/issues/78966) for extension authors.
+   * :runner: Support [custom editors](https://github.com/Microsoft/vscode/issues/12176).
+   * Investigate custom Views (based on WebViews).
+* Support synchronizing settings and extensions across VS Code installations on different machines. This is a popular [feature request](https://github.com/microsoft/vscode/issues/2743).
 
 ## UX
 
