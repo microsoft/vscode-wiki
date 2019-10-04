@@ -59,7 +59,8 @@ Our roadmap covers the following themes:
 * Investigate how to safely provide richer customizability in the workbench
    * :runner: Support [custom editors](https://github.com/Microsoft/vscode/issues/12176).
    * Investigate custom Views (based on WebViews).
-* Support synchronizing settings and extensions across VS Code installations on different machines. This is a popular [feature request](https://github.com/microsoft/vscode/issues/2743).
+* Support [synchronizing settings and extensions](https://github.com/microsoft/vscode/issues/2743)
+ across VS Code installations on different machines.
 
 ## UX
 
@@ -92,8 +93,9 @@ We will continue to collaborate deeply with the TypeScript team to deliver the r
 
 ## Debug
 
+* Improve hovering and inline values by leveraging the knowledge about the programming language so that the `Inline Values` feature can be enabled by default
+* 
 * [x] Support data breakpoints
-* Improve hovering and inline values by leveraging the knowledge about the programming language
 * [x] Continue to invest in documenting debugging recipes for common configurations
 
 
