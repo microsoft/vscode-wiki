@@ -145,7 +145,7 @@ We will continue to collaborate deeply with the TypeScript team to deliver the r
   * :runner: Enable extensions to install additional platform specific components.
   * Support publishing of signed extensions.
   * Add support for verified publishers.
-  * Investigate into a linting utility for extension authors (web packed, no dependency on `vscode` module, use API instead of `opn` module etc.)
+
 
 ## Contributions to VS Code Extensions
 
