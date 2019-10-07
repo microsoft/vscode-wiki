@@ -17,6 +17,7 @@ In addition there can be feature sub areas which are colored light blue.
 |typescript|TypeScript support||
 |||
 |workbench|overall workbench UI|themes, workbench-tabs, editor groups, color-palette, keybindings, proxy, webview, telemetry|
+|menus|menu model, menu contributions||
 |explorer-files|explorer and general file management|explorer-custom|
 |git|git support||
 |debug|debugging, launching support||
