@@ -7,7 +7,7 @@ We close issues for the following reasons:
 |Reason|Label|
 |---|---|
 |The issue is obsolete or already fixed. ||
-|We didn't get the information we need within 7 days. | `needs more information`|
+|We didn't get the information we need within 7 days. | `needs more infor`|
 |It's a duplicate of another issue. | `*duplicate`|
 |A feature request is best realized by implementing an extension.| `*extension-candidate`|
 |What is described is the designed behavior. | `as-designed`|
