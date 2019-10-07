@@ -7,16 +7,16 @@ We close issues for the following reasons:
 |Reason|Label|
 |---|---|
 |The issue is obsolete or already fixed. ||
-|We didn't get the information we need within 7 days. | `needs more infor`|
+|We didn't get the information we need within 7 days. | `needs more info`|
 |It's a duplicate of another issue. | `*duplicate`|
 |A feature request is best realized by implementing an extension.| `*extension-candidate`|
-|What is described is the designed behavior. | `as-designed`|
+|What is described is the designed behavior. | `*as-designed`|
 |Issue was caused by an extension.| `*caused-by-extension`|
 |Issue is a developer question.| `*dev-question`|
 |Issue is a user question.| `*question`|
 |Issue does not make sense or was unintended.| `invalid`|
 |Given the information we have we can't reproduce the issue. | `*not-reproducible`|
-|The feature request is out of scope. (See [below](#out-of-scope-feature-requests)) | `out-of-scope`|
+|The feature request is out of scope. (See [below](#out-of-scope-feature-requests)) | `*out-of-scope`|
 
 We close issues with the help of a bot that responds to a particular comment such as `/duplicate of #1234` or to assigning a label with adding a pre-canned comment to the issue and closing the issue.
 
