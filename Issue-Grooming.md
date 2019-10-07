@@ -15,7 +15,7 @@ We close issues for the following reasons:
 |Issue is a developer question.| `*dev-question`|
 |Issue is a user question.| `*question`|
 |Issue does not make sense or was unintended.| `invalid`|
-|Given the information we have we can't reproduce the issue. | `not-reproducible`|
+|Given the information we have we can't reproduce the issue. | `*not-reproducible`|
 |The feature request is out of scope. (See [below](#out-of-scope-feature-requests)) | `out-of-scope`|
 
 We close issues with the help of a bot that responds to a particular comment such as `/duplicate of #1234` or to assigning a label with adding a pre-canned comment to the issue and closing the issue.
