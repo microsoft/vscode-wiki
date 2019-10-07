@@ -24,7 +24,7 @@ In addition there can be feature sub areas which are colored light blue.
 |editor|vscode editor support|brackets, monaco-editor, diff-editor,editor-contrib, editor-core-commands, editor-core-settings, editor-core-view, editor-multicursor, find-widget, folding, intellisense, ligatures, snippets, tokenization, intellisense, VIM enablement|
 |task|task support||
 |error-list|the error list||
-|integrated-terminal|integrated terminal panel||
+|integrated-terminal|integrated terminal panel|conpty, input, winpty, xtermjs|
 |extensions|extension UI, details, install|marketplace|
 |||
 |api|vscode extension API||
