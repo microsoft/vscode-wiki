@@ -37,22 +37,22 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 ##### Tuesday
 - [ ] Test plan items assigned (using https://vscode-tools.azurewebsites.net/)
   - Run the tool multiple times to balance load if test items come in later and assignments are already made
-- [ ] All closed feature-requests either have a verification-needed or on-testplan tag
+- [ ] [🔖All closed feature-requests](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+archived%3Afalse+milestone%3A%22September+2019%22+user%3Amicrosoft+label%3Afeature-request+-label%3Averification-needed+-label%3Aon-testplan+-label%3Averified+sort%3Aupdated-desc+) either have a `verification-needed` or `on-testplan` label
 - [ ] Test build starts at 7am CET
 - [ ] Test plan ready by 8am CET
-- [ ] Testing
-- [ ] [Verification needed](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed)
+- [ ] [🔖Testing](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+label%3Atestplan-item+user%3Amicrosoft)
+- [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+archived%3Afalse+milestone%3A%22September+2019%22+user%3Amicrosoft+label%3Averification-needed+-label%3Averified)
 
 ##### Wednesday
-- [ ] Testing
+- [ ] [🔖Testing](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+label%3Atestplan-item+user%3Amicrosoft)
 - [ ] Remind team members to assign issues that they intend to fix to the current milestone
 - [ ] Fixing (self-assigned, milestone assigned)
-- [ ] [Verification (pls update the milestone in the query)](https://github.com/Microsoft/vscode/issues?utf8=✓&q=is%3Aissue+label%3Abug+-label%3Averified+-label%3Aon-testplan+is%3Aclosed+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+milestone%3A%22August+2018%22+)
+- [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+archived%3Afalse+milestone%3A%22September+2019%22+user%3Amicrosoft+label%3Averification-needed+-label%3Averified)
 
 ##### Thursday
 - [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
-- [ ] [Verification](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Abug+-label%3Averified+-label%3Aon-testplan+is%3Aclosed+-label%3Aerror-telemetry+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+milestone%3A%22August+2018%22+)
-- [ ] Check new OSS usage is entered into the [OSS registry](https://ossmsft.visualstudio.com/_apps/hub/ms.vss-oss-web.hub-oss) **owner**
+- [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+archived%3Afalse+milestone%3A%22September+2019%22+user%3Amicrosoft+label%3Averification-needed+-label%3Averified)
+- [ ] [🔖Verification](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aclosed+is%3Aissue+user%3Amicrosoft+milestone%3A%22September+2019%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry)- [ ] Check new OSS usage is entered into the [OSS registry](https://ossmsft.visualstudio.com/_apps/hub/ms.vss-oss-web.hub-oss) **owner**
 
 ##### Friday
 - [ ] Pause scheduled `insider` builds **endgame master**
@@ -63,7 +63,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] node debug **@weinand**
   - [ ] node debug2 **@roblourens**
   - [ ] node debugadapter node **@weinand**
-- [ ] All issues [verified](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Abug+-label%3Averified+-label%3Aon-testplan+is%3Aclosed+-label%3Aerror-telemetry+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+milestone%3A%22August+2018%22+)
+- [ ] All issues [🔖verified](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+label%3Abug+-label%3Averified+-label%3Aon-testplan+is%3Aclosed+-label%3Aduplicate+-label%3A%2Aduplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+milestone%3A%22September+2019%22)
 - [ ] Fixing (only critical bugs - no string changes)
 - [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) (⚠️ MUST run with `--stable-build` argument ⚠️ )
   - [ ] Windows - **owner**
@@ -127,6 +127,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Polish release notes **redmond**
 
 ##### Monday - Wednesday
+- [ ] [🔖milestone issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Amicrosoft+milestone%3A%22September+2019%22)
+- [ ] [🔖candidate issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Amicrosoft+label%3Acandidate)
 - [ ] Polish release notes **redmond**
 - [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **endgame master**
 - [ ] Build `Insider` from `release/<x.y>` **endgame master**
