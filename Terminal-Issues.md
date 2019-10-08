@@ -30,8 +30,6 @@ For some terminal issues it's useful to get trace logs, this can reveal at what 
 
 ### Enabling escape sequence logging
 
-This was added in v1.26.
-
 For issues where text is misbehaving in the terminal you can enable logging of the data being sent to the emulator from the shell process. To enable escape sequence logging run the "Terminal: Toggle Escape Sequence Logging" command from the command palette (<kbd>F1</kbd>), the logs can then be viewed in the devtools console (Help &gt; Toggle Developer Tools).
 
 ### Long-standing known issues
