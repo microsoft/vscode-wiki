@@ -42,3 +42,7 @@ Here are some long standing known issues in the terminal:
 - Characters like underscore are being cut off [#35901](https://github.com/Microsoft/vscode/issues/35901)
   - Try changing the `terminal.integrated.fontFamily`
 - Emojis are printed as double width but are single width [xtermjs/xterm.js#1059](https://github.com/xtermjs/xterm.js/issues/1059)
+
+### Which issues go in which repos
+
+The terminal has several dependencies which are also open source projects such as [xterm.js](https://github.com/xtermjs/xterm.js), [node-pty](https://github.com/microsoft/node-pty) and [conpty](https://github.com/microsoft/terminal). Managing issues is difficult across so many repos so the general rule we follow with terminal issues is that fairly niche upstream issues are only tracked in the upstream repositories and major upstream issues are tracked in VS Code as well in order to improve discoverability of the issue in question.
