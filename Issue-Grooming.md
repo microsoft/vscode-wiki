@@ -35,7 +35,7 @@ If you are the author of a feature request you might not like that we close your
 Here are the criteria we use to make the decision about closing a feature request:
 1. Does the functionality described in the feature request have any reasonable chance to be implemented in the next 24 months? 24 months is longer than our [roadmap](https://github.com/Microsoft/vscode/wiki/Roadmap) which outlines the next 6-12 months. Thus, there is some crystal ball reading on our part, and we'll most likely keep more feature requests open than what we can accomplish in 24 months.
 2. Has the community at large expressed interest in this functionality? I.e. has it gathered more than 10 up-votes or more than 10 comments? This criterion alone covers more than 650 of the 2850 open feature requests as of right now, October 9th, 2019. 
-3. Do we think the feature request is bolt and forward looking and would we like to see it be tackled at some point even if it's father out than 24 months? (Clearly, this one is the most subjective criterion.)
+3. Do we think the feature request is bolt and forward looking and would we like to see it be tackled at some point even if it's further out than 24 months? (Clearly, this one is the most subjective criterion.)
 
 If the answer to any of the three questions is `yes` then we ask about affordability:
 
