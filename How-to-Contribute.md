@@ -183,7 +183,12 @@ Even if you have push rights on the Microsoft/vscode repository, you should crea
 ## Pull Requests
 Before we can accept a pull request from you, you'll need to sign a [[Contributor License Agreement (CLA)|Contributor-License-Agreement]]. It is an automated process and you only need to do it once.
 
-To enable us to quickly review and accept your pull requests, always create one pull request per issue and [link the issue in the pull request](https://github.com/blog/957-introducing-issue-mentions). Never merge multiple requests in one unless they have the same root cause. Be sure to follow our [[Coding Guidelines|Coding-Guidelines]] and keep code changes as small as possible. Avoid pure formatting changes to code that has not been modified otherwise. Avoid changes that require specific Electron APIs, instead try to implement your change leveraging official Web APIs. Pull requests should contain tests whenever possible.
+To enable us to quickly review and accept your pull requests, always create one pull request per issue and [link the issue in the pull request](https://github.com/blog/957-introducing-issue-mentions). Never merge multiple requests in one unless they have the same root cause. Be sure to follow our [[Coding Guidelines|Coding-Guidelines]] and keep code changes as small as possible. Avoid pure formatting changes to code that has not been modified otherwise. Pull requests should contain tests whenever possible.
+
+### Introducing usage of new Electron API with a PR
+A pull request that depends on Electron API that VSCode is currently not using comes with a certain risk and maybe rejected. Whenever we update Electron, there is a chance that less popular Electron APIs break and it is very hard to find out upfront. Once a PR lands in VSCode, the role of maintaining the feature moves to the team and as such we have to follow up with upstream components to ensure the feature is still supported. As such, as a rule of thumb:
+* avoid Electron APIs and use web standards instead (this also ensures that your feature is supported in our web client)
+* if you must use Electron APIs, we require a unit test at https://github.com/atom/electron so that we protect against future breakage.
 
 ### Where to Contribute
 Check out the [full issues list](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue) for a list of all potential areas for contributions. Note that just because an issue exists in the repository does not mean we will accept a contribution to the core editor for it. There are several reasons we may not accept a pull request like:
