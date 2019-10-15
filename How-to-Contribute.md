@@ -127,7 +127,7 @@ To test the changes you launch a development version of VS Code on the workspace
 .\scripts\code.bat
 ```
 
-**Web**
+**Web (Chromium browsers only)**
 
 ```bash
 yarn web
