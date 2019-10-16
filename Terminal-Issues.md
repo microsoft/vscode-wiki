@@ -62,6 +62,6 @@ Figuring out what's going on with rendering can be tricky as there are a lot of 
 
 Known rendering problems:
 
-- Corrupt texture showing after resuming OS from sleep https://github.com/microsoft/vscode/issues/69665
-- Underscore and similar chars not showing up https://github.com/microsoft/vscode/issues/35901
-- Characters become small or large after changing monitor DPI https://github.com/xtermjs/xterm.js/issues/2137
+- Corrupt texture showing after resuming OS from sleep [#69665](https://github.com/microsoft/vscode/issues/69665)
+- Underscore and similar chars not showing up [#35901](https://github.com/microsoft/vscode/issues/35901)
+- Characters become small or large after changing monitor DPI [xtermjs/xterm.js#2137](https://github.com/xtermjs/xterm.js/issues/2137)
