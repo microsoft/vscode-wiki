@@ -19,19 +19,6 @@ This document is about reporting issues for the integrated terminal (<kbd>ctrl</
 
 Make sure you read over the [common questions section on the website](https://code.visualstudio.com/docs/editor/integrated-terminal#_common-questions).
 
-### Enabling trace logging
-
-For some terminal issues it's useful to get trace logs, this can reveal at what point something is failing. Follow these steps to get the logs:
-
-1. Close all VS Code windows
-2. Launch VS Code from the terminal using `code --log trace`
-3. At this point you should reproduce the terminal issue you're having
-4. Run the command "Developer: Open Log File..." (<kbd>F1</kbd> opened command palette) to get an editor containing the logs
-
-### Enabling escape sequence logging
-
-For issues where text is misbehaving in the terminal you can enable logging of the data being sent to the emulator from the shell process. To enable escape sequence logging run the "Terminal: Toggle Escape Sequence Logging" command from the command palette (<kbd>F1</kbd>), the logs can then be viewed in the devtools console (Help &gt; Toggle Developer Tools).
-
 ### Long-standing known issues
 
 Here are some long standing known issues in the terminal:
@@ -46,3 +33,35 @@ Here are some long standing known issues in the terminal:
 ### Which issues go in which repos
 
 The terminal has several dependencies which are also open source projects such as [xterm.js](https://github.com/xtermjs/xterm.js), [node-pty](https://github.com/microsoft/node-pty) and [conpty](https://github.com/microsoft/terminal). Managing issues is difficult across so many repos so the general rule we follow with terminal issues is that fairly niche upstream issues are only tracked in the upstream repositories and major upstream issues are tracked in VS Code as well in order to improve discoverability of the issue in question.
+
+## Diagnosing terminal issues
+
+### Enabling trace logging
+
+For some terminal issues it's useful to get trace logs, this can reveal at what point something is failing. Follow these steps to get the logs:
+
+1. Close all VS Code windows
+2. Launch VS Code from the terminal using `code --log trace`
+3. At this point you should reproduce the terminal issue you're having
+4. Run the command "Developer: Open Log File..." (<kbd>F1</kbd> opened command palette) to get an editor containing the logs
+
+### Enabling escape sequence logging
+
+For issues where text is misbehaving in the terminal you can enable logging of the data being sent to the emulator from the shell process. To enable escape sequence logging run the "Terminal: Toggle Escape Sequence Logging" command from the command palette (<kbd>F1</kbd>), the logs can then be viewed in the devtools console (Help &gt; Toggle Developer Tools).
+
+### Rendering problems
+
+Figuring out what's going on with rendering can be tricky as there are a lot of moving parts. A blank screen could mean that the terminal was never created properly and the terminal is fine, or maybe that the renderer is broken. Here are good steps to help find the root cause of rendering problems:
+
+- Zoom in and out (ctrl/cmd++, ctrl/cmd+-) will force the renderer to redraw everything
+- The terminal features both a canvas-based renderer (fast can have various problems) dom-based renderer (slower but less problems). Changing the renderer type can identify issues with a particular renderer, configure with these settings:
+   ```
+   "terminal.integrated.rendererType": "dom"
+   "terminal.integrated.rendererType": "canvas"
+   ```
+
+Known rendering problems:
+
+- Corrupt texture showing after resuming OS from sleep https://github.com/microsoft/vscode/issues/69665
+- Underscore and similar chars not showing up https://github.com/microsoft/vscode/issues/35901
+- Characters become small or large after changing monitor DPI https://github.com/xtermjs/xterm.js/issues/2137
