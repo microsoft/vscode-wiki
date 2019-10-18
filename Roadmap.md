@@ -167,6 +167,8 @@ We will continue to maintain the following extensions:
 * :runner: [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 * :runner: [Markdown customization extensions](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview)
 
+We will investigate into improving the performance of existing popular extensions that make the extension host unresponsive, e.g., [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer), [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag).
+
 ## Contributions to Underlying Components and Technologies
 
 VS Code is made possible through a wide range of technologies. Below are examples of technologies in which we are particularly active.
