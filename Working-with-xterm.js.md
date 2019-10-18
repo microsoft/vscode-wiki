@@ -6,9 +6,9 @@ Check out the [xterm.js contribution documentation](https://github.com/xtermjs/x
 
 Since bugs and/or features manifest themselves in both VS Code and xterm.js, it's a little unclear initially where the issue(s) should be created. After some experimentation I landed on the best way to deal with this is to create the an issue in both the Microsoft/vscode and xtermjs/xterm.js repositories. The reason this is the best workflow is because the changes will then be verified during endgame and it's much easier to compose release notes for the terminal changes. This guideline is less important for more obscure terminal issues where it's typically easier to keep a single source of truth in the xterm.js repo.
 
-### Updating `xterm`
+### Updating `xterm` in vscode
 
-Every commit that goes into the master branch of [xterm.js](https://github.com/xtermjs/xterm.js) is automatically released under the beta tag using Azure Pipelines. To update, follow these steps:
+Every commit that goes into the master branch of [xterm.js](https://github.com/xtermjs/xterm.js) is automatically released under the beta tag using Azure Pipelines. To update the module in vscode, follow these steps:
 
 1. Identify the release to be used and install it. If you want the latest beta based on master you can run `yarn add xterm@beta` (also do this in the `remote/` and `remote/web` folders). If you want an older commit the easiest way to do this right now is to identify the commit and then find the "Merge pull request" build on this [pipeline](https://dev.azure.com/xtermjs/xterm.js/_build?definitionId=3), click into the "Release" job and view the output of the "Publish to npm" step to find the version number then install it with `yarn add xterm@x.y.z-betaX`
 2. Update the typings in `./src/typings/xterm.d.ts` by copying over the content and replacing the top portion with `./node_modules/xterm/typings/xterm.d.ts`.
