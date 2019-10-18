@@ -14,7 +14,6 @@ Since June 2019 we use the official `xterm` module provided by the upstream proj
 2. Update the typings in `./src/typings/xterm.d.ts` by copying over the content and replacing the top portion with `./node_modules/xterm/typings/xterm.d.ts`.
 3. Build/test locally to make sure it works or push a branch and do a PR so that tests are run automatically. If the version change is significant it's a good idea to do a product build and verify it passes fully.
 4. Ideally write the commit message in the following format:
-
    ```
    xterm@4.2.0-beta18
 
