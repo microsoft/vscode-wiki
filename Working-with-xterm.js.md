@@ -13,7 +13,7 @@ Since June 2019 we use the official `xterm` module provided by the upstream proj
 1. Identify the release to be used and install it. If you want the latest beta based on master you can run `yarn add xterm@beta` (also do this in the `remote/` and `remote/web` folders). If you want an older commit the easiest way to do this right now is to identify the commit and then find the "Merge pull request" build on this [pipeline](https://dev.azure.com/xtermjs/xterm.js/_build?definitionId=3), click into the "Release" job and view the output of the "Publish to npm" step to find the version number then install it with `yarn add xterm@x.y.z-betaX`
 2. Update the typings in `./src/typings/xterm.d.ts` by copying over the content and replacing the top portion with `./node_modules/xterm/typings/xterm.d.ts`.
 3. Build/test locally to make sure it works or push a branch and do a PR so that tests are run automatically. If the version change is significant it's a good idea to do a product build and verify it passes fully.
-4. Ideally write the commit message in the following format:
+4. Write the commit message in the following format:
    ```
    xterm@4.2.0-beta18
 
