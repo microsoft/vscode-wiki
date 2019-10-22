@@ -12,6 +12,8 @@ You'll need the following tools:
 - [Git](https://git-scm.com)
 - [Node.JS](https://nodejs.org/en/), **x64**, version `>= 10.16.0`, `< 11.0.0`
 - [Yarn](https://yarnpkg.com/en/), follow the [installation guide](https://yarnpkg.com/en/docs/install)
+  - **Windows:** There is a bug with yarn and older versions of nodejs when using git bash [#5717](https://github.com/yarnpkg/yarn/issues/5717)  
+  Install an older version of yarn to fix this. `npm install -g yarn@1.5.1`
 - [Python](https://www.python.org/downloads/release/python-2715/), at least version 2.7 (version 3 is __*not*__ supported)
   - **Note:** Python 2.7 will be automatically installed for Windows users through installing `windows-build-tools` npm module (see below)
 - A C/C++ compiler tool chain for your platform:
