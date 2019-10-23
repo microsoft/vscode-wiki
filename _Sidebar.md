@@ -3,6 +3,7 @@
 * [[Iteration Plans]]
 * [[Development Process]]
 * [[Issue Tracking]]
+  * [[Issues Triaging]]
   * [[Performance Issues]]
   * [[Community Issue Tracking]]
   * [[Keybinding Issues]]
