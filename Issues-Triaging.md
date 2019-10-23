@@ -43,13 +43,13 @@ digraph finite_state_machine {
 ``` -->
 ![gh-issue-flow](https://user-images.githubusercontent.com/4674940/67361378-4f038c00-f51d-11e9-981e-f0b6964f27ce.png)
 
-The chart uses three end states. They are easily identifiable:
+The chart uses three major states. They are easily identifiable:
 
-|End State|What your GitHub issue looks like|
+|State|What your GitHub issue looks like|
 |---|---|
 |Closed|matches the query `is:closed`|
 |Community Review|matches the query `milestone:"Backlog Candidates"`|
-|Accepted|any milestone expect `Backlog Candidates`|
+|Accepted|has any milestone expect `Backlog Candidates`|
 
 In the rest of this document, we'll go into more detail about each of the activities of triaging and how we make decisions.
 
