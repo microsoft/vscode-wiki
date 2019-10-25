@@ -27,6 +27,7 @@ In addition there can be feature sub areas which are colored light blue.
 |error-list|the error list||
 |integrated-terminal|integrated terminal panel|conpty, input, winpty, xtermjs|
 |extensions|extension UI, details, install|marketplace|
+|extensions-development|extension development tooling, including vscode-test, @types/vscode, vscode-dts||
 |issue reporter|issue reporter window||
 |||
 |api|vscode extension API||
