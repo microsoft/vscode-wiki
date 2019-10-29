@@ -113,7 +113,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] vscode-jshint **@rmacfarlane**
   - [ ] vscode-recipes **@chrisdias**
   - [ ] localization **@weeteckt**
-  - [ ] vscode-github-issues-prs **@chrmarti**
+  - [ ] vscode-remote-containers **@chrmarti**
   - [ ] inno-updater **@joaomoreno**
 - [ ] Review pull requests acknowledgements with `NOT MERGED - PLS REVIEW`. **endgame master**
 - [ ] Acknowledge issue trackers from the community **@chrmarti**
