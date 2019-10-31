@@ -53,7 +53,6 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+archived%3Afalse+milestone%3A%22September+2019%22+user%3Amicrosoft+label%3Averification-needed+-label%3Averified)
 - [ ] [🔖Verification](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aclosed+is%3Aissue+user%3Amicrosoft+milestone%3A%22September+2019%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+-repo%3Amicrosoft%2FAL+)
-- [ ] Check new OSS usage is entered into the [OSS registry](https://ossmsft.visualstudio.com/_apps/hub/ms.vss-oss-web.hub-oss) **owner**
 
 ##### Friday
 - [ ] Pause scheduled `insider` builds **endgame master**
@@ -113,7 +112,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] vscode-jshint **@rmacfarlane**
   - [ ] vscode-recipes **@chrisdias**
   - [ ] localization **@weeteckt**
-  - [ ] vscode-remote-containers **@chrmarti**
+  - [ ] vscode-github-issues-prs **@chrmarti**
   - [ ] inno-updater **@joaomoreno**
 - [ ] Review pull requests acknowledgements with `NOT MERGED - PLS REVIEW`. **endgame master**
 - [ ] Acknowledge issue trackers from the community **@chrmarti**
