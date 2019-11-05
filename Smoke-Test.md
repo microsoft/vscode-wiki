@@ -65,7 +65,7 @@ This task is about verifying how a first launch behaves for new users who have n
 
 #### Search
 * Use Search (<kbd>CTRL+SHIFT+F</kbd>, <kbd>⌘+SHIFT+F</kbd>) to find `body`
-  * Verify that 14 results in 5 files show up
+  * Verify that 16 results in 5 files show up
   * Verify you can run the search filtering for `*.js` files
   * Verify you can dismiss files from search results
   * Verify you can replace search results with a replace term
