@@ -11,9 +11,8 @@ Since bugs and/or features manifest themselves in both VS Code and xterm.js, it'
 Every commit that goes into the master branch of [xterm.js](https://github.com/xtermjs/xterm.js) is automatically released under the beta tag using Azure Pipelines. To update the module in vscode, follow these steps:
 
 1. Identify the release to be used and install it. Find the latest beta and install via `yarn add xterm@x-y-z-betaX` (also do this in the `remote/` and `remote/web` folders). If you want an older commit the easiest way to do this right now is to identify the commit and then find the "Merge pull request" build on this [pipeline](https://dev.azure.com/xtermjs/xterm.js/_build?definitionId=3), click into the "Release" job and view the output of the "Publish to npm" step to find the version number then install it with `yarn add xterm@x.y.z-betaX`
-2. Update the typings in `./src/typings/xterm.d.ts` by copying over the content and replacing the top portion with `./node_modules/xterm/typings/xterm.d.ts`.
-3. Build/test locally to make sure it works or push a branch and do a PR so that tests are run automatically. If the version change is significant it's a good idea to do a product build and verify it passes fully.
-4. Write the commit message in the following format:
+2. Build/test locally to make sure it works or push a branch and do a PR so that tests are run automatically. If the version change is significant it's a good idea to do a product build and verify it passes fully.
+3. Write the commit message in the following format:
    ```
    xterm@4.2.0-beta18
 
@@ -25,10 +24,8 @@ Every commit that goes into the master branch of [xterm.js](https://github.com/x
 
 ### Updating `xterm-addon-*`
 
-Similar to `xterm`, identify the release, pull it in and then update the typings. There are some typings hacks at the top due to issues with `gulp-tsb`.
-
-Once [xtermjs/xterm.js#2165](https://github.com/xtermjs/xterm.js/issues/2165) is done we can refine this process more.
+Similar to `xterm`, identify the release, pull it in and test it
 
 ### Building one off builds of xterm and addons
 
-Right now one off builds are manual. [xtermjs/xterm.js#2154](https://github.com/xtermjs/xterm.js/issues/2154) will improve this.
+Right now one off builds are manual.
