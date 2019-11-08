@@ -127,11 +127,12 @@ To test the changes you launch a development version of VS Code on the workspace
 .\scripts\code.bat
 ```
 
-**Web (Chromium browsers only)**
+**Web (Chromium, Firefox or Safari only)**
 
 ```bash
 yarn web
 ```
+You can use `--port`, `--host` and `--scheme` to further instruct the simple server that runs for the web version about your environment (e.g. if you want to test the web version over a network).
 
 You can identify the development version of Code ("Code - OSS") by the following icon in the Dock or Taskbar:
 
