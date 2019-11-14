@@ -49,7 +49,7 @@ The chart uses three major states. They are easily identifiable:
 |---|---|
 |Closed|matches the query `is:closed`|
 |Community Review|matches the query `milestone:"Backlog Candidates"`|
-|Accepted|has any milestone expect `Backlog Candidates`|
+|Accepted|has any milestone except `Backlog Candidates`|
 
 In the rest of this document, we'll go into more detail about each of the activities of triaging and how we make decisions.
 
