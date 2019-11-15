@@ -1,4 +1,4 @@
-* PointerEvent/MouseEvent
+* Pointer/Mouse Event
 	* PointerDown/MouseDown
 	* Pointer/MouseMove monitor
 	* Differentiate Touch/Pen/Mouse 
@@ -11,8 +11,9 @@
 		* list view
 	
 
-## PointerEvent/MouseEvent
-Pointer events are DOM events fired by pointer devices, which includes Mouse (majorly on desktop), Touch and Pen. Pointer events inherit from Mouse events, so we only need to adopt following generic mouse/pointer listeners without modifying out mouse handler code.
+## Pointer/Mouse Event
+
+Pointer events are DOM events fired by pointer devices, which include Mouse, Touch and Pen. Pointer events inherit from Mouse events, so we only need to adopt following generic mouse/pointer listeners without modifying out mouse handler code.
 
 ### PointerDown/MouseDown
 
