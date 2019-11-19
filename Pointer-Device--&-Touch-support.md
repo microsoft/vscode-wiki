@@ -1,3 +1,4 @@
+* Which event to listen to
 * Pointer/Mouse Event
 	* PointerDown/MouseDown
 	* Pointer/MouseMove monitor
@@ -10,6 +11,21 @@
 		* scrollable element
 		* list view
 	
+## Which event to listen to
+
+Choosing the right event to listen to is a hard decision to make, as there isn't a single unified browser standard to follow. If you are using basic elements from `vs/base/browser`, you may want to only listen to predefined event listeners on them. However if you are building a plain new view component, here is a quick cheatsheet
+
+- Do you customize overflow/scrolling, or double clicking?
+  - No
+    - Listen to both `scroll` for scrolling
+    - Listen to both `click` for clicking.
+  - Yes
+    - Add the element to `Gesture`
+    - Listen to both `wheel` and `GestureEvent.change` for scrolling
+    - Listen to both `click` and `GestureEvent.Tap` for clicking. (`GestureEvent.tapCount == 2` for double clicking)
+    - Listen to `GestureEvent.contextmenu` for content menu (right click)
+
+For more details, please read blow:
 
 ## Pointer/Mouse Event
 
