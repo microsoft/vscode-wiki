@@ -17,7 +17,7 @@ You'll need the following tools:
 - A C/C++ compiler tool chain for your platform:
   - **Windows**
     - Set a `PYTHON` environment variable pointing to your `python.exe`. E.g.: `C:\Python27\python.exe`
-	- Install a compiler for the native modules VSCode is depending on
+	- Install a compiler for the native modules VS Code is depending on
 		- Option 1 (recommended): Use Windows Build Tools npm module
 			- Start Powershell as Administrator and install [Windows Build Tools npm module](https://github.com/felixrieseberg/windows-build-tools) ([documentation](https://github.com/felixrieseberg/windows-build-tools#visual-studio-2017-vs-visual-studio-2015)).
 				```
@@ -107,9 +107,9 @@ The incremental builder will do an initial full build and will display a message
 👉 **Tip!** Open VS Code on the folder where you have cloned the `vscode` repository and press <kbd>CMD+SHIFT+B</kbd> (<kbd>CTRL+SHIFT+B</kbd> on Windows, Linux) to start the builder. To view the build output open the Output stream by pressing <kbd>CMD+SHIFT+U</kbd>.
 
 #### Errors and Warnings
-Errors and warnings will show in the console while developing Code. If you use VS Code to develop Code, errors and warnings are shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing <kbd>CMD+P</kbd> and then <kbd>!</kbd>.
+Errors and warnings will show in the console while developing VS Code. If you use VS Code to develop VS Code, errors and warnings are shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing <kbd>CMD+P</kbd> and then <kbd>!</kbd>.
 
-👉 **Tip!** You don't need to stop and restart the development version of Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut <kbd>CMD+R</kbd> (<kbd>CTRL+R</kbd> on Windows, Linux) to this command.
+👉 **Tip!** You don't need to stop and restart the development version of VS Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut <kbd>CMD+R</kbd> (<kbd>CTRL+R</kbd> on Windows, Linux) to this command.
 
 ### Run
 
@@ -145,7 +145,7 @@ VS Code has a multi-process architecture and your code is executed in different 
 
 The **render** process runs the UI code inside the Shell window. To debug code running in the **render** you can either use VS Code or the Chrome Developer Tools.
 
-#### Using VSCode
+#### Using VS Code
 * Install the [Debugger for Chrome](https://marketplace.visualstudio.com/items/msjsdiag.debugger-for-chrome) extension. This extension will let you attach to and debug client side code running in Chrome.
 * Open the `vscode` repository folder
 * Choose the `Launch VS Code` launch configuration from the launch dropdown in the Debug viewlet and press <kbd>F5</kbd>.
@@ -153,12 +153,12 @@ The **render** process runs the UI code inside the Shell window. To debug code r
 
 #### Using the Chrome Developer Tools
 
-* Run the `Developer: Toggle Developer Tools` command from the Command Palette in your development instance of Code to launch the Chrome tools.
-* It's also possible to debug the released versions of Code, since the sources link to sourcemaps hosted online.
+* Run the `Developer: Toggle Developer Tools` command from the Command Palette in your development instance of VS Code to launch the Chrome tools.
+* It's also possible to debug the released versions of VS Code, since the sources link to sourcemaps hosted online.
 
 [![sourcemaps](http://i.imgur.com/KU3TdjO.png)](http://i.imgur.com/KU3TdjO.png)
 
-The **extension host** process runs code implemented by a plugin. To debug extensions (including those packaged with Code) which run in the extension host process, you can use VS Code itself. Switch to the Debug viewlet, choose the `Attach to Extension Host` configuration, and press <kbd>F5</kbd>.
+The **extension host** process runs code implemented by a plugin. To debug extensions (including those packaged with VS Code) which run in the extension host process, you can use VS Code itself. Switch to the Debug viewlet, choose the `Attach to Extension Host` configuration, and press <kbd>F5</kbd>.
 
 The **search** process can be debugged, but must first be started. Before attempting to attach, start a search by pressing <kbd>CMD+P</kbd> (<kbd>CTRL+P</kbd> on Windows), otherwise attaching will fail and time out.
 
@@ -171,7 +171,7 @@ We also have automated UI tests. The [smoke test README](https://github.com/Micr
 Run the tests directly from a terminal by running `./scripts/test.sh` from the `vscode` folder (`scripts\test` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/master/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
 
 ### Linting
-We use [tslint](https://github.com/palantir/tslint) for linting our sources. You can run tslint across the sources by calling `gulp tslint` from a terminal or command prompt. You can also run `gulp tslint` as a Code task by pressing <kbd>CMD+P</kbd> (<kbd>CTRL+P</kbd> on Windows) and entering `task tslint`. Warnings from tslint show up in the `Errors and Warnings` quick box and you can navigate to them from inside Code.
+We use [tslint](https://github.com/palantir/tslint) for linting our sources. You can run tslint across the sources by calling `gulp tslint` from a terminal or command prompt. You can also run `gulp tslint` as a VS Code task by pressing <kbd>CMD+P</kbd> (<kbd>CTRL+P</kbd> on Windows) and entering `task tslint`. Warnings from tslint show up in the `Errors and Warnings` quick box and you can navigate to them from inside VS Code.
 
 To lint the source as you make changes you can install the [tslint extension](https://marketplace.visualstudio.com/items/ms-vscode.vscode-typescript-tslint-plugin).
 
@@ -187,7 +187,7 @@ Before we can accept a pull request from you, you'll need to sign a [[Contributo
 To enable us to quickly review and accept your pull requests, always create one pull request per issue and [link the issue in the pull request](https://github.com/blog/957-introducing-issue-mentions). Never merge multiple requests in one unless they have the same root cause. Be sure to follow our [[Coding Guidelines|Coding-Guidelines]] and keep code changes as small as possible. Avoid pure formatting changes to code that has not been modified otherwise. Pull requests should contain tests whenever possible.
 
 ### Introducing usage of new Electron API with a PR
-A pull request that depends on Electron API that VSCode is currently not using comes with a certain risk and maybe rejected. Whenever we update Electron, there is a chance that less popular Electron APIs break and it is very hard to find out upfront. Once a PR lands in VSCode, the role of maintaining the feature moves to the team and as such we have to follow up with upstream components to ensure the feature is still supported. As such, as a rule of thumb:
+A pull request that depends on Electron API that VS Code is currently not using comes with a certain risk and maybe rejected. Whenever we update Electron, there is a chance that less popular Electron APIs break and it is very hard to find out upfront. Once a PR lands in VS Code, the role of maintaining the feature moves to the team and as such we have to follow up with upstream components to ensure the feature is still supported. As such, as a rule of thumb:
 * avoid Electron APIs and use web standards instead (this also ensures that your feature is supported in our web client)
 * if you must use Electron APIs, we require a unit test at https://github.com/atom/electron so that we protect against future breakage.
 
@@ -208,7 +208,7 @@ Pull requests that fix spell check errors in **translatable strings** (strings i
 
 ## Packaging
 
-Code can be packaged for the following platforms: `win32-ia32 | win32-x64 | darwin | linux-ia32 | linux-x64 | linux-arm`
+VS Code can be packaged for the following platforms: `win32-ia32 | win32-x64 | darwin | linux-ia32 | linux-x64 | linux-arm`
 
 These `gulp` tasks are available:
 
@@ -218,7 +218,7 @@ These `gulp` tasks are available:
 See also: [Cross-Compiling for Debian-based Linux](https://github.com/Microsoft/vscode/wiki/Cross-Compiling-for-Debian-Based-Linux)
 
 ## Suggestions
-We're also interested in your feedback for the future of Code. You can submit a suggestion or feature request through the issue tracker. To make this process more effective, we're asking that these include more information to help define them more clearly.
+We're also interested in your feedback for the future of VS Code. You can submit a suggestion or feature request through the issue tracker. To make this process more effective, we're asking that these include more information to help define them more clearly.
 
 ## Translations
 We appreciate your localization contributions, either by providing new translations, voting on translations, or suggesting process improvements. We take translations through the Transifex service, not through the vscode repo. See [our localization site](https://aka.ms/vscodeloc) to get started.
