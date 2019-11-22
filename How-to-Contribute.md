@@ -1,5 +1,5 @@
-# Contributing to Code
-There are many ways to contribute to the Code project: logging bugs, submitting pull requests, reporting issues, and creating suggestions.
+# Contributing to Visual Studio Code
+There are many ways to contribute to the Visual Studio Code project: logging bugs, submitting pull requests, reporting issues, and creating suggestions.
 
 After cloning and building the repo, check out the [issues list](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue). Issues labeled [`help wanted`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) are good issues to submit a PR for. Issues labeled [`good first issue`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) are great candidates to pick up if you are in the code for the first time. If you are contributing significant changes, please discuss with the assignee of the issue first before starting to work on the issue.
 
@@ -69,7 +69,7 @@ In case of issues, try deleting the contents of `~/.node-gyp` first and then run
 
 ## Build and Run
 
-If you want to understand how Code works or want to debug an issue, you'll want to get the source, build it, and run the tool locally.
+If you want to understand how VS Code works or want to debug an issue, you'll want to get the source, build it, and run the tool locally.
 
 ### Getting the sources
 
@@ -134,14 +134,14 @@ yarn web
 ```
 You can use `--port`, `--host` and `--scheme` to further instruct the simple server that runs for the web version about your environment (e.g. if you want to test the web version over a network).
 
-You can identify the development version of Code ("Code - OSS") by the following icon in the Dock or Taskbar:
+You can identify the development version of VS Code ("Code - OSS") by the following icon in the Dock or Taskbar:
 
 [![VS Code default icon](https://i.imgur.com/D2CeX0y.png)](https://i.imgur.com/D2CeX0y.png)
 
 👉 **Tip!** If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `yarn watch` first.
 
 ### Debugging
-Code has a multi-process architecture and your code is executed in different processes.
+VS Code has a multi-process architecture and your code is executed in different processes.
 
 The **render** process runs the UI code inside the Shell window. To debug code running in the **render** you can either use VS Code or the Chrome Developer Tools.
 
