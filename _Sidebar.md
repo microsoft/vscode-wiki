@@ -19,7 +19,7 @@
 * [[How to Contribute]]
 * [[Submitting Bugs and Suggestions]]
 * [[Feedback Channels]]
-* [[Code Organization]]
+* [[Source Code Organization]]
 * [[Coding Guidelines]]
 * [[Smoke Test]]
 * [[Contributor License Agreement]]
