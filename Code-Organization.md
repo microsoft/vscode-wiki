@@ -1,17 +1,17 @@
-Code consists of a layered and modular `core` (found as `src/vs`) that can be extended using extensions. Extensions are run in a separate process referred to as the
+Visual Studio Code consists of a layered and modular `core` (found as `src/vs`) that can be extended using extensions. Extensions are run in a separate process referred to as the
 `extension host.` Extensions are implemented by utilizing the [extension API](https://code.visualstudio.com/docs/extensions/overview).
 
 # Layers
 
 The `core` is partitioned into the following layers:
 - `base`: Provides general utilities and user interface building blocks
-- `platform`: Defines service injection support and the base services for Code
+- `platform`: Defines service injection support and the base services for VS Code
 - `editor`: The "Monaco" editor is available as a separate downloadable component
-- ~`languages`: For historical reasons, not all languages are implemented as extensions (yet) - as Code evolves we will migrate more languages to towards extensions~
-- `workbench`: Hosts the "Monaco" editor and provides the framework for "viewlets" like the Explorer, Status Bar, or Menu Bar, leveraging [Electron](http://electron.atom.io/) to implement the Code desktop application.
+- ~`languages`: For historical reasons, not all languages are implemented as extensions (yet) - as VS Code evolves we will migrate more languages to towards extensions~
+- `workbench`: Hosts the "Monaco" editor and provides the framework for "viewlets" like the Explorer, Status Bar, or Menu Bar, leveraging [Electron](http://electron.atom.io/) to implement the VS Code desktop application.
 
 # Target Environments
-The `core` of Code is fully implemented in [TypeScript](https://github.com/microsoft/typescript). Inside each layer the code is organized by the target runtime environment. This ensures that only the runtime specific APIs are used. In the code we distinguish between the following target environments:
+The `core` of VS Code is fully implemented in [TypeScript](https://github.com/microsoft/typescript). Inside each layer the code is organized by the target runtime environment. This ensures that only the runtime specific APIs are used. In the code we distinguish between the following target environments:
 - `common`: Source code that only requires basic JavaScript APIs and run in all the other target environments
 - `browser`: Source code that requires the `browser` APIs like access to the DOM
   - may use code from: `common`
@@ -43,7 +43,7 @@ class Client {
 
 Use the instantiation service to create instances for service consumers, like so `instantiationService.createInstance(Client)`. Usually, this is done for you when being registered as a contribution, like a Viewlet or Language.
 
-# Code Editor source organization
+# VS Code Editor source organization
 
 * the `vs/editor` folder should not have any `node` or `electron-browser` dependencies.
 * `vs/editor/common` and `vs/editor/browser` - the code editor core (critical code without which an editor does not make sense).
