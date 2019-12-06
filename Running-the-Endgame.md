@@ -69,7 +69,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] Windows - **owner**
   - [ ] OS X - **owner**
   - [ ] Linux - **owner**
-  - [ ] Web - **owner**
+  - [ ] Web (manual until https://github.com/microsoft/vscode/issues/80308 is done) - **owner**
 - [ ] All release notes updated
   - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
   - [ ] @aeschli
