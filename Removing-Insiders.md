@@ -14,7 +14,7 @@ Terminal: `rm -r .vscode-insiders`
 
 Uninstall Visual Studio Code - Insiders
 
-GUI Based: Navigate to Control Panel -> Programs -> Program and Features. Search for "Visual Studio Code - Insider", right click and select "Uninstall"
+GUI Based: Navigate to Control Panel -> Programs -> Programs and Features. Search for "Visual Studio Code - Insider", right click and select "Uninstall"
 
 ## Linux
 
