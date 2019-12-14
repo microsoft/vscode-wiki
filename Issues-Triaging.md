@@ -77,7 +77,7 @@ We close issues with the help of a bot that responds to a particular comment suc
 
 If an issue misses information that we need to understand the issue, we assign the `needs more info` label. We usually add the `/needsMoreInfo` comment to the issue which lets the bot add the label as well as a comment with links to documentation. If the issue is a performance issue we ask you to follow [this documentation](https://github.com/Microsoft/vscode/wiki/Performance-Issues).
 
-The bot is monitoring all issues labeled `needs more info`. If we don't receive the needed information within 4 days the bot closes the issue.
+The bot is monitoring all issues labeled `needs more info`. If we don't receive the needed information within 7 days the bot closes the issue.
 
 ## Categorizing Issues
 
