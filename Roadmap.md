@@ -1,12 +1,12 @@
-# The VS Code Roadmap 2019 - DRAFT UPDATE
+# The VS Code Roadmap 2020
 
-As [2018](https://github.com/Microsoft/vscode/wiki/Roadmap-2018) has come to an end, now is the time to look towards the future. We typically look out 6 to 12 months and establish topics we want to work on.
+As [2019](https://github.com/Microsoft/vscode/wiki/Roadmap-2019) is coming to an end, now is the time to look towards the future. We typically look out 12-18 months and we establish topics we want to work on. We don't start with our roadmap on a blank sheet. We develop it based on our last roadmap, the findings we made over the course of the last year, and of course what we heard from you in issues, in face-to-face discussions, stack overflow, and twitter.
 
-As we go we learn and our assessment of some of the topics listed changes. Thus, we may add or drop topics as we go.
+When we execute on our roadmap, we keep learning and our assessment of some of the topics listed changes. As a result, we may add or drop topics as we go. In 12 months from now, we then come together to develop the next roadmap.
 
-We describe some initiatives as "investigations" which means our goal in the next few months is to better understand the problem and potential solutions before scheduling actual feature work. Once an investigation is done, we will update our plan, either deferring the initiative or committing to it.
+We describe some initiatives as "investigations" or "explorations" which means our goal in the next few months is to better understand the problem and potential solutions before scheduling actual feature work. Once an investigation is done, we will update our plan, either deferring the initiative or committing to it.
 
-As always, we will listen to your feedback and adapt our plans if needed. 
+As always, we listen to your feedback and adapt our plans if needed. 
 
 Legend of annotations:
 
@@ -16,137 +16,151 @@ Legend of annotations:
 | check mark | work completed |
 | :runner: | on-going work |
 | :muscle: | stretch goal |
+| :red_circle: | missing link |
 
 
 ## Themes
 
-Our roadmap covers the following themes:
-- Become the best editor out there for anyone who relies on accessibility features.
-- performance, scalability, serviceability, security
-- tackle some of the most wanted user features
-- polishing and a constant slow trickle of design refreshments
-- incrementally improve already existing features
-- responsibly enable extensions that have broader extensibility requirements
+Our roadmap covers the broadly the following themes:
+- Become the best editor for anyone who relies on accessibility features
+- Improve performance, scalability, and security of VS Code and its extensions
+- Tackle some of the most wanted and most emotional user features
+- Polishing and a constant trickle of design refreshments
+- Incrementally improve already existing features
+- Responsibly enable extensions that have broader extensibility requirements
+- Tackle a couple of big rocks that push the boundaries of what VS Code can do
 
 ## Fundamentals
 
-* :runner: Make VS Code an outstandingly accessible developer tool. We'll engage and work with our community to get input and guidance, and we need you to keep us honest.
-* :runner: Keep start-up times within a predictable and suitable range for users across all platforms and improve the overall performance for large workspace:
-  * Load less code on start-up and investigate improving the workbench restoration time by expanding on the [rapid render](https://code.visualstudio.com/updates/v1_26#_rapid-render) approach.
-  * [x] Implement a new tree widget that scales better 
-  * Adopt the new tree widget across the workbench:
-    - [ ] comments
-    - [ ] quick pick.    
-    - [x] explorer 
-    - [x] search
-    - [x] settings
-    - [x] outline
-    - [x] debugger
-
-
-* Improve serviceability
-  * [x] Make it easy to identify extensions that negatively impact the overall performance of VS Code.
+- :runner: Make VS Code an outstandingly accessible developer tool. We'll engage and work with our community to get input and guidance, and we need you to keep us honest.
+- Improve support for RTL languages.
+- :runner: Keep start-up times within a predictable and suitable range for users across all platforms and improve the overall performance for large workspace:
+  - Load less code on start-up and investigate improving the workbench restoration time by expanding on the [rapid render](https://code.visualstudio.com/updates/v1_26#_rapid-render) approach.
+  - Continuously monitor the size of the VS Code download to ensure it downloads in seconds no matter where you are.
+- Improve VS Code performance in large workspaces
+   - Investigate 'working sets' of files and folders in the file explorer
+   - Provide guidance to users how to configure VS Code
+   - Improve Open File / Quick Pick performance
+- Make VS Code more secure by running renderer processes **without** access to `node` APIs.
 
 ## Workbench
 
-* Workbench layout
-  * Support for detachable workbench parts is our most upvoted [feature request](https://github.com/Microsoft/vscode/issues/10121) which due to [architectural issues](https://github.com/Microsoft/vscode/issues/10121#issuecomment-345497635) is challenging to implement. We will explore how we can work around this limitation. This investigation will focus on detaching terminals (2nd most upvoted feature request) and editors.
-  * :runner: Enable a more flexible panel/sidebar layout.
-* Improve working with the file explorer 
-  * :runner: Support to compress/flatten single child directories
-  * Investigate 'working sets' of files and folders
-* Investigate how to safely provide richer customizability in the workbench
-   * :runner: Support [custom editors](https://github.com/Microsoft/vscode/issues/12176).
-   * Investigate custom Views (based on WebViews).
-* Support [synchronizing settings and extensions](https://github.com/microsoft/vscode/issues/2743)
- across VS Code installations on different machines.
-* [x] Provide filtering and fast keyboard navigation in trees across the workbench.
+- Workbench layout
+  - Support for detachable workbench parts is our most upvoted [feature request](https://github.com/Microsoft/vscode/issues/10121) which due to [architectural issues](https://github.com/Microsoft/vscode/issues/10121#issuecomment-345497635) is challenging to implement. We will explore how we can work around this limitation. This investigation will focus on detaching terminals (2nd most upvoted feature request) and editors.
+  - :runner: Allows to move views between the panel and sidebar.
+   - Support a more flexible workbench layout such as allow sidebars on the left and the right. For example, you could have your outline on the right and the file explorer on the left.
+- Investigate how to safely provide richer customizability in the workbench
+   - :runner: Support [custom editors](https://github.com/Microsoft/vscode/issues/12176).
+   - Investigate custom views based on `WebViews`.
+- Support to configure workbench font and font size
+- Broaden support to customize the UI, e.g. context menus.
+
+## Settings
+
+- :runner: Support [synchronizing settings and extensions](https://github.com/microsoft/vscode/issues/2743) across VS Code installations on different machines.
+- In the settings editor, provide high-fidelity support for additional settings types such as colors.
+- Provide a dedicated theme customization editor.
+- Support to synchronize settings between the insider and stable versions of VS Code
 
 ## Search
-* Show search results not only in the side bar or a panel, but also in an editor. This allows us to show additional context information for each match.
-* Investigate a combined search result representation
+
+- :runner: Show search results not only in the side bar or a panel, but also in an editor. This allows users to work with multiple search results and to see additional context for each match.
 
 ## UX
 
-* Continue to incrementally improve presentation and behavior across the board. Examples include:
-   * :runner: Harmonize hovers, completion items, completion item details
-   * Welcome page
-   * :runner: Use tabs instead of the terminal dropdown
-   * [x] Iconography
-* Revisit/review the first run experience (e.g. notification reduction)
-* Explore how to integrate fluent design on Windows
+- Continue to incrementally improve presentation and behavior across the board. Examples include:
+   - :runner: Harmonize hovers, completion items, completion item details
+   - Welcome page
+   - :runner: Use tabs instead of the terminal dropdown
+- Revisit/review the first run experience for VS Code as well as newly installed extensions. For example, we want to reduce the number of notifications that are shown.
+- Touch and mobile support for VS Code in the browser
+- Investigate how users can express what they want to use VS Code for after they installed it. For example, a user wants to develop a website with a Go backend, VS Code should provide light-weight guidance to get all the right extensions and configure them appropriately.
 
 ## Editor
 
-* Investigate isolating the editor from misbehaving grammars.
-* :runner: Investigate support for semantic coloring
-* Investigate how to simplify the maintenance of textmate grammars
-* Touch support
-* Expand 'inline' experiences
-  * Inset editing
-  * Inline errors
-  * Richer minimap
-  * Inline values (on by default, see debugging)
-* Smarter indent support (e.g. for Python)
-* [x] Bring back localization support in the standalone Monaco editor. This support had been suspended when we added support for language packs for VS Code.
+- :runner: Notebooks (for example Jupyter) have become a popular means in data science and education and are making their way into every corner of development. We'll explore how VS Code and the Monaco Editor can provide a rich notebook experience (deep language services, light-weight/simple debugging).
+- Investigate isolating the editor from misbehaving grammars
+- :runner: Investigate support for semantic coloring
+- Investigate how to simplify the maintenance of textmate grammars
+- Expand 'inline' experiences
+   - Inset editing
+   - Inline errors
+   - :runner: Richer minimap
+   - Inline values (on by default, see debugging)
+- Smarter indent support (e.g. for Python)
+- Prevent tooltips from getting into your way when editing
+- Support word-wrap in the diff editor
 
 ## Languages
 
-TypeScript for React or Vue.
-* :runner: Enable programming language extensions to provide support for call hierarchies.
-* Enable programming language extensions to provide support for type hierarchies.
-* Workspace level edits
-  * Enable language extensions to participate in workspace edits (rename, move).
-  * Enable composite undo of workspace edits.
-  * Investigate previewing workspace edits (e.g. preview the changes of a rename refactoring).
-* [x] Improve 'Expand Selection' to better adhere to the semantics of programming languages.
-* [x] Improve support for navigating and presenting complex error descriptions such as those generated by 
+- :runner: Enable programming language extensions to provide support for call hierarchies.
+- Enable programming language extensions to provide support for type hierarchies.
+- Improve support for workspace-level edits (an semantic unit comprised of name, location, and content manipulations across multiple files)
+   - :runner: Enable language extensions to participate in workspace edits such as rename or move.
+   - Enable an one-step undo of complex workspace edits.
+   - Investigate how a user can preview workspace edits (e.g. preview the changes of a rename refactoring).
+- Incrementally improve support for nested languages. This will be code changes on our side as well as samples and documentations.
 
 ### TypeScript
 
-We will continue to collaborate deeply with the TypeScript team to deliver the richest code editing, navigation, and understanding experiences for both TypeScript and JavaScript. see also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap).
+We will continue to collaborate deeply with the TypeScript team to deliver the richest code editing, navigation, and understanding experiences for both TypeScript and JavaScript. see also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap). One focus item will be to show the errors and warnings for the entire project(s) in your workspace.
 
-* [x] Improve the integration of [tslint](https://palantir.github.io/tslint/) by running it as a TypeScript Server [plugin](https://github.com/Microsoft/TypeScript/wiki/Writing-a-Language-Service-Plugin).
+### HTML/CSS
+
+- Provide a live preview.
+
 
 ## SCM
-* Investigate GitLens synergies
-* Improve Github PR extension
-* Full merge support
+
+- Investigate synergies between the core git support and GitLens
+- Provide an overall improved GitHub integration, e.g. we'll make it easier to hover over issue URL in your code or associate a GitHub issue with your commit.
+- Provide full merge support (3-way)
+- Investigate support for showing a local history of a file and folder and combine that with the git history
+- Investigate timeline support for combining local history with other events such as successful test runs or refactorings
 
 ## Debug
-* Improve hovering and inline values by leveraging the knowledge about the programming language so that the `Inline Values` feature can be enabled by default
-* Investigate 'full stack' debugging improvements, combined node (server) and chrome (client) debugging.
-* [x] Support data breakpoints
-* [x] Continue to invest in documenting debugging recipes for common configurations
+
+- :runner: Leverage language services to improve debug experience. For example, improve hovering and inline values by leveraging the knowledge about the programming language so that the `Inline Values` feature can be enabled by default
+-  :runner: Provide improved 'full stack' debugging, i.e. combined `node` (server) and `chrome` (client) debugging.
 
 ## Testing
-* Investigate how VS Code can improve the testing support. Several extensions are already providing testing support, explore what APIs/UIs could be added to improve these testing extensions.
+
+- Investigate how VS Code can improve the testing support. Several extensions are already providing testing support, explore what APIs/UIs could be added to improve these testing extensions and the test running experience.
 
 ## Install
-* Investigate into migration to the [MSIX installer on Windows](https://docs.microsoft.com/en-us/windows/msix/).
+
+- Investigate migrating to the [MSIX installer](https://docs.microsoft.com/en-us/windows/msix/) on Windows.
+
+## Terminal
+
+- Investigate how to persist integrated terminal sessions across window reloads and application restarts.
+- Investigate how to support problem matchers to run in any internal terminals
 
 ## Extensions
 
-* Extension Acquisition
-  * Revisit how users find and install extensions
-  * Improve the recommendation system.
-  * Add support to only activate signed extensions (see next section).
-  * [x] Support installing an extension without having to reload the workbench. This is our 3rd most upvoted [feature request](https://github.com/Microsoft/vscode/issues/14444).
+- Extension Acquisition
+   - Revisit how users find and install extensions including a simple text-based approach
+   - Make it easier for users to pick and choose which functionality they want from extensions packs.
+   - Improve the recommendation system, e.g., allow users to ask for recommendations based on their prior use of VS Code.
+   - Add support to only activate signed extensions (see *Extension Authoring*).
 
-* Extension Management
-  * Make the consumption of extensions more secure and improve the process for how we handle malicious extensions.
-  * Show runtime information for an extension (activation state, performance, error logs)
-  * Investigate customizing extension contributions by the user (context menus, completion providers).
+- Extension Management
+   - Make the consumption of extensions more secure and improve the process for how we handle malicious extensions.
+   - Show runtime information for an extension (activation state, performance, error logs)
 
-* Extension Publishing
-  * Investigate 'welcome' experience for extensions.
-  * Informing users about new features/releases.
-  * Investigate into play grounds like the VS Code playground (`Help>Interactive Playground`) for extensions.
-  * :runner: Collaborate with extension authors to improve their extensions. Examples are: Use [Webpack](https://github.com/Microsoft/vscode-extension-samples/tree/master/webpack-sample) to improve install and activation, minimize dependencies of an extension, ensure `vscode` is only a development dependency.
-  * :runner: Enable extensions to install additional platform specific components.
-  * Support publishing of signed extensions.
-  * Add support for verified publishers.
+- Extension Authoring
+   - Provide clear guidance to extension authors for how to structure their functionality so that their users can get as little or as much functionality as they want. For example, ensure text editor lovers can get Python language support without too much overhead.
+   - Provide an integrated 'Welcome' experience for extensions.
+   - Investigate how to effectively inform users about new features provided by an extension update.
+   - Investigate into play grounds like the VS Code playground (`Help>Interactive Playground`) for extensions.
+   - Provide extensions more control over the sequence and grouping of their settings in the settings editor, e.g., support to group *commonly used* settings.
+   - Give extensions more realtime insights into how user configured them, e.g. the user hides the custom tree view your extension contributes from the explorer.
 
+- Extension Publishing
+   - :runner: Work with the marketplace to allow platform specific flavors of extensions.
+   - Support publishing of signed extensions.
+   - Add support for verified publishers.
+   - Investigate providing a GitHub action for publishing to the marketplace.
 
 ## Contributions to VS Code Extensions
 
@@ -154,21 +168,20 @@ Our teams contributes to a number of extensions that are available in the market
 
 Our main focus will be on the following extensions:
 
-* :runner: [VS Code Remote SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
-* :runner: [VS Code Remote WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
-* :runner: [VS Code Remote Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-* :runner: [GitHub Pull Request extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+* :red_circle: VS Code Remote roadmap
+* :runner: [GitHub Pull Request extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) and related extensions
 * :runner: [Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
 * :runner: [Vue extension](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+* :runner: [GitLens extension](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
 We will continue to maintain the following extensions:
-* :runner: [Chrome Debug extension](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 * :runner: [ES Lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-* :runner: [TS Lint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
 * :runner: [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 * :runner: [Markdown customization extensions](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview)
 
-We will investigate into improving the performance of existing popular extensions that make the extension host unresponsive, e.g., [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer), [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag).
+We will investigate into improving the performance of popular extensions that not performing as well as users expect
+   - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+   - [VIM](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 ## Contributions to Underlying Components and Technologies
 
@@ -176,30 +189,44 @@ VS Code is made possible through a wide range of technologies. Below are example
 
 ### Language Server Protocol
 
-* :runner: Continue to refine and improve the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) with support from the community.
-* [x] Define a [Language Server Index Format](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md) (LSIF, pronounce like "else if") that enables a language server to persist their language intelligence, so that it can be subsequently used to answer LSP requests at-scale (for example, hover and go to definition).
+- :runner: Continue to refine and improve the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) with support from the community.
+- :runner: Continue to refine and improve the [Language Server Index Format](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md) with support from the community.
 
 ### Debug Adaptor Protocol
 
-* :runner: Continue to refine and improve the [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol/) with support from the community.
-* :runner: Expose more UI for DAP features that are currently not surfaced in the VS Code debugging UI. This includes moving the loaded scripts UI into the core. 
+- :runner: Continue to refine and improve the [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol/) with support from the community.
+- :runner: Expose more UI for DAP features that are currently not surfaced in the VS Code debugging UI. This includes moving the loaded scripts UI into the core. 
 
 ### xterm.js
 
-* :runner: Investigate replacing canvas based rendering through WebGL based rendering
-* [x] Work with the [`xterm.js`](https://xtermjs.org) community to improve parsing and internal line representations
-* [x] Adopt `conpty` on Windows
-* [x] Reflow lines when resizing the terminal
+- :runner: Provide ongoing improvements to [`xterm.js`](https://github.com/xtermjs/xterm.js) for performance, stability, and maintainability
 
 ## Engineering
-- Migrate from `tslint` to `eslint`. Tslint will be deprecated.
-- Improve the built-in issue reporter, support to paste/attach images.
-- Improve Smoke Tests, revisit the current approach on how we implement the automated smoke tests.
+
+- Migrate from `tslint` to `eslint`. Tslint will be [deprecated](https://github.com/palantir/tslint/issues/4534).
+- Improve the built-in issue reporter, e.g., support to paste/attach images.
+- Implement tooling that allows us to detect issues in which emotions fly high.
+- Improve our "smoke" tests and revisit the current approach on how we implement them.
+- Investigate automating how we sanity check all our binaries right before we release.
+- Investigate moving our GitHub bots to GitHub actions.
+- Improve our GitHub issue bots, examples:
+   - reject invalid incoming issues automatically
+   - make it easier to move issue to extension repositories
+   - automate training of our classification bot
+
+## Explorations
+
+- Explore support to synchronize more state when opening the same folder in different VS Code installs such as  untitled files, open files, focussed editor.
+- Explore how to better provide support for low-end devices.
+- Explore how to support new user in learning VS Code (interactive exploration mode, videos)  
+- Explore how to make it easier to show, tell, and share your VS Code customizations.
+- Explore how to support trying out VS Code for a particular language or technology stack without any local installation. For example, 'Debug Java code in less than 1 minute'.
+
 
 ## Documentation
 
 - :runner: Refresh all of our dated overview videos. 
-- [x] Make it easier for extension authors to find their way around. Improve our API documentation, and integrate samples and documentation more closely. 
+- Provide translated documentation for major user groups such as Mandarin, Korean, Spanish, Portuguese, French. Noe: the list of languages might change.
 
 ## Community Support
 
@@ -207,4 +234,4 @@ VS Code is made possible through a wide range of technologies. Below are example
 
 ## Summary
 
-These are examples of some of the work we will be focusing on in the next 6 to 12 months. We continuously tune the plan based on feedback and we will provide more detail in each of our [monthly iteration plans](https://github.com/Microsoft/vscode/wiki/Iteration-Plans). Please follow along and let us know what you think!
+These are examples of some of the work we will be focusing on in the next 12-18 months. We continuously tune the plan based on feedback and we will provide more detail in each of our [monthly iteration plans](https://github.com/Microsoft/vscode/wiki/Iteration-Plans). We will develop our next roadmap in around 12 months from now. Please follow along and let us know what you think! 
