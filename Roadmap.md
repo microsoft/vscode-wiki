@@ -1,4 +1,4 @@
-# The VS Code Roadmap 2020
+# The Visual Studio Code Roadmap 2020
 
 As [2019](https://github.com/Microsoft/vscode/wiki/Roadmap-2019) is coming to an end, now is the time to look towards the future. We typically look out 12-18 months and we establish topics we want to work on. We don't start with our roadmap on a blank sheet. We develop it based on our last roadmap, the findings we made over the course of the last year, and of course what we heard from you in issues, in face-to-face discussions, stack overflow, and twitter.
 
@@ -80,7 +80,7 @@ Our roadmap covers the broadly the following themes:
 
 - :runner: Notebooks (for example Jupyter) have become a popular means in data science and education and are making their way into every corner of development. We'll explore how VS Code and the Monaco Editor can provide a rich notebook experience (deep language services, light-weight/simple debugging).
 - Investigate isolating the editor from misbehaving grammars
-- :runner: Support for semantic coloring
+- :runner: Investigate support for semantic coloring
 - Investigate how to simplify the maintenance of textmate grammars
 - Expand 'inline' experiences
    - Inset editing
@@ -120,9 +120,8 @@ We will continue to collaborate deeply with the TypeScript team to deliver the r
 
 ## Debug
 
-- :runner: Leverage language services to improve debug experience. For example, improve hovering and inline values by leveraging the knowledge about the programming language so that the `Inline Values` feature can be enabled by default. Similarly, we want to leverage language services to improve the debug console experience.
-- :runner: Provide improved 'full stack' debugging, i.e. combined `node` (server) and `chrome` (client) debugging.
-
+- :runner: Leverage language services to improve debug experience. For example, improve hovering and inline values by leveraging the knowledge about the programming language so that the `Inline Values` feature can be enabled by default
+-  :runner: Provide improved 'full stack' debugging, i.e. combined `node` (server) and `chrome` (client) debugging.
 
 ## Testing
 
