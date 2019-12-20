@@ -67,7 +67,8 @@ We close issues for the following reasons:
 |The issue was caused by an extension.| `*caused-by-extension`|
 |The issue is a developer question.| `*dev-question`|
 |The issue is a user question.| `*question`|
-|The issue is off-topic, does not contain any actionable information or was unintended.| `invalid`|
+|The issue is not related to the goals of our project and/or therefore unactionable| `*off-topic`|
+|The issue does not contain any valid or useful information or was unintended.| `invalid`|
 |Given the information we have we can't reproduce the issue. | `*not-reproducible`|
 |The feature request is out of scope. (See [below](#managing-feature-requests)) | `*out-of-scope`|
 
