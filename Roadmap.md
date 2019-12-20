@@ -168,7 +168,7 @@ Our teams contributes to a number of extensions that are available in the market
 
 Our main focus will be on the following extensions:
 
-* :red_circle: VS Code Remote roadmap
+* :runner: [VS Code Remote](https://github.com/microsoft/vscode-remote-release/wiki/Roadmap)
 * :runner: [GitHub Pull Request extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) and related extensions
 * :runner: [Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
 * :runner: [Vue extension](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
