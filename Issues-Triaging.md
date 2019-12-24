@@ -71,6 +71,7 @@ We close issues for the following reasons:
 |The issue does not contain any valid or useful information or was unintended.| `invalid`|
 |Given the information we have we can't reproduce the issue. | `*not-reproducible`|
 |The feature request is out of scope. (See [below](#managing-feature-requests)) | `*out-of-scope`|
+|The issue is tracked in a repository we rely on. | `upstream-issue-linked`, `upstream`|
 
 We close issues with the help of a bot that responds to a particular comment such as `/duplicate of #1234` or to assigning a label with adding a pre-canned comment to the issue and closing the issue.
 
@@ -92,7 +93,7 @@ Each issue must have a **type** label. Most type labels are grey, some are yello
 |[`under-discussion`](https://github.com/microsoft/vscode/labels/under-discussion) | not decided whether the issue is a bug or feature|
 |[`debt`](https://github.com/microsoft/vscode/labels/debt) | improve the implementation/architecture|
 |[`*question`](https://github.com/microsoft/vscode/labels/%2Aquestion) | we should direct questions to StackOverflow|
-|[`upstream`](https://github.com/microsoft/vscode/labels/upstream) | an issue used to track an issue in an upstream component|
+|[`upstream`](https://github.com/microsoft/vscode/labels/upstream), [`upstream-issue-linked`](https://github.com/microsoft/vscode/labels/upstream-issue-linked) | an issue used to track an issue in an upstream component|
 |[`electron`](https://github.com/microsoft/vscode/labels/electron) | an issue with electron|
 |[`engineering`](https://github.com/microsoft/vscode/labels/engineering) | issues related to our engineering system or our processes|
 
