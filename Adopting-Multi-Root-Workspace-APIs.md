@@ -229,7 +229,7 @@ Since language servers usually act on a workspace they are also affected by the 
 
 The first decision the author of a language server must make is whether a single server can handle all the folders in a multi-root folder setup or whether you want to run a server per root folder. Using a single server is the recommended way. Sharing a single server is more resource friendly than running multiple servers. 
 
-Language servers that operate on a single file like a CSS or JSON file or linters that validate a single file at a time can easily handle multiple folders. We have already migrated the HTML, JSON, CSS language servers and the 'eslint' and 'tslint' Language servers. We have implemented them all as a single language server. The [lsp-multi-root-sample example](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-root-sample) demonstrates the use of the new protocol workspace folder and configuration protocol. We recommend that you also review the corresponding extensions when migrating your server. 
+Language servers that operate on a single file like a CSS or JSON file or linters that validate a single file at a time can easily handle multiple folders. We have already migrated the HTML, JSON, CSS language servers and the 'eslint' and 'tslint' Language servers. We have implemented them all as a single language server. The [lsp-sample example](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample) demonstrates the use of the new protocol workspace folder and configuration protocol. We recommend that you also review the corresponding extensions when migrating your server. 
 
 Language servers that operate on multiple files with interdependencies can be different and you need to evaluate whether you want to start a server per workspace folder to isolate folders from each other. We have migrated the TypeScript/JavaScript language server and we were able to use a single server for multiple folders. We added support to this to the `vscode-languageclient` library and the [lsp-multi-server-sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-server-sample) example demonstrates the use of a server per folder. 
 
@@ -244,7 +244,7 @@ A setting that supports file paths relative to a workspace needs special treatme
 Sample|Description
 ------|-----------|
 **[Basic multi root](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample)**|Illustrates the `WorkspaceFolder` API and how to work with a resource scoped configuration setting.|
-**[Language Server Settings](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-root-sample)**|Demonstrates how to handle configuration settings in a language server.|
+**[Language Server Settings](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample)**|Demonstrates how to handle configuration settings in a language server.|
 **[Multi Language Server](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-server-sample)**|Starts a language server for each root folder in a workspace.|
 
 ## Writing Tests
