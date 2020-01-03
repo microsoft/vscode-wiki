@@ -97,6 +97,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - [ ] vscode-node-debug **@weinand**
   - [ ] vscode-node-debug2 **@roblourens**
   - [ ] vscode-debugadapter-node **@weinand**
+  - [ ] vscode-js-debug **@connor4312**
   - [ ] vscode-languageserver-node **@dbaeumer**
   - [ ] language-server-protocol **@dbaeumer**
   - [ ] vscode-textmate **@alexandrudima**
