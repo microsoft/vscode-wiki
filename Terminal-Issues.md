@@ -43,7 +43,7 @@ For some terminal issues it's useful to get trace logs, this can reveal at what 
 1. Close all VS Code windows
 2. Launch VS Code from the terminal using `code --log trace`
 3. At this point you should reproduce the terminal issue you're having
-4. Run the command "Developer: Open Log File..." (<kbd>F1</kbd> opened command palette) to get an editor containing the logs
+4. Run the command "Developer: Open Log File..." (<kbd>F1</kbd> opened command palette) and select Window to get an editor containing the logs
 
 ### Enabling escape sequence logging
 
