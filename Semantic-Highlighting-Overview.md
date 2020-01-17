@@ -2,7 +2,7 @@
 ## SemanticTokensProvider API (proposed)
 
   - 3 flavors:
-	- tokens for a given set of ranges (e.g. view port)
+	- tokens for a range (e.g. view port)
 	- tokens for the full document
 	- tokens for the full document with a reference to the previous result: Result will be reported as delta (`SemanticTokenEdits`)
 
