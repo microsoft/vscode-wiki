@@ -117,7 +117,7 @@ Each issue must have a **feature area** label. Feature area labels are dark blue
 ## Assigning a Milestone
 
 In addition to milestones representing our iterations and releases such as **`November 2019`**, we have three milestones with special meaning:
-- Issues assigned to **`Backlog`**: Our team wants to implement the feature request/fix the issue. The issue is not yet assigned to a concrete iteration.
+- Issues assigned to **`Backlog`**: Our team is in favor of implementing the feature request/fix the issue. The issue is not yet assigned to a concrete iteration. If and when a Backlog item is scheduled for a concrete iteration depends on how well the issue aligns with our **[Roadmap](https://github.com/microsoft/vscode/wiki/Roadmap)**. We review and update our roadmap at least once every 12 months. The Backlog helps us shaping our Roadmap but it is not the only source of input. Therefore, some Backlog items will be closed as **out-of-scope** once it becomes clear that they do not align with our Roadmap.
 - Issues assigned to **`On Deck`**: Our team wants to implement the feature/fix the issue. The issue is on the short list to be assigned to a concrete iteration. Note: **`On Deck`** is used sparsely. More commonly, issues go from **`Backlog`** directly to concrete iterations.
 - Issues assigned to **`Backlog Candidates`**: Our team does not intent to implement the feature request/fix the issue but wants the community to weigh in before we make our final decision. See also [Managing Feature Requests](#managing-feature-requests).
 
