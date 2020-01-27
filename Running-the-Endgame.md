@@ -189,35 +189,4 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 ### OS Test Availability
 
-| Name          | GitHub Alias   | Linux | Mac | Windows |
-| :------------ |:---------------|:-----:|:---:|:-------:|
-| Alex          | @alexandrudima |       |     |    x    |
-| Andre         | @weinand       |  x    |  x  |    x    |
-| Ben           | @bpasero       |  x    |  x  |    x    |
-| Brad          | @bgashler1     |  x    |  x  |    x    |
-| Chris         | @cdias         |  x    |  x  |    x    |
-| Christof      | @chrmarti      |  x    |  x  |    x    |
-| Daniel        | @tyriar        |  x    |  x  |    x    |
-| Dirk          | @dbaeumer      |       |     |    x    |
-| Erich         | @egamma        |  x    |  x  |    x    |
-| Greg          | @gregvanl      |  x    |  x  |    x    |
-| Isidor        | @isidorn       |  x    |  x  |    x    |
-| Joao          | @joaomoreno    |  x    |  x  |    x    |
-| Johannes      | @jrieken       |  x    |  x  |    x    |
-| Kai           | @kieferrm      |  x    |  x  |    x    |
-| Martin        | @aeschli       |  x    |  x  |    x    |
-| Peng          | @rebornix      |  x    |  x  |    x    |
-| Matt          | @mjbvz         |  x    |  x  |    x    |
-| Rob           | @roblourens    |  x    |  x  |    x    |
-| Sandeep       | @sandy081      |  x    |  x  |    x    |
-| Steven        | @stevencl      |       |     |    x    |
-| Alex          | @alexr00       |  x    |  x  |    x    |
-
-### Dev Matrix
-
-|                    |                    |                    |                    |
-|:-------------------|:-------------------|:-------------------|:-------------------|
-| [ ] @alexandrudima | [ ] @weinand       | [ ] @bpasero       | [ ] @chrmarti      |
-| [ ] @tyriar        | [ ] @dbaeumer      | [ ] @egamma        | [ ] @isidorn       |
-| [ ] @joaomoreno    | [ ] @jrieken       | [ ] @kieferrm      | [ ] @aeschli       |
-| [ ] @sandy081      | [ ] @mousetraps    | [ ] @alexr00       |                    |
+Update the OS test availability [here](https://github.com/Microsoft/vscode-tools#updating-testers)
