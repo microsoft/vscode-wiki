@@ -13,6 +13,7 @@
 * [[Build Master]]
 * [[Release Process]]
 * [[Running the Endgame]]
+  * [[Running the Endgame]]
 * [[Related Projects]]
 
 **Contributing**
