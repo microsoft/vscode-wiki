@@ -13,6 +13,7 @@
 * [[Build Master]]
 * [[Release Process]]
 * [[Running the Endgame]]
+  * [[Endgame Template]]
   * [[Writing Test Plan Items]]
   * [[Recovery Build]]
 * [[Related Projects]]
