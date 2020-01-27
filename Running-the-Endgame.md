@@ -31,7 +31,8 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - [ ] Run [OSS tool](https://github.com/microsoft/vscode-build-tools/tree/master/distro-tools) **endgame master**
 - [ ] Code freeze at 5pm PT
 - [ ] Ensure we have a green build on all platforms at 5pm PT
-- [ ] All test items contain sufficiently comprehensive test descriptions by 6pm PT
+- [ ] Create test plan items following the template [here](https://github.com/microsoft/vscode/wiki/Writing-Test-Plan-Items) by 6pm PT
+- [ ] Add verification-needed label to features needed testing and are not tested by TPIs.
 - [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/
 
 ##### Tuesday
