@@ -15,7 +15,7 @@
 * [[Running the Endgame]]
   * [[Endgame Template]]
   * [[Writing Test Plan Items]]
-  * [[Recovery Build]]
+  * [[Endgame Recovery Template]]
 * [[Related Projects]]
 
 **Contributing**
