@@ -14,6 +14,7 @@
 * [[Release Process]]
 * [[Running the Endgame]]
   * [[Writing Test Plan Items]]
+  * [[Recovery Build]]
 * [[Related Projects]]
 
 **Contributing**
