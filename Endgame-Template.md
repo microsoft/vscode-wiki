@@ -51,7 +51,7 @@
 - [ ] All release notes updated
   - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
   - [ ] @aeschli
-  - [ ] @alexandrudima
+  - [ ] @alexdima
   - [ ] @alexr00
   - [ ] @bpasero
   - [ ] @chrmarti
@@ -78,8 +78,8 @@
   - [ ] vscode-js-debug **@connor4312**
   - [ ] vscode-languageserver-node **@dbaeumer**
   - [ ] language-server-protocol **@dbaeumer**
-  - [ ] vscode-textmate **@alexandrudima**
-  - [ ] vscode-loader **@alexandrudima**
+  - [ ] vscode-textmate **@alexdima**
+  - [ ] vscode-loader **@alexdima**
   - [ ] vscode-generator-code **@aeschli**
   - [ ] vscode-vsce **@joaomoreno**
   - [ ] vscode-docs **@gregvanl**
@@ -116,7 +116,7 @@
 - [ ] Build stable for all platforms as new candidate issues come in **endgame master**
 - [ ] Documentation updated
   - [ ] @aeschli
-  - [ ] @alexandrudima
+  - [ ] @alexdima
   - [ ] @alexr00
   - [ ] @bpasero
   - [ ] @chrmarti
