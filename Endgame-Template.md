@@ -15,7 +15,8 @@
 ##### Tuesday
 - [ ] Test plan items assigned (using https://vscode-tools.azurewebsites.net/)
   - Run the tool multiple times to balance load if test items come in later and assignments are already made
-- [ ] [🔖All closed feature-requests](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+archived%3Afalse+milestone%3A%22September+2019%22+user%3Amicrosoft+label%3Afeature-request+-label%3Averification-needed+-label%3Aon-testplan+-label%3Averified+sort%3Aupdated-desc+) either have a `verification-needed` or `on-testplan` label
+  - [Assigned to you](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+assignee%3A%40me++label%3Atestplan-item+)
+- [ ] [🔖All closed feature-requests](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+archived%3Afalse+milestone%3A%22September+2019%22+user%3Amicrosoft+label%3Afeature-request+-label%3Averification-needed+-label%3Aon-testplan+-label%3Averified+-label%3A*duplicate+sort%3Aupdated-desc+) either have a `verification-needed` or `on-testplan` label
 - [ ] Test build starts at 7am CET
 - [ ] Test plan ready by 8am CET
 - [ ] [🔖Testing](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+label%3Atestplan-item+user%3Amicrosoft)
