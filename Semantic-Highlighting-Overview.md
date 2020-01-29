@@ -15,7 +15,6 @@
 ## Token Classification
  - token classification is split into __token types__ and __token modifiers__
  - standard token types and token modifiers defined by us
- - extensions can contribute new types and modifiers along with default styling rules
  - standard token types:
 	- `namespace`,
 	- `type`, `class`, `enum`, `interface`, `struct`, `typeParameter`
@@ -27,8 +26,7 @@
     - `declaration`
 	- `readonly`, `static`, `deprecated`, `abstract`
 	- `async`, `modification`, `documentation`
-
-
+ - extensions can contribute new types and modifiers along with default styling rules
 ## Token Styling
 - default styling rules to map token classifications to TextMate scopes
 - Themes and user settings can define rules to assign classifications to styles (foreground, italic, underline, bold)
