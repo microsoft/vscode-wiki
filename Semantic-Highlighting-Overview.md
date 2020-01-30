@@ -30,10 +30,12 @@
 ```jsonc
 "contributes": {
 	"semanticTokenTypes": [{
-		"id": "testToken", "description": "A test token"
+		"id": "testToken", 
+		"description": "A test token"
 	}],
 	"semanticTokenModifiers": [{
-		"id": "testModifier", "description": "A test modifier"
+		"id": "testModifier", 
+		"description": "A test modifier"
 	}],
 	"semanticTokenStyleDefaults": [
 		{
