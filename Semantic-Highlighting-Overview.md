@@ -27,6 +27,30 @@
 	- `readonly`, `static`, `deprecated`, `abstract`
 	- `async`, `modification`, `documentation`
  - extensions can contribute new types and modifiers along with default styling rules
+```
+"contributes": {
+		"semanticTokenTypes": [{
+			"id": "testToken",
+			"description": "A test token"
+		}],
+		"semanticTokenModifiers": [{
+			"id": "testModifier",
+			"description": "A test modifier"
+		}],
+		"semanticTokenStyleDefaults": [
+			{
+				"selector": "testToken",
+				"scope": [ "entity.name.function.special" ]
+			},
+			{
+				"selector": "*.testModifier",
+				"light": { "fontStyle": "bold" },
+				"dark": { "fontStyle": "bold" },
+				"highContrast": { "fontStyle": "bold" }
+			}
+		}]
+	}
+```
 ## Token Styling
 - default styling rules to map token classifications to TextMate scopes
 - Themes and user settings can define rules to assign classifications to styles (foreground, italic, underline, bold)
