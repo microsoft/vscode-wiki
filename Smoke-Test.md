@@ -51,7 +51,7 @@ This task is about verifying how a first launch behaves for new users who have n
 * Drag it to the explorer then rename it to README.txt
 * Move README.txt to another folder and then delete it and verify it ends up in the trash
 * Quick open (CTRL+P, ⌘+P) to find the .js files and other files with a similar extension
-  * Verify quick open sorting makes sense and it respects fuzzy matching (e.g. 'a.s' should produce 4 results)
+  * Verify quick open sorting makes sense and it respects fuzzy matching (e.g. 'a.s' should produce 3 results)
 * Verify the Opened Editors view reflects your state of opened editors
 
 #### Configuration and views
