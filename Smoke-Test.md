@@ -150,5 +150,6 @@ This task is about verifying how a first launch behaves for new users who have n
 * Check high contrast theme
 
 #### Localization
+* Install the German Language Pack extension: `ms-ceintl.vscode-language-pack-de`
 * Start code from the command line with `--locale=DE`
 * Verify all menus and viewlets are in German (or your language of choice)
