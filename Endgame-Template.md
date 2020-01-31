@@ -16,22 +16,22 @@
 - [ ] Test plan items assigned (using https://vscode-tools.azurewebsites.net/)
   - Run the tool multiple times to balance load if test items come in later and assignments are already made
   - [Assigned to you](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+assignee%3A%40me++label%3Atestplan-item+)
-- [ ] [🔖All closed feature-requests](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+archived%3Afalse+milestone%3A%22September+2019%22+user%3Amicrosoft+label%3Afeature-request+-label%3Averification-needed+-label%3Aon-testplan+-label%3Averified+-label%3A*duplicate+sort%3Aupdated-desc+) either have a `verification-needed` or `on-testplan` label
+- [ ] [🔖All closed feature-requests](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Afeature-request+-label%3Averification-needed+-label%3Aon-testplan+-label%3Averified+-label%3A*duplicate+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release) either have a `verification-needed` or `on-testplan` label
 - [ ] Test build starts at 7am CET
 - [ ] Test plan ready by 8am CET
-- [ ] [🔖Testing](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+label%3Atestplan-item+user%3Amicrosoft)
-- [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+archived%3Afalse+milestone%3A%22September+2019%22+user%3Amicrosoft+label%3Averification-needed+-label%3Averified)
+- [ ] [🔖Testing](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Atestplan-item+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+)
+- [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release)
 
 ##### Wednesday
-- [ ] [🔖Testing](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+archived%3Afalse+label%3Atestplan-item+user%3Amicrosoft)
+- [ ] [🔖Testing](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Atestplan-item+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+)
 - [ ] Remind team members to assign issues that they intend to fix to the current milestone
 - [ ] Fixing (self-assigned, milestone assigned)
-- [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+archived%3Afalse+milestone%3A%22September+2019%22+user%3Amicrosoft+label%3Averification-needed+-label%3Averified)
+- [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release)
 
 ##### Thursday
 - [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
-- [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+archived%3Afalse+milestone%3A%22September+2019%22+user%3Amicrosoft+label%3Averification-needed+-label%3Averified)
-- [ ] [🔖Verification](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aclosed+is%3Aissue+user%3Amicrosoft+milestone%3A%22September+2019%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+-repo%3Amicrosoft%2FAL+)
+- [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release)
+- [ ] [🔖Verification](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aclosed+is%3Aissue+milestone%3A%22January+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release)
 
 ##### Friday
 - [ ] Pause scheduled `insider` builds **endgame master**
@@ -42,7 +42,7 @@
   - [ ] node debug **@weinand**
   - [ ] node debug2 **@roblourens**
   - [ ] node debugadapter node **@weinand**
-- [ ] All issues [🔖verified](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+label%3Abug+-label%3Averified+-label%3Aon-testplan+is%3Aclosed+-label%3Aduplicate+-label%3A%2Aduplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+milestone%3A%22September+2019%22)
+- [ ] All issues [🔖verified](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aclosed+is%3Aissue+milestone%3A%22January+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release)
 - [ ] Fixing (only critical bugs - no string changes)
 - [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) (⚠️ MUST run with `--stable-build` argument ⚠️ )
   - [ ] Windows - **owner**
@@ -108,8 +108,8 @@
 - [ ] Polish release notes **redmond**
 
 ##### Monday - Wednesday
-- [ ] [🔖milestone issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Amicrosoft+milestone%3A%22September+2019%22)
-- [ ] [🔖candidate issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Amicrosoft+label%3Acandidate)
+- [ ] [🔖milestone issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+milestone%3A%22January+2020%22+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release)
+- [ ] [🔖candidate issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Acandidate+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release)
 - [ ] Polish release notes **redmond**
 - [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **endgame master**
 - [ ] Build `Insider` from `release/<x.y>` **endgame master**
