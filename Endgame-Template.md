@@ -21,6 +21,12 @@
 - [ ] Test plan ready by 8am CET
 - [ ] [🔖Testing](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Atestplan-item+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+)
 - [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release)
+- [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) (⚠️ MUST run with `--stable-build` argument ⚠️ )
+  - [ ] Windows - **owner**
+  - [ ] OS X - **owner**
+  - [ ] Linux - **owner**
+  - [ ] Web (manual until https://github.com/microsoft/vscode/issues/80308 is done) - **owner**
+
 
 ##### Wednesday
 - [ ] [🔖Testing](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Atestplan-item+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+)
@@ -44,11 +50,6 @@
   - [ ] node debugadapter node **@weinand**
 - [ ] All issues [🔖verified](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aclosed+is%3Aissue+milestone%3A%22January+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release)
 - [ ] Fixing (only critical bugs - no string changes)
-- [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) (⚠️ MUST run with `--stable-build` argument ⚠️ )
-  - [ ] Windows - **owner**
-  - [ ] OS X - **owner**
-  - [ ] Linux - **owner**
-  - [ ] Web (manual until https://github.com/microsoft/vscode/issues/80308 is done) - **owner**
 - [ ] All release notes updated
   - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
   - [ ] @aeschli
