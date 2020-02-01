@@ -21,7 +21,7 @@ https://github.com/Microsoft/vscode/blob/master/test/smoke/README.md
   * have some UI state (e.g. panel open, multiple editors)
   * close stable
 
-#### Data Migration
+#### Data Migration (Electron only)
 
 This task is about running the new version over the same data of the stable released version. Specifically we want to see that the new version is starting up properly, restores all state including dirty files from a previous session.
 
@@ -34,8 +34,9 @@ This task is about running the new version over the same data of the stable rele
 * Verify the following both with dirty files and untitled files
   * Make sure you get asked and can save when closing the editor itself
   * Make sure you get asked and can save when closing from Opened Editors view
-  * Mac only: Make sure you get asked and can save on window close
-  * Make sure that when you file > quit and reopen, dirty files and untitled restore properly ("hot exit")
+  * Mac & Electron only: Make sure you get asked and can save on window close
+  * Electron: Make sure that when you file > quit and reopen, dirty files and untitled restore properly ("hot exit")
+  * Web: Make sure that when you close the browser tab and reopen, dirty files and untitled restore properly ("hot exit")
 
 #### First User Experience
 
