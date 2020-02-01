@@ -38,7 +38,7 @@ This task is about running the new version over the same data of the stable rele
   * Electron: Make sure that when you file > quit and reopen, dirty files and untitled restore properly ("hot exit")
   * Web: Make sure that when you close the browser tab and reopen, dirty files and untitled restore properly ("hot exit")
 
-#### First User Experience
+#### First User Experience (Electron only)
 
 This task is about verifying how a first launch behaves for new users who have never started Code before.
 * Delete the user-data-dir and extensions dir from previous steps
@@ -149,7 +149,7 @@ This task is about verifying how a first launch behaves for new users who have n
 * Tab through the whole workbench and verify what you hear makes sense. Also verify you can tab back into the location from where you started
 * Check high contrast theme
 
-#### Localization
+#### Localization (Electron only)
 * Install the German Language Pack extension: `ms-ceintl.vscode-language-pack-de`
 * Start code from the command line with `--locale=DE`
 * Verify all menus and viewlets are in German (or your language of choice)
