@@ -12,7 +12,7 @@
 - [ ] Add verification-needed label to features needed testing and are not tested by TPIs.
 - [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/
 - [ ] Create Test plan item for smoke testing **endgame master**
-- [ ] Review the `extensionKind` list in `product.json` both for stable and insiders https://github.com/microsoft/vscode-internalbacklog/issues/932. 
+- [ ] Review the `extensionKind` list in `product.json` both for stable and insiders, see this [tracking issue](https://github.com/microsoft/vscode-internalbacklog/issues/932). 
 
 ##### Tuesday
 - [ ] Test plan items assigned (using https://vscode-tools.azurewebsites.net/)
