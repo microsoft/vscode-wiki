@@ -11,7 +11,7 @@
 - [ ] Create test plan items following the template [here](https://github.com/microsoft/vscode/wiki/Writing-Test-Plan-Items) by 6pm PT
 - [ ] Add verification-needed label to features needed testing and are not tested by TPIs.
 - [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/
-- [ ] Create Test plat item for smoke testing **endgame master**
+- [ ] Create Test plan item for smoke testing **endgame master**
 
 ##### Tuesday
 - [ ] Test plan items assigned (using https://vscode-tools.azurewebsites.net/)
@@ -50,7 +50,9 @@
   - [ ] Windows - **owner**
   - [ ] OS X - **owner**
   - [ ] Linux - **owner**
-  - [ ] Web (manual until https://github.com/microsoft/vscode/issues/80308 is done) - **owner**
+  - [ ] Web (Chromium) - **owner**
+  - [ ] Web (Firefox) - **owner**
+  - [ ] Web (macOS Webkit) - **owner**
 - [ ] All release notes updated
   - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
   - [ ] @aeschli
