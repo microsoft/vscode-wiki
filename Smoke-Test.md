@@ -103,7 +103,8 @@ This task is about verifying how a first launch behaves for new users who have n
 
 #### Debugging JavaScript
 * In VSCode switch to debugging viewlet
-* Click on the gear to create a default launch.json file:
+* Make sure you see the debug start view
+* Click on 'create a launch.json file'
   * make sure that VSCode automatically detects ${workspaceRoot}/bin/www as the 'program' attribute
 * Set a breakpoint in index.js:6
 * Press <kbd>F5</kbd> to start debugging. Verify:
