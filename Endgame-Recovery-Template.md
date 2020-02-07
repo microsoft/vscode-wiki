@@ -1,5 +1,6 @@
 - [ ] Create a milestone `<Month> Recovery <year>` **owner**
 - [ ] Bump the version number **owner**
+- [ ] [🔖candidate issues](https://github.com/issues?utf8=✓&q=is%3Aissue+label%3Acandidate+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+milestone%3A%22January+2020+Recovery%22)
 - [ ] Include an issue 'update translations' **owner**
 - [ ] Assign candidate issues to the recovery milestone **team**
 - [ ] Review the `candidate` issues, and if they pass the review assign them to the recovery milestone **team**
