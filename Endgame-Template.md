@@ -11,7 +11,7 @@
 - [ ] Create test plan items following the template [here](https://github.com/microsoft/vscode/wiki/Writing-Test-Plan-Items) by 6pm PT
 - [ ] Add verification-needed label to features needed testing and are not tested by TPIs.
 - [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/
-- [ ] Create Test plan item for smoke testing **endgame master**
+- [ ] Create Test plan item for smoke testing (OS & browser coverage!) **endgame master**
 - [ ] Review the `extensionKind` list in `product.json` both for stable and insiders, see this [tracking issue](https://github.com/microsoft/vscode-internalbacklog/issues/932). 
 
 ##### Tuesday
