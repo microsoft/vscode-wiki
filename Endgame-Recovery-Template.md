@@ -30,6 +30,7 @@
     - [ ] deb package 64-bit **owner**
     - [ ] rpm package 64-bit **owner**
     - [ ] archives **owner**
+    - [ ] snap **owner**
   - [ ] Server ([instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers)) **owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish stable build **owner**
