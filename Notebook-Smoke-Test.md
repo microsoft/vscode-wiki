@@ -9,7 +9,7 @@
   * `git clone `https://github.com/rebornix/notebook-test`
 * `cd vscode && yarn run watch` and then launch VS Code OSS
 
-#### File opening & rendering
+### File opening & rendering
 
 One major goal of native notebook experience in VS Code is performance: file opening, scrolling and editing should be as performant as a normal text editor. Please test the code change doesn't regress the performance
 
@@ -19,7 +19,7 @@ One major goal of native notebook experience in VS Code is performance: file ope
   * Test scrolling with scrollbar, try to scroll to the middle or the bottom of the document.
   * Please check all outputs are rendered properly
 
-#### Output rendering
+### Output rendering
 
 Outputs are rendered under code cells. When an output is secure and simple, like text, png, we will render them in the core. If it's insecure, like html/javascript, we will render them in a webview.
 
@@ -28,7 +28,7 @@ Outputs are rendered under code cells. When an output is secure and simple, like
 * Open `samples/runCode_iframe_form_15.ipynb`, test iframes and forms are rendered properly and they are interactive
   * Scroll the document to the bottom, scroll back and check if the iframe is still running
 
-#### Editing
+### Editing
 
 Open `runCode.ipynb`
 
@@ -37,7 +37,7 @@ Open `runCode.ipynb`
   * After modifying the cells, the file should be a dirty state
 * Cmd+S to save the document, the document should be persisted on disk and please check if the changes are correct.
 
-#### Execution
+### Execution
 
 * Open `test/ipywidgets.test.ipynb`, focus in the editor, click `Execute Notebook` actions on the editor toolbar
   * Check if the outputs are rendered properly
