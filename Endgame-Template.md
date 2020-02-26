@@ -56,6 +56,7 @@
   - [ ] @connor4312
   - [ ] @dbaeumer
   - [ ] @deepak1556 
+  - [ ] @eamodio
   - [ ] @egamma
   - [ ] @isidorn
   - [ ] @JacksonKearl 
@@ -123,6 +124,7 @@
   - [ ] @connor4312
   - [ ] @dbaeumer
   - [ ] @deepak1556 
+  - [ ] @eamodio
   - [ ] @egamma
   - [ ] @isidorn
   - [ ] @JacksonKearl 
