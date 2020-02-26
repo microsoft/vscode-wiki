@@ -53,9 +53,12 @@
   - [ ] @alexr00
   - [ ] @bpasero
   - [ ] @chrmarti
+  - [ ] @connor4312
   - [ ] @dbaeumer
+  - [ ] @deepak1556 
   - [ ] @egamma
   - [ ] @isidorn
+  - [ ] @JacksonKearl 
   - [ ] @joaomoreno
   - [ ] @jrieken
   - [ ] @kieferrm
@@ -117,9 +120,12 @@
   - [ ] @alexr00
   - [ ] @bpasero
   - [ ] @chrmarti
+  - [ ] @connor4312
   - [ ] @dbaeumer
+  - [ ] @deepak1556 
   - [ ] @egamma
   - [ ] @isidorn
+  - [ ] @JacksonKearl 
   - [ ] @joaomoreno
   - [ ] @jrieken
   - [ ] @kieferrm
