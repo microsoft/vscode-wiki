@@ -1,9 +1,7 @@
 - [ ] Windows
 - [ ] macOS
 - [ ] Linux
-- [ ] Web (Chromium)
-- [ ] Web (Firefox)
-- [ ] Web (macOS Webkit)
+- [ ] Web (Chromium, anyOS)
 
 Complexity: 3
 
