@@ -54,8 +54,6 @@
   - [ ] OS X - **owner**	
   - [ ] Linux - **owner**	
   - [ ] Web (Chromium) - **owner**	
-  - [ ] Web (Firefox) - **owner**	
-  - [ ] Web (macOS Webkit) - **owner**
 - [ ] All release notes updated
   - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
   - [ ] @aeschli
