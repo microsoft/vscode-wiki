@@ -3,11 +3,15 @@
 ### Prereqs
 
 * Checkout branch `rebornix/notebook`
-  * `cd extensions/notebook-test && yarn && yarn run build`
-  * `cd extensions/notebook-renderers && yarn && yarn run build`
+  * `yarn && yarn run watch`
+* Clone the notebook extensions repository
+  * `git clone http://github.com/rebornix/notebook-extension-samples`
+  * `yarn && yarn run install && yarn run build`
+* Run OSS with specifying `notebook-extension-samples` as the extension directory
+  * `vscode/scripts/code.sh --extension-dir notebook-extension-samples`
 * Clone the notebook test repository
-  * `git clone `https://github.com/rebornix/notebook-test`
-* `cd vscode && yarn run watch` and then launch VS Code OSS
+  * `git clone https://github.com/rebornix/notebook-test`
+  * Open the folder in OSS  
 
 ### File opening & rendering
 
