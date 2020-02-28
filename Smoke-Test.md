@@ -76,7 +76,7 @@ This task is about verifying how a first launch behaves for new users who have n
   * Verify you can use the explorer to open files from all folders
   * Verify you can search across all folders
 
-#### CSS
+#### Languages - CSS
 * Open file style.css
   * verify quick outline (<kbd>CTRL+SHIFT+O</kbd>, (<kbd>⌘+SHIFT+O</kbd>)
 * Add an empty rule `.foo{}`
