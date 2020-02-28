@@ -4,7 +4,7 @@
 
 * Checkout branch `rebornix/notebook`
   * `yarn && yarn run watch`
-* Clone the notebook extensions repository
+* Clone the [notebook extensions repository](http://github.com/rebornix/notebook-extension-samples)
   * `git clone http://github.com/rebornix/notebook-extension-samples`
   * `yarn && yarn run install && yarn run build`
 * Run OSS with specifying `notebook-extension-samples` as the extension directory
