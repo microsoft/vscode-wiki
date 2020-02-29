@@ -8,7 +8,7 @@
   * `git clone http://github.com/rebornix/notebook-extension-samples`
   * `yarn && yarn run install && yarn run build`
 * Run OSS with specifying `notebook-extension-samples` as the extension directory
-  * `vscode/scripts/code.sh --extension-dir notebook-extension-samples`
+  * `vscode/scripts/code.sh --extensions-dir notebook-extension-samples`
 * Clone the notebook test repository
   * `git clone https://github.com/rebornix/notebook-test`
   * Open the folder in OSS  
