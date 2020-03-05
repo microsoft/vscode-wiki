@@ -55,7 +55,7 @@
   - [ ] Linux - **owner**	
   - [ ] Web (Chromium) - **owner**	
 - [ ] All release notes updated
-  - release notes are collected in a file named *`Month_Year.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
+  - release notes are collected in a file named *`v<Major>_<Minor>.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
   - [ ] @aeschli
   - [ ] @alexdima
   - [ ] @alexr00
