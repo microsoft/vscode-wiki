@@ -152,7 +152,7 @@
 
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame. **endgame master**
 
-##### Wednesday/Thursday
+##### Wednesday/Thursday - Expected release day (this may change)
 - [ ] Build stable for all platforms **endgame master**
 - [ ] Sanity check of installable bits
   - [ ] Windows 32 bit **owner**
