@@ -108,6 +108,10 @@ Please file an issue against [that repo](https://github.com/aeschli/typescript-v
 
 [This Readme](https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md) describes the token types and modifiers that the TypeScript / JavaScript semantic highlighter produces, along with a list of known issues.
 
+### Known issues
+- symbols that are functions as well as objects (e.g. `require`) are classified as variables. We probably need to show them according to their actual use. 
+- `Promise.resolve`: `Promise` is a variable instead of a class. That's unfortunately what the d.ts for Promise declares.
+
 
 ## Links:
 
