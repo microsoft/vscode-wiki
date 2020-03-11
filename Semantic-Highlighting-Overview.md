@@ -86,13 +86,27 @@ Planned work and work in progress:
 
 ## FAQ
 
-### I'm a theme author, do I need to change my theme to make it work with semantic highlighting?
+### As a theme author, do I need to change my theme to make it work with semantic highlighting?
 
-No, themes don't need to change anything. Each semantic token has one or more TextMate scopes associated (see [table below](#token-classification-to-textmate-scopes-mapping)). To evaluate the style for a semantic token, the theme is probed against the associated scope.
+No, themes are not required to change anything. Semantic highlighting doesn't add any new styles or colors. It uses the theme to evaluate the color and styles of the semantic tokens it draws on top to the syntax highlighting.
+
+Each semantic token has one or more TextMate scopes associated (see [table below](#token-classification-to-textmate-scopes-mapping)). To evaluate the style for a semantic token, the scope is matched against the theme's rules.
 
 If a theme rule matches, the semantic token is rendered with the rule's style. If no theme rule matches, the semantic token is not rendered (that means the underlying syntax highlight prevails).
 
-No new colors or styles are added. Only the styles that the theme defines are used, and semantic tokens are only shown if the theme has a rule for the tokens associated TextMate scope.
+If a theme wants to take advantage of the semantic tokens, it can decide to add more rules. The [table below](#token-classification-to-textmate-scopes-mapping) for the scopes to match.
+
+### The new coloring for TypeScript / JavaScript looks wrong. How can I debug this?
+Set the cursor to the symbol to inspect and run the `Developer: Inspect Editor Tokens and Scopes` command.
+
+![](https://user-images.githubusercontent.com/57580/76448823-5f6bb480-63a1-11ea-862e-d59db8599a73.png)
+
+`Semantic token type` and `modifier` show the classification that was evaluates for the given symbol and the TextMate scope that was used to style the token.
+
+https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md describes the token types and modifiers that the TypeScript / JavaScript semantic highlighter produces, along with a list of known issues.
+
+Please file an issue against that repo if you feel the classification is wrong. Please add a small code sample to reproduce along what classification you expect.
+
 
 ## Links:
 
