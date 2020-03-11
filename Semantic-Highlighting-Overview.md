@@ -83,7 +83,18 @@ Planned work and work in progress:
 - extended theming rules syntax (- operator)
 - use new token types in the built-in themes
 
-Links:
+
+## FAQ
+
+> I'm a theme author, do I need to change my theme to make it work with semantic highlighting?
+
+No, themes don't need to change anything. To evaluate the style for a semantic token, the theme is probed against the the tokens associated TextMate scope. The appendix lists the used scopes.
+
+If the theme has a rule that matches, then the token is rendered with the rule's style. If no rule matches, the semantic token is not rendered.
+
+No new colors or styles are added. Only the styles that the theme defines are used, and only if the theme has a rule for a given scope.
+
+## Links:
 
 - API: [vscode.proposed.d.ts#L223](
 https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts#L223)
@@ -93,3 +104,22 @@ https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts#L223
 [javascriptSemanticTokens.ts](https://github.com/microsoft/vscode/blob/master/extensions/html-language-features/server/src/modes/javascriptSemanticTokens.ts)
 - Sample:
 [semantic-tokens-sample](https://github.com/microsoft/vscode-extension-samples/blob/master/semantic-tokens-sample)
+
+## Classification to TextMate Scopes List
+
+- `namespace`: 'entity.name.namespace'
+- `type`: `entity.name.type` | `support.type`
+- `struct`: `storage.type.struct`
+- `class`: `entity.name.type.class`
+- `interface`: `entity.name.type.interface`
+- `enum`: `entity.name.type.enum`
+- `function`: `entity.name.function` | `support.function`
+- `member`: `entity.name.function.member` | `support.function`
+- `macro`: `entity.name.other.preprocessor.macro`
+- `variable`: `variable.other.readwrite` | `entity.name.variable`
+- `variable.readonly`: `variable.other.constant`
+- `parameter`: `variable.parameter`
+- `property`: `variable.other.property`
+- `property.readonly`: `variable.other.constant.property`
+- `enumMember`: `variable.other.enummember`
+- `event`: `variable.other.event`
