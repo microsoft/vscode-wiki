@@ -105,7 +105,7 @@ https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts#L223
 - Sample:
 [semantic-tokens-sample](https://github.com/microsoft/vscode-extension-samples/blob/master/semantic-tokens-sample)
 
-## Token Classification to TextMate Scopes List
+## Token Classification to TextMate Scopes Mapping
 
 - `namespace`: `entity.name.namespace`
 - `type`: `entity.name.type` | `support.type`
