@@ -50,7 +50,7 @@
 }
 ```
 ## Token Styling
-- VSCode defines a lost of default styling rules that map token classifications (e.g. `variable.readonly`) to TextMate scope(s) (`variable.other.constant`). To evaluate the style for a token, the current color theme is probed against the scope(s). If the theme has a rule that matches, then the token is rendered with the rule's style.
+- VSCode defines a list of default styling rules that maps token classifications (e.g. `variable.readonly`) to TextMate scope(s) (`variable.other.constant`). To evaluate the style for a token, the current color theme is probed against the scope(s). If the theme has a rule that matches, then the token is rendered with the rule's style. If no rule matches, the semantic token is not rendered.
 
 
 - Experimental: Themes and user settings can define rules to assign classifications to styles (foreground, italic, underline, bold)
