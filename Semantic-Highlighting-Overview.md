@@ -107,7 +107,7 @@ https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts#L223
 
 ## Classification to TextMate Scopes List
 
-- `namespace`: 'entity.name.namespace'
+- `namespace`: `entity.name.namespace`
 - `type`: `entity.name.type` | `support.type`
 - `struct`: `storage.type.struct`
 - `class`: `entity.name.type.class`
