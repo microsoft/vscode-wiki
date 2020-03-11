@@ -88,11 +88,11 @@ Planned work and work in progress:
 
 > I'm a theme author, do I need to change my theme to make it work with semantic highlighting?
 
-No, themes don't need to change anything. To evaluate the style for a semantic token, the theme is probed against the the tokens associated TextMate scope. The appendix lists the used scopes.
+No, themes don't need to change anything. Each semantic token has one or more TextMate scopes associated (see table below). To evaluate the style for a semantic token, the theme is probed against the these scope.
 
-If the theme has a rule that matches, then the token is rendered with the rule's style. If no rule matches, the semantic token is not rendered.
+If a theme rule matches, the semantic token is rendered with the rule's style. If no theme rule matches, the semantic token is not rendered (that means the underlying syntax token prevails).
 
-No new colors or styles are added. Only the styles that the theme defines are used, and only if the theme has a rule for a given scope.
+No new colors or styles are added. Only the styles that the theme defines are used, and semantic tokens are only shown if the theme has a rule for the tokens associated TextMate scope.
 
 ## Links:
 
