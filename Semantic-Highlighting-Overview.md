@@ -18,7 +18,7 @@
  - standard token types:
 	- `namespace`,
 	- `type`, `class`, `enum`, `interface`, `struct`, `typeParameter`
-	- `parameter`, `variable`, `property`
+	- `parameter`, `variable`, `property`, `enumMember`, `event`
 	- `function`, `member`, `macro`
 	- `label`,
 	- `comment`, `string`, `keyword`, `number`, `regexp`, `operator`
@@ -40,20 +40,20 @@
 	"semanticTokenStyleDefaults": [
 		{
 			"selector": "testToken",
-			"scope": [ "entity.name.function.special" ]
+			"scope": [ "entity.name.variable.special" ]
 		},
 		{
-			"selector": "*.testModifier",
-			"light": { "fontStyle": "bold" },
-			"dark": { "fontStyle": "bold" },
-			"highContrast": { "fontStyle": "bold" }
+			"selector": "testToken.testModifier",
+			"scope": [ "entity.name.variable.special.extra" ]
 		}
 	]
 }
 ```
 ## Token Styling
-- default styling rules to map token classifications to TextMate scopes
-- Themes and user settings can define rules to assign classifications to styles (foreground, italic, underline, bold)
+- VSCode defines a lost of default styling rules that map token classifications (e.g. `variable.readonly`) to TextMate scope(s) (`variable.other.constant`). To evaluate the style for a token, the current color theme is probed against the scope(s). If the theme has a rule that matches, then the token is rendered with the rule's style.
+
+
+- Experimental: Themes and user settings can define rules to assign classifications to styles (foreground, italic, underline, bold)
 
 ```
     "editor.tokenColorCustomizationsExperimental": {
@@ -93,4 +93,3 @@ https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts#L223
 [javascriptSemanticTokens.ts](https://github.com/microsoft/vscode/blob/master/extensions/html-language-features/server/src/modes/javascriptSemanticTokens.ts)
 - Sample:
 [semantic-tokens-sample](https://github.com/microsoft/vscode-extension-samples/blob/master/semantic-tokens-sample)
-
