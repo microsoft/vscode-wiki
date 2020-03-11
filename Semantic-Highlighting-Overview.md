@@ -96,16 +96,17 @@ If a theme rule matches, the semantic token is rendered with the rule's style. I
 
 If a theme wants to take advantage of the semantic tokens, it can decide to add more rules. The [table below](#token-classification-to-textmate-scopes-mapping) for the scopes to match.
 
-### The new coloring for TypeScript / JavaScript looks wrong. How can I debug this?
+### The semantic highlighting for TypeScript / JavaScript files looks wrong. How can I debug this?
+
 Set the cursor to the symbol to inspect and run the `Developer: Inspect Editor Tokens and Scopes` command.
 
 ![](https://user-images.githubusercontent.com/57580/76448823-5f6bb480-63a1-11ea-862e-d59db8599a73.png)
 
-`Semantic token type` and `modifier` show the classification that was evaluates for the given symbol and the TextMate scope that was used to style the token.
+`Semantic token type` and `modifiers` show the classification that was evaluates for the given symbol and the TextMate scope that was used to style the token.
 
-https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md describes the token types and modifiers that the TypeScript / JavaScript semantic highlighter produces, along with a list of known issues.
+Please file an issue against [that repo](https://github.com/aeschli/typescript-vscode-sh-plugin) if you feel the classification is wrong. Please add a small code sample to reproduce along what classification you expect.
 
-Please file an issue against that repo if you feel the classification is wrong. Please add a small code sample to reproduce along what classification you expect.
+[This Readme](https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md) describes the token types and modifiers that the TypeScript / JavaScript semantic highlighter produces, along with a list of known issues.
 
 
 ## Links:
