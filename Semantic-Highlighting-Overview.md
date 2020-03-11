@@ -50,7 +50,7 @@
 }
 ```
 ## Token Styling
-- VSCode defines a list of default styling rules that maps token classifications (e.g. `variable.readonly`) to TextMate scope(s) (`variable.other.constant`). To evaluate the style for a token, the current color theme is probed against the scope(s). If the theme has a rule that matches, then the token is rendered with the rule's style. If no rule matches, the semantic token is not rendered.
+- VSCode defines a [default mapping](#token-classification-to-textmate-scopes-mapping) of token classifications to TextMate scope(s). To evaluate the style for a token, the current color theme is probed against the TextMate scope(s). If the theme has a rule that matches, the token is rendered with the rule's style. If no rule matches, the semantic token is not rendered (that means the regular syntax highlighting is used instead).
 
 
 - Experimental: Themes and user settings can define rules to assign classifications to styles (foreground, italic, underline, bold)
@@ -86,11 +86,11 @@ Planned work and work in progress:
 
 ## FAQ
 
-> I'm a theme author, do I need to change my theme to make it work with semantic highlighting?
+### I'm a theme author, do I need to change my theme to make it work with semantic highlighting?
 
-No, themes don't need to change anything. Each semantic token has one or more TextMate scopes associated (see table below). To evaluate the style for a semantic token, the theme is probed against the these scope.
+No, themes don't need to change anything. Each semantic token has one or more TextMate scopes associated (see [table below](#token-classification-to-textmate-scopes-mapping)). To evaluate the style for a semantic token, the theme is probed against the associated scope.
 
-If a theme rule matches, the semantic token is rendered with the rule's style. If no theme rule matches, the semantic token is not rendered (that means the underlying syntax token prevails).
+If a theme rule matches, the semantic token is rendered with the rule's style. If no theme rule matches, the semantic token is not rendered (that means the underlying syntax highlight prevails).
 
 No new colors or styles are added. Only the styles that the theme defines are used, and semantic tokens are only shown if the theme has a rule for the tokens associated TextMate scope.
 
