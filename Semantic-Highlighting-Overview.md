@@ -3,6 +3,7 @@
 In 1.43 we enabled Semantic Highlighting as a [new feature](https://code.visualstudio.com/updates/v1_43#_typescript-semantic-highlighting). 
 
 This resulted in many issues filed with users that were confused, see https://github.com/microsoft/vscode/issues/92308.
+
 We went through all the comments and found:
 
 - users don't appreciate too many coloring changes
@@ -53,9 +54,8 @@ Please file an issue against [that repo](https://github.com/aeschli/typescript-v
 [This Readme](https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md) describes the token types and modifiers that the TypeScript / JavaScript semantic highlighter produces, along with a list of known issues.
 
 ### Known issues
-- symbols that are functions as well as objects (e.g. `require`) are classified as variables. We probably need to show them according to their actual use. 
-- `Promise.resolve`: `Promise` is a variable instead of a class. That's unfortunately what the d.ts for Promise declares.
-
+- symbols that are functions as well as objects (e.g. `require`) are classified as variables. 
+- `Promise.resolve`: `Promise` is a variable instead of a class. 
 
 ## SemanticTokensProvider API (proposed)
 
