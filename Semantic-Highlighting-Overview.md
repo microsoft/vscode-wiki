@@ -1,3 +1,61 @@
+## Semantic Highlighting
+
+In 1.43 we enabled Semantic Highlighting as a [new feature](https://code.visualstudio.com/updates/v1_43#_typescript-semantic-highlighting). 
+
+This resulted in many issues filed with users that were confused, see https://github.com/microsoft/vscode/issues/92308.
+We went through all the comments and found:
+
+- users don't appreciate too many coloring changes
+- theme authors want more time to test and tune their theme to semantic highlighting
+
+For the recovery build 1.43.1, planned for next week, we will
+- no longer add semantic color in imports
+- give themes a way to opt-in to semantic highlighting
+- only the built-in themes have semantic coloring enabled by default, all other themes can be enabled by the theme author or in the user settings.
+- show a notification when semantic coloring shows up the first time. The notification will point to the docs with background and information on how to configure the feature.
+- fix the bugs found related to wrong token classification and color lookup.
+
+## FAQ
+
+### What is the difference between syntax and semantic highlighting
+
+Syntax highlighting colors the text based on regular expressions contained in a TextMate grammar. 
+
+Semantic highlighting enriches the coloring based on the symbol information the language service has computed for a file in the context of the full project.
+
+Each identifier gets colored & styled with the color of the symbol it resolves to. A constant variable name is rendered as such throughout the file, not just at its declaration. Same for parameter names, property names, class names and so on.
+
+
+### Why does my highlighting change comes in with some delay
+
+The server takes a while to load, depending on the size of the project, that's why the highlighting comes in delayed.
+
+### My theme is not ready for this
+
+In 1.43.1, we add a feature to give theme a way to opt-in to semantic highlighting. In 1.43.1, only built-in themes will have semantic coloring enabled out-of-the-box.
+
+### As a theme author, do I need to change my theme to make it work with semantic highlighting?
+
+Our goal was that this feature works out of the box with all themes. However, we realized that there are a.) some bugs still on our side that make themes look broken and b.) theme authors want more control to enable semantic coloring for their theme and take advantage of new highlighting possibilities.
+
+More information and guidance for theme authors is coming.
+
+### The semantic highlighting for TypeScript / JavaScript files looks wrong. How can I debug this?
+
+Set the cursor to the symbol to inspect and run the `Developer: Inspect Editor Tokens and Scopes` command.
+
+![](https://user-images.githubusercontent.com/57580/76448823-5f6bb480-63a1-11ea-862e-d59db8599a73.png)
+
+`Semantic token type` and `modifiers` show the classification that was evaluates for the given symbol and the TextMate scope that was used to style the token.
+
+Please file an issue against [that repo](https://github.com/aeschli/typescript-vscode-sh-plugin) if you feel the classification is wrong. Please add a small code sample to reproduce along what classification you expect.
+
+[This Readme](https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md) describes the token types and modifiers that the TypeScript / JavaScript semantic highlighter produces, along with a list of known issues.
+
+### Known issues
+- symbols that are functions as well as objects (e.g. `require`) are classified as variables. We probably need to show them according to their actual use. 
+- `Promise.resolve`: `Promise` is a variable instead of a class. That's unfortunately what the d.ts for Promise declares.
+
 
 ## SemanticTokensProvider API (proposed)
 
@@ -85,6 +143,8 @@ Planned work and work in progress:
 
 
 ## FAQ
+
+### 
 
 ### As a theme author, do I need to change my theme to make it work with semantic highlighting?
 
