@@ -2,42 +2,42 @@
 
 In 1.43 we enabled Semantic Highlighting as a [new feature](https://code.visualstudio.com/updates/v1_43#_typescript-semantic-highlighting). 
 
-This resulted in many issues filed with users that were confused, see https://github.com/microsoft/vscode/issues/92308.
+This resulted in several issues filed by our users like https://github.com/microsoft/vscode/issues/92308.
 
-We went through all the comments and found:
+We went through all the feedback in the issue and identified the following themes:
 
 - users don't appreciate too many coloring changes
 - theme authors want more time to test and tune their theme to semantic highlighting
 
-For the recovery build 1.43.1, planned for next week, we will
-- no longer add semantic color in imports
+For the recovery build 1.43.1, planned for next week, we have therefore decided on the following steps:
 - give themes a way to opt-in to semantic highlighting
 - only the built-in themes have semantic coloring enabled by default, all other themes can be enabled by the theme author or in the user settings.
 - show a notification when semantic coloring shows up the first time. The notification will point to the docs with background and information on how to configure the feature.
 - fix the bugs found related to wrong token classification and color lookup.
+- no longer add semantic color in imports
 
 ## FAQ
 
 ### What is the difference between syntax and semantic highlighting
 
-Syntax highlighting colors the text based on regular expressions contained in a TextMate grammar. 
+Syntax highlighting colors the text based on lexical rules. In the VS Code the lexical rules are expressed as regular expressions contained in a TextMate grammar. 
 
-Semantic highlighting enriches the coloring based on the symbol information the language service has computed for a file in the context of the full project.
-
-Each identifier gets colored & styled with the color of the symbol it resolves to. A constant variable name is rendered as such throughout the file, not just at its declaration. Same for parameter names, property names, class names and so on.
+Semantic highlighting enriches the syntax coloring based on symbol information from a language service that has the full understanding of the project. Based on this understanding each identifier gets colored & styled with the color of the symbol it resolves to. A constant variable name is rendered as such throughout the file, not just at its declaration. Same for parameter names, property names, class names and so on.
 
 
-### Why does my highlighting change comes in with some delay
+### Why does my highlighting change comes in with some delay?
 
-The server takes a while to load, depending on the size of the project, that's why the highlighting comes in delayed.
+The server takes a while to load and analyze the project, that's why the highlighting comes in delayed depending on the project size.
 
-### My theme is not ready for this
+### My theme is not ready for semantic coloring, can I disable it?
 
-In 1.43.1, we add a feature to give theme a way to opt-in to semantic highlighting. In 1.43.1, only built-in themes will have semantic coloring enabled out-of-the-box.
+In 1.43.1, we add a feature to give a theme a way to opt-in to semantic highlighting. In 1.43.1, only built-in themes will have semantic coloring enabled out-of-the-box.
 
 ### As a theme author, do I need to change my theme to make it work with semantic highlighting?
 
-Our goal was that this feature works out of the box with all themes. However, we realized that there are a.) some bugs still on our side that make themes look broken and b.) theme authors want more control to enable semantic coloring for their theme and take advantage of new highlighting possibilities.
+Our goal was that this feature works out of the box with all themes. However, we learnt that there are:
+- some issues in our implementation that make themes look broken 
+- themes need to be tuned further by its authors to take advantage of the new highlighting possibilities.
 
 More information and guidance for theme authors is coming.
 
