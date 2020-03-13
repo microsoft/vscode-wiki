@@ -11,18 +11,18 @@ We went through all the feedback in the issue and identified the following theme
 
 For the recovery build 1.43.1, planned for next week, we have therefore decided on the following steps:
 - give themes a way to opt-in to semantic highlighting
-- only the built-in themes have semantic coloring enabled by default, all other themes can be enabled by the theme author or in the user settings.
+- enable semantic coloring by default only the built-in themes. All other themes can be enabled by the theme author or in the user settings.
 - show a notification when semantic coloring shows up the first time. The notification will point to the docs with background and information on how to configure the feature.
 - fix the bugs found related to wrong token classification and color lookup.
-- no longer add semantic color in imports
+- no longer show semantic color in imports
 
 ## FAQ
 
 ### What is the difference between syntax and semantic highlighting
 
-Syntax highlighting colors the text based on lexical rules. In the VS Code the lexical rules are expressed as regular expressions contained in a TextMate grammar. 
+Syntax highlighting colors the text based on lexical rules. In VS Code the lexical rules are expressed as regular expressions contained in a TextMate grammar. 
 
-Semantic highlighting enriches the syntax coloring based on symbol information from a language service that has the full understanding of the project. Based on this understanding each identifier gets colored & styled with the color of the symbol it resolves to. A constant variable name is rendered as such throughout the file, not just at its declaration. Same for parameter names, property names, class names and so on.
+Semantic highlighting enriches the syntax coloring based on symbol information from a language service that has the full understanding of the project. Based on this understanding each identifier gets colored & styled with the color of the symbol it resolves to. A constant variable name is rendered as constant throughout the file, not just in its declaration. Same for parameter names, property names, class names and so on.
 
 
 ### Why does my highlighting change comes in with some delay?
@@ -31,13 +31,15 @@ The server takes a while to load and analyze the project, that's why the highlig
 
 ### My theme is not ready for semantic coloring, can I disable it?
 
-In 1.43.1, we add a feature to give a theme a way to opt-in to semantic highlighting. In 1.43.1, only built-in themes will have semantic coloring enabled out-of-the-box.
+In 1.43.1, out-of-the-box, only built-in themes will show semantic highlighting. Other themes need to opt-in to semantic highlighting by a new property in the theme file. There will also be a way to specify this in the user settings.
 
 ### As a theme author, do I need to change my theme to make it work with semantic highlighting?
 
-Our goal was that this feature works out of the box with all themes. However, we learnt that there are:
+Our goal was that this feature works out of the box with all themes. However, we learned that there are:
 - some issues in our implementation that make themes look broken 
-- themes need to be tuned further by its authors to take advantage of the new highlighting possibilities.
+- themes need to be tuned further by its authors to take advantage of the new highlighting possibilities
+
+To give us and theme authors more time to test, and to let theme authors decide when they are ready for semantic coloring, we now only enable semantic coloring out-of-the-box for built-in themes.
 
 More information and guidance for theme authors is coming.
 
@@ -47,7 +49,7 @@ Set the cursor to the symbol to inspect and run the `Developer: Inspect Editor T
 
 ![](https://user-images.githubusercontent.com/57580/76448823-5f6bb480-63a1-11ea-862e-d59db8599a73.png)
 
-`Semantic token type` and `modifiers` show the classification that was evaluates for the given symbol and the TextMate scope that was used to style the token.
+`Semantic token type` and `modifiers` show the classification of the given symbol and the TextMate theme rule that was used to style the token.
 
 Please file an issue against [that repo](https://github.com/aeschli/typescript-vscode-sh-plugin) if you feel the classification is wrong. Please add a small code sample to reproduce along what classification you expect.
 
