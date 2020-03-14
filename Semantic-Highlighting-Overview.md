@@ -18,7 +18,7 @@ For the recovery build 1.43.1, planned for next week, we have therefore decided 
 
 ## FAQ
 
-### What is the difference between syntax and semantic highlighting
+### What is the difference between syntax and semantic highlighting?
 
 Syntax highlighting colors the text based on lexical rules. In VS Code the lexical rules are expressed as regular expressions contained in a TextMate grammar. 
 
@@ -53,7 +53,7 @@ Set the cursor to the symbol to inspect and run the `Developer: Inspect Editor T
 
 Please file an issue against [that repo](https://github.com/aeschli/typescript-vscode-sh-plugin) if you feel the classification is wrong. Please add a small code sample to reproduce along what classification you expect.
 
-[This Readme](https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md) describes the token types and modifiers that the TypeScript / JavaScript semantic highlighter produces, along with a list of known issues.
+[This readme](https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md) describes the token types and modifiers that the TypeScript / JavaScript semantic highlighter produces, along with a list of known issues.
 
 ### Known issues
 - symbols that are functions as well as objects (e.g. `require`) are classified as variables. 
@@ -142,38 +142,6 @@ Planned work and work in progress:
 - LSP proposal in work by @dbaeumer
 - extended theming rules syntax (- operator)
 - use new token types in the built-in themes
-
-
-## FAQ
-
-### 
-
-### As a theme author, do I need to change my theme to make it work with semantic highlighting?
-
-No, themes are not required to change anything. Semantic highlighting doesn't add any new styles or colors. It uses the theme to evaluate the color and styles of the semantic tokens it draws on top to the syntax highlighting.
-
-Each semantic token has one or more TextMate scopes associated (see [table below](#token-classification-to-textmate-scopes-mapping)). To evaluate the style for a semantic token, the scope is matched against the theme's rules.
-
-If a theme rule matches, the semantic token is rendered with the rule's style. If no theme rule matches, the semantic token is not rendered (that means the underlying syntax highlight prevails).
-
-If a theme wants to take advantage of the semantic tokens, it can decide to add more rules. The [table below](#token-classification-to-textmate-scopes-mapping) for the scopes to match.
-
-### The semantic highlighting for TypeScript / JavaScript files looks wrong. How can I debug this?
-
-Set the cursor to the symbol to inspect and run the `Developer: Inspect Editor Tokens and Scopes` command.
-
-![](https://user-images.githubusercontent.com/57580/76448823-5f6bb480-63a1-11ea-862e-d59db8599a73.png)
-
-`Semantic token type` and `modifiers` show the classification that was evaluates for the given symbol and the TextMate scope that was used to style the token.
-
-Please file an issue against [that repo](https://github.com/aeschli/typescript-vscode-sh-plugin) if you feel the classification is wrong. Please add a small code sample to reproduce along what classification you expect.
-
-[This Readme](https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md) describes the token types and modifiers that the TypeScript / JavaScript semantic highlighter produces, along with a list of known issues.
-
-### Known issues
-- symbols that are functions as well as objects (e.g. `require`) are classified as variables. We probably need to show them according to their actual use. 
-- `Promise.resolve`: `Promise` is a variable instead of a class. That's unfortunately what the d.ts for Promise declares.
-
 
 ## Links:
 
