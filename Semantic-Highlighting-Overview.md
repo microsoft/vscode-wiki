@@ -25,7 +25,7 @@ Syntax highlighting colors the text based on lexical rules. In VS Code the lexic
 Semantic highlighting enriches the syntax coloring based on symbol information from a language service that has the full understanding of the project. Based on this understanding each identifier gets colored & styled with the color of the symbol it resolves to. A constant variable name is rendered as constant throughout the file, not just in its declaration. Same for parameter names, property names, class names and so on.
 
 
-### Why does my highlighting change comes in with some delay?
+### Why do the semantic highlighting changes comes in with some delay?
 
 The server takes a while to load and analyze the project, that's why the highlighting comes in delayed depending on the project size.
 
