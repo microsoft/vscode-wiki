@@ -8,7 +8,6 @@
 - [ ] Initiate `insiders` build from `master`
 - [ ] Issues are tested in the `insiders` **team**
 - [ ] Build `stable` for all platforms from release branch **owner**
-- [ ] Make rpm signing request **@Tyriar**
 - [ ] Issues are verified on `stable` build and the `verified` label is added **owner**
 - [ ] Check `https://github.com/Microsoft/vscode/compare/release/<x.y>` to ensure no other commits have been made in the release branch **owner**
 - [ ] Update the release notes and include a link to a query for the fixed issues **@gregvanl**
@@ -34,5 +33,4 @@
   - [ ] Server ([instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers)) **owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish stable build **owner**
-- [ ] Publish rpm to repository manually **@Tyriar**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`
