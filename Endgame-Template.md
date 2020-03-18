@@ -170,9 +170,9 @@
     - [ ] archives **owner**
     - [ ] snap (`sudo snap install --classic --dangerous <file>.snap`) **owner**
   - [ ] Server ([instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers)) **owner**
-    - [ ] Linux
-    - [ ] macOS
-    - [ ] WIndows
+    - [ ] Linux **owner**
+    - [ ] macOS **owner**
+    - [ ] WIndows **owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish Localization language pack **@weeteckt**
 - [ ] Publish to stable **endgame master**
