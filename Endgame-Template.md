@@ -168,7 +168,7 @@
     - [ ] deb package 64-bit **owner**
     - [ ] rpm package 64-bit **owner**
     - [ ] archives **owner**
-    - [ ] snap **owner**
+    - [ ] snap (`sudo snap install --classic --dangerous <file>.snap`) **owner**
   - [ ] Server ([instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers)) **owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish Localization language pack **@weeteckt**
