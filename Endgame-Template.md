@@ -51,7 +51,7 @@
 - [ ] Fixing (only critical bugs - no string changes)
 - [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) (⚠️ MUST run with `--stable-build` argument ⚠️ )	
   - [ ] Windows - **owner**	
-  - [ ] OS X - **owner**	
+  - [ ] macOS - **owner**	
   - [ ] Linux - **owner**	
   - [ ] Web (Chromium) - **owner**	
 - [ ] All release notes updated
@@ -163,13 +163,16 @@
     - [ ] signed installer 64-bit
     - [ ] signed user installer 64-bit
     - [ ] zip 64-bit
-  - [ ] OS X - **owner**
+  - [ ] macOS - **owner**
   - [ ] Linux
     - [ ] deb package 64-bit **owner**
     - [ ] rpm package 64-bit **owner**
     - [ ] archives **owner**
     - [ ] snap (`sudo snap install --classic --dangerous <file>.snap`) **owner**
   - [ ] Server ([instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers)) **owner**
+    - [ ] Linux
+    - [ ] macOS
+    - [ ] WIndows
 - [ ] Publish website **@gregvanl**
 - [ ] Publish Localization language pack **@weeteckt**
 - [ ] Publish to stable **endgame master**
