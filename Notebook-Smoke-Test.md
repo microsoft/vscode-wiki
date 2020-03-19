@@ -2,13 +2,11 @@
 
 ### Prereqs
 
-* Checkout branch `rebornix/notebook`
-  * `yarn && yarn run watch`
 * Clone the [notebook extensions repository](https://github.com/microsoft/notebook-extension-samples)
   * `git clone https://github.com/microsoft/notebook-extension-samples`
   * `yarn && yarn run install && yarn run build`
-* Run OSS with specifying `notebook-extension-samples` as the extension directory
-  * `vscode/scripts/code.sh --extensions-dir notebook-extension-samples`
+* Run Insiders with specifying `notebook-extension-samples` as the extension directory (or you can symlink the folders)
+  * `code-insiders --extensions-dir notebook-extension-samples`
 * Clone the notebook test repository
   * `git clone https://github.com/microsoft/vscode-notebook-testdata`
   * Open the folder in OSS  
