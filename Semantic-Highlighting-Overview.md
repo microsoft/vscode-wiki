@@ -9,11 +9,10 @@ We went through all the feedback in the issue and identified the following theme
 - users don't appreciate too many coloring changes
 - theme authors want more time to test and tune their theme to semantic highlighting
 
-For the recovery build 1.43.1, planned for next week, we have therefore decided on the following steps:
-- give themes a way to opt-in to semantic highlighting
+For the recovery build 1.43.1 made the following improvements:
 - enable semantic coloring by default only the built-in themes. All other themes can be enabled by the theme author or in the user settings.
 - show a notification when semantic coloring shows up the first time. The notification will point to the docs with background and information on how to configure the feature.
-- fix the bugs found related to wrong token classification and color lookup.
+- fixes the bugs found related to wrong token classification and color lookup.
 - no longer show semantic color in imports
 
 ## FAQ
