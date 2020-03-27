@@ -64,7 +64,24 @@ Complexity: 4
 
 ```
 
-### Example 4 (Pre-assigned)
+### Example 4 (Same platform multiple times)
+
+```markdown
+
+Refs: <!-- Refer to the issue that this test plan item is testing. -->
+
+- [ ] windows
+- [ ] windows
+
+Complexity: 4
+
+---
+
+<!-- Please write your test here. -->
+
+```
+
+### Example 5 (Pre-assigned to users)
 
 ```markdown
 
@@ -83,7 +100,7 @@ Authors: @user1, @user2
 
 ```
 
-### Example 5 (Remote)
+### Example 6 (Remote)
 
 ```markdown
 
@@ -101,7 +118,7 @@ Complexity: 2
 
 ```
 
-### Example 6 (Multiple Authors)
+### Example 7 (Multiple Authors)
 
 ```markdown
 
@@ -120,6 +137,19 @@ Authors: @user1, @user2
 
 ```
 
-## Platform assignments
+### Example 8 (Additional note to assigned users)
 
-[Platforms](./platforms.json) has the list users and the platforms in which they can test. First platform is considered as primary platform. Please update this when there are changes.
+```markdown
+
+Refs: <!-- Refer to the issue that this test plan item is testing. -->
+
+- [ ] windows
+- [ ] linux (test cross platform)
+
+Complexity: 4
+
+---
+
+<!-- Please write your test here. -->
+
+```
