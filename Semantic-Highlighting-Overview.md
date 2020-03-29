@@ -87,7 +87,7 @@ Please file an issue against [that repo](https://github.com/aeschli/typescript-v
 	- `async`, `modification`, `documentation`, `defaultLibrary`
 
 ### Custom Token Types and Modifiers 
- - extensions can contribute new types and modifiers along with default styling rules
+ - extensions can contribute new types and modifiers along with default styling rules based in TextMate scopes.
 ```jsonc
 "contributes": {
 	"semanticTokenTypes": [{
