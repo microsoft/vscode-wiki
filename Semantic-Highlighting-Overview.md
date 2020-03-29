@@ -84,26 +84,27 @@ Please file an issue against [that repo](https://github.com/aeschli/typescript-v
  - standard token modifiers:
     - `declaration`
 	- `readonly`, `static`, `deprecated`, `abstract`
-	- `async`, `modification`, `documentation`
+	- `async`, `modification`, `documentation`, `defaultLibrary`
+
+### Custom Token Types and Modifiers 
  - extensions can contribute new types and modifiers along with default styling rules
 ```jsonc
 "contributes": {
 	"semanticTokenTypes": [{
-		"id": "testToken", 
-		"description": "A test token"
+		"id": "templateType", 
+		"superType": "type",
+		"description": "A template type."
 	}],
 	"semanticTokenModifiers": [{
-		"id": "testModifier", 
-		"description": "A test modifier"
+		"id": "native", 
+		"description": "Annotates a symbol that is implemented nativly"
 	}],
-	"semanticTokenStyleDefaults": [
+	"semanticTokenScopes": [
 		{
-			"selector": "testToken",
-			"scope": [ "entity.name.variable.special" ]
-		},
-		{
-			"selector": "testToken.testModifier",
-			"scope": [ "entity.name.variable.special.extra" ]
+			"language": "cpp",
+			"scopes": {
+                             "templateType": [ "entity.name.type.template.cpp" ]
+			}
 		}
 	]
 }
