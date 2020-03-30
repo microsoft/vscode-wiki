@@ -5,6 +5,8 @@
 
 Complexity: 3
 
+---
+
 **NOTE:** Desktop & Web tests MUST run with `--build` argument
 
 **NOTE:** Desktop tests MUST run with `--stable-build` argument additionally
