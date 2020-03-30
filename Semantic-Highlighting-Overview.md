@@ -129,7 +129,7 @@ Please file an issue against [that repo](https://github.com/aeschli/typescript-v
 ## Highlighting in the editor
 - Semantic tokens are merged with syntax (TextMate) tokens, semantic tokens win
 - language and standard token classification (string, regex, comment) is still done with the TextMate grammars
-- Setting `editor.semanticHighlighting.enable` to turn feature on/off (also per language)
+- Setting `editor.semanticHighlighting.enabled` to turn feature on/off (also per language)
 
 ## Try it out:
 
