@@ -28,19 +28,58 @@ Semantic highlighting enriches the syntax coloring based on symbol information f
 
 The server takes a while to load and analyze the project, that's why the highlighting comes in delayed depending on the project size.
 
+### Which languages offer semantic highlighting
+
+Currently semantic highlighting is only offered by TypeScript, JavaScript as well as JavaScript in HTML.
+More languages will adopt for 1.44 when the semantic token provider API is finalized and available for all.
+
+[This readme](https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md) describes the token types and modifiers that the TypeScript / JavaScript semantic token provider returns along with code examples.
+
 ### My theme is not ready for semantic coloring, can I disable it?
 
-In 1.43.1, out-of-the-box, only built-in themes will show semantic highlighting. Other themes need to opt-in to semantic highlighting by a new property in the theme file. There will also be a way to specify this in the user settings.
+In 1.43.1, out-of-the-box, only built-in themes show semantic highlighting. Other themes need to opt-in to semantic highlighting by a new property in the theme file:
+
+```
+"semanticHighlighting": true
+```
+
+Users can override that setting in the user settings:
+```
+"editor.tokenColorCustomizations": {
+	"[Atom One Dark]": {
+		"semanticHighlighting": true
+	}
+}
+```
 
 ### As a theme author, do I need to change my theme to make it work with semantic highlighting?
 
-Our goal was that this feature works out of the box with all themes. However, we learned that there are:
-- some issues in our implementation that make themes look broken 
-- themes need to be tuned further by its authors to take advantage of the new highlighting possibilities
+Only built-in themes show semantic highlighting out-of the box. All other themes need to opt-in to semantic highlighting by a new property in the theme file:
 
-To give us and theme authors more time to test, and to let theme authors decide when they are ready for semantic coloring, we now only enable semantic coloring out-of-the-box for built-in themes.
+```
+"semanticHighlighting": true
+```
 
-More information and guidance for theme authors is coming.
+Language extensions like TypeScript report semantic tokens. Each semantic token is described by a token type, any number of token modifiers and a language. There's a standard set of types and modifiers.
+
+Color themes can write rules directly against the token types, modifiers and language.
+
+Alternatively, if a theme does not contain a rule for given token, VSCode will map the token to a TextMate scopes and look for a matching TextMate rule in the theme.
+
+Here's an example how theme write rules for token types and modifiers:
+
+```
+"semanticTokenColors": {
+    "variable.readonly": "#ff0000",
+}
+```
+
+`variable.readonly` is called a selector and has the form `(*|type)(.modifier)*(:language)?`
+
+Here are other examples of rules:
+- `"*.declaration": { "fontStyle": "bold" }`: // all declarations are bold
+- `"class:java": { "foreground": "#00ff00" "fontStyle": "bold" }` // classes in java
+
 
 ### The semantic highlighting for TypeScript / JavaScript files looks wrong. How can I debug this?
 
