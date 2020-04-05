@@ -28,9 +28,27 @@ Semantic highlighting enriches the syntax coloring based on symbol information f
 
 The server takes a while to load and analyze the project, that's why the highlighting comes in delayed depending on the project size.
 
+### Which languages offer semantic highlighting
+
+Currently semantic highlighting is only offered by TypeScript, JavaScript as well as JavaScript in HTML.
+More languages will adopt for 1.44 when the semantic token provider API is finalized and available for all.
+
 ### My theme is not ready for semantic coloring, can I disable it?
 
-In 1.43.1, out-of-the-box, only built-in themes will show semantic highlighting. Other themes need to opt-in to semantic highlighting by a new property in the theme file. There will also be a way to specify this in the user settings.
+In 1.43.1, out-of-the-box, only built-in themes will show semantic highlighting. Other themes need to opt-in to semantic highlighting by a new property in the theme file:
+
+```
+"semanticHighlighting": true
+```
+
+Users can override that setting in the user settings:
+```
+"editor.tokenColorCustomizations": {
+	"[Atom One Dark]": {
+		"semanticHighlighting": true
+	}
+}
+```
 
 ### As a theme author, do I need to change my theme to make it work with semantic highlighting?
 
