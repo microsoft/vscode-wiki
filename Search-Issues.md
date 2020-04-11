@@ -58,3 +58,9 @@ Some details are logged for each search. To see these logs, run the command `"De
 ![screen shot 2018-04-30 at 2 15 35 pm](https://user-images.githubusercontent.com/323878/39452722-1e2a6f48-4c88-11e8-84f8-5afad938d357.png)
 
 There may also be errors that only show up in the developer tools. Open the developer tools (Help > Toggle Developer Tools) and check the Console for errors.
+
+## Notes on regular expression support
+
+Text search uses two different sets of regular expression engines. The workspace is searched using [ripgrep](https://github.com/BurntSushi/ripgrep), which will use the Rust regex engine, and will fallback to PCRE2 if the regex fails to parse in the Rust regex engine. The Rust regex engine doesn't support some features like backreferences and look-around, so if you use those features, PCRE2 will be used. Open files are searched using the editor's own JS search implementation. Most of the time, you don't need to worry about this, but you may see an inconsistency in how some complex regexes are interpreted, and this can be an explanation. Especially when you see a regex interpreted one way when a file is open, and another way when it is not.
+
+Another potential issue is how newlines are handled between ripgrep and the editor. The editor normalizes newlines, so that you can match both CRLF and LF line endings just with `\n`. It's actually not possible to match `\r` explicitly in the editor because it is normalized away. When searching in the workspace, VS Code tries to rewrite a regex so that `\n` will match CRLF. But `\r\n` or `\s\n` will also match CRLF in closed files, but not in open files.
