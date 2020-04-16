@@ -97,9 +97,9 @@ Go into `vscode` and start the build task with <kbd>Ctrl Shift B</kbd> (<kbd>Cmd
 
 The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience. It will even stay running in the background if you close VS Code. You can resume it by starting the build task with <kbd>Ctrl Shift B</kbd> again. You can kill it by running the `Kill Build VS Code` task or pressing <kbd>Ctrl D</kbd> in the task terminal.
 
-👉 **Tip!** Linux users may hit a ENOSPC error when running `yarn run watch`, to get around this follow instructions in the [Common Questions](https://code.visualstudio.com/docs/setup/linux#_common-questions).
+👉 **Tip!** Linux users may hit a ENOSPC error when running the build. To get around this follow instructions in the [Common Questions](https://code.visualstudio.com/docs/setup/linux#_common-questions).
 
-👉 **Tip!** Open VS Code on the folder where you have cloned the `vscode` repository and press <kbd>CMD+SHIFT+B</kbd> (<kbd>CTRL+SHIFT+B</kbd> on Windows, Linux) to start the builder. To view the build output open the Output stream by pressing <kbd>CMD+SHIFT+U</kbd>.
+👉 **Tip!** You can also run the build in a terminal with `yarn watchd`. Pressing <kbd>Ctrl C</kbd> will leave it running in the background. Pressing <kbd>Ctrl D</kbd> will kill it permanently.
 
 #### Errors and Warnings
 Errors and warnings will show in the console while developing VS Code. If you use VS Code to develop VS Code, errors and warnings are shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing <kbd>CMD+P</kbd> and then <kbd>!</kbd>.
