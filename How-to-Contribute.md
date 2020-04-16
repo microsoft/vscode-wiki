@@ -91,16 +91,11 @@ Manage any merge conflicts, commit them, and then push them to your fork.
 
 ### Build
 
-Go into `vscode` and start the TypeScript incremental builder:
-
-```
-cd vscode
-yarn watch
-```
+Go into `vscode` and start the build task with <kbd>Ctrl Shift B</kbd> (<kbd>Cmd Shift B</kbd> on macOS).
 
 👉 **Note:** If you are running Windows and have installed Visual Studio 2017 as your build tool, you need to open **x64 Native Tools Command Prompt for VS 2017**. Do not confuse it with *VS2015 x64 Native Tools Command Prompt*, if installed.
 
-The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will then continue to run in the terminal. It will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience.
+The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience. It will even stay running in the background if you close VS Code. You can resume it by starting the build task with <kbd>Ctrl Shift B</kbd> again. You can kill it by running the `Kill Build VS Code` task or pressing <kbd>Ctrl D</kbd> in the task terminal.
 
 👉 **Tip!** Linux users may hit a ENOSPC error when running `yarn run watch`, to get around this follow instructions in the [Common Questions](https://code.visualstudio.com/docs/setup/linux#_common-questions).
 
