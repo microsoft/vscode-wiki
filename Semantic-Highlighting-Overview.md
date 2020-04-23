@@ -106,8 +106,8 @@ Set the cursor to the symbol to inspect and run the `Developer: Inspect Editor T
 
 ## Links:
 
-- API: [vscode.proposed.d.ts#L223](
-https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts#L223)
+- API: [vscode.d.ts](
+https://github.com/microsoft/vscode/blob/d4ca08f0976af1d9fe675d631e9e3cad52f1d00a/src/vs/vscode.d.ts#L3292)
 - Latest standard token types and modifiers:
 [tokenClassificationRegistry.ts#L364](https://github.com/Microsoft/vscode/blob/master/src/vs/platform/theme/common/tokenClassificationRegistry.ts#L364)
 - Semantic highlighting for JS in HTML:
