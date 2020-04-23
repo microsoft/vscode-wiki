@@ -1,19 +1,10 @@
 ## Semantic Highlighting
 
-In 1.43 we enabled Semantic Highlighting as a [new feature](https://code.visualstudio.com/updates/v1_43#_typescript-semantic-highlighting). 
+### History
 
-This resulted in several issues filed by our users like https://github.com/microsoft/vscode/issues/92308.
+In 1.43 we enabled Semantic Highlighting as a [new feature](https://code.visualstudio.com/updates/v1_43#_typescript-semantic-highlighting) for all themes.
 
-We went through all the feedback in the issue and identified the following themes:
-
-- users don't appreciate too many coloring changes
-- theme authors want more time to test and tune their theme to semantic highlighting
-
-For the recovery build 1.43.1 made the following improvements:
-- enable semantic coloring by default only the built-in themes. All other themes can be enabled by the theme author or in the user settings.
-- show a notification when semantic coloring shows up the first time. The notification will point to the docs with background and information on how to configure the feature.
-- fixes the bugs found related to wrong token classification and color lookup.
-- no longer show semantic color in imports
+Due to [feedback](https://github.com/microsoft/vscode/issues/92308), since 1.43.1 only themes that opt-in get semantic highlighting.
 
 ## FAQ
 
@@ -35,7 +26,7 @@ More languages will adopt for 1.44 when the semantic token provider API is final
 
 [This readme](https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md) describes the token types and modifiers that the TypeScript / JavaScript semantic token provider returns along with code examples.
 
-### My theme is not ready for semantic coloring, can I disable it?
+### Which themes offer semantic highlighting
 
 In 1.43.1, out-of-the-box, only built-in themes show semantic highlighting. Other themes need to opt-in to semantic highlighting by a new property in the theme file:
 
@@ -60,11 +51,11 @@ Only built-in themes show semantic highlighting out-of the box. All other themes
 "semanticHighlighting": true
 ```
 
-Language extensions like TypeScript report semantic tokens. Each semantic token is described by a token type, any number of token modifiers and a language. There's a standard set of types and modifiers.
+Language extensions like TypeScript report semantic tokens. Each semantic token is described by a token type, any number of token modifiers and a language. There's a (standard set)[https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-token-classification] of types and modifiers.
 
-Color themes can write rules directly against the token types, modifiers and language.
+Color themes can [write rules](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#theming) directly against the token types, modifiers and language.
 
-Alternatively, if a theme does not contain a rule for given token, VSCode will map the token to a TextMate scopes and look for a matching TextMate rule in the theme.
+Alternatively, if a theme does not contain a rule for given token, VSCode will [map](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-token-scope-map) the token to a TextMate scopes and look for a matching TextMate rule in the theme. 
 
 Here's an example how theme write rules for token types and modifiers:
 
@@ -81,7 +72,7 @@ Here are other examples of rules:
 - `"class:java": { "foreground": "#00ff00" "fontStyle": "bold" }` // classes in java
 
 
-### The semantic highlighting for TypeScript / JavaScript files looks wrong. How can I debug this?
+### How can I debug this?
 
 Set the cursor to the symbol to inspect and run the `Developer: Inspect Editor Tokens and Scopes` command.
 
@@ -93,9 +84,6 @@ Please file an issue against [that repo](https://github.com/aeschli/typescript-v
 
 [This readme](https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md) describes the token types and modifiers that the TypeScript / JavaScript semantic highlighter produces, along with a list of known issues.
 
-### Known issues
-- symbols that are functions as well as objects (e.g. `require`) are classified as variables. 
-- `Promise.resolve`: `Promise` is a variable instead of a class. 
 
 ## SemanticTokensProvider API (proposed)
 
