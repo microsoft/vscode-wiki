@@ -4,7 +4,9 @@
 
 In 1.43 we enabled Semantic Highlighting as a [new feature](https://code.visualstudio.com/updates/v1_43#_typescript-semantic-highlighting) for all themes.
 
-Due to [feedback](https://github.com/microsoft/vscode/issues/92308), since 1.43.1 only themes that opt-in get semantic highlighting.
+Due to [feedback](https://github.com/microsoft/vscode/issues/92308), since 1.43.1 only the built-in themes and custom themes that opt-in get semantic highlighting.
+
+Semantic tokens are available for TypeScript and JavaScript. Support for Java, C++ and more is in the works.
 
 ## FAQ
 
@@ -22,9 +24,9 @@ The server takes a while to load and analyze the project, that's why the highlig
 ### Which languages offer semantic highlighting
 
 Currently semantic highlighting is only offered by TypeScript, JavaScript as well as JavaScript in HTML.
-More languages will adopt for 1.44 when the semantic token provider API is finalized and available for all.
+More languages will adopt. The semantic token provider API is now available for all since 1.44.
 
-[This readme](https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md) describes the token types and modifiers that the TypeScript / JavaScript semantic token provider returns along with code examples.
+If you are a language extension and want to implement a semantic token provider, please check out the [sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/semantic-tokens-sample).
 
 ### Which themes offer semantic highlighting
 
@@ -43,21 +45,26 @@ Users can override that setting in the user settings:
 }
 ```
 
+To see the feature in action, open a file for a language that has a semantic token provider available (currently TypeScript & JavaScript) and you will see that each identifier in the code now gets the color of the symbol it references (consts, parameters, types..).
+
+
 ### As a theme author, do I need to change my theme to make it work with semantic highlighting?
 
-Only built-in themes show semantic highlighting out-of the box. All other themes need to opt-in to semantic highlighting by a new property in the theme file:
+Yes, only built-in themes show semantic highlighting out-of the box. All other themes need to opt-in to semantic highlighting by a new property in the theme file:
 
 ```
 "semanticHighlighting": true
 ```
 
-Language extensions like TypeScript report semantic tokens. Each semantic token is described by a token type, any number of token modifiers and a language. There's a (standard set)[https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-token-classification] of types and modifiers.
+When set, language extensions like TypeScript start reporting semantic tokens. 
 
-Color themes can [write rules](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#theming) directly against the token types, modifiers and language.
+Each semantic token is described by a token type, any number of token modifiers and a language. There's a [standardized set](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-token-classification) of semantic types and modifiers, but languages can also define new and derived types and modifiers.
 
-Alternatively, if a theme does not contain a rule for given token, VSCode will [map](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-token-scope-map) the token to a TextMate scopes and look for a matching TextMate rule in the theme. 
+Color themes can [write rules](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#theming) directly against these semantic token types, modifiers and language.
 
-Here's an example how theme write rules for token types and modifiers:
+Alternatively, if a theme does not contain a semantic theming rule for a token, VSCode will use a [mapping from semantic token to a TextMate scopes](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-token-scope-map) and look up the color in the themes TextMate rules. 
+
+Here's an example how theme can write theming rules for semantic token types and modifiers:
 
 ```
 "semanticTokenColors": {
@@ -67,108 +74,35 @@ Here's an example how theme write rules for token types and modifiers:
 
 `variable.readonly` is called a selector and has the form `(*|type)(.modifier)*(:language)?`
 
+This rule colors all token of type `variable` and contain modifier `readonly`, red. 
+
 Here are other examples of rules:
 - `"*.declaration": { "fontStyle": "bold" }`: // all declarations are bold
-- `"class:java": { "foreground": "#00ff00" "fontStyle": "bold" }` // classes in java
+- `"class:java": { "foreground": "#00ff00" "fontStyle": "bold" }` // token of type `class` in `java` files
 
-
-### How can I debug this?
-
-Set the cursor to the symbol to inspect and run the `Developer: Inspect Editor Tokens and Scopes` command.
-
-![](https://user-images.githubusercontent.com/57580/76448823-5f6bb480-63a1-11ea-862e-d59db8599a73.png)
-
-`Semantic token type` and `modifiers` show the classification of the given symbol and the TextMate theme rule that was used to style the token.
-
-Please file an issue against [that repo](https://github.com/aeschli/typescript-vscode-sh-plugin) if you feel the classification is wrong. Please add a small code sample to reproduce along what classification you expect.
-
-[This readme](https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md) describes the token types and modifiers that the TypeScript / JavaScript semantic highlighter produces, along with a list of known issues.
-
-
-## SemanticTokensProvider API (proposed)
-
-  - 3 flavors:
-	- tokens for a range (e.g. view port)
-	- tokens for the full document
-	- tokens for the full document with a reference to the previous result: Result will be reported as delta (`SemanticTokenEdits`)
-
-  - optimized to minimize response sizes
-	- using number arrays for all information: line, character, length, token-classification
-	- token classification is split into __token type__ and __token modifier__ and represented as an __index into a legend__. Legend is provided when the provider is registered.
-	- lines and characters are relative to the previous token in order to reduce the number of `SemanticTokenEdits` needed to report a delta.
-  - pull model (LS provides token on demand).
-
-## Token Classification
- - token classification is split into __token types__ and __token modifiers__
- - standard token types and token modifiers defined by us
- - standard token types:
-	- `namespace`,
-	- `type`, `class`, `enum`, `interface`, `struct`, `typeParameter`
-	- `parameter`, `variable`, `property`, `enumMember`, `event`
-	- `function`, `member`, `macro`
-	- `label`,
-	- `comment`, `string`, `keyword`, `number`, `regexp`, `operator`
- - standard token modifiers:
-    - `declaration`
-	- `readonly`, `static`, `deprecated`, `abstract`
-	- `async`, `modification`, `documentation`, `defaultLibrary`
-
-### Custom Token Types and Modifiers 
- - extensions can contribute new types and modifiers along with default styling rules based in TextMate scopes.
-```jsonc
-"contributes": {
-	"semanticTokenTypes": [{
-		"id": "templateType", 
-		"superType": "type",
-		"description": "A template type."
-	}],
-	"semanticTokenModifiers": [{
-		"id": "native", 
-		"description": "Annotates a symbol that is implemented nativly"
-	}],
-	"semanticTokenScopes": [
-		{
-			"language": "cpp",
-			"scopes": {
-                             "templateType": [ "entity.name.type.template.cpp" ]
-			}
-		}
-	]
-}
-```
-## Token Styling
-- VSCode defines a [default mapping](#token-classification-to-textmate-scopes-mapping) of token classifications to TextMate scope(s). To evaluate the style for a token, the current color theme is probed against the TextMate scope(s). If the theme has a rule that matches, the token is rendered with the rule's style. If no rule matches, the semantic token is not rendered (that means the regular syntax highlighting is used instead).
-
-
-- Experimental: Themes and user settings can define rules to assign classifications to styles (foreground, italic, underline, bold)
-
+It's also possible to define semantic theming rules in the user settings:
 ```
     "editor.tokenColorCustomizationsExperimental": {
         "property.readonly": {
             "foreground": "#35166d"
         },
-        "*.declaration": {
+        "*.defaultLibrary": {
             "fontStyle": "underline"
         }
     }
 ```
 
-## Highlighting in the editor
-- Semantic tokens are merged with syntax (TextMate) tokens, semantic tokens win
-- language and standard token classification (string, regex, comment) is still done with the TextMate grammars
-- Setting `editor.semanticHighlighting.enabled` to turn feature on/off (also per language)
+### How can I find out what semantic tokens are available and how they are themed?
 
-## Try it out:
+Open a file for a language that has a semantic token provider available (currently TypeScript & JavaScript).
 
-- Latest insiders ( >20200116)
-- Open TypeScript file
-- use `Inspect Editor Tokens and Scopes` to see the semantic tokens classifications
-- set theming rules with `editor.tokenColorCustomizationsExperimental`
+Set the cursor to the symbol to inspect and run the `Developer: Inspect Editor Tokens and Scopes` command.
 
-Planned work and work in progress:
-- LSP proposal in work by @dbaeumer
-- extended theming rules syntax (- operator)
-- use new token types in the built-in themes
+![](https://user-images.githubusercontent.com/57580/76448823-5f6bb480-63a1-11ea-862e-d59db8599a73.png)
+
+`Semantic token type` and `modifiers` show the classification of the given symbol and the semantic theming rule or the TextMate theme rule that was used to style the token.
+
+[This readme](https://github.com/aeschli/typescript-vscode-sh-plugin/blob/master/README.md) describes the token types and modifiers that the TypeScript / JavaScript semantic highlighter produces, along with a list of known issues. If you feel that a classification is wrong, please file an issue against [that repo](https://github.com/aeschli/typescript-vscode-sh-plugin). Please add a small code sample to reproduce along what classification you expect.
 
 ## Links:
 
@@ -181,21 +115,3 @@ https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts#L223
 - Sample:
 [semantic-tokens-sample](https://github.com/microsoft/vscode-extension-samples/blob/master/semantic-tokens-sample)
 
-## Token Classification to TextMate Scopes Mapping
-
-- `namespace`: `entity.name.namespace`
-- `type`: `entity.name.type` | `support.type`
-- `struct`: `storage.type.struct`
-- `class`: `entity.name.type.class`
-- `interface`: `entity.name.type.interface`
-- `enum`: `entity.name.type.enum`
-- `function`: `entity.name.function` | `support.function`
-- `member`: `entity.name.function.member` | `support.function`
-- `macro`: `entity.name.other.preprocessor.macro`
-- `variable`: `variable.other.readwrite` | `entity.name.variable`
-- `variable.readonly`: `variable.other.constant`
-- `parameter`: `variable.parameter`
-- `property`: `variable.other.property`
-- `property.readonly`: `variable.other.constant.property`
-- `enumMember`: `variable.other.enummember`
-- `event`: `variable.other.event`
