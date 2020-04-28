@@ -32,8 +32,8 @@ Update the OS test availability [here](https://github.com/Microsoft/vscode-tools
 
 We release a recovery build with a handful of critical fixes and translation updates a few days after a release. The candidate fixes are reviewed by the development team and are assigned to the recovery milestone. We want to be restrictive about the included candidates. The mindset is "we will lose users if we do not include the fix". Here are some examples:
 - data loss
-- a regression that users complain loudly about in issues or twitter
-- a significant performance regressions
+- a regression that users complain loudly about in issues or Twitter
+- a significant performance regression
 - an issue that impacts many users as indicated by telemetry data
 - an embarrassing UI glitch
 - critical security fixes
