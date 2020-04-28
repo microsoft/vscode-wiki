@@ -1,5 +1,3 @@
-# Search Issues
-
 This document applies to search (<kbd>CMD+SHIFT+F</kbd>/<kbd>CTRL+SHIFT+F</kbd>) and quickopen (<kbd>CMD+P</kbd>/<kbd>CTRL+P</kbd>). By default, VS Code uses the [ripgrep](https://github.com/BurntSushi/ripgrep) tool to drive search. Learn more about how to use search in [the documentation](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files).
 
 ## Missing search results
