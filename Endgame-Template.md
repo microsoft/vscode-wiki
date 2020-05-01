@@ -108,11 +108,11 @@
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Trigger new insider build and publish it manually **endgame master**
-
-##### Friday/Monday
 - [ ] Branch code to `release/<x.y> **endgame master**
 - [ ] Bump up the version in package.json - **endgame master**
 - [ ] Announce master is open for business **endgame master**
+
+##### Friday/Monday
 - [ ] Polish release notes **redmond**
 - [ ] Fixing (only critical bugs - no string changes)
 
