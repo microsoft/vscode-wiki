@@ -47,6 +47,7 @@
   - [ ] node debug2 **@roblourens**
   - [ ] js-debug **@connor4312**
   - [ ] node debugadapter node **@weinand**
+  - [ ] custom data for html/css **@aeschli**
 - [ ] All issues [🔖verified](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22January+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug++repo%3Amicrosoft%2Fvscode-pull-request-github)
 - [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) (⚠️ MUST run with `--stable-build` argument ⚠️ )	
