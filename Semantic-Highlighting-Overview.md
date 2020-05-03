@@ -38,9 +38,9 @@ In 1.43.1, out-of-the-box, only built-in themes show semantic highlighting. Othe
 
 Users can override that setting in the user settings:
 ```
-"editor.tokenColorCustomizations": {
+"editor.semanticTokenColorCustomizations": {
 	"[Atom One Dark]": {
-		"semanticHighlighting": true
+		"enabled": true
 	}
 }
 ```
@@ -82,14 +82,17 @@ Here are other examples of rules:
 
 It's also possible to define semantic theming rules in the user settings:
 ```
-    "editor.tokenColorCustomizationsExperimental": {
-        "property.readonly": {
-            "foreground": "#35166d"
-        },
-        "*.defaultLibrary": {
-            "fontStyle": "underline"
-        }
-    }
+"editor.semanticTokenColorCustomizations": {
+	"enabled": true, // enable for all themes
+	"rules": {
+        	"property.readonly": {
+         	   "foreground": "#35166d"
+        	},
+        	"*.defaultLibrary": {
+        	    "fontStyle": "underline"
+        	}
+	}
+}
 ```
 
 ### How can I find out what semantic tokens are available and how they are themed?
