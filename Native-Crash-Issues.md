@@ -6,6 +6,7 @@ VSCode since version 1.46 now supports a new `--crash-reporter-directory <path>`
   * note: use `code-insiders` for the insiders version if you are using it
 * take the steps that lead to the crash
 * check for a `*.dmp` file in that folder
+* send the contents back to us
 
 # Summary
 
