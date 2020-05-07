@@ -60,11 +60,11 @@ Our roadmap covers the broadly the following themes:
 - :runner: Support [synchronizing settings and extensions](https://github.com/microsoft/vscode/issues/2743) across VS Code installations on different machines.
 - In the settings editor, provide high-fidelity support for additional settings types such as colors.
 - Provide a dedicated theme customization editor.
-- Support to synchronize settings between the insider and stable versions of VS Code
+- :runner: Support to synchronize settings between the insider and stable versions of VS Code
 
 ## Search
 
-- :runner: Show search results not only in the side bar or a panel, but also in an editor. This allows users to work with multiple search results and to see additional context for each match.
+- [x] Show search results not only in the side bar or a panel, but also in an editor. This allows users to work with multiple search results and to see additional context for each match.
 
 ## UX
 
@@ -73,14 +73,14 @@ Our roadmap covers the broadly the following themes:
    - Welcome page
    - :runner: Use tabs instead of the terminal dropdown
 - Revisit/review the first run experience for VS Code as well as newly installed extensions. For example, we want to reduce the number of notifications that are shown.
-- Touch and mobile support for VS Code in the browser
+- :runner: Touch and mobile support for VS Code in the browser
 - Investigate how users can express what they want to use VS Code for after they installed it. For example, a user wants to develop a website with a Go backend, VS Code should provide light-weight guidance to get all the right extensions and configure them appropriately.
 
 ## Editor
 
 - :runner: Notebooks (for example Jupyter) have become a popular means in data science and education and are making their way into every corner of development. We'll explore how VS Code and the Monaco Editor can provide a rich notebook experience (deep language services, light-weight/simple debugging).
 - Investigate isolating the editor from misbehaving grammars
-- :runner: Investigate support for semantic coloring
+- [x] Investigate support for semantic coloring
 - Investigate how to simplify the maintenance of textmate grammars
 - Expand 'inline' experiences
    - Inset editing
@@ -93,12 +93,12 @@ Our roadmap covers the broadly the following themes:
 
 ## Languages
 
-- :runner: Enable programming language extensions to provide support for call hierarchies.
+- [x] Enable programming language extensions to provide support for call hierarchies.
 - Enable programming language extensions to provide support for type hierarchies.
 - Improve support for workspace-level edits (an semantic unit comprised of name, location, and content manipulations across multiple files)
    - :runner: Enable language extensions to participate in workspace edits such as rename or move.
-   - Enable an one-step undo of complex workspace edits.
-   - Investigate how a user can preview workspace edits (e.g. preview the changes of a rename refactoring).
+   - :runner: Enable an one-step undo of complex workspace edits.
+   - :runner: Investigate how a user can preview workspace edits (e.g. preview the changes of a rename refactoring).
 - Incrementally improve support for nested languages. This will be code changes on our side as well as samples and documentations.
 
 ### TypeScript
@@ -112,11 +112,11 @@ We will continue to collaborate deeply with the TypeScript team to deliver the r
 
 ## SCM
 
-- Investigate synergies between the core git support and GitLens
-- Provide an overall improved GitHub integration, e.g. we'll make it easier to hover over issue URL in your code or associate a GitHub issue with your commit.
+- :runner: Investigate synergies between the core git support and GitLens
+- :runner: Provide an overall improved GitHub integration, e.g. we'll make it easier to hover over issue URL in your code or associate a GitHub issue with your commit.
 - Provide full merge support (3-way)
 - Investigate support for showing a local history of a file and folder and combine that with the git history
-- Investigate timeline support for combining local history with other events such as successful test runs or refactorings
+- :runner: Investigate timeline support for combining local history with other events such as successful test runs or refactorings
 
 ## Debug
 
@@ -203,13 +203,13 @@ VS Code is made possible through a wide range of technologies. Below are example
 
 ## Engineering
 
-- Migrate from `tslint` to `eslint`. Tslint will be [deprecated](https://github.com/palantir/tslint/issues/4534).
+- [x] Migrate from `tslint` to `eslint`. Tslint will be [deprecated](https://github.com/palantir/tslint/issues/4534).
 - Improve the built-in issue reporter, e.g., support to paste/attach images.
 - Implement tooling that allows us to detect issues in which emotions fly high.
-- Improve our "smoke" tests and revisit the current approach on how we implement them.
+- :runner: Improve our "smoke" tests and revisit the current approach on how we implement them.
 - Investigate automating how we sanity check all our binaries right before we release.
-- Investigate moving our GitHub bots to GitHub actions.
-- Improve our GitHub issue bots, examples:
+- :runner: Investigate moving our GitHub bots to GitHub actions.
+- :runner: Improve our GitHub issue bots, examples:
    - reject invalid incoming issues automatically
    - make it easier to move issue to extension repositories
    - automate training of our classification bot
