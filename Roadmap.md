@@ -140,7 +140,7 @@ We will continue to collaborate deeply with the TypeScript team to deliver the r
 
 - Extension Acquisition
    - Revisit how users find and install extensions including a simple text-based approach
-   - Make it easier for users to pick and choose which functionality they want from extensions packs.
+   - [x] Make it easier for users to pick and choose which functionality they want from extensions packs.
    - Improve the recommendation system, e.g., allow users to ask for recommendations based on their prior use of VS Code.
    - Add support to only activate signed extensions (see *Extension Authoring*).
 
