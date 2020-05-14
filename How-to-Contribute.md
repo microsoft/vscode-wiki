@@ -91,20 +91,20 @@ Manage any merge conflicts, commit them, and then push them to your fork.
 
 ### Build
 
-Go into `vscode` and start the build task with <kbd>Ctrl Shift B</kbd> (<kbd>Cmd Shift B</kbd> on macOS).
+Go into `vscode` and start the build task with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> on macOS).
 
 👉 **Note:** If you are running Windows and have installed Visual Studio 2017 as your build tool, you need to open **x64 Native Tools Command Prompt for VS 2017**. Do not confuse it with *VS2015 x64 Native Tools Command Prompt*, if installed.
 
-The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience. It will even stay running in the background if you close VS Code. You can resume it by starting the build task with <kbd>Ctrl Shift B</kbd> again. You can kill it by running the `Kill Build VS Code` task or pressing <kbd>Ctrl D</kbd> in the task terminal.
+The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience. It will even stay running in the background if you close VS Code. You can resume it by starting the build task with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) again. You can kill it by running the `Kill Build VS Code` task or pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal (<kbd>CMD</kbd>+<kbd>D</kbd> on macOS).
 
 👉 **Tip!** Linux users may hit a ENOSPC error when running the build. To get around this follow instructions in the [Common Questions](https://code.visualstudio.com/docs/setup/linux#_common-questions).
 
-👉 **Tip!** You can also run the build in a terminal with `yarn watchd`. Pressing <kbd>Ctrl C</kbd> will leave it running in the background. Pressing <kbd>Ctrl D</kbd> will kill it permanently.
+👉 **Tip!** You can also run the build in a terminal with `yarn watchd`. Pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> will leave it running in the background. Pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> will kill it permanently (<kbd>CMD</kbd>+<kbd>C</kbd> and <kbd>CMD</kbd>+<kbd>D</kbd> on macOS).
 
 #### Errors and Warnings
-Errors and warnings will show in the console while developing VS Code. If you use VS Code to develop VS Code, errors and warnings are shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing <kbd>CMD+P</kbd> and then <kbd>!</kbd>.
+Errors and warnings will show in the console while developing VS Code. If you use VS Code to develop VS Code, errors and warnings are shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> and then <kbd>!</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> and <kbd>!</kbd> on macOS).
 
-👉 **Tip!** You don't need to stop and restart the development version of VS Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut <kbd>CMD+R</kbd> (<kbd>CTRL+R</kbd> on Windows, Linux) to this command.
+👉 **Tip!** You don't need to stop and restart the development version of VS Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>R</kbd> (<kbd>CMD</kbd>+<kbd>R</kbd> on macOS) to this command.
 
 ### Run
 
@@ -155,7 +155,7 @@ The **render** process runs the UI code inside the Shell window. To debug code r
 
 The **extension host** process runs code implemented by a plugin. To debug extensions (including those packaged with VS Code) which run in the extension host process, you can use VS Code itself. Switch to the Debug viewlet, choose the `Attach to Extension Host` configuration, and press <kbd>F5</kbd>.
 
-The **search** process can be debugged, but must first be started. Before attempting to attach, start a search by pressing <kbd>CMD+P</kbd> (<kbd>CTRL+P</kbd> on Windows), otherwise attaching will fail and time out.
+The **search** process can be debugged, but must first be started. Before attempting to attach, start a search by pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> on macOS), otherwise attaching will fail and time out.
 
 ### Automated Testing
 Run the unit tests directly from a terminal by running `./scripts/test.sh` from the `vscode` folder (`scripts\test` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/master/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
@@ -166,7 +166,7 @@ We also have automated UI tests. The [smoke test README](https://github.com/Micr
 Run the tests directly from a terminal by running `./scripts/test.sh` from the `vscode` folder (`scripts\test` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/master/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
 
 ### Linting
-We use [eslint](https://eslint.org/) for linting our sources. You can run eslint across the sources by calling `yarn eslint` from a terminal or command prompt. You can also run `yarn eslint` as a VS Code task by pressing <kbd>CMD+P</kbd> (<kbd>CTRL+P</kbd> on Windows) and entering `task eslint`.
+We use [eslint](https://eslint.org/) for linting our sources. You can run eslint across the sources by calling `yarn eslint` from a terminal or command prompt. You can also run `yarn eslint` as a VS Code task by pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> on macOS) and entering `task eslint`.
 
 To lint the source as you make changes you can install the [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
