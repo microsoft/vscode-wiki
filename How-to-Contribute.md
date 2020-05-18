@@ -17,7 +17,7 @@ You'll need the following tools:
 - A C/C++ compiler tool chain for your platform:
   - **Windows**
     - Set a `PYTHON` environment variable pointing to your `python.exe`. E.g.: `C:\Python27\python.exe`
-	- Install a compiler for the native modules VS Code is depending on
+	- Install a compiler for compiling the native modules of VS Code depending on
 		- Option 1 (recommended): Use Windows Build Tools npm module
 			- Start Powershell as Administrator and install [Windows Build Tools npm module](https://github.com/felixrieseberg/windows-build-tools) ([documentation](https://github.com/felixrieseberg/windows-build-tools#visual-studio-2017-vs-visual-studio-2015)).
 				```
@@ -25,13 +25,13 @@ You'll need the following tools:
 				```
 				**Note:** The `--debug` flag is helpful if you encounter any problems during installation.
 
-				**Note:** if you encounter an error *The build tools for v141 (Platform Toolset = 'v141') cannot be found."* you might have a version of Visual Studio installed. Either uninstall that version or make sure to have *VC++ 2015.3 v14.00 (v140) toolset for desktop* installed (see below)
+				**Note:** if you encounter an error *"The build tools for v141 (Platform Toolset = 'v141') cannot be found"*, you might have a version of Visual Studio installed. Either uninstall that version or make sure to have *VC++ 2015.3 v14.00 (v140) toolset for desktop* installed (see below)
 		- Option 2: Use Visual Studio 2017
 			- Install [Visual Studio 2017 Community Edition](https://visualstudio.microsoft.com/downloads/)
 			- Select *Desktop Development with C++*
 			- Select *VC++ 2015.3 v14.00 (v140) toolset for desktop* on the right hand side
 
-				**Note:** if you encounter an error *The build tools for v141 (Platform Toolset = 'v141') cannot be found."* make sure you installed the *VC++ 2015.3 v14.00 (v140) toolset for desktop* from the previous step
+				**Note:** if you encounter an error *"The build tools for v141 (Platform Toolset = 'v141') cannot be found"*, make sure you installed the *VC++ 2015.3 v14.00 (v140) toolset for desktop* from the previous step
 	- **Restart** your computer
     - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
@@ -69,7 +69,7 @@ In case of issues, try deleting the contents of `~/.node-gyp` first and then run
 
 ## Build and Run
 
-If you want to understand how VS Code works or want to debug an issue, you'll want to get the source, build it, and run the tool locally.
+If you want to understand how VS Code works or want to debug an issue, you'll have to get the source, build it, and run the tool locally.
 
 ### Getting the sources
 
