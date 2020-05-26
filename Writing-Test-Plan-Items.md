@@ -33,6 +33,7 @@ Refs: <!-- Refer to the issue that this test plan item is testing. -->
   - wsl
   - ssh
   - dev container
+  - web
   - anyOS
 
 - Complexity of the test plan item which should be between 1 till 5.
@@ -155,7 +156,24 @@ Complexity: 2
 
 ```
 
-### Example 7 (Multiple Authors)
+### Example 7 (Web)
+
+```markdown
+
+Refs: <!-- Refer to the issue that this test plan item is testing. -->
+
+- [ ] web
+- [ ] web
+
+Complexity: 2
+
+---
+
+<!-- Please write your test here. -->
+
+```
+
+### Example 8 (Multiple Authors)
 
 ```markdown
 
@@ -174,7 +192,7 @@ Authors: @user1, @user2
 
 ```
 
-### Example 8 (Additional note to assigned users)
+### Example 9 (Additional note to assigned users)
 
 ```markdown
 
