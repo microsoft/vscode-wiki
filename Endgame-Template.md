@@ -73,7 +73,6 @@
   - [ ] @jrieken
   - [ ] @kieferrm
   - [ ] @mjbvz
-  - [ ] @octref
   - [ ] @rebornix
   - [ ] @rmacfarlane
   - [ ] @roblourens
@@ -142,7 +141,6 @@
   - [ ] @jrieken
   - [ ] @kieferrm
   - [ ] @mjbvz
-  - [ ] @octref
   - [ ] @rebornix
   - [ ] @rmacfarlane
   - [ ] @roblourens
