@@ -179,6 +179,7 @@
 - [ ] Publish Localization language pack **@weeteckt**
 - [ ] Publish to stable **endgame master**
 - [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **endgame master**
+- [ ] Update [release notes in Github](https://github.com/microsoft/vscode/releases), by copy-pasting the release notes highlights. ([Example release](https://github.com/microsoft/vscode/releases/tag/1.39.0), [example candidate release](https://github.com/microsoft/vscode/releases/tag/1.39.1))
 - [ ] [Publish @types/vscode](https://github.com/microsoft/vscode/wiki/Publish-vscode-types) **endgame master**
 - [ ] Enable scheduled `insider` builds **endgame master**
 - [ ] Twitter announcement **@chrisdias**
