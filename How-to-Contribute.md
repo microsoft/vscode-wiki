@@ -112,7 +112,7 @@ To test the changes you launch a development version of VS Code on the workspace
 
 **macOS and Linux**
 
-```bash
+```sh
 ./scripts/code.sh
 ```
 
@@ -124,7 +124,7 @@ To test the changes you launch a development version of VS Code on the workspace
 
 **Web (Chromium, Firefox or Safari only)**
 
-```bash
+```sh
 yarn web
 ```
 You can use `--port`, `--host` and `--scheme` to further instruct the simple server that runs for the web version about your environment (e.g. if you want to test the web version over a network).
