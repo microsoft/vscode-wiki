@@ -20,7 +20,7 @@ API Proposal Stages
 
 Here is a rough flow chart of the process.
 
-![Flow](https://user-images.githubusercontent.com/1794099/42496119-5cecdc82-8425-11e8-8b03-48e95716bf2d.png)
+![Flow](https://user-images.githubusercontent.com/10179520/83657557-60267800-a597-11ea-8831-7bf284d5233a.png)
 
 #### API Idea
 
