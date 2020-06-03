@@ -16,12 +16,14 @@ The inbox tracker is responsible for the [global inbox](https://github.com/Micro
 - are neither **feature requests** nor **test plan items** nor **plan items** and
 - have **no owner assignment**.
 
-The **inbox tracker** may perform any step described in our [issue triaging documentation](https://github.com/microsoft/vscode/wiki/Issues-Triaging) but it's main responsibility is to route issues to the actual feature area owner.
+The **inbox tracker** may perform any step described in our [issue triaging documentation](https://github.com/microsoft/vscode/wiki/Issues-Triaging) but its main responsibility is to route issues to the actual feature area owner.
 
 Feature area owners track the **feature area inbox** containing all **open issues and pull requests** that
 - are personally assigned to them and are not assigned to any milestone
 - are labeled with their feature area label and are not assigned to any milestone.
 This secondary triage may involve any of the steps described in our [issue triaging documentation](https://github.com/microsoft/vscode/wiki/Issues-Triaging) and results in a fully triaged or closed issue.
+
+The [github triage extension](https://github.com/microsoft/vscode-github-triage-extension) can be used to assist with triaging - it provides a "Command Pallet"-style list of triaging actions like assignment, labeling, and triggers for various bot actions.
 
 
 ### Ongoing Issue Management
