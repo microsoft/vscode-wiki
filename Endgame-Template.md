@@ -32,7 +32,8 @@
 - [ ] Prepare for Smoke test: Make sure all smoke test issues are labelled `smoke-test` and fixed **endgame master**
 
 ##### Thursday
-- [ ] Fixing (self-assigned, milestone assigned)
+- [ ] Fixing (self-assigned, milestone assigned, NO discussion during standup)
+  - Move issues to the next month that can be deferred
 - [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
 - [ ] [🔖Verification](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22January+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug++repo%3Amicrosoft%2Fvscode-pull-request-github)
 - [ ] Prepare for Smoke test: Make sure all smoke test issues are labelled `smoke-test` and fixed **endgame master**
