@@ -73,6 +73,7 @@
   - [ ] @joaomoreno
   - [ ] @jrieken
   - [ ] @kieferrm
+  - [ ] @lszomoru
   - [ ] @mjbvz
   - [ ] @rebornix
   - [ ] @rmacfarlane
@@ -141,6 +142,7 @@
   - [ ] @joaomoreno
   - [ ] @jrieken
   - [ ] @kieferrm
+  - [ ] @lszomoru
   - [ ] @mjbvz
   - [ ] @rebornix
   - [ ] @rmacfarlane
