@@ -22,7 +22,7 @@ When looking at issues with missing results, remember that **search in open file
 
 ### `ENAMETOOLONG` error
 
-If you see this error appear and are missing search results, you may have so many patterns configured in `files.exclude` or `search.exclude` that we hit the OS limit for the length of a command line command. You can work around this by getting rid of excluded patterns, or moving those patterns into a file in the root of your workspace named `.ignore`, which ripgrep will also pick up.
+If you see this error appear and are missing search results, you may have so many patterns configured in `files.exclude` or `search.exclude` that we hit the OS limit for the length of a command line command. You can work around this by getting rid of excluded patterns, or moving those patterns into a file in the root of your workspace named `.ignore`, same syntax as `.gitignore`, which ripgrep will also pick up.
 
 ## Search including too many results
 
