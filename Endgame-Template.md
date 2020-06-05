@@ -179,8 +179,10 @@
 - [ ] Publish website **@gregvanl**
 - [ ] Publish Localization language pack **@weeteckt**
 - [ ] Publish to stable **endgame master**
-- [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z` (for vscode.d.ts download)  **endgame master**
-- [ ] Create a new release from the [new tag in Github](https://github.com/microsoft/vscode/tags) (far right, `... > Create Release`). Use the correct title and description from our release notes. ([Example](https://github.com/microsoft/vscode/releases/tag/1.39.0), [another example](https://github.com/microsoft/vscode/releases/tag/1.39.1)) **endgame master**
+- [ ] Create an official release **endgame master**
+  - [ ] Create a tag: `git tag release/<x.y.z>`
+  - [ ] Push the tag: `git push origin release/<x.y.z>`
+  - [ ] Create a GitHub release: [Open the GitHub tags](https://github.com/microsoft/vscode/tags), and click far right `... > Create Release`. Use the correct title and description from our release notes. ([Example](https://github.com/microsoft/vscode/releases/tag/1.39.0), [another example](https://github.com/microsoft/vscode/releases/tag/1.39.1)) **endgame master**
 - [ ] [Publish @types/vscode](https://github.com/microsoft/vscode/wiki/Publish-vscode-types) **endgame master**
 - [ ] Enable scheduled `insider` builds **endgame master**
 - [ ] Twitter announcement **@chrisdias**
