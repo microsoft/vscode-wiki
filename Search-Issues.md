@@ -20,6 +20,10 @@ This is less common, but VS Code doesn't handle files with **CR-only line ending
 
 When looking at issues with missing results, remember that **search in open files** is implemented by the editor. Search in all other files is implemented by ripgrep. Some issues that look like search is working only in a few random files can be explained by a problem that only affects the ripgrep side of the search.
 
+### `ENAMETOOLONG` error
+
+If you see this error appear and are missing search results, you may have so many patterns configured in `files.exclude` or `search.exclude` that we hit the OS limit for the length of a command line command. You can work around this by getting rid of excluded patterns, or moving those patterns into a file in the root of your workspace named `.ignore`, which ripgrep will also pick up.
+
 ## Search including too many results
 
 If your search includes results that you expect to be excluded by `search.exclude` and `files.exclude` settings or a `.gitignore` file, the first thing to do is to **check those very carefully** to ensure they cover what you expect them to cover. Your workspace may have settings that override your user settings. And setting `"search.useIgnoreFiles": false` will disable checking the `.gitignore` file.
