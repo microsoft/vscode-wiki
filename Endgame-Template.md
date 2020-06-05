@@ -182,7 +182,7 @@
 - [ ] Create an official release **endgame master**
   - [ ] Create a tag: `git tag release/<x.y.z>`
   - [ ] Push the tag: `git push origin release/<x.y.z>`
-  - [ ] Create a GitHub release: [Open the GitHub tags](https://github.com/microsoft/vscode/tags), and click far right `... > Create Release`. Use the correct title and description from our release notes. ([Example](https://github.com/microsoft/vscode/releases/tag/1.39.0), [another example](https://github.com/microsoft/vscode/releases/tag/1.39.1))
+  - [ ] Create a GitHub release: [Open the GitHub tags](https://github.com/microsoft/vscode/tags), and click far right `... > Create Release`. Use the correct title and description from our release notes. ([Example](https://github.com/microsoft/vscode/releases/tag/1.39.0), [Recovery](https://github.com/microsoft/vscode/releases/tag/1.39.1))
 - [ ] [Publish @types/vscode](https://github.com/microsoft/vscode/wiki/Publish-vscode-types) **endgame master**
 - [ ] Enable scheduled `insider` builds **endgame master**
 - [ ] Twitter announcement **@chrisdias**
