@@ -28,7 +28,7 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 ## Documentation
 |Repository|
 |---|
-|[`vscode-docs`](https://github.com/microsoft/vscode-docs)|
+|[vscode-docs](https://github.com/microsoft/vscode-docs)|
  
 ## Languages
 |Language|Repository|
@@ -80,7 +80,7 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 ## Themes
 |Theme|
 |---|
-|[`vscode-themes`](https://github.com/microsoft/vscode-themes)
+|[vscode-themes](https://github.com/microsoft/vscode-themes)
 
 ## Samples
 |Sample|Repository|
