@@ -16,6 +16,8 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 |Windows Process Tree|[vscode-windows-process-tree](https://github.com/microsoft/vscode-windows-process-tree)|
 |References View|[vscode-references-view](https://github.com/microsoft/vscode-references-view)|
 |Octicons Font|[vscode-octicons-font](https://github.com/microsoft/vscode-octicons-font)|
+|Terminal frontend|[xterm.js](https://github.com/xtermjs/xterm.js)
+|Terminal backend|[node-pty](https://github.com/microsoft/node-pty)
 
 ## SDK Tools
 |Tool|Repository|
