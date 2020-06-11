@@ -14,6 +14,7 @@ VSCode since version 1.46 now supports a new `--crash-reporter-directory <path>`
   * If you are trying to symbolicate crash report for Code - OSS or exploration build, then download the symbols from https://github.com/electron/electron/releases corresponding to the Electron version
 * Extract and Run
   * `minidump_stackwalk -s path/to/minidump-file.dmp path/to/symbols > symbolicated_stack.txt`
+* Send us the symbolicated trace
 
 # Summary
 
