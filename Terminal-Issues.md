@@ -43,7 +43,7 @@ For some terminal issues it's useful to get trace logs, this can reveal at what 
 1. Close all VS Code windows
 2. Launch VS Code from the terminal using `code --log trace`
 3. At this point you should reproduce the terminal issue you're having
-4. Run the command "Developer: Open Log File..." (<kbd>F1</kbd> opened command palette) and select Window to get an editor containing the logs
+4. Run the command "Developer: Open Log File..." (<kbd>F1</kbd> opened command palette) and select `Window` to get an editor containing the logs. Select the `Remote Extension Host` log file if you're diagnosing an issue in a remote workspace (SSH/WSL/Containers/Codespace).
 
 If for some reason you're unable to restart VS Code like you're running in a remote, you can change the log level via the command palette (<kbd>F1</kbd> `Developer: Set Log Level...`).
 
