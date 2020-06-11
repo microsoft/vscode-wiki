@@ -1,4 +1,4 @@
-# **Creating and symbolication local crash reports**
+# **Creating and symbolicating local crash reports**
 
 VSCode since version 1.46 now supports a new `--crash-reporter-directory <path>` option that you can use to produce crash dumps into that folder. Please try this option first:
 * close all instances of VSCode
