@@ -8,7 +8,9 @@ This page describes how we track issues in the `vscode` repository.
 
 
 ## Inbox tracking and Issue triage
-New issues or pull requests submitted by the community are triaged by a team member. The team rotates the inbox tracker on a weekly basis. A bot assists the inbox tracker.
+New issues or pull requests submitted by the community are initially triaged by an [automatic classification bot](https://github.com/microsoft/vscode-github-triage-actions/tree/master/classifier-deep). Issues that the bot does not correctly triage are then triaged by a team member. The team rotates the inbox tracker on a weekly basis.
+
+ A [mirror](https://github.com/JacksonKearl/testissues/issues) of the VS Code issue stream is available with details about how the bot classifies issues, including feature-area classifications and confidence ratings. Per-category confidence thresholds and feature-area ownership data is maintained in [.github/classifier.json](https://github.com/microsoft/vscode/blob/master/.github/classifier.json). 
 
 ### Inbox Tracking
 
@@ -59,6 +61,12 @@ Follow the these rules:
     - If you cannot verify the issue due to missing or hard-to-understand repro steps, add a `verification-steps-needed` label and remove the `verified` label
     - If the issue still shows, add the `verification-found`-label and remove the `verified` label
     - Go back to #3
+
+### Community-Author Verification
+
+In some cases, such as when a bug is particularly hard or time-consuming to reproduce, it can be desirable to allow the initial author of the bug report to verify an issue. This can be achieved by adding the `author-verification-requested` label, which launches a workflow where the author is be pinged when the relevant patch is released, and then asked to verify the issues themselves. 
+
+Issues must be closed with a reference to a commit SHA in order for the bot to accurately ping users when the Insiders release with their fix is released.
 
 ## Consistent labels across vscode repositories
 
