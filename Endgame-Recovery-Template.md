@@ -35,4 +35,7 @@
     - [ ] WIndows **owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish stable build **owner**
-- [ ] Add a git tag to `HEAD` of `release/<x.y>` in format `x.y.z`
+- [ ] Create an official release **endgame master**
+  - [ ] Create a tag: `git tag <x.y.z> release/<x.y>`
+  - [ ] Push the tag: `git push origin <x.y.z>`
+  - [ ] Create a GitHub release: [Open the GitHub tags](https://github.com/microsoft/vscode/tags), and click far right `... > Create Release`. Use the correct title and description from our release notes. [Example](https://github.com/microsoft/vscode/releases/tag/1.39.1)
