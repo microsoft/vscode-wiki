@@ -62,7 +62,7 @@ Follow the these rules:
     - If the issue still shows, add the `verification-found`-label and remove the `verified` label
     - Go back to #3
 
-### Community-Author Verification
+### Author Verification
 
 In some cases, such as when a bug is particularly hard or time-consuming to reproduce, it can be desirable to allow the initial author of the bug report to verify an issue. This can be achieved by adding the `author-verification-requested` label, which launches a workflow where the author is be pinged when the relevant patch is released, and then asked to verify the issues themselves. 
 
