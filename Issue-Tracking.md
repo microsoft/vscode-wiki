@@ -64,7 +64,7 @@ Follow the these rules:
 
 ### Author Verification
 
-In some cases, such as when a bug is particularly hard or time-consuming to reproduce, it can be desirable to allow the initial author of the bug report to verify an issue. This can be achieved by adding the `author-verification-requested` label, which launches a workflow where the author is be pinged when the relevant patch is released, and then asked to verify the issues themselves. 
+In some cases, such as when a bug is particularly hard or time-consuming to reproduce, it can be desirable to allow the initial, community member, author of the bug report to verify an issue. This can be achieved by adding the `author-verification-requested` label, which launches a workflow where the author is be pinged when the relevant patch is released, and then asked to verify the issues themselves. 
 
 Issues must be closed with a reference to a commit SHA in order for the bot to accurately ping users when the Insiders release with their fix is released.
 
