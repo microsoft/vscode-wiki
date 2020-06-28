@@ -43,12 +43,9 @@ You'll need the following tools:
     * `make`
     * [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/)
     * [GCC](https://gcc.gnu.org) or another compile toolchain
-    * [native-keymap](https://www.npmjs.com/package/native-keymap) needs `libx11-dev` and `libxkbfile-dev`.
-      * On Debian-based Linux: `sudo apt-get install libx11-dev libxkbfile-dev`
-      * On Red Hat-based Linux: `sudo yum install libX11-devel.x86_64 libxkbfile-devel.x86_64 # or .i686`.
-    * [keytar](https://www.npmjs.com/package/keytar) needs `libsecret-1-dev`.
-      * On Debian-based Linux: `sudo apt-get install libsecret-1-dev`.
-      * On Red Hat-based Linux: `sudo yum install libsecret-devel`.
+    * Dependencies for [native-keymap](https://www.npmjs.com/package/native-keymap) and [keytar](https://www.npmjs.com/package/keytar):
+      * On Debian-based Linux: `sudo apt-get install libx11-dev libxkbfile-dev libsecret-1-dev`
+      * On Red Hat-based Linux: `sudo yum install libX11-devel.x86_64 libxkbfile-devel.x86_64 libsecret-devel # or .i686`.
     * Building deb and rpm packages requires `fakeroot` and `rpm`, run: `sudo apt-get install fakeroot rpm`
 
 Install and build all of the dependencies using `Yarn`:
