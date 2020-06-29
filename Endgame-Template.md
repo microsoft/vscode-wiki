@@ -5,13 +5,13 @@
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
 
 ##### Monday
-- [ ] Run [OSS tool](https://github.com/microsoft/vscode-build-tools/tree/master/distro-tools) **endgame master**
+- [ ] Run [OSS tool](https://github.com/microsoft/vscode-build-tools/tree/master/distro-tools) **endgame lead**
 - [ ] Code freeze at 5pm PT
 - [ ] Ensure we have a green build on all platforms at 5pm PT
 - [ ] Create test plan items following the template [here](https://github.com/microsoft/vscode/wiki/Writing-Test-Plan-Items) by 6pm PT
 - [ ] Add verification-needed label to [features needed testing and are not tested by TPIs](https://github.com/microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Afeature-request+is%3Aclosed+-label%3Aon-testplan+-label%3Averification-needed+).
 - [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/
-- [ ] Create Test plan item for smoke testing ([template](https://github.com/microsoft/vscode/wiki/Test%3A-Smoke-Test-Template)) **endgame master**
+- [ ] Create Test plan item for smoke testing ([template](https://github.com/microsoft/vscode/wiki/Test%3A-Smoke-Test-Template)) **endgame lead**
 - [ ] Review the `extensionKind` list in `product.json` both for stable and insiders, see this [tracking issue](https://github.com/microsoft/vscode-internalbacklog/issues/932) **@egamma**
 
 ##### Tuesday
@@ -29,17 +29,17 @@
 - [ ] Remind team members to assign issues that they intend to fix to the current milestone
 - [ ] Fixing (self-assigned, milestone assigned)
 - [ ] [🔖Verification needed](https://github.com/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22April+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
-- [ ] Prepare for Smoke test: Make sure all smoke test issues are labelled `smoke-test` and fixed **endgame master**
+- [ ] Prepare for Smoke test: Make sure all smoke test issues are labelled `smoke-test` and fixed **endgame lead**
 
 ##### Thursday
 - [ ] Fixing (self-assigned, milestone assigned, NO discussion during standup)
   - Move issues to the next month that can be deferred
 - [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
 - [ ] [🔖Verification](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22January+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug++repo%3Amicrosoft%2Fvscode-pull-request-github)
-- [ ] Prepare for Smoke test: Make sure all smoke test issues are labelled `smoke-test` and fixed **endgame master**
+- [ ] Prepare for Smoke test: Make sure all smoke test issues are labelled `smoke-test` and fixed **endgame lead**
 
 ##### Friday
-- [ ] Pause scheduled `insider` builds **endgame master**
+- [ ] Pause scheduled `insider` builds **endgame lead**
 - Satellite modules/npm packages ready, version updated, smoke tested
   - [ ] vscode **@bpasero**
   - [ ] yo generator **@aeschli**
@@ -83,7 +83,7 @@
   - [ ] @tyriar
   - [ ] @weinand
 - [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. Use the [thankyou](https://vscode-tools.azurewebsites.net/#acknowledgePRs) tool to generate the initial contents of the section. **owner**
-  - [ ] vscode **endgame master**
+  - [ ] vscode **endgame lead**
   - [ ] vscode-node-debug **@weinand**
   - [ ] vscode-node-debug2 **@roblourens**
   - [ ] vscode-debugadapter-node **@weinand**
@@ -105,14 +105,14 @@
   - [ ] localization **@weeteckt**
   - [ ] vscode-github-issues-prs **@chrmarti**
   - [ ] inno-updater **@joaomoreno**
-- [ ] Review pull requests acknowledgements with `NOT MERGED - PLS REVIEW`. **endgame master**
+- [ ] Review pull requests acknowledgements with `NOT MERGED - PLS REVIEW`. **endgame lead**
 - [ ] Acknowledge [issue trackers](https://github.com/microsoft/vscode-internalbacklog/wiki/Community-Triage:-Credits) from the community **@chrmarti**
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
-  - [ ] Trigger new insider build and publish it manually **endgame master**
-- [ ] Branch code to `release/<x.y> **endgame master**
-- [ ] Bump up the version in package.json - **endgame master**
-- [ ] Announce master is open for business **endgame master**
+  - [ ] Trigger new insider build and publish it manually **endgame lead**
+- [ ] Branch code to `release/<x.y> **endgame lead**
+- [ ] Bump up the version in package.json - **endgame lead**
+- [ ] Announce master is open for business **endgame lead**
 
 ##### Friday/Monday
 - [ ] Polish release notes **redmond**
@@ -122,10 +122,10 @@
 - [ ] [🔖milestone issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+milestone%3A%22January+2020%22+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug)
 - [ ] [🔖candidate issues](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3Acandidate+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug)
 - [ ] Polish release notes **redmond**
-- [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **endgame master**
-- [ ] Build `Insider` from `release/<x.y>` **endgame master**
-- [ ] Manually release `Insider` **endgame master**
-- [ ] Build stable for all platforms as new candidate issues come in **endgame master**
+- [ ] Cherry-pick hand-picked and reviewed changes to `release/<x.y>` **endgame lead**
+- [ ] Build `Insider` from `release/<x.y>` **endgame lead**
+- [ ] Manually release `Insider` **endgame lead**
+- [ ] Build stable for all platforms as new candidate issues come in **endgame lead**
 - [ ] Documentation updated
   - [ ] @aeschli
   - [ ] @alexdima
@@ -153,10 +153,10 @@
   - [ ] @weinand
 - [ ] Run `scripts/test-documentation.sh|bat` and add file or fix issues if there are new colors that are not documented.
 
-> **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame. **endgame master**
+> **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame. **endgame lead**
 
 ##### Wednesday/Thursday - Expected release day (this may change)
-- [ ] Build stable for all platforms **endgame master**
+- [ ] Build stable for all platforms **endgame lead**
 - [ ] Sanity check of installable bits
   - [ ] Windows 32 bit **owner**
     - [ ] signed installer 32-bit
@@ -178,11 +178,11 @@
     - [ ] WIndows **owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish Localization language pack **@weeteckt**
-- [ ] Publish to stable **endgame master**
-- [ ] Create an official release **endgame master**
+- [ ] Publish to stable **endgame lead**
+- [ ] Create an official release **endgame lead**
   - [ ] Create a tag: `git tag <x.y.z>`
   - [ ] Push the tag: `git push origin <x.y.z>`
   - [ ] Create a GitHub release: [Open the GitHub tags](https://github.com/microsoft/vscode/tags), and click far right `... > Create Release`. Use the correct title and description from our release notes. [Example](https://github.com/microsoft/vscode/releases/tag/1.39.0)
-- [ ] [Publish @types/vscode](https://github.com/microsoft/vscode/wiki/Publish-vscode-types) **endgame master**
-- [ ] Enable scheduled `insider` builds **endgame master**
+- [ ] [Publish @types/vscode](https://github.com/microsoft/vscode/wiki/Publish-vscode-types) **endgame lead**
+- [ ] Enable scheduled `insider` builds **endgame lead**
 - [ ] Twitter announcement **@chrisdias**
