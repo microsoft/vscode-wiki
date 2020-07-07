@@ -2,7 +2,7 @@ This page describes how we track issues in the `vscode` repository.
 
 ## Popular queries
 
-- [Global Inbox](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Atestplan-item+-label%3Aplan-item)
+- [Global Inbox](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Atestplan-item+-label%3Aplan-item+-label%3Aemmet)
 - [Bugs to be Verified](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Abug+-label%3Averified+is%3Aclosed+-label%3A*duplicate+-label%3Ainvalid+) - VS Code only
 - [Verification Needed](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed) - VS Code only
 
