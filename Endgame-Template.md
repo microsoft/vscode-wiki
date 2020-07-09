@@ -166,6 +166,10 @@
     - [ ] signed installer 64-bit
     - [ ] signed user installer 64-bit
     - [ ] zip 64-bit
+  - [ ] Windows ARM64 **owner**
+    - [ ] signed installer ARM64
+    - [ ] signed user installer ARM64
+    - [ ] zip ARM64
   - [ ] macOS - **owner**
   - [ ] Linux
     - [ ] deb package 64-bit **owner**
