@@ -101,7 +101,7 @@
   - [ ] jsonc-parser **@aeschli**
   - [ ] vscode-eslint **@dbaeumer**
   - [ ] vscode-jshint **@rmacfarlane**
-  - [ ] vscode-recipes **@chrisdias**
+  - [ ] vscode-recipes **@weinand**
   - [ ] localization **@weeteckt**
   - [ ] vscode-github-issues-prs **@chrmarti**
   - [ ] inno-updater **@joaomoreno**
