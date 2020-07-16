@@ -36,7 +36,7 @@
   - [ ] Server ([instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers))
     - [ ] Linux **owner**
     - [ ] macOS **owner**
-    - [ ] WIndows **owner**
+    - [ ] Windows **owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish stable build **owner**
 - [ ] Create an official release **owner**
