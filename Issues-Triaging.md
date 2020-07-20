@@ -210,6 +210,12 @@ If the answer is `yes` we assign the issue to the **`Backlog`** otherwise the **
 
 A bot monitors the issues assigned to **`Backlog Candidates`**. If a feature request surpasses the 20 up-votes, the bot removes the **`Backlog Candidates`** milestone and adds the **`Backlog`** milestone. If an issue is assigned to the **`Backlog Candidates`** milestone for more than 60 days, the bot will close the issue.
 
+### Up-voting a Feature Request
+
+When we refer to "up-voting" a feature request, we specifically mean adding a GitHub `+1`/"👍" reaction to the issue description. In the GitHub UI this looks like so:
+<img width="867" alt="Screen Shot 2020-07-20 at 4 47 09 PM" src="https://user-images.githubusercontent.com/8586769/87996982-b0568c80-caa8-11ea-87b8-a01371e6e338.png">
+
+
 ### Won't fix Bugs
 
 We close bugs as `wont-fix` if there is a negative cost-benefit balance. It's not that we don't care about users who are affected by an issue but, for example, if the fix is so complex that despite all of our tests we risk regressions for many users, fixing is not a reasonable choice. When we close a bug as `wont-fix` we'll make our case why we do so.
