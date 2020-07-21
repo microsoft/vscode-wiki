@@ -6,14 +6,7 @@ VSCode since version 1.46 now supports a new `--crash-reporter-directory <path>`
   * note: use `code-insiders` for the insiders version if you are using it
 * take the steps that lead to the crash
 * check for a `*.dmp` file in that folder
-* Find the electron version of your VSCode instance, this can found in the menu action `Code -> About Visual Studio Code`
-* Download `minidump-stackwalk` and vscode symbols corresponding to the electron version and OS platform from https://github.com/deepak1556/minidump-stackwalk-prebuilt/releases
-  * For ex: Electron v7.3.1 on linux
-    * minidump_stackwalk-linux.zip
-    * stable-symbols-v7.3.1-linux-x64.zip or insiders-symbols-v7.3.1-linux-x64.zip depending upon stable or insiders
-  * If you are trying to symbolicate crash report for Code - OSS or exploration build, then download the symbols from https://github.com/electron/electron/releases corresponding to the Electron version
-* Extract and Run
-  * `minidump_stackwalk -s path/to/minidump-file.dmp path/to/symbols > symbolicated_stack.txt`
+* Follow the instructions at https://github.com/nornagon/electron-minidump/blob/master/README.md
 * Send us the symbolicated trace
 
 # Summary
