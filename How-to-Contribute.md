@@ -73,6 +73,8 @@ Alternatively, you can avoid local dependency installation as this repository in
 
 Docker / the Codespace should have at least **4 Cores and 6 GB of RAM (8 GB recommended)** to run full build. See the [development container README](https://github.com/microsoft/vscode/blob/master/.devcontainer/README.md) for more information.
 
+If you'd like to contribute to the list of available development containers in the Remote - Containers extension, you can check out the [Contributing documentation](https://github.com/microsoft/vscode-dev-containers/blob/master/CONTRIBUTING.md) in the vscode-dev-containers repo.
+
 ## Build and Run
 
 If you want to understand how VS Code works or want to debug an issue, you'll want to get the source, build it, and run the tool locally.
