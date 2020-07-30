@@ -64,6 +64,15 @@ In case of issues, try deleting the contents of `~/.node-gyp` (alternatively `~/
 
 > If you have Visual Studio 2019 installed, you may face issues when using the default version of node-gyp. If you have Visual Studio 2019 installed, you may need to follow the solutions [here](https://github.com/nodejs/node-gyp/issues/1747)
 
+### Development container
+
+Alternatively, you can avoid local dependency installation as this repository includes a Visual Studio Code Remote - Containers / Codespaces [development container](https://github.com/microsoft/vscode/tree/master/.devcontainer).
+
+- For [Remote - Containers](https://aka.ms/vscode-remote/download/containers), use the **Remote-Containers: Open Repository in Container...** command which creates a Docker volume for better disk I/O on macOS and Windows.
+- For Codespaces, install the [Visual Studio Codespaces](https://aka.ms/vscs-ext-vscode) extension in VS Code, and use the **Codespaces: Create New Codespace** command.
+
+Docker / the Codespace should have at least **4 Cores and 6 GB of RAM (8 GB recommended)** to run full build. See the [development container README](https://github.com/microsoft/vscode/blob/master/.devcontainer/README.md) for more information.
+
 ## Build and Run
 
 If you want to understand how VS Code works or want to debug an issue, you'll want to get the source, build it, and run the tool locally.
