@@ -13,19 +13,13 @@ Given build failures, make sure to pay attention to the [#build Slack channel](h
 [Insiders build](https://dev.azure.com/monacotools/Monaco/_build?definitionId=111&_a=summary&repositoryFilter=20&branchFilter=332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332) is scheduled to run every weekday at 5:00 AM UTC. Check the state of the most recent scheduled build, use the steps documented [here](https://github.com/microsoft/vscode/wiki/Build-Champion#troubleshooting-build-failures) to troubleshoot the build failures, and produce a successful build. The goal is to have an Insiders build released every weekday. 
 
 ### Troubleshooting build failures
-Depending on the nature of the build failure, use the following steps: 
-- **hygiene** or **compilation errors** - push a commit that fixes them and ping the responsible dev. If the fix isn't trivial, bring in the related developer to come up with a fix.
+| Build Error | Troubleshooting Steps |
+|:------------|:----------------------|
+| hygiene/compilation | 1. push a commit that fixes them and ping the responsible dev. <br> 2. If the fix isn't trivial, bring in the related developer to come up with a fix. |
+| test failures/flaky test | 1. comment out the test and create an issue for the test owner to fix. <br>&nbsp;&nbsp;&nbsp;The rule is: _a flaky test is as good as a failing test_. |
+| other |   1. Try to reason about the failure, get familiar with the [build infrastructure](https://github.com/microsoft/vscode/tree/master/build/azure-pipelines) and attempt to fix it. <br> 2. Reach out to the previous week's Build Champion, they might know something. <br> 3. Reach out to João/Ladislau. Improve the Build Champion process by documenting whatever they tell you. |
 
-- **test failures** or **flaky test** - comment out the test and create an issue for the test owner to fix. The rule is: _a flaky test is as good as a failing test_.
-
-- **code signing errors**, retrigger builds. If the errors persist, [file an issue to ESRP](https://microsoft.sharepoint.com/teams/prss/esrp/info/ESRP%20Onboarding%20Wiki/Engaging%20ESRP%20Support.aspx).
-
-- **other**:
-  1. Try to reason about the failure, get familiar with the [build infrastructure](https://github.com/microsoft/vscode/tree/master/build/azure-pipelines) and attempt to fix it.
-  2. Reach out to the previous week's Build Champion, they might know something.
-  3. Reach out to João/Ladislau. Improve the Build Champion process by documenting whatever he tells you.
-
-After a fix was pushed to address the build failure, manually queue the build.
+💡 **Note:** After a fix was pushed to address the build failure, manually queue the build.
 
 ## FAQ
 
