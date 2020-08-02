@@ -1,4 +1,4 @@
-This page describes the Build Master role. This is a weekly rotating role.
+This page describes the Build Champion role. This is a weekly rotating role.
 
 ## Daily Goals
 
@@ -18,8 +18,8 @@ When there are **code signing errors**, retrigger builds. If the errors persist,
 Else:
 
 1. Try to reason about the failure, get familiar with the [build infrastructure](https://github.com/microsoft/vscode/tree/master/build/azure-pipelines) and attempt to fix it.
-2. Reach out to the previous week's Build Master, they might know something.
-3. Reach out to João. Improve the Build Master process by documenting whatever he tells you.
+2. Reach out to the previous week's Build Champion, they might know something.
+3. Reach out to João. Improve the Build Champion process by documenting whatever he tells you.
 
 ## FAQ
 
