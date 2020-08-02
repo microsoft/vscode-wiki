@@ -2,8 +2,6 @@
 - *Month/Day* [Endgame done](https://github.com/Microsoft/vscode/wiki/Development-Process#inside-an-iteration)
 - *Month/Day* Expected release date (this may change)
 
-> **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame.
-
 ##### Monday
 - [ ] Run [OSS tool](https://github.com/microsoft/vscode-build-tools/tree/master/distro-tools) **endgame champion**
 - [ ] Code freeze at 5pm PT
