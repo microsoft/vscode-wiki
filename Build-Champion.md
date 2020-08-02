@@ -10,7 +10,7 @@ This page describes the Build Champion role. This is a weekly rotating role.
 Given build failures, make sure to pay attention to the [#build Slack channel](https://vscodeteam.slack.com/messages/C1Y427SES). It should notify who's likely responsible.
 
 ### Insider build
-[Insiders build](https://dev.azure.com/monacotools/Monaco/_build?definitionId=111&_a=summary&repositoryFilter=20&branchFilter=332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332) is scheduled to run every weekday at 5:00 AM UTC. Check the state of the most recent scheduled build and use the steps documented here to [troubleshoot]() the build failures, and produce a successful build. 
+[Insiders build](https://dev.azure.com/monacotools/Monaco/_build?definitionId=111&_a=summary&repositoryFilter=20&branchFilter=332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332) is scheduled to run every weekday at 5:00 AM UTC. Check the state of the most recent scheduled build, use the steps documented [here](https://github.com/microsoft/vscode/wiki/Build-Champion#troubleshooting-build-failures) to troubleshoot the build failures, and produce a successful build. The goal is to have an Insiders build released every weekday. 
 
 ### Troubleshooting build failures
 Depending on the nature of the build failure, use the following steps: 
