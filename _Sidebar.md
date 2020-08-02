@@ -10,7 +10,7 @@
   * [[Native Crash Issues]]
   * [[Search Issues]]
   * [[Issue Grooming]]
-* [[Build Master]]
+* [[Build Champion]]
 * [[Release Process]]
 * [[Running the Endgame]]
   * [[Endgame Template]]
