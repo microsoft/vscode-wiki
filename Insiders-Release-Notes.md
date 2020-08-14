@@ -11,3 +11,9 @@ Over the course of an iteration the contents of the Insiders builds will change 
 * [Current month's iteration plan](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Aiteration-plan+)
 
 * [Current month's Release Notes on GitHub](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes)
+
+## Settings Sync Insiders Service
+
+Settings Sync now uses a separate service for Insiders with storage independent of the Stable service. You can always sync your Insiders with stable using the `Settings Sync: Select Service...` command, which is available only in VS Code Insiders.
+
+![](https://code.visualstudio.com/assets/updates/1_48/settings-sync-switch.png)
