@@ -41,7 +41,7 @@ Our roadmap covers the broadly the following themes:
    - Investigate 'working sets' of files and folders in the file explorer
    - Provide guidance to users how to configure VS Code
    - Improve Open File / Quick Pick performance
-- Make VS Code more secure by running renderer processes **without** access to `node` APIs.
+- :runner: Make VS Code more secure by running renderer processes **without** access to `node` APIs.
 
 ## Workbench
 
@@ -51,14 +51,14 @@ Our roadmap covers the broadly the following themes:
    - Support a more flexible workbench layout such as allow sidebars on the left and the right. For example, you could have your outline on the right and the file explorer on the left.
 - Investigate how to safely provide richer customizability in the workbench
    - :runner: Support [custom editors](https://github.com/Microsoft/vscode/issues/12176).
-   - Investigate custom views based on `WebViews`.
+   - :runner: Investigate custom views based on `WebViews`.
 - Support to configure workbench font and font size
 - Broaden support to customize the UI, e.g. context menus.
 
 ## Settings
 
 - :runner: Support [synchronizing settings and extensions](https://github.com/microsoft/vscode/issues/2743) across VS Code installations on different machines.
-- In the settings editor, provide high-fidelity support for additional settings types such as colors.
+- :runner: In the settings editor, provide high-fidelity support for additional settings types, such as colors.
 - Provide a dedicated theme customization editor.
 - :runner: Support to synchronize settings between the insider and stable versions of VS Code
 
@@ -70,9 +70,9 @@ Our roadmap covers the broadly the following themes:
 
 - Continue to incrementally improve presentation and behavior across the board. Examples include:
    - :runner: Harmonize hovers, completion items, completion item details
-   - Welcome page
+   - :runner: Welcome page
    - :runner: Use tabs instead of the terminal dropdown
-- Revisit/review the first run experience for VS Code as well as newly installed extensions. For example, we want to reduce the number of notifications that are shown.
+- :runner: Revisit/review the first run experience for VS Code as well as newly installed extensions. For example, we want to reduce the number of notifications that are shown.
 - :runner: Touch and mobile support for VS Code in the browser
 - Investigate how users can express what they want to use VS Code for after they installed it. For example, a user wants to develop a website with a Go backend, VS Code should provide light-weight guidance to get all the right extensions and configure them appropriately.
 
@@ -86,7 +86,7 @@ Our roadmap covers the broadly the following themes:
    - Inset editing
    - Inline errors
    - :runner: Richer minimap
-   - Inline values (on by default, see debugging)
+   - :runner: Inline values (on by default, see debugging)
 - Smarter indent support (e.g. for Python)
 - Prevent tooltips from getting into your way when editing
 - Support word-wrap in the diff editor
@@ -129,7 +129,7 @@ We will continue to collaborate deeply with the TypeScript team to deliver the r
 
 ## Install
 
-- Investigate migrating to the [MSIX installer](https://docs.microsoft.com/en-us/windows/msix/) on Windows.
+- [x] Investigate migrating to the [MSIX installer](https://docs.microsoft.com/en-us/windows/msix/) on Windows.
 
 ## Terminal
 
@@ -150,9 +150,9 @@ We will continue to collaborate deeply with the TypeScript team to deliver the r
 
 - Extension Authoring
    - Provide clear guidance to extension authors for how to structure their functionality so that their users can get as little or as much functionality as they want. For example, ensure text editor lovers can get Python language support without too much overhead.
-   - Provide an integrated 'Welcome' experience for extensions.
-   - Investigate how to effectively inform users about new features provided by an extension update.
-   - Investigate into play grounds like the VS Code playground (`Help>Interactive Playground`) for extensions.
+   - :runner: Provide an integrated 'Welcome' experience for extensions.
+   - :runner: Investigate how to effectively inform users about new features provided by an extension update.
+   - :runner: Investigate into play grounds like the VS Code playground (`Help>Interactive Playground`) for extensions.
    - Provide extensions more control over the sequence and grouping of their settings in the settings editor, e.g., support to group *commonly used* settings.
    - Give extensions more realtime insights into how user configured them, e.g. the user hides the custom tree view your extension contributes from the explorer.
 
@@ -218,9 +218,9 @@ VS Code is made possible through a wide range of technologies. Below are example
 
 - Explore support to synchronize more state when opening the same folder in different VS Code installs such as  untitled files, open files, focussed editor.
 - Explore how to better provide support for low-end devices.
-- Explore how to support new user in learning VS Code (interactive exploration mode, videos)  
+- :runner: Explore how to support new user in learning VS Code (interactive exploration mode, videos)  
 - Explore how to make it easier to show, tell, and share your VS Code customizations.
-- Explore how to support trying out VS Code for a particular language or technology stack without any local installation. For example, 'Debug Java code in less than 1 minute'.
+- :runner: Explore how to support trying out VS Code for a particular language or technology stack without any local installation. For example, 'Debug Java code in less than 1 minute'.
 
 
 ## Documentation
