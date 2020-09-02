@@ -47,20 +47,20 @@ Our roadmap covers the broadly the following themes:
 
 - Workbench layout
   - Support for detachable workbench parts is our most upvoted [feature request](https://github.com/Microsoft/vscode/issues/10121) which due to [architectural issues](https://github.com/Microsoft/vscode/issues/10121#issuecomment-345497635) is challenging to implement. We will explore how we can work around this limitation. This investigation will focus on detaching terminals (2nd most upvoted feature request) and editors.
-  - :runner: Allows to move views between the panel and sidebar.
+  - [x] Allows to move views between the panel and sidebar.
    - Support a more flexible workbench layout such as allow sidebars on the left and the right. For example, you could have your outline on the right and the file explorer on the left.
 - Investigate how to safely provide richer customizability in the workbench
-   - :runner: Support [custom editors](https://github.com/Microsoft/vscode/issues/12176).
+   - [x] Support [custom editors](https://github.com/Microsoft/vscode/issues/12176).
    - :runner: Investigate custom views based on `WebViews`.
 - Support to configure workbench font and font size
-- Broaden support to customize the UI, e.g. context menus.
+- Broaden support to customize the UI, e.g. menu bar, context menus.
 
 ## Settings
 
 - :runner: Support [synchronizing settings and extensions](https://github.com/microsoft/vscode/issues/2743) across VS Code installations on different machines.
 - :runner: In the settings editor, provide high-fidelity support for additional settings types, such as colors.
 - Provide a dedicated theme customization editor.
-- :runner: Support to synchronize settings between the insider and stable versions of VS Code
+- [x] Support to synchronize settings between the insider and stable versions of VS Code
 
 ## Search
 
@@ -97,8 +97,8 @@ Our roadmap covers the broadly the following themes:
 - Enable programming language extensions to provide support for type hierarchies.
 - Improve support for workspace-level edits (an semantic unit comprised of name, location, and content manipulations across multiple files)
    - :runner: Enable language extensions to participate in workspace edits such as rename or move.
-   - :runner: Enable an one-step undo of complex workspace edits.
-   - :runner: Investigate how a user can preview workspace edits (e.g. preview the changes of a rename refactoring).
+   - [x] Enable an one-step undo of complex workspace edits.
+   - [x] Investigate how a user can preview workspace edits (e.g. preview the changes of a rename refactoring).
 - Incrementally improve support for nested languages. This will be code changes on our side as well as samples and documentations.
 
 ### TypeScript
@@ -116,16 +116,17 @@ We will continue to collaborate deeply with the TypeScript team to deliver the r
 - :runner: Provide an overall improved GitHub integration, e.g. we'll make it easier to hover over issue URL in your code or associate a GitHub issue with your commit.
 - Provide full merge support (3-way)
 - Investigate support for showing a local history of a file and folder and combine that with the git history
-- :runner: Investigate timeline support for combining local history with other events such as successful test runs or refactorings
+- [x] Provide a contributable timeline view 
+   - Investigate combining local history with other events such as successful test runs or refactorings
 
 ## Debug
 
 - :runner: Leverage language services to improve debug experience. For example, improve hovering and inline values by leveraging the knowledge about the programming language so that the `Inline Values` feature can be enabled by default
--  :runner: Provide improved 'full stack' debugging, i.e. combined `node` (server) and `chrome` (client) debugging.
+-  [x] Provide improved 'full stack' debugging, i.e. combined `node` (server) and `chrome` (client) debugging.
 
 ## Testing
 
-- Investigate how VS Code can improve the testing support. Several extensions are already providing testing support, explore what APIs/UIs could be added to improve these testing extensions and the test running experience.
+- :runner: Investigate how VS Code can improve the testing support. Several extensions are already providing testing support, explore what APIs/UIs could be added to improve these testing extensions and the test running experience.
 
 ## Install
 
@@ -141,7 +142,7 @@ We will continue to collaborate deeply with the TypeScript team to deliver the r
 - Extension Acquisition
    - Revisit how users find and install extensions including a simple text-based approach
    - [x] Make it easier for users to pick and choose which functionality they want from extensions packs.
-   - Improve the recommendation system, e.g., allow users to ask for recommendations based on their prior use of VS Code.
+   - :runner: Improve the recommendation system, e.g., allow users to ask for recommendations based on their prior use of VS Code.
    - Add support to only activate signed extensions (see *Extension Authoring*).
 
 - Extension Management
