@@ -105,11 +105,11 @@ Go into `vscode` and start the build task with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+
 
 👉 **Note:** If you are running Windows and have installed Visual Studio 2017 as your build tool, you need to open **x64 Native Tools Command Prompt for VS 2017**. Do not confuse it with *VS2015 x64 Native Tools Command Prompt*, if installed.
 
-The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience. It will even stay running in the background if you close VS Code. You can resume it by starting the build task with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) again. You can kill it by running the `Kill Build VS Code` task or pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal (<kbd>CMD</kbd>+<kbd>D</kbd> on macOS).
+The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience. It will even stay running in the background if you close VS Code. You can resume it by starting the build task with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) again. You can kill it by running the `Kill Build VS Code` task or pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal.
 
 👉 **Tip!** Linux users may hit a ENOSPC error when running the build. To get around this follow instructions in the [Common Questions](https://code.visualstudio.com/docs/setup/linux#_common-questions).
 
-👉 **Tip!** You can also run the build in a terminal with `yarn watchd`. Pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> will leave it running in the background. Pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> will kill it permanently (<kbd>CMD</kbd>+<kbd>C</kbd> and <kbd>CMD</kbd>+<kbd>D</kbd> on macOS).
+👉 **Tip!** You can also run the build in a terminal with `yarn watchd`. Pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> will leave it running in the background. Pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> will kill it permanently.
 
 #### Errors and Warnings
 Errors and warnings will show in the console while developing VS Code. If you use VS Code to develop VS Code, errors and warnings are shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> and then <kbd>!</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> and <kbd>!</kbd> on macOS).
