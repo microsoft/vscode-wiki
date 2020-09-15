@@ -6,8 +6,11 @@ VSCode since version 1.46 now supports a new `--crash-reporter-directory <path>`
   * note: use `code-insiders` for the insiders version if you are using it
 * take the steps that lead to the crash
 * check for a `*.dmp` file in that folder
+* send the `*.dmp` file back to us (email, or attach to issue)
+
+If you can reproduce the issue running out of sources or have access to our Microsoft Electron builds:
 * Follow the instructions at https://github.com/nornagon/electron-minidump/blob/master/README.md
-* Send us the symbolicated trace
+* Check for the symbolicated trace
 
 # Summary
 
