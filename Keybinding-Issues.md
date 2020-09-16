@@ -4,6 +4,7 @@
 This page documents workarounds for known issues related to VS Code keybindings and explains how VS Code handles keybindings and why it does what it does for the curious.
 
 ## TOC
+  * [Basic Troubleshooting](#basic-troubleshooting)
   * Quick troubleshoot
     * [Troubleshoot keybindings on Linux](#troubleshoot-linux-keybindings)
     * [Troubleshoot keybindings on Mac](#troubleshoot-mac-keybindings)
@@ -15,6 +16,27 @@ This page documents workarounds for known issues related to VS Code keybindings 
   * Deciphering keybindings.json
 
 ## Troubleshoot
+
+### Basic Troubleshooting
+
+  * Run the command `Developer: Toggle Keyboard Shortcuts Troubleshooting`
+    * This will activate logging of dispatched keyboard shortcuts and will open an output panel with the corresponding log file.
+  * You can then press your desired keybinding and check what keyboard shortcut VS Code detects and what command is invoked.
+
+For example, when pressing `cmd+/` in a code editor on macOS, the logging output would be:
+
+```
+[KeybindingService]: / Received  keydown event - modifiers: [meta], code: MetaLeft, keyCode: 91, key: Meta
+[KeybindingService]: | Converted keydown event - modifiers: [meta], code: MetaLeft, keyCode: 57 ('Meta')
+[KeybindingService]: \ Keyboard event cannot be dispatched.
+[KeybindingService]: / Received  keydown event - modifiers: [meta], code: Slash, keyCode: 191, key: /
+[KeybindingService]: | Converted keydown event - modifiers: [meta], code: Slash, keyCode: 85 ('/')
+[KeybindingService]: | Resolving meta+[Slash]
+[KeybindingService]: \ From 2 keybinding entries, matched editor.action.commentLine, when: editorTextFocus && !editorReadonly, source: built-in.
+```
+
+The first keydown event is for the `MetaLeft` key (`cmd`) and cannot be dispatched. The second keydown event is for the `Slash` key (`/`) and is dispatched as `meta+[Slash]`. There were two keybinding entries mapped from `meta+[Slash]` and the one that matched was for the command `editor.action.commentLine`, which has the `when` condition `editorTextFocus && !editorReadonly` and is a built-in keybinding entry.
+
 
 ### Troubleshoot Linux Keybindings
 
