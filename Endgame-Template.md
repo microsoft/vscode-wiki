@@ -176,7 +176,7 @@
   - [ ] Server ([instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers)) **owner**
     - [ ] Linux **owner**
     - [ ] macOS **owner**
-    - [ ] WIndows **owner**
+    - [ ] Windows **owner**
 - [ ] Publish website **@gregvanl**
 - [ ] Publish Localization language pack **@weeteckt**
 - [ ] Publish to stable **endgame champion**
