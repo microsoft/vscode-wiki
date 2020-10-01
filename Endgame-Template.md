@@ -107,9 +107,9 @@
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Trigger new insider build and publish it manually **endgame champion**
-- [ ] Branch code to `release/<x.y> **endgame champion**
-- [ ] Bump up the version in package.json - **endgame champion**
-- [ ] Announce master is open for business **endgame champion**
+- [ ] Branch code to `release/<x.y>` **endgame champion**
+- [ ] Bump up the version in `package.json` on `master` - **endgame champion**
+- [ ] Announce `master` is open for business **endgame champion**
 
 ##### Friday/Monday
 - [ ] Polish release notes **redmond**
