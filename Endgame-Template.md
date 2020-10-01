@@ -71,10 +71,12 @@
   - [ ] @jrieken
   - [ ] @kieferrm
   - [ ] @lszomoru
+  - [ ] @meganrogge
   - [ ] @mjbvz
   - [ ] @rebornix
   - [ ] @rmacfarlane
   - [ ] @roblourens
+  - [ ] @rzhao271
   - [ ] @sandy081
   - [ ] @sbatten
   - [ ] @tyriar
@@ -140,10 +142,12 @@
   - [ ] @jrieken
   - [ ] @kieferrm
   - [ ] @lszomoru
+  - [ ] @meganrogge
   - [ ] @mjbvz
   - [ ] @rebornix
   - [ ] @rmacfarlane
   - [ ] @roblourens
+  - [ ] @rzhao271
   - [ ] @sandy081
   - [ ] @sbatten
   - [ ] @tyriar
