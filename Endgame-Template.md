@@ -38,7 +38,7 @@
 ##### Friday
 - [ ] Pause scheduled `insider` builds **endgame champion**
 - Satellite modules/npm packages ready, version updated, smoke tested
-  - [ ] vscode **@bpasero**
+  - [ ] vscode **@eamodio**
   - [ ] yo generator **@aeschli**
   - [ ] vsce **@joaomoreno**
   - [ ] node debug **@weinand**
