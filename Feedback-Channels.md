@@ -26,4 +26,4 @@ Here are a few of the main channels: (you must first [join the Slack workspace](
 Just like the Gitter room, the VS Code team's presence in this Slack workspace will be optional, at least for the foreseeable future.
 
 ## Twitter
-We use the [**@code**](https://twitter.com/code) account on twitter for announcements and members from the development team watch for tweets for @code.
+Watch for tweets from the [**@code**](https://twitter.com/code) account on twitter for announcements and updates from members of the development team.
