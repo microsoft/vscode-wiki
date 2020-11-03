@@ -1,8 +1,8 @@
 # **Creating and symbolicating local crash reports**
 
-VSCode since version 1.46 now supports a new `--crash-reporter-directory <path>` option that you can use to produce crash dumps into that folder. Please try this option first:
+VSCode since version 1.46 now supports a new `--crash-reporter-directory <absolute-path>` option that you can use to produce crash dumps into that folder. Please try this option first:
 * close all instances of VSCode
-* run `code --crash-reporter-directory <path>` from the command line
+* run `code --crash-reporter-directory <absolute-path>` from the command line
   * note: use `code-insiders` for the insiders version if you are using it
 * take the steps that lead to the crash
 * check for a `*.dmp` file in that folder
