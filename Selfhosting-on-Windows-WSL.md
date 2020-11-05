@@ -9,10 +9,11 @@ The drawback is that running VS Code from sources actually runs on **Linux** whi
 ## Setup
 
 1. Install [WSL2](https://docs.microsoft.com/en-us/windows/wsl/wsl2-install) and [Ubuntu](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab).
-2. Install [vcxsrv](https://sourceforge.net/projects/vcxsrv/).
-3. Download the `config.xlaunch` file from this gist to your user home directory.
-2. Copy the `XLaunch` shortcut into `shell:startup`, right-click Properties and change `Target` to `"C:\Program Files (x86)\VcXsrv\xlaunch.exe" -run C:\Users\jomo\config.xlaunch`. This will make the X server launch on startup. Double click it to make sure it Launches.
-3. Add the following to the end of your WSL `.bashrc` or equivalent:
+2. Install [vcxsrv](https://sourceforge.net/projects/vcxsrv/), it will create a `XLaunch` shortcut in your Desktop`.
+3. Download the `config.xlaunch` file from this gist to your user home directory `C:\Users\USERNAME\`.
+3. Hit <kbd>Win R</kdb> and type `shell:startup`, hit <kbd>Enter</kbd>. Add a shortcut here for `C:\Program Files\VcXsrv\vcxsrv.exe`.
+2. Right-click, Properties on that shortcut and change `Target` to `"C:\Program Files (x86)\VcXsrv\xlaunch.exe" -run C:\Users\USERNAME\config.xlaunch`. This will make the X server launch on startup. Double click it to make sure it launches.
+3. In WSL, add the following to the end of your WSL `.bashrc` or equivalent:
   
   ```
   if [ -z $DISPLAY ]; then
