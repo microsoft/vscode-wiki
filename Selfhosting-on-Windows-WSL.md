@@ -1,0 +1,27 @@
+# Selfhosting on Windows/WSL
+
+This guide is for you if you want to selfhost VS Code on **Windows** but have a fast compile toolchain by running it in WSL.
+The drawback is that running VS Code from sources actually runs on **Linux** which is OK for most development tasks.
+
+![image](https://user-images.githubusercontent.com/22350/77914929-f2a85380-7296-11ea-96ca-7a6988c17234.png)
+
+
+## Setup
+
+1. Install [WSL2](https://docs.microsoft.com/en-us/windows/wsl/wsl2-install) and [Ubuntu](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab).
+2. Install [vcxsrv](https://sourceforge.net/projects/vcxsrv/).
+3. Download the `config.xlaunch` file from this gist to your user home directory.
+2. Copy the `XLaunch` shortcut into `shell:startup`, right-click Properties and change `Target` to `"C:\Program Files (x86)\VcXsrv\xlaunch.exe" -run C:\Users\jomo\config.xlaunch`. This will make the X server launch on startup. Double click it to make sure it Launches.
+3. Add the following to the end of your WSL `.bashrc` or equivalent:
+  
+  ```
+  if [ -z $DISPLAY ]; then
+    export DISPLAY="$(tail -1 /etc/resolv.conf | cut -d' ' -f2):0"
+  fi
+  ```
+
+4. Start a new shell session, install `x11-apps` and try running `xcalc`, make sure it comes up.
+4. Clone `vscode`
+3. Install build deps `sudo apt install python libsecret-1-dev libxss1 libx11-dev libxkbfile-dev libasound2 libgtk-3-0 libgdk-pixbuf2.0-0 libnss3 libxtst6 libxi6 libxdamage1 libxcursor1 libxcomposite1 libx11-xcb1` and make sure `yarn` runs without errors and installs all dependencies within WSL. [Linux Prerequisites section of our contribution guide](https://github.com/microsoft/vscode/wiki/How-to-Contribute)
+3. Install [VS Code Insiders for Windows](https://code.visualstudio.com/docs/?dv=win64user&build=insiders) and the [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension.
+4. In VS Code, open the remote `vscode` WSL folder. Run `./scripts/code.sh`
