@@ -21,8 +21,8 @@ The drawback is that running VS Code from sources actually runs on **Linux** whi
   fi
   ```
 
-4. Start a new shell session, install `x11-apps` and try running `xcalc`, make sure it comes up.
-4. Clone `vscode`
+4. To test everything, open a new WSL shell and `sudo apt install x11-apps && xcalc`. You should see an XCalc window pop up. 👍 
+4. In WSL, clone `vscode`
 3. Install build deps `sudo apt install python libsecret-1-dev libxss1 libx11-dev libxkbfile-dev libasound2 libgtk-3-0 libgdk-pixbuf2.0-0 libnss3 libxtst6 libxi6 libxdamage1 libxcursor1 libxcomposite1 libx11-xcb1` and make sure `yarn` runs without errors and installs all dependencies within WSL. [Linux Prerequisites section of our contribution guide](https://github.com/microsoft/vscode/wiki/How-to-Contribute)
-3. Install [VS Code Insiders for Windows](https://code.visualstudio.com/docs/?dv=win64user&build=insiders) and the [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension.
+3. In Windows, install [VS Code Insiders for Windows](https://code.visualstudio.com/docs/?dv=win64user&build=insiders) and the [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension.
 4. In VS Code, open the remote `vscode` WSL folder. Run `./scripts/code.sh`
