@@ -6,7 +6,7 @@ This document is about reporting issues for the integrated terminal (<kbd>ctrl</
 
 - Make sure you read the common questions and long-standing known issues sections below as you might be reporting an issue that is already known.
 - Include the VS Code version, Operating System version and a list of extensions you're using. Ideally you should use the issue reporter built into VS Code for this as it automatically includes this information in the report.
-- Including a screenshot or gif is normally a good idea.
+- Including a screenshot or [gif](https://gifcap.dev/) is normally a good idea.
 - Including your settings.json is also a good idea as many issues are normally related to bad configuration.
 - Take note if you're using an extension to launch the terminal, for example using a debugger to launch the terminal, language extension (eg. PowerShell Integrated Console) or something like Code Runner. If so there's a good chance it's an issue with the extension, not with VS Code.
 
