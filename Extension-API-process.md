@@ -36,13 +36,13 @@ Have an idea for a new API? Great! Ask yourself the following questions:
 Before proposing your new API, ask yourself the following:
 
 - Does the proposal alter an existing API? If yes, it **must** be backward compatible with the existing API.
-- Does it violates it our [API guidelines](https://github.com/Microsoft/vscode/wiki/Extension-API-guidelines)?
+- Does it violate our [API guidelines](https://github.com/Microsoft/vscode/wiki/Extension-API-guidelines)?
 
 An API proposal is suggested, either internally or externally via a GitHub issue.
 - The issue will track the life-cycle of the API proposal
 - The issue will be labeled with `api` and `api-proposal`
 
-Once you submit your proposal, it will begin gather interest and pre-implementation feedback.
+Once you submit your proposal, it will begin gathering interest and pre-implementation feedback.
 
 #### API Proposal Implemented / Feedback Requested
 
@@ -62,7 +62,7 @@ Here are some finalization questions that will be asked before beginning:
 - Is the proposal too narrow (not solving enough) or too broad (trying to solve too much)?
 - Who would use this new API? 
 
-Once a proposal sufficiently answers those questions and is in a good place, it begins the finalization process for becoming stable. While this signals the intent to ship the proposed APIs, there isn't any guarantee that there won't be futher changes or that the proposal will become stable (e.g. in rare circumstances, we might even have deprecate the proposed API). At the same time, ideally, the finalization of an API will be attached to an upcoming milestone, again as an intent not guarantee.
+Once a proposal sufficiently answers those questions and is in a good place, it begins the finalization process for becoming stable. While this signals the intent to ship the proposed APIs, there isn't any guarantee that there won't be futher changes or that the proposal will become stable (e.g. in rare circumstances, we might even deprecate the proposed API). At the same time, ideally, the finalization of an API will be attached to an upcoming milestone, again as an intent not guarantee.
 
 And finally, assuming a succesful finalization, the API will move from [`vscode.proposed.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts) into [`vscode.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.d.ts) and the API proposal issue will be closed.
 
