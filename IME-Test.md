@@ -26,10 +26,10 @@ The golden standard is Word
   * Windows:  ![Windows Japanese statusbar](images/ime/windows-japanese-ime.png)
   * Mac: Choose Hiragana in the menu bar
 
-* Type the following words: `sennsei` or `konnichiha` or `mikann` followed by the enter key. Here is how Word looks like doing this:
+* Type the following words: `sennsei` or `konnnichiha` or `mikann` followed by the enter key. Here is how Word looks like doing this:
   * `sennsei` should result in "せんせい" or "先生"
-  * `konnichiha` should result in "こんいちは"
-  * `mikann` should result in "みかん" or "橘"
+  * `konnnichiha` should result in "こんにちは"
+  * `mikann` should result in "みかん" or "蜜柑"
 
   ![Windows Japanese Word](images/ime/windows-japanese-word.gif)
 
@@ -184,8 +184,8 @@ http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-in
 | Input  | Output  |
 |---|---|
 | `sennsei`  | "せんせい" or "先生"  |
-|  `konnichiha` |  "こんいちは" |
-| `mikann`  |   "みかん" or "橘" |
+|  `konnnichiha` |  "こんにちは" |
+| `mikann`  |   "みかん" or "蜜柑" |
 
 ## [Linux] Korean
 
