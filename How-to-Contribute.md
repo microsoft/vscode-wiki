@@ -49,13 +49,6 @@ You'll need the following tools:
       * On Red Hat-based Linux: `sudo yum install libX11-devel.x86_64 libxkbfile-devel.x86_64 libsecret-devel # or .i686`.
     * Building deb and rpm packages requires `fakeroot` and `rpm`, run: `sudo apt-get install fakeroot rpm`
 
-Install and build all of the dependencies using `Yarn`:
-
-```
-cd vscode
-yarn
-```
-
 ### Troubleshooting
 In case of issues, try deleting the contents of `~/.node-gyp` (alternatively `~/.cache/node-gyp` for Linux or `~/Library/Caches/node-gyp/` for macOS) first and then run `yarn cache clean` and then try again.
 
@@ -101,6 +94,13 @@ Manage any merge conflicts, commit them, and then push them to your fork.
 **Note**: The `microsoft/vscode` repository contains a collection of GitHub Actions that help us with triaging issues. As you probably don't want these running on your fork, you can disable Actions for your fork by via `https://github.com/<<Your Username>>/vscode/settings/actions`.
 
 ### Build
+
+Install and build all of the dependencies using `Yarn`:
+
+```
+cd vscode
+yarn
+```
 
 Go into `vscode` and start the build task with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> on macOS).
 
