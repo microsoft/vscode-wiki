@@ -12,7 +12,7 @@ In Windows:
 
 1. Install [WSL2](https://docs.microsoft.com/en-us/windows/wsl/wsl2-install) and [Ubuntu](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab).
 2. Install [vcxsrv](https://sourceforge.net/projects/vcxsrv/), it will create a `XLaunch` shortcut in your Desktop`.
-3. Download the `config.xlaunch` file from this gist to your user home directory `C:\Users\USERNAME\`.
+3. Download the `config.xlaunch` file from [this gist](https://gist.github.com/joaomoreno/90d3915379a862d99cd4f3e79feb0f8a) to your user home directory `C:\Users\USERNAME\`.
 3. Hit <kbd>Win R</kbd> and type `shell:startup`, hit <kbd>Enter</kbd>. Add a shortcut here for `C:\Program Files\VcXsrv\vcxsrv.exe`.
 2. Right-click, Properties on that shortcut and change `Target` to `"C:\Program Files (x86)\VcXsrv\xlaunch.exe" -run C:\Users\USERNAME\config.xlaunch`. This will make the X server launch on startup. Double click it to make sure it launches.
 
