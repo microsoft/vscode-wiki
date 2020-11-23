@@ -196,7 +196,7 @@ To enable us to quickly review and accept your pull requests, always create one 
 ### Introducing usage of new Electron API with a PR
 A pull request that depends on Electron API that VS Code is currently not using comes with a certain risk and maybe rejected. Whenever we update Electron, there is a chance that less popular Electron APIs break and it is very hard to find out upfront. Once a PR lands in VS Code, the role of maintaining the feature moves to the team and as such we have to follow up with upstream components to ensure the feature is still supported. As such, as a rule of thumb:
 * avoid Electron APIs and use web standards instead (this also ensures that your feature is supported in our web client)
-* if you must use Electron APIs, we require a unit test at https://github.com/atom/electron so that we protect against future breakage.
+* if you must use Electron APIs, we require a unit test at https://github.com/electron/electron so that we protect against future breakage.
 
 ### Where to Contribute
 Check out the [full issues list](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue) for a list of all potential areas for contributions. Note that just because an issue exists in the repository does not mean we will accept a contribution to the core editor for it. There are several reasons we may not accept a pull request like:
