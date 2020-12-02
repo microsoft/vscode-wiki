@@ -3,7 +3,7 @@
 - [ ] Linux
 - [ ] web
 
-Complexity: 3
+Complexity: 2
 
 ---
 
