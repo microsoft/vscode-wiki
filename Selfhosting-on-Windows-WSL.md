@@ -27,6 +27,7 @@ In WSL:
   ```
 
 2. To test everything, open a new WSL shell and `sudo apt install x11-apps && xcalc`. You should see an XCalc window pop up. 👍 
+  >  You may see errors like `Error: Can't open display: 172.20.192.1:0"`: open Windows Defender Firewall with Advanced Security, check inbound rules and make sure that VcXsrv windows server doesn't block private connections.
 3. Install [build deps](https://github.com/microsoft/vscode/wiki/How-to-Contribute)
 
   ```
