@@ -20,6 +20,8 @@ You'll need the following tools:
 	- Install a compiler for the native modules VS Code is depending on
 		- Option 1 (recommended): Use Windows Build Tools npm module
 			- Start Powershell as Administrator and install [Windows Build Tools npm module](https://github.com/felixrieseberg/windows-build-tools) ([documentation](https://github.com/felixrieseberg/windows-build-tools#visual-studio-2017-vs-visual-studio-2015)).
+
+				**Note:** If you get _The build tools for v141 (Platform Toolset = 'v141') cannot be found_ when you run `yarn` later, you might need to delete `VCTargetsPath` from your environment variables before installing.
 				```
 				npm install --global windows-build-tools --vs2017
 				```
