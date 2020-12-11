@@ -172,15 +172,11 @@
     - [ ] signed user installer ARM64
     - [ ] zip ARM64
   - [ ] macOS - **owner**
-  - [ ] Linux
-    - [ ] deb package 64-bit **owner**
-    - [ ] rpm package 64-bit **owner**
+  - [ ] Linux x64
+    - [ ] deb **owner**
+    - [ ] rpm **owner**
     - [ ] archives **owner**
     - [ ] snap (`sudo snap install --classic --dangerous <file>.snap`) **owner**
-  - [ ] Linux ARM64
-    - [ ] deb package **owner**
-    - [ ] rpm package **owner**
-    - [ ] archives **owner**
   - [ ] Server ([instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers)) **owner**
     - [ ] Linux **owner**
     - [ ] macOS **owner**
