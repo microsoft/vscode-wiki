@@ -1,6 +1,10 @@
+### January 2021
+* [Iteration Plan](https://github.com/microsoft/vscode/issues/112419)
+* Endgame: **TBD**
+
 ### November 2020
 * [Iteration Plan](https://github.com/microsoft/vscode/issues/110690)
-* Endgame: **TBD**
+* [Endgame](https://github.com/microsoft/vscode/issues/111406)
 
 ### October 2020
 * [Iteration Plan](https://github.com/microsoft/vscode/issues/108473)
