@@ -43,7 +43,7 @@ Please include the following with each issue.
 Please remember to do the following:
 
 * Search the issue repository to see if there exists a duplicate. 
-* Recreate the issue after disabling all extensions (see the [docs for how to do this](https://code.visualstudio.com/docs/editor/extension-gallery#_disable-an-extension)). If you find the issue is caused by an extension you have installed please file an issue on the extension respectively. 
+* Make sure the issue can be reproduced without extensions. Either disable all extensions (see the [docs for how to do this](https://code.visualstudio.com/docs/editor/extension-gallery#_disable-an-extension)) or use start extension bisect via "F1 > Start Extension Bisect". If you find the issue is caused by an extension you have installed please file an issue on the extension respectively. 
 * Simplify your code around the issue so we can better isolate the problem. 
 
 Don't feel bad if we can't reproduce the issue and ask for more information!
