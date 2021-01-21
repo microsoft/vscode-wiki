@@ -1,4 +1,4 @@
-We use `perf.mark` and `performance.mark` to name certain moments in VS Code's startup timeline. The following in an inventory of these marks.
+We use `perf.mark` (`vs/base/common/performance`) and `performance.mark` (browser-native) to name certain moments in VS Code's startup timeline. The following is an inventory of these marks:
 
 
 | name  | context  | description  |
