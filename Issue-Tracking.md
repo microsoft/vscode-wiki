@@ -27,7 +27,7 @@ Feature area owners track the **feature area inbox** containing all **open issue
 - are labeled with their feature area label and are not assigned to any milestone.
 This secondary triage may involve any of the steps described in our [issue triaging documentation](https://github.com/microsoft/vscode/wiki/Issues-Triaging) and results in a fully triaged or closed issue.
 
-💡 The [github triage extension](https://github.com/microsoft/vscode-github-triage-extension) can be used to assist with triaging — it provides a "Command Palette"-style list of triaging actions like assignment, labeling, and triggers for various bot actions.
+💡 The [github triage extension](https://chrome.google.com/webstore/detail/vs-code-triage/omjdggbjophlhakbakjpajfbkdfploho?hl=en&authuser=0) can be used to assist with triaging — it provides a "Command Palette"-style list of triaging actions like assignment, labeling, and triggers for various bot actions.
 
 💡 The [inbox notebook](https://github.com/microsoft/vscode/blob/master/.vscode/notebooks/inbox.github-issues) can also assist with triaging.
 
