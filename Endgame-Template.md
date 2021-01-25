@@ -70,6 +70,7 @@
   - [ ] @joaomoreno
   - [ ] @jrieken
   - [ ] @kieferrm
+  - [ ] @lramos15
   - [ ] @lszomoru
   - [ ] @meganrogge
   - [ ] @mjbvz
@@ -142,6 +143,7 @@
   - [ ] @joaomoreno
   - [ ] @jrieken
   - [ ] @kieferrm
+  - [ ] @lramos15
   - [ ] @lszomoru
   - [ ] @meganrogge
   - [ ] @mjbvz
