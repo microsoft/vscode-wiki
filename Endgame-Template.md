@@ -153,6 +153,7 @@
   - [ ] @rzhao271
   - [ ] @sandy081
   - [ ] @sbatten
+  - [ ] @tylerleonhardt
   - [ ] @tyriar
   - [ ] @weinand
 - [ ] Run `scripts/test-documentation.sh|bat` and add file or fix issues if there are new colors that are not documented.
