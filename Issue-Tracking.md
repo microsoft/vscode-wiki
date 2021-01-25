@@ -2,7 +2,7 @@ This page describes how we track issues in the `vscode` repository.
 
 ## Popular queries
 
-- [Global Inbox](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Atestplan-item+-label%3Aplan-item+-label%3Aemmet)
+- [Global Inbox](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Atestplan-item+-label%3Aplan-item)
 - [Bugs to be Verified](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Abug+-label%3Averified+is%3Aclosed+-label%3A*duplicate+-label%3Ainvalid+) - VS Code only
 - [Verification Needed](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed) - VS Code only
 
@@ -27,7 +27,7 @@ Feature area owners track the **feature area inbox** containing all **open issue
 - are labeled with their feature area label and are not assigned to any milestone.
 This secondary triage may involve any of the steps described in our [issue triaging documentation](https://github.com/microsoft/vscode/wiki/Issues-Triaging) and results in a fully triaged or closed issue.
 
-💡 The [github triage extension](https://github.com/microsoft/vscode-github-triage-extension) can be used to assist with triaging — it provides a "Command Palette"-style list of triaging actions like assignment, labeling, and triggers for various bot actions.
+💡 The [github triage extension](https://chrome.google.com/webstore/detail/vs-code-triage/omjdggbjophlhakbakjpajfbkdfploho?hl=en&authuser=0) can be used to assist with triaging — it provides a "Command Palette"-style list of triaging actions like assignment, labeling, and triggers for various bot actions.
 
 💡 The [inbox notebook](https://github.com/microsoft/vscode/blob/master/.vscode/notebooks/inbox.github-issues) can also assist with triaging.
 

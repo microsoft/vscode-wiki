@@ -15,7 +15,7 @@
 * [[Running the Endgame]]
   * [[Endgame Template]]
   * [[Writing Test Plan Items]]
-  * [[Test: Smoke Test Template]]
+  * [[Test - Smoke Test Template]]
   * [[Endgame Recovery Template]]
 * [[Related Projects]]
 

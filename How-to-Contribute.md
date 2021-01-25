@@ -10,7 +10,7 @@ In order to download necessary tools, clone the repository, and install dependen
 You'll need the following tools:
 
 - [Git](https://git-scm.com)
-- [Node.JS](https://nodejs.org/en/), **x64**, version `>= 10.x`, `<= 12.x`
+- [Node.JS](https://nodejs.org/en/), **x64**, version `>= 10.x`, `<= 14.x`
 - [Yarn](https://yarnpkg.com/en/), follow the [installation guide](https://yarnpkg.com/en/docs/install)
 - [Python](https://www.python.org/downloads/release/python-2715/), at least version 2.7 (version 3 is __*not*__ supported)
   - **Note:** Python 2.7 will be automatically installed for Windows users through installing `windows-build-tools` npm module (see below)
@@ -20,18 +20,17 @@ You'll need the following tools:
 	- Install a compiler for the native modules VS Code is depending on
 		- Option 1 (recommended): Use Windows Build Tools npm module
 			- Start Powershell as Administrator and install [Windows Build Tools npm module](https://github.com/felixrieseberg/windows-build-tools) ([documentation](https://github.com/felixrieseberg/windows-build-tools#visual-studio-2017-vs-visual-studio-2015)).
+
+				**Note:** If you get _The build tools for v141 (Platform Toolset = 'v141') cannot be found_ when you run `yarn` later, you might need to delete `VCTargetsPath` from your environment variables before installing.
 				```
-				npm install --global windows-build-tools --vs2015
+				npm install --global windows-build-tools --vs2017
 				```
 				**Note:** The `--debug` flag is helpful if you encounter any problems during installation.
 
-				**Note:** if you encounter an error *The build tools for v141 (Platform Toolset = 'v141') cannot be found."* you might have a version of Visual Studio installed. Either uninstall that version or make sure to have *VC++ 2015.3 v14.00 (v140) toolset for desktop* installed (see below)
-		- Option 2: Use Visual Studio 2017
-			- Install [Visual Studio 2017 Community Edition](https://visualstudio.microsoft.com/downloads/)
+		- Option 2: Use Visual Studio 2019
+			- Install [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/downloads/)
 			- Select *Desktop Development with C++*
-			- Select *VC++ 2015.3 v14.00 (v140) toolset for desktop* on the right hand side
-
-				**Note:** if you encounter an error *The build tools for v141 (Platform Toolset = 'v141') cannot be found."* make sure you installed the *VC++ 2015.3 v14.00 (v140) toolset for desktop* from the previous step
+			- Select *MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.28)* on the right hand side
 	- **Restart** your computer
     - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
