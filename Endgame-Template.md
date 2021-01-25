@@ -79,6 +79,7 @@
   - [ ] @rzhao271
   - [ ] @sandy081
   - [ ] @sbatten
+  - [ ] @tylerleonhardt
   - [ ] @tyriar
   - [ ] @weinand
 - [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. Use the [thankyou](https://vscode-tools.azurewebsites.net/#acknowledgePRs) tool to generate the initial contents of the section. **owner**
