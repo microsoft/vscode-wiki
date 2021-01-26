@@ -198,7 +198,7 @@ Authors: @user1, @user2
 
 Refs: <!-- Refer to the issue that this test plan item is testing. -->
 
-- [ ] linux (test cross paltform)
+- [ ] linux (test cross platform)
 - [ ] windows: @user1 (test 32 bit)
 
 Complexity: 4
