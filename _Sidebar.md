@@ -22,6 +22,7 @@
   * [[Keybinding Issues]]
   * [[Native Crash Issues]]
   * [[Search Issues]]
+  * [[Terminal Issues]]
 * [[Feedback Channels]]
 * [[Source Code Organization]]
 * [[Coding Guidelines]]
