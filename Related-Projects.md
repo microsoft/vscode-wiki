@@ -41,7 +41,6 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 |HTML Language Service|[vscode-html-languageservice](https://github.com/microsoft/vscode-html-languageservice)|
 |Go|[vscode-go](https://github.com/microsoft/vscode-go)|
 |Emmet Helper|[vscode-emmet-helper](https://github.com/Microsoft/vscode-emmet-helper)|
-|Emmet|[vscode-emmet](https://github.com/Microsoft/vscode-emmet)|
 |Markdown Textmate Grammar|[vscode-markdown-tm-grammar](https://github.com/Microsoft/vscode-markdown-tm-grammar)|
 
 ## Localization
