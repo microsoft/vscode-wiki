@@ -103,6 +103,7 @@
   - [ ] vscode-eslint **@dbaeumer**
   - [ ] vscode-jshint **@rmacfarlane**
   - [ ] vscode-recipes **@weinand**
+  - [ ] vscode-emmet-helper **@rzhao271**
   - [ ] localization **@weeteckt**
   - [ ] inno-updater **@joaomoreno**
 - [ ] Review pull requests acknowledgements with `NOT MERGED - PLS REVIEW`. **endgame champion**
