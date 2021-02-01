@@ -104,7 +104,6 @@
   - [ ] vscode-jshint **@rmacfarlane**
   - [ ] vscode-recipes **@weinand**
   - [ ] localization **@weeteckt**
-  - [ ] vscode-github-issues-prs **@chrmarti**
   - [ ] inno-updater **@joaomoreno**
 - [ ] Review pull requests acknowledgements with `NOT MERGED - PLS REVIEW`. **endgame champion**
 - [ ] Acknowledge [issue trackers](https://github.com/microsoft/vscode-internalbacklog/wiki/Community-Triage:-Credits) from the community **@chrmarti**
