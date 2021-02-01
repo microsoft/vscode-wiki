@@ -50,7 +50,7 @@
 - [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) (⚠️ MUST run with `--stable-build` argument ⚠️ )	
   - [ ] Windows - **owner**	
-  - [ ] macOS - **owner**	
+  - [ ] macOS (Universal) - **owner**	
   - [ ] Linux - **owner**	
   - [ ] Web (Chromium) - **owner**	
 - [ ] All release notes updated
@@ -174,7 +174,10 @@
     - [ ] signed installer ARM64
     - [ ] signed user installer ARM64
     - [ ] zip ARM64
-  - [ ] macOS - **owner**
+  - [ ] macOS
+    - [ ] Universal **owner**
+    - [ ] Intel **owner**
+    - [ ] Apple Silicon **owner**
   - [ ] Linux x64
     - [ ] deb **owner**
     - [ ] rpm **owner**
