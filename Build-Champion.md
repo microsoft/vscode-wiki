@@ -26,16 +26,15 @@ Given build failures, make sure to pay attention to the [#build Slack channel](h
 
 ## FAQ
 
-#### Why do we have two builds?
+#### What happened to the public DevOps continuous build?
 
-The [Continuous Build](https://dev.azure.com/vscode/VSCode/_build?definitionId=1) is a **public**, **lightweight** build which runs on every commit and PR and has access to no credentials. It exists to make sure our code base is clean, compilable and tests are happy on branches and pull requests.
+We managed to improve the Product build considerably to the point that it now runs on every push, effectively becoming our continuous build. So we dropped the old continuous build: `https://dev.azure.com/vscode/VSCode`.
 
-The [Product Build](https://dev.azure.com/monacotools/Monaco/_build?definitionId=111) is a **private**, **heavyweight** build which runs daily to produce Insiders, so it has access to credentials. It exists to create all VS Code distributable assets and place them on our [builds page](https://builds.code.visualstudio.com/). **Note:** it's important that it never runs on PRs of external forks of VS Code.
-
+Additionally, we have a parallel [public continuous build](https://github.com/microsoft/vscode/actions?query=workflow%3ACI) running on GitHub Actions, which mostly validates PRs.
 
 #### How do the builds run?
 
 All our builds run in Azure DevOps and are scripted using YAML build definition files:
 
-- [Product Build](https://dev.azure.com/monacotools/Monaco/_build/latest?definitionId=111&branchName=master): https://github.com/microsoft/vscode/blob/master/build/azure-pipelines/product-build.yml
-- [Continuous Build](https://dev.azure.com/vscode/VSCode/_build/latest?definitionId=12&branchName=master): https://github.com/microsoft/vscode/blob/master/azure-pipelines.yml
+- [DevOps](https://github.com/microsoft/vscode/blob/master/build/azure-pipelines/product-build.yml)
+- [GH Actions](https://github.com/microsoft/vscode/blob/master/.github/workflows/ci.yml) 
