@@ -2,7 +2,7 @@ This page describes the Build Champion role. This is a weekly rotating role.
 
 ## Daily Goals
 
-![Build Status](https://dev.azure.com/monacotools/Monaco/_apis/build/status/VS%20Code?branchName=master)
+[![Build Status](https://dev.azure.com/monacotools/Monaco/_apis/build/status/VS%20Code?branchName=master)](https://dev.azure.com/monacotools/Monaco/_build?definitionId=111&branchFilter=332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332)
 
 1. Make sure [the build](https://dev.azure.com/monacotools/Monaco/_build?definitionId=111&branchFilter=332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332) is green 
 2. Make sure it [releases Insiders](https://dev.azure.com/monacotools/Monaco/_build?definitionId=111&branchFilter=332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332&requestedForFilter=00000002-0000-8888-8000-000000000000) every day
