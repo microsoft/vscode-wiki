@@ -2,8 +2,11 @@ This page describes the Build Champion role. This is a weekly rotating role.
 
 ## Daily Goals
 
-1. Make sure an [Insider build](https://dev.azure.com/monacotools/Monaco/_build?definitionId=111&_a=summary&repositoryFilter=20&branchFilter=332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332) is released daily [![Build Status](https://dev.azure.com/monacotools/Monaco/_apis/build/status/VS%20Code?branchName=master)](https://dev.azure.com/monacotools/Monaco/_build/latest?definitionId=111&branchName=master)
-2. Make sure the Continuous Build for [the master branch](https://dev.azure.com/vscode/VSCode/_build?definitionId=1&_a=summary&repositoryFilter=1&branchFilter=2%2C2%2C2%2C2%2C2%2C2%2C2) is green [![Build Status](https://dev.azure.com/vscode/VSCode/_apis/build/status/VS%20Code?branchName=master)](https://dev.azure.com/vscode/VSCode/_build/latest?definitionId=12&branchName=master)
+![Build Status](https://dev.azure.com/monacotools/Monaco/_apis/build/status/VS%20Code?branchName=master)
+
+1. Make sure [the build](https://dev.azure.com/monacotools/Monaco/_build?definitionId=111&branchFilter=332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332) is green 
+2. Make sure it [releases Insiders](https://dev.azure.com/monacotools/Monaco/_build?definitionId=111&branchFilter=332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332&requestedForFilter=00000002-0000-8888-8000-000000000000) every day
+
 
 ## Process
 
