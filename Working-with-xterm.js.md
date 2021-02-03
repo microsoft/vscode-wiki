@@ -7,7 +7,7 @@ Check out the [xterm.js contribution documentation](https://github.com/xtermjs/x
 Since bugs and/or features manifest themselves in both VS Code and xterm.js, it's a little unclear initially where the issue(s) should be created. After some experimentation I landed on the best way to deal with this is to create the an issue in both the Microsoft/vscode and xtermjs/xterm.js repositories. The reason this is the best workflow is because the changes will then be verified during endgame and it's much easier to compose release notes for the terminal changes. This guideline is less important for more obscure terminal issues where it's typically easier to keep a single source of truth in the xterm.js repo.
 
 ### Updating `xterm` in vscode via script
-1. Copy `update-xterm.js` and `update-xterm.ps1` from [Daniel's dotfiles](https://github.com/Tyriar/dotfiles/tree/master/data/bin) into your vscode folder. Open a terminal on master and run `./update-xterm.ps1`. 
+1. Copy `update-xterm.js` and `update-xterm.ps1` from [Daniel's dotfiles](https://github.com/Tyriar/dotfiles/tree/master/data/bin) into your vscode folder. Open a terminal on master and run `./update-xterm.ps1`. These will likely eventually move to the vscode repo.
 2. Add the changed files, excluding the aforementioned script files, and commit with the following message:
 
 ```
@@ -19,16 +19,7 @@ Diff: https://github.com/xtermjs/xterm.js/compare/91cbeec...eb25243
 - Change 2...
 ```
 3. Build and run vscode to test terminal functionality. If all looks well, push.
-4. Open your vscode-distro folder and run:
-```
-git pull
-git merge origin/oss/master
-```
-
-4. Resolve any conflicts, being careful to remove unnecessary whitespace, and then push.
-5. Retrieve the commit hash via `git show` and open the vscode repo.
-6. Update the distro entry in `package.json` to the commit hash you copied, commit, and push.
-7. [Check](https://monacotools.visualstudio.com/Monaco/_build?definitionId=156&_a=summary) to confirm it builds.
+4. Update distro as conflicts will occur
 
 ### Updating `xterm` in vscode manually
 
