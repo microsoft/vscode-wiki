@@ -91,7 +91,7 @@ git pull https://github.com/microsoft/vscode.git master
 
 Manage any merge conflicts, commit them, and then push them to your fork.
 
-**Note**: The `microsoft/vscode` repository contains a collection of GitHub Actions that help us with triaging issues. As you probably don't want these running on your fork, you can disable Actions for your fork by via `https://github.com/<<Your Username>>/vscode/settings/actions`.
+**Note**: The `microsoft/vscode` repository contains a collection of GitHub Actions that help us with triaging issues. As you probably don't want these running on your fork, you can disable Actions for your fork via `https://github.com/<<Your Username>>/vscode/settings/actions`.
 
 ### Build
 
