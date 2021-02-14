@@ -38,7 +38,7 @@ This guide will help you as extension author to make your extension ready for mu
 
 ## Do I need to do anything?
 
-Here is a simple check list:
+Here is a simple checklist:
 * If your extension is making use of the (now deprecated) `workspace.rootPath` property to work on the currently opened folder, then you are affected. See the section 'Eliminating workspace.rootPath below'.
 * If your extension contributes settings then you should review whether some of the settings can be applied on a resource (= file location) level instead of being global. Resource settings are more powerful because a user can choose to configure settings differently per workspace folder. Similarly, if you do not contribute settings but you modify settings programmatically, then you should review that you modify the settings using the proper scope. See the 'Settings' section below.
 * If you are implementing a language server then you are affected since up to now a language server only had to handle a single folder. In the new multi-folder setup, a language server should be able to handle multiple folders. See the section 'Language Client/Language Server' below.
@@ -80,7 +80,7 @@ In order to make it easier to work with multiple-roots from your extension, we a
 
 ![Workspace Folder Picker](https://github.com/Microsoft/vscode-docs/raw/vnext/release-notes/images/1_17/picker.png)
 
-In addition, we introduced the `RelativePattern` type and support it in the API where we ask for glob patterns to match on file paths. There maybe scenarios where you want to restrict the glob matching on a specific `WorkspaceFolder` and `RelativePattern` allows this by providing a `base` for the pattern to match against. You can use `RelativePattern` in:
+In addition, we introduced the `RelativePattern` type and support it in the API where we ask for glob patterns to match on file paths. There may be scenarios where you want to restrict the glob matching on a specific `WorkspaceFolder` and `RelativePattern` allows this by providing a `base` for the pattern to match against. You can use `RelativePattern` in:
 * `workspace.createFileSystemWatcher(pattern)`
 * `workspace.findFiles(include, exclude))`
 * `DocumentFilter#pattern`
@@ -178,7 +178,7 @@ To declare a setting scope, simply define the scope as part of your setting from
         "conf.resource.insertEmptyLastLine": {
           "type": "object",
           "default": {},
-          "description": "Resource configurtion: Configure files using glob patterns to have an empty last line always",
+          "description": "Resource configuration: Configure files using glob patterns to have an empty last line always",
           "scope": "resource"
         }
       }
@@ -197,9 +197,9 @@ Under the hood, resource settings are resolved with a simple logic: We try to fi
 ### Perspectives
 An extension author, you should have following two perspectives while defining a setting
 
-1. **End User:** Given a setting, an end user should know where he/she can customise this setting. By defining a setting as `resource` or `window` scoped, user can be able customise it at right targets. It means, User can open settings and can customise a window (`window.zoomLevel`) or resource (`editor.wordWrap`) setting  in User/Workspace Settings. But when user lands into Folder Settings, user can only customise resource settings (`editor.wordWrap`). VS Code will use the setting's classification information to provide right proposals in intelli-sense and will warn user if customising `window` settings in Folder settings.
+1. **End User:** Given a setting, an end user should know where he/she can customize this setting. By defining a setting as `resource` or `window` scoped, user can be able customize it at right targets. It means, User can open settings and can customize a window (`window.zoomLevel`) or resource (`editor.wordWrap`) setting  in User/Workspace Settings. But when user lands into Folder Settings, user can only customize resource settings (`editor.wordWrap`). VS Code will use the setting's classification information to provide right proposals in intelli-sense and will warn user if customizing `window` settings in Folder settings.
 
-2. **Extension author:** Extension author's main purpose is to define a setting and read its value and apply it. As mentioned before now, there is a new target `Folder Settings` where a resource scoped setting can only be customisable. So extension author should be knowing if a setting is associated to a resource or not and thereby, classify the setting. If it is a resource setting, ask for the value of the setting by passing the resource for which the value has to be applied. Otherwise you can just ask for the value without passing any resource. API will give you back the value user customised for this setting.
+2. **Extension author:** Extension author's main purpose is to define a setting and read its value and apply it. As mentioned before now, there is a new target `Folder Settings` where a resource scoped setting can only be customizable. So extension author should be knowing if a setting is associated to a resource or not and thereby, classify the setting. If it is a resource setting, ask for the value of the setting by passing the resource for which the value has to be applied. Otherwise you can just ask for the value without passing any resource. API will give you back the value user customized for this setting.
 
 ### Run time Diagnostics
 
