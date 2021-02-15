@@ -4,7 +4,7 @@
 
 This wiki page explains the impact of the new multi-root-workspace feature on extensions. You will learn the concepts, new APIs and understand if and how to make your extension ready for multi-root-workspace support.
 
-A multi-root workspace is a new way how to work with VS Code. At its core, it allows to open multiple folders in the same instance from any location that is accessible on disk. All parts of the VS Code user interface adapt to the number of folders opened, e.g. the file explorer will show all folders in a single tree and the full-text search will search across all folders. It is in the best interest of the users that extensions also adapt to supporting multiple folders.
+A multi-root workspace is a new way how to work with VS Code. At its core, it allows opening multiple folders in the same instance from any location that is accessible on disk. All parts of the VS Code user interface adapt to the number of folders opened, e.g. the file explorer will show all folders in a single tree and the full-text search will search across all folders. It is in the best interest of the users that extensions also adapt to supporting multiple folders.
 
 ![explorer](https://user-images.githubusercontent.com/900690/30064942-9dc2e608-9253-11e7-9f01-5b18f3e90065.png)
 
@@ -137,8 +137,8 @@ Settings can be stored in various locations:
 Location|Description
 ---|-------
 User Data|Global `settings.json` file in the user data directory that applies to any VS Code instance
-Workspace File (*new*)|Settings stored within the `.code-workspace` file of a multi-root workspace which apply whenever the workspace is opened
-Workspace Folder|Settings stored inside a `.vscode` folder of a workspace folder which apply depending on opening the folder or a workspace with that folder (see below).
+Workspace File (*new*)|Settings stored within the `.code-workspace` file of a multi-root workspace which applies whenever the workspace is opened
+Workspace Folder|Settings stored inside a `.vscode` folder of a workspace folder which applies depending on opening the folder or a workspace with that folder (see below).
 
 Let's have a closer look at **Workspace Folder** settings that are stored within the `.vscode` folder: If you are opening just that folder in VS Code, all the settings of this folder apply to VS Code as before. However, once you make this folder part of a multi-root workspace, the situation is different. We no longer support all settings in this setup simply because you could have multiple folders configured in the workspace, each having settings that could potentially conflict.
 
@@ -221,7 +221,7 @@ Refer to [Configuration Sample](https://github.com/Microsoft/vscode-extension-sa
 
 Since language servers usually act on a workspace they are also affected by the introduction of multi-root workspaces. A language server extension needs to check for the following items and adopt its code accordingly:
 
-- if the server accesses the `rootPath` or `rootURI` property of the `InitializeParams` passed in the [`initialize` request](https://github.com/Microsoft/language-server-protocol/blob/master/protocol.md#initialize) then the language server must instead use the property `workspaceFolders`. Since workspace folders can come and go dynamically the server also need to register for `workspace/didChangeWorkspaceFolders` notifications. The documentation can be found [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.workspaceFolders.ts).
+- if the server accesses the `rootPath` or `rootURI` property of the `InitializeParams` passed in the [`initialize` request](https://github.com/Microsoft/language-server-protocol/blob/master/protocol.md#initialize) then the language server must instead use the property `workspaceFolders`. Since workspace folders can come and go dynamically the server also needs to register for `workspace/didChangeWorkspaceFolders` notifications. The documentation can be found [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.workspaceFolders.ts).
 
 - if the server is using configuration settings the author also has to review the scope of the settings (see the [Settings section](#settings) above). For a language server, 'resource' scope is typically preferred since it enables a user to configure that language settings on a per-folder basis. In addition, the server has to change the way settings are accessed (see the [Language Settings section](#language-settings) below).
 
@@ -235,7 +235,7 @@ Language servers that operate on multiple files with interdependencies can be di
 
 ### Language settings
 
-In the current version of the language server protocol, the client pushes settings to the server. With the introduction of a resource scope, this is not possible anymore since the actual settings values can depend on a resource. We introduce a protocol which allow servers to fetch settings from a client comparable to the `getConfiguration` API in the extension host. The protocol addition is documented [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.configuration.ts). The bundled CSS or HTML language extensions illustrate this approach. 
+In the current version of the language server protocol, the client pushes settings to the server. With the introduction of a resource scope, this is not possible anymore since the actual settings values can depend on a resource. We introduce a protocol which allows servers to fetch settings from a client comparable to the `getConfiguration` API in the extension host. The protocol addition is documented [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.configuration.ts). The bundled CSS or HTML language extensions illustrate this approach. 
 
 A setting that supports file paths relative to a workspace needs special treatment. In the single folder case, the language server process is started in the root folder of the workspace. A relative path can then be resolved easily since the server's home directory corresponds to the workspace root. In the multi-root folder setup, this is no longer the case and when the setting is defined as a resource scoped setting, then the path needs to be resolved per root folder. One approach that has worked well for us, is to resolve the relative file path of a setting on the client using the new settings API. In this way, the server only sees absolute paths. An example for this can be found in [vscode-tslint](https://github.com/Microsoft/vscode-tslint/blob/2a9b46d57489b180f3fc0ad0acc15c3071541acf/tslint/extension.ts#L199). It uses the `vscode-languageclient` middleware to transform the relative file paths.
 
