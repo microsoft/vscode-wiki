@@ -1,4 +1,4 @@
->**Request:** if you have prepared your extension for Multi-root Workspaces we would love you to add `multi-root ready` to your `package.json` i.e. `"keywords": ["multi-root ready"]`.  If you upgrade to `VSCE 1.32.0` this can be added to any existing keywords and will not be counted against the maximum of 5 allowed keywords.
+>**Request:** If you have prepared your extension for Multi-root Workspaces we would love you to add `multi-root ready` to your `package.json` i.e. `"keywords": ["multi-root ready"]`.  If you upgrade to `VSCE 1.32.0` this can be added to any existing keywords and will not be counted against the maximum of 5 allowed keywords.
 
 ## Synopsis
 
@@ -50,9 +50,9 @@ The basic APIs to work with multi-root workspaces are:
 
 Method|Description
 ---|-------
-`workspace.workspaceFolders`| access to all `WorkspaceFolder` (can be `undefined` when no workspace is opened!)
-`workspace.onDidChangeWorkspaceFolders`| be notified when `WorkspaceFolder` are added or removed
-`workspace.getWorkspaceFolder(uri)`|get the `WorkspaceFolder` for a given resource (can be `undefined` when a resource is not part of any workspace folder!)
+`workspace.workspaceFolders`| Access to all `WorkspaceFolder` (can be `undefined` when no workspace is opened!).
+`workspace.onDidChangeWorkspaceFolders`| Be notified when `WorkspaceFolder` are added or removed.
+`workspace.getWorkspaceFolder(uri)`|Get the `WorkspaceFolder` for a given resource (can be `undefined` when a resource is not part of any workspace folder!).
 
 Your extension should be capable of working with any number of `WorkspaceFolder`, including 0, 1, or many folders. The `WorkspaceFoldersChangeEvent` carries information about the added or removed `WorkspaceFolder`. To find out to which `WorkspaceFolder` a given resource belongs to, use the `workspace.getWorkspaceFolder(uri)` method.
 
@@ -62,13 +62,13 @@ Each `WorkspaceFolder` provides access to some metadata:
 
 Property|Description
 ---|-------
-`uri`| the associated uri for this workspace folder. The Uri-type was intentionally chosen such that future releases of the editor can support workspace folders that are not stored on the local disk, e.g. `ftp://server/workspaces/foo`.
-`index`| the 0-based index of the folder as configured by the user
-`name`| the name of the folder (defaults to the folder name)
+`uri`| The associated uri for this workspace folder. The Uri-type was intentionally chosen such that future releases of the editor can support workspace folders that are not stored on the local disk, e.g. `ftp://server/workspaces/foo`.
+`index`| The 0-based index of the folder as configured by the user.
+`name`| The name of the folder (defaults to the folder name).
 
-**Note 1:** a user is free to configure folders for a workspace that are overlapping. E.g. a workspace can consist of a parent folder as well as any of its children. It is up to the extension to be clever here and avoid duplicate work. For example, a task that scans all files of a folder should not duplicate the work by scanning again for a child folder if any.
+**Note 1:** A user is free to configure folders for a workspace that are overlapping. E.g. a workspace can consist of a parent folder as well as any of its children. It is up to the extension to be clever here and avoid duplicate work. For example, a task that scans all files of a folder should not duplicate the work by scanning again for a child folder if any.
 
-**Note 2:** a workspace folder might use a `uri` which does *not* resolve to a file on disk. So, it must not always be a `file`-uri, but VSCode will soon support workspace folders from remote locations.
+**Note 2:** A workspace folder might use a `uri` which does *not* resolve to a file on disk. So, it must not always be a `file`-uri, but VSCode will soon support workspace folders from remote locations.
 
 The [`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample) extension is demonstrating the use of this API by showing the workspace folder of the currently opened file on the left-hand side of the status bar.
 
@@ -136,8 +136,8 @@ Settings can be stored in various locations:
 
 Location|Description
 ---|-------
-User Data|Global `settings.json` file in the user data directory that applies to any VS Code instance
-Workspace File (*new*)|Settings stored within the `.code-workspace` file of a multi-root workspace which applies whenever the workspace is opened
+User Data|Global `settings.json` file in the user data directory that applies to any VS Code instance.
+Workspace File (*new*)|Settings stored within the `.code-workspace` file of a multi-root workspace which applies whenever the workspace is opened.
 Workspace Folder|Settings stored inside a `.vscode` folder of a workspace folder which applies depending on opening the folder or a workspace with that folder (see below).
 
 Let's have a closer look at **Workspace Folder** settings that are stored within the `.vscode` folder: If you are opening just that folder in VS Code, all the settings of this folder apply to VS Code as before. However, once you make this folder part of a multi-root workspace, the situation is different. We no longer support all settings in this setup simply because you could have multiple folders configured in the workspace, each having settings that could potentially conflict.
@@ -146,8 +146,8 @@ To solve this, we distinguish between scopes a setting can have. You as extensio
 
 Scope|Description
 ---|-------
-`window`|the setting is applied to the entire VS Code instance
-`resource`|the setting is applied depending on an active resource
+`window`|The setting is applied to the entire VS Code instance.
+`resource`|The setting is applied depending on an active resource.
 
 By default, all settings have the `window` scope, however, we encourage you to support settings on the `resource` scope. Settings that apply on the window level are not supported once they are defined within a workspace folder and as soon as the user entered a multi-root workspace. Settings that apply on a resource level however are supported and as such, each workspace folder can have different values for these settings. 
 
@@ -213,7 +213,7 @@ It is suggested to pass in a resource when you are accessing a resource scoped c
 
 - If they are not resource scoped settings, you do not need to pass in a resource while accessing the setting.
 
-- If they are resource scoped settings, you have to define them as Resource scoped while registering in the package.json
+- If they are resource scoped settings, you have to define them as Resource scoped while registering in the package.json.
 
 Refer to [Configuration Sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/configuration-sample) extension for more information.
 
@@ -221,9 +221,9 @@ Refer to [Configuration Sample](https://github.com/Microsoft/vscode-extension-sa
 
 Since language servers usually act on a workspace they are also affected by the introduction of multi-root workspaces. A language server extension needs to check for the following items and adopt its code accordingly:
 
-- if the server accesses the `rootPath` or `rootURI` property of the `InitializeParams` passed in the [`initialize` request](https://github.com/Microsoft/language-server-protocol/blob/master/protocol.md#initialize) then the language server must instead use the property `workspaceFolders`. Since workspace folders can come and go dynamically the server also needs to register for `workspace/didChangeWorkspaceFolders` notifications. The documentation can be found [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.workspaceFolders.ts).
+- If the server accesses the `rootPath` or `rootURI` property of the `InitializeParams` passed in the [`initialize` request](https://github.com/Microsoft/language-server-protocol/blob/master/protocol.md#initialize) then the language server must instead use the property `workspaceFolders`. Since workspace folders can come and go dynamically the server also needs to register for `workspace/didChangeWorkspaceFolders` notifications. The documentation can be found [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.workspaceFolders.ts).
 
-- if the server is using configuration settings the author also has to review the scope of the settings (see the [Settings section](#settings) above). For a language server, 'resource' scope is typically preferred since it enables a user to configure that language settings on a per-folder basis. In addition, the server has to change the way settings are accessed (see the [Language Settings section](#language-settings) below).
+- If the server is using configuration settings the author also has to review the scope of the settings (see the [Settings section](#settings) above). For a language server, 'resource' scope is typically preferred since it enables a user to configure that language settings on a per-folder basis. In addition, the server has to change the way settings are accessed (see the [Language Settings section](#language-settings) below).
 
 ### Single language server or server per folder?
 
