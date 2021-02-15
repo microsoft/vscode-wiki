@@ -34,7 +34,7 @@ All workspace metadata is stored in a simple JSON file that can be saved and sha
 
 In its most simple form, a VS Code workspace is just a collection of folders (called `WorkspaceFolder` in the API) and associated settings that should apply whenever the workspace is opened. Each `WorkspaceFolder` can have additional metadata associated (for example a `name` property).
 
-This guide will help you as extension author to make your extension ready for multi-root workspaces. It touches on three major pieces (basics, settings, language client/server) and is joined by samples from our [samples repository](https://github.com/Microsoft/vscode-extension-samples). 
+This guide will help you as an extension author to make your extension ready for multi-root workspaces. It touches on three major pieces (basics, settings, language client/server) and is joined by samples from our [samples repository](https://github.com/Microsoft/vscode-extension-samples). 
 
 ## Do I need to do anything?
 
@@ -52,7 +52,7 @@ Method|Description
 ---|-------
 `workspace.workspaceFolders`| access to all `WorkspaceFolder` (can be `undefined` when no workspace is opened!)
 `workspace.onDidChangeWorkspaceFolders`| be notified when `WorkspaceFolder` are added or removed
-`workspace.getWorkspaceFolder(uri)`|get the `WorkspaceFolder` for a given resource (can be `undefined` when resource is not part of any workspace folder!)
+`workspace.getWorkspaceFolder(uri)`|get the `WorkspaceFolder` for a given resource (can be `undefined` when a resource is not part of any workspace folder!)
 
 Your extension should be capable of working with any number of `WorkspaceFolder`, including 0, 1, or many folders. The `WorkspaceFoldersChangeEvent` carries information about the added or removed `WorkspaceFolder`. To find out to which `WorkspaceFolder` a given resource belongs to, use the `workspace.getWorkspaceFolder(uri)` method.
 
@@ -188,16 +188,16 @@ To declare a setting scope, simply define the scope as part of your setting from
 ```
 
 ### Settings API
-The configuration example above defines a setting scoped to a resource. To fetch its value you use the `workspace.getConfiguration()` API and pass the URI of the resource as second parameter. You can see [Example 3](https://github.com/Microsoft/vscode-extension-samples/blob/master/configuration-sample/src/extension.ts) how the setting is used in the basic-multi-root sample.
+The configuration example above defines a setting scoped to a resource. To fetch its value you use the `workspace.getConfiguration()` API and pass the URI of the resource as the second parameter. You can see [Example 3](https://github.com/Microsoft/vscode-extension-samples/blob/master/configuration-sample/src/extension.ts) how the setting is used in the basic-multi-root sample.
 
-Under the hood, resource settings are resolved with a simple logic: We try to find a `WorkspaceFolder` for the resource that is passed into the `getConfiguration` API. If such a folder exists and that folder defines the setting, it will be returned. Otherwise, the normal logic applies for finding the setting on a parent level: it could be defined within the workspace file or on the user level.
+Under the hood, resource settings are resolved with simple logic: We try to find a `WorkspaceFolder` for the resource that is passed into the `getConfiguration` API. If such a folder exists and that folder defines the setting, it will be returned. Otherwise, the normal logic applies for finding the setting on a parent level: it could be defined within the workspace file or on the user level.
 
 **Note:** You do not have to be aware if the user has opened a workspace or not when using the `getConfiguration` API with resource scope. Just make sure to always pass the resource scope URI around and we will do the resolution of the setting based on the user's setup.
 
 ### Perspectives
-An extension author, you should have following two perspectives while defining a setting
+An extension author, you should have the following two perspectives while defining a setting
 
-1. **End User:** Given a setting, an end-user should know where he/she can customize this setting. By defining a setting as `resource` or `window` scoped, user can be able customize it at right targets. It means, User can open settings and can customize a window (`window.zoomLevel`) or resource (`editor.wordWrap`) setting  in User/Workspace Settings. But when user lands into Folder Settings, user can only customize resource settings (`editor.wordWrap`). VS Code will use the setting's classification information to provide right proposals in intelli-sense and will warn user if customizing `window` settings in Folder settings.
+1. **End User:** Given a setting, an end-user should know where he/she can customize this setting. By defining a setting as `resource` or `window` scoped, the user can be able to customize it at the right targets. It means, User can open settings and can customize a window (`window.zoomLevel`) or resource (`editor.wordWrap`) setting  in User/Workspace Settings. But when a user lands into Folder Settings, the user can only customize resource settings (`editor.wordWrap`). VS Code will use the setting's classification information to provide the right proposals in intelli-sense and will warn the user if customizing `window` settings in Folder settings.
 
 2. **Extension author:** Extension author's main purpose is to define a setting and read its value and apply it. As mentioned before now, there is a new target `Folder Settings` where a resource scoped setting can only be customizable. So extension author should be knowing if a setting is associated with a resource or not and thereby, classify the setting. If it is a resource setting, ask for the value of the setting by passing the resource for which the value has to be applied. Otherwise, you can just ask for the value without passing any resource. API will give you back the value user-customized for this setting.
 
@@ -207,7 +207,7 @@ While extension development, we provide some run time assistance by logging warn
 
 > [ext.name]: Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '${key}', provide the URI of a resource or 'null' for any resource.
 
-It is suggested to pass in a resource when you are accessing a resource scoped configuration. In case of getting the value for any resource, pass `null` for resource.
+It is suggested to pass in a resource when you are accessing a resource scoped configuration. In case of getting the value for any resource, pass `null` for the resource.
 
 > [ext.name]: Accessing a window scoped configuration for a resource is not expected. To associate '${key}' to a resource, define its scope to 'resource' in configuration contributions in 'package.json'.
 
@@ -235,7 +235,7 @@ Language servers that operate on multiple files with interdependencies can be di
 
 ### Language settings
 
-In the current version of the language server protocol, the client pushes settings to the server. With the introduction of a resource scope, this is not possible anymore since the actual settings values can depend on a resource. We introduce protocol which allow servers to fetch settings from a client comparable to the `getConfiguration` API in the extension host. The protocol addition is documented [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.configuration.ts). The bundled CSS or HTML language extensions illustrate this approach. 
+In the current version of the language server protocol, the client pushes settings to the server. With the introduction of a resource scope, this is not possible anymore since the actual settings values can depend on a resource. We introduce a protocol which allow servers to fetch settings from a client comparable to the `getConfiguration` API in the extension host. The protocol addition is documented [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.configuration.ts). The bundled CSS or HTML language extensions illustrate this approach. 
 
 A setting that supports file paths relative to a workspace needs special treatment. In the single folder case, the language server process is started in the root folder of the workspace. A relative path can then be resolved easily since the server's home directory corresponds to the workspace root. In the multi-root folder setup, this is no longer the case and when the setting is defined as a resource scoped setting, then the path needs to be resolved per root folder. One approach that has worked well for us, is to resolve the relative file path of a setting on the client using the new settings API. In this way, the server only sees absolute paths. An example for this can be found in [vscode-tslint](https://github.com/Microsoft/vscode-tslint/blob/2a9b46d57489b180f3fc0ad0acc15c3071541acf/tslint/extension.ts#L199). It uses the `vscode-languageclient` middleware to transform the relative file paths.
 
