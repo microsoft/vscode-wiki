@@ -60,12 +60,12 @@ In case of issues, try deleting the contents of `~/.node-gyp` (alternatively `~/
 
 ### Development container
 
-Alternatively, you can avoid local dependency installation as this repository includes a Visual Studio Code Remote - Containers / Codespaces [development container](https://github.com/microsoft/vscode/tree/master/.devcontainer).
+Alternatively, you can avoid local dependency installation as this repository includes a Visual Studio Code Remote - Containers / Codespaces [development container](https://github.com/microsoft/vscode/tree/main/.devcontainer).
 
 - For [Remote - Containers](https://aka.ms/vscode-remote/download/containers), use the **Remote-Containers: Open Repository in Container...** command which creates a Docker volume for better disk I/O on macOS and Windows.
 - For Codespaces, install the [Visual Studio Codespaces](https://aka.ms/vscs-ext-vscode) extension in VS Code, and use the **Codespaces: Create New Codespace** command.
 
-Docker / the Codespace should have at least **4 Cores and 6 GB of RAM (8 GB recommended)** to run the full build. See the [development container README](https://github.com/microsoft/vscode/blob/master/.devcontainer/README.md) for more information.
+Docker / the Codespace should have at least **4 Cores and 6 GB of RAM (8 GB recommended)** to run the full build. See the [development container README](https://github.com/microsoft/vscode/blob/main/.devcontainer/README.md) for more information.
 
 If you'd like to contribute to the list of available development containers in the Remote - Containers extension, you can check out the [Contributing documentation](https://github.com/microsoft/vscode-dev-containers/blob/master/CONTRIBUTING.md) in the vscode-dev-containers repo.
 
@@ -85,8 +85,8 @@ Occasionally you will want to merge changes in the upstream repository (the offi
 
 ```
 cd vscode
-git checkout master
-git pull https://github.com/microsoft/vscode.git master
+git checkout main
+git pull https://github.com/microsoft/vscode.git main
 ```
 
 Manage any merge conflicts, commit them, and then push them to your fork.
@@ -169,12 +169,12 @@ The **extension host** process runs code implemented by a plugin. To debug exten
 The **search** process can be debugged, but must first be started. Before attempting to attach, start a search by pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> on macOS), otherwise attaching will fail and time out.
 
 ### Automated Testing
-Run the unit tests directly from a terminal by running `./scripts/test.sh` from the `vscode` folder (`scripts\test` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/master/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
+Run the unit tests directly from a terminal by running `./scripts/test.sh` from the `vscode` folder (`scripts\test` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/main/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
 
-We also have automated UI tests. The [smoke test README](https://github.com/Microsoft/vscode/blob/master/test/smoke/README.md) has all the details.
+We also have automated UI tests. The [smoke test README](https://github.com/Microsoft/vscode/blob/main/test/smoke/README.md) has all the details.
 
 ### Unit Testing
-Run the tests directly from a terminal by running `./scripts/test.sh` from the `vscode` folder (`scripts\test` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/master/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
+Run the tests directly from a terminal by running `./scripts/test.sh` from the `vscode` folder (`scripts\test` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/main/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
 
 ### Linting
 We use [eslint](https://eslint.org/) for linting our sources. You can run eslint across the sources by calling `yarn eslint` from a terminal or command prompt. You can also run `yarn eslint` as a VS Code task by pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> on macOS) and entering `task eslint`.
