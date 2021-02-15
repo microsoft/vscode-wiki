@@ -4,7 +4,7 @@
 
 This wiki page explains the impact of the new multi-root-workspace feature on extensions. You will learn the concepts, new APIs and understand if and how to make your extension ready for multi-root-workspace support.
 
-A multi-root workspace is a new way how to work with VS Code. At its core, it allows to open multiple folders in the same instance from any location that is accessible on disk. All parts of the VS Code user interface adapt to the number of folders opened, e.g. the file explorer will show all folders in a single tree and the full text search will search across all folders. It is in the best interest for the users that extensions also adapt to supporting multiple folders.
+A multi-root workspace is a new way how to work with VS Code. At its core, it allows to open multiple folders in the same instance from any location that is accessible on disk. All parts of the VS Code user interface adapt to the number of folders opened, e.g. the file explorer will show all folders in a single tree and the full-text search will search across all folders. It is in the best interest for the users that extensions also adapt to supporting multiple folders.
 
 ![explorer](https://user-images.githubusercontent.com/900690/30064942-9dc2e608-9253-11e7-9f01-5b18f3e90065.png)
 
@@ -46,7 +46,7 @@ Here is a simple checklist:
 
 ## Eliminating `rootPath`
 
-The basic APIs to work with multi root workspaces are:
+The basic APIs to work with multi-root workspaces are:
 
 Method|Description
 ---|-------
@@ -70,7 +70,7 @@ Property|Description
 
 **Note 2:** a workspace folder might use a `uri` which does *not* resolve to a file on disk. So, it must not always be a `file`-uri, but VSCode will soon support workspace folders from remote locations.
 
-The [`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample) extension is demonstrating the use of this API by showing the workspace folder of the currently opened file in the left hand side of the status bar.
+The [`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample) extension is demonstrating the use of this API by showing the workspace folder of the currently opened file in the left-hand side of the status bar.
 
 ![Show the folder of the active file](https://raw.githubusercontent.com/Microsoft/vscode-extension-samples/master/basic-multi-root-sample/preview.gif)
 
@@ -197,9 +197,9 @@ Under the hood, resource settings are resolved with a simple logic: We try to fi
 ### Perspectives
 An extension author, you should have following two perspectives while defining a setting
 
-1. **End User:** Given a setting, an end user should know where he/she can customize this setting. By defining a setting as `resource` or `window` scoped, user can be able customize it at right targets. It means, User can open settings and can customize a window (`window.zoomLevel`) or resource (`editor.wordWrap`) setting  in User/Workspace Settings. But when user lands into Folder Settings, user can only customize resource settings (`editor.wordWrap`). VS Code will use the setting's classification information to provide right proposals in intelli-sense and will warn user if customizing `window` settings in Folder settings.
+1. **End User:** Given a setting, an end-user should know where he/she can customize this setting. By defining a setting as `resource` or `window` scoped, user can be able customize it at right targets. It means, User can open settings and can customize a window (`window.zoomLevel`) or resource (`editor.wordWrap`) setting  in User/Workspace Settings. But when user lands into Folder Settings, user can only customize resource settings (`editor.wordWrap`). VS Code will use the setting's classification information to provide right proposals in intelli-sense and will warn user if customizing `window` settings in Folder settings.
 
-2. **Extension author:** Extension author's main purpose is to define a setting and read its value and apply it. As mentioned before now, there is a new target `Folder Settings` where a resource scoped setting can only be customizable. So extension author should be knowing if a setting is associated to a resource or not and thereby, classify the setting. If it is a resource setting, ask for the value of the setting by passing the resource for which the value has to be applied. Otherwise you can just ask for the value without passing any resource. API will give you back the value user customized for this setting.
+2. **Extension author:** Extension author's main purpose is to define a setting and read its value and apply it. As mentioned before now, there is a new target `Folder Settings` where a resource scoped setting can only be customizable. So extension author should be knowing if a setting is associated to a resource or not and thereby, classify the setting. If it is a resource setting, ask for the value of the setting by passing the resource for which the value has to be applied. Otherwise you can just ask for the value without passing any resource. API will give you back the value user-customized for this setting.
 
 ### Run time Diagnostics
 
@@ -223,11 +223,11 @@ Since language servers usually act on a workspace they are also affected by the 
 
 - if the server accesses the `rootPath` or `rootURI` property of the `InitializeParams` passed in the [`initialize` request](https://github.com/Microsoft/language-server-protocol/blob/master/protocol.md#initialize) then the language server must instead use the property `workspaceFolders`. Since workspace folders can come and go dynamically the server also need to register for `workspace/didChangeWorkspaceFolders` notifications. The documentation can be found [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.workspaceFolders.ts).
 
-- if the server is using configuration settings the author also has to review the scope of the settings (see the [Settings section](#settings) above). For a language server 'resource' scope is typically preferred, since it enables a user to configure that language settings on a per folder basis. In addition, the server has to change the way settings are accessed (see the [Language Settings section](#language-settings) below).
+- if the server is using configuration settings the author also has to review the scope of the settings (see the [Settings section](#settings) above). For a language server 'resource' scope is typically preferred, since it enables a user to configure that language settings on a per-folder basis. In addition, the server has to change the way settings are accessed (see the [Language Settings section](#language-settings) below).
 
 ### Single language server or server per folder?
 
-The first decision the author of a language server must make is whether a single server can handle all the folders in a multi-root folder setup or whether you want to run a server per root folder. Using a single server is the recommended way. Sharing a single server is more resource friendly than running multiple servers. 
+The first decision the author of a language server must make is whether a single server can handle all the folders in a multi-root folder setup or whether you want to run a server per root folder. Using a single server is the recommended way. Sharing a single server is more resource-friendly than running multiple servers. 
 
 Language servers that operate on a single file like a CSS or JSON file or linters that validate a single file at a time can easily handle multiple folders. We have already migrated the HTML, JSON, CSS language servers and the 'eslint' and 'tslint' Language servers. We have implemented them all as a single language server. The [lsp-sample example](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample) demonstrates the use of the new protocol workspace folder and configuration protocol. We recommend that you also review the corresponding extensions when migrating your server. 
 
