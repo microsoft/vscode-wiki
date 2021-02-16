@@ -73,6 +73,8 @@ If you'd like to contribute to the list of available development containers in t
 
 If you want to understand how VS Code works or want to debug an issue, you'll want to get the source, build it, and run the tool locally.
 
+> NOTE: If you need to debug the 32bit version of VS Code on 64bit Windows, follow [the guide on how to do that](https://github.com/microsoft/vscode/wiki/Build-and-run-32bit-Code---OSS-on-Windows).
+
 ### Getting the sources
 
 First, fork the VS Code repository so that you can make a pull request. Then, clone your fork locally:
