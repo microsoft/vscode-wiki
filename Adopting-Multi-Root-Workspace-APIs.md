@@ -14,7 +14,7 @@ There are numerous ways how to create a multi-root workspace, the simplest one i
 code-insiders <folder1> <folder2>...
 ```
 
-All workspace metadata is stored in a simple JSON file that can be saved and shared, (`File | Save Workspace As...`), with others:
+All workspace metadata is stored in a simple JSON file that can be saved and shared (`File | Save Workspace As...`) with others:
 
 ```json
 {
