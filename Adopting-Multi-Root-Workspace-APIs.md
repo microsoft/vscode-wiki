@@ -4,7 +4,7 @@
 
 This wiki page explains the impact of the new multi-root-workspace feature on extensions. You will learn the concepts, new APIs and understand if and how to make your extension ready for multi-root-workspace support.
 
-A multi-root workspace is a new way how to work with VS Code. At its core, it allows opening multiple folders in the same instance from any location that is accessible on disk. All parts of the VS Code user interface adapt to the number of folders opened, e.g. the file explorer will show all folders in a single tree and the full-text search will search across all folders. It is in the best interest of the users that extensions also adapt to supporting multiple folders.
+A multi-root workspace is a new way how to work with Visual Studio Code. At its core, it allows opening multiple folders in the same instance from any location that is accessible on disk. All parts of the VS Code user interface adapt to the number of folders opened, e.g. the file explorer will show all folders in a single tree and the full-text search will search across all folders. It is in the best interest of the users that extensions also adapt to supporting multiple folders.
 
 ![explorer](https://user-images.githubusercontent.com/900690/30064942-9dc2e608-9253-11e7-9f01-5b18f3e90065.png)
 
@@ -68,7 +68,7 @@ Property|Description
 
 **Note 1:** A user is free to configure folders for a workspace that are overlapping. E.g. a workspace can consist of a parent folder as well as any of its children. It is up to the extension to be clever here and avoid duplicate work. For example, a task that scans all files of a folder should not duplicate the work by scanning again for a child folder if any.
 
-**Note 2:** A workspace folder might use a `uri` which does *not* resolve to a file on disk. So, it must not always be a `file`-uri, but VSCode will soon support workspace folders from remote locations.
+**Note 2:** A workspace folder might use a `uri` which does *not* resolve to a file on disk. So, it must not always be a `file`-uri, but VS Code will soon support workspace folders from remote locations.
 
 The [`basic-multi-root-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/basic-multi-root-sample) extension is demonstrating the use of this API by showing the workspace folder of the currently opened file on the left-hand side of the status bar.
 
