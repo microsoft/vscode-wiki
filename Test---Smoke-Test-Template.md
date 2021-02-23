@@ -1,7 +1,6 @@
 - [ ] Windows
 - [ ] macOS
 - [ ] Linux
-- [ ] web
 
 Complexity: 2
 
