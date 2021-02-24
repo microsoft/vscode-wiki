@@ -129,12 +129,14 @@ To test the changes you launch a development version of VS Code on the workspace
 
 ```bash
 ./scripts/code.sh
+./scripts/code-cli.sh # for running CLI commands (eg --version)
 ```
 
 **Windows**
 
 ```bat
 .\scripts\code.bat
+.\scripts\code-cli.bat
 ```
 
 **Web (Chromium, Firefox or Safari only)**
@@ -142,6 +144,7 @@ To test the changes you launch a development version of VS Code on the workspace
 ```bash
 yarn web
 ```
+
 You can use `--port`, `--host` and `--scheme` to further instruct the simple server that runs for the web version about your environment (e.g. if you want to test the web version over a network).
 
 You can identify the development version of VS Code ("Code - OSS") by the following icon in the Dock or Taskbar:
