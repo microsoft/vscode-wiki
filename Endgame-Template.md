@@ -9,11 +9,11 @@
 - [ ] Ensure we have a green build on all platforms at 5pm PT
 - [ ] Create test plan items following the template [here](https://github.com/microsoft/vscode/wiki/Writing-Test-Plan-Items) by 6pm PT
 - [ ] Add verification-needed label to [features needed testing and are not tested by TPIs](https://github.com/microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Afeature-request+is%3Aclosed+-label%3Aon-testplan+-label%3Averification-needed+).
-- [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/
+- [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/testers
 
 
 ##### Tuesday
-- [ ] Test plan items assigned (using https://vscode-tools.azurewebsites.net/)
+- [ ] Test plan items assigned (using https://vscode-tools.azurewebsites.net/test-plan-items)
   - Run the tool multiple times to balance load if test items come in later and assignments are already made
   - [Assigned to you](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+assignee%3A%40me++label%3Atestplan-item+)
 - [ ] [🔖All closed feature-requests](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Afeature-request+-label%3Averification-needed+-label%3Aon-testplan+-label%3Averified+-label%3A*duplicate+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug) either have a `verification-needed` or `on-testplan` label
@@ -84,7 +84,7 @@
   - [ ] @tylerleonhardt
   - [ ] @tyriar
   - [ ] @weinand
-- [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. Use the [thankyou](https://vscode-tools.azurewebsites.net/#acknowledgePRs) tool to generate the initial contents of the section. **owner**
+- [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. Use the [thankyou](https://vscode-tools.azurewebsites.net/acknowledgement) tool to generate the initial contents of the section. **owner**
   - [ ] vscode **endgame champion**
   - [ ] debug-adapter-protocol **@weinand**
   - [ ] vscode-node-debug **@weinand**
