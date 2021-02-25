@@ -53,8 +53,7 @@
 - [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) (⚠️ MUST run with `--stable-build` argument ⚠️ )	
   - [ ] Windows - **owner**	
   - [ ] macOS (Universal) - **owner**	
-  - [ ] Linux - **owner**	
-  - [ ] Web (Chromium) - **owner**	
+  - [ ] Linux - **owner**		
 - [ ] All release notes updated
   - release notes are collected in a file named *`v<Major>_<Minor>.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
   - [ ] @aeschli
