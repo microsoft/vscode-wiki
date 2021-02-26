@@ -3,8 +3,8 @@
 - [ ] [🔖candidate issues](https://github.com/issues?utf8=✓&q=is%3Aissue+label%3Acandidate+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+milestone%3A%22January+2020+Recovery%22)
 - [ ] Assign candidate issues to the recovery milestone **team**
 - [ ] Review the `candidate` issues, and if they pass the review assign them to the recovery milestone **team**
-- [ ] All `candidate` fixes are peer reviewed and pushed to `master` and then cherry-picked into the release branch **team**
-- [ ] Initiate `insiders` build from `master`
+- [ ] All `candidate` fixes are peer reviewed and pushed to `main` and then cherry-picked into the release branch **team**
+- [ ] Initiate `insiders` build from `main`
 - [ ] Issues are tested in the `insiders` **team**
 - [ ] Build `stable` for all platforms from release branch **owner**
 - [ ] Issues are verified on `stable` build and the `verified` label is added **owner**
