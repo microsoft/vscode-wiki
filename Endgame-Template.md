@@ -3,7 +3,7 @@
 - *Month/Day* Expected release date (this may change)
 
 ##### Monday
-- [ ] Run [OSS tool](https://github.com/microsoft/vscode-build-tools/tree/master/distro-tools) **endgame champion**
+- [ ] Run [OSS tool](https://github.com/microsoft/vscode-build-tools/tree/main/distro-tools) **endgame champion**
 - [ ] Create Test plan item for smoke testing ([template](https://github.com/microsoft/vscode/wiki/Test---Smoke-Test-Template)) **endgame champion**
 - [ ] Code freeze at 5pm PT
 - [ ] Ensure we have a green build on all platforms at 5pm PT
