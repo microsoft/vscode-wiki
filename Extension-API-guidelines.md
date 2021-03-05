@@ -96,6 +96,10 @@ Strict Null
 -
 We define the API with strictNull-checks in mind. That means we use the optional annotation `foo?: number` and `null` or `undefined` in type annotations. For instance, its `activeTextEditor: TextEditor | undefined`. Again, be strict for types we define and relaxed when accepting data.
 
+Undefined is False
+-
+The default value of an optional, boolean property is `false`. This is for consistency with JS where undefined never evaluates to `true`
+
 JSDOC
 -
 We add JSDoc for all parts of the API. The doc is supported by markdown syntax. When document string-datatypes that end up in the UI, use the phrase ‘Human-readable string…’
