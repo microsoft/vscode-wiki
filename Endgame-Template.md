@@ -101,7 +101,7 @@
   - [ ] vscode-css-languageservice **@aeschli**
   - [ ] vscode-json-languageservice **@aeschli**
   - [ ] vscode-html-languageservice **@aeschli**
-  - [ ] jsonc-parser **@aeschli**
+  - [ ] node-jsonc-parser **@aeschli**
   - [ ] vscode-eslint **@dbaeumer**
   - [ ] vscode-jshint **@rmacfarlane**
   - [ ] vscode-recipes **@weinand**
