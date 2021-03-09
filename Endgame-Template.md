@@ -108,7 +108,6 @@
   - [ ] vscode-emmet-helper **@rzhao271**
   - [ ] localization **@weeteckt**
   - [ ] inno-updater **@joaomoreno**
-- [ ] Review pull requests acknowledgements with `NOT MERGED - PLS REVIEW`. **endgame champion**
 - [ ] Acknowledge [issue trackers](https://github.com/microsoft/vscode-internalbacklog/wiki/Community-Triage:-Credits) from the community **@chrmarti**
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
