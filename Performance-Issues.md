@@ -6,7 +6,7 @@
   - [Collect Information about the running VS Code](#collect-information)
   - [The Renderer/Window process consumes a lot of CPU](#renderer-process)
 - [Visual Studio Code starts up slowly](#slow-startup)  
-
+  - [Read the Startup Timers](#startup-timer)
 
 <a name="reporting"/>
 
@@ -118,6 +118,8 @@ If VS Code is slow to start then please create a startup CPU profile. Do the fol
   - Quit VS Code (<kbd>CMD+Q</kbd> for Mac, closing the last window on Linux/Windows)
   - Start VS Code from the command line like so `code --prof-startup`
   - VS Code will start and create two profile-files in your home-directory. Please attach these files to your issue or create a new issue with these two files
+
+<a name="startup-timer"/>
 
 ### Read the Startup Timers
 
