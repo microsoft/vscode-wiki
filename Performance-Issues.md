@@ -1,4 +1,4 @@
-## Contents
+## Table of Contents
 - [Reporting a Performance Issue](#reporting)  
 - [Visual Studio Code is consuming a lot of CPU](#consuming-cpu) 
   - [Run with Extensions Disabled](#extensions-disabled)
