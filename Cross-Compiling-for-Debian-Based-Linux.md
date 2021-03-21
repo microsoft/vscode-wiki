@@ -22,7 +22,7 @@ To build for a target architecture different than the host (e.g. using x64 to bu
 
 **Build**
 
-Because cross-compiling isn't officially supported by the VSCode team, some workarounds are required to make the app build correctly:
+Because cross-compiling isn't officially supported by the Visual Studio Code team, some workarounds are required to make the app build correctly:
 
 1. Point to the target toolchain on the build host:
 
@@ -39,7 +39,7 @@ Because cross-compiling isn't officially supported by the VSCode team, some work
    export npm_config_arch=arm
    ```
 
-1. Build VSCode and create a .deb file (for easier installation on the target device) as usual:
+1. Build VS Code and create a .deb file (for easier installation on the target device) as usual:
 
    ```bash
    yarn
