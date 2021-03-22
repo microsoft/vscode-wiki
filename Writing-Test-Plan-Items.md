@@ -208,3 +208,21 @@ Complexity: 4
 <!-- Please write your test here. -->
 
 ```
+
+### Example 10 (Assigning Roles)
+
+```markdown
+
+Refs: <!-- Refer to the issue that this test plan item is testing. -->
+
+- [ ] linux
+- [ ] windows
+
+Complexity: 4
+Roles: Developer, Engineering Manager
+
+---
+
+<!-- Please write your test here. -->
+
+```
