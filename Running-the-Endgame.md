@@ -1,6 +1,6 @@
 Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki/Development-Process#end-game).
 
-## Duties of the endgame master
+## Duties of the endgame champion
 
 > Proactive communication is key to a smooth and successful endgame.
 
