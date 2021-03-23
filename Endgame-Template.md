@@ -5,6 +5,7 @@
 ##### Monday
 - [ ] Run [OSS tool](https://github.com/microsoft/vscode-build-tools/tree/main/distro-tools) **endgame champion**
 - [ ] Create Test plan item for smoke testing ([template](https://github.com/microsoft/vscode/wiki/Test---Smoke-Test-Template)) **endgame champion**
+- [ ] Update links in Endgame issue and Endgame notebooks to point to new milestone **endgame champion**
 - [ ] Code freeze at 5pm PT
 - [ ] Ensure we have a green build on all platforms at 5pm PT
 - [ ] Create test plan items following the template [here](https://github.com/microsoft/vscode/wiki/Writing-Test-Plan-Items) by 6pm PT
