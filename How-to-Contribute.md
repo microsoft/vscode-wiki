@@ -26,7 +26,8 @@ You'll need the following tools:
 				npm install --global windows-build-tools --vs2017
 				```
 				**Note:** The `--debug` flag is helpful if you encounter any problems during installation.
-				**Note:** if you have installed a previous version of the build tools using `--vs2015` you need to uninstall the build tools first using `npm uninstall global windows-build-tools` and the control paned to uninstall the binaries.
+
+				**Note:** if you have installed a previous version of the build tools using the `--vs2015` flag you need to uninstall the build tools first using `npm uninstall global windows-build-tools` and the Windows Control Panel to uninstall the binaries.
 
 		- Option 2: Use Visual Studio 2019
 			- Install [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/downloads/)
