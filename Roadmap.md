@@ -227,7 +227,7 @@ VS Code is made possible through a wide range of technologies. Below are example
 ## Documentation
 
 - [ ] :runner: Refresh all of our dated overview videos. 
-- [ ] Provide translated documentation for major user groups such as Mandarin, Korean, Spanish, Portuguese, French. Noe: the list of languages might change.
+- [ ] Provide translated documentation for major user groups such as Mandarin, Korean, Spanish, Portuguese, French. Note: the list of languages might change.
 
 ## Community Support
 
