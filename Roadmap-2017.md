@@ -11,8 +11,8 @@ Legend of annotations:
 
 | Mark | Description |
 | ------------- | ------------- |
-| bullet | work not started |
-| check mark | work completed |
+| <li>[ ] </li> | work not started |
+| <li>[x] </li> | work completed |
 | :runner: | on-going work |
 | :muscle: | stretch goal |
 
