@@ -44,7 +44,6 @@
   - [ ] yo generator **@aeschli**
   - [ ] vsce **@joaomoreno**
   - [ ] node debug **@weinand**
-  - [ ] node debug2 **@roblourens**
   - [ ] js-debug **@connor4312**
   - [ ] node debugadapter node **@weinand**
   - [ ] debug adapter protocol **@weinand**
