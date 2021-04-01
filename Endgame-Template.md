@@ -171,6 +171,12 @@
 
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame. **endgame champion**
 
+##### Tuesday/Wednesday (the day before the release)
+- [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) (⚠️ MUST run with `--stable-build` argument ⚠️ )	
+  - [ ] Windows - **owner**	
+  - [ ] macOS (Universal) - **owner**	
+  - [ ] Linux - **owner**
+
 ##### Wednesday/Thursday - Expected release day (this may change)
 - [ ] Build stable for all platforms **endgame champion**
 - [ ] Sanity check of installable bits
