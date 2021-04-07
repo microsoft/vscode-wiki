@@ -52,6 +52,10 @@ $ gpg --armor --export DF536B632D7967F9
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
+### Configure GitHub
+
+Simply follow the [Adding a new GPG key to your GitHub account](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account) guide.
+
 ### Configure Git
 
 For all platforms
