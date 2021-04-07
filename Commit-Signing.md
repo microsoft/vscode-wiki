@@ -1,17 +1,28 @@
-This guide will show you how you can configure your development setup to automatically sign git commits using GPG.
+This guide will show you how you can configure your development setup to automatically sign git commits using GPG and link your GPG key with GitHub.
 
-### Prerequisites
+# Prerequisites
 
-Before starting, make sure you follow the [Prerequisites, How To Contribute](https://github.com/microsoft/vscode/wiki/How-to-Contribute#prerequisites) guide.
+Make sure you follow the [Prerequisites, How To Contribute (microsoft/vscode)](https://github.com/microsoft/vscode/wiki/How-to-Contribute#prerequisites) guide.
 
-### Install Tools
+# Install Tools
 
-Per platform
+#### Windows 10
 
+TODO
 
-### Generate Signing Key
+#### macOS Big Sur
 
-#### Ubuntu 18.04
+Install the necessary tools and configure GPG:
+
+```bash
+brew install gpg2 gnupg pinentry-mac
+mkdir -p ~/.gnupg
+echo "pinentry-program $(brew --prefix)/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+echo "use-agent" >> ~/.gnupg/gpg.conf
+echo 'export GPG_TTY=$(tty)' >> .bash_profile # replace with .zshrc if using ZSH
+```
+
+# Generate Signing Key
 
 Run:
 
@@ -27,6 +38,7 @@ With the following options:
 - Real Name: use your real name
 - Email address: use your Microsoft email address
 - Commit: `Key for signing commits for Microsoft`
+- **Passphrase**: Pick a long, secure passphrase, which you'll easily remember.
 
 In the following example, `DF536B632D7967F9` is the **key ID**:
 
@@ -52,13 +64,56 @@ $ gpg --armor --export DF536B632D7967F9
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-### Configure GitHub
+# Configure GitHub
 
 Simply follow the [Adding a new GPG key to your GitHub account](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account) guide.
 
-### Configure Git
+# Configure Git
 
-For all platforms
+Run the following, replacing `KEYID` with your key ID:
+
+```
+git config --global user.signingkey KEYID
+git config --global commit.gpgsign true
+```
+
+Git will now sign all commits by default. Signing requires access to your GPG key, which requires the passphrase. Follow the respective platform specific steps below to decrease pain.
+
+#### Windows
+
+TODO
+
+#### macOS
+
+Create a dummy commit on a sample local repository. You should see a prompt for your key's passphrase:
+
+
+<img width="593" alt="Screenshot 2021-04-07 at 14 13 12" src="https://user-images.githubusercontent.com/22350/113864893-4d08a980-9760-11eb-9425-3e8ef1762469.png">
+
+
+In order to avoid typing the passphrase on every commit, just select `Save in Keychain`. That should've been the last time you typed the passphrase.
+
+#### Ubuntu 18.04
+
+Create a dummy commit on a sample local repository. You should see a prompt for your key's passphrase:
+
+![image](https://user-images.githubusercontent.com/22350/113851014-e67b8f80-974f-11eb-95d4-d951ff962ca3.png)
+
+Enter your GPG key **passphrase** and hit OK.
+
+> Note: Apparently, it's a moot point to select `Save in password manager`, [because problems](https://wiki.gnupg.org/GnomeKeyring) 🙄. Every time you reboot your machine you'll always be asked for your passphrase. If you select `Save in password manager`, you'll also be asked for your Keyring password every time you reboot, so it's best not to do it.
+
+In order to avoid typing the passphrase on every commit, edit `~/.gnupg/gpg-agent.conf` (create it if does not exist) so it remembers your passphrase for 8 hours:
+
+```
+default-cache-ttl 28800
+```
+
+# Verify Setup
+
+Make sure that if you push a signed commit to GitHub it appears as `Verified`:
+
+![image](https://user-images.githubusercontent.com/22350/113863978-3150d380-975f-11eb-89fe-c2d5948abbc8.png)
 
 ---
 
@@ -66,4 +121,6 @@ For all platforms
 
 - [GitHub: About commit signature verification](https://docs.github.com/en/github/authenticating-to-github/about-commit-signature-verification)
 - [GitHub: Signing commits](https://docs.github.com/en/github/authenticating-to-github/signing-commits)
-- [ ]
+- [GnuPG: GnomeKeyring](https://wiki.gnupg.org/GnomeKeyring)
+- [macOS: Methods of Signing with GPG](https://gist.github.com/troyfontaine/18c9146295168ee9ca2b30c00bd1b41e)
+- [How (and why) to sign Git commits](https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html)
