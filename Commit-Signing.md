@@ -1,4 +1,4 @@
-Intro
+This guide will show you how you can configure your development setup to automatically sign git commits using GPG.
 
 ### Prerequisites
 
