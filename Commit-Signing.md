@@ -26,6 +26,8 @@ echo "use-agent" >> ~/.gnupg/gpg.conf
 echo 'export GPG_TTY=$(tty)' >> .bash_profile # replace with .zshrc if using ZSH
 ```
 
+Restart your machine. Yes, really.
+
 # Generate Signing Key
 
 > **Windows:** make sure you're using a Command Prompt or PowerShell instead of the Git Bash shell. Make sure the right GPG is being used:
