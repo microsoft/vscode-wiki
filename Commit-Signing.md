@@ -1,1 +1,1 @@
-todo
+Before starting, make sure you follow the [Prerequisites, How To Contribute](https://github.com/microsoft/vscode/wiki/How-to-Contribute#prerequisites) guide.
