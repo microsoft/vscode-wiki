@@ -8,7 +8,11 @@ Make sure you follow the [Prerequisites, How To Contribute (microsoft/vscode)](h
 
 #### Windows 10
 
-TODO
+Install [Gpg4win](https://gpg4win.org/) and make sure Git uses that GPG version:
+
+```
+git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"
+```
 
 #### macOS Big Sur
 
@@ -23,6 +27,13 @@ echo 'export GPG_TTY=$(tty)' >> .bash_profile # replace with .zshrc if using ZSH
 ```
 
 # Generate Signing Key
+
+> **Windows:** make sure you're using a Command Prompt or PowerShell instead of the Git Bash shell. Make sure the right GPG is being used:
+>
+> ```
+> C:\Users\User> where gpg
+> C:\Program Files (x86)\GnuPG\bin\gpg.exe
+> ```
 
 Run:
 
@@ -66,7 +77,7 @@ $ gpg --armor --export DF536B632D7967F9
 
 # Configure GitHub
 
-Simply follow the [Adding a new GPG key to your GitHub account](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account) guide.
+Follow the [Adding a new GPG key to your GitHub account](https://docs.github.com/en/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account) guide to give GitHub your **public key**.
 
 # Configure Git
 
@@ -81,7 +92,18 @@ Git will now sign all commits by default. Signing requires access to your GPG ke
 
 #### Windows
 
-TODO
+Create a dummy commit on a sample local repository. You should see a prompt for your key's passphrase:
+
+![image](https://user-images.githubusercontent.com/22350/113867665-ae7e4780-9763-11eb-9275-4450648f01c2.png)
+
+Enter your GPG key **passphrase** and hit OK. In order to avoid typing the passphrase on every commit, you can make GPG remember it for 8 hours or until the next reboot:
+
+1. Launch Kleopatra
+2. Click `Settings > Configure Kleopatra...`
+3. Navigate to `GnuPG System > Private Keys`
+4. Change `Expire cached PINs after N seconds` to `28800`
+
+![image](https://user-images.githubusercontent.com/22350/113867913-f56c3d00-9763-11eb-842d-87bd2427f14d.png)
 
 #### macOS
 
@@ -99,15 +121,14 @@ Create a dummy commit on a sample local repository. You should see a prompt for 
 
 ![image](https://user-images.githubusercontent.com/22350/113851014-e67b8f80-974f-11eb-95d4-d951ff962ca3.png)
 
-Enter your GPG key **passphrase** and hit OK.
+Enter your GPG key **passphrase** and hit OK. In order to avoid typing the passphrase on every commit, you can make GPG remember it for 8 hours or until the next reboot:
+
+```
+mkdir -p ~/.gnupg
+echo "default-cache-ttl 28800" >> ~/.gnupg/gpg-agent.conf
+```
 
 > Note: Apparently, it's a moot point to select `Save in password manager`, [because problems](https://wiki.gnupg.org/GnomeKeyring) 🙄. Every time you reboot your machine you'll always be asked for your passphrase. If you select `Save in password manager`, you'll also be asked for your Keyring password every time you reboot, so it's best not to do it.
-
-In order to avoid typing the passphrase on every commit, edit `~/.gnupg/gpg-agent.conf` (create it if does not exist) so it remembers your passphrase for 8 hours:
-
-```
-default-cache-ttl 28800
-```
 
 # Verify Setup
 
@@ -115,9 +136,13 @@ Make sure that if you push a signed commit to GitHub it appears as `Verified`:
 
 ![image](https://user-images.githubusercontent.com/22350/113863978-3150d380-975f-11eb-89fe-c2d5948abbc8.png)
 
----
+# FAQ
 
-**Reference**:
+**How important is this key?**
+
+> You should guard this key as well as you guard your SSH key, maybe even better. While an SSH key can easily be replaced by another, since it only affects the login to Github, a GPG key will forever be associated with your commits. This means that as soon as you remove the GPG key from GitHub, because say you replaced it with another, the commits won't appear `Verified` any longer.
+
+# Reference
 
 - [GitHub: About commit signature verification](https://docs.github.com/en/github/authenticating-to-github/about-commit-signature-verification)
 - [GitHub: Signing commits](https://docs.github.com/en/github/authenticating-to-github/signing-commits)
