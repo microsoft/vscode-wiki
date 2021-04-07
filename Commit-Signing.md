@@ -1,13 +1,13 @@
-# Setup
+Intro
 
-## Prerequisites
+### Prerequisites
 
 Before starting, make sure you follow the [Prerequisites, How To Contribute](https://github.com/microsoft/vscode/wiki/How-to-Contribute#prerequisites) guide.
 
-## Install Tools
+### Install Tools
 
 Per platform
 
-## Configure Git
+### Configure Git
 
 For all platforms
