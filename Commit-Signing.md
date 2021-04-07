@@ -11,3 +11,7 @@ Per platform
 ### Configure Git
 
 For all platforms
+
+---
+
+#### Reference
