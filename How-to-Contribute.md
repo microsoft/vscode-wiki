@@ -71,6 +71,12 @@ Docker / the Codespace should have at least **4 Cores and 6 GB of RAM (8 GB reco
 
 If you'd like to contribute to the list of available development containers in the Remote - Containers extension, you can check out the [Contributing documentation](https://github.com/microsoft/vscode-dev-containers/blob/master/CONTRIBUTING.md) in the vscode-dev-containers repo.
 
+## Enable Commit Signing
+
+If you're a community member, feel free to jump over this step.
+
+Otherwise, if you're a member of the VS Code team, follow the [Commit Signing](https://github.com/microsoft/vscode/wiki/Commit-Signing) guide.
+
 ## Build and Run
 
 If you want to understand how VS Code works or want to debug an issue, you'll want to get the source, build it, and run the tool locally.
