@@ -144,6 +144,10 @@ Make sure that if you push a signed commit to GitHub it appears as `Verified`:
 
 > You should guard this key as well as you guard your SSH key, maybe even better. While an SSH key can easily be replaced by another, since it only affects the login to Github, a GPG key will forever be associated with your commits. This means that as soon as you remove the GPG key from GitHub, because say you replaced it with another, the commits won't appear `Verified` any longer.
 
+**What about Codespaces?**
+
+> https://docs.github.com/en/github/developing-online-with-codespaces/managing-gpg-verification-for-codespaces
+
 # Reference
 
 - [GitHub: About commit signature verification](https://docs.github.com/en/github/authenticating-to-github/about-commit-signature-verification)
