@@ -50,7 +50,7 @@ With the following options:
 - Expiration: `0` (does not expire)
 - Real Name: use your real name
 - Email address: use your Microsoft email address
-- Commit: `Key for signing commits for Microsoft`
+- Comment: `Key for signing commits for Microsoft`
 - **Passphrase**: Pick a long, secure passphrase, which you'll easily remember.
 
 In the following example, `DF536B632D7967F9` is the **key ID**:
