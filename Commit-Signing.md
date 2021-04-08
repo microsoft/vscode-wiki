@@ -28,7 +28,11 @@ echo 'export GPG_TTY=$(tty)' >> .bash_profile # replace with .zprofile if using 
 
 Restart your machine. Yes, really.
 
-# Generate Signing Key
+# Create Signing Key
+
+There are two options: [generate](#generate-key) or [copy an existing key](#copy-key).
+
+## Generate Key
 
 > **Windows:** make sure you're using a Command Prompt or PowerShell instead of the Git Bash shell. Make sure the right GPG is being used:
 >
@@ -75,6 +79,28 @@ $ gpg --armor --export DF536B632D7967F9
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 ...
 -----END PGP PUBLIC KEY BLOCK-----
+```
+
+## Copy Key
+
+Alternatively, you can export a existing key from another machine, by replacing `KEYID` with your key ID:
+
+```
+gpg --export-secret-keys -a KEYID > my-key.asc
+```
+
+Then, copy it into your machine and import it:
+
+```
+gpg --import my-key.asc
+```
+
+Finally, set its trust level to `ultimate`:
+
+```bash
+$ gpg --edit-key KEYID
+gpg> trust
+Your decision? 5
 ```
 
 # Configure GitHub
