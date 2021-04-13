@@ -140,7 +140,7 @@ For 2021, we'll particularly focus in the following themes.
 
 ### Debug
 - [ ] :runner: Leverage language services to improve debug experience. For example, improve hovering and inline values by leveraging the knowledge about the programming language so that the `Inline Values` feature can be enabled by default
-- [ ] :runner: Expose more UI for DAP features that are currently not surfaced in the VS Code debugging UI. This includes This includes to support Memory and Disassembly views.
+- [ ] :runner: Expose more UI for DAP features that are currently not surfaced in the VS Code debugging UI. This includes to support Memory and Disassembly views.
 
 ### Debug Adapter Protocol (DAP)
 - [ ] :runner: Continue to refine and improve the [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol/) with support from the community.
