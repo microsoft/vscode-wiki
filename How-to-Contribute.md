@@ -242,7 +242,7 @@ See also: [Cross-Compiling for Debian-based Linux](https://github.com/Microsoft/
 We're also interested in your feedback for the future of VS Code. You can submit a suggestion or feature request through the issue tracker. To make this process more effective, we're asking that these include more information to help define them more clearly.
 
 ## Translations
-We appreciate your localization contributions, either by providing new translations, voting on translations, or suggesting process improvements. We take translations through a community localization service, not through the vscode repo. See [our localization site](https://github.com/Microsoft/Localization/wiki) to get started.
+We appreciate your localization contributions, either by providing new translations, voting on translations, or suggesting process improvements. Please file corresponding issues in the [VS Code repository](https://github.com/Microsoft/vscode/issues)
 
 ## Discussion Etiquette
 
