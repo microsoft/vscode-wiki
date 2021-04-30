@@ -40,7 +40,7 @@ Does your search return results on **very long lines**? This will cause some slo
 
 If your workspace is **very large**, you might want to use the exclude settings, or the "files to include/exclude" text boxes to narrow down your search to the parts you care about. Make sure the "Use Exclude Settings and Ignore Files" button is toggled on so your exclude settings are respected.
 
-On Windows, the **Windows Defender** tool can sometimes kick in during a search and slow down searching. Look for a process named using high CPU named `MsMpEng.exe` in the Task Manager to tell whether Defender is active.
+On Windows, the **Windows Defender** antivirus tool can sometimes kick in during a search and slow down searching. Look for a process named using high CPU named `MsMpEng.exe` in the Task Manager to tell whether Defender is active. Other antivirus programs can cause strange behavior as well.
 
 You can start VS Code from the command line with the `--status` flag, or use the Process Explorer (Help > Open Process Explorer) to see running processes owned by VS Code. **The ripgrep process** will show up as a command that invokes the `rg` binary inside the VS Code install directory. The arguments passed to `rg` tell you why it was started and are useful to include in an issue report. You can even copy the command and run it yourself to check for the correct output.
 
