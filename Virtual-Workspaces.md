@@ -59,7 +59,7 @@ The VS Code API represents resources such as files, folders with resource URIs.
 
 ## Test your extension against a virtual workspace
 
-
+run the **Open Remote Repository...** command from the Command Palette. From there, you can paste in any GitHub URL, or choose to search for a specific repository or pull request.
 
 
 
