@@ -30,7 +30,7 @@ When an extension can  only partially work with virtual workspaces, the it shoul
 
 One way to disable functionality when a virtual workspace is opened is to use the `virtualWorkspace` context key in `when` clauses of contributions for menus and views.
 
-The `virtualWorkspace` context key is set when all workspace folders are located on a virtual file systems.
+The `virtualWorkspace` context key is set when all workspace folders are located on virtual file systems ( == resource scheme is not `file`).
 ```
 {
     "menus": {
