@@ -46,7 +46,7 @@ The `virtualWorkspace` context key is set when all workspace folders are located
 A second way is to check in code whether the current workspace consists of non-`file` schemes:
 
 ```
-const isVirtualWorkspace = workspace.workspaceFolders && workspace.workspaceFolders.every(f => f.uri.scheme === 'file');
+const isVirtualWorkspace = workspace.workspaceFolders && workspace.workspaceFolders.every(f => f.uri.scheme !== 'file');
 ```
 
 ## Verify that the code is ready for virtual resources
