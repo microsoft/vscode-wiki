@@ -67,6 +67,7 @@
   - [ ] @deepak1556 
   - [ ] @eamodio
   - [ ] @egamma
+  - [ ] @hediet
   - [ ] @isidorn
   - [ ] @JacksonKearl 
   - [ ] @joaomoreno
@@ -118,6 +119,7 @@
   - [ ] @deepak1556 
   - [ ] @eamodio
   - [ ] @egamma
+  - [ ] @hediet
   - [ ] @isidorn
   - [ ] @JacksonKearl 
   - [ ] @joaomoreno
