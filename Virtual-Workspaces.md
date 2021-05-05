@@ -23,7 +23,7 @@ This opens a VSCode window where all resources are all based on virtual resource
 
 ## Verify that the code is ready for virtual resources
 
-The API support for virtual file system has been around for quite a while already. You can check out the [file system provider API(https://github.com/microsoft/vscode/blob/dc8bd9cd7e5231745549ac6218266c63271f48cd/src/vs/vscode.d.ts#L7038) if you are interested. A file system provider is registered a new URI scheme and URIs with that scheme can then be used for example to represent resources.
+The API support for virtual file system has been around for quite a while already. You can check out the [file system provider API](https://github.com/microsoft/vscode/blob/dc8bd9cd7e5231745549ac6218266c63271f48cd/src/vs/vscode.d.ts#L7038) if you are interested. A file system provider is registered a new URI scheme and URIs with that scheme can then be used for example to represent resources.
 
 Resource URIs are used all over the place in the VS Code API
 
