@@ -89,7 +89,7 @@ To check in code whether the current workspace consists of non-`file` schemes us
 const isVirtualWorkspace = workspace.workspaceFolders && workspace.workspaceFolders.every(f => f.uri.scheme !== 'file');
 ```
 
-### Specific Language selectors 
+### Language selectors 
 
 When registering a provider for a language feature (e.g. completions, hovers, code actions..) specify the scheme(s) you support:
 
