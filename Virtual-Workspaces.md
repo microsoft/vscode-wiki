@@ -37,7 +37,7 @@ The `virtualWorkspace` context key is set when all workspace folders are located
       "commandPalette": [
         {
           "command": "npm.publish",
-          "when": "virtualWorkspaces"
+          "when": "!virtualWorkspace"
         }
     }
 }
