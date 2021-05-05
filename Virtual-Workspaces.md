@@ -26,6 +26,10 @@ When an extension can not work with virtual workspaces, it will be disabled by V
 
 When an extension can  only partially work with virtual workspaces, the it should define `"virtualWorkspaces": true` but disable some functionality when a virtual workspace is opened. 
 
+## Test your extension against a virtual workspace
+
+run the **Open Remote Repository...** command from the Command Palette. From there, you can paste in any GitHub URL, or choose to search for a specific repository or pull request.
+
 ## Disable functionality when a virtual workspace is opened
 
 One way to disable functionality when a virtual workspace is opened is to use the `virtualWorkspace` context key in `when` clauses of contributions for menus and views.
@@ -56,10 +60,3 @@ The VS Code API represents resources such as files, folders with resource URIs.
 - An extension should never assume that the URI scheme is 'file'. `URI.fsPath` should only be used when the URI scheme is file.
 - Instead of using the `fs` node module, use the `vscode.workspace.fs` API in VS Code
 - Check for third party components that depend on a fs access (e.g. a language server or a node module)
-
-## Test your extension against a virtual workspace
-
-run the **Open Remote Repository...** command from the Command Palette. From there, you can paste in any GitHub URL, or choose to search for a specific repository or pull request.
-
-
-
