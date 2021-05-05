@@ -5,7 +5,7 @@ We have recently released the __Remote Repository__ feature that lets you browse
 What's special about the new feature is that it opens VSCode on a folder or workspace that is located on a virtual file system. We call this a __virtual workspace__. 
 We indicate that VSCode is opened on a virtual workspace by showing a label in the remote indicator in the lower left corner, similar to remote windows.
 
-We want to make sure as many extensions as possible work with virtual res, providing a great user experience not just with the the __Remote Repository__ feature, but also all other similar features, from connecting to ftp-servers to working with cloud resources.
+We want to make sure as many extensions as possible work with virtual resources. We want a great user experience not just with the the __Remote Repository__ feature, but also all other features leveraging virtual resources, from connecting to ftp-servers to working with cloud resources. Extensions that depend on resources being available on disk should not cause error dialogs.
 
 This guide is for extension authors and documents how an extension can support a virtual workspace or, if it can't, how it can signal that it should be disabled when a virtual workspace is opened.
 
@@ -19,23 +19,22 @@ Extension with code, that means extensions that define a 'main' entry point, req
 
 Run the **Open Remote Repository...** command from the Command Palette. From there, you can paste in any GitHub URL, or choose to search for a specific repository or pull request.
 
-Resources shown in the explorer and editors opened are now all based on virtual resources. 
+This opens a VSCode window where all resources are all based on virtual resources. 
 
 ## Verify that the code is ready for virtual resources
 
-The API support for virtual file system is nothing new and has been around for quite a while. You can check out the (file system provider API)[https://github.com/microsoft/vscode/blob/dc8bd9cd7e5231745549ac6218266c63271f48cd/src/vs/vscode.d.ts#L7038] if you are interested. A file system provider can be registered for a custom URI scheme. 
+The API support for virtual file system is nothing new and has been around for quite a while. You can check out the (file system provider API)[https://github.com/microsoft/vscode/blob/dc8bd9cd7e5231745549ac6218266c63271f48cd/src/vs/vscode.d.ts#L7038] if you are interested. A file system provider is registered a new URI scheme. URIs with that scheme can then be used for example for TextDocuments.
 
-The VS Code API represents resources such as files, folders with resource URIs which now can also be of this new scheme.
+Resource URIs are used all over the place in the VS Code API to represent resources.
 
 - An extension should never assume that the URI scheme is 'file'. `URI.fsPath` should only be used when the URI scheme is file.
-- Look our for usages of the `fs` node module for file system operation. If possible, use the `vscode.workspace.fs` API, which will make use of the custom file system provider.
-- Check for third party components that depend on a fs access (e.g. a language server or a node module). 
+- Look out for usages of the `fs` node module for file system operation. If possible, use the `vscode.workspace.fs` API, which will make use of the custom file system provider.
+- Check for third party components that depend on a fs access (e.g. a language server or a node module)
+- If you run local tools and tasks, question if these make sense to have these in a virtual workspace window.
 
+## Adopt your extension for virtualWorkspaces
 
-
-## Adopt your extension is ready for virtualWorkspaces
-
-To know which extensions have already be tested and adopted, we have added a new property to `package.json`.
+To know which extensions have already be tested and adopted, we have added a new property to `package.json`:
 
 The `virtualWorkspaces` capability property in `package.json` signals whether the extension works with virtual workspace, or not
 ```json
