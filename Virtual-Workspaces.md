@@ -23,14 +23,14 @@ This opens a VSCode window where all resources are all based on virtual resource
 
 ## Verify that the code is ready for virtual resources
 
-The API support for virtual file system is nothing new and has been around for quite a while. You can check out the (file system provider API)[https://github.com/microsoft/vscode/blob/dc8bd9cd7e5231745549ac6218266c63271f48cd/src/vs/vscode.d.ts#L7038] if you are interested. A file system provider is registered a new URI scheme. URIs with that scheme can then be used for example for TextDocuments.
+The API support for virtual file system has been around for quite a while already. You can check out the [file system provider API(https://github.com/microsoft/vscode/blob/dc8bd9cd7e5231745549ac6218266c63271f48cd/src/vs/vscode.d.ts#L7038) if you are interested. A file system provider is registered a new URI scheme and URIs with that scheme can then be used for example to represent resources.
 
-Resource URIs are used all over the place in the VS Code API to represent resources.
+Resource URIs are used all over the place in the VS Code API
 
 - An extension should never assume that the URI scheme is 'file'. `URI.fsPath` should only be used when the URI scheme is file.
 - Look out for usages of the `fs` node module for file system operation. If possible, use the `vscode.workspace.fs` API, which will make use of the custom file system provider.
 - Check for third party components that depend on a fs access (e.g. a language server or a node module)
-- If you run local tools and tasks, question if these make sense to have these in a virtual workspace window.
+- If you run executable and tasks, question if it make sense to have these in a virtual workspace window.
 
 ## Adopt your extension for virtualWorkspaces
 
