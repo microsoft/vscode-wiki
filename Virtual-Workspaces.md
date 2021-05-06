@@ -10,8 +10,6 @@ We want to make sure as many extensions as possible work with virtual resources.
 
 This guide is for extension authors and documents how an extension can fully support a virtual workspace or, if it can not, how it can signal that it should be disabled when a virtual workspace is opened.
 
-https://github.com/microsoft/vscode/issues/123115 can be used for questions and suggestions.
-
 ## Is my extension affected?
 
 When a extension has no code but is a pure theme, keybinding, snippets, grammar extension, then it can run in a virtual workspace and no adoption is necessary.
@@ -109,4 +107,6 @@ return vscode.languages.registerCompletionItemProvider({ language: 'typescript',
 });
 ```
 
+## More Information and comments
 
+Please comment in the [Virtual Workspaces Tracking Issue](https://github.com/microsoft/vscode/issues/123115) if you have questions and suggestions.
