@@ -4,7 +4,7 @@ We have recently announced the [Remote Repository feature](https://code.visualst
 
 **Open Remote Repository...** opens VSCode on a folder or workspace located on a virtual file system. We call this a __virtual workspace__.  When a virtual workspace is open in a VS Code window, this is shown by a label in the remote indicator in the lower left corner, similar to remote windows. 
 
-While developing and testing the feature, we have observed that not all extensions work equally well with it. Some extensions use tools that rely on resources being available on disk and can't be adopted. Other extensions haven't thought about virtual resources.
+While developing and testing the feature, we have observed that not all extensions work equally well with virtual resources. Some extensions use tools that rely on resources being available on disk and can't be adopted. Other extensions haven't thought about virtual resources.
 
 For a great user experience not just with the __Remote Repository__ feature, but also all other features leveraging virtual resource - from connecting to ftp-servers to working with cloud resources - we want to make sure as many extensions as possible work with virtual resources. Features that depend on resources being available on disk should not cause error dialogs but rather be disabled when a virtual workspace is opened.
 
