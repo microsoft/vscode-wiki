@@ -1,13 +1,14 @@
-# [WIP] Extension Author Guide for Supporting Virtual Workspaces
+# Extension Author Guide for Supporting Virtual Workspaces
 
 We have recently released the __Remote Repository__ feature that lets you browse and edit files and folders directly on GitHub. 
 
 While developing and testing the feature, we have observed that not all extensions work well with it. What's special about Remote Repositories is that they open VSCode on a folder or workspace that is located on a virtual file system. We call this a __virtual workspace__. 
-We indicate that VSCode is opened on a virtual workspace by showing a label in the remote indicator in the lower left corner, similar to remote windows.
+
+When a virtual workspace is open in a VS Code window, this is shown by a label in the remote indicator in the lower left corner, similar to remote windows. In that window, we disable all extension that that signal that they don't support virtual workspaces.
 
 We want to make sure as many extensions as possible work with virtual resources. We aim for a good user experience not just with the __Remote Repository__ feature, but also all other features leveraging virtual resources, from connecting to ftp-servers to working with cloud resources. Features that depend on resources being available on disk should not cause error dialogs.
 
-This guide is for extension authors and documents how an extension can fully support a virtual workspace or, if it can't, how it can signal that it should be disabled when a virtual workspace is opened.
+This guide is for extension authors and documents how an extension can fully support a virtual workspace or, if it can not, how it can signal that it should be disabled when a virtual workspace is opened.
 
 ## Is my extension affected?
 
@@ -23,20 +24,20 @@ This opens a VSCode window for a virtual workspace where all resources are virtu
 
 ## Verify that the code is ready for virtual resources
 
-The API support for virtual file system has been around for quite a while already. You can check out the [file system provider API](https://github.com/microsoft/vscode/blob/dc8bd9cd7e5231745549ac6218266c63271f48cd/src/vs/vscode.d.ts#L7038), if you are interested. A file system provider registered a new URI scheme and URIs with that scheme can then be used to represent resources.
+The API support for virtual file system has been around for quite a while already. You can check out the [file system provider API](https://github.com/microsoft/vscode/blob/dc8bd9cd7e5231745549ac6218266c63271f48cd/src/vs/vscode.d.ts#L7038), if you are interested. A file system provider is registered for a new URI scheme (e.g. `vscode-vfs`) and resources on that file system will be represented by URIs using that schema (`vscode-vfs://github/microsoft/vscode`)
 
-Resource URIs are used all over in the VS Code API
+Check how your extension deals with URIs it gets from the VSCode APIs:
 
-- An extension must never assume that the URI scheme is 'file'. `URI.fsPath` must only be used when the URI scheme is file.
-- Look out for usages of the `fs` node module for file system operations. If possible, use the `vscode.workspace.fs` API, which delegate to the custom file system provider.
-- Check for third party components that depend on a fs access (e.g. a language server or a node module)
-- If you run executables and tasks from commands, check whether these commands make sense in a virtual workspace window or whether they should better be disabled.
+- Never assume that the URI scheme is 'file'. `URI.fsPath` can only be used when the URI scheme is file.
+- Look out for usages of the `fs` node module for file system operations. If possible, use the `vscode.workspace.fs` API, which delegates to the responsible file system provider.
+- Check for third party components that depend on a `fs` access (e.g. a language server or a node module)
+- If you run executables and tasks from commands, check whether these commands make sense in a virtual workspace window or whether they should be disabled.
 
-## Adopt your extension for virtualWorkspaces
+## Adopt your extension to work with virtual workspaces
 
-We have introduced a new property for `package.json` to declare whether an extension supports virtualWorkspaces:
+We have introduced a new `capabilities` property in`package.json`.
 
-The `virtualWorkspaces` capability property in `package.json` signals whether the extension works with virtual workspace, or not. The example below declares that an extension does not support virtualWorkspaces and should not be activated by VS Code in this setup.
+The `virtualWorkspaces` capability property signals whether the extension works with virtual workspace, or not. The example below declares that an extension does not support virtual workspaces and should not be activated by VS Code in this setup.
 ```json
 {
   "capabilities": {
@@ -49,9 +50,9 @@ When an extension can partially work with virtual workspaces, then it should def
 
 ## Disable functionality when a virtual workspace is opened
 
-### Context keys
+### Disable command and view contributions
 
-One way to disable functionality when a virtual workspace is opened is to use the `virtualWorkspace` context key in `when` clauses of contributions for menus and views.
+The availability of commands and views and many other contributions can be controlled through context keys in [`when` clauses](https://code.visualstudio.com/api/references/when-clause-contexts).
 
 The `virtualWorkspace` context key is set when all workspace folders are located on virtual file systems. The example below shows the command `npm.publish` in the command palette only when not in a virtual workspace:
 ```
@@ -66,7 +67,8 @@ The `virtualWorkspace` context key is set when all workspace folders are located
 }
 ```
 
-Another way is to use the 'resourceScheme` context keys. They match the URI scheme of the currently selected element in the explorer or the element open in the editor. 
+The 'resourceScheme` context key is set to the URI scheme of the currently selected element in the explorer or the element open in the editor. 
+In this example the `npm.runSelectedScript` command is only in the editor context menu if the underlying resource is on the local disk.
 ```
 {
     "menus": {
@@ -90,14 +92,14 @@ const isVirtualWorkspace = workspace.workspaceFolders && workspace.workspaceFold
 
 ### Language selectors 
 
-When registering a provider for a language feature (e.g. completions, hovers, code actions..) make sure to specify the scheme(s) you actually support:
+When registering a provider for a language feature (e.g. completions, hovers, code actions..) make sure to specify the schemes the provider supports:
 
 ```
-	return vscode.languages.registerCompletionItemProvider({ language: 'typescript', scheme: 'file' }, {
-		provideCompletionItems(document, position, token) {
-			// ...
-		}
-	});
+return vscode.languages.registerCompletionItemProvider({ language: 'typescript', scheme: 'file' }, {
+	provideCompletionItems(document, position, token) {
+		// ...
+	}
+});
 ```
 
 
