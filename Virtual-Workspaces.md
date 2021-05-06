@@ -2,7 +2,7 @@
 
 We have recently announced the [Remote Repository feature](https://code.visualstudio.com/updates/v1_56#_remote-repositories-remotehub) that lets you browse and edit files and folders directly on GitHub. 
 
-`Open Remote Repository...` opens VSCode on a folder or workspace located on a virtual file system. We call this a __virtual workspace__.  When a virtual workspace is open in a VS Code window, this is shown by a label in the remote indicator in the lower left corner, similar to remote windows. 
+**Open Remote Repository...** opens VSCode on a folder or workspace located on a virtual file system. We call this a __virtual workspace__.  When a virtual workspace is open in a VS Code window, this is shown by a label in the remote indicator in the lower left corner, similar to remote windows. 
 
 While developing and testing the feature, we have observed that not all extensions work equally well with it. Some extensions use tools that rely on resources being available on disk and can't be adopted. Other extensions haven't thought about virtual resources.
 
@@ -22,7 +22,7 @@ This opens a VSCode window for a virtual workspace where all resources are virtu
 
 ## Review that the code is ready for virtual resources
 
-The API support for virtual file system has already been around for quite a while. You can check out the [file system provider API](https://github.com/microsoft/vscode/blob/dc8bd9cd7e5231745549ac6218266c63271f48cd/src/vs/vscode.d.ts#L7038), if you are interested. A file system provider is registered for a new URI scheme (e.g. `vscode-vfs`) and resources on that file system will be represented by URIs using that schema (e.g. `vscode-vfs://github/microsoft/vscode`)
+The API support for virtual file system has already been around for quite a while. You can check out the [file system provider API](https://github.com/microsoft/vscode/blob/dc8bd9cd7e5231745549ac6218266c63271f48cd/src/vs/vscode.d.ts#L7038), if you are interested. A file system provider is registered for a new URI scheme (e.g. `vscode-vfs`) and resources on that file system will be represented by URIs using that schema (e.g. `vscode-vfs://github/microsoft/vscode/pacakge.json`)
 
 Check how your extension deals with URIs it gets from the VSCode APIs:
 
@@ -49,7 +49,7 @@ When an extension works with virtual workspaces, then it should define `"virtual
 Until extensions have adopted the new capability, we came up with an internal list of extensions that we think should be disabled in virtual workspaces. 
 The list can be found [here](https://github.com/microsoft/vscode/issues/122836). 
 
-Of course, extension authors are in better position to make this decision. Once a extension has adopted the capability, we will remove the extension from the list.
+Of course, extension authors are in a better position to make this decision. Once a extension has adopted the capability, we will remove the extension from the list.
 
 ## Disable functionality when a virtual workspace is opened
 
