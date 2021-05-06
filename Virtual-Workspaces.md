@@ -1,6 +1,6 @@
 # Extension Author Guide for Supporting Virtual Workspaces
 
-We have recently announced the [__Remote Repository__](https://code.visualstudio.com/updates/v1_56#_remote-repositories-remotehub) feature that lets you browse and edit files and folders directly on GitHub. 
+We have recently announced the [Remote Repository feature](https://code.visualstudio.com/updates/v1_56#_remote-repositories-remotehub) that lets you browse and edit files and folders directly on GitHub. 
 
 While developing and testing the feature, we have observed that not all extensions work well with it. What's special about Remote Repositories is that they open VSCode on a folder or workspace that is located on a virtual file system. We call this a __virtual workspace__. 
 
