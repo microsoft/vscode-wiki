@@ -50,6 +50,11 @@ The `virtualWorkspaces` capability property signals whether the extension works 
 
 When an extension can partially work with virtual workspaces, then it should define `"virtualWorkspaces": true` but it should disable the features that are not supported in a virtual workspace. 
 
+Until extensions have adopted the new capability, we came up with an internal list of extensions that we think should be disabled in virtual workspaces. 
+The list can be found [here](https://github.com/microsoft/vscode/issues/122836). 
+
+But of course, extension authors are in better position to make this decision. Once a extension has adopted the capability, we will remove the extension from the list.
+
 ## Disable functionality when a virtual workspace is opened
 
 ### Disable command and view contributions
