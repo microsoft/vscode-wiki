@@ -2,11 +2,11 @@
 
 We have recently announced the [Remote Repository feature](https://code.visualstudio.com/updates/v1_56#_remote-repositories-remotehub) that lets you browse and edit files and folders directly on GitHub. 
 
-While developing and testing the feature, we have observed that not all extensions work well with it. What's special about Remote Repositories is that they open VSCode on a folder or workspace that is located on a virtual file system. We call this a __virtual workspace__. 
+`Open Remote Repository...` opens VSCode on a folder or workspace located on a virtual file system. We call this a __virtual workspace__.  When a virtual workspace is open in a VS Code window, this is shown by a label in the remote indicator in the lower left corner, similar to remote windows. 
 
-When a virtual workspace is open in a VS Code window, this is shown by a label in the remote indicator in the lower left corner, similar to remote windows. In that window, we disable all extension that signal that they don't support virtual workspaces.
+While developing and testing the feature, we have observed that not all extensions work equally well with it. Some extensions use tools that rely on resources being available on disk and can't be adopted. Other extensions haven't thought about virtual resources.
 
-We want to make sure as many extensions as possible work with virtual resources. We aim for a good user experience not just with the __Remote Repository__ feature, but also all other features leveraging virtual resources, from connecting to ftp-servers to working with cloud resources. Features that depend on resources being available on disk should not cause error dialogs.
+For a great user experience not just with the __Remote Repository__ feature, but also all other features leveraging virtual resource - from connecting to ftp-servers to working with cloud resources - we want to make sure as many extensions as possible work with virtual resources. Features that depend on resources being available on disk should not cause error dialogs but rather be disabled when a virtual workspace is opened.
 
 ## Is my extension affected?
 
