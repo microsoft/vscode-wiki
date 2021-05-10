@@ -108,8 +108,14 @@ return vscode.languages.registerCompletionItemProvider({ language: 'typescript',
 
 ## What are the expectations for language support with virtual workspaces?
 
-Limited functionality is fine. The language extensions that ship with VSCode (TypeScript, JSON, CSS, HTML, Markdown) just look at the open text document ('single file only').
+It's completely fine to only provide limited functionality or disable the extension.
 
+The main goal is to that we don't get any error dialogs when virtual resources are opened.
+The language extensions that ship with VSCode (TypeScript, JSON, CSS, HTML, Markdown) just look at the open text document ('single file only').
+
+## What about support in the language server protocol (LSP) for accessing virtual resources
+
+Work is under way that will add FS support to LSP. Tracked in https://github.com/microsoft/language-server-protocol/issues/1264
 
 ## More information and feedback
 
