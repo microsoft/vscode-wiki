@@ -106,6 +106,11 @@ return vscode.languages.registerCompletionItemProvider({ language: 'typescript',
 });
 ```
 
+## What are the expectations for language support with virtual workspaces?
+
+Limited functionality is fine. The language extensions that ship with VSCode (TypeScript, JSON, CSS, HTML) just look at the open text document ('single file only').
+
+
 ## More information and feedback
 
 Please comment in the [Virtual Workspaces Tracking Issue](https://github.com/microsoft/vscode/issues/123115) if you have questions and suggestions.
