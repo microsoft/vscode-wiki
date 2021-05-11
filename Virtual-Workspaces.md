@@ -4,7 +4,7 @@ We have recently announced the [Remote Repository feature](https://code.visualst
 
 **Open Remote Repository...** opens VSCode on a folder or workspace located on a virtual file system. We call this a __virtual workspace__.  When a virtual workspace is open in a VS Code window, this is shown by a label in the remote indicator in the lower left corner, similar to remote windows. 
 
-By nature, not all extensions will be able to fully work with virtual workspaces. Some extensions use tools that rely on resources being available on disk, need synchronous file access or don't support the necessary file system abstractions. When in a virtual workspace, VS Code will indicate to the user the restricted mode and that some extensions are deactivated or work with limited functionality.
+By nature, not all extensions will be able to fully work with virtual workspaces. Some extensions use tools that rely on resources being available on disk, need synchronous file access or don't have the necessary file system abstractions. When in a virtual workspace, VS Code will indicate to the user the restricted mode and that some extensions are deactivated or work with limited functionality.
 
 Still, we want to make sure as many extensions as possible work in that setup and that we have a good user experience with the __Remote Repository__ feature as well as other features leveraging virtual resources - from connecting to ftp-servers to working with cloud resource.
 
