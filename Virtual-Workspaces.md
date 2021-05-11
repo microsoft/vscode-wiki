@@ -2,9 +2,9 @@
 
 We have recently announced the [Remote Repository feature](https://code.visualstudio.com/updates/v1_56#_remote-repositories-remotehub) in the [VS Code Insiders Build](https://code.visualstudio.com/insiders). It lets you browse and edit files and folders directly on GitHub.
 
-**Open Remote Repository...** opens VSCode on a folder or workspace located on a virtual file system. We call this a __virtual workspace__.  When a virtual workspace is open in a VS Code window, this is shown by a label in the remote indicator in the lower left corner, similar to remote windows. 
+**Open Remote Repository...** opens VSCode on a folder or workspace located on a virtual file system. We call this a __virtual workspace__.  When a virtual workspace is open in a VS Code window, this is shown by a label in the remote indicator in the lower left corner, similar to remote windows. By its nature, not all extensions will fully work with virtual workspaces. Some extensions use tools that rely on resources being available on disk and can't be adopted. VS Code will indicate to the user that some extensions work with limited functionality or are even deactivated.
 
-While developing and testing the feature, we have observed that not all extensions work equally well with virtual resources. Some extensions use tools that rely on resources being available on disk and can't be adopted. Other extensions haven't thought about virtual resources.
+While developing and testing the feature, we have observed that not all extensions work equally well with virtual resources. Some extensions use tools that rely on resources being available on disk and can't be adopted. Other extensions haven't thought about virtual resources. 
 
 For a great user experience not just with the __Remote Repository__ feature, but also all other features leveraging virtual resources - from connecting to ftp-servers to working with cloud resources - we want to make sure as many extensions as possible work in that setup. Features that depend on resources being available on disk should not cause error dialogs but rather be disabled when a virtual workspace is opened.
 
@@ -94,6 +94,26 @@ To check in code whether the current workspace consists of non-`file` schemes an
 const isVirtualWorkspace = workspace.workspaceFolders && workspace.workspaceFolders.every(f => f.uri.scheme !== 'file');
 ```
 
+
+
+## Language Extensions and Virtual Workspaces
+
+### What are the expectations for language support with virtual workspaces?
+
+It's not realistic that all extensions are able to fully work with virtual resources. Many extensions built are on tools that require on synchronous file access and file on disk. It's therefore ok to only provide limited functionality. We are working on a UI for VS Code to indicate indicate that the Window runs in a restricted mode.
+
+The main goal is to that we don't get any error dialogs when virtual resources are opened.
+Most of language extensions that ship with VS Code (TypeScript, JSON, CSS, HTML, Markdown) just look at the open text document ('single file only').
+
+### Consequences of disabling a language extension
+
+If your extension provides both grammars and rich language support and have to disable the extension also the grammars will be disabled. To avoid this we recommend to split off a basic language extension (grammars, language configuration, snippets) form the rich language support and have two extensions.
+- The basic language extension has `"virtualWorkspaces": true` and provides language id, configuration, grammar and snippets.
+- The rich language extension  has `"virtualWorkspaces": false` contains the main file contributing language supports and commands and has a extension dependency (`extensionDependencies`) on the basic language extension. The rich language extension should keep the ID of the established extension, so the user will continue to the full functionality by installing a single extension.
+
+You can see this with the built-in language extensions, such as JSON, which consists of a JSON extension and a JSON language feature extension.
+
+
 ### Language selectors 
 
 When registering a provider for a language feature (e.g. completions, hovers, code actions..) make sure to specify the schemes the provider supports:
@@ -106,14 +126,8 @@ return vscode.languages.registerCompletionItemProvider({ language: 'typescript',
 });
 ```
 
-## What are the expectations for language support with virtual workspaces?
 
-It's completely fine to only provide limited functionality or disable the extension.
-
-The main goal is to that we don't get any error dialogs when virtual resources are opened.
-The language extensions that ship with VSCode (TypeScript, JSON, CSS, HTML, Markdown) just look at the open text document ('single file only').
-
-## What about support in the language server protocol (LSP) for accessing virtual resources
+### What about support in the language server protocol (LSP) for accessing virtual resources
 
 Work is under way that will add FS support to LSP. Tracked in https://github.com/microsoft/language-server-protocol/issues/1264
 
