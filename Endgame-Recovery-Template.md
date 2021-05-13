@@ -27,7 +27,10 @@
     - [ ] signed installer ARM64
     - [ ] signed user installer ARM64
     - [ ] zip ARM64
-  - [ ] OS X - **owner**
+  - [ ] macOS
+    - [ ] Universal **owner**
+    - [ ] Intel **owner**
+    - [ ] Apple Silicon **owner**
   - [ ] Linux
     - [ ] deb package 64-bit **owner**
     - [ ] rpm package 64-bit **owner**
