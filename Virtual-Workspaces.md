@@ -102,9 +102,29 @@ const isVirtualWorkspace = workspace.workspaceFolders && workspace.workspaceFold
 
 ### What are the expectations for language support with virtual workspaces?
 
-It's not realistic that all extensions are able to fully work with virtual resources. Many extensions built are on tools that require on synchronous file access and files on disk. It's therefore ok to only provide limited functionality. We are working on a UI for VS Code to indicate indicate that the Window runs in a restricted mode.
+It's not realistic that all extensions are able to fully work with virtual resources. Many extensions built are on tools that require synchronous file access and files on disk. It's therefore ok to only provide limited functionality, such as the 'Basic' and the 'Sigle-File' support as listed below. 
 
-The language extensions that ship with VS Code (TypeScript, JSON, CSS, HTML, Markdown) just look at the open text document ('single file only').
+A. Basic Language Support:
+* TextMate tokenization and colorization, 
+* language specific editing support: bracket pairs, comments, on enter rules, folding markers)
+* snippets
+
+B. Single-File Language Support: 
+* document symbols (outline), folding, selection ranges
+* document highlights, semantic highlighting, document colors
+* completions, hovers, signature help, find references/declarations based on symbols on the current file and on static language libraries
+* formatting, linked editing
+* syntax validation and same-file semantic validation and code actions
+
+C. Full Workspace/Project Language Support
+* references across files
+* workspace symbols
+* validation of all files in the workspace/project
+
+The rich language extensions that ship with VS Code (TypeScript, JSON, CSS, HTML, Markdown) only offer Single-File Language Support when working on virtual resources.
+
+We are working on a UI for VS Code to indicate that the Window runs in a restricted mode.
+
 
 ### Disabling a language extension
 
