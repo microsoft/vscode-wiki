@@ -1,5 +1,16 @@
 As part of our issue triaging pipeline, 
 
+## Issue Classification
+
+### Assigning
+
+On a half-hourly basis, all recent issues are passed through two ML models. The first attempts to map the issue to a feature area, then consults [the classifier config](https://github.com/microsoft/vscode/blob/main/.github/classifier.json) to determine the assignee corresponding to that feature area. If that model is unable to produce results at the desired confidence, the second model attempts to map the issue directly to an assignee. 
+
+In addition to mapping feature areas to owners, [the classifier config](https://github.com/microsoft/vscode/blob/main/.github/classifier.json) also supports setting a threshold confidence on a per-area or per-assignee basis. The default value for all entries is 0.75, roughly corresponding to a minimum of 75% of issues being correctly assigned for a particular category. If the issue does not reach the target threshold, it will be left untouched for the inbox tracker to assign. If a team member finds that they are receiving a surplus of misclassified events, increasing the threshold for themselves or their feature areas may help. 
+
+### Training
+
+On a monthly basis, a dump of all issue data is collected and given to a beefy Azure instance to train a new pair of models. 
 
 ## Author Verification
 
@@ -9,7 +20,88 @@ In cases where an issue is particularly difficult to verify, for instance those 
 2. Upon the issue becoming both `insiders-released` and `author-verification-requested`, the bot will ask the issue author to verify it by commenting `\verified`. 
 3. Once the author comments, the bot will label the issue `verified` and it will be removed from our endgame queries.
 
+## Commands
 
+The bot supports a set of general "commands", declared in [the commands config](https://github.com/microsoft/vscode/blob/main/.github/commands.json). In general, commands can be run on an issue being labeled with a particular label, or an issue being commented on by a particular set of users using a `\command` syntax. Commands can close issues, add labels, remove labels, and add comments. Further, commands can be made to only run when an issue either has or does not have particular labels. 
+
+Most commonly, these are used to close issues for various `wont fix` reasons. Adding labels `*question`, `*dev-question`, `*extension-candidate`, `*not-reproducible`, `*out-of-scope`, `*caused-by-extension`, `*as-designed`, `*duplicate`, `*off-topic`, or commenting `\extPython`, `\extJupyter`, `\extC`, `\extC++`, `\extCpp`, `\extTS`, `\extJS`, `\extC#`, `\extGo`, `\extPowershell`, `\extLiveShare`, `\extDocker`, `\extJava`, or `\extJavaDebug`, will close the issue and leave a comment explaining why the issue was closed and any applicable next steps for the user. 
+
+Some more examples of commands include:
+```jsonc
+// Upon adding the `~needs more info` label, remove the label, add the `needs more info` label, and add a comment.
+{
+  "type": "label",
+  "name": "~needs more info",
+  "action": "updateLabels",
+  "addLabel": "needs more info",
+  "removeLabel": "~needs more info",
+  "comment": "Thanks for creating this issue! We figured it's missing some basic information or in some other way doesn't follow our [issue reporting](https://aka.ms/vscodeissuereporting) guidelines. Please take the time to review these and update the issue.\n\nHappy Coding!"
+},
+```
+
+```jsonc
+// upon a team member or the listed users commenting \closedWith, close the issue and add the label `unreleased`
+{
+  "type": "comment",
+  "name": "closedWith",
+  "allowUsers": [
+    "cleidigh",
+    "usernamehw",
+    "gjsjohnmurray",
+    "IllusionMH"
+  ],
+  "action": "close",
+  "addLabel": "unreleased"
+},
+```
+
+```jsonc
+// Upon a team member or the listed users commenting `\gifPlease`, post a comment instructing users on how to attach a screen recording
+{
+  "type": "comment",
+  "name": "gifPlease",
+  "allowUsers": [
+    "cleidigh",
+    "usernamehw",
+    "gjsjohnmurray",
+    "IllusionMH"
+  ],
+  "action": "comment",
+  "comment": "Thanks for reporting this issue! Unfortunately, it's hard for us to understand what issue you're seeing. Please help us out by providing a screen recording showing exactly what isn't working as expected. While we can work with most standard formats, `.gif` files are preferred as they are displayed inline on GitHub. You may find https://gifcap.dev helpful as a browser-based gif recording tool.\n\nIf the issue depends on keyboard input, you can help us by enabling screencast mode for the recording (`Developer: Toggle Screencast Mode` in the command palette).\n\nHappy coding!"
+},
+```
+
+```jsonc
+// Upon a team member commenting `\jsDebugLogs`, add a comment and apply the `needs more info` label.
+{
+  "type": "comment",
+  "name": "jsDebugLogs",
+  "action": "updateLabels",
+  "addLabel": "needs more info",
+  "comment": "Please collect trace logs using the following instructions:\n\n> If you're able to, add `\"trace\": true` to your `launch.json` and reproduce the issue. The location of the log file on your disk will be written to the Debug Console. Share that with us.\n>\n> ⚠️ This log file will not contain source code, but will contain file paths. You can drop it into https://microsoft.github.io/vscode-pwa-analyzer/index.html to see what it contains. If you'd rather not share the log publicly, you can email it to connor@xbox.com"
+},
+```
+
+## Feature Requests
+
+The feature requests bot serves to implement our [feature request triaging pipeline](https://github.com/microsoft/vscode/wiki/Issues-Triaging#managing-feature-requests). To that end, it:
+
+1. Upon labeling an issue `feature-request`, it waits a few minutes. If a milestone has not been manually assigned, it assigns the issue to the [`"Backlog Candidates"`](https://github.com/microsoft/vscode/milestone/107) milestone. 
+2. Upon an issue being assigned to `"Backlog Candidates"`, it comments explaining the feature request triaging pipeline to the issue author.
+3. If at any point in the next 60 days the issue receives enough upvotes (20), it promotes the issue to `"Backlog"` and comments explaining what happened. (This may take 24h to occur)
+4. If 60 days pass without the issue accruing enough upvotes, the bot will close the issue and comment explaining why. A warning comment is posted 10 days before this happens.
+
+> Note: If the issue receives a threshold number of comments (20), the issue is considered to have "hot discussion" and the bot will not automatically close the issue - the assigned team member should evaluate the issue's merit based on the "hot discussion" and decide to either promote or close out the issue themselves.
+
+## Needs More Info
+
+All issues which have the `needs more info` label, haven't been interacted with 7 days, and were last interacted with by a team member are closed. 
+
+If an issue has the `needs more info`, hasn't been interacted with in 60 days, and was last interacted with by a non-team member, the bot will comment pinging the issue assignee to take a look at the issue to ensure it doesn't "slip though the cracks".
+
+## Locker
+
+Issue which have been closed for 45 days and have not been interacted with in 3 days are locked. If the issue has the label `author-verification-requested` and does not have the label `verified`, it will not be locked. If the issue has the label `*out-of-scope`, it will not be locked.
 
 ## Insiders Released
 
@@ -25,4 +117,4 @@ Various pipelines work best when an issue is "closed with a commit". This means 
   - A PR which is marked as `Closes/Fixes #NUM` being merged into `main`
   - A comment with `\closedWith SHA` made by a team member
 
-> Note: If an issue is reopened, the prior closing events will be ignored.
+> Note: If an issue is reopened, prior closing events will be ignored.
