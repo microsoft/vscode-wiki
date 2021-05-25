@@ -106,7 +106,7 @@ It's not realistic that all extensions are able to fully work with virtual resou
 
 A. Basic Language Support:
 * TextMate tokenization and colorization, 
-* language specific editing support: bracket pairs, comments, on enter rules, folding markers)
+* language specific editing support: bracket pairs, comments, on enter rules, folding markers
 * snippets
 
 B. Single-File Language Support: 
@@ -116,12 +116,12 @@ B. Single-File Language Support:
 * formatting, linked editing
 * syntax validation and same-file semantic validation and code actions
 
-C. Full Workspace/Project Language Support
+C. Cross-file, Workspace Aware Language Support
 * references across files
 * workspace symbols
 * validation of all files in the workspace/project
 
-The rich language extensions that ship with VS Code (TypeScript, JSON, CSS, HTML, Markdown) only offer Single-File Language Support when working on virtual resources.
+The rich language extensions that ship with VS Code (TypeScript, JSON, CSS, HTML, Markdown) are limited to Single-File Language Support when working on virtual resources.
 
 We are working on a UI for VS Code to indicate that the Window runs in a restricted mode.
 
