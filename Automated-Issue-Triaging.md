@@ -103,6 +103,20 @@ If an issue has the `needs more info`, hasn't been interacted with in 60 days, a
 
 Issue which have been closed for 45 days and have not been interacted with in 3 days are locked. If the issue has the label `author-verification-requested` and does not have the label `verified`, it will not be locked. If the issue has the label `*out-of-scope`, it will not be locked.
 
+## English Please 
+
+Upon a new issue being created, check if the issue is probably-not-english using [a sophisticated AI](https://github.com/microsoft/vscode-github-triage-actions/blob/cd7ec725801fe3107cc33cf9a1446f36441cee8b/english-please/EnglishPlease.ts#L27). If so, comment a translation of a generic message instructing the user to translate the issue (preferably without using online tools as they often fail to provide useful translations of technical documents). Additionally, apply `english-please`, `needs more info`, and a language specific `translation-requested-{LANG_ID}` label to help community translators in translating issues. 
+
+Despite the sophistication of the language detection AI, it can still fail to correctly identify non-English issues when the language glyphs look similar to English. In these cases, a team member can apply the `english-please` label to trigger the above flow.
+
+> Note: In general, the translated comment is created by Azure Cognitive Services, however human translators can add better language-specific translations by contributing to the [translation data file](https://github.com/microsoft/vscode-github-triage-actions/blob/f285118dffd66fa91629c35f4e1a798efcc811e6/english-please/translation-data.json).
+
+## New Release
+
+Upon an issue being created, if the issue contains a VS code version reference for a Stable release created in the last 5 days, adds the `new release` label. 
+
+Upon 5 days passing from a Stable release the bot deletes the label, removing it from all existing issues.
+
 ## Insiders Released
 
 The `insiders-released` pipeline runs automatically to:
