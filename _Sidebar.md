@@ -5,6 +5,7 @@
 * [[Issue Tracking]]
   * [[Issues Triaging]]
   * [[Community Issue Tracking]]
+  * [[Automated Issue Triaging]]
   * [[Issue Grooming]]
 * [[Build Champion]]
 * [[Release Process]]
