@@ -3,7 +3,7 @@ As part of our issue triaging pipeline, a collection of scripts running as GitHu
 💡 The [github triage extension](https://chrome.google.com/webstore/detail/vs-code-triage/omjdggbjophlhakbakjpajfbkdfploho?hl=en&authuser=0) can be used to assist with triggering these workflows — it provides a "Command Palette"-style list of triaging actions like assignment, labeling, and triggers for various bot actions.
 
 ## Issue Classification
-[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/classifier-deep)
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/classifier-deep) | [Example](https://github.com/microsoft/vscode/issues/124611#event-4794747561)
 
 ### Assigning
 
@@ -16,7 +16,7 @@ In addition to mapping feature areas to owners, [the classifier config](https://
 On a monthly basis, a dump of all issue data is automatically collected and given to a beefy Azure instance to train a new pair of models.
 
 ## Author Verification
-[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/author-verified)
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/author-verified) | [Example](https://github.com/microsoft/vscode/issues/123756#issuecomment-844055203)
 
 In cases where an issue is particularly difficult to verify, for instance those which only reproduce in a specific environment, the bot is able to help out by asking the original issue author to verify and automatically marking the issue as `verified` once they respond. It works as follows:
 
@@ -25,7 +25,7 @@ In cases where an issue is particularly difficult to verify, for instance those 
 3. Once the author comments, the bot will label the issue `verified` and it will be removed from our endgame queries.
 
 ## Commands
-[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/commands)
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/commands) | [Config](https://github.com/microsoft/vscode/blob/main/.github/commands.json) | [Example Close](https://github.com/microsoft/vscode/issues/124558#issuecomment-847949858) | [Example Comment](https://github.com/microsoft/vscode/issues/124060#issuecomment-843658266)
 
 The bot supports a set of general "commands", declared in [the commands config](https://github.com/microsoft/vscode/blob/main/.github/commands.json). In general, commands can be run on an issue being labeled with a particular label, or an issue being commented on by a particular set of users using a `\command` syntax. Commands can close issues, add labels, remove labels, and add comments. Further, commands can be made to only run when an issue either has or does not have particular labels.
 
@@ -88,7 +88,7 @@ Some more examples of commands include:
 ```
 
 ## Regex Labeler
-[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/regex-labeler)
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/regex-labeler) | [Example English](https://github.com/microsoft/vscode/issues/124478) | [Example Chinese](https://github.com/microsoft/vscode/issues/124178)
 
 Applies labels to issues that either do or do not match a particular regex. For example:
 
@@ -112,7 +112,7 @@ Applies labels to issues that either do or do not match a particular regex. For 
 ```
 
 ## Feature Requests
-[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/feature-request)
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/feature-request) | [Example Promotion](https://github.com/microsoft/vscode/issues/122476#issuecomment-828460317) | [Example Closing](https://github.com/microsoft/vscode/issues/119694#issuecomment-805950607)
 
 The feature requests bot serves to implement our [feature request triaging pipeline](https://github.com/microsoft/vscode/wiki/Issues-Triaging#managing-feature-requests). To that end, it:
 
@@ -124,7 +124,7 @@ The feature requests bot serves to implement our [feature request triaging pipel
 > Note: If the issue receives a threshold number of comments (20), the issue is considered to have "hot discussion" and the bot will not automatically close the issue - the assigned team member should evaluate the issue's merit based on the "hot discussion" and decide to either promote or close out the issue themselves.
 
 ## Needs More Info
-[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/needs-more-info-closer)
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/needs-more-info-closer) | [Example](https://github.com/microsoft/vscode/issues/123535#issuecomment-838615068)
 
 All issues which have the `needs more info` label, haven't been interacted with 7 days, and were last interacted with by a team member are closed.
 
@@ -136,7 +136,7 @@ If an issue has the `needs more info`, hasn't been interacted with in 60 days, a
 Issue which have been closed for 45 days and have not been interacted with in 3 days are locked. If the issue has the label `author-verification-requested` and does not have the label `verified`, it will not be locked. If the issue has the label `*out-of-scope`, it will not be locked.
 
 ## English Please
-[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/english-please)
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/english-please) | [Examples](https://github.com/microsoft/vscode/issues?q=is%3Aissue+is%3Aclosed+label%3Atranslation-required-portuguese-brazil)
 
 Upon a new issue being created, check if the issue is probably-not-english using [a sophisticated AI](https://github.com/microsoft/vscode-github-triage-actions/blob/cd7ec725801fe3107cc33cf9a1446f36441cee8b/english-please/EnglishPlease.ts#L27). If so, comment a translation of a generic message instructing the user to translate the issue (preferably without using online tools as they often fail to provide useful translations of technical documents). Additionally, apply `english-please`, `needs more info`, and a language specific `translation-requested-{LANG_ID}` label to help community translators in translating issues.
 
@@ -169,6 +169,6 @@ Various pipelines work best when an issue is "closed with a commit". This means 
 > Note: If an issue is reopened, prior closing events will be ignored.
 
 ## Topic Subscriber
-[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/topic-subscribe)
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/topic-subscribe) | [Config](https://github.com/microsoft/vscode/blob/main/.github/subscribers.json) | [Example](https://github.com/microsoft/vscode/issues/124429#issuecomment-847288435)
 
 Upon adding a label to an issue, the bot comments a list of usernames to "subscribe" to the issue by means of GitHub notifications. This is configured in [the subscribers configuration file](https://github.com/microsoft/vscode/blob/main/.github/subscribers.json)
