@@ -84,6 +84,9 @@ If it partially works, it can signal that it it offers limited support:
 }
 ```
 
+The description is will be shown in the extensions view:
+![image](https://user-images.githubusercontent.com/6461412/119677934-6b755200-be3f-11eb-8db9-d8fbca6f8e67.png)
+
 The extension should then disable the features that are not supported in a virtual workspace as described below.
 
 ### Default 
