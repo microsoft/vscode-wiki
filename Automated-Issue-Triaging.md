@@ -13,7 +13,7 @@ In addition to mapping feature areas to owners, [the classifier config](https://
 
 ### Training
 
-On a monthly basis, a dump of all issue data is automatically collected and given to a beefy Azure instance to train a new pair of models.
+On a monthly basis, a dump of all issue data is automatically collected and given to a beefy Azure instance to train a new pair of models. This is manually [verified](https://github.com/JacksonKearl/testissues/issues?q=is%3Aissue+verify+new+model) on a [test issue stream](https://github.com/JacksonKearl/testissues/issues), then deployed to vscode proper by copying some bata around in Azure Blob Storage.
 
 ## Author Verification
 [Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/author-verified) | [Example](https://github.com/microsoft/vscode/issues/123756#issuecomment-844055203)
