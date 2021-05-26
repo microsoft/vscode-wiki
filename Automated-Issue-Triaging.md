@@ -165,12 +165,10 @@ Applies labels to issues that either do or do not match a particular regex. For 
 ```
 
 # <a name="closing-with-a-commit"></a>Closing Issues "With a Commit"
-
+[Source](https://github.com/microsoft/vscode-github-triage-actions/blob/56b9db6aa5ee879108139b1252b2903d2478e2a2/api/octokit.ts#L366-L447) | [Example "\closedWith"](https://github.com/microsoft/vscode/issues/124134#issuecomment-843640354)
 Various pipelines work best when an issue is closed "with a commit" and we can perform operations using the SHA associated with the closing of the issue. The SHA used for the operation in is the timeline's last most:
   - Commit with the `Closes/Fixes #NUM` GitHub syntax put on `main`
   - PR marked as `Closes/Fixes #NUM` merged into `main`
   - Comment with `\closedWith {SHA}` made by a team member
-
-
 
 > Note: If an issue is reopened, prior closing events will be ignored.
