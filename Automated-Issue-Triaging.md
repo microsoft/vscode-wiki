@@ -87,30 +87,6 @@ Some more examples of commands include:
 },
 ```
 
-## Regex Labeler
-[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/regex-labeler) | [Example English](https://github.com/microsoft/vscode/issues/124478) | [Example Chinese](https://github.com/microsoft/vscode/issues/124178)
-
-Applies labels to issues that either do or do not match a particular regex. For example:
-
-```yml
-- name: Run Clipboard Labeler
-  uses: ./actions/regex-labeler
-  with:
-    appInsightsKey: ${{secrets.TRIAGE_ACTIONS_APP_INSIGHTS}}
-    label: "invalid"
-    mustNotMatch: "^We have written the needed data into your clipboard because it was too large to send\\. Please paste\\.$"
-    comment: "It looks like you're using the VS Code Issue Reporter but did not paste the text generated into the created issue. We've closed this issue, please open a new one containing the text we placed in your clipboard.\n\nHappy Coding!"
-
-- name: Run Clipboard Labeler (Chinese)
-  uses: ./actions/regex-labeler
-  with:
-    appInsightsKey: ${{secrets.TRIAGE_ACTIONS_APP_INSIGHTS}}
-    label: "invalid"
-    mustNotMatch: "^所需的数据太大，无法直接发送。我们已经将其写入剪贴板，请粘贴。$"
-    comment: "看起来您正在使用 VS Code 问题报告程序，但是没有将生成的文本粘贴到创建的问题中。我们将关闭这个问题，请使用剪贴板中的内容创建一个新的问题。\n\n祝您使用愉快！"
-
-```
-
 ## Feature Requests
 [Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/feature-request) | [Example Promotion](https://github.com/microsoft/vscode/issues/122476#issuecomment-828460317) | [Example Closing](https://github.com/microsoft/vscode/issues/119694#issuecomment-805950607)
 
@@ -152,23 +128,49 @@ Upon an issue being created, if the issue contains a VS code version reference f
 Upon 5 days passing from a Stable release the bot deletes the label, removing it from all existing issues.
 
 ## Insiders Released
-[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/release-pipeline)
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/release-pipeline) | [Unreleased Query](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aunreleased) | [Insiders Released Query](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Ainsiders-released)
 
 The `insiders-released` pipeline runs automatically to:
 
 - Mark all issues newly [closed with a commit](#closing-with-a-commit) as `unreleased`
 - Periodically (~daily) scan through all `unreleased` issues and promote them to `insiders-released` if their closing patch is present in the latest insiders.
 
-## Closing With a Commit
-
-Various pipelines work best when an issue is "closed with a commit". This means the latest timeline instance of one of:
-  - A commit with the `Closes/Fixes #NUM` GitHub syntax being put on `main`
-  - A PR which is marked as `Closes/Fixes #NUM` being merged into `main`
-  - A comment with `\closedWith {SHA}` made by a team member
-
-> Note: If an issue is reopened, prior closing events will be ignored.
-
 ## Topic Subscriber
 [Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/topic-subscribe) | [Config](https://github.com/microsoft/vscode/blob/main/.github/subscribers.json) | [Example](https://github.com/microsoft/vscode/issues/124429#issuecomment-847288435)
 
 Upon adding a label to an issue, the bot comments a list of usernames to "subscribe" to the issue by means of GitHub notifications. This is configured in [the subscribers configuration file](https://github.com/microsoft/vscode/blob/main/.github/subscribers.json)
+
+## Regex Labeler
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/regex-labeler) | [Example English](https://github.com/microsoft/vscode/issues/124478) | [Example Chinese](https://github.com/microsoft/vscode/issues/124178)
+
+Applies labels to issues that either do or do not match a particular regex. For example:
+
+```yml
+- name: Run Clipboard Labeler
+  uses: ./actions/regex-labeler
+  with:
+    appInsightsKey: ${{secrets.TRIAGE_ACTIONS_APP_INSIGHTS}}
+    label: "invalid"
+    mustNotMatch: "^We have written the needed data into your clipboard because it was too large to send\\. Please paste\\.$"
+    comment: "It looks like you're using the VS Code Issue Reporter but did not paste the text generated into the created issue. We've closed this issue, please open a new one containing the text we placed in your clipboard.\n\nHappy Coding!"
+
+- name: Run Clipboard Labeler (Chinese)
+  uses: ./actions/regex-labeler
+  with:
+    appInsightsKey: ${{secrets.TRIAGE_ACTIONS_APP_INSIGHTS}}
+    label: "invalid"
+    mustNotMatch: "^所需的数据太大，无法直接发送。我们已经将其写入剪贴板，请粘贴。$"
+    comment: "看起来您正在使用 VS Code 问题报告程序，但是没有将生成的文本粘贴到创建的问题中。我们将关闭这个问题，请使用剪贴板中的内容创建一个新的问题。\n\n祝您使用愉快！"
+
+```
+
+# <a name="closing-with-a-commit"></a>Closing Issues "With a Commit"
+
+Various pipelines work best when an issue is closed "with a commit". This means there exists of one of:
+  - A commit with the `Closes/Fixes #NUM` GitHub syntax being put on `main`
+  - A PR which is marked as `Closes/Fixes #NUM` being merged into `main`
+  - A comment with `\closedWith {SHA}` made by a team member
+
+Somewhere in the issue's timeline.
+
+> Note: If an issue is reopened, prior closing events will be ignored.
