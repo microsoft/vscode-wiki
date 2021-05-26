@@ -166,11 +166,11 @@ Applies labels to issues that either do or do not match a particular regex. For 
 
 # <a name="closing-with-a-commit"></a>Closing Issues "With a Commit"
 
-Various pipelines work best when an issue is closed "with a commit". This means there exists of one of:
-  - A commit with the `Closes/Fixes #NUM` GitHub syntax being put on `main`
-  - A PR which is marked as `Closes/Fixes #NUM` being merged into `main`
-  - A comment with `\closedWith {SHA}` made by a team member
+Various pipelines work best when an issue is closed "with a commit" and we can perform operations using the SHA associated with the closing of the issue. The SHA used for the operation in is the timeline's last most:
+  - Commit with the `Closes/Fixes #NUM` GitHub syntax put on `main`
+  - PR marked as `Closes/Fixes #NUM` merged into `main`
+  - Comment with `\closedWith {SHA}` made by a team member
 
-Somewhere in the issue's timeline.
+
 
 > Note: If an issue is reopened, prior closing events will be ignored.
