@@ -1,5 +1,7 @@
 As part of our issue triaging pipeline, a collection of scripts running as GitHub Actions aid in managing issue state. The source for these actions is available in [its own repo](https://github.com/microsoft/vscode-github-triage-actions/), and the configuration is available [in the vscode repo](https://github.com/microsoft/vscode/tree/main/.github/workflows).
 
+💡 The [github triage extension](https://chrome.google.com/webstore/detail/vs-code-triage/omjdggbjophlhakbakjpajfbkdfploho?hl=en&authuser=0) can be used to assist with triggering these workflows — it provides a "Command Palette"-style list of triaging actions like assignment, labeling, and triggers for various bot actions.
+
 ## Issue Classification
 [Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/classifier-deep)
 
