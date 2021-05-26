@@ -1,30 +1,33 @@
-As part of our issue triaging pipeline, 
+As part of our issue triaging pipeline, a collection of scripts running as GitHub Actions aid in managing issue state. The source for these actions is available in [its own repo](https://github.com/microsoft/vscode-github-triage-actions/), and the configuration is available [in the vscode repo](https://github.com/microsoft/vscode/tree/main/.github/workflows).
 
 ## Issue Classification
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/classifier-deep)
 
 ### Assigning
 
-On a half-hourly basis, all recent issues are passed through two ML models. The first attempts to map the issue to a feature area, then consults [the classifier config](https://github.com/microsoft/vscode/blob/main/.github/classifier.json) to determine the assignee corresponding to that feature area. If that model is unable to produce results at the desired confidence, the second model attempts to map the issue directly to an assignee. 
+On a half-hourly basis, all recent issues are passed through two ML models. The first attempts to map the issue to a feature area, then consults [the classifier config](https://github.com/microsoft/vscode/blob/main/.github/classifier.json) to determine the assignee corresponding to that feature area. If that model is unable to produce results at the desired confidence, the second model attempts to map the issue directly to an assignee.
 
-In addition to mapping feature areas to owners, [the classifier config](https://github.com/microsoft/vscode/blob/main/.github/classifier.json) also supports setting a threshold confidence on a per-area or per-assignee basis. The default value for all entries is 0.75, roughly corresponding to a minimum of 75% of issues being correctly assigned for a particular category. If the issue does not reach the target threshold, it will be left untouched for the inbox tracker to assign. If a team member finds that they are receiving a surplus of misclassified events, increasing the threshold for themselves or their feature areas may help. 
+In addition to mapping feature areas to owners, [the classifier config](https://github.com/microsoft/vscode/blob/main/.github/classifier.json) also supports setting a threshold confidence on a per-area or per-assignee basis. The default value for all entries is 0.75, roughly corresponding to a minimum of 75% of issues being correctly assigned for a particular category. If the issue does not reach the target threshold, it will be left untouched for the inbox tracker to assign. If a team member finds that they are receiving a surplus of misclassified events, increasing the threshold for themselves or their feature areas may help.
 
 ### Training
 
-On a monthly basis, a dump of all issue data is collected and given to a beefy Azure instance to train a new pair of models. 
+On a monthly basis, a dump of all issue data is automatically collected and given to a beefy Azure instance to train a new pair of models.
 
 ## Author Verification
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/author-verified)
 
 In cases where an issue is particularly difficult to verify, for instance those which only reproduce in a specific environment, the bot is able to help out by asking the original issue author to verify and automatically marking the issue as `verified` once they respond. It works as follows:
 
-1. To initialize the workflow, label an issue `author-verification-requested` and either ensure it is [closed with a commit](#closing-with-a-commit), or manually add the `insiders-released` when you know it has been released in the latest insiders. 
-2. Upon the issue becoming both `insiders-released` and `author-verification-requested`, the bot will ask the issue author to verify it by commenting `\verified`. 
+1. To initialize the workflow, label an issue `author-verification-requested` and either ensure it is [closed with a commit](#closing-with-a-commit), or manually add the `insiders-released` when you know it has been released in the latest insiders.
+2. Upon the issue becoming both `insiders-released` and `author-verification-requested`, the bot will ask the issue author to verify it by commenting `\verified`.
 3. Once the author comments, the bot will label the issue `verified` and it will be removed from our endgame queries.
 
 ## Commands
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/commands)
 
-The bot supports a set of general "commands", declared in [the commands config](https://github.com/microsoft/vscode/blob/main/.github/commands.json). In general, commands can be run on an issue being labeled with a particular label, or an issue being commented on by a particular set of users using a `\command` syntax. Commands can close issues, add labels, remove labels, and add comments. Further, commands can be made to only run when an issue either has or does not have particular labels. 
+The bot supports a set of general "commands", declared in [the commands config](https://github.com/microsoft/vscode/blob/main/.github/commands.json). In general, commands can be run on an issue being labeled with a particular label, or an issue being commented on by a particular set of users using a `\command` syntax. Commands can close issues, add labels, remove labels, and add comments. Further, commands can be made to only run when an issue either has or does not have particular labels.
 
-Most commonly, these are used to close issues for various `wont fix` reasons. Adding labels `*question`, `*dev-question`, `*extension-candidate`, `*not-reproducible`, `*out-of-scope`, `*caused-by-extension`, `*as-designed`, `*duplicate`, `*off-topic`, or commenting `\extPython`, `\extJupyter`, `\extC`, `\extC++`, `\extCpp`, `\extTS`, `\extJS`, `\extC#`, `\extGo`, `\extPowershell`, `\extLiveShare`, `\extDocker`, `\extJava`, or `\extJavaDebug`, will close the issue and leave a comment explaining why the issue was closed and any applicable next steps for the user. 
+Most commonly, these are used to close issues for various `wont fix` reasons. Adding labels `*question`, `*dev-question`, `*extension-candidate`, `*not-reproducible`, `*out-of-scope`, `*caused-by-extension`, `*as-designed`, `*duplicate`, `*off-topic`, or commenting `\extPython`, `\extJupyter`, `\extC`, `\extC++`, `\extCpp`, `\extTS`, `\extJS`, `\extC#`, `\extGo`, `\extPowershell`, `\extLiveShare`, `\extDocker`, `\extJava`, or `\extJavaDebug`, will close the issue and leave a comment explaining why the issue was closed and any applicable next steps for the user.
 
 Some more examples of commands include:
 ```jsonc
@@ -82,11 +85,36 @@ Some more examples of commands include:
 },
 ```
 
+## Regex Labeler
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/regex-labeler)
+
+Applies labels to issues that either do or do not match a particular regex. For example:
+
+```yml
+- name: Run Clipboard Labeler
+  uses: ./actions/regex-labeler
+  with:
+    appInsightsKey: ${{secrets.TRIAGE_ACTIONS_APP_INSIGHTS}}
+    label: "invalid"
+    mustNotMatch: "^We have written the needed data into your clipboard because it was too large to send\\. Please paste\\.$"
+    comment: "It looks like you're using the VS Code Issue Reporter but did not paste the text generated into the created issue. We've closed this issue, please open a new one containing the text we placed in your clipboard.\n\nHappy Coding!"
+
+- name: Run Clipboard Labeler (Chinese)
+  uses: ./actions/regex-labeler
+  with:
+    appInsightsKey: ${{secrets.TRIAGE_ACTIONS_APP_INSIGHTS}}
+    label: "invalid"
+    mustNotMatch: "^所需的数据太大，无法直接发送。我们已经将其写入剪贴板，请粘贴。$"
+    comment: "看起来您正在使用 VS Code 问题报告程序，但是没有将生成的文本粘贴到创建的问题中。我们将关闭这个问题，请使用剪贴板中的内容创建一个新的问题。\n\n祝您使用愉快！"
+
+```
+
 ## Feature Requests
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/feature-request)
 
 The feature requests bot serves to implement our [feature request triaging pipeline](https://github.com/microsoft/vscode/wiki/Issues-Triaging#managing-feature-requests). To that end, it:
 
-1. Upon labeling an issue `feature-request`, it waits a few minutes. If a milestone has not been manually assigned, it assigns the issue to the [`"Backlog Candidates"`](https://github.com/microsoft/vscode/milestone/107) milestone. 
+1. Upon labeling an issue `feature-request`, it waits a few minutes. If a milestone has not been manually assigned, it assigns the issue to the [`"Backlog Candidates"`](https://github.com/microsoft/vscode/milestone/107) milestone.
 2. Upon an issue being assigned to `"Backlog Candidates"`, it comments explaining the feature request triaging pipeline to the issue author.
 3. If at any point in the next 60 days the issue receives enough upvotes (20), it promotes the issue to `"Backlog"` and comments explaining what happened. (This may take 24h to occur)
 4. If 60 days pass without the issue accruing enough upvotes, the bot will close the issue and comment explaining why. A warning comment is posted 10 days before this happens.
@@ -94,30 +122,35 @@ The feature requests bot serves to implement our [feature request triaging pipel
 > Note: If the issue receives a threshold number of comments (20), the issue is considered to have "hot discussion" and the bot will not automatically close the issue - the assigned team member should evaluate the issue's merit based on the "hot discussion" and decide to either promote or close out the issue themselves.
 
 ## Needs More Info
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/needs-more-info-closer)
 
-All issues which have the `needs more info` label, haven't been interacted with 7 days, and were last interacted with by a team member are closed. 
+All issues which have the `needs more info` label, haven't been interacted with 7 days, and were last interacted with by a team member are closed.
 
 If an issue has the `needs more info`, hasn't been interacted with in 60 days, and was last interacted with by a non-team member, the bot will comment pinging the issue assignee to take a look at the issue to ensure it doesn't "slip though the cracks".
 
 ## Locker
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/locker)
 
 Issue which have been closed for 45 days and have not been interacted with in 3 days are locked. If the issue has the label `author-verification-requested` and does not have the label `verified`, it will not be locked. If the issue has the label `*out-of-scope`, it will not be locked.
 
-## English Please 
+## English Please
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/english-please)
 
-Upon a new issue being created, check if the issue is probably-not-english using [a sophisticated AI](https://github.com/microsoft/vscode-github-triage-actions/blob/cd7ec725801fe3107cc33cf9a1446f36441cee8b/english-please/EnglishPlease.ts#L27). If so, comment a translation of a generic message instructing the user to translate the issue (preferably without using online tools as they often fail to provide useful translations of technical documents). Additionally, apply `english-please`, `needs more info`, and a language specific `translation-requested-{LANG_ID}` label to help community translators in translating issues. 
+Upon a new issue being created, check if the issue is probably-not-english using [a sophisticated AI](https://github.com/microsoft/vscode-github-triage-actions/blob/cd7ec725801fe3107cc33cf9a1446f36441cee8b/english-please/EnglishPlease.ts#L27). If so, comment a translation of a generic message instructing the user to translate the issue (preferably without using online tools as they often fail to provide useful translations of technical documents). Additionally, apply `english-please`, `needs more info`, and a language specific `translation-requested-{LANG_ID}` label to help community translators in translating issues.
 
 Despite the sophistication of the language detection AI, it can still fail to correctly identify non-English issues when the language glyphs look similar to English. In these cases, a team member can apply the `english-please` label to trigger the above flow.
 
 > Note: In general, the translated comment is created by Azure Cognitive Services, however human translators can add better language-specific translations by contributing to the [translation data file](https://github.com/microsoft/vscode-github-triage-actions/blob/f285118dffd66fa91629c35f4e1a798efcc811e6/english-please/translation-data.json).
 
 ## New Release
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/new-release)
 
-Upon an issue being created, if the issue contains a VS code version reference for a Stable release created in the last 5 days, adds the `new release` label. 
+Upon an issue being created, if the issue contains a VS code version reference for a Stable release created in the last 5 days, adds the `new release` label.
 
 Upon 5 days passing from a Stable release the bot deletes the label, removing it from all existing issues.
 
 ## Insiders Released
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/release-pipeline)
 
 The `insiders-released` pipeline runs automatically to:
 
@@ -129,6 +162,11 @@ The `insiders-released` pipeline runs automatically to:
 Various pipelines work best when an issue is "closed with a commit". This means the latest timeline instance of one of:
   - A commit with the `Closes/Fixes #NUM` GitHub syntax being put on `main`
   - A PR which is marked as `Closes/Fixes #NUM` being merged into `main`
-  - A comment with `\closedWith SHA` made by a team member
+  - A comment with `\closedWith {SHA}` made by a team member
 
 > Note: If an issue is reopened, prior closing events will be ignored.
+
+## Topic Subscriber
+[Source](https://github.com/microsoft/vscode-github-triage-actions/tree/main/topic-subscribe)
+
+Upon adding a label to an issue, the bot comments a list of usernames to "subscribe" to the issue by means of GitHub notifications. This is configured in [the subscribers configuration file](https://github.com/microsoft/vscode/blob/main/.github/subscribers.json)
