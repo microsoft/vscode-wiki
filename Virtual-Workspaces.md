@@ -37,7 +37,9 @@ Check how your extension deals with URIs it gets from the VSCode APIs:
 
 There's a new `capabilities` property in `package.json`, and `virtualWorkspaces` is used  to signal whether an extension works with virtual workspace, or not.
 
-The example below declares that an extension does not support virtual workspaces and should not be activated by VS Code in this setup.
+### No support for virtual workspaces
+
+The example below declares that an extension does not support virtual workspaces and should not be enabled by VS Code in this setup.
 ```json
 {
   "capabilities": {
@@ -46,12 +48,53 @@ The example below declares that an extension does not support virtual workspaces
 }
 ```
 
-When an extension works with virtual workspaces, then it should define `"virtualWorkspaces": true`. If it partially works, it should do the same, but it should disable the features that are not supported in a virtual workspace. 
+You can additionally give a reason why the extension can not handle virtual workspaces:
+```json
+{
+  "capabilities": {
+    "virtualWorkspaces": {
+      "supported": false,
+      "description": "Debugging is not possible in virtual workspaces."
+    }
+  }
+}
+```
 
-Until extensions have adopted the new capability, we came up with an internal list of extensions that we think should be disabled in virtual workspaces. 
-The list can be found [here](https://github.com/microsoft/vscode/issues/122836). 
+### Partial and full support for virtual workspaces
 
-Of course, extension authors are in a better position to make this decision. Once a extension has adopted the capability, we will remove the extension from the list.
+When an extension works with virtual workspaces, then it should define `"virtualWorkspaces": true`. 
+```json
+{
+  "capabilities": {
+    "virtualWorkspaces": true
+  }
+}
+```
+
+
+If it partially works, it can signal that it it offers limited support: 
+```json
+{
+  "capabilities": {
+    "virtualWorkspaces": {
+      "supported": "limited",
+      "description": "In virtual workspaces, resolving and finding references across files is not supported."
+    }
+  }
+}
+```
+
+The extension should then disable the features that are not supported in a virtual workspace as described below.
+
+### Default 
+
+`"virtualWorkspaces": true` is the default for all extensions that have no yet filled in the `virtualWorkspaces` capability.
+
+However, when testing, we came up list of extensions that we think should be disabled in virtual workspaces. 
+The list can be found [here](https://github.com/microsoft/vscode/issues/122836). These extensions have `"virtualWorkspaces": false` as default.
+
+Of course, extension authors are in a better position to make this decision. The  `virtualWorkspaces` capability in the `package.json` will override our default and we will eventually retire our list.
+
 
 ## Disable functionality when a virtual workspace is opened
 
