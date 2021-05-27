@@ -48,7 +48,7 @@ The example below declares that an extension does not support virtual workspaces
 }
 ```
 
-You can additionally give a reason why the extension can not handle virtual workspaces:
+With the latest insiders (1.57) it's now also possible to give a reason why the extension can not handle virtual workspaces:
 ```json
 {
   "capabilities": {
@@ -62,7 +62,7 @@ You can additionally give a reason why the extension can not handle virtual work
 
 ### Partial and full support for virtual workspaces
 
-When an extension works with virtual workspaces, then it should define `"virtualWorkspaces": true`. 
+When an extension works or partially works with virtual workspaces, then it should define `"virtualWorkspaces": true`. 
 ```json
 {
   "capabilities": {
@@ -72,7 +72,8 @@ When an extension works with virtual workspaces, then it should define `"virtual
 ```
 
 
-If it partially works, it can signal that it it offers limited support: 
+With the latest insiders (1.57) it's now also possible to give a more information on what doesn't work:
+
 ```json
 {
   "capabilities": {
