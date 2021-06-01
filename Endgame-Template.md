@@ -21,13 +21,13 @@
 - [ ] Test build starts at 7am CET
 - [ ] Test plan ready by 8am CET
 - [ ] [🔖Testing](https://github.com/issues?q=is%3Aopen+is%3Aissue+label%3Atestplan-item+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+)
-- [ ] [🔖Verification needed](https://github.com/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22April+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
+- [ ] [🔖Verification needed](https://github.com/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
 
 ##### Wednesday
 - [ ] [🔖Testing](https://github.com/issues?q=is%3Aopen+is%3Aissue+label%3Atestplan-item+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+)
 - [ ] Remind team members to assign issues that they intend to fix to the current milestone
 - [ ] Fixing (self-assigned, milestone assigned)
-- [ ] [🔖Verification needed](https://github.com/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22April+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
+- [ ] [🔖Verification needed](https://github.com/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
 - [ ] Prepare for Smoke test: Make sure all smoke test issues are labelled `smoke-test` and fixed **endgame champion**
 
 ##### Thursday
