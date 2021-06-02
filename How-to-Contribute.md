@@ -229,7 +229,7 @@ Pull requests that fix spell check errors in **translatable strings** (strings i
 
 ## Packaging
 
-VS Code can be packaged for the following platforms: `win32-ia32 | win32-x64 | darwin | linux-ia32 | linux-x64 | linux-arm`
+VS Code can be packaged for the following platforms: `win32-ia32 | win32-x64 | darwin-x64 | darwin-arm64 | linux-ia32 | linux-x64 | linux-arm`
 
 These `gulp` tasks are available:
 
