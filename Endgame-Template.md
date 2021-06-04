@@ -91,7 +91,7 @@
 - [ ] Acknowledge [issue trackers](https://github.com/microsoft/vscode-internalbacklog/wiki/Community-Triage:-Credits) from the community **@chrmarti**
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
-  - [ ] Trigger new insider build and publish it manually **endgame champion**
+  - [ ] Build and manually release Insider from release/<x.y> **endgame champion**
 - [ ] Bump up the version in `package.json` on `main` - **endgame champion**
 - [ ] Announce `main` is open for business **endgame champion**
 
