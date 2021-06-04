@@ -78,7 +78,6 @@
   - [ ] @meganrogge
   - [ ] @mjbvz
   - [ ] @rebornix
-  - [ ] @rmacfarlane
   - [ ] @roblourens
   - [ ] @rzhao271
   - [ ] @sandy081
@@ -130,7 +129,6 @@
   - [ ] @meganrogge
   - [ ] @mjbvz
   - [ ] @rebornix
-  - [ ] @rmacfarlane
   - [ ] @roblourens
   - [ ] @rzhao271
   - [ ] @sandy081
