@@ -35,6 +35,7 @@ Refs: <!-- Refer to the issue that this test plan item is testing. -->
   - dev container
   - web
   - anyOS
+  - iPad
 
 - Complexity of the test plan item which should be between 1 till 5.
 
