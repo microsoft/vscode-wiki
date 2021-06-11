@@ -56,10 +56,9 @@ For issues where text is misbehaving in the terminal you can enable logging of t
 Figuring out what's going on with rendering can be tricky as there are a lot of moving parts. A blank screen could mean that the terminal was never created properly and the terminal is fine, or maybe that the renderer is broken. Here are good steps to help find the root cause of rendering problems:
 
 - Zoom in and out (ctrl/cmd++, ctrl/cmd+-) will force the renderer to redraw everything
-- The terminal features both a canvas-based renderer (fast can have various problems) dom-based renderer (slower but less problems). Changing the renderer type can identify issues with a particular renderer, configure with these settings:
+- The terminal features both a webgl, 2d canvas and dom-based renderer. Changing the renderer type can identify issues with a particular renderer, you can turn off the canvas renderers with this setting:
    ```
-   "terminal.integrated.rendererType": "dom"
-   "terminal.integrated.rendererType": "canvas"
+   "terminal.integrated.gpuAcceleration": "off"
    ```
 
 Known rendering problems:
