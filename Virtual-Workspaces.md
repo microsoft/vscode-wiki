@@ -149,7 +149,7 @@ const isVirtualWorkspace = workspace.workspaceFolders && workspace.workspaceFold
 
 ### What are the expectations for language support with virtual workspaces?
 
-It's not realistic that all extensions are able to fully work with virtual resources. Many extensions built are on tools that require synchronous file access and files on disk. It's therefore ok to only provide limited functionality, such as the 'Basic' and the 'Sigle-File' support as listed below. 
+It's not realistic that all extensions are able to fully work with virtual resources. Many extensions built are on tools that require synchronous file access and files on disk. It's therefore ok to only provide limited functionality, such as the 'Basic' and the 'Single-File' support as listed below. 
 
 A. Basic Language Support:
 * TextMate tokenization and colorization, 
