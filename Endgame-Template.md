@@ -93,7 +93,7 @@
   - [ ] Build and manually release Insider from release/<x.y> **endgame champion**
 - [ ] Bump up the version in `package.json` on `main` - **endgame champion**
 - [ ] Announce `main` is open for business **endgame champion**
-- [ ] Run the [Update VS Code Branch](https://github.com/microsoft/vscode-loc-drop/actions/workflows/update-vscode-branch.yml) GitHub Action with `release/*` as the VS Code Branch parameter (it's the default so you shouldn't have to change anything)
+- [ ] Run the [Update VS Code Branch](https://github.com/microsoft/vscode-loc-drop/actions/workflows/update-vscode-branch.yml) GitHub Action with `release/*` as the VS Code Branch parameter (it's the default so you shouldn't have to change anything) **endgame champion**
 
 ##### Friday/Monday
 - [ ] Polish release notes **redmond**
