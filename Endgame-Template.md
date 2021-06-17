@@ -87,13 +87,13 @@
   - [ ] @weinand
 - [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. We have improved [the tooling](https://vscode-tools.azurewebsites.net/acknowledgement) so that the endgame champion can generate the pull request acknowledgment for all repositories at once. **endgame champion**
   - [ ] `debug-adapter-protocol`, `inno-updater`, `jsonc-parser`, `language-server-protocol`, `lsif-node`, `vscode`, `vscode-codicons`, `vscode-css-languageservice`, `vscode-debugadapter-node`, `vscode-dev-containers`, `vscode-docs`, `vscode-emmet-helper`, `vscode-eslint`, `vscode-extension-samples`, `vscode-generator-code`, `vscode-hexeditor`, `vscode-html-languageservice`, `vscode-js-debug`, `vscode-js-debug-companion`, `vscode-js-profile-visualizer`, `vscode-jshint`, `vscode-json-languageservice`, `vscode-languageserver-node`, `vscode-loader`, `vscode-lsif-extension`, `vscode-node-debug`, `vscode-node-debug2`, `vscode-pull-request-github`, `vscode-recipes`, `vscode-references-view`, `vscode-textmate`, `vscode-vsce`
-  - [ ] 💡localization - @tylerleonhardt
 - [ ] Acknowledge [issue trackers](https://github.com/microsoft/vscode-internalbacklog/wiki/Community-Triage:-Credits) from the community **@chrmarti**
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Build and manually release Insider from release/<x.y> **endgame champion**
 - [ ] Bump up the version in `package.json` on `main` - **endgame champion**
 - [ ] Announce `main` is open for business **endgame champion**
+- [ ] Run the [Update VS Code Branch](https://github.com/microsoft/vscode-loc-drop/actions/workflows/update-vscode-branch.yml) GitHub Action with `release/*` as the VS Code Branch parameter (it's the default so you shouldn't have to change anything)
 
 ##### Friday/Monday
 - [ ] Polish release notes **redmond**
