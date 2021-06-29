@@ -6,7 +6,7 @@ Complexity: 2
 
 ---
 
-**NOTE:** NO NEED TO RUN WEB SMOKE TESTS OR REMOTE SMOKE TESTS 
+**NOTE:** **NO NEED TO RUN WEB SMOKE TESTS OR REMOTE SMOKE TESTS**
 
 **NOTE:** Desktop tests MUST run with `--build` argument
 
