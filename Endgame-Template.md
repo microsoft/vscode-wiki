@@ -153,10 +153,12 @@
     - [ ] signed installer 32-bit
     - [ ] signed user installer 32-bit
     - [ ] zip 32-bit
+    - [ ] server 32-bit
   - [ ] Windows 64 bit **owner**
     - [ ] signed installer 64-bit
     - [ ] signed user installer 64-bit
     - [ ] zip 64-bit
+    - [ ] server 64-bit
   - [ ] Windows ARM64 **owner**
     - [ ] signed installer ARM64
     - [ ] signed user installer ARM64
@@ -164,16 +166,19 @@
   - [ ] macOS
     - [ ] Universal **owner**
     - [ ] Intel **owner**
+    - [ ] Intel server **owner**
     - [ ] Apple Silicon **owner**
   - [ ] Linux x64
     - [ ] deb **owner**
     - [ ] rpm **owner**
     - [ ] archives **owner**
     - [ ] snap (`sudo snap install --classic --dangerous <file>.snap`) **owner**
-  - [ ] Server ([instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers)) **owner**
-    - [ ] Linux **owner**
-    - [ ] macOS **owner**
-    - [ ] Windows **owner**
+  - [ ] Linux server **owner**
+    - [ ] x64
+    - [ ] x64 Alpine
+    - [ ] ARM32
+    - [ ] ARM64
+  - [Server instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers)
 - [ ] Publish website **@gregvanl**
 - [ ] Publish Localization language pack **@tylerleonhardt**
 - [ ] Publish to stable **endgame champion**
