@@ -29,6 +29,8 @@ You'll need the following tools:
 
 				**Note:** if you have installed a previous version of the build tools using the `--vs2015` flag you need to uninstall the build tools first using `npm uninstall global windows-build-tools` and the Windows Control Panel to uninstall the binaries.
 
+				**Note:** Some folks have gotten stuck with the "Visual Studio Build Tools" section saying `Still waiting for installer log file...`. If you are seeing this for a few minutes, try [these workaround steps](https://github.com/felixrieseberg/windows-build-tools/issues/244#issuecomment-824213136).
+
 		- Option 2: Use Visual Studio 2019
 			- Install [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/downloads/)
 			- Select *Desktop Development with C++*
