@@ -148,7 +148,7 @@
 
 ##### Wednesday/Thursday - Expected release day (this may change)
 - [ ] Build stable for all platforms **endgame champion**
-- [ ] Sanity check of installable bits
+- [ ] Sanity check of installable bits ([server instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers))
   - [ ] Windows 32 bit **owner**
     - [ ] signed installer 32-bit
     - [ ] signed user installer 32-bit
@@ -178,7 +178,6 @@
     - [ ] x64 Alpine
     - [ ] ARM32
     - [ ] ARM64
-  - [Server instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers)
 - [ ] Publish website **@gregvanl**
 - [ ] Publish Localization language pack **@tylerleonhardt**
 - [ ] Publish to stable **endgame champion**
