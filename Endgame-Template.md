@@ -4,7 +4,6 @@
 
 ##### Monday
 - [ ] Run [OSS tool](https://github.com/microsoft/vscode-build-tools/tree/main/distro-tools) **endgame champion**
-- [ ] Create Test plan item for smoke testing ([template](https://github.com/microsoft/vscode/wiki/Test---Smoke-Test-Template)) **endgame champion**
 - [ ] Update links in Endgame issue and Endgame notebooks to point to new milestone **endgame champion**
 - [ ] Code freeze at 5pm PT
 - [ ] Ensure we have a green build on all platforms at 5pm PT
@@ -28,14 +27,12 @@
 - [ ] Remind team members to assign issues that they intend to fix to the current milestone
 - [ ] Fixing (self-assigned, milestone assigned)
 - [ ] [🔖Verification needed](https://github.com/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
-- [ ] Prepare for Smoke test: Make sure all smoke test issues are labelled `smoke-test` and fixed **endgame champion**
 
 ##### Thursday
 - [ ] Fixing (self-assigned, milestone assigned, NO discussion during standup)
   - Move issues to the next month that can be deferred
 - [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
 - [ ] [🔖Verification](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22January+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+sort%3Aupdated-asc+)
-- [ ] Prepare for Smoke test: Make sure all smoke test issues are labelled `smoke-test` and fixed **endgame champion**
 
 ##### Friday
 - [ ] Pause scheduled `insider` builds **endgame champion**
@@ -51,10 +48,6 @@
 - [ ] All issues [🔖verified](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22January+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug++repo%3Amicrosoft%2Fvscode-pull-request-github)
 - [ ] Branch code to `release/<x.y>` **endgame champion**
 - [ ] Fixing (scrutiny sets in once branched - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
-- [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) (⚠️ MUST run with `--stable-build` argument ⚠️ )	
-  - [ ] Windows - **owner**	
-  - [ ] macOS (Universal) - **owner**	
-  - [ ] Linux - **owner**		
 - [ ] All release notes updated
   - release notes are collected in a file named *`v<Major>_<Minor>.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
   - [ ] @aeschli
@@ -139,12 +132,6 @@
 - [ ] Run `scripts/test-documentation.sh|bat` and add file or fix issues if there are new colors that are not documented.
 
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame. **endgame champion**
-
-##### Tuesday/Wednesday (the day before the release)
-- [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) (⚠️ MUST run with `--stable-build` argument ⚠️ )	
-  - [ ] Windows - **owner**	
-  - [ ] macOS (Universal) - **owner**	
-  - [ ] Linux - **owner**
 
 ##### Wednesday/Thursday - Expected release day (this may change)
 - [ ] Build stable for all platforms **endgame champion**
