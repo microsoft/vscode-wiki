@@ -3,37 +3,36 @@
 - *Month/Day* Expected release date (this may change)
 
 ##### Monday
-- [ ] Run [OSS tool](https://github.com/microsoft/vscode-build-tools/tree/master/distro-tools) **endgame champion**
+- [ ] Run [OSS tool](https://github.com/microsoft/vscode-build-tools/tree/main/distro-tools) **endgame champion**
+- [ ] Update links in Endgame issue and Endgame notebooks to point to new milestone **endgame champion**
 - [ ] Code freeze at 5pm PT
 - [ ] Ensure we have a green build on all platforms at 5pm PT
 - [ ] Create test plan items following the template [here](https://github.com/microsoft/vscode/wiki/Writing-Test-Plan-Items) by 6pm PT
 - [ ] Add verification-needed label to [features needed testing and are not tested by TPIs](https://github.com/microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Afeature-request+is%3Aclosed+-label%3Aon-testplan+-label%3Averification-needed+).
-- [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/
-- [ ] Create Test plan item for smoke testing ([template](https://github.com/microsoft/vscode/wiki/Test---Smoke-Test-Template)) **endgame champion**
+- [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/testers
+
 
 ##### Tuesday
-- [ ] Test plan items assigned (using https://vscode-tools.azurewebsites.net/)
+- [ ] Test plan items assigned (using https://vscode-tools.azurewebsites.net/test-plan-items)
   - Run the tool multiple times to balance load if test items come in later and assignments are already made
   - [Assigned to you](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+assignee%3A%40me++label%3Atestplan-item+)
 - [ ] [🔖All closed feature-requests](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Afeature-request+-label%3Averification-needed+-label%3Aon-testplan+-label%3Averified+-label%3A*duplicate+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug) either have a `verification-needed` or `on-testplan` label
 - [ ] Test build starts at 7am CET
 - [ ] Test plan ready by 8am CET
 - [ ] [🔖Testing](https://github.com/issues?q=is%3Aopen+is%3Aissue+label%3Atestplan-item+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+)
-- [ ] [🔖Verification needed](https://github.com/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22April+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
+- [ ] [🔖Verification needed](https://github.com/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
 
 ##### Wednesday
 - [ ] [🔖Testing](https://github.com/issues?q=is%3Aopen+is%3Aissue+label%3Atestplan-item+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+)
 - [ ] Remind team members to assign issues that they intend to fix to the current milestone
 - [ ] Fixing (self-assigned, milestone assigned)
-- [ ] [🔖Verification needed](https://github.com/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22April+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
-- [ ] Prepare for Smoke test: Make sure all smoke test issues are labelled `smoke-test` and fixed **endgame champion**
+- [ ] [🔖Verification needed](https://github.com/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
 
 ##### Thursday
 - [ ] Fixing (self-assigned, milestone assigned, NO discussion during standup)
   - Move issues to the next month that can be deferred
 - [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
-- [ ] [🔖Verification](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22August+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+sort%3Aupdated-asc+)
-- [ ] Prepare for Smoke test: Make sure all smoke test issues are labelled `smoke-test` and fixed **endgame champion**
+- [ ] [🔖Verification](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22January+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+sort%3Aupdated-asc+)
 
 ##### Friday
 - [ ] Pause scheduled `insider` builds **endgame champion**
@@ -42,17 +41,13 @@
   - [ ] yo generator **@aeschli**
   - [ ] vsce **@joaomoreno**
   - [ ] node debug **@weinand**
-  - [ ] node debug2 **@roblourens**
   - [ ] js-debug **@connor4312**
   - [ ] node debugadapter node **@weinand**
+  - [ ] debug adapter protocol **@weinand**
   - [ ] custom data for html/css **@aeschli**
 - [ ] All issues [🔖verified](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22January+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug++repo%3Amicrosoft%2Fvscode-pull-request-github)
-- [ ] Fixing (scrutiny sets in - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
-- [Smoketest](https://github.com/Microsoft/vscode/wiki/Smoke-Test) (⚠️ MUST run with `--stable-build` argument ⚠️ )	
-  - [ ] Windows - **owner**	
-  - [ ] macOS (Universal) - **owner**	
-  - [ ] Linux - **owner**	
-  - [ ] Web (Chromium) - **owner**	
+- [ ] Branch code to `release/<x.y>` **endgame champion**
+- [ ] Fixing (scrutiny sets in once branched - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] All release notes updated
   - release notes are collected in a file named *`v<Major>_<Minor>.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
   - [ ] @aeschli
@@ -65,6 +60,7 @@
   - [ ] @deepak1556 
   - [ ] @eamodio
   - [ ] @egamma
+  - [ ] @hediet
   - [ ] @isidorn
   - [ ] @JacksonKearl 
   - [ ] @joaomoreno
@@ -75,7 +71,6 @@
   - [ ] @meganrogge
   - [ ] @mjbvz
   - [ ] @rebornix
-  - [ ] @rmacfarlane
   - [ ] @roblourens
   - [ ] @rzhao271
   - [ ] @sandy081
@@ -83,37 +78,15 @@
   - [ ] @tylerleonhardt
   - [ ] @tyriar
   - [ ] @weinand
-- [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. Use the [thankyou](https://vscode-tools.azurewebsites.net/#acknowledgePRs) tool to generate the initial contents of the section. **owner**
-  - [ ] vscode **endgame champion**
-  - [ ] vscode-node-debug **@weinand**
-  - [ ] vscode-node-debug2 **@roblourens**
-  - [ ] vscode-debugadapter-node **@weinand**
-  - [ ] vscode-js-debug **@connor4312**
-  - [ ] vscode-languageserver-node **@dbaeumer**
-  - [ ] language-server-protocol **@dbaeumer**
-  - [ ] vscode-textmate **@alexdima**
-  - [ ] vscode-loader **@alexdima**
-  - [ ] vscode-generator-code **@aeschli**
-  - [ ] vscode-vsce **@joaomoreno**
-  - [ ] vscode-docs **@gregvanl**
-  - [ ] vscode-css-languageservice **@aeschli**
-  - [ ] vscode-json-languageservice **@aeschli**
-  - [ ] vscode-html-languageservice **@aeschli**
-  - [ ] jsonc-parser **@aeschli**
-  - [ ] vscode-eslint **@dbaeumer**
-  - [ ] vscode-jshint **@rmacfarlane**
-  - [ ] vscode-recipes **@weinand**
-  - [ ] vscode-emmet-helper **@rzhao271**
-  - [ ] localization **@weeteckt**
-  - [ ] inno-updater **@joaomoreno**
-- [ ] Review pull requests acknowledgements with `NOT MERGED - PLS REVIEW`. **endgame champion**
+- [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. We have improved [the tooling](https://vscode-tools.azurewebsites.net/acknowledgement) so that the endgame champion can generate the pull request acknowledgment for all repositories at once. **endgame champion**
+  - [ ] `debug-adapter-protocol`, `inno-updater`, `jsonc-parser`, `language-server-protocol`, `lsif-node`, `vscode`, `vscode-codicons`, `vscode-css-languageservice`, `vscode-debugadapter-node`, `vscode-dev-containers`, `vscode-docs`, `vscode-emmet-helper`, `vscode-eslint`, `vscode-extension-samples`, `vscode-generator-code`, `vscode-hexeditor`, `vscode-html-languageservice`, `vscode-js-debug`, `vscode-js-debug-companion`, `vscode-js-profile-visualizer`, `vscode-jshint`, `vscode-json-languageservice`, `vscode-languageserver-node`, `vscode-loader`, `vscode-lsif-extension`, `vscode-node-debug`, `vscode-node-debug2`, `vscode-pull-request-github`, `vscode-recipes`, `vscode-references-view`, `vscode-textmate`, `vscode-vsce`
 - [ ] Acknowledge [issue trackers](https://github.com/microsoft/vscode-internalbacklog/wiki/Community-Triage:-Credits) from the community **@chrmarti**
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
-  - [ ] Trigger new insider build and publish it manually **endgame champion**
-- [ ] Branch code to `release/<x.y>` **endgame champion**
-- [ ] Bump up the version in `package.json` on `master` - **endgame champion**
-- [ ] Announce `master` is open for business **endgame champion**
+  - [ ] Build and manually release Insider from release/<x.y> **endgame champion**
+- [ ] Bump up the version in `package.json` on `main` - **endgame champion**
+- [ ] Announce `main` is open for business **endgame champion**
+- [ ] Localization: Run [Update VS Code Branch](https://github.com/microsoft/vscode-loc-drop/actions/workflows/update-vscode-branch.yml) in the vscode-loc-drop repo with `release/*` as the VS Code Branch parameter (it's the default so you shouldn't have to change anything) **endgame champion**
 
 ##### Friday/Monday
 - [ ] Polish release notes **redmond**
@@ -138,6 +111,7 @@
   - [ ] @deepak1556 
   - [ ] @eamodio
   - [ ] @egamma
+  - [ ] @hediet
   - [ ] @isidorn
   - [ ] @JacksonKearl 
   - [ ] @joaomoreno
@@ -148,7 +122,6 @@
   - [ ] @meganrogge
   - [ ] @mjbvz
   - [ ] @rebornix
-  - [ ] @rmacfarlane
   - [ ] @roblourens
   - [ ] @rzhao271
   - [ ] @sandy081
@@ -162,15 +135,17 @@
 
 ##### Wednesday/Thursday - Expected release day (this may change)
 - [ ] Build stable for all platforms **endgame champion**
-- [ ] Sanity check of installable bits
+- [ ] Sanity check of installable bits ([server instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers))
   - [ ] Windows 32 bit **owner**
     - [ ] signed installer 32-bit
     - [ ] signed user installer 32-bit
     - [ ] zip 32-bit
+    - [ ] server 32-bit
   - [ ] Windows 64 bit **owner**
     - [ ] signed installer 64-bit
     - [ ] signed user installer 64-bit
     - [ ] zip 64-bit
+    - [ ] server 64-bit
   - [ ] Windows ARM64 **owner**
     - [ ] signed installer ARM64
     - [ ] signed user installer ARM64
@@ -178,18 +153,20 @@
   - [ ] macOS
     - [ ] Universal **owner**
     - [ ] Intel **owner**
+    - [ ] Intel server **owner**
     - [ ] Apple Silicon **owner**
   - [ ] Linux x64
     - [ ] deb **owner**
     - [ ] rpm **owner**
     - [ ] archives **owner**
     - [ ] snap (`sudo snap install --classic --dangerous <file>.snap`) **owner**
-  - [ ] Server ([instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers)) **owner**
-    - [ ] Linux **owner**
-    - [ ] macOS **owner**
-    - [ ] Windows **owner**
+  - [ ] Linux server **owner**
+    - [ ] x64
+    - [ ] x64 Alpine
+    - [ ] ARM32
+    - [ ] ARM64
 - [ ] Publish website **@gregvanl**
-- [ ] Publish Localization language pack **@weeteckt**
+- [ ] Publish Localization language pack **@tylerleonhardt**
 - [ ] Publish to stable **endgame champion**
 - [ ] Create an official release **endgame champion**
   - [ ] Create a tag: `git tag <x.y.z>`

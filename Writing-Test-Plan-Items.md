@@ -35,6 +35,7 @@ Refs: <!-- Refer to the issue that this test plan item is testing. -->
   - dev container
   - web
   - anyOS
+  - iPad
 
 - Complexity of the test plan item which should be between 1 till 5.
 
@@ -202,6 +203,24 @@ Refs: <!-- Refer to the issue that this test plan item is testing. -->
 - [ ] windows: @user1 (test 32 bit)
 
 Complexity: 4
+
+---
+
+<!-- Please write your test here. -->
+
+```
+
+### Example 10 (Assigning Roles)
+
+```markdown
+
+Refs: <!-- Refer to the issue that this test plan item is testing. -->
+
+- [ ] linux
+- [ ] windows
+
+Complexity: 4
+Roles: Developer, Engineering Manager
 
 ---
 

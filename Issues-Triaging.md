@@ -96,6 +96,7 @@ Each issue must have a **type** label. Most type labels are grey, some are yello
 |[`upstream`](https://github.com/microsoft/vscode/labels/upstream), [`upstream-issue-linked`](https://github.com/microsoft/vscode/labels/upstream-issue-linked) | an issue used to track an issue in an upstream component|
 |[`electron`](https://github.com/microsoft/vscode/labels/electron) | an issue with electron|
 |[`engineering`](https://github.com/microsoft/vscode/labels/engineering) | issues related to our engineering system or our processes|
+|[`polish`](https://github.com/microsoft/vscode/labels/polish) | a feature could be improved, but not necessarily a bug|
 
 We also use the following **type** labels, although they don't directly play a role in the triaging process as they are usually assigned to issues created by our team or by tooling.
 

@@ -1,3 +1,15 @@
+## Table of Contents
+- [Reporting a Performance Issue](#reporting)  
+- [Visual Studio Code is consuming a lot of CPU](#consuming-cpu) 
+  - [Run with Extensions Disabled](#extensions-disabled)
+  - [Profile the Running Extensions](#profile-running-extensions)
+  - [Collect Information about the running VS Code](#collect-information)
+  - [The Renderer/Window process consumes a lot of CPU](#renderer-process)
+- [Visual Studio Code starts up slowly](#slow-startup)  
+  - [Read the Startup Timers](#startup-timer)
+
+<a name="reporting"/>
+
 ## Reporting a Performance Issue
 
 To report a performance issue please use the 'Report Issue' command available in the 'Help' menu. In the Issue Reporter window that shows up, set the issue type to 'Performance Issue'.
@@ -5,6 +17,8 @@ To report a performance issue please use the 'Report Issue' command available in
 ![image](https://user-images.githubusercontent.com/172399/42494913-e3532ece-8421-11e8-9f37-2da879c80ed6.png)
 
 The following sections describe how you can narrow down a performance issue.
+
+<a name="consuming-cpu"/>
 
 ## Visual Studio Code is consuming a lot of CPU
 
@@ -18,6 +32,8 @@ Try to reproduce the issue with this window open, or take a snapshot of the proc
 
 ![image](https://user-images.githubusercontent.com/172399/36384870-1aac63c2-1591-11e8-8924-b30756643f3f.png)
 
+<a name="extensions-disabled"/>
+
 ### Run with Extensions Disabled
 
 The first step is to try to reproduce the problem with all extensions disabled. You can disable the extensions either from the command line using the `--disable-extensions` command line argument, e.g., `code --disable-extensions` or from the `...` menu in the Extensions Viewlet:
@@ -29,6 +45,8 @@ If you cannot reproduce the issue when **all** extensions are disabled, then can
 ![image](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png)
 
 Once you found the extension, please file an issue against the extension. To file an issue against an extension open the Running Extensions editor `Developer: Show Running Extensions` and use the `Report Issue` button or find the extension in the marketplace, and use the `Issues` link in the `Resources` section.
+
+<a name="profile-running-extensions"/>
 
 ### Profile the Running Extensions
 
@@ -54,6 +72,8 @@ To analyze the performance yourself:
 
 - Load the profile using the `Load` button.
 
+<a name="collect-information"/>
+
 ### Collect Information about the running VS Code
 
 If you can reproduce the problem with extensions disabled, then use `code --status` from the command line. 
@@ -65,6 +85,8 @@ This command collects status about your running VS Code and the workspace you ha
 ![image](https://github.com/Microsoft/vscode-docs/blob/master/release-notes/images/1_19/status.png)
 
 The output includes information about the environment, all running VS Code processes, and the counts of some typical files in the workspace.
+
+<a name="renderer-process"/>
 
 ### The Renderer/Window process consumes a lot of CPU
 
@@ -78,7 +100,7 @@ Run VS Code when your settings are reset/empty. Open your settings, copy your cu
 
 Run VS Code in verbose mode and check whether there is any suspicious output in the console or the developer tools. You start VS Code in verbose mode with `code --verbose`. Also, open the DevTools ("Help>Toggle Developer Tools") and open the console there.
 
-### Profiling the Renderer Process
+#### Profiling the Renderer Process
 
 Very detailed information is captured in CPU profiles and that helps us best to narrow down on a slow-down. So, please create a CPU profile of the VS Code core (_renderer_ process) and attach it to the issue. To create a profile:
   -  Execute "<kbd>F1</kbd> > Toggle Developer Tools." In the overflow menu of the developer tools <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
@@ -87,6 +109,8 @@ Very detailed information is captured in CPU profiles and that helps us best to 
   - When the performance issue happens on startup, start the profiler and then reload the window using "<kbd>F1</kbd> > Reload Window."
   - Save the profile to a file and attach the file to your issue.
 
+<a name="slow-startup"/>
+
 ## Visual Studio Code starts up slowly
 
 If VS Code is slow to start then please create a startup CPU profile. Do the following
@@ -94,6 +118,8 @@ If VS Code is slow to start then please create a startup CPU profile. Do the fol
   - Quit VS Code (<kbd>CMD+Q</kbd> for Mac, closing the last window on Linux/Windows)
   - Start VS Code from the command line like so `code --prof-startup`
   - VS Code will start and create two profile-files in your home-directory. Please attach these files to your issue or create a new issue with these two files
+
+<a name="startup-timer"/>
 
 ### Read the Startup Timers
 

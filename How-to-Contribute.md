@@ -1,7 +1,7 @@
 # Contributing to Visual Studio Code
 There are many ways to contribute to the Visual Studio Code project: logging bugs, submitting pull requests, reporting issues, and creating suggestions.
 
-After cloning and building the repo, check out the [issues list](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue). Issues labeled [`help wanted`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) are good issues to submit a PR for. Issues labeled [`good first issue`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) are great candidates to pick up if you are in the code for the first time. If you are contributing significant changes, please discuss with the assignee of the issue first before starting to work on the issue.
+After cloning and building the repo, check out the [issues list](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue). Issues labeled [`help wanted`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) are good issues to submit a PR for. Issues labeled [`good first issue`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) are great candidates to pick up if you are in the code for the first time. If you are contributing significant changes, or if the issue is already assigned to a specific month milestone, please discuss with the assignee of the issue first before starting to work on the issue.
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ In order to download necessary tools, clone the repository, and install dependen
 You'll need the following tools:
 
 - [Git](https://git-scm.com)
-- [Node.JS](https://nodejs.org/en/), **x64**, version `>= 10.x`, `<= 14.x`
+- [Node.JS](https://nodejs.org/en/), **x64**, version `14.x`
 - [Yarn](https://yarnpkg.com/en/), follow the [installation guide](https://yarnpkg.com/en/docs/install)
 - [Python](https://www.python.org/downloads/) (required for node-gyp; check the [node-gyp readme](https://github.com/nodejs/node-gyp#installation) for the currently supported Python versions)
   - **Note:** Python will be automatically installed for Windows users through installing `windows-build-tools` npm module (see below)
@@ -26,6 +26,10 @@ You'll need the following tools:
 				npm install --global windows-build-tools --vs2017
 				```
 				**Note:** The `--debug` flag is helpful if you encounter any problems during installation.
+
+				**Note:** if you have installed a previous version of the build tools using the `--vs2015` flag you need to uninstall the build tools first using `npm uninstall global windows-build-tools` and the Windows Control Panel to uninstall the binaries.
+
+				**Note:** Some folks have gotten stuck with the "Visual Studio Build Tools" section saying `Still waiting for installer log file...`. If you are seeing this for a few minutes, try [these workaround steps](https://github.com/felixrieseberg/windows-build-tools/issues/244#issuecomment-824213136).
 
 		- Option 2: Use Visual Studio 2019
 			- Install [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/downloads/)
@@ -68,6 +72,12 @@ Alternatively, you can avoid local dependency installation as this repository in
 Docker / the Codespace should have at least **4 Cores and 6 GB of RAM (8 GB recommended)** to run the full build. See the [development container README](https://github.com/microsoft/vscode/blob/main/.devcontainer/README.md) for more information.
 
 If you'd like to contribute to the list of available development containers in the Remote - Containers extension, you can check out the [Contributing documentation](https://github.com/microsoft/vscode-dev-containers/blob/master/CONTRIBUTING.md) in the vscode-dev-containers repo.
+
+## Enable Commit Signing
+
+If you're a community member, feel free to jump over this step.
+
+Otherwise, if you're a member of the VS Code team, follow the [Commit Signing](https://github.com/microsoft/vscode/wiki/Commit-Signing) guide.
 
 ## Build and Run
 
@@ -129,12 +139,14 @@ To test the changes you launch a development version of VS Code on the workspace
 
 ```bash
 ./scripts/code.sh
+./scripts/code-cli.sh # for running CLI commands (eg --version)
 ```
 
 **Windows**
 
 ```bat
 .\scripts\code.bat
+.\scripts\code-cli.bat
 ```
 
 **Web (Chromium, Firefox or Safari only)**
@@ -142,6 +154,7 @@ To test the changes you launch a development version of VS Code on the workspace
 ```bash
 yarn web
 ```
+
 You can use `--port`, `--host` and `--scheme` to further instruct the simple server that runs for the web version about your environment (e.g. if you want to test the web version over a network).
 
 You can identify the development version of VS Code ("Code - OSS") by the following icon in the Dock or Taskbar:
@@ -218,7 +231,7 @@ Pull requests that fix spell check errors in **translatable strings** (strings i
 
 ## Packaging
 
-VS Code can be packaged for the following platforms: `win32-ia32 | win32-x64 | darwin | linux-ia32 | linux-x64 | linux-arm`
+VS Code can be packaged for the following platforms: `win32-ia32 | win32-x64 | darwin-x64 | darwin-arm64 | linux-ia32 | linux-x64 | linux-arm`
 
 These `gulp` tasks are available:
 

@@ -20,12 +20,14 @@ The inbox tracker is responsible for the [global inbox](https://github.com/Micro
 - are neither **feature requests** nor **test plan items** nor **plan items** and
 - have **no owner assignment**.
 
-The **inbox tracker** may perform any step described in our [issue triaging documentation](https://github.com/microsoft/vscode/wiki/Issues-Triaging) but its main responsibility is to route issues to the actual feature area owner.
+The **inbox tracker** may perform any step described in our [issue triaging documentation](https://github.com/microsoft/vscode/wiki/Issues-Triaging) but its main responsibility is to route issues to the actual feature area owner. If you're not sure who to assign, try looking at the [working areas](https://github.com/microsoft/vscode-internalbacklog/blob/main/assignments/working-areas.md) document.
 
 Feature area owners track the **feature area inbox** containing all **open issues and pull requests** that
 - are personally assigned to them and are not assigned to any milestone
 - are labeled with their feature area label and are not assigned to any milestone.
 This secondary triage may involve any of the steps described in our [issue triaging documentation](https://github.com/microsoft/vscode/wiki/Issues-Triaging) and results in a fully triaged or closed issue.
+
+💡 Use [the bot commands](https://github.com/microsoft/vscode/blob/master/.github/commands.json) (like `/needsMoreInfo`, `/extCpp`, etc) to your advantage. They offer a wide range of canned responses from needing more info, to closing as a result of specific extensions.
 
 💡 The [github triage extension](https://chrome.google.com/webstore/detail/vs-code-triage/omjdggbjophlhakbakjpajfbkdfploho?hl=en&authuser=0) can be used to assist with triaging — it provides a "Command Palette"-style list of triaging actions like assignment, labeling, and triggers for various bot actions.
 
