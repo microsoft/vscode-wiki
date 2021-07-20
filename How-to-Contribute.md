@@ -5,7 +5,7 @@ After cloning and building the repo, check out the [issues list](https://github.
 
 ## Prerequisites
 
-In order to download necessary tools, clone the repository, and install dependencies via `yarn` you need network access.
+In order to download necessary tools, clone the repository, and install dependencies via `yarn`, you need network access.
 
 You'll need the following tools:
 
@@ -17,7 +17,7 @@ You'll need the following tools:
 - A C/C++ compiler tool chain for your platform:
   - **Windows**
     - Set a `PYTHON` environment variable pointing to your `python.exe`. E.g.: `C:\Python\python.exe`
-	- Install a compiler for the native modules VS Code is depending on
+	- Install a compiler for the native modules VS Code depends on
 		- Option 1 (recommended): Use Windows Build Tools npm module
 			- Start Powershell as Administrator and install [Windows Build Tools npm module](https://github.com/felixrieseberg/windows-build-tools) ([documentation](https://github.com/felixrieseberg/windows-build-tools#visual-studio-2017-vs-visual-studio-2015)).
 
@@ -36,7 +36,7 @@ You'll need the following tools:
 			- Select *Desktop Development with C++*
 			- Select *MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.28)* on the right hand side
 	- **Restart** your computer
-    - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
+    - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise, it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
 
   - **Windows WSL2**: https://github.com/microsoft/vscode/wiki/Selfhosting-on-Windows-WSL
@@ -51,16 +51,16 @@ You'll need the following tools:
       * [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/)
       * [GCC](https://gcc.gnu.org) or another compile toolchain
       * Dependencies:
-    * Building deb and rpm packages requires `fakeroot` and `rpm`, run: `sudo apt-get install fakeroot rpm`
+    * Building deb and rpm packages requires `fakeroot` and `rpm`; run: `sudo apt-get install fakeroot rpm`
 
 ### Troubleshooting
-In case of issues, try deleting the contents of `~/.node-gyp` (alternatively `~/.cache/node-gyp` for Linux, `~/Library/Caches/node-gyp/` for macOS or `%USERPROFILE%\AppData\Local\node-gyp` for Windows) first and then run `yarn cache clean` and then try again.
+In case of issues, try deleting the contents of `~/.node-gyp` (alternatively `~/.cache/node-gyp` for Linux, `~/Library/Caches/node-gyp/` for macOS, or `%USERPROFILE%\AppData\Local\node-gyp` for Windows) first and then run `yarn cache clean` and then try again.
 
 > If you are on Windows or Linux 64 bit systems and would like to compile to 32 bit, you'll need to set the `npm_config_arch` environment variable to `ia32` before running `yarn`. This will compile all native node modules for a 32 bit architecture. Similarly, when cross-compiling for ARM, set `npm_config_arch` to `arm`.
 
 > **Note:** For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
 
-> If you have Visual Studio 2019 installed, you may face issues when using the default version of node-gyp. If you have Visual Studio 2019 installed, you may need to follow the solutions [here](https://github.com/nodejs/node-gyp/issues/1747)
+> If you have Visual Studio 2019 installed, you may face issues when using the default version of node-gyp. If you have Visual Studio 2019 installed, you may need to follow the solutions [here](https://github.com/nodejs/node-gyp/issues/1747).
 
 ### Development container
 
@@ -117,7 +117,7 @@ yarn
 Then you have two options:
 
 - If you want to build from inside VS Code, you can open the `vscode` folder and start the build task with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> on macOS). The build task will stay running in the background even if you close VS Code. If you happen to close VS Code and open it again, just resume the build by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) again. You can kill it by running the `Kill Build VS Code` task or pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal.
-- If you want to build from a terminal, run `yarn watch`
+- If you want to build from a terminal, run `yarn watch`.
 
 The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience. 
 
@@ -133,7 +133,7 @@ Errors and warnings will show in the console while developing VS Code. If you us
 
 ### Run
 
-To test the changes you launch a development version of VS Code on the workspace `vscode`, which you are currently editing.
+To test the changes, you launch a development version of VS Code on the workspace `vscode`, which you are currently editing.
 
 **macOS and Linux**
 
@@ -183,7 +183,7 @@ The **render** process runs the UI code inside the Shell window. To debug code r
 
 The **extension host** process runs code implemented by a plugin. To debug extensions (including those packaged with VS Code) which run in the extension host process, you can use VS Code itself. Switch to the Debug viewlet, choose the `Attach to Extension Host` configuration, and press <kbd>F5</kbd>.
 
-The **search** process can be debugged, but must first be started. Before attempting to attach, start a search by pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> on macOS), otherwise attaching will fail and time out.
+The **search** process can be debugged, but must first be started. Before attempting to attach, start a search by pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> on macOS), otherwise, attaching will fail and time out.
 
 ### Automated Testing
 Run the unit tests directly from a terminal by running `./scripts/test.sh` from the `vscode` folder (`scripts\test` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/main/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
