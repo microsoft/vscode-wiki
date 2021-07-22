@@ -19,20 +19,20 @@
 - [ ] [🔖All closed feature-requests](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Afeature-request+-label%3Averification-needed+-label%3Aon-testplan+-label%3Averified+-label%3A*duplicate+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug) either have a `verification-needed` or `on-testplan` label
 - [ ] Test build starts at 7am CET
 - [ ] Test plan ready by 8am CET
-- [ ] [🔖Testing](https://github.com/issues?q=is%3Aopen+is%3Aissue+label%3Atestplan-item+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+)
-- [ ] [🔖Verification needed](https://github.com/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
+- [ ] [🔖Testing](https://github.com/issues?q=is%3Aopen+is%3Aissue+label%3Atestplan-item+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview)
+- [ ] [🔖Verification needed](https://github.com/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview)
 
 ##### Wednesday
-- [ ] [🔖Testing](https://github.com/issues?q=is%3Aopen+is%3Aissue+label%3Atestplan-item+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+)
+- [ ] [🔖Testing](https://github.com/issues?q=is%3Aopen+is%3Aissue+label%3Atestplan-item+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview)
 - [ ] Remind team members to assign issues that they intend to fix to the current milestone
 - [ ] Fixing (self-assigned, milestone assigned)
-- [ ] [🔖Verification needed](https://github.com/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
+- [ ] [🔖Verification needed](https://github.com/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview)
 
 ##### Thursday
 - [ ] Fixing (self-assigned, milestone assigned, NO discussion during standup)
   - Move issues to the next month that can be deferred
-- [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github)
-- [ ] [🔖Verification](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22January+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+sort%3Aupdated-asc+)
+- [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22January+2020%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview)
+- [ ] [🔖Verification](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22January+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+sort%3Aupdated-asc+)
 
 ##### Friday
 - [ ] Pause scheduled `insider` builds **endgame champion**
@@ -45,7 +45,7 @@
   - [ ] node debugadapter node **@weinand**
   - [ ] debug adapter protocol **@weinand**
   - [ ] custom data for html/css **@aeschli**
-- [ ] All issues [🔖verified](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22January+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug++repo%3Amicrosoft%2Fvscode-pull-request-github)
+- [ ] All issues [🔖verified](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22January+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug++repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview)
 - [ ] Branch code to `release/<x.y>` **endgame champion**
 - [ ] Fixing (scrutiny sets in once branched - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] All release notes updated
@@ -79,7 +79,7 @@
   - [ ] @tyriar
   - [ ] @weinand
 - [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. We have improved [the tooling](https://vscode-tools.azurewebsites.net/acknowledgement) so that the endgame champion can generate the pull request acknowledgment for all repositories at once. **endgame champion**
-  - [ ] `debug-adapter-protocol`, `inno-updater`, `jsonc-parser`, `language-server-protocol`, `lsif-node`, `vscode`, `vscode-codicons`, `vscode-css-languageservice`, `vscode-debugadapter-node`, `vscode-dev-containers`, `vscode-docs`, `vscode-emmet-helper`, `vscode-eslint`, `vscode-extension-samples`, `vscode-generator-code`, `vscode-hexeditor`, `vscode-html-languageservice`, `vscode-js-debug`, `vscode-js-debug-companion`, `vscode-js-profile-visualizer`, `vscode-jshint`, `vscode-json-languageservice`, `vscode-languageserver-node`, `vscode-loader`, `vscode-lsif-extension`, `vscode-node-debug`, `vscode-node-debug2`, `vscode-pull-request-github`, `vscode-recipes`, `vscode-references-view`, `vscode-textmate`, `vscode-vsce`
+  - [ ] `debug-adapter-protocol`, `inno-updater`, `jsonc-parser`, `language-server-protocol`, `lsif-node`, `vscode`, `vscode-codicons`, `vscode-css-languageservice`, `vscode-debugadapter-node`, `vscode-dev-containers`, `vscode-docs`, `vscode-emmet-helper`, `vscode-eslint`, `vscode-extension-samples`, `vscode-generator-code`, `vscode-hexeditor`, `vscode-html-languageservice`, `vscode-js-debug`, `vscode-js-debug-companion`, `vscode-js-profile-visualizer`, `vscode-jshint`, `vscode-json-languageservice`, `vscode-languageserver-node`, `vscode-livepreview`, `vscode-loader`, `vscode-lsif-extension`, `vscode-node-debug`, `vscode-node-debug2`, `vscode-pull-request-github`, `vscode-recipes`, `vscode-references-view`, `vscode-textmate`, `vscode-vsce`
 - [ ] Acknowledge [issue trackers](https://github.com/microsoft/vscode-internalbacklog/wiki/Community-Triage:-Credits) from the community **@chrmarti**
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
