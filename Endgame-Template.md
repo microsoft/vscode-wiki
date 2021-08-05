@@ -47,6 +47,7 @@
   - [ ] custom data for html/css **@aeschli**
 - [ ] All issues [🔖verified](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22January+2020%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug++repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+repo%3Amicrosoft%2Fvscode-jupyter)
 - [ ] Branch code to `release/<x.y>` **endgame champion**
+- [ ] Announce `main` is open for business **endgame champion**
 - [ ] Fixing (scrutiny sets in once branched - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] All release notes updated
   - release notes are collected in a file named *`v<Major>_<Minor>.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
@@ -57,12 +58,12 @@
   - [ ] @chrmarti
   - [ ] @connor4312
   - [ ] @dbaeumer
-  - [ ] @deepak1556 
+  - [ ] @deepak1556
   - [ ] @eamodio
   - [ ] @egamma
   - [ ] @hediet
   - [ ] @isidorn
-  - [ ] @JacksonKearl 
+  - [ ] @JacksonKearl
   - [ ] @joaomoreno
   - [ ] @jrieken
   - [ ] @kieferrm
@@ -84,8 +85,6 @@
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Build and manually release Insider from release/<x.y> **endgame champion**
-- [ ] Bump up the version in `package.json` on `main` - **endgame champion**
-- [ ] Announce `main` is open for business **endgame champion**
 - [ ] Localization: Run [Update VS Code Branch](https://github.com/microsoft/vscode-loc-drop/actions/workflows/update-vscode-branch.yml) in the vscode-loc-drop repo with `release/*` as the VS Code Branch parameter (it's the default so you shouldn't have to change anything) **endgame champion**
 
 ##### Friday/Monday
@@ -108,12 +107,12 @@
   - [ ] @chrmarti
   - [ ] @connor4312
   - [ ] @dbaeumer
-  - [ ] @deepak1556 
+  - [ ] @deepak1556
   - [ ] @eamodio
   - [ ] @egamma
   - [ ] @hediet
   - [ ] @isidorn
-  - [ ] @JacksonKearl 
+  - [ ] @JacksonKearl
   - [ ] @joaomoreno
   - [ ] @jrieken
   - [ ] @kieferrm
@@ -166,12 +165,12 @@
     - [ ] ARM32
     - [ ] ARM64
 - [ ] Publish website **@gregvanl**
-- [ ] Publish Localization language pack **@tylerleonhardt**
 - [ ] Publish to stable **endgame champion**
 - [ ] Create an official release **endgame champion**
   - [ ] Create a tag: `git tag <x.y.z>`
   - [ ] Push the tag: `git push origin <x.y.z>`
   - [ ] Create a GitHub release: [Open the GitHub tags](https://github.com/microsoft/vscode/tags), and click far right `... > Create Release`. Use the correct title and description from our release notes. [Example](https://github.com/microsoft/vscode/releases/tag/1.39.0)
-- [ ] [Publish @types/vscode](https://github.com/microsoft/vscode/wiki/Publish-vscode-types) **endgame champion**
-- [ ] Enable scheduled `insider` builds **endgame champion**
 - [ ] Twitter announcement **@chrisdias**
+- [ ] Enable scheduled `insider` builds **endgame champion**
+- [ ] Bump up the version in `package.json` on `main` - **endgame champion**
+- [ ] [Publish @types/vscode](https://github.com/microsoft/vscode/wiki/Publish-vscode-types) **endgame champion**
