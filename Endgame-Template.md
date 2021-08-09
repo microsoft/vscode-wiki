@@ -169,7 +169,7 @@
 - [ ] Create an official release **endgame champion**
   - [ ] Create a tag: `git tag <x.y.z>`
   - [ ] Push the tag: `git push origin <x.y.z>`
-  - [ ] Create a GitHub release: [Open the GitHub tags](https://github.com/microsoft/vscode/tags), and click far right `... > Create Release`. Use the correct title and description from our release notes. [Example](https://github.com/microsoft/vscode/releases/tag/1.39.0)
+  - [ ] Create a GitHub release: [Open the GitHub tags](https://github.com/microsoft/vscode/tags), and click far right `... > Create Release`. Use the correct title and description from our release notes. Also change the relative links for the key highlight list items to absolute links [Example](https://github.com/microsoft/vscode/releases/tag/1.39.0)
 - [ ] Twitter announcement **@chrisdias**
 - [ ] Enable scheduled `insider` builds **endgame champion**
 - [ ] Bump up the version in `package.json` on `main` - **endgame champion**
