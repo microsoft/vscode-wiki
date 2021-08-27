@@ -28,7 +28,7 @@ It shall contain following:
 Refs: <!-- Refer to the issue that this test plan item is testing. -->
 ```
 
-- Platform assignments mentioning on which platforms this TPI shall be tested. You can pre-assign them to a user you would like to test by adding the user id next to platform. Refer #examples.
+- Platform assignments mentioning on which platforms this TPI shall be tested. You can pre-assign them to a user you would like to test by adding the user id next to platform. Refer to the [examples](#Examples) for how to include this information.
   - macOS
   - windows
   - linux
@@ -50,6 +50,13 @@ Complexity: 4
 ```
 Authors: @user1, @user2
 ```
+
+- If a TPI requires a certain skillset (e.g. the person should be a developer), then you can specify what roles people should hold to work on the TPI. See the [examples](#Examples) no how to format such information.
+  - Content Developer
+  - Designer
+  - Developer
+  - Engineering Manager
+  - Program Manager
 
 ## Examples
 
