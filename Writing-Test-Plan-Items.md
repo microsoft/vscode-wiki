@@ -2,7 +2,7 @@
 
 Test Plan Item (TPI) is an issue created with label `testplan-item` for testing the feature during the endgame. It shall define the platforms it needs to be tested against and also how complex (1-5) it is to test. 
 
-**Note:** A Test Plan Item shall not take too long to test and scoped to a specific feature. Please note that Complexity 5 is not unlimited and there shall be a time scope of one or two hours max of testing. If your Test Plan Item has multiple features to test and also goes beyond complexity 5 and time scope, please break it down into multiple complexity (1-5) test plan items.
+**Note:** A Test Plan Item shall not take too long to test and scoped to a specific feature. Please note that **Complexity 5 is not unlimited and there shall be a time scope of one or two hours max of testing**. If your Test Plan Item has multiple features to test and also goes beyond complexity 5 and time scope, please break it down into multiple complexity (1-5) test plan items.
 
 There is a tool that parses all these TPIs and generates user assignments. Endgame master uses this tool to assign these TPIs to others for testing. A Test Plan Item should contain **Header** and **Body** sections which are separated by `---` (line). Header section shall contain the meta information about the TPI that is used by the tool for generating TPI assignments. Body section shall include testing details for the user to test.
 
