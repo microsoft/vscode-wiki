@@ -236,3 +236,15 @@ Roles: Developer, Engineering Manager
 <!-- Please write your test here. -->
 
 ```
+
+
+## Howto: Testing Proposed and/or Latest API
+
+
+0. Make sure to have `npx`, `yeoman`, and `generator-code` installed
+1. Call `yo code` and create a new TypeScript extension (accept all defaults). You now have the default "Hello World" extension
+2. Open the extension's package.json-file and remove the `@types/vscode` dev-dependency
+3. Delete the `node_modules/@types/vscode`-folder
+4. **Latest API**: Run `cd src && npx vscode-dts main` to fetch latest stable API
+4. **Proposed API**: Run `cd src && npx vscode-dts dev` to fetch `vscode.proposed.d.ts`. Also add `enableProposedApi: true` to the `package.json`-file
+5. Press `F5` to run your extension
