@@ -238,7 +238,7 @@ Roles: Developer, Engineering Manager
 ```
 
 
-## Howto: Testing Proposed and/or Latest API
+### How to: Testing Proposed and/or Latest API
 
 
 0. Make sure to have `npx`, `yeoman`, and `generator-code` installed
