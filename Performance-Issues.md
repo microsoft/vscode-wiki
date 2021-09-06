@@ -5,6 +5,7 @@
   - [Profile the Running Extensions](#profile-running-extensions)
   - [Collect Information about the running VS Code](#collect-information)
   - [The Renderer/Window process consumes a lot of CPU](#renderer-process)
+  - [The Shared process consumes a lot of CPU](#shared-process)
 - [Visual Studio Code starts up slowly](#slow-startup)  
   - [Read the Startup Timers](#startup-timer)
 
@@ -103,10 +104,36 @@ Run VS Code in verbose mode and check whether there is any suspicious output in 
 #### Profiling the Renderer Process
 
 Very detailed information is captured in CPU profiles and that helps us best to narrow down on a slow-down. So, please create a CPU profile of the VS Code core (_renderer_ process) and attach it to the issue. To create a profile:
-  -  Execute "<kbd>F1</kbd> > Toggle Developer Tools." In the overflow menu of the developer tools <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
+  -  Execute "<kbd>F1</kbd> > Toggle Developer Tools." In the overflow menu of the developer tools 
+<img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
+
   - Select 'More Tools > JavaScript Profiler'. In there select start.
   - Let it profile for 30 to 60 seconds, stop it.
   - When the performance issue happens on startup, start the profiler and then reload the window using "<kbd>F1</kbd> > Reload Window."
+  - Save the profile to a file and attach the file to your issue.
+
+<a name="shared-process"/>
+
+### The Shared process consumes a lot of CPU
+
+![shared-process](https://user-images.githubusercontent.com/10746682/132195495-50043d34-b0ee-4301-80fe-1011c0d8bb2a.png)
+
+Try to reproduce the problem on different folders; a folder with less files, or open a single file or open an empty window,
+
+Try to reproduce the issue in the VS Code **Insider** version. This will run our latest code and use a different setup (settings, extensions). You can install the insider version here https://code.visualstudio.com/insiders.
+
+Run VS Code when your settings are reset/empty. Open your settings, copy your customizations and then empty the JSON contents so that only `{}` is left.
+
+Run VS Code in verbose mode and check whether there is any suspicious output in the console or the developer tools. You start VS Code in verbose mode with `code --verbose`. Also, open the DevTools ("Help>Toggle Developer Tools") and open the console there.
+
+#### Profiling the Shared Process
+
+Very detailed information is captured in CPU profiles and that helps us best to narrow down on a slow-down. So, please create a CPU profile of the VS Code core (_shared_ process) and attach it to the issue. To create a profile:
+  -  Execute "<kbd>F1</kbd> > Toggle Shared Process." In the overflow menu of the developer tools 
+<img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
+
+  - Select 'More Tools > JavaScript Profiler'. In there select start.
+  - Let it profile for 30 to 60 seconds, stop it.
   - Save the profile to a file and attach the file to your issue.
 
 <a name="slow-startup"/>
