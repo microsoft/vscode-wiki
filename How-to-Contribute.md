@@ -31,10 +31,12 @@ You'll need the following tools:
 
 				**Note:** Some folks have gotten stuck with the "Visual Studio Build Tools" section saying `Still waiting for installer log file...`. If you are seeing this for a few minutes, try [these workaround steps](https://github.com/felixrieseberg/windows-build-tools/issues/244#issuecomment-824213136).
 
-		- Option 2: Use Visual Studio 2019
-			- Install [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/downloads/)
-			- Select *Desktop Development with C++*
-			- Select *MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.28)* on the right hand side
+		- Option 2: Use Visual Studio 2017 or 2019
+			- If you don't have either installed, install [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/downloads/)
+				- Select *Desktop Development with C++*
+				- Select *MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.28)* on the right hand side
+
+			**Note:** if you installed Visual Studio 2017 or 2019 outside of the default directory, you may need to set the `vs2017_install` or `vs2019_install` environment variable, respectively.
 	- **Restart** your computer
     - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise, it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
@@ -119,7 +121,7 @@ Then you have two options:
 - If you want to build from inside VS Code, you can open the `vscode` folder and start the build task with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> on macOS). The build task will stay running in the background even if you close VS Code. If you happen to close VS Code and open it again, just resume the build by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) again. You can kill it by running the `Kill Build VS Code` task or pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal.
 - If you want to build from a terminal, run `yarn watch`.
 
-The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience. 
+The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience.
 
 **Troubleshooting:**
 
