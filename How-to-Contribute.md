@@ -36,7 +36,7 @@ You'll need the following tools:
 				- Select *Desktop Development with C++*
 				- Select *MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.28)* on the right hand side
 
-			**Note:** if you installed Visual Studio 2017 or 2019 outside of the default directory, you may need to set the `vs2017_install` or `vs2019_install` environment variable, respectively.
+			**Note:** if you installed Visual Studio 2017 or 2019 outside of the default directory, you may need to set the `vs2017_install` or `vs2019_install` environment variable like `set vs2019_install=D:\Microsoft Visual Studio\2019\Professional` for Visual Studio 2019, respectively.
 	- **Restart** your computer
     - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise, it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
