@@ -14,6 +14,10 @@ An easy way to validate whether exclude setttings or ignore files are affecting 
 
 Another thing to watch for is that **it's possible to add a file covered by a `.gitignore` file to git**, and some tools like `git grep` will still search these files. Ripgrep is looking at the `.gitignore` file but doesn't know whether a file has been added to git. So if a file is covered by the `.gitignore` file, it won't be searched, whether or not it's in git.
 
+VS Code also supports searching only in the files that are currently opened as tabs, this mode is controlled by the book icon in the "files to include" input, and a message is shown when this is enabled:
+
+![The book icon controlling whether only open editors are searched](https://user-images.githubusercontent.com/8586769/132784916-880415ce-ff7c-4e13-a50c-58d5ee7bfa49.png)
+
 If your workspace has files with a **non-UTF-8 encoding**, you will need to set the `files.encoding` setting to the correct encoding to search in those files. Note that the `files.autoGuessEncoding` works for the editor, but isn't supported for search.
 
 This is less common, but VS Code doesn't handle files with **CR-only line endings** well. Files that originated on older OS's may use these, and may have missing or inconsistent search results. There is an [open issue](https://github.com/Microsoft/vscode/issues/35797) for this.
