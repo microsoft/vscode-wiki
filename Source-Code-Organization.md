@@ -4,11 +4,11 @@ Visual Studio Code consists of a layered and modular `core` (found as `src/vs`) 
 # Layers
 
 The `core` is partitioned into the following layers:
-- `base`: Provides general utilities and user interface building blocks
-- `platform`: Defines service injection support and the base services for VS Code
-- `editor`: The "Monaco" editor is available as a separate downloadable component
-- ~`languages`: For historical reasons, not all languages are implemented as extensions (yet) - as VS Code evolves we will migrate more languages to towards extensions~
+- `base`: Provides general utilities and user interface building blocks.
+- `platform`: Defines service injection support and the base services for VS Code.
+- `editor`: The "Monaco" editor is available as a separate downloadable component.
 - `workbench`: Hosts the "Monaco" editor and provides the framework for "viewlets" like the Explorer, Status Bar, or Menu Bar, leveraging [Electron](http://electron.atom.io/) to implement the VS Code desktop application.
+- `code`: The entry point to the desktop app that stitches everything together, this includes the Electron main file and the CLI for example.
 
 # Target Environments
 The `core` of VS Code is fully implemented in [TypeScript](https://github.com/microsoft/typescript). Inside each layer the code is organized by the target runtime environment. This ensures that only the runtime specific APIs are used. In the code we distinguish between the following target environments:
