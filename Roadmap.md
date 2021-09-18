@@ -48,15 +48,15 @@ For 2021, we'll particularly focus in the following themes.
 - [ ] Improve VS Code performance in large workspaces
    - [ ] :runner: Investigate 'working sets' of files and folders in the file explorer
    - [ ] Improve Open File / Quick Pick performance
-- [ ] Ensure VS Code loads instantly in the web.
+- [x] Ensure VS Code loads instantly in the web.
 
 
 ## Security
-- [ ] :runner: Trusted workspaces: Ensure it's safe to clone a repo and read the source code without any unauthorized code execution.
+- [x] Trusted workspaces: Ensure it's safe to clone a repo and read the source code without any unauthorized code execution.
 - [ ] :runner: Make VS Code more secure by running renderer processes **without** access to `node` APIs. This is also crucial of the longevity of our platform as it brings our application model closer to the pure web model.
-   - [ ] :runner: Move from `webviews` to `iFrames` (we'll continue to refer to the custom views and editors as being webview-based)
+   - [x] Move from `webviews` to `iFrames` (we'll continue to refer to the custom views and editors as being webview-based)
 - [ ] Add support to allow users to enforce that only select signed extensions are activated / or can be installed.
-- [ ] Ensure all extension code can be signed (needs platform specific extensions)
+- [ ] :runner: Ensure all extension code can be signed (needs platform specific extensions)
 - [ ] Explore sandboxing of extensions in both local and remote scenarios
 
 
@@ -68,7 +68,7 @@ For 2021, we'll particularly focus in the following themes.
    - [ ] Support 'Reopen in Container' leveraging Remote-Container support
 - [ ] Remote-Container
    - [ ] Assist users in installing `Docker` when not yet installed
-   - [ ] Support for untrusted remote-containers
+   - [x] Support for untrusted remote-containers
 - See also _Support browsing and modifying GH repositories_ in the SCM section.
 
 
@@ -78,10 +78,11 @@ For 2021, we'll particularly focus in the following themes.
 - [ ] Review the default values for all settings we ship out-of-the-box
 
 ### UX
-- [ ] :runner: Rethink: "New Untitled File" is a relict from a time when we only supported text files - how much can we do by automatic detection, how much user input do we need
+- [ ] :runner: Investigate how users can express what they want to use VS Code for after they installed it and provide help with setting up their environment: runtime, extensions, settings.
+- [x] Rethink: "New Untitled File" is a relict from a time when we only supported text files - how much can we do by automatic detection, how much user input do we need
 - [ ] Refresh the themes we ship out of the box
 - [ ] Continue to incrementally improve presentation and behavior across the board. Examples include:
-   - [ ] :runner: Welcome page
+   - [x] Welcome page
    - [ ] :runner: Harmonize hovers, completion items, completion item details
    - [ ] Command palette touch-ups
 - [ ] :runner: Revisit/review the first run experience for VS Code as well as newly installed extensions. For example, we want to reduce the number of notifications and allow extensions to integrate their welcome screens into the workbench's welcome page that are shown.
@@ -90,48 +91,50 @@ For 2021, we'll particularly focus in the following themes.
 ### Workbench
 - [ ] Workbench layout
    - [ ] Support for detachable workbench parts is our most upvoted [feature request](https://github.com/Microsoft/vscode/issues/10121) which due to [architectural issues](https://github.com/Microsoft/vscode/issues/10121#issuecomment-345497635) is challenging to implement. We will explore how we can work around this limitation. This investigation will focus on detaching terminals (2nd most upvoted feature request) and editors.
+   - [ ] :runner: Support a more flexible workbench layout such as allow sidebars on the left and the right. For example, you could have your outline on the right and the file explorer on the left.
 - [ ] Support to configure the workbench (also see https://github.com/microsoft/vscode/issues/115641)
    - [ ] Workbench font and font size
    - [ ] Workbench display density (small versus large buttons, compact activity bar)
    - [ ] Broaden support to customize the UI, e.g. configure available actions in the menu bar, context menus, toolbars. Investigate Bartender like support. 
    - [ ] Introduce profiles describing appearance (and behavior) or the workbench (and extensions); related to _Sets of Settings_, maybe it's the same, we don't know yet; Examples: Text editor profile, IDE profile, Student profile
 - [ ] Explore to enable users (or the workbench on the user's behalf) to manage notifications
-- [ ] :runner: Improve handling opening a file when there are multiple editors available, for example, let the user choose on first open
+- [x] Improve handling opening a file when there are multiple editors available, for example, let the user choose on first open
 
 ### API
 - [ ] Clean-out or finalize APIs that have been in proposed mode for quite some time such as Search
 - [ ] Improve custom editors and custom views
-   - [ ] :runner: Improve data transfer between webviews and the extension host
-   - [ ] Support web-workers in webviews
-- [ ] Our API provides access to open text editor, but not notebooks, or custom editors. Extension authors rely on less than optimal workarounds.
+   - [x] Improve data transfer between webviews and the extension host
+   - [ ] :runner: Support web-workers in webviews
+- [ ] :runner: Our API provides access to open text editor, but not notebooks, or custom editors. Extension authors rely on less than optimal workarounds.
 - [ ] Enrich tree views to lower the need to implement a custom webview-based view (model-based search/filtering, inline editing, help text, large buttons, drag&drop, checkboxes)
 
 ### Settings
+- [ ] :runner: Provide high-fidelity support for additional settings types, such as colors.
 - [ ] Provide a simplified theme customization support ("define 6 base colors")
-- [ ] Provide extensions more control over the sequence and grouping of their settings in the settings editor, e.g., support to group *commonly used* settings.
-- [ ] Support private workspace settings
+- [x] Provide extensions more control over the sequence and grouping of their settings in the settings editor, e.g., support to group *commonly used* settings.
+- [x] Support private workspace settings
 - [ ] Support Sets of Settings/extensions users can switch between (e.g. note taking, java dev, react app); related to _Workspace Profiles_ (maybe it's the same, we don't know yet)
 
 ### Editor
 - [ ] Expand 'inline' experiences
-   - [ ] :runner: Inline values (on by default, see debugging)
-   - [ ] Inline type hints (see language section)
+   - [x] Inline values (on by default, see debugging)
+   - [x] Inline type hints (see language section)
 - [ ] Spell-checking as a driver for improving how a user interacts with diagnostics. Spelling errors are frequent and frequently on the same line. Going through the quick-fix is not sufficiently fluent. Outlook, for example, uses a single-click.
 
 ### Notebooks
 - [ ] :runner: Achieve feature parity with regular text editors: minimap, scrollbar markers, find across inputs and output
 - [ ] :runner: Public notebook API and allow dedicated notebook extensions in the VS Code marketplace; extension recommendations
 - [ ] Extend language servers to natively support notebooks
-- [ ] Explore improved debugging of notebook cell execution
+- [ ] :runner: Explore improved debugging of notebook cell execution
 - [ ] Investigate compliance test suites for notebook providers, renderers
 - [ ] See "Markdown" section for what may apply to markdown cells
 
 ### SCM / Pull Requests
 - [ ] :runner: Investigate synergies between the Core git, GHPRI, and GitLens (implementation sharing, plugin extensibility)
 - [ ] :runner: Bring GitHub closer into the inner loop across VS Code Core, and the GHPRI and GitLens extensions
-   - [ ] :runner: Support browsing and modifying GH repositories without a need to clone the repository or open a codespace
+   - [x] Support browsing and modifying GH repositories without a need to clone the repository or open a codespace
    - [x] Assign from overview editor
-   - [ ] :runner: Support resolving conversations
+   - [x] Support resolving conversations
    - [ ] Filter comments in comment view by resolved status
    - [ ] `@` and `#` completions everywhere including comments
 - [ ] Improve the diff experience
@@ -147,16 +150,16 @@ For 2021, we'll particularly focus in the following themes.
 - [ ] Green threads DAP support
 
 ### Testing
-- [ ] :runner: Provide testing support and help the ecosystem to move over.
+- [x] Provide testing support and help the ecosystem to move over.
 - [ ] :runner: Ensure Testing support scales for mono repos
 - [ ] Explore code coverage support
 
 ### Terminal
-- [ ] :runner: Investigate how to persist local terminal sessions across window reloads and application restarts.
-- [ ] :runner: Investigate improved shell/profile selector (see Windows Terminal for inspiration)
-- [ ] :runner: Use tabs instead of the terminal dropdown
-- [ ] Investigate to "resume" a terminal by deserializing its state rather than replaying raw data events
-- [ ] Investigate to allow terminals in the editor area
+- [x] Investigate how to persist local terminal sessions across window reloads and application restarts.
+- [x] Investigate improved shell/profile selector (see Windows Terminal for inspiration)
+- [x] Use tabs instead of the terminal dropdown
+- [x] Investigate to "resume" a terminal by deserializing its state rather than replaying raw data events
+- [x] Investigate to allow terminals in the editor area
 - [ ] :runner: Provide ongoing improvements to [`xterm.js`](https://github.com/xtermjs/xterm.js) for performance, stability, and maintainability
 - [ ] Explore intellisense-inspired CLI help support in the terminal
 
@@ -168,17 +171,17 @@ For 2021, we'll particularly focus in the following themes.
    - [ ] :runner: Provide an integrated 'Welcome' experience for extensions.
    - [ ] :runner: Investigate how to effectively inform users about new features provided by an extension update.
    - [ ] Extend our development tooling:
-      - [ ] Support for web worker extensions
-      - [ ] Improve testing (unit testing and Playwright)
+      - [ ] :runner: Support for web worker extensions
+      - [ ] :runner: Improve testing (unit testing and Playwright)
    - [ ] Extend our extension guidelines to not only cover UX, but also performance
    - [ ] Allow extension authors to integrate GH Sponsor information
    - [ ] Revisit the format of our extension author community call
 
 
 - Extension Publishing (See _Security_)
-   - [ ] Support for platform specific flavors of extensions.
+   - [x] Support for platform specific flavors of extensions.
    - [ ] Support publishing of signed extensions.
-   - [ ] Add support for verified publishers.
+   - [ ] :runner: Add support for verified publishers.
 
 
 ### Serviceability
@@ -194,9 +197,12 @@ For 2021, we'll particularly focus in the following themes.
 We will continue to collaborate deeply with the TypeScript. See also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap).
 - [ ] Adopt LSP for TS
 - [ ] :runner: Inline type hints
-- [ ] Explore supporting multiple files/libraries in the Web Worker based language service
+- [ ] :runner: Explore supporting multiple files/libraries in the Web Worker based language service
 - [ ] Explore support for TS notebooks: This allows us to drive the LSP/notebook discussions.
 
+
+### HTML/CSS
+- [x] :runner: Provide an integrated live preview.
 
 ### Markdown
 - [ ] Improve support for images (paste images, preview images on hover, etc.)
@@ -216,9 +222,9 @@ We will continue to collaborate deeply with the TypeScript. See also the [TypeSc
 - [ ] :runner: [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 - [ ] :runner: [Markdown customization extensions](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview)
 
-We will investigate into improving the performance of popular extensions that not performing as well as users expect
-- [ ] [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
-- [ ] [VIM](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+We will investigate into improving the performance of popular extensions that are not performing as well as users expect
+- [x] [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+- [ ] :runner: [VIM](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 
 ## Install / Update
@@ -227,12 +233,13 @@ We will investigate into improving the performance of popular extensions that no
 
 
 ## Engineering
+- [ ] :runner: Invest into a unified, improved and fast file watching
 - [ ] :runner: Improve our GitHub issue bots, examples:
-   - [ ] :runner: reject invalid incoming issues automatically
+   - [x] reject invalid incoming issues automatically
    - [ ] :runner: automate training of our classification bot
-   - [ ] :runner: detect issues of limited use that 'need more information' automatically
+   - [x] detect issues of limited use that 'need more information' automatically
 - [ ] :runner: Adopt a safe supply chain
-- [ ] :runner: Explore improving the build time by using [esbuild](https://github.com/evanw/esbuild) (requires AMD support) - ensure we don't lose our ability to use with the latest TS RC
+- [x] Explore improving the build time by using [esbuild](https://github.com/evanw/esbuild) (requires AMD support) - ensure we don't lose our ability to use with the latest TS RC
 
 
 ## Website 
