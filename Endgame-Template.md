@@ -9,7 +9,7 @@
 - [ ] Ensure we have a green build on all platforms at 5pm PT
 - [ ] Create test plan items following the template [here](https://github.com/microsoft/vscode/wiki/Writing-Test-Plan-Items) by 6pm PT
 - [ ] Add verification-needed label to [features needed testing and are not tested by TPIs](https://github.com/microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Afeature-request+is%3Aclosed+-label%3Aon-testplan+-label%3Averification-needed+).
-- [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/testers
+- [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/testers **team**
   - [ ] Update availability of testers in vacation. Double check N/A testers. **endgame champion**
 
 
