@@ -6,6 +6,7 @@
   - [Collect Information about the running VS Code](#collect-information)
   - [The Renderer/Window process consumes a lot of CPU](#renderer-process)
   - [The Shared process consumes a lot of CPU](#shared-process)
+- [Visual Studio Code is sluggish](#sluggish-ui)
 - [Visual Studio Code starts up slowly](#slow-startup)  
   - [Read the Startup Timers](#startup-timer)
 
@@ -135,6 +136,17 @@ Very detailed information is captured in CPU profiles and that helps us best to 
   - Select 'More Tools > JavaScript Profiler'. In there select start.
   - Let it profile for 30 to 60 seconds, stop it.
   - Save the profile to a file and attach the file to your issue.
+
+<a name="sluggish-ui"/>
+
+## Visual Studio Code is sluggish
+
+If VS Code is slugging when scrolling, moving mouse or typing, please create a performance profile. Do the following
+  - Select 'More Tools > Performance'. In there click the record button.
+  - Scroll, type or any operation leads to the slowness of the UI
+  - Let it profile for 30 to 60 seconds, stop it.
+  - Save the profile to a file and attach the file to your issue.
+
 
 <a name="slow-startup"/>
 
