@@ -3,6 +3,7 @@
 - *Month/Day* Expected release date (this may change)
 
 ##### Monday
+- [ ] Check that all queries in this issue use the current milestone **endgame champion**
 - [ ] Run [OSS tool](https://github.com/microsoft/vscode-build-tools/tree/main/distro-tools) **endgame champion**
 - [ ] Update links in Endgame issue and Endgame notebooks to point to new milestone **endgame champion**
 - [ ] Code freeze at 5pm PT
