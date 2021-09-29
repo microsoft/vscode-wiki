@@ -67,6 +67,7 @@
   - [ ] @isidorn
   - [ ] @JacksonKearl
   - [ ] @joaomoreno
+  - [ ] @joyceerhl
   - [ ] @jrieken
   - [ ] @kieferrm
   - [ ] @lramos15
@@ -116,6 +117,7 @@
   - [ ] @isidorn
   - [ ] @JacksonKearl
   - [ ] @joaomoreno
+  - [ ] @joyceerhl
   - [ ] @jrieken
   - [ ] @kieferrm
   - [ ] @lramos15
