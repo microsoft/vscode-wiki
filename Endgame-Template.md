@@ -48,7 +48,7 @@
   - [ ] debug adapter protocol **@weinand**
   - [ ] custom data for html/css **@aeschli**
 - [ ] All issues [🔖verified](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22September+2021%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug++repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+repo%3Amicrosoft%2Fvscode-jupyter+repo%3Amicrosoft%2Fvscode-python)
-- [ ] Branch code to `release/<x.y>` **endgame champion**
+- [ ] Branch code to `release/<x.y>` at 5pm PST **endgame champion**
 - [ ] Announce `main` is open for business **endgame champion**
 - [ ] Fixing (scrutiny sets in once branched - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] All release notes updated
