@@ -31,7 +31,8 @@
 - [ ] [🔖Verification needed](https://github.com/issues?q=is%3Aissue+is%3Aclosed+milestone%3A%22September+2021%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+repo%3Amicrosoft%2Fvscode-jupyter+repo%3Amicrosoft%2Fvscode-python+repo%3Amicrosoft%2Fvscode-jupyter-internal)
 
 ##### Thursday
-- [ ] Fixing (self-assigned, milestone assigned, NO discussion during standup)
+- [ ] Fixing (self-assigned, milestone assigned, no need for PR or review)
+  - Increased scrutiny sets in due to testing being completed. Fixes pose a much higher risk
   - Move issues to the next month that can be deferred
 - [ ] [🔖Verification needed](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22September+2021%22+label%3Averification-needed+-label%3Averified+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+repo%3Amicrosoft%2Fvscode-jupyter+repo%3Amicrosoft%2Fvscode-python+repo%3Amicrosoft%2Fvscode-jupyter-internal)
 - [ ] [🔖Verification](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22September+2021%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+repo%3Amicrosoft%2Fvscode-python+sort%3Aupdated-asc+)
@@ -48,9 +49,9 @@
   - [ ] debug adapter protocol **@weinand**
   - [ ] custom data for html/css **@aeschli**
 - [ ] All issues [🔖verified](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22September+2021%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug++repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+repo%3Amicrosoft%2Fvscode-jupyter+repo%3Amicrosoft%2Fvscode-python)
-- [ ] Branch code to `release/<x.y>` at 5pm PST **endgame champion**
+- [ ] Branch code to `release/<x.y>` after all expected fixes are in (latest 5PM PST) **endgame champion**
 - [ ] Announce `main` is open for business **endgame champion**
-- [ ] Fixing (scrutiny sets in once branched - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
+- [ ] Fixing (PR + review required once branched - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] All release notes updated
   - release notes are collected in a file named *`v<Major>_<Minor>.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
   - [ ] @aeschli
