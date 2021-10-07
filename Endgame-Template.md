@@ -38,6 +38,7 @@
 - [ ] [🔖Verification](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22September+2021%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-unpkg+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+repo%3Amicrosoft%2Fvscode-python+sort%3Aupdated-asc+)
 
 ##### Friday
+- [ ] Build a stable build to ensure stable build is green **endgame champion**
 - [ ] Pause scheduled `insider` builds **endgame champion**
 - Satellite modules/npm packages ready, version updated, smoke tested
   - [ ] vscode **@eamodio**
@@ -50,6 +51,7 @@
   - [ ] custom data for html/css **@aeschli**
 - [ ] All issues [🔖verified](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22September+2021%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-unpkg+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug++repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+repo%3Amicrosoft%2Fvscode-jupyter+repo%3Amicrosoft%2Fvscode-python)
 - [ ] Branch code to `release/<x.y>` after all expected fixes are in (latest 5PM PST) **endgame champion**
+- [ ] Branch distro to `release/<x.y>` after all expected fixes are in (latest 5PM PST) **endgame champion**
 - [ ] Announce `main` is open for business **endgame champion**
 - [ ] Fixing (PR + review required once branched - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] All release notes updated
