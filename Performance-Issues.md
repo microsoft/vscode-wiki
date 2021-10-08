@@ -46,7 +46,7 @@ If you cannot reproduce the issue when **all** extensions are disabled, then can
 
 ![image](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png)
 
-Once you found the extension, please file an issue against the extension. To file an issue against an extension open the Running Extensions editor `Developer: Show Running Extensions` and use the `Report Issue` button or find the extension in the marketplace, and use the `Issues` link in the `Resources` section.
+Once you found the extension, please file an issue against the extension. To file an issue against an extension open the Running Extensions editor by executing "<kbd>F1</kbd> > Developer: Show Running Extensions" and use the `Report Issue` button or find the extension in the marketplace, and use the `Issues` link in the `Resources` section.
 
 <a name="profile-running-extensions"/>
 
@@ -54,7 +54,7 @@ Once you found the extension, please file an issue against the extension. To fil
 
 You can create a CPU profile and share it in the issue with the extension author or us. To create a CPU profile:
 - Close all instances of VSCode and start with `code --inspect-extensions=9993` or any other port number.
-- Execute the `Developer: Show Running Extensions` Command. This command opens an editor with all the running extensions.
+- Execute "<kbd>F1</kbd> > Developer: Show Running Extensions." This command opens an editor with all the running extensions.
 - To start recording a profile click the run control in the editor's title bar:
 
 ![image](https://user-images.githubusercontent.com/172399/33882668-212c793c-df39-11e7-9844-6e2f4abf194f.png)
