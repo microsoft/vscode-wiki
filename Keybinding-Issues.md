@@ -51,7 +51,8 @@ The first keydown event is for the `MetaLeft` key (`cmd`) and cannot be dispatch
     * **solution 2**: Define your own custom keybindings based on scan codes. e.g. `"key": "ctrl+[Backquote]"` will always be the same physical key irrespective of keyboard layouts.
     * **explanation**: VS Code on Linux **does not** detect switching the keyboard layout. We have an [open feature request and a PR is welcome - #23690](https://github.com/Microsoft/vscode/issues/23690)
 
-  * Are you on CentOS or ArchLinux or perhaps on Ubuntu with KDE?
+  * Are you using multiple keyboard layouts?
+    * **NOTE**: this will be fixed starting with VS Code 1.62.0 and the fix will be available in Insiders starting Oct 13th 2021.
     * **symptoms**: VS Code keybindings reflect a keyboard layout that I have installed, but not the active one.
     * **solution 1**: make sure `setxkbmap -query` returns as the first keyboard layout the one you want to work with in VS Code.
     * **solution 2**: use `"keyboard.dispatch": "keyCode"` in your settings and restart VS Code. This will prevent VS Code from trying to determine your keyboard layout whatsoever.
