@@ -49,7 +49,22 @@ If for some reason you're unable to restart VS Code like you're running in a rem
 
 ### Enabling escape sequence logging
 
-For issues where text is misbehaving in the terminal you can enable logging of the data being sent to the emulator from the shell process. To enable escape sequence logging run the "Terminal: Toggle Escape Sequence Logging" command from the command palette (<kbd>F1</kbd>), the logs can then be viewed in the devtools console (Help &gt; Toggle Developer Tools).
+For issues where text is misbehaving in the terminal you can enable logging of the data being sent to/from the terminal emulator and the shell process. To enable escape sequence logging run the "Terminal: Toggle Escape Sequence Logging" command from the command palette (<kbd>F1</kbd>), the logs can then be viewed in the devtools console (Help &gt; Toggle Developer Tools).
+
+### Using showkey to investigate keybinding issues
+
+There is a utility called `showkey` which will print the character codes as received by the application, this is similar to escape sequence logging above but's evaluated on the process side. Install `showkey` by installing the `kbd` package on Linux or `showkey` on homebrew, for example:
+
+```
+sudo apt update
+sudo apt install kbd
+showkey -a
+```
+
+```
+brew install showkey
+showkey -a
+```
 
 ### Rendering problems
 
