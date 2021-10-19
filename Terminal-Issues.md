@@ -81,3 +81,11 @@ Known rendering problems:
 - Corrupt texture showing after resuming OS from sleep [#69665](https://github.com/microsoft/vscode/issues/69665)
 - Underscore and similar chars not showing up [#35901](https://github.com/microsoft/vscode/issues/35901)
 - Characters become small or large after changing monitor DPI [xtermjs/xterm.js#2137](https://github.com/xtermjs/xterm.js/issues/2137)
+
+### Why did you close my issue?
+
+We get _a lot_ of issues and have to split our time between responding to and issues and actually improving the product. Because of this, we have a pretty high bar on issue quality and reproducibility, if we can't reproduce the issue we may have to close it off since we cannot action it.
+
+Similarly, we depend on several upstream components and may close an issue off if the problem is likely related to one of those. The primary example of this is "conpty" which is a dependency built by the Windows Terminal team and shipped as part of Windows. This is a much better situation than earlier as there is a team of experts focusing on Windows Terminal and its backend conpty, but they also bundle the latest version of conpty which we may get a year later when a Windows update ships. So we may close your issue as a conpty issue, even though it works fine in Windows Terminal because it's most likely fixed in a later version of Windows.
+
+Whether we can action the issue is the main reason we close issues off but we may also close an issue as designed or out of scope. You can visit [issue grooming](https://github.com/microsoft/vscode/wiki/Issue-Grooming) for more info on how we manage and triage issues.
