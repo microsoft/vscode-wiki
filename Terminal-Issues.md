@@ -29,6 +29,7 @@ Here are some long standing known issues in the terminal:
 - Characters like underscore are being cut off [#35901](https://github.com/Microsoft/vscode/issues/35901)
   - Try changing the `terminal.integrated.fontFamily`
 - Emojis are printed as double width but are single width [xtermjs/xterm.js#1059](https://github.com/xtermjs/xterm.js/issues/1059)
+- Non-English characters duplicated on Windows [#132715](https://github.com/microsoft/vscode/issues/132715)
 
 ### Which issues go in which repos
 
