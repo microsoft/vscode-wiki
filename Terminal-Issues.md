@@ -71,7 +71,7 @@ showkey -a
 Figuring out what's going on with rendering can be tricky as there are a lot of moving parts. A blank screen could mean that the terminal was never created properly and the terminal is fine, or maybe that the renderer is broken. Here are good steps to help find the root cause of rendering problems:
 
 - Zoom in and out (ctrl/cmd++, ctrl/cmd+-) will force the renderer to redraw everything
-- The terminal features both a webgl, 2d canvas and dom-based renderer. Changing the renderer type can identify issues with a particular renderer, you can turn off the canvas renderers with this setting:
+- The terminal features webgl, 2d canvas and dom-based renderers. Changing the renderer type can identify issues with a particular renderer, you can turn off the canvas renderers with this setting:
    ```
    "terminal.integrated.gpuAcceleration": "off"
    ```
