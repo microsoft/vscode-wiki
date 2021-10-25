@@ -83,7 +83,11 @@ Known rendering problems:
 - Underscore and similar chars not showing up [#35901](https://github.com/microsoft/vscode/issues/35901)
 - Characters become small or large after changing monitor DPI [xtermjs/xterm.js#2137](https://github.com/xtermjs/xterm.js/issues/2137)
 
-### Why did you close my issue?
+### Investigating wrapping problems
+
+Sometimes terminal wrapping doesn't work as expected, for example a line that is expected to wrap will start overwriting the first part of the wrapped line. This type of problem is typically related to the backend and frontend's column count differing. You can get the frontend's column count by counting the number of cells in a line, for the backend `stty -a | grep columns` should tell you.
+
+## Why did you close my issue?
 
 We get _a lot_ of issues and have to split our time between responding to and issues and actually improving the product. Because of this, we have a pretty high bar on issue quality and reproducibility, if we can't reproduce the issue we may have to close it off since we cannot action it.
 
