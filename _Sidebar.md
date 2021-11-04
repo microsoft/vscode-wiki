@@ -29,7 +29,6 @@
 * [[Coding Guidelines]]
 * [[Smoke Test]]
 * [[Contributor License Agreement]]
-* [Requested Extensions](https://github.com/Microsoft/vscode/wiki/Requested-Extensions)
 * [[Extension API Guidelines]]
 
 **Documentation**
