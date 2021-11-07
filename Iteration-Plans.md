@@ -1,3 +1,7 @@
+### November 2021
+* [Iteration Plan](https://github.com/microsoft/vscode/issues/136630)
+* [Endgame](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aendgame-plan+milestone%3A%22November+2021%22)
+
 ### October 2021
 * [Iteration Plan](https://github.com/microsoft/vscode/issues/134730)
 * [Endgame](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aendgame-plan+milestone%3A%22October+2021%22)
