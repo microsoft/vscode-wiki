@@ -175,7 +175,7 @@
 - [ ] Publish website **@gregvanl**
 - [ ] Publish to stable **endgame champion**
 - [ ] Create an official release **endgame champion**
-  - [ ] Create a tag: `git tag <x.y.z>`
+  - [ ] Create a tag (make sure you pull the release branch first): `git tag <x.y.z>`
   - [ ] Push the tag: `git push origin <x.y.z>`
   - [ ] Create a GitHub release: [Open the GitHub tags](https://github.com/microsoft/vscode/tags), and click far right `... > Create Release`. Use the correct title and description from our release notes. Also change the relative links for the key highlight list items to absolute links [Example](https://github.com/microsoft/vscode/releases/tag/1.39.0)
 - [ ] Twitter announcement **@chrisdias**
