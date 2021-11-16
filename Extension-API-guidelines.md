@@ -112,7 +112,7 @@ We add JSDoc for all parts of the API. The doc is supported by markdown syntax. 
 - If adding a new parameter to an existing function, use `?` as this allows the new signature to be backwards compatible with the old version.
 - Do not add an overload to add an optional parameter to the end of the function. Instead use `?`.
 
-# Optional properties
+# Optional properties (`?` vs `| undefined`)
 
 - Do not write code that treats the absence of a property differently than a property being present but set to `undefined`
     - This can sometimes hit you on spreads or iterating through objects, so just something to be aware of
