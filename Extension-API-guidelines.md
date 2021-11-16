@@ -103,3 +103,29 @@ The default value of an optional, boolean property is `false`. This is for consi
 JSDOC
 -
 We add JSDoc for all parts of the API. The doc is supported by markdown syntax. When document string-datatypes that end up in the UI, use the phrase ‘Human-readable string…’
+
+# Optional parameters (`?` vs `| undefined`)
+- For implementation, treat omitting a parameter with `?` the same as explicitly passing in `undefined`
+- Use `| undefined` when you want to callers to always have to consider the parameter. 
+- Use `?` when you want to allow callers to omit the parameter. 
+- Never use `?` and `| undefined` on a parameter. Instead follow the two rules above to decide which version to use .
+- If adding a new parameter to an existing function, use `?` as this allows the new signature to be backwards compatible with the old version.
+- Do not add an overload to add an optional parameter to the end of the function. Instead use `?`.
+
+# Optional properties
+
+- Do not write code that treats the absence of a property differently than a property being present but set to `undefined`
+    - This can sometimes hit you on spreads or iterating through objects, so just something to be aware of
+
+- For readonly properties on interfaces that VS Code exposes to extensions (this include managed objects, as well as the objects passed to events):
+    - Use `| undefined` as this makes it clear the property exists but has the value `undefined`. 
+  
+- For readonly properties on options bag type objects passed from extensions to VS Code:
+    -  Use `?` when it is ok to omit the property
+    - Use `| undefined` when you want the user to have to pass in the property but `undefined` signals that you will fall back to some default
+    - Try to avoid  `?` + `| undefined` in most cases. Instead use `?`. Using both `?` + `| undefined` isn't wrong, but it's often more clear to treat omitting the property as falling back to the default rather than passing in `undefined`
+
+- For unmanaged, writable objects:
+     - If using `?`, always also add `| undefined` unless want to allow the property to be omitted during initialization, but never allow users to explicitly set it to `undefined` afterwards. I don't think we have many cases where this will be needed
+          - In these cases, you may want to try changing the api to avoid this potential confusion
+     - If adding a new property to an unmanaged object, use `?` as this ensures the type is backwards compatible with the old version
