@@ -16,31 +16,14 @@ You'll need the following tools:
   - **Note:** Python will be automatically installed for Windows users through installing `windows-build-tools` npm module (see below)
 - A C/C++ compiler tool chain for your platform:
   - **Windows**
-    - Set a `PYTHON` environment variable pointing to your `python.exe`. E.g.: `C:\Python\python.exe`
-	- Install a compiler for the native modules VS Code depends on
-		- Option 1 (recommended): Use Windows Build Tools npm module
-			- Start Powershell as Administrator and install [Windows Build Tools npm module](https://github.com/felixrieseberg/windows-build-tools) ([documentation](https://github.com/felixrieseberg/windows-build-tools#visual-studio-2017-vs-visual-studio-2015)).
-
-				**Note:** If you get _The build tools for v141 (Platform Toolset = 'v141') cannot be found_ when you run `yarn` later, you might need to delete `VCTargetsPath` from your environment variables before installing.
-				```
-				npm install --global windows-build-tools --vs2017
-				```
-				**Note:** The `--debug` flag is helpful if you encounter any problems during installation.
-
-				**Note:** if you have installed a previous version of the build tools using the `--vs2015` flag you need to uninstall the build tools first using `npm uninstall global windows-build-tools` and the Windows Control Panel to uninstall the binaries.
-
-				**Note:** Some folks have gotten stuck with the "Visual Studio Build Tools" section saying `Still waiting for installer log file...`. If you are seeing this for a few minutes, try [these workaround steps](https://github.com/felixrieseberg/windows-build-tools/issues/244#issuecomment-824213136).
-
-		- Option 2: Use Visual Studio 2017 or 2019
-			- If you don't have either installed, install [Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/downloads/)
-				- Select *Desktop Development with C++*
-				- Select *MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.28)* on the right hand side
-
-			**Note:** if you installed Visual Studio 2017 or 2019 outside of the default directory, you may need to set the `vs2017_install` or `vs2019_install` environment variable like `set vs2019_install=D:\Microsoft Visual Studio\2019\Professional` for Visual Studio 2019, respectively.
-	- **Restart** your computer
+    - Install the Windows Build Tools:
+      - if you install Node on your system using the Node installer from the [Node.JS](https://nodejs.org/en/download/) page then ensure that you have installed the 'Tools for Native Modules'. Everything should work out of the box then.
+      - if you use a node version manager like [nvm](https://github.com/coreybutler/nvm-windows) or [nvs](https://github.com/jasongin/nvs) then follow these steps:
+        - Install the current version of Python using the [Microsoft Store Package](https://docs.python.org/3/using/windows.html#the-microsoft-store-package).
+        - Install the Visual C++ Build Environment by either installing the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) or the [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community). The minimum workload to install is 'Desktop Development with C++'.
+    - open a command prompt and run `npm config set msvs_version 2019`
     - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise, it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
-
   - **Windows WSL2**: https://github.com/microsoft/vscode/wiki/Selfhosting-on-Windows-WSL
   - **macOS**
     - [Xcode](https://developer.apple.com/xcode/downloads/) and the Command Line Tools, which will install `gcc` and the related toolchain containing `make`
