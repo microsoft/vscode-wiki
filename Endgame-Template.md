@@ -49,6 +49,7 @@
   - [ ] node debugadapter node **@weinand**
   - [ ] debug adapter protocol **@weinand**
   - [ ] custom data for html/css **@aeschli**
+- [ ] Only candidate issues are open and assigned to [🔖milestone](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+milestone%3A%22September+2021%22+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-remote-repositories-github+repo%3Amicrosoft%2Fvscode-unpkg+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug)
 - [ ] All issues [🔖verified](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22September+2021%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-remote-repositories-github+repo%3Amicrosoft%2Fvscode-unpkg+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug++repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+repo%3Amicrosoft%2Fvscode-jupyter+repo%3Amicrosoft%2Fvscode-python)
 - [ ] Branch code to `release/<x.y>` after all expected fixes are in (latest 5PM PST) **endgame champion**
 - [ ] Branch distro to `release/<x.y>` after all expected fixes are in (latest 5PM PST) **endgame champion**
