@@ -191,6 +191,7 @@ http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-in
 
 ### Ubuntu
 
+* guide: https://10wontips.blogspot.com/2019/03/typing-in-korean-on-lubuntu-1810.html
 * Follow [this guide](http://ubuntuhandbook.org/index.php/2016/07/2-best-chinese-pinyin-im-ubuntu-16-04/) to install and setup fcitx.
 
 ### Elementary OS
