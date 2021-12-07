@@ -13,3 +13,12 @@ Here are some strategies for dealing with flakiness:
    	test('the flaky test ' + i, async () => { ... });
    }
    ```
+- **Test against the product build**: Some failures may only happen in the product build, not out of sources. Integration and [smoke tests](https://github.com/Microsoft/vscode/blob/main/test/smoke/README.md) can both run against the product build:
+   ```sh
+   # Integration tests
+   export INTEGRATION_TEST_ELECTRON_PATH=<install dir>
+   ./scripts/test-integration.sh --build
+
+   # Smoke tests
+   yarn smoketest --build <install dir>
+   ```
