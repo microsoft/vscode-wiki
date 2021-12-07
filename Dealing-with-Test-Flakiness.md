@@ -22,3 +22,5 @@ Here are some strategies for dealing with flakiness:
    # Smoke tests
    yarn smoketest --build <install dir>
    ```
+- **Check the logs**: Log files (client and server) are available in Azure Pipelines for all tests except the unit tests as artifacts on the build. Look for the "n published" link under Related on the build summary page.
+- **Playback Playwright traces**: Browser smoke tests can be played back on https://trace.playwright.dev/ by downloading the `playwright-trace-*.zip` build artifacts under `logs-<platform>-*` -> `smoke-tests-browser`.
