@@ -65,9 +65,9 @@ For 2021, we'll particularly focus in the following themes.
 - [ ] Investigate client-side caching of file resources (web and desktop) to make working with unreliable connection less dreadful
 - [ ] Remote-SSH 
    - [ ] Prevent server installation on micro-instances
-   - [ ] Support 'Reopen in Container' leveraging Remote-Container support
-- [ ] Remote-Container
-   - [ ] Assist users in installing `Docker` when not yet installed
+   - [x] Support 'Reopen in Container' leveraging Remote-Container support
+- [x] Remote-Container
+   - [x] Assist users in installing `Docker` when not yet installed
    - [x] Support for untrusted remote-containers
 - See also _Support browsing and modifying GH repositories_ in the SCM section.
 
