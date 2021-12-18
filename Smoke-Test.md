@@ -2,7 +2,7 @@ This page describes the VS Code Smoke test, an automatic and a manual test suite
 
 ## Automated Smoke Test
 
-https://github.com/Microsoft/vscode/blob/master/test/smoke/README.md
+https://github.com/Microsoft/vscode/blob/main/test/smoke/README.md
 
 ## Manual Smoke Test
 
