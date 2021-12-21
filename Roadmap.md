@@ -66,7 +66,8 @@ For 2021, we'll particularly focus in the following themes.
 - [ ] Remote-SSH 
    - [ ] Prevent server installation on micro-instances
    - [x] Support 'Reopen in Container' leveraging Remote-Container support
-- [x] Remote-Container
+- [ ] Remote-Container
+   - [ ] :runner: Simplify creating a custom dev container configuration, e.g., 'a la cart consumption of the features in the universal image'
    - [x] Assist users in installing `Docker` when not yet installed
    - [x] Support for untrusted remote-containers
 - See also _Support browsing and modifying GH repositories_ in the SCM section.
@@ -105,6 +106,7 @@ For 2021, we'll particularly focus in the following themes.
 - [ ] Improve custom editors and custom views
    - [x] Improve data transfer between webviews and the extension host
    - [ ] :runner: Support web-workers in webviews
+   - [x] Support a predefined set of webcomponents in webviews 
 - [ ] :runner: Our API provides access to open text editor, but not notebooks, or custom editors. Extension authors rely on less than optimal workarounds.
 - [ ] Enrich tree views to lower the need to implement a custom webview-based view (model-based search/filtering, inline editing, help text, large buttons, drag&drop, checkboxes)
 
@@ -124,10 +126,10 @@ For 2021, we'll particularly focus in the following themes.
 ### Notebooks
 - [ ] :runner: Achieve feature parity with regular text editors: minimap, scrollbar markers, find across inputs and output
 - [ ] :runner: Public notebook API and allow dedicated notebook extensions in the VS Code marketplace; extension recommendations
-- [ ] Extend language servers to natively support notebooks
-- [ ] :runner: Explore improved debugging of notebook cell execution
+- [ ] :runner: Extend language servers to natively support notebooks
+- [x] Explore improved debugging of notebook cell execution
 - [ ] Investigate compliance test suites for notebook providers, renderers
-- [ ] See "Markdown" section for what may apply to markdown cells
+- [ ] :runner: See "Markdown" section for what may apply to markdown cells
 
 ### SCM / Pull Requests
 - [ ] :runner: Investigate synergies between the Core git, GHPRI, and GitLens (implementation sharing, plugin extensibility)
@@ -147,7 +149,7 @@ For 2021, we'll particularly focus in the following themes.
 
 ### Debug Adapter Protocol (DAP)
 - [ ] :runner: Continue to refine and improve the [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol/) with support from the community.
-- [ ] Green threads DAP support
+- [ ] :runner: Green threads DAP support
 
 ### Testing
 - [x] Provide testing support and help the ecosystem to move over.
@@ -171,7 +173,7 @@ For 2021, we'll particularly focus in the following themes.
    - [ ] :runner: Provide an integrated 'Welcome' experience for extensions.
    - [ ] :runner: Investigate how to effectively inform users about new features provided by an extension update.
    - [ ] Extend our development tooling:
-      - [ ] :runner: Support for web worker extensions
+      - [x] Support for web worker extensions
       - [ ] :runner: Improve testing (unit testing and Playwright)
    - [ ] Extend our extension guidelines to not only cover UX, but also performance
    - [ ] Allow extension authors to integrate GH Sponsor information
@@ -181,7 +183,8 @@ For 2021, we'll particularly focus in the following themes.
 - Extension Publishing (See _Security_)
    - [x] Support for platform specific flavors of extensions.
    - [ ] Support publishing of signed extensions.
-   - [ ] :runner: Add support for verified publishers.
+   - [x] Add support for verified publishers.
+   - [x] Add support for insider extensions
 
 
 ### Serviceability
@@ -196,7 +199,7 @@ For 2021, we'll particularly focus in the following themes.
 ### TypeScript
 We will continue to collaborate deeply with the TypeScript. See also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap).
 - [ ] Adopt LSP for TS
-- [ ] :runner: Inline type hints
+- [x] Inline type hints
 - [ ] :runner: Explore supporting multiple files/libraries in the Web Worker based language service
 - [ ] Explore support for TS notebooks: This allows us to drive the LSP/notebook discussions.
 
@@ -217,7 +220,7 @@ We will continue to collaborate deeply with the TypeScript. See also the [TypeSc
 
 
 ## Contributions to VS Code Extensions
-- [ ] :runner: [GitLens extension](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [x] [GitLens extension](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [ ] :runner: [ES Lint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [ ] :runner: [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 - [ ] :runner: [Markdown customization extensions](https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview)
@@ -228,12 +231,14 @@ We will investigate into improving the performance of popular extensions that ar
 
 
 ## Install / Update
+- [x] Make VS Code available in the Widnow Store.
 - [ ] Provide a [MSIX installer](https://docs.microsoft.com/en-us/windows/msix/) on Windows.
 - [ ] Rework our update mechanism based on Chromium's OSS updater; this allows for more incremental updates which helps with slow connections and also makes universal downloads like the one for macOS more acceptable
 
 
 ## Engineering
-- [ ] :runner: Invest into a unified, improved and fast file watching
+- [ ] :runner: Improve our smoke tests and revisit the current approach on how we implement them.
+- [x] Invest into a unified, improved and fast file watching
 - [ ] :runner: Improve our GitHub issue bots, examples:
    - [x] reject invalid incoming issues automatically
    - [ ] :runner: automate training of our classification bot
