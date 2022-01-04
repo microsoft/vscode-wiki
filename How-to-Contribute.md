@@ -171,7 +171,6 @@ VS Code has a multi-process architecture and your code is executed in different 
 The **render** process runs the UI code inside the Shell window. To debug code running in the **render** you can either use VS Code or the Chrome Developer Tools.
 
 #### Using VS Code
-* Install the [Debugger for Chrome](https://marketplace.visualstudio.com/items/msjsdiag.debugger-for-chrome) extension. This extension will let you attach to and debug client side code running in Chrome.
 * Open the `vscode` repository folder
 * Choose the `Launch VS Code` launch configuration from the launch dropdown in the Debug viewlet and press <kbd>F5</kbd>.
 
