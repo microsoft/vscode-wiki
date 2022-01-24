@@ -43,7 +43,6 @@
 - Satellite modules/npm packages ready, version updated, smoke tested
   - [ ] vscode **@eamodio**
   - [ ] yo generator **@aeschli**
-  - [ ] vsce **@joaomoreno**
   - [ ] node debug **@weinand**
   - [ ] js-debug **@connor4312**
   - [ ] node debugadapter node **@weinand**
