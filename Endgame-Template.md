@@ -41,7 +41,6 @@
 - [ ] Build a `stable` build to ensure stable build is green **endgame champion**
 - [ ] Pause scheduled `insider` builds **endgame champion**
 - Satellite modules/npm packages ready, version updated, smoke tested
-  - [ ] vscode **@eamodio**
   - [ ] yo generator **@aeschli**
   - [ ] node debug **@weinand**
   - [ ] js-debug **@connor4312**
@@ -64,7 +63,6 @@
   - [ ] @connor4312
   - [ ] @dbaeumer
   - [ ] @deepak1556
-  - [ ] @eamodio
   - [ ] @egamma
   - [ ] @hediet
   - [ ] @isidorn
@@ -115,7 +113,6 @@
   - [ ] @connor4312
   - [ ] @dbaeumer
   - [ ] @deepak1556
-  - [ ] @eamodio
   - [ ] @egamma
   - [ ] @hediet
   - [ ] @isidorn
