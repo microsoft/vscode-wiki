@@ -8,7 +8,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - Ensure each plan item is linked to a test item
 - Discuss the endgame schedule in Monday's planning call
   - Find an endgame buddy in the other lab
-  - Determine the pool of testers and their availability
+  - Remind people to update their testing availability and platform(s) in the call and release channel
 - Ensure each test item has meaningful content
 - Assign test items to testers (usually platform specific) using the [testplan tool](https://vscode-tools.azurewebsites.net/); ensure fair distribution across testers
 - Communicate test assignments in the `release` Slack channel by posting the test item queries ([example query](https://github.com/Microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22June+2016%22+is%3Aclosed))
