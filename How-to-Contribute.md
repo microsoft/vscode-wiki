@@ -134,13 +134,21 @@ To test the changes, you launch a development version of VS Code on the workspac
 .\scripts\code-cli.bat
 ```
 
-**Web (Chromium, Firefox or Safari only)**
+**Web**
+
+Code for the Web (Extensions run in the browser):
 
 ```bash
-yarn web
+./scripts/code-web.sh|bat
 ```
 
-You can use `--port`, `--host` and `--scheme` to further instruct the simple server that runs for the web version about your environment (e.g. if you want to test the web version over a network).
+👉 Besides `yarn watch` also run `yarn watch-web` to build the web bits for the built-in extensions.
+
+Web with Code Server (Extensions run in code server):
+
+```bash
+./scripts/code-server.sh|bat --launch
+```
 
 You can identify the development version of VS Code ("Code - OSS") by the following icon in the Dock or Taskbar:
 
