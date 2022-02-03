@@ -2,8 +2,8 @@ This page describes the Build Champion role. This is a weekly rotating role.
 
 ## Responsibilities
 
-- Daily: [Triage all failed and partially succeeded builds]
-- At least once during the week: [Review and triage error telemetry]
+- Daily: [Triage all failed and partially succeeded builds](#triage-non-green-builds)
+- At least once during the week: [Review and triage error telemetry](#triage-error-telemetry)
 - On the following Monday: Hand over the role to the next person
 
 ## Triage non-green builds
@@ -20,8 +20,8 @@ Follow this as a rough guide for how to review a build:
 	4. If not, here are some common failure types and how to handle them:
 
 **Test failure:**
-If it looks like the test failed, ping the [owner].
-If it looks like the test flaked, search [GH issues] for the failure (smoke-test-failure, unit-test-failure, etc. labels are useful) and comment on it if found, otherwise create an issue for the [owner]. If you end up seeing the test flake multiple times, you can skip the test and comment on the associated issue.
+If it looks like the test failed, ping the [area owner](#area-owners).
+If it looks like the test flaked, search [GH issues](https://github.com/microsoft/vscode/issues) for the failure (useful queries: [smoke-test-failure](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Asmoke-test-failure), [integration-test-failure](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aintegration-test-failure), [unit-test-failure](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aunit-test-failure)) and comment on it if found, otherwise create an issue for the [area owner](#area-owners). If you end up seeing the test flake multiple times, you can skip the test and comment on the associated issue.
 
 
 **Compile failure:**
@@ -79,7 +79,7 @@ If you're unsure who owns an area, you can roughly determine who an owner is by 
 
 ### Useful links
 
-- https://vscode-errors.azurewebsites.net/
-- ADO VS Code build: https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111
-- ADO VS Code build analytics: https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111&view=ms.vss-pipelineanalytics-web.new-build-definition-pipeline-analytics-view-cardmetrics
-- https://github.com/microsoft/vscode/wiki/Dealing-with-Test-Flakiness
+- [Error telemetry website](https://vscode-errors.azurewebsites.net/)
+- [ADO VS Code build](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
+- [ADO VS Code build analytics](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111&view=ms.vss-pipelineanalytics-web.new-build-definition-pipeline-analytics-view-cardmetrics)
+- [Dealing with test flakiness wiki page](https://github.com/microsoft/vscode/wiki/Dealing-with-Test-Flakiness)
