@@ -1,41 +1,85 @@
 This page describes the Build Champion role. This is a weekly rotating role.
 
-## Daily Goals
+## Responsibilities
 
-[![Build Status](https://dev.azure.com/monacotools/Monaco/_apis/build/status/VS%20Code?branchName=main)](https://dev.azure.com/monacotools/Monaco/_build?definitionId=111&branchFilter=332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332)
+- Daily: [Triage all failed and partially succeeded builds]
+- At least once during the week: [Review and triage error telemetry]
+- On the following Monday: Hand over the role to the next person
 
-1. Make sure [the build](https://dev.azure.com/monacotools/Monaco/_build?definitionId=111&branchFilter=332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332) is green 
-2. Make sure it [releases Insiders](https://dev.azure.com/monacotools/Monaco/_build?definitionId=111&branchFilter=332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332&requestedForFilter=00000002-0000-8888-8000-000000000000) every day
+## Triage non-green builds
+
+We have an internal `#build` channel that a bot posts to with the results of all builds of the `main` branch on ADO. It's important to review all these failures and create issues because ignoring non-green builds ends up causing the build quality to get worse and worse over time, resulting in a loss of trust of tests, multiple retries, waste of engineering resources, etc.
+
+It's expected that the build champion reviews all `failed` and `partiallySucceeded` builds and actions them appropriately at least once per day. The main focus is to triage and route the failure to the right owner and/or create an issue, so that the build continues to be healthy and run smoothly. It is _not_ your job to fix the problem.
+
+Follow this as a rough guide for how to review a build:
+
+	1. Open the "Build" link which will go to GH Actions or ADO
+	2. Click into the failed step and review the failure
+	3. If an issue are already created around this failure, mark the thread with a ✅
+	4. If not, here are some common failure types and how to handle them:
+
+**Test failure:**
+If it looks like the test failed, ping the [owner].
+If it looks like the test flaked, search [GH issues] for the failure (smoke-test-failure, unit-test-failure, etc. labels are useful) and comment on it if found, otherwise create an issue for the [owner]. If you end up seeing the test flake multiple times, you can skip the test and comment on the associated issue.
 
 
-## Process
+**Compile failure:**
+If this was a recent failure and the "Changes" seems relevant, ping the committer.
 
-Given build failures, make sure to pay attention to the [#build Slack channel](https://vscodeteam.slack.com/messages/C1Y427SES). It should notify who's likely responsible.
 
-### Insider build
-[Insiders build](https://dev.azure.com/monacotools/Monaco/_build?definitionId=111&branchFilter=332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332%2C332&requestedForFilter=00000002-0000-8888-8000-000000000000) is scheduled to run every weekday at 5:00 AM UTC. Check the state of the most recent scheduled build, use the steps documented [here](https://github.com/microsoft/vscode/wiki/Build-Champion#troubleshooting-build-failures) to troubleshoot the build failures, and produce a successful build. The goal is to have an Insiders build released every weekday. 
 
-### Troubleshooting build failures
-| Build Error | Troubleshooting Steps |
-|:------------|:----------------------|
-| hygiene/compilation | 1. Push a commit that fixes them and ping the responsible dev. <br> 2. If the fix isn't trivial, bring in the related developer to come up with a fix. |
-| test&nbsp;failures/flaky&nbsp;test | 1. Comment out the test and create an issue for the test owner to fix. Please add one of the following labels depending on the test type: `integration-test-failure`, `smoke-test-failure`, `unit-test-failure`. <br><br>The rule is: _a flaky test is as good as a failing test_. |
-| yarn error | 1. `error Your lockfile needs to be updated, but yarn was run with --frozen-lockfile`. On main branch, pull the latest changes. Run `yarn`. If there are changes to `yarn.lock`, review and push them.|
-| other |   1. Try to reason about the failure, get familiar with the [build infrastructure](https://github.com/microsoft/vscode/tree/main/build/azure-pipelines), and attempt to fix it. <br> 2. Reach out to the previous week's Build Champion, they might know something. <br> 3. Reach out to João/Ladislau. Improve the Build Champion process by documenting whatever they tell you. |
 
-💡 **Note:** After a fix was pushed to address the build failure, manually queue the build.
 
-## FAQ
+## Triage error telemetry
 
-#### What happened to the public DevOps continuous build?
+Our error telemetry captures any uncaught errors thrown in VS Code and presents them in https://vscode-errors.azurewebsites.net/. This website allows us to view errors by each release and they also contain stats on the number of hits and machines that particular error had. Errors typically represent a case that wasn't considered in code, a broken feature and/or a bad error notification presented to the user.
 
-We managed to improve the Product build considerably to the point that it now runs on every push, effectively becoming our continuous build. So we dropped the old continuous build: `https://dev.azure.com/vscode/VSCode`.
+At least one time during the week of being the Build Champion you should triage the errors in the most recent ~3 pages for a recent insiders build as well as the stable build.
 
-Additionally, we have a parallel [public continuous build](https://github.com/microsoft/vscode/actions?query=workflow%3ACI) running on GitHub Actions, which mostly validates PRs.
+Here are some examples of the types of errors you will encounter and how to handle them:
 
-#### How do the builds run?
 
-All our builds run in Azure DevOps and are scripted using YAML build definition files:
+**e is not iterable**
 
-- [DevOps](https://github.com/microsoft/vscode/blob/main/build/azure-pipelines/product-build.yml)
-- [GH Actions](https://github.com/microsoft/vscode/blob/main/.github/workflows/ci.yml) 
+Deminified Stack
+
+```
+TypeError: e is not iterable
+at s in extensions/github/src/util.ts:12:28
+at /extensions/github/dist/extension.js:2:97385
+at u.fire in src/vs/base/common/event.ts:577:16
+at i.deltaExtensions in src/vs/workbench/services/extensions/common/extensionDescriptionRegistry.ts:88:21
+at v.$deltaExtensions in src/vs/workbench/api/common/extHostExtensionService.ts:792:18
+at processTicksAndRejections in internal/process/task_queues.js:93:5
+```
+
+This error looks actionable, you can tell from the paths in the stack trace that the error is within the core github extension, it also looks easily actionable. An issue should be created here (which will mark the error as triaged), and then duplicates that are encountered can also be checked off as triaged.
+
+
+**XHR failed**
+
+Deminified Stack
+
+```
+Error: XHR failed
+at XMLHttpRequest.C.onerror in src/vs/base/parts/request/browser/request.ts:26:29
+```
+
+This error does not look actionable, while we can find where the error is thrown in code, it's unclear why this error is thrown so we would not be able to handle it properly.
+
+
+
+
+## Appendix
+
+### Area owners
+
+If you're unsure who owns an area, you can roughly determine who an owner is by checking the history (git log) of the file it's contained within. Note that sometimes unrelated people perform refactoring or clean ups so look for the most active person and/or the one that is making changes related to that feature/test.
+
+### Useful links
+
+- https://vscode-errors.azurewebsites.net/
+- ADO VS Code build: https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111
+- ADO VS Code build analytics: https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111&view=ms.vss-pipelineanalytics-web.new-build-definition-pipeline-analytics-view-cardmetrics
+- https://github.com/microsoft/vscode/wiki/Dealing-with-Test-Flakiness
