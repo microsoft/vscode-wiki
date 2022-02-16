@@ -73,6 +73,10 @@ The first keydown event is for the `MetaLeft` key (`cmd`) and cannot be dispatch
     * **solution**: use the Keybinding UI or `keybindings.json` file to define a custom keybinding that suits your needs.
     * **explanation**: VS Code does not ship with default keybindings optimized per keyboard layout. For example, <kbd>Ctrl+\`</kbd> cannot be mapped by VS Code automatically to a scan code on the Ukrainian keyboard layout because no modifier + scan code combination produces <kbd>\`</kbd> on the Ukrainian keyboard layout. You can upvote in [issue #1240](https://github.com/Microsoft/vscode/issues/1240).
 
+  * Is <kbd>Ctrl</kbd>+<kbd>.</kbd> inserting a small `e` when running with kde desktop and ibus-daemon?
+    * **symptoms**: pressing <kbd>Ctrl</kbd>+<kbd>.</kbd> inserts a small `e` instead of triggering quick fix.
+    * **solution**: if you disable emoji shortcuts from ibus-daemon (run "ibus-setup" to show ibus preferences), the shortcut for Quick Fix <kbd>Ctrl</kbd>+<kbd>.</kbd> works again. Special thanks to [danjaredg](https://github.com/danjaredg) for [pointing this out](https://github.com/microsoft/vscode/issues/142583)
+
   * Experiencing any other issue?
     * **try**: use `"keyboard.dispatch": "keyCode"` in your settings and restart VS Code.
     * **further troubleshooting**: [Troubleshoot generic keybindings](#troubleshoot-generic-keybindings)
