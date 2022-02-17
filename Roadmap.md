@@ -1,4 +1,4 @@
-# The Visual Studio Code Roadmap 2021
+# The Visual Studio Code Roadmap 2021-2022
 
 Our roadmap typically looks out 12-18 months and we establish topics we want to work on. We don't start with our roadmap on a blank sheet. We develop it based on our [last roadmap](https://github.com/Microsoft/vscode/wiki/Roadmap-2020), the findings we made over the course of the last year, and of course what we heard from you in issues, in face-to-face discussions, stack overflow, and twitter.
 
