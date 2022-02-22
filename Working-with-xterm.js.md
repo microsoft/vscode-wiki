@@ -7,8 +7,8 @@ Check out the [xterm.js contribution documentation](https://github.com/xtermjs/x
 Since bugs and/or features manifest themselves in both VS Code and xterm.js, it's a little unclear initially where the issue(s) should be created. After some experimentation I landed on the best way to deal with this is to create the an issue in both the Microsoft/vscode and xtermjs/xterm.js repositories. The reason this is the best workflow is because the changes will then be verified during endgame and it's much easier to compose release notes for the terminal changes. This guideline is less important for more obscure terminal issues where it's typically easier to keep a single source of truth in the xterm.js repo.
 
 ### Updating `xterm` in vscode via script
-1. Open a terminal on main and run `./update-xterm.ps1` (Windows) or `node ./scripts/update-xterm.js` (Linux/macOS).
-2. Add the changed files and commit with the following message:
+1. Open a terminal in the vscode repo and run `./scripts/update-xterm.ps1` (or `node ./scripts/update-xterm.js`).
+2. Add the changed files, excluding the aforementioned script files, and commit with the following message:
 
 ```
 xterm@x.y.z-betaX

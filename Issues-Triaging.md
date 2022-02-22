@@ -214,7 +214,8 @@ A bot monitors the issues assigned to **`Backlog Candidates`**. If a feature req
 ### Up-voting a Feature Request
 
 When we refer to "up-voting" a feature request, we specifically mean adding a GitHub `+1`/"👍" reaction to the issue description. In the GitHub UI this looks like so:
-<img width="867" alt="GitHub UI for a issue with a +1 reaction" src="https://user-images.githubusercontent.com/8586769/87996982-b0568c80-caa8-11ea-87b8-a01371e6e338.png">
+<img width="945" alt="adding a 👍 reaction to a feature request in the github UI" src="https://user-images.githubusercontent.com/8586769/154747667-737a6d6e-9657-4e01-885b-38150c893971.png">
+
 
 
 ### Won't fix Bugs

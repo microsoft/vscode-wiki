@@ -28,6 +28,7 @@
 * [[Source Code Organization]]
 * [[Coding Guidelines]]
 * [[Smoke Test]]
+* [[Dealing with Test Flakiness]]
 * [[Contributor License Agreement]]
 * [[Extension API Guidelines]]
 

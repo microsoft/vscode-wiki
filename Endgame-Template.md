@@ -5,12 +5,12 @@
 ##### Monday
 - [ ] Check that all queries in this issue use the current milestone **endgame champion**
 - [ ] Run [OSS tool](https://github.com/microsoft/vscode-build-tools/tree/main/distro-tools) **endgame champion**
-- [ ] Update links in Endgame issue and Endgame notebooks to point to new milestone **endgame champion**
+- [ ] Update links in the [Endgame notebooks](https://github.com/microsoft/vscode/blob/main/.vscode/notebooks/endgame.github-issues) to point to new milestone **endgame champion**
 - [ ] Code freeze at 5pm PT
 - [ ] Ensure we have a green build on all platforms at 5pm PT
 - [ ] Create test plan items following the template [here](https://github.com/microsoft/vscode/wiki/Writing-Test-Plan-Items) by 6pm PT
 - [ ] Add verification-needed label to [features needed testing and are not tested by TPIs](https://github.com/microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Afeature-request+is%3Aclosed+-label%3Aon-testplan+-label%3Averification-needed+).
-- [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/testers **team**
+- [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/team-manifest **team**
   - [ ] Update availability of testers in vacation. Double check N/A testers. **endgame champion**
 
 
@@ -41,14 +41,13 @@
 - [ ] Build a `stable` build to ensure stable build is green **endgame champion**
 - [ ] Pause scheduled `insider` builds **endgame champion**
 - Satellite modules/npm packages ready, version updated, smoke tested
-  - [ ] vscode **@eamodio**
   - [ ] yo generator **@aeschli**
-  - [ ] vsce **@joaomoreno**
   - [ ] node debug **@weinand**
   - [ ] js-debug **@connor4312**
   - [ ] node debugadapter node **@weinand**
   - [ ] debug adapter protocol **@weinand**
   - [ ] custom data for html/css **@aeschli**
+- [ ] Only candidate issues are open and assigned to [🔖milestone](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+milestone%3A%22September+2021%22+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-remote-repositories-github+repo%3Amicrosoft%2Fvscode-unpkg+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug)
 - [ ] All issues [🔖verified](https://github.com/issues?q=is%3Aclosed+is%3Aissue+milestone%3A%22September+2021%22+label%3Abug+-label%3Averified+-label%3Aon-testplan+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-remote-repositories-github+repo%3Amicrosoft%2Fvscode-unpkg+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug++repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+repo%3Amicrosoft%2Fvscode-jupyter+repo%3Amicrosoft%2Fvscode-python)
 - [ ] Branch code to `release/<x.y>` after all expected fixes are in (latest 5PM PST) **endgame champion**
 - [ ] Branch distro to `release/<x.y>` after all expected fixes are in (latest 5PM PST) **endgame champion**
@@ -64,7 +63,6 @@
   - [ ] @connor4312
   - [ ] @dbaeumer
   - [ ] @deepak1556
-  - [ ] @eamodio
   - [ ] @egamma
   - [ ] @hediet
   - [ ] @isidorn
@@ -82,6 +80,7 @@
   - [ ] @rzhao271
   - [ ] @sandy081
   - [ ] @sbatten
+  - [ ] @tanhakabir
   - [ ] @tylerleonhardt
   - [ ] @tyriar
   - [ ] @weinand
@@ -114,7 +113,6 @@
   - [ ] @connor4312
   - [ ] @dbaeumer
   - [ ] @deepak1556
-  - [ ] @eamodio
   - [ ] @egamma
   - [ ] @hediet
   - [ ] @isidorn
@@ -174,7 +172,7 @@
 - [ ] Publish website **@gregvanl**
 - [ ] Publish to stable **endgame champion**
 - [ ] Create an official release **endgame champion**
-  - [ ] Create a tag: `git tag <x.y.z>`
+  - [ ] Create a tag (make sure you pull the release branch first): `git tag <x.y.z>`
   - [ ] Push the tag: `git push origin <x.y.z>`
   - [ ] Create a GitHub release: [Open the GitHub tags](https://github.com/microsoft/vscode/tags), and click far right `... > Create Release`. Use the correct title and description from our release notes. Also change the relative links for the key highlight list items to absolute links [Example](https://github.com/microsoft/vscode/releases/tag/1.39.0)
 - [ ] Twitter announcement **@chrisdias**
