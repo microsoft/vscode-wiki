@@ -35,7 +35,7 @@ If this was a recent failure and the "Changes" seems relevant, ping the committe
 
 Our error telemetry captures any uncaught errors thrown in VS Code and presents them in https://vscode-errors.azurewebsites.net/. This website allows us to view errors by each release and they also contain stats on the number of hits and machines that particular error had. Errors typically represent a case that wasn't considered in code, a broken feature and/or a bad error notification presented to the user.
 
-At least one time during the week of being the Build Champion you should triage the errors in the most recent ~3 pages for a recent insiders build as well as the stable build.
+At least one time during the week of being the Build Champion you should triage the errors in **the most recent ~3 pages** for a recent insiders build as well as the stable build.
 
 Here are some examples of the types of errors you will encounter and how to handle them:
 
