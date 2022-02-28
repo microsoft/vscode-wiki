@@ -8,24 +8,26 @@ This page describes the Build Champion role. This is a weekly rotating role.
 
 ## Triage non-green builds
 
+👉 The main role of the build champ is to ensure our build remains trusted by driving down flakiness and to reduce team randomization.
+
 We have an internal `#build` channel that a bot posts to with the results of all builds of the `main` branch on ADO. It's important to review all these failures and create issues because ignoring non-green builds ends up causing the build quality to get worse and worse over time, resulting in a loss of trust of tests, multiple retries, waste of engineering resources, etc.
 
-It's expected that the build champion reviews all `failed` and `partiallySucceeded` builds and actions them appropriately at least once per day. The main focus is to triage and route the failure to the right owner and/or create an issue, so that the build continues to be healthy and run smoothly. It is _not_ your job to fix the problem.
+It's expected that the build champion reviews all `failed` and `partiallySucceeded` builds and actions them appropriately at least once per day. The main focus is to triage and route the failure to the right owner and/or create an issue, so that the build continues to be healthy and run smoothly. **It is _not_ your job to fix the problem unless you own the area.**
 
 Follow this as a rough guide for how to review a build:
 
 	1. Open the "Build" link which will go to GH Actions or ADO
 	2. Click into the failed step and review the failure
-	3. If an issue are already created around this failure, mark the thread with a ✅
+	3. If an issue is already created for this failure, mark the thread with a ✅
 	4. If not, here are some common failure types and how to handle them:
 
 **Test failure:**
-If it looks like the test failed, ping the [area owner](#area-owners).
+If it looks like the test failed because of the linked change, ping the [area owner](#area-owners).
 If it looks like the test flaked, search [GH issues](https://github.com/microsoft/vscode/issues) for the failure (useful queries: [smoke-test-failure](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Asmoke-test-failure), [integration-test-failure](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aintegration-test-failure), [unit-test-failure](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aunit-test-failure)) and comment on it if found, otherwise create an issue for the [area owner](#area-owners). If you end up seeing the test flake multiple times, you can skip the test and comment on the associated issue.
 
 
 **Compile failure:**
-If this was a recent failure and the "Changes" seems relevant, ping the committer.
+If this was a recent failure and the "Changes" seems relevant, ping the committer if they have not yet commented.
 
 
 
