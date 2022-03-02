@@ -133,7 +133,7 @@
   - [ ] @tylerleonhardt
   - [ ] @tyriar
   - [ ] @weinand
-- [ ] Run `scripts/test-documentation.sh|bat` and add file or fix issues if there are new colors that are not documented.
+- [ ] Run `scripts/test-documentation.sh|bat` and add file or fix issues if there are new colors that are not documented. **endgame champion**
 
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame. **endgame champion**
 
