@@ -24,6 +24,7 @@
   * [[Native Crash Issues]]
   * [[Search Issues]]
   * [[Terminal Issues]]
+  * [[File Watcher Issues]]
 * [[Feedback Channels]]
 * [[Source Code Organization]]
 * [[Coding Guidelines]]
