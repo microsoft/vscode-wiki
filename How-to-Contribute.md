@@ -7,18 +7,6 @@ After cloning and building the repo, check out the [issues list](https://github.
 
 In order to download necessary tools, clone the repository, and install dependencies via `yarn`, you need network access.
 
-### Windows 10/11
-
-```
-winget install OpenJS.NodeJS -v 14.14.0
-winget install Python.Python.3
-winget install Git.Git
-winget install Microsoft.VisualStudio.2019.BuildTools --override "--wait --quiet --add Microsoft.VisualStudio.Workload.VCTools;includeRecommended"
-npm i -g yarn
-```
-
-### Manual Installation
-
 You'll need the following tools:
 
 - [Git](https://git-scm.com)
