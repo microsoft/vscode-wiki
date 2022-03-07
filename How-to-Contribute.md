@@ -10,11 +10,11 @@ In order to download necessary tools, clone the repository, and install dependen
 ### Windows 10/11
 
 ```
-winget install OpenJS.NodeJS.LTS
+winget install OpenJS.NodeJS -v 14.14.0
 winget install Python.Python.3
 winget install Git.Git
 winget install Microsoft.VisualStudio.2019.BuildTools --override "--wait --quiet --add Microsoft.VisualStudio.Workload.VCTools;includeRecommended"
-npm i -g npm yarn
+npm i -g yarn
 ```
 
 ### Manual Installation
