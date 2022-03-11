@@ -231,7 +231,7 @@ We will investigate into improving the performance of popular extensions that ar
 
 
 ## Install / Update
-- [x] Make VS Code available in the Widnow Store.
+- [x] Make VS Code available in the Windows Store.
 - [ ] Provide a [MSIX installer](https://docs.microsoft.com/en-us/windows/msix/) on Windows.
 - [ ] Rework our update mechanism based on Chromium's OSS updater; this allows for more incremental updates which helps with slow connections and also makes universal downloads like the one for macOS more acceptable
 
