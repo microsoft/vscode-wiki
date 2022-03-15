@@ -179,4 +179,4 @@
 - [ ] Enable scheduled `insider` builds **endgame champion**
 - [ ] Bump up the version in `package.json` on `main` - **endgame champion**
 - [ ] [Publish @types/vscode](https://github.com/microsoft/vscode/wiki/Publish-vscode-types) **endgame champion**
-- [ ] Close the milestone via https://github.com/microsoft/vscode/milestones **endgame champion**
+- [ ] Close the milestone on [GitHub](https://github.com/microsoft/vscode/milestones) **endgame champion**
