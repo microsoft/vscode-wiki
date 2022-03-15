@@ -46,3 +46,4 @@
   - [ ] Create a tag (make sure you pull the release branch first): `git tag <x.y.z> release/<x.y>`
   - [ ] Push the tag: `git push origin <x.y.z>`
   - [ ] Create a GitHub release: [Open the GitHub tags](https://github.com/microsoft/vscode/tags), and click far right `... > Create Release`. Use the correct title and description from our release notes. [Example](https://github.com/microsoft/vscode/releases/tag/1.39.1)
+- [ ] Close the milestone `<Month> <Year> Recovery` **owner**
