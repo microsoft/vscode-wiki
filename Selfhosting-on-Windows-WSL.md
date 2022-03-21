@@ -37,5 +37,5 @@ The drawback is that running VS Code from sources actually runs on **Linux** whi
   ```
   sudo apt install python3 python-is-python3 libsecret-1-dev libxss1 libx11-dev libxkbfile-dev libasound2 libgtk-3-0 libgdk-pixbuf2.0-0 libnss3 libxtst6 libxi6 libxdamage1 libxcursor1 libxcomposite1 libx11-xcb1 libgbm1
   ```
-3. If you prefer to use Visual Studio Code for development, make sure to have the [Remote - WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl).
+3. Install [VS Code Insiders for Windows](https://code.visualstudio.com/docs/?dv=win64user&build=insiders) and the [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) extension.
 4. Follow the [build and run](https://github.com/microsoft/vscode/wiki/How-to-Contribute#getting-the-sources) instructions for Linux.
