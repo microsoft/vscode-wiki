@@ -147,7 +147,7 @@ Code for the Web (Extensions run in the browser):
 Web with Code Server (Extensions run in code server):
 
 ```bash
-./scripts/code-server.sh|bat --launch
+./scripts/code-server.sh|bat
 ```
 
 You can identify the development version of VS Code ("Code - OSS") by the following icon in the Dock or Taskbar:
