@@ -120,6 +120,10 @@ Errors and warnings will show in the console while developing VS Code. If you us
 
 To test the changes, you launch a development version of VS Code on the workspace `vscode`, which you are currently editing.
 
+### Desktop
+
+Running on Electron with extensions run in NodeJS:
+
 **macOS and Linux**
 
 ```bash
@@ -134,27 +138,45 @@ To test the changes, you launch a development version of VS Code on the workspac
 .\scripts\code-cli.bat
 ```
 
-**Web**
+👉 **Tip!** If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `yarn watch` first.
 
-Code for the Web (Extensions run in the browser):
+### VS Code for the Web
 
-```bash
-./scripts/code-web.sh|bat
-```
+Extensions and UI run in the browser.
 
 👉 Besides `yarn watch` also run `yarn watch-web` to build the web bits for the built-in extensions.
 
-Web with Code Server (Extensions run in code server):
+**macOS and Linux**
 
 ```bash
-./scripts/code-server.sh|bat --launch
+./scripts/code-web.sh
+```
+
+**Windows**
+
+```bat
+.\scripts\code-web.bat
+```
+### Code Server Web
+
+UI in the browser, extensions run in code server (NodeJS):
+
+**macOS and Linux**
+
+```bash
+./scripts/code-server.sh --launch
+```
+
+**Windows**
+
+```bat
+.\scripts\code-server.bat --launch
 ```
 
 You can identify the development version of VS Code ("Code - OSS") by the following icon in the Dock or Taskbar:
 
 [![VS Code default icon](https://i.imgur.com/D2CeX0y.png)](https://i.imgur.com/D2CeX0y.png)
 
-👉 **Tip!** If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `yarn watch` first.
 
 ### Debugging
 VS Code has a multi-process architecture and your code is executed in different processes.
