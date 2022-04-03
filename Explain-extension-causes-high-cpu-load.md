@@ -26,10 +26,10 @@ Sometimes it's not code execution but code loading (which is also blocking) whic
 <img width="813" alt="screenshot 2019-01-10 at 10 29 45" src="https://user-images.githubusercontent.com/1794099/50959220-bc7c8980-14c2-11e9-973b-2e2ec3ff09f7.png">
 
 
-The problem is that there are too many, often little, files that all need to be read and loaded. Considering bundling your extension, e.g with https://webpack.js.org or https://rollupjs.org/. For the former there is a sample: https://github.com/Microsoft/vscode-extension-samples/tree/master/webpack-sample
+The problem is that there are too many, often little, files that all need to be read and loaded. Considering bundling your extension, e.g with https://webpack.js.org or https://rollupjs.org/. For the former there is a sample: https://github.com/microsoft/vscode-extension-samples/tree/master/webpack-sample
 
 ### Testing Changes
 
-If you can reproduce the slowdown or if you want to verify your changes, you can also profile the extension host yourself. Follow this guide: https://github.com/Microsoft/vscode/wiki/Performance-Issues#profile-the-running-extensions
+If you can reproduce the slowdown or if you want to verify your changes, you can also profile the extension host yourself. Follow this guide: https://github.com/microsoft/vscode/wiki/Performance-Issues#profile-the-running-extensions
 
 

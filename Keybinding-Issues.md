@@ -49,29 +49,29 @@ The first keydown event is for the `MetaLeft` key (`cmd`) and cannot be dispatch
     * **symptoms**: VS Code keybindings reflect the keyboard layout that was active when VS Code was launched.
     * **solution 1**: Reload VS Code after switching keyboard layouts. <kbd>F1</kbd> `> Reload Window`
     * **solution 2**: Define your own custom keybindings based on scan codes. e.g. `"key": "ctrl+[Backquote]"` will always be the same physical key irrespective of keyboard layouts.
-    * **explanation**: VS Code on Linux **does not** detect switching the keyboard layout. We have an [open feature request and a PR is welcome - #23690](https://github.com/Microsoft/vscode/issues/23690)
+    * **explanation**: VS Code on Linux **does not** detect switching the keyboard layout. We have an [open feature request and a PR is welcome - #23690](https://github.com/microsoft/vscode/issues/23690)
 
   * Are you using multiple keyboard layouts?
     * **NOTE**: this will be fixed starting with VS Code 1.62.0 and the fix will be available in Insiders starting Oct 13th 2021.
     * **symptoms**: VS Code keybindings reflect a keyboard layout that I have installed, but not the active one.
     * **solution 1**: make sure `setxkbmap -query` returns as the first keyboard layout the one you want to work with in VS Code.
     * **solution 2**: use `"keyboard.dispatch": "keyCode"` in your settings and restart VS Code. This will prevent VS Code from trying to determine your keyboard layout whatsoever.
-    * **explanation**: Switching keyboard layouts under some Linux window managers does not result in a change in the low level X window APIs VS Code uses to read the current keyboard layout. This means that VS Code ends up sometimes reading one of the other configured keyboard layouts and not the current active one. PR welcome: [#23505](https://github.com/Microsoft/vscode/issues/23505), [#24166](https://github.com/Microsoft/vscode/issues/24166)
+    * **explanation**: Switching keyboard layouts under some Linux window managers does not result in a change in the low level X window APIs VS Code uses to read the current keyboard layout. This means that VS Code ends up sometimes reading one of the other configured keyboard layouts and not the current active one. PR welcome: [#23505](https://github.com/microsoft/vscode/issues/23505), [#24166](https://github.com/microsoft/vscode/issues/24166)
 
   * Are you customizing keyboard mappings via `setxkbmap` or equivalents?
     * **symptoms**: customizations done via `setxkbmap` or equivalents have no effect in VS Code.
     * **solution**: use `"keyboard.dispatch": "keyCode"` in your settings and restart VS Code.
-    * **explanation**: VS Code does not honour keyboard mappings at this time when determining what scan codes it should listen for. [Ideas and PR welcome - #23991](https://github.com/Microsoft/vscode/issues/23991)
+    * **explanation**: VS Code does not honour keyboard mappings at this time when determining what scan codes it should listen for. [Ideas and PR welcome - #23991](https://github.com/microsoft/vscode/issues/23991)
 
   * Are you using some keyboard layout that remaps more than the printable characters?
     * **symptoms**: e.g. the Neo keyboard layout does not work entirely in VS Code.
     * **solution**: use `"keyboard.dispatch": "keyCode"` in your settings and restart VS Code. This will prevent VS Code from trying to determine your keyboard layout whatsoever.
-    * **explanation**: VS Code only looks at scan codes that usually produce printable characters in determining what scan codes to listen to. [Ideas and PR welcome - #24043](https://github.com/Microsoft/vscode/issues/24043)
+    * **explanation**: VS Code only looks at scan codes that usually produce printable characters in determining what scan codes to listen to. [Ideas and PR welcome - #24043](https://github.com/microsoft/vscode/issues/24043)
 
   * An important action is not mapped to a good keybinding by default.
     * **symptoms**: e.g. the Toggle Integrated Terminal action has no default keybinding on the Ukrainian keyboard layout, the Comment Line action is bound to <kbd>Ctrl+Shift+7</kbd> on the German keyboard layout.
     * **solution**: use the Keybinding UI or `keybindings.json` file to define a custom keybinding that suits your needs.
-    * **explanation**: VS Code does not ship with default keybindings optimized per keyboard layout. For example, <kbd>Ctrl+\`</kbd> cannot be mapped by VS Code automatically to a scan code on the Ukrainian keyboard layout because no modifier + scan code combination produces <kbd>\`</kbd> on the Ukrainian keyboard layout. You can upvote in [issue #1240](https://github.com/Microsoft/vscode/issues/1240).
+    * **explanation**: VS Code does not ship with default keybindings optimized per keyboard layout. For example, <kbd>Ctrl+\`</kbd> cannot be mapped by VS Code automatically to a scan code on the Ukrainian keyboard layout because no modifier + scan code combination produces <kbd>\`</kbd> on the Ukrainian keyboard layout. You can upvote in [issue #1240](https://github.com/microsoft/vscode/issues/1240).
 
   * Is <kbd>Ctrl</kbd>+<kbd>.</kbd> inserting a small `e` when running with kde desktop and ibus-daemon?
     * **symptoms**: pressing <kbd>Ctrl</kbd>+<kbd>.</kbd> inserts a small `e` instead of triggering quick fix.
@@ -91,17 +91,17 @@ The first keydown event is for the `MetaLeft` key (`cmd`) and cannot be dispatch
   * Are you using an external ISO keyboard attached to a laptop with an ANSI keyboard?
     * **symptoms**: `[Backquote]` and `[IntlBackslash]` are "swapped".
     * **solution**: press a key on the keyboard you want to use. Wait up to 3s and VS Code should catch up.
-    * **explanation**: On ISO keyboards, macOS swaps the scan codes for `[Backquote]` and `[IntlBackslash]`. We respect this swapping. However, Chromium, in order to stay W3C spec compliant, decided to unswap the two scan codes. We cannot detect when Chromium unswaps the scan codes on a keyboard event basis, we need to poll and check if the last keyboard event came from an ISO keyboard and then expect that Chromium swaps the scan codes such that we can un-un-swap them. [Read more in issue #26506](https://github.com/Microsoft/vscode/issues/26506)
+    * **explanation**: On ISO keyboards, macOS swaps the scan codes for `[Backquote]` and `[IntlBackslash]`. We respect this swapping. However, Chromium, in order to stay W3C spec compliant, decided to unswap the two scan codes. We cannot detect when Chromium unswaps the scan codes on a keyboard event basis, we need to poll and check if the last keyboard event came from an ISO keyboard and then expect that Chromium swaps the scan codes such that we can un-un-swap them. [Read more in issue #26506](https://github.com/microsoft/vscode/issues/26506)
 
   * Are you using some keyboard layout that remaps more than the printable characters?
     * **symptoms**: e.g. the Neo keyboard layout does not work entirely in VS Code.
     * **solution**: use `"keyboard.dispatch": "keyCode"` in your settings and restart VS Code. This will prevent VS Code from trying to determine your keyboard layout whatsoever.
-    * **explanation**: VS Code only looks at scan codes that usually produce printable characters in determining what scan codes to listen to. [Ideas and PR welcome - #24043](https://github.com/Microsoft/vscode/issues/24043)
+    * **explanation**: VS Code only looks at scan codes that usually produce printable characters in determining what scan codes to listen to. [Ideas and PR welcome - #24043](https://github.com/microsoft/vscode/issues/24043)
 
   * An important action is not mapped to a good keybinding by default.
     * **symptoms**: e.g. the Toggle Integrated Terminal action has no default keybinding on the Ukrainian keyboard layout, the Comment Line action is bound to <kbd>Ctrl+Shift+7</kbd> on the German keyboard layout.
     * **solution**: use the Keybinding UI or `keybindings.json` file to define a custom keybinding that suits your needs.
-    * **explanation**: VS Code does not ship with default keybindings optimized per keyboard layout. For example, <kbd>Ctrl+\`</kbd> cannot be mapped by VS Code automatically to a scan code on the Ukrainian keyboard layout because no modifier + scan code combination produces <kbd>\`</kbd> on the Ukrainian keyboard layout. You can upvote in [issue #1240](https://github.com/Microsoft/vscode/issues/1240).
+    * **explanation**: VS Code does not ship with default keybindings optimized per keyboard layout. For example, <kbd>Ctrl+\`</kbd> cannot be mapped by VS Code automatically to a scan code on the Ukrainian keyboard layout because no modifier + scan code combination produces <kbd>\`</kbd> on the Ukrainian keyboard layout. You can upvote in [issue #1240](https://github.com/microsoft/vscode/issues/1240).
 
   * Experiencing any other issue?
     * **try**: use `"keyboard.dispatch": "keyCode"` in your settings and restart VS Code.
@@ -112,7 +112,7 @@ The first keydown event is for the `MetaLeft` key (`cmd`) and cannot be dispatch
   * An important action is not mapped to a good keybinding by default.
     * **symptoms**: e.g. an important action has no keybinding on a specific keyboard layout out of the box or it is an unfortunate one.
     * **solution**: use the Keybinding UI or `keybindings.json` file to define a custom keybinding that suits your needs.
-    * **explanation**: VS Code does not ship with default keybindings optimized per keyboard layout. Keyboard layouts under Windows are free to more, remove, or add a set of key codes and it is possible that under your keyboard layout a specific key code, e.g. `VK_OEM_3` is not used. You can upvote in [issue #1240](https://github.com/Microsoft/vscode/issues/1240).
+    * **explanation**: VS Code does not ship with default keybindings optimized per keyboard layout. Keyboard layouts under Windows are free to more, remove, or add a set of key codes and it is possible that under your keyboard layout a specific key code, e.g. `VK_OEM_3` is not used. You can upvote in [issue #1240](https://github.com/microsoft/vscode/issues/1240).
 
   * Experiencing any other issue?
     * **further troubleshooting**: [Troubleshoot generic keybindings](#troubleshoot-generic-keybindings)
@@ -251,8 +251,8 @@ Backslash: {
 ```
 
 ### Code pointers
-* [`node-native-keymap`](https://github.com/Microsoft/node-native-keymap/blob/master/src/keyboard_win.cc)
-* [`WindowsKeyboardMapper`](https://github.com/Microsoft/vscode/blob/master/src/vs/workbench/services/keybinding/common/windowsKeyboardMapper.ts)
+* [`node-native-keymap`](https://github.com/microsoft/node-native-keymap/blob/master/src/keyboard_win.cc)
+* [`WindowsKeyboardMapper`](https://github.com/microsoft/vscode/blob/master/src/vs/workbench/services/keybinding/common/windowsKeyboardMapper.ts)
 
 ## How it works on macOS/Linux
 
@@ -302,9 +302,9 @@ Since Electron APIs (i.e. menus) refer to keybindings based on `keyCode`, we can
 If the native node module fails to run (i.e. the mappings cannot be obtained), keybinding dispatching falls back to using `e.keyCode`.
 
 ### Code pointers
-* [`node-native-keymap`](https://github.com/Microsoft/node-native-keymap/blob/master/src/keyboard_x.cc)
-* [`node-native-keymap`](https://github.com/Microsoft/node-native-keymap/blob/master/src/keyboard_mac.mm)
-* [`MacLinuxKeyboardMapper`](https://github.com/Microsoft/vscode/blob/master/src/vs/workbench/services/keybinding/common/macLinuxKeyboardMapper.ts)
+* [`node-native-keymap`](https://github.com/microsoft/node-native-keymap/blob/master/src/keyboard_x.cc)
+* [`node-native-keymap`](https://github.com/microsoft/node-native-keymap/blob/master/src/keyboard_mac.mm)
+* [`MacLinuxKeyboardMapper`](https://github.com/microsoft/vscode/blob/master/src/vs/workbench/services/keybinding/common/macLinuxKeyboardMapper.ts)
 
 ---
 

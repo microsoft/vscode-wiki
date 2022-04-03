@@ -41,6 +41,6 @@ Please see [[Issue Tracking]] for a description of the different workflows we ar
 Each week we will manage work items, crossing off completed features, and triaging bugs. At the end of the milestone, we will strive for 0 bugs and 0 issues assigned to the milestone. Some bugs and features will then be either postponed to later milestones or moved back to the backlog.
 
 ## End Game
-The final week of the milestone is what we call the "end game" ([see running the endgame](https://github.com/Microsoft/vscode/wiki/Running-the-Endgame)). During this week we will wrap up any feature work, we will test using a test plan [[Iteration Plans]], and then we will fix the critical bugs for that milestone.
+The final week of the milestone is what we call the "end game" ([see running the endgame](https://github.com/microsoft/vscode/wiki/Running-the-Endgame)). During this week we will wrap up any feature work, we will test using a test plan [[Iteration Plans]], and then we will fix the critical bugs for that milestone.
 
 During the endgame we make a build available on the `insiders` channel ([see also](https://code.visualstudio.com/Docs/supporting/FAQ#_prerelease-versions)). We will monitor incoming issues from this release, fix any critical bugs that arise, and then produce a final `stable` release for the milestone and the `stable` channel.

@@ -1,6 +1,6 @@
 # The VS Code Roadmap 2018
 
-As [2017](https://github.com/Microsoft/vscode/wiki/Roadmap-2017) comes to an end, now is the time to look towards the future. We typically look out 6 to 12 months, establish a set of themes we want to work towards, and then schedule work each milestone supporting those themes. When planning, we look at potential work from three perspectives:
+As [2017](https://github.com/microsoft/vscode/wiki/Roadmap-2017) comes to an end, now is the time to look towards the future. We typically look out 6 to 12 months, establish a set of themes we want to work towards, and then schedule work each milestone supporting those themes. When planning, we look at potential work from three perspectives:
 
 * **Happy Coding:** At its core VS Code is a lightweight, keyboard focused, multi-language code editor. VS Code is already pleasant to code with, and we want to make the experience even more pleasant, for both new and existing users.
 
@@ -84,7 +84,7 @@ We want VS Code to be a great tool for developing modern web applications with J
 ### Language Server Protocol
 
 * :runner: Continue to refine and improve to Language Server Protocol with support from the community.
-* [x] Enable [proposed protocol additions](https://github.com/Microsoft/language-server-protocol/blob/master/contributing.md) from the community. 
+* [x] Enable [proposed protocol additions](https://github.com/microsoft/language-server-protocol/blob/master/contributing.md) from the community. 
 
 ### Debug Adaptor Protocol
 
@@ -99,7 +99,7 @@ We want VS Code to be a great tool for developing modern web applications with J
  
 ### TypeScript (and JavaScript)
 
-We closely collaborate with TypeScript, see also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap) 
+We closely collaborate with TypeScript, see also the [TypeScript roadmap](https://github.com/microsoft/TypeScript/wiki/Roadmap) 
 
 * [x] Organize imports, remove unused imports
 * [x] Tag completion in `jsx` and `tsx` files 
@@ -149,4 +149,4 @@ Looking ahead, we want to make acquiring extensions for these languages (and mor
  
 ## Summary
 
-These are examples of just some of the work we will be focusing on in the next 6 to 12 months. We continuously tune the plan based on feedback and we will provide more detail in each of our [monthly iteration plans](https://github.com/Microsoft/vscode/wiki/Iteration-Plans). Please follow along and let us know what you think!
+These are examples of just some of the work we will be focusing on in the next 6 to 12 months. We continuously tune the plan based on feedback and we will provide more detail in each of our [monthly iteration plans](https://github.com/microsoft/vscode/wiki/Iteration-Plans). Please follow along and let us know what you think!

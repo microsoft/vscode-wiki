@@ -20,7 +20,7 @@ VS Code also supports searching only in the files that are currently opened as t
 
 If your workspace has files with a **non-UTF-8 encoding**, you will need to set the `files.encoding` setting to the correct encoding to search in those files. Note that the `files.autoGuessEncoding` works for the editor, but isn't supported for search.
 
-This is less common, but VS Code doesn't handle files with **CR-only line endings** well. Files that originated on older OS's may use these, and may have missing or inconsistent search results. There is an [open issue](https://github.com/Microsoft/vscode/issues/35797) for this.
+This is less common, but VS Code doesn't handle files with **CR-only line endings** well. Files that originated on older OS's may use these, and may have missing or inconsistent search results. There is an [open issue](https://github.com/microsoft/vscode/issues/35797) for this.
 
 When looking at issues with missing results, remember that **search in open files** is implemented by the editor. Search in all other files is implemented by ripgrep. Some issues that look like search is working only in a few random files can be explained by a problem that only affects the ripgrep side of the search.
 
@@ -34,13 +34,13 @@ If your search includes results that you expect to be excluded by `search.exclud
 
 The search viewlet has a **toggle button**, "Use Exclude Settings and Ignore Files", which will disable checking both of these things. Make sure that it's toggled on - it's not uncommon that users turn it off and forget about it.
 
-Another thing that can cause excluded files to be shown is that open files are still searched even when they are excluded. This is a vscode [bug](https://github.com/Microsoft/vscode/issues/31819).
+Another thing that can cause excluded files to be shown is that open files are still searched even when they are excluded. This is a vscode [bug](https://github.com/microsoft/vscode/issues/31819).
 
 ## Slow search, `rg` running for a long time, or consuming lots of CPU/Memory
 
 Does your workspace have lots of **symlinks**? Search can take a long time if it has to follow lots of symlinks. Setting `"search.followSymlinks": false` will disable this.
 
-Does your search return results on **very long lines**? This will cause some slowdown and can even cause VS Code to hang. There is an [open bug](https://github.com/Microsoft/vscode/issues/31551) for this.
+Does your search return results on **very long lines**? This will cause some slowdown and can even cause VS Code to hang. There is an [open bug](https://github.com/microsoft/vscode/issues/31551) for this.
 
 If your workspace is **very large**, you might want to use the exclude settings, or the "files to include/exclude" text boxes to narrow down your search to the parts you care about. Make sure the "Use Exclude Settings and Ignore Files" button is toggled on so your exclude settings are respected.
 

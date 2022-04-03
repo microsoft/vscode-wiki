@@ -1,4 +1,4 @@
-Input method smoke test. VS Code is powered by [Monaco](https://github.com/Microsoft/monaco-editor), a browser based code editor which supports IE 9/10/11, Edge, Chrome, Firefox, Safari and Opera, so when we make changes to the editor part, we should make sure it still works on all browsers Monaco support.
+Input method smoke test. VS Code is powered by [Monaco](https://github.com/microsoft/monaco-editor), a browser based code editor which supports IE 9/10/11, Edge, Chrome, Firefox, Safari and Opera, so when we make changes to the editor part, we should make sure it still works on all browsers Monaco support.
 
 The golden standard is Word
 
@@ -236,9 +236,9 @@ http://elementaryos.stackexchange.com/questions/271/how-can-i-enable-japanese-in
 ---
 
 Content created from:
-* [#1168](https://github.com/Microsoft/vscode/issues/1168)
-* [#2250](https://github.com/Microsoft/vscode/issues/2250)
-* [#2374](https://github.com/Microsoft/vscode/issues/2374)
-* [#5615](https://github.com/Microsoft/vscode/issues/5615)
-* [#7997](https://github.com/Microsoft/vscode/issues/7997)
-* [#10937](https://github.com/Microsoft/vscode/issues/10937)
+* [#1168](https://github.com/microsoft/vscode/issues/1168)
+* [#2250](https://github.com/microsoft/vscode/issues/2250)
+* [#2374](https://github.com/microsoft/vscode/issues/2374)
+* [#5615](https://github.com/microsoft/vscode/issues/5615)
+* [#7997](https://github.com/microsoft/vscode/issues/7997)
+* [#10937](https://github.com/microsoft/vscode/issues/10937)

@@ -2,9 +2,9 @@ This page describes how we track issues in the `vscode` repository.
 
 ## Popular queries
 
-- [Global Inbox](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Atestplan-item+-label%3Aplan-item)
-- [Bugs to be Verified](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Abug+-label%3Averified+is%3Aclosed+-label%3A*duplicate+-label%3Ainvalid+) - VS Code only
-- [Verification Needed](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed) - VS Code only
+- [Global Inbox](https://github.com/microsoft/vscode/issues?q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Atestplan-item+-label%3Aplan-item)
+- [Bugs to be Verified](https://github.com/microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Abug+-label%3Averified+is%3Aclosed+-label%3A*duplicate+-label%3Ainvalid+) - VS Code only
+- [Verification Needed](https://github.com/microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed) - VS Code only
 
 
 ## Inbox tracking and Issue triage
@@ -16,7 +16,7 @@ A [mirror](https://github.com/JacksonKearl/testissues/issues) of the VS Code iss
 
 ### Inbox Tracking
 
-The inbox tracker is responsible for the [global inbox](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Atestplan-item+-label%3Aplan-item) containing all **open issues and pull requests** that
+The inbox tracker is responsible for the [global inbox](https://github.com/microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aopen+no%3Aassignee+-label%3Afeature-request+-label%3Atestplan-item+-label%3Aplan-item) containing all **open issues and pull requests** that
 - are neither **feature requests** nor **test plan items** nor **plan items** and
 - have **no owner assignment**.
 
@@ -51,8 +51,8 @@ Issues need to be verified.
 
 Verification is a service that you request from others either implicitly with the `bug`-label or explicitly with the `verification-needed`-label. Find issue that are to be verified with these queries
 
-- [bugs to be verified, VS Code](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3Abug%20-label%3Averified%20is%3Aclosed%20-label%3Aduplicate%20-label%3Ainvalid%20)
-- [verification needed, VS Code](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed)
+- [bugs to be verified, VS Code](https://github.com/microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3Abug%20-label%3Averified%20is%3Aclosed%20-label%3Aduplicate%20-label%3Ainvalid%20)
+- [verification needed, VS Code](https://github.com/microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed)
 - [bugs to be verified, all GitHub projects](https://github.com/issues?utf8=âœ“&q=is%3Aissue+is%3Aclosed+-label%3Averified+label%3Abug+repo%3AMicrosoft%2Fvscode)
 - [verification needed, all GitHub projects](https://github.com/issues?utf8=âœ“&q=is%3Aissue+is%3Aclosed+-label%3Averified+label%3Averification-needed)
 

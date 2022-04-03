@@ -1,6 +1,6 @@
 # The Visual Studio Code Roadmap 2020
 
-As [2019](https://github.com/Microsoft/vscode/wiki/Roadmap-2019) is coming to an end, now is the time to look towards the future. We typically look out 12-18 months and we establish topics we want to work on. We don't start with our roadmap on a blank sheet. We develop it based on our last roadmap, the findings we made over the course of the last year, and of course what we heard from you in issues, in face-to-face discussions, stack overflow, and twitter.
+As [2019](https://github.com/microsoft/vscode/wiki/Roadmap-2019) is coming to an end, now is the time to look towards the future. We typically look out 12-18 months and we establish topics we want to work on. We don't start with our roadmap on a blank sheet. We develop it based on our last roadmap, the findings we made over the course of the last year, and of course what we heard from you in issues, in face-to-face discussions, stack overflow, and twitter.
 
 When we execute on our roadmap, we keep learning and our assessment of some of the topics listed changes. As a result, we may add or drop topics as we go. In 12 months from now, we then come together to develop the next roadmap.
 
@@ -46,11 +46,11 @@ Our roadmap covers the broadly the following themes:
 ## Workbench
 
 - [ ] Workbench layout
-   - [ ] Support for detachable workbench parts is our most upvoted [feature request](https://github.com/Microsoft/vscode/issues/10121) which due to [architectural issues](https://github.com/Microsoft/vscode/issues/10121#issuecomment-345497635) is challenging to implement. We will explore how we can work around this limitation. This investigation will focus on detaching terminals (2nd most upvoted feature request) and editors.
+   - [ ] Support for detachable workbench parts is our most upvoted [feature request](https://github.com/microsoft/vscode/issues/10121) which due to [architectural issues](https://github.com/microsoft/vscode/issues/10121#issuecomment-345497635) is challenging to implement. We will explore how we can work around this limitation. This investigation will focus on detaching terminals (2nd most upvoted feature request) and editors.
    - [x] Allows to move views between the panel and sidebar.
    - [ ] Support a more flexible workbench layout such as allow sidebars on the left and the right. For example, you could have your outline on the right and the file explorer on the left.
 - [ ] Investigate how to safely provide richer customizability in the workbench
-   - [x] Support [custom editors](https://github.com/Microsoft/vscode/issues/12176).
+   - [x] Support [custom editors](https://github.com/microsoft/vscode/issues/12176).
    - [x] Investigate custom views based on `WebViews`.
 - [ ] Support to configure workbench font and font size
 - [ ] Broaden support to customize the UI, e.g. menu bar, context menus.
@@ -103,7 +103,7 @@ Our roadmap covers the broadly the following themes:
 
 ### TypeScript
 
-We will continue to collaborate deeply with the TypeScript team to deliver the richest code editing, navigation, and understanding experiences for both TypeScript and JavaScript. see also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap). One focus item will be to show the errors and warnings for the entire project(s) in your workspace.
+We will continue to collaborate deeply with the TypeScript team to deliver the richest code editing, navigation, and understanding experiences for both TypeScript and JavaScript. see also the [TypeScript roadmap](https://github.com/microsoft/TypeScript/wiki/Roadmap). One focus item will be to show the errors and warnings for the entire project(s) in your workspace.
 
 ### HTML/CSS
 
@@ -191,7 +191,7 @@ VS Code is made possible through a wide range of technologies. Below are example
 ### Language Server Protocol
 
 - [ ] :runner: Continue to refine and improve the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) with support from the community.
-- [ ] :runner: Continue to refine and improve the [Language Server Index Format](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md) with support from the community.
+- [ ] :runner: Continue to refine and improve the [Language Server Index Format](https://github.com/microsoft/language-server-protocol/blob/master/indexFormat/specification.md) with support from the community.
 
 ### Debug Adaptor Protocol
 
@@ -235,4 +235,4 @@ VS Code is made possible through a wide range of technologies. Below are example
 
 ## Summary
 
-These are examples of some of the work we will be focusing on in the next 12-18 months. We continuously tune the plan based on feedback and we will provide more detail in each of our [monthly iteration plans](https://github.com/Microsoft/vscode/wiki/Iteration-Plans). We will develop our next roadmap in around 12 months from now. Please follow along and let us know what you think! 
+These are examples of some of the work we will be focusing on in the next 12-18 months. We continuously tune the plan based on feedback and we will provide more detail in each of our [monthly iteration plans](https://github.com/microsoft/vscode/wiki/Iteration-Plans). We will develop our next roadmap in around 12 months from now. Please follow along and let us know what you think! 

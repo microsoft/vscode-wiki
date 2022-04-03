@@ -1,5 +1,5 @@
 # Intro
-These items are a general checklist for when we create new features that is based off our [design principles](https://github.com/Microsoft/vscode/wiki/%5BWIP%5D-Design-Principles).
+These items are a general checklist for when we create new features that is based off our [design principles](https://github.com/microsoft/vscode/wiki/%5BWIP%5D-Design-Principles).
 
 # Design checklist
 - [ ] Is this accessible?

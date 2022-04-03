@@ -26,7 +26,7 @@ The server takes a while to load and analyze the project, that's why the highlig
 Currently semantic highlighting is only offered by TypeScript, JavaScript as well as JavaScript in HTML.
 More languages will adopt. The semantic token provider API is now available for all since 1.44.
 
-If you are a language extension and want to implement a semantic token provider, please check out the [sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/semantic-tokens-sample).
+If you are a language extension and want to implement a semantic token provider, please check out the [sample](https://github.com/microsoft/vscode-extension-samples/tree/master/semantic-tokens-sample).
 
 ### Which themes offer semantic highlighting
 
@@ -112,7 +112,7 @@ Set the cursor to the symbol to inspect and run the `Developer: Inspect Editor T
 - API: [vscode.d.ts](
 https://github.com/microsoft/vscode/blob/d4ca08f0976af1d9fe675d631e9e3cad52f1d00a/src/vs/vscode.d.ts#L3292)
 - Latest standard token types and modifiers:
-[tokenClassificationRegistry.ts#L364](https://github.com/Microsoft/vscode/blob/master/src/vs/platform/theme/common/tokenClassificationRegistry.ts#L364)
+[tokenClassificationRegistry.ts#L364](https://github.com/microsoft/vscode/blob/master/src/vs/platform/theme/common/tokenClassificationRegistry.ts#L364)
 - Semantic highlighting for JS in HTML:
 [javascriptSemanticTokens.ts](https://github.com/microsoft/vscode/blob/master/extensions/html-language-features/server/src/modes/javascriptSemanticTokens.ts)
 - Sample:

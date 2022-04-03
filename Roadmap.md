@@ -1,6 +1,6 @@
 # The Visual Studio Code Roadmap 2021-2022
 
-Our roadmap typically looks out 12-18 months and we establish topics we want to work on. We don't start with our roadmap on a blank sheet. We develop it based on our [last roadmap](https://github.com/Microsoft/vscode/wiki/Roadmap-2020), the findings we made over the course of the last year, and of course what we heard from you in issues, in face-to-face discussions, stack overflow, and twitter.
+Our roadmap typically looks out 12-18 months and we establish topics we want to work on. We don't start with our roadmap on a blank sheet. We develop it based on our [last roadmap](https://github.com/microsoft/vscode/wiki/Roadmap-2020), the findings we made over the course of the last year, and of course what we heard from you in issues, in face-to-face discussions, stack overflow, and twitter.
 
 When we execute on our roadmap, we keep learning and our assessment of some of the topics listed changes. As a result, we may add or drop topics as we go. After around 12 months we come together to develop the next roadmap.
 
@@ -91,7 +91,7 @@ For 2021, we'll particularly focus in the following themes.
 
 ### Workbench
 - [ ] Workbench layout
-   - [ ] Support for detachable workbench parts is our most upvoted [feature request](https://github.com/Microsoft/vscode/issues/10121) which due to [architectural issues](https://github.com/Microsoft/vscode/issues/10121#issuecomment-345497635) is challenging to implement. We will explore how we can work around this limitation. This investigation will focus on detaching terminals (2nd most upvoted feature request) and editors.
+   - [ ] Support for detachable workbench parts is our most upvoted [feature request](https://github.com/microsoft/vscode/issues/10121) which due to [architectural issues](https://github.com/microsoft/vscode/issues/10121#issuecomment-345497635) is challenging to implement. We will explore how we can work around this limitation. This investigation will focus on detaching terminals (2nd most upvoted feature request) and editors.
    - [ ] :runner: Support a more flexible workbench layout such as allow sidebars on the left and the right. For example, you could have your outline on the right and the file explorer on the left.
 - [ ] Support to configure the workbench (also see https://github.com/microsoft/vscode/issues/115641)
    - [ ] Workbench font and font size
@@ -197,7 +197,7 @@ For 2021, we'll particularly focus in the following themes.
 - [ ] Language aware spellchecking in comments
 
 ### TypeScript
-We will continue to collaborate deeply with the TypeScript. See also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap).
+We will continue to collaborate deeply with the TypeScript. See also the [TypeScript roadmap](https://github.com/microsoft/TypeScript/wiki/Roadmap).
 - [ ] Adopt LSP for TS
 - [x] Inline type hints
 - [ ] :runner: Explore supporting multiple files/libraries in the Web Worker based language service
@@ -215,7 +215,7 @@ We will continue to collaborate deeply with the TypeScript. See also the [TypeSc
 ### Language Server Protocol and LSIF
 - [ ] Make it easier for language server owners to support LSIF
 - [ ] :runner: Continue to refine and improve the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) with support from the community.
-- [ ] :runner: Continue to refine and improve the [Language Server Index Format](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md) with support from the community.
+- [ ] :runner: Continue to refine and improve the [Language Server Index Format](https://github.com/microsoft/language-server-protocol/blob/master/indexFormat/specification.md) with support from the community.
 - [ ] :runner: Support type hierarchies in LSP
 
 
@@ -262,5 +262,5 @@ We will investigate into improving the performance of popular extensions that ar
 
 ## Summary
 
-These are examples of some of the work we will be focusing on in the next 12-18 months. We continuously tune the plan based on feedback and we will provide more detail in each of our [monthly iteration plans](https://github.com/Microsoft/vscode/wiki/Iteration-Plans). We will develop our next roadmap in around 12 months from now. Please follow along and let us know what you think!
+These are examples of some of the work we will be focusing on in the next 12-18 months. We continuously tune the plan based on feedback and we will provide more detail in each of our [monthly iteration plans](https://github.com/microsoft/vscode/wiki/Iteration-Plans). We will develop our next roadmap in around 12 months from now. Please follow along and let us know what you think!
 

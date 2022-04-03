@@ -1,4 +1,4 @@
-We are using `@types/vscode` for publishing `vscode.d.ts`. See https://github.com/Microsoft/vscode/issues/70175 for details.
+We are using `@types/vscode` for publishing `vscode.d.ts`. See https://github.com/microsoft/vscode/issues/70175 for details.
 
 For each release, we will need to publish a new version to DefinitelyTyped. Here are the steps:
 

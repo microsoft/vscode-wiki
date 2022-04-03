@@ -2,7 +2,7 @@ This page describes the VS Code Smoke test, an automatic and a manual test suite
 
 ## Automated Smoke Test
 
-https://github.com/Microsoft/vscode/blob/main/test/smoke/README.md
+https://github.com/microsoft/vscode/blob/main/test/smoke/README.md
 
 ## Manual Smoke Test
 
@@ -10,7 +10,7 @@ https://github.com/Microsoft/vscode/blob/main/test/smoke/README.md
 
 * For the best debugging experience you'll need node version 6.5 (or higher)
 * Clone the 'express' smoke test repository:
-  * `git clone https://github.com/Microsoft/vscode-smoketest-express.git`
+  * `git clone https://github.com/microsoft/vscode-smoketest-express.git`
   * `cd vscode-smoketest-express`
   * `yarn`
 * In the following steps we'll produce a data directory and extensions directory from the latest **stable** release

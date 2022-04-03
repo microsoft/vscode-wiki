@@ -8,7 +8,7 @@
 - [ ] Issues are tested in the `insiders` **team**
 - [ ] Build `stable` for all platforms from release branch **endgame champion**
 - [ ] Issues are verified on `stable` build and the `verified` label is added **endgame champion**
-- [ ] Check `https://github.com/Microsoft/vscode/compare/release/<x.y>` to ensure no other commits have been made in the release branch **endgame champion**
+- [ ] Check `https://github.com/microsoft/vscode/compare/release/<x.y>` to ensure no other commits have been made in the release branch **endgame champion**
 - [ ] Update the release notes and include a link to a query for the fixed issues **@gregvanl**
 - [ ] Sanity check of installable bits ([server instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers))
   - [ ] Windows 32 bit **endgame champion**

@@ -1,3 +1,3 @@
 ### Want to contribute to this Wiki?
 
-[Fork it and send a pull request.](https://github.com/Microsoft/vscode-wiki)
+[Fork it and send a pull request.](https://github.com/microsoft/vscode-wiki)

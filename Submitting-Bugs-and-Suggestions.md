@@ -9,7 +9,7 @@ Please begin by consulting any of the following pages that may be relevant:
   * [Search Issues](Search-Issues)
   * [Terminal Issues](Terminal-Issues)
 
-Next, do a search in [open issues](https://github.com/Microsoft/vscode/issues) to see if the issue or feature request has already been filed. Use this [query](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) to search for the most popular feature requests.
+Next, do a search in [open issues](https://github.com/microsoft/vscode/issues) to see if the issue or feature request has already been filed. Use this [query](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) to search for the most popular feature requests.
 
 If you find your issue already exists, make relevant comments and add your [reaction](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments). Use [a reaction on the issue description](Issues-Triaging#up-voting-a-feature-request) rather than adding a "+1" comment.
 
@@ -19,7 +19,7 @@ If you find your issue already exists, make relevant comments and add your [reac
 
 If the open issue is on the `Backlog Candidates` milestone your upvote can help it progress to the `Backlog`.
 
-The VS Code project is distributed across [multiple repositories](https://github.com/Microsoft/vscode/wiki/Related-Projects). Try to file the issue against the correct repository.
+The VS Code project is distributed across [multiple repositories](https://github.com/microsoft/vscode/wiki/Related-Projects). Try to file the issue against the correct repository.
 
 If your issue is a question then please ask the question on [Stack Overflow](https://stackoverflow.com/questions/tagged/vscode) using the tag `vscode`.
 
@@ -57,8 +57,8 @@ Please remember to do the following:
 
 Don't feel bad if we can't reproduce the issue and ask for more information!
 
-Finally, this is our [issue tracking](https://github.com/Microsoft/vscode/wiki/Issue-Tracking) work flow that describes what happens once you submitted an issue.
+Finally, this is our [issue tracking](https://github.com/microsoft/vscode/wiki/Issue-Tracking) work flow that describes what happens once you submitted an issue.
 
 ## Contributing Fixes
 If you are interested in fixing issues and contributing directly to the code base,
-please see the document [How to Contribute](https://github.com/Microsoft/vscode/wiki/How-to-Contribute).
+please see the document [How to Contribute](https://github.com/microsoft/vscode/wiki/How-to-Contribute).

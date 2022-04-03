@@ -1,4 +1,4 @@
-Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki/Development-Process#end-game).
+Each iteration closes with an [endgame](https://github.com/microsoft/vscode/wiki/Development-Process#end-game).
 
 ## Duties of the endgame champion
 
@@ -11,11 +11,11 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
   - Remind people to update their testing availability and platform(s) in the call and release channel
 - Ensure each test item has meaningful content
 - Assign test items to testers (usually platform specific) using the [testplan tool](https://vscode-tools.azurewebsites.net/); ensure fair distribution across testers
-- Communicate test assignments in the `release` Slack channel by posting the test item queries ([example query](https://github.com/Microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22June+2016%22+is%3Aclosed))
+- Communicate test assignments in the `release` Slack channel by posting the test item queries ([example query](https://github.com/microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22June+2016%22+is%3Aclosed))
 - Communicate end of day progress in the `release` Slack channel by communicating
    - the number of issues filed
-   - the number of test items not yet completed ([example query](https://github.com/Microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22June+2016%22+is%3Aclosed))
-   - number of issues to be [verified](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
+   - the number of test items not yet completed ([example query](https://github.com/microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22June+2016%22+is%3Aclosed))
+   - number of issues to be [verified](https://github.com/microsoft/vscode/wiki/Issue-Tracking#verification)
 - Assign owners to checklist items for each day (if not owned by the endgame master)
 - Track progress on test items and checklist items
 - Adjust schedule, particularly the publishing dates, based on defects found, fixes made, holidays, vacations, etc.
@@ -26,7 +26,7 @@ https://github.com/microsoft/vscode/wiki/Endgame-Template
 
 ### OS Test Availability
 
-Update the OS test availability [here](https://github.com/Microsoft/vscode-tools#updating-testers)
+Update the OS test availability [here](https://github.com/microsoft/vscode-tools#updating-testers)
 
 ## Recovery Build
 

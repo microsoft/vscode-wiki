@@ -1,5 +1,5 @@
 - *Month/Day* Code freeze for the endgame
-- *Month/Day* [Endgame done](https://github.com/Microsoft/vscode/wiki/Development-Process#inside-an-iteration)
+- *Month/Day* [Endgame done](https://github.com/microsoft/vscode/wiki/Development-Process#inside-an-iteration)
 - *Month/Day* Expected release date (this may change)
 
 ##### Monday
@@ -54,7 +54,7 @@
 - [ ] Announce `main` is open for business **endgame champion**
 - [ ] Fixing (PR + review required once branched - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] All release notes updated
-  - release notes are collected in a file named *`v<Major>_<Minor>.md`* in this [repo directory](https://github.com/Microsoft/vscode-docs/blob/vnext/release-notes/)
+  - release notes are collected in a file named *`v<Major>_<Minor>.md`* in this [repo directory](https://github.com/microsoft/vscode-docs/blob/vnext/release-notes/)
   - [ ] @aeschli
   - [ ] @alexdima
   - [ ] @alexr00

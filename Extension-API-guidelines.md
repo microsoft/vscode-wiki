@@ -1,7 +1,7 @@
 Extension API Guidelines
 =
 
-This is a loose collection of guidelines that you should be following when proposing API. The process for adding API is described here: https://github.com/Microsoft/vscode/wiki/Extension-API-process. 
+This is a loose collection of guidelines that you should be following when proposing API. The process for adding API is described here: https://github.com/microsoft/vscode/wiki/Extension-API-process. 
 
 
 

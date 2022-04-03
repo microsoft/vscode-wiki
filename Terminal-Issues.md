@@ -23,10 +23,10 @@ Make sure you read over the [common questions section on the website](https://co
 
 Here are some long standing known issues in the terminal:
 
-- Various emulation issues on Windows [#45693](https://github.com/Microsoft/vscode/issues/45693)
-- Terminal does not show any text on Windows 7 [#43169](https://github.com/Microsoft/vscode/issues/43169)
+- Various emulation issues on Windows [#45693](https://github.com/microsoft/vscode/issues/45693)
+- Terminal does not show any text on Windows 7 [#43169](https://github.com/microsoft/vscode/issues/43169)
   - Try turning off compatibility mode
-- Characters like underscore are being cut off [#35901](https://github.com/Microsoft/vscode/issues/35901)
+- Characters like underscore are being cut off [#35901](https://github.com/microsoft/vscode/issues/35901)
   - Try changing the `terminal.integrated.fontFamily`
 - Emojis are printed as double width but are single width [xtermjs/xterm.js#1059](https://github.com/xtermjs/xterm.js/issues/1059)
 - Non-English characters duplicated on Windows [#132715](https://github.com/microsoft/vscode/issues/132715)

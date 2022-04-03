@@ -77,7 +77,7 @@ We close issues with the help of a bot that responds to a particular comment suc
 
 ## Requesting Information
 
-If an issue misses information that we need to understand the issue, we assign the `needs more info` label. We usually add the `/needsMoreInfo` comment to the issue which lets the bot add the label as well as a comment with links to documentation. If the issue is a performance issue we ask you to follow [this documentation](https://github.com/Microsoft/vscode/wiki/Performance-Issues).
+If an issue misses information that we need to understand the issue, we assign the `needs more info` label. We usually add the `/needsMoreInfo` comment to the issue which lets the bot add the label as well as a comment with links to documentation. If the issue is a performance issue we ask you to follow [this documentation](https://github.com/microsoft/vscode/wiki/Performance-Issues).
 
 The bot is monitoring all issues labeled `needs more info`. If we don't receive the needed information within 7 days the bot closes the issue.
 
@@ -112,7 +112,7 @@ We also use the following **type** labels, although they don't directly play a r
 
 ## Assigning Feature Areas
 
-Each issue must have a **feature area** label. Feature area labels are dark blue. See the list of feature area labels [here](https://github.com/Microsoft/vscode/wiki/Feature-Areas).
+Each issue must have a **feature area** label. Feature area labels are dark blue. See the list of feature area labels [here](https://github.com/microsoft/vscode/wiki/Feature-Areas).
 
 
 ## Assigning a Milestone
@@ -197,7 +197,7 @@ If the answer is `no` we close the issue as `out-of-scope`.
 
 If the answer is `no` we close the issue as `out-of-scope`.
 
-3. Does the functionality described in the feature request have any reasonable chance to be implemented in the next 24 months? 24 months is longer than our [roadmap](https://github.com/Microsoft/vscode/wiki/Roadmap) which outlines the next 6-12 months. Thus, there is some crystal ball reading on our part, and we'll most likely keep more feature requests open than what we can accomplish in 24 months.
+3. Does the functionality described in the feature request have any reasonable chance to be implemented in the next 24 months? 24 months is longer than our [roadmap](https://github.com/microsoft/vscode/wiki/Roadmap) which outlines the next 6-12 months. Thus, there is some crystal ball reading on our part, and we'll most likely keep more feature requests open than what we can accomplish in 24 months.
 
 If the  answer is `yes` we assign the issue to the **`Backlog`** milestone.
 

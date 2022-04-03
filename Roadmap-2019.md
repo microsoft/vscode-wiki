@@ -1,6 +1,6 @@
 # The VS Code Roadmap 2019 - UPDATED
 
-As [2018](https://github.com/Microsoft/vscode/wiki/Roadmap-2018) has come to an end, now is the time to look towards the future. We typically look out 6 to 12 months and establish topics we want to work on.
+As [2018](https://github.com/microsoft/vscode/wiki/Roadmap-2018) has come to an end, now is the time to look towards the future. We typically look out 6 to 12 months and establish topics we want to work on.
 
 As we go we learn and our assessment of some of the topics listed changes. Thus, we may add or drop topics as we go.
 
@@ -50,13 +50,13 @@ Our roadmap covers the following themes:
 ## Workbench
 
 * Workbench layout
-  * Support for detachable workbench parts is our most upvoted [feature request](https://github.com/Microsoft/vscode/issues/10121) which due to [architectural issues](https://github.com/Microsoft/vscode/issues/10121#issuecomment-345497635) is challenging to implement. We will explore how we can work around this limitation. This investigation will focus on detaching terminals (2nd most upvoted feature request) and editors.
+  * Support for detachable workbench parts is our most upvoted [feature request](https://github.com/microsoft/vscode/issues/10121) which due to [architectural issues](https://github.com/microsoft/vscode/issues/10121#issuecomment-345497635) is challenging to implement. We will explore how we can work around this limitation. This investigation will focus on detaching terminals (2nd most upvoted feature request) and editors.
   * :runner: Enable a more flexible panel/sidebar layout.
 * Improve working with the file explorer 
   * [x] Support to compress/flatten single child directories
   * Investigate 'working sets' of files and folders
 * Investigate how to safely provide richer customizability in the workbench
-   * :runner: Support [custom editors](https://github.com/Microsoft/vscode/issues/12176).
+   * :runner: Support [custom editors](https://github.com/microsoft/vscode/issues/12176).
    * Investigate custom views (based on `WebView`).
 * :runer: Support [synchronizing settings and extensions](https://github.com/microsoft/vscode/issues/2743)
  across VS Code installations on different machines.
@@ -91,9 +91,9 @@ Our roadmap covers the following themes:
 
 ### TypeScript
 
-We will continue to collaborate deeply with the TypeScript team to deliver the richest code editing, navigation, and understanding experiences for both TypeScript and JavaScript. see also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap).
+We will continue to collaborate deeply with the TypeScript team to deliver the richest code editing, navigation, and understanding experiences for both TypeScript and JavaScript. see also the [TypeScript roadmap](https://github.com/microsoft/TypeScript/wiki/Roadmap).
 
-* [x] Improve the integration of [tslint](https://palantir.github.io/tslint/) by running it as a TypeScript Server [plugin](https://github.com/Microsoft/TypeScript/wiki/Writing-a-Language-Service-Plugin).
+* [x] Improve the integration of [tslint](https://palantir.github.io/tslint/) by running it as a TypeScript Server [plugin](https://github.com/microsoft/TypeScript/wiki/Writing-a-Language-Service-Plugin).
 
 ## Debug
 
@@ -106,14 +106,14 @@ We will continue to collaborate deeply with the TypeScript team to deliver the r
   * Revisit how users find and install extensions
   * Improve the recommendation system.
   * Add support to only activate signed extensions (see next section).
-  * [x] Support installing an extension without having to reload the workbench. This is our 3rd most upvoted [feature request](https://github.com/Microsoft/vscode/issues/14444).
+  * [x] Support installing an extension without having to reload the workbench. This is our 3rd most upvoted [feature request](https://github.com/microsoft/vscode/issues/14444).
 
 * Extension Management
   * Make the consumption of extensions more secure and improve the process for how we handle malicious extensions.
   * Show runtime information for an extension (activation state, performance, error logs)
 
 * Extension Publishing
-  * :runner: Collaborate with extension authors to improve their extensions. Examples are: Use [Webpack](https://github.com/Microsoft/vscode-extension-samples/tree/master/webpack-sample) to improve install and activation, minimize dependencies of an extension, ensure `vscode` is only a development dependency.
+  * :runner: Collaborate with extension authors to improve their extensions. Examples are: Use [Webpack](https://github.com/microsoft/vscode-extension-samples/tree/master/webpack-sample) to improve install and activation, minimize dependencies of an extension, ensure `vscode` is only a development dependency.
   * :runner: Enable extensions to install additional platform specific components.
   * Support publishing of signed extensions.
   * Add support for verified publishers.
@@ -150,7 +150,7 @@ VS Code is made possible through a wide range of technologies. Below are example
 ### Language Server Protocol
 
 * :runner: Continue to refine and improve the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) with support from the community.
-* [x] Define a [Language Server Index Format](https://github.com/Microsoft/language-server-protocol/blob/master/indexFormat/specification.md) (LSIF, pronounce like "else if") that enables a language server to persist their language intelligence, so that it can be subsequently used to answer LSP requests at-scale (for example, hover and go to definition).
+* [x] Define a [Language Server Index Format](https://github.com/microsoft/language-server-protocol/blob/master/indexFormat/specification.md) (LSIF, pronounce like "else if") that enables a language server to persist their language intelligence, so that it can be subsequently used to answer LSP requests at-scale (for example, hover and go to definition).
 
 ### Debug Adaptor Protocol
 
@@ -176,4 +176,4 @@ VS Code is made possible through a wide range of technologies. Below are example
 
 ## Summary
 
-These are examples of some of the work we will be focusing on in the next 6 to 12 months. We continuously tune the plan based on feedback and we will provide more detail in each of our [monthly iteration plans](https://github.com/Microsoft/vscode/wiki/Iteration-Plans). Please follow along and let us know what you think!
+These are examples of some of the work we will be focusing on in the next 6 to 12 months. We continuously tune the plan based on feedback and we will provide more detail in each of our [monthly iteration plans](https://github.com/microsoft/vscode/wiki/Iteration-Plans). Please follow along and let us know what you think!

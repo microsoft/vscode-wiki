@@ -94,7 +94,7 @@ Should expand to
 
 - [x] win | mac | linux @jrieken
 
-The language client / server libraries now support the complete set of language features available in the extension host. Implement a sample language server with more features by taking https://github.com/Microsoft/vscode-languageserver-node-example as a starting point. Focus on the new support for CodeActions, CodeLens, Formatting and rename.
+The language client / server libraries now support the complete set of language features available in the extension host. Implement a sample language server with more features by taking https://github.com/microsoft/vscode-languageserver-node-example as a starting point. Focus on the new support for CodeActions, CodeLens, Formatting and rename.
 
 ## vscode-tslint
 
