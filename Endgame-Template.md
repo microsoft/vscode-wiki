@@ -68,7 +68,7 @@
   - [ ] @isidorn
   - [ ] @JacksonKearl
   - [ ] @joaomoreno
-  - [x] @joyceerhl
+  - [ ] @joyceerhl
   - [ ] @jrieken
   - [ ] @kieferrm
   - [ ] @lramos15
