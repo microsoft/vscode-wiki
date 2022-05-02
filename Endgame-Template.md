@@ -171,6 +171,7 @@
     - [ ] ARM64
 - [ ] Publish website **@gregvanl**
 - [ ] Publish to stable **endgame champion**
+- [ ] Trigger the [vscode.dev Deploy pipeline](https://dev.azure.com/monacotools/Monaco/_build?definitionId=276) for the `prod` deployment target **endgame champion**
 - [ ] Create an official release **endgame champion**
   - [ ] Create a tag (make sure you pull the release branch first): `git tag <x.y.z>`
   - [ ] Push the tag: `git push origin <x.y.z>`
