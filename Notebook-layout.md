@@ -7,9 +7,9 @@ Replay is an app/browser which can capture browser sessions, including DOM, user
 * Install Replay from replay.io and login
 * Open insiders.vscode.dev in Replay
 * Hit the record button from the top right toolbar
-<img width="1348" alt="replay recording" src="https://user-images.githubusercontent.com/876920/167472794-4f35f366-a6c4-4e3b-a808-dfdf308deae4.png">
+  <img width="1348" alt="replay recording" src="https://user-images.githubusercontent.com/876920/167472794-4f35f366-a6c4-4e3b-a808-dfdf308deae4.png">
+
 * The website will refresh. Once it loads again, reproduce the bug, hit stop button from the top right toolbar
 * Lastly, share the recording with us in your preferred way
-
-<img width="852" alt="image" src="https://user-images.githubusercontent.com/876920/167473038-08cb704b-3656-4ad0-8e38-d2c4985a04c7.png">
+  <img width="852" alt="image" src="https://user-images.githubusercontent.com/876920/167473038-08cb704b-3656-4ad0-8e38-d2c4985a04c7.png">
 
