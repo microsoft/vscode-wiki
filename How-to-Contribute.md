@@ -10,7 +10,7 @@ In order to download necessary tools, clone the repository, and install dependen
 You'll need the following tools:
 
 - [Git](https://git-scm.com)
-- [Node.JS](https://nodejs.org/en/), **x64**, version `>=14.17.4 and <17`
+- [Node.JS](https://nodejs.org/en/), **x64**, version `>=16.14.x and <17`
 - [Yarn](https://yarnpkg.com/en/), follow the [installation guide](https://yarnpkg.com/en/docs/install)
 - [Python](https://www.python.org/downloads/) (required for node-gyp; check the [node-gyp readme](https://github.com/nodejs/node-gyp#installation) for the currently supported Python versions)
   - **Note:** Python will be automatically installed for Windows users through installing `windows-build-tools` npm module (see below)
