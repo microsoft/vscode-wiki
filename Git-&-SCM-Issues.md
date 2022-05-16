@@ -1,10 +1,13 @@
 # Issues
 
 ## Repository discovery
+WIP
 
-## List of changes does not refresh
+## SCM changes does not refresh
+WIP
 
 ## Editor decorators (add/modified) do not render
+WIP
 
 # Logging 
 
