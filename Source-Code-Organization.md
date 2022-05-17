@@ -59,7 +59,7 @@ The VS Code workbench (`vs/workbench`) is composed of many things to provide a r
 
 Contributions that are contributed to the workbench all live inside the `vs/workbench/contrib` folder. There are some rules around this folder:
 - there cannot be any dependency from outside `vs/workbench/contrib` into `vs/workbench/contrib`
-- every contribution should expose its internal API from a single file (e.g. `vs/workbench/contrib/search/common/search.ts`)
+- every contribution should expose its internal API from a single file (e.g. `vs/workbench/contrib/search/common/search.ts`) and include an import for this file in [workbench.common.main.ts](https://github.com/microsoft/vscode/blob/d080b3aad70b16b26f76ff07b3e95ce18539f336/src/vs/workbench/workbench.common.main.ts)
 - a contribution is allowed to depend on the internal API of another contribution (e.g. the git contribution may depend on  `vs/workbench/contrib/search/common/search.ts`)
 - a contribution should never reach into the internals of another contribution (internal is anything inside a contribution that is not in the single common API file)
 - think twice before letting a contribution depend on another contribution: is that really needed and does it make sense? Can the dependency be avoided by using the workbench extensibility story maybe?
