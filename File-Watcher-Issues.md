@@ -24,7 +24,7 @@ File watching comes with a set of limitations:
 **Settings**
 Please review your settings to see if maybe a folder is excluded by accident. Specifically, the `files.watcherExclude` setting is relevant.
 
-**Logging (local)**
+### Logging (local)
 !!! This is ONLY when you open a local workspace, for remote see below !!!
 We provide logging for file events when you enable verbose logging. Steps are:
 * open VSCode on the local workspace that shows the issue
@@ -38,7 +38,7 @@ We provide logging for file events when you enable verbose logging. Steps are:
 
 ![image](https://user-images.githubusercontent.com/900690/156323290-f3ba6470-dfed-4066-a19c-951395611738.png)
 
-**Logging (remote)**
+### Logging (remote)
 !!! This is ONLY when you open a remote workspace (WSL, Docker, SSH), for local see above !!!
 We provide logging for file events when you enable verbose logging. Steps are:
 * open VSCode on the remote workspace that shows the issue

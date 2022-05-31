@@ -51,7 +51,7 @@ Complexity: 4
 Authors: @user1, @user2
 ```
 
-- If a TPI requires a certain skillset (e.g. the person should be a developer), then you can specify what roles people should hold to work on the TPI. See the [examples](#Examples) no how to format such information.
+- If a TPI requires a certain skillset (e.g. the person should be a developer), then you can specify what roles people should hold to work on the TPI. See the [examples](#Examples) on how to format such information.
   - Content Developer
   - Designer
   - Developer

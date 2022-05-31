@@ -1,6 +1,10 @@
+### May 2022
+* [Iteration Plan](https://github.com/microsoft/vscode/issues/149008)
+* Endgame **TBD**
+
 ### April 2022
 * [Iteration Plan](https://github.com/microsoft/vscode/issues/146672)
-* **Endgame TBD**
+* [Endgame](https://github.com/microsoft/vscode/issues/148074)
 
 ### March 2022
 * [Iteration Plan](https://github.com/microsoft/vscode/issues/144519)

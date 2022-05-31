@@ -59,7 +59,7 @@ When filing a search-related issue on the VS Code repo, please try the steps abo
 
 **Collecting search logs**
 
-Some details are logged for each search. To see these logs, run the command `"Developer: Set Log Level..."`, select "Trace", and run the search again. Then in the output pane, see the logs in the channel named `"Log (Window)"`. The logs show VS Code's internal query object, the arguments with which ripgrep was invoked, and any errors produced by ripgrep.
+Some details are logged for each search. To see these logs, run the command `"Developer: Set Log Level..."`, select "Trace", and run the search again. Then in the output pane, see the logs in the channels named `Log (Window)` and `Log (Extension Host)` (in a remote window, `Log (Remote Extension Host)`. The logs show VS Code's internal query object, the arguments with which ripgrep was invoked, and any errors produced by ripgrep.
 
 ![screen shot 2018-04-30 at 2 15 35 pm](https://user-images.githubusercontent.com/323878/39452722-1e2a6f48-4c88-11e8-84f8-5afad938d357.png)
 

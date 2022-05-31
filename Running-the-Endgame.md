@@ -30,15 +30,16 @@ Update the OS test availability [here](https://github.com/Microsoft/vscode-tools
 
 ## Recovery Build
 
-We release a recovery build with a handful of critical fixes and translation updates a few days after a release. The candidate fixes are reviewed by the development team and are assigned to the recovery milestone. We want to be restrictive about the included candidates. The mindset is "we will lose users if we do not include the fix". Here are some examples:
+We release one or more recovery builds with a handful of critical fixes and translation updates a few days after a release. The candidate fixes are reviewed by the development team and are assigned to a recovery milestone. We want to be restrictive about the included candidates. The mindset is "we will lose users if we do not include the fix". Here are some examples:
 - data loss
 - a regression that users complain loudly about in issues or Twitter
 - a significant performance regression
 - an issue that impacts many users as indicated by telemetry data
 - an embarrassing UI glitch
-- critical security fixes
+- critical security fixes (see Patch Tuesday Release Endgame Template below)
 - an issue that impacts extensions or is an API regression
 
 ### Schedule Template
 
-https://github.com/microsoft/vscode/wiki/Endgame-Recovery-Template
+- https://github.com/microsoft/vscode/wiki/Endgame-Recovery-Template
+- https://github.com/microsoft/vscode-internalbacklog/wiki/Patch-Tuesday-Release-Endgame-Template/
