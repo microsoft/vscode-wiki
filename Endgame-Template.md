@@ -8,8 +8,8 @@
 - [ ] Update links in the [Endgame notebooks](https://github.com/microsoft/vscode/blob/main/.vscode/notebooks/endgame.github-issues) to point to new milestone **endgame champion**
 - [ ] Code freeze at 5pm PT
 - [ ] Ensure we have a green build on all platforms at 5pm PT
-- [ ] Create test plan items following the template [here](https://github.com/microsoft/vscode/wiki/Writing-Test-Plan-Items) by 6pm PT
 - [ ] [🔖All closed feature-requests](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22April+2022%22+label%3Afeature-request+-label%3Averification-needed+-label%3Aon-testplan+-label%3Averified+-label%3A*duplicate+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-remote-repositories-github+repo%3Amicrosoft%2Fvscode-unpkg+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+repo%3Amicrosoft%2Fvscode-python+repo%3Amicrosoft%2Fvscode-jupyter+repo%3Amicrosoft%2Fvscode-jupyter-internal+repo%3Amicrosoft%2Fvscode-settings-sync-server+repo%3Amicrosoft%2Fvscode-emmet-helper+repo%3Amicrosoft%2Fvscode-remotehub) either have a `verification-needed` or `on-testplan` label
+- [ ] Create test plan items following the template [here](https://github.com/microsoft/vscode/wiki/Writing-Test-Plan-Items) by 6pm PT
 - [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/team-manifest **team**
   - [ ] Update availability of testers in vacation. Double check N/A testers. **endgame champion**
 
