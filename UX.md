@@ -4,7 +4,7 @@ User experience design inspires people to express their opinions with the utmost
 
 ## Monthly Iteration Planning
 
-As a part of our [monthly planning](Develpment-Process.md) process, we will look at the themes for the milestone and identify which UX features and issues we want to work on in the upcoming iteration. We will tag all of the issues with the ["UX" label](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aux), set the Milestone, and make sure the appropriate issues are in the [iteration plan](Iteration-Plans.md).
+As a part of our [monthly planning](Development-Process.md) process, we will look at the themes for the milestone and identify which UX features and issues we want to work on in the upcoming iteration. We will tag all of the issues with the ["UX" label](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aux), set the Milestone, and make sure the appropriate issues are in the [iteration plan](Iteration-Plans.md).
 
 This process builds the UX backlog for the upcoming milestone. Different issues will require different amount of UX design and research. For example, issue [5841](https://github.com/Microsoft/vscode/issues/5841) may only require a quick discussion, while issue [224](https://github.com/Microsoft/vscode/issues/224) (Add Tabs to VS Code) requires customer research, design proposals, collecting deep feedback on the proposals from the community, and iteration until we reach the right experience.
 
