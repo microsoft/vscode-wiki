@@ -181,4 +181,5 @@
 - [ ] Bump up the version in `package.json` on `main` - **endgame champion**
 - [ ] [Publish @types/vscode](https://github.com/microsoft/vscode/wiki/Publish-vscode-types) **endgame champion**
 - [ ] Close the milestone on [GitHub](https://github.com/microsoft/vscode/milestones) **endgame champion**
+- [ ] Create next milestone and ensure that it has a due date **endgame champion**
 - [ ] If a [recovery build](https://github.com/microsoft/vscode/wiki/Running-the-Endgame#recovery-build) is needed, proceed to https://github.com/microsoft/vscode/wiki/Endgame-Recovery-Template or https://github.com/microsoft/vscode-internalbacklog/wiki/Patch-Tuesday-Release-Endgame-Template/ **endgame champion**
