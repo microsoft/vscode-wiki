@@ -63,3 +63,5 @@ Contributions that are contributed to the workbench all live inside the `vs/work
 - a contribution is allowed to depend on the internal API of another contribution (e.g. the git contribution may depend on  `vs/workbench/contrib/search/common/search.ts`)
 - a contribution should never reach into the internals of another contribution (internal is anything inside a contribution that is not in the single common API file)
 - think twice before letting a contribution depend on another contribution: is that really needed and does it make sense? Can the dependency be avoided by using the workbench extensibility story maybe?
+
+If you add a new service which is only used from one contrib and not other components or workbench core, it is recommended to register the service from the contrib's entrypoint file.
