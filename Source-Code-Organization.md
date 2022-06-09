@@ -5,7 +5,7 @@ Visual Studio Code consists of a layered and modular `core` (found as `src/vs`) 
 
 The `core` is partitioned into the following layers:
 - `base`: Provides general utilities and user interface building blocks that can be used in any other layer.
-- `platform`: Defines service injection support and the base services for VS Code that are shared across layers such as `workbench` and `code`. Should not include editor or workbench specific services or code.
+- `platform`: Defines service injection support and the base services for VS Code that are shared across layers such as `workbench` and `code`. Should not include `editor` or `workbench` specific services or code.
 - `editor`: The "Monaco" editor is available as a [separate downloadable](https://microsoft.github.io/monaco-editor/) component.
 - `workbench`: Hosts the "Monaco" editor, notebooks and custom editors and provides the framework for panels like the Explorer, Status Bar, or Menu Bar, leveraging [Electron](https://www.electronjs.org/) to implement the VS Code desktop application.
 - `code`: The entry point to the desktop app that stitches everything together, this includes the Electron main file, shared process, and the CLI for example.
