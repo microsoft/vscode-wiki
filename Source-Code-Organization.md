@@ -31,13 +31,12 @@ The code is organised around services of which most are defined in the `platform
 
 A service definition is two parts: (1) the interface of a service, and (2) a service identifier - the latter is required because TypeScript doesn't use nominal but structural typing. A service identifier is a decoration (as proposed for ES7) and should have the same name as the service interface. 
 
-Declaring a service dependency happens by adding a corresponding decoration to a constructor argument. In the snippet below `@IModelService` is the service identifier decoration and `IModelService` is the (optional) type annotation for this argument. When a dependency is optional, use the `@optional` decoration otherwise the instantiation service throws an error.
+Declaring a service dependency happens by adding a corresponding decoration to a constructor argument. In the snippet below `@IModelService` is the service identifier decoration and `IModelService` is the (optional) type annotation for this argument. 
 
 ```javascript
 class Client {
   constructor(
-    @IModelService modelService: IModelService, 
-    @optional(IEditorService) editorService: IEditorService
+    @IModelService modelService: IModelService
   ) {
     // use services
   }
