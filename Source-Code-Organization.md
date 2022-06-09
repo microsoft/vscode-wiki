@@ -48,7 +48,7 @@ Use the instantiation service to create instances for service consumers, like so
 
 # VS Code Editor source organization
 
-* the `vs/editor` folder should not have any `node` or `electron-browser` dependencies.
+* the `vs/editor` folder should not have any `node` or `electron-*` dependencies.
 * `vs/editor/common` and `vs/editor/browser` - the code editor core (critical code without which an editor does not make sense).
 * `vs/editor/contrib` - code editor contributions that ship in both VS Code and the standalone editor. They depend on `browser` by convention and an editor can be crafted without them which results in the feature brought in being removed.
 * `vs/editor/standalone` - code that ships only with the standalone editor. Nothing else should depend on `vs/editor/standalone`
