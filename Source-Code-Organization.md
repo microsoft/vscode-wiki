@@ -58,10 +58,37 @@ Use the instantiation service to create instances for service consumers, like so
 
 The VS Code workbench (`vs/workbench`) is composed of many things to provide a rich development experience. Examples include full text search, integrated git and debug. At its core, the workbench does not have direct dependencies to all these contributions. Instead, we use an internal (as opposed to real extension API) mechanism to contribute these contributions to the workbench. 
 
-Contributions that are contributed to the workbench all live inside the `vs/workbench/contrib` folder. There are some rules around this folder:
+In a nutshell, folders are organised as:
+* `vs/workbench/{common|browser|electron-sandbox}`: workbench core that is as minimal as possible
+* `vs/workbench/api`: the provider of the `vscode.d.ts` API (both extension host and workbench implementations)
+* `vs/workbench/services`: workbench core services (should NOT include services that are only used in `vs/workbench/contrib`)
+* `vs/workbench/contrib`: workbench contributions (this is where most of your code should live, see below)
+
+Contributions that are contributed to the workbench all live inside the `vs/workbench/contrib` folder. There are some rules around the `vs/workbench/contrib` folder:
 - there cannot be any dependency from outside `vs/workbench/contrib` into `vs/workbench/contrib`
-- every contribution should expose its internal API from a single file (e.g. `vs/workbench/contrib/search/common/search.ts`) and include an import for this file in [workbench.common.main.ts](https://github.com/microsoft/vscode/blob/d080b3aad70b16b26f76ff07b3e95ce18539f336/src/vs/workbench/workbench.common.main.ts)
+- every contribution should have a single `.contribution.ts` file (e.g. `vs/workbench/contrib/search/browser/search.contribution.ts`) to be added to the main entry points for the product (see last paragraph for details)
+- every contribution should expose its internal API from a single file (e.g. `vs/workbench/contrib/search/common/search.ts`)
   - If you add a new service which is only used from one contrib and not other components or workbench core, it is recommended to register the service from the contrib's entrypoint file
 - a contribution is allowed to depend on the internal API of another contribution (e.g. the git contribution may depend on  `vs/workbench/contrib/search/common/search.ts`)
 - a contribution should never reach into the internals of another contribution (internal is anything inside a contribution that is not in the single common API file)
 - think twice before letting a contribution depend on another contribution: is that really needed and does it make sense? Can the dependency be avoided by using the workbench extensibility story maybe?
+
+# VS Code for Desktop / VS Code for Web
+
+We ship both to desktop via Electron and to the Web with the goal to share as much code as possible in both environments. Writing code that only runs in the one environment should be the exception, think twice before going down that path. Ideally the same code can run in both environments.
+
+To distinguish the environments in the product we build, there are entry files that define all the dependencies depending on the environment:
+* `src/vs/workbench/workbench.sandbox.main.ts`: for desktop only dependencies
+* `src/vs/workbench/workbench.web.main.ts`: for web only dependencies
+
+Both depend on our core entry file:
+* `src/vs/workbench/workbench.common.main.ts`: for shared dependencies
+
+Here are some rules that apply:
+* code that is shared should go into `workbench.common.main.ts`
+* code that is web only should go into `workbench.web.main.ts`
+* code that is desktop only should go into `workbench.desktop.main.ts`
+
+Be careful when introducing a service only for the desktop and not for the web: code that runs in the web that requires the service will fail to execute if you do not provide a related service for web. It is fine to ship two different implementations of a service when you use different strategies depending on the environment.
+
+Note: Only code that is referenced from the main entry files is loaded into the product. If you have a file that is otherwise not referenced in your code, make sure to add the import to the `.contribution.ts` file.
