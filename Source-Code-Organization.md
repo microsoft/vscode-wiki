@@ -14,7 +14,7 @@ The `core` is partitioned into the following layers:
 # Target Environments
 The `core` of VS Code is fully implemented in [TypeScript](https://github.com/microsoft/typescript). Inside each layer the code is organised by the target runtime environment. This ensures that only the runtime specific APIs are used. In the code we distinguish between the following target environments:
 - `common`: Source code that only requires basic JavaScript APIs and run in all the other target environments
-- `browser`: Source code that requires the `browser` APIs like access to the DOM
+- `browser`: Source code that requires the [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API), eg. DOM
   - may use code from: `common`
 - `node`: Source code that requires [Node.JS](https://nodejs.org) APIs
   - may use code from: `common`
