@@ -1,5 +1,5 @@
 Visual Studio Code consists of a layered and modular `core` (found as `src/vs`) that can be extended using extensions. Extensions are run in a separate process referred to as the
-`extension host.` Extensions are implemented by utilizing the [extension API](https://code.visualstudio.com/docs/extensions/overview).
+`extension host.` Extensions are implemented by utilising the [extension API](https://code.visualstudio.com/docs/extensions/overview). Built-in extensions can be found in the `extensions` folder.
 
 # Layers
 
