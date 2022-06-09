@@ -12,7 +12,7 @@ The `core` is partitioned into the following layers:
 - `server`: The entry point to our server app for remote development.
 
 # Target Environments
-The `core` of VS Code is fully implemented in [TypeScript](https://github.com/microsoft/typescript). Inside each layer the code is organized by the target runtime environment. This ensures that only the runtime specific APIs are used. In the code we distinguish between the following target environments:
+The `core` of VS Code is fully implemented in [TypeScript](https://github.com/microsoft/typescript). Inside each layer the code is organised by the target runtime environment. This ensures that only the runtime specific APIs are used. In the code we distinguish between the following target environments:
 - `common`: Source code that only requires basic JavaScript APIs and run in all the other target environments
 - `browser`: Source code that requires the `browser` APIs like access to the DOM
   - may use code from: `common`
@@ -27,7 +27,7 @@ The `core` of VS Code is fully implemented in [TypeScript](https://github.com/mi
 
 # Dependency Injection
 
-The code is organized around services of which most are defined in the `platform` layer. Services get to its clients via `constructor injection`. 
+The code is organised around services of which most are defined in the `platform` layer. Services get to its clients via `constructor injection`. 
 
 A service definition is two parts: (1) the interface of a service, and (2) a service identifier - the latter is required because TypeScript doesn't use nominal but structural typing. A service identifier is a decoration (as proposed for ES7) and should have the same name as the service interface. 
 
@@ -46,7 +46,7 @@ class Client {
 
 Use the instantiation service to create instances for service consumers, like so `instantiationService.createInstance(Client)`. Usually, this is done for you when being registered as a contribution, like a Viewlet or Language.
 
-# VS Code Editor source organization
+# VS Code Editor source organisation
 
 * the `vs/editor` folder should not have any `node` or `electron-*` dependencies.
 * `vs/editor/common` and `vs/editor/browser` - the code editor core (critical code without which an editor does not make sense).
@@ -54,7 +54,7 @@ Use the instantiation service to create instances for service consumers, like so
 * `vs/editor/standalone` - code that ships only with the standalone editor. Nothing else should depend on `vs/editor/standalone`
 * `vs/workbench/contrib/codeEditor` - code editor contributions that ship in VS Code.
 
-# Workbench Contrib
+# VS Code Workbench source organisation
 
 The VS Code workbench (`vs/workbench`) is composed of many things to provide a rich development experience. Examples include full text search, integrated git and debug. At its core, the workbench does not have direct dependencies to all these contributions. Instead, we use an internal (as opposed to real extension API) mechanism to contribute these contributions to the workbench. 
 
