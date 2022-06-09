@@ -43,9 +43,9 @@ x => x + x
 * Parenthesized constructs should have no surrounding whitespace. A single space follows commas, colons, and semicolons in those constructs. For example:
 
 ```javascript
-for (var i = 0, n = str.length; i < 10; i++) {
+for (let i = 0, n = str.length; i < 10; i++) {
     if (x < 10) {
-        foo()
+        foo();
     }
 }
 
