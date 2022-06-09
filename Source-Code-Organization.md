@@ -9,6 +9,7 @@ The `core` is partitioned into the following layers:
 - `editor`: The "Monaco" editor is available as a [separate downloadable](https://microsoft.github.io/monaco-editor/) component.
 - `workbench`: Hosts the "Monaco" editor, notebooks and custom editors and provides the framework for panels like the Explorer, Status Bar, or Menu Bar, leveraging [Electron](https://www.electronjs.org/) to implement the VS Code desktop application.
 - `code`: The entry point to the desktop app that stitches everything together, this includes the Electron main file, shared process, and the CLI for example.
+- `server`: The entry point to our server app for remote development.
 
 # Target Environments
 The `core` of VS Code is fully implemented in [TypeScript](https://github.com/microsoft/typescript). Inside each layer the code is organized by the target runtime environment. This ensures that only the runtime specific APIs are used. In the code we distinguish between the following target environments:
