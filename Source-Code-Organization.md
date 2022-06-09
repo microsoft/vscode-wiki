@@ -16,7 +16,7 @@ The `core` of VS Code is fully implemented in [TypeScript](https://github.com/mi
 - `common`: Source code that only requires basic JavaScript APIs and run in all the other target environments
 - `browser`: Source code that requires the `browser` APIs like access to the DOM
   - may use code from: `common`
-- `node`: Source code that requires [`nodejs`](https://nodejs.org) APIs
+- `node`: Source code that requires [Node.JS](https://nodejs.org) APIs
   - may use code from: `common`
 - `electron-sandbox`: Source code that requires the `browser` APIs like access to the DOM and a small subset of APIs to communicate with the Electron main process (anything exposed from `src/vs/base/parts/sandbox/electron-sandbox/globals.ts`
   - may use code from: `common`, `browser`, `electron-sandbox`
