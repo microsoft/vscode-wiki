@@ -27,6 +27,8 @@ The `core` of VS Code is fully implemented in [TypeScript](https://github.com/mi
 
 # Dependency Injection
 
+## Consuming a service
+
 The code is organised around services of which most are defined in the `platform` layer. Services get to its clients via `constructor injection`. 
 
 A service definition is two parts: (1) the interface of a service, and (2) a service identifier - the latter is required because TypeScript doesn't use nominal but structural typing. A service identifier is a decoration (as proposed for ES7) and should have the same name as the service interface. 
@@ -44,6 +46,21 @@ class Client {
 ```
 
 Use the instantiation service to create instances for service consumers, like so `instantiationService.createInstance(Client)`. Usually, this is done for you when being registered as a contribution, like a Viewlet or Language.
+
+## Providing a service
+
+The best way to provide a service to others or to your own components is the `registerSingleton`-function. It takes a service identifier and a service constructor function. 
+
+```javascript
+
+registerSingleton(
+  ISymbolNavigationService, // identifier
+  SymbolNavigationService,  // ctor of an implementation
+  true // delay instantiation of this service until is actually needed
+);
+```
+
+Add this call into a module-scope so that it is executed during startup. The workbench will then know this service and be able to pass it onto consumers.
 
 # VS Code Editor source organisation
 
