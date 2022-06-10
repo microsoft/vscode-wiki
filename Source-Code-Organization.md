@@ -11,7 +11,9 @@ The `core` is partitioned into the following layers:
 - `code`: The entry point to the desktop app that stitches everything together, this includes the Electron main file, shared process, and the CLI for example.
 - `server`: The entry point to our server app for remote development.
 
-![](images/organization/layers.png)
+<div style="text-align:center">
+<img width="600" src="images/organization/layers2.png" />
+</div>
 
 # Target Environments
 The `core` of VS Code is fully implemented in [TypeScript](https://github.com/microsoft/typescript). Inside each layer the code is organised by the target runtime environment. This ensures that only the runtime specific APIs are used. In the code we distinguish between the following target environments:
@@ -26,6 +28,10 @@ The `core` of VS Code is fully implemented in [TypeScript](https://github.com/mi
   - may use code from: `common`, `browser`, `node`
 - `electron-main`: Source code that requires the [Electron main-process](https://github.com/atom/electron/tree/master/docs#modules-for-the-main-process) APIs
   - may use code from: `common`, `node`
+
+<div style="text-align:center">
+<img width="600" src="images/organization/environments.png" />
+</div>
 
 # Dependency Injection
 
