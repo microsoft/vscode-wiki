@@ -11,7 +11,7 @@ The `core` is partitioned into the following layers:
 - `code`: The entry point to the desktop app that stitches everything together, this includes the Electron main file, shared process, and the CLI for example.
 - `server`: The entry point to our server app for remote development.
 
-<div style="text-align:center">
+<div align="center">
 <img width="600" src="images/organization/layers2.png" />
 </div>
 
@@ -29,7 +29,7 @@ The `core` of VS Code is fully implemented in [TypeScript](https://github.com/mi
 - `electron-main`: Source code that requires the [Electron main-process](https://github.com/atom/electron/tree/master/docs#modules-for-the-main-process) APIs
   - may use code from: `common`, `node`
 
-<div style="text-align:center">
+<div align="center">
 <img width="600" src="images/organization/environments.png" />
 </div>
 
