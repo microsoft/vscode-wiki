@@ -1,3 +1,7 @@
+## Intro
+
+These are VS Code coding guidelines. Please also review our [Source Code Organisation](https://github.com/microsoft/vscode/wiki/Source-Code-Organization) page.
+
 ## Git
 
 We prefer a **rebase workflow** and occasional **feature branches**. Most work happens directly on the `main` branch. For that reason, we recommend setting the `pull.rebase` setting to `merges`.
@@ -25,7 +29,7 @@ We use tabs, not spaces.
 
 ## Strings
 * Use "double quotes" for strings shown to the user that need to be externalized (localized)
-* Use 'single quotes' otherwise 
+* Use 'single quotes' otherwise
 * All strings visible to the user need to be externalized
 
 ## Style
@@ -43,7 +47,11 @@ x => x + x
 * Parenthesized constructs should have no surrounding whitespace. A single space follows commas, colons, and semicolons in those constructs. For example:
 
 ```javascript
-for (var i = 0, n = str.length; i < 10; i++) { }
-if (x < 10) { }
+for (let i = 0, n = str.length; i < 10; i++) {
+    if (x < 10) {
+        foo();
+    }
+}
+
 function f(x: number, y: string): void { }
 ```
