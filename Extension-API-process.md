@@ -5,13 +5,13 @@ The goal of this process is to be transparent about how APIs are created, what p
 
 About Proposed APIs
 --
-All proposed APIs are defined in the [`vscode.proposed.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts) file.
+All proposed APIs are defined in the [`vscode-dts`](https://github.com/microsoft/vscode/blob/main/src/vscode-dts) folder.
 
 We iterate, both internally and externally, on API proposals before making any APIs stable. With greater transparency and collaboration, we can produce better, flexible, powerful, and more ergonomic APIs. Therefore, ideally, proposals would be reviewed, tried, and tested by extension authors. To try out a proposed API, do the following:
 
-* You must use [Insiders](https://code.visualstudio.com/insiders/) because proposed APIs change frequently.
-* You must have this line in the `package.json` file of your extension: `"enableProposedApi": true`.
-* Copy the latest version of the [`vscode.proposed.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts)-file into your project.
+*  Use [Insiders](https://code.visualstudio.com/insiders/) because proposed APIs change frequently.
+* To your package.json, add "enabledApiProposals": ["<proposalName>"].
+* Copy the vscode.proposed.<proposalName>.d.ts file into your project's source location.
 
 Note: You cannot publish an extension that uses a proposed API. We may likely make breaking changes in the next release and we never want to break existing extensions.
 
@@ -48,11 +48,11 @@ Once you submit your proposal, it will begin gathering interest and pre-implemen
 
 Next, if the proposal garners enough interest, it will likely be implemented. Once implemented, the proposal is ready for review and feedback (e.g. does it meet requirements, API guidelines, ergonomics, etc). We will also monitor and gauge continued interest in the proposal. Ideally, extension authors/contributors will try out the new API and provide real-world feedback.
 
-- [`vscode.proposed.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts) file will be updated with the new API
-  - Each proposed API is contained within its own `//#region` and contains a short description of the API and a link to the proposal GitHub issue
+- The corresponding [`vscode.proposed.<proposalName>.d.ts`](https://github.com/microsoft/vscode/blob/main/src/vscode-dts) file will be updated with the new API
+  - Each proposed API is contained within its own vscode.proposed.<proposalName>.d.ts file and contains a short description of the API and a link to the proposal GitHub issue
 - The proposal issue will be labeled with `api-feedback`
 
-As an API proposal is reviewed and gathers feedback, it is very likely to evolve in response. As this continues, look to the [`vscode.proposed.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts) file for the latest version.
+As an API proposal is reviewed and gathers feedback, it is very likely to evolve in response. As this continues, look to the corresponding [`vscode.proposed.<proposalName>.d.ts`](https://github.com/microsoft/vscode/blob/main/src/vscode-dts) file for the latest version.
 
 #### API Proposal Finalization
 
@@ -64,7 +64,13 @@ Here are some finalization questions that will be asked before beginning:
 
 Once a proposal sufficiently answers those questions and is in a good place, it begins the finalization process for becoming stable. While this signals the intent to ship the proposed APIs, there isn't any guarantee that there won't be futher changes or that the proposal will become stable (e.g. in rare circumstances, we might even deprecate the proposed API). At the same time, ideally, the finalization of an API will be attached to an upcoming milestone, again as an intent not guarantee.
 
-And finally, assuming a succesful finalization, the API will move from [`vscode.proposed.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts) into [`vscode.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.d.ts) and the API proposal issue will be closed.
+And finally, assuming a successful finalization, the API will move from [`vscode.proposed.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts) into [`vscode.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.d.ts) and the API proposal issue will be closed.
+
+To migrate from a proposed API to its finalized version, you should:
+1. Remove the API proposal name from `enabledApiProposals` in your extension's package.json
+2. Remove the vscode.proposed.d.ts file for that API proposal from your extension's source directory
+3. Download the latest vscode.d.ts file via @types/vscode if the API was finalized in the latest stable release of VS Code, or from the main branch if the API will be finalized in the upcoming stable release of VS Code. To update from the main branch you can run `npx vscode-dts main`. Review any changes to the types for the proposal which may have occurred during finalization
+4. Bump the minimum VS Code engine version in your extension's package.json to ensure that your extension can only be installed with the version of VS Code containing the finalized API, e.g. "^1.68.0" if the API was finalized in the 1.68.0 release
 
 Weekly API call:
 --
