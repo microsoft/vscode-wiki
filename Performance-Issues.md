@@ -2,7 +2,7 @@
 - [Reporting a Performance Issue](#reporting)  
 - [Visual Studio Code is consuming a lot of CPU](#consuming-cpu) 
   - [Run with Extensions Disabled](#extensions-disabled)
-  - [Profile the Running Extensions](#profile-running-extensions)
+  - [Profile the Running Extensions](#profile-the-running-extensions)
   - [Collect Information about the running VS Code](#collect-information)
   - [The Renderer/Window process consumes a lot of CPU](#renderer-process)
   - [The Shared process consumes a lot of CPU](#shared-process)
