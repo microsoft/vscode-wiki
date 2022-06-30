@@ -10,8 +10,8 @@ Notice, we don't want to use GitHub Issues for general 'how-to' questions about 
 
 >Therefore please do not be upset when we close an issue with the comment to ask a question on Stack Overflow. 
 
-## GitHub discussions
-[GitHub discussions](https://github.com/microsoft/vscode-discussions/discussions) provides a place where the community can get together and collaborate. It is the official place to discuss VS Code's extension platform, ask questions, help other members of the community, and get answers.
+## GitHub Discussions
+[GitHub Discussions](https://github.com/microsoft/vscode-discussions/discussions) provides a place where the community can get together and collaborate. It is the official place to discuss VS Code's extension platform, ask questions, help other members of the community, and get answers.
 
 The VS Code PM and Advocacy teams have a presence in this community, periodicially posting announcements and answering questions.
 
