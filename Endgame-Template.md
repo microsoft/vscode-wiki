@@ -59,6 +59,7 @@
   - [ ] @alexdima
   - [ ] @alexr00
   - [ ] @andreamah
+  - [ ] @aiday-mar
   - [ ] @bpasero
   - [ ] @chrmarti
   - [ ] @connor4312
@@ -110,6 +111,7 @@
   - [ ] @alexdima
   - [ ] @alexr00
   - [ ] @andreamah
+  - [ ] @aiday-mar
   - [ ] @bpasero
   - [ ] @chrmarti
   - [ ] @connor4312
