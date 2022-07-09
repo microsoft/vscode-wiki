@@ -188,5 +188,5 @@
 - [ ] [Publish @types/vscode](https://github.com/microsoft/vscode/wiki/Publish-vscode-types) **endgame champion**
 - [ ] Close the milestone on [GitHub](https://github.com/microsoft/vscode/milestones) **endgame champion**
 - [ ] [Create next milestone](https://github.com/microsoft/vscode-internalbacklog/milestones/new) and ensure that it has a due date. The created milestone and its due date will be automatically synced across our repos **endgame champion**
-- [ ] If a [recovery build](https://github.com/microsoft/vscode/wiki/Running-the-Endgame#recovery-build) is needed, proceed to https://github.com/microsoft/vscode/wiki/Endgame-Recovery-Template or https://github.com/microsoft/vscode-internalbacklog/wiki/Patch-Tuesday-Release-Endgame-Template/ **endgame champion**
 - [ ] If no Patch Tuesday release is planned, [let the Updates team know of that fact](https://github.com/microsoft/vscode-internalbacklog/wiki/Patch-Tuesday-E-Mail-Template) ([CSEClientPatching@microsoft.com](mailto:CSEClientPatching@microsoft.com)) **endgame champion**
+- [ ] If a [recovery build](https://github.com/microsoft/vscode/wiki/Running-the-Endgame#recovery-build) is needed, proceed to https://github.com/microsoft/vscode/wiki/Endgame-Recovery-Template or https://github.com/microsoft/vscode-internalbacklog/wiki/Patch-Tuesday-Release-Endgame-Template/ **endgame champion**
