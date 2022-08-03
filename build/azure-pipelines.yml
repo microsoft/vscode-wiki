@@ -28,7 +28,7 @@ stages:
               git merge upstream/master
               
               echo 'Pushing to vscode-wiki'
-              git push origin HEAD:main
+              git push origin HEAD:tyler/add-azure-pipelines
 
               echo 'Pushing to vscode.wiki'
               git push upstream HEAD:master
