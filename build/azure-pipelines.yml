@@ -1,0 +1,32 @@
+pr: none
+trigger: none
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - main
+
+stages:
+  - stage: SyncWikiStage
+    displayName: Sync Wiki
+    pool:
+      vmImage: linux-latest
+    jobs:
+      - job: SyncWikiJob
+        displayName: Sync Wiki
+        steps:
+          - checkout: self
+            persistCredentials: true
+          - script: |
+              git config user.name vscode
+              git config user.email noemail@microsoft.com
+
+              git remote add upstream https://github.com/Microsoft/vscode.wiki.git
+              git fetch upstream
+
+              git merge upstream/master
+              
+              git push origin HEAD:main
+              git push upstream HEAD:master
+            displayName: Sync vscode-wiki & vscode.wiki
