@@ -10,8 +10,7 @@ schedules:
 stages:
   - stage: SyncWikiStage
     displayName: Sync Wiki
-    pool:
-      vmImage: linux-latest
+    pool: vscode-1es-linux
     jobs:
       - job: SyncWikiJob
         displayName: Sync Wiki
