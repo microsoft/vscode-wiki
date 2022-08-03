@@ -24,8 +24,14 @@ stages:
               git remote add upstream https://github.com/Microsoft/vscode.wiki.git
               git fetch upstream
 
+              echo 'Merging in vscode.wiki'
               git merge upstream/master
               
+              echo 'Pushing to vscode-wiki'
               git push origin HEAD:main
+
+              echo 'Pushing to vscode.wiki'
               git push upstream HEAD:master
+
+              echo 'Done!'
             displayName: Sync vscode-wiki & vscode.wiki
