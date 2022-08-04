@@ -15,17 +15,38 @@ stages:
       - job: SyncWikiJob
         displayName: Sync Wiki
         steps:
-          - checkout: self
-            persistCredentials: true
-          - script: |
-              git config user.name vscode
-              git config user.email noemail@microsoft.com
+          - task: AzureKeyVault@1
+            displayName: "Azure Key Vault: Get Secrets"
+            inputs:
+              azureSubscription: "vscode-builds-subscription"
+              KeyVaultName: vscode
+              SecretsFilter: "github-distro-mixin-password"
 
+          - script: |
+              set -e
+              cat << EOF > ~/.netrc
+              machine github.com
+              login vscode
+              password $(github-distro-mixin-password)
+              EOF
+
+              git config user.email "vscode@microsoft.com"
+              git config user.name "VSCode"
+            displayName: Prepare tooling
+
+          - script: |
+              set -e
               git remote add upstream https://github.com/Microsoft/vscode.wiki.git
               git fetch upstream
 
+              echo 'Merging in vscode.wiki'
               git merge upstream/master
               
-              git push origin HEAD:main
+              echo 'Pushing to vscode-wiki'
+              git push origin HEAD:$(Build.SourceBranch)
+
+              echo 'Pushing to vscode.wiki'
               git push upstream HEAD:master
+
+              echo 'Done!'
             displayName: Sync vscode-wiki & vscode.wiki
