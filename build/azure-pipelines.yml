@@ -7,13 +7,6 @@ schedules:
     include:
     - main
 
-resources:
-  repositories:
-    - repository: vscode
-      type: github
-      name: microsoft/vscode.wiki
-      endpoint: Monaco
-
 stages:
   - stage: SyncWikiStage
     displayName: Sync Wiki
