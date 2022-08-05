@@ -18,6 +18,9 @@ stages:
       - job: SyncWikiJob
         displayName: Sync Wiki
         steps:
+          - checkout: self
+            persistCredentials: true
+
           - pwsh: |
               $result = git config --get-regexp .*extraheader ^AUTHORIZATION:
               $token = $result -split "AUTHORIZATION: basic " | Select-Object -Last 1
