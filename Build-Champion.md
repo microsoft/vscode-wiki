@@ -1,4 +1,4 @@
-This page describes the Build Champion role. This is a weekly rotating role.
+This page describes the Build Champion role. This is a weekly rotating role within the team.
 
 ## Responsibilities
 
