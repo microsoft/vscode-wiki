@@ -69,7 +69,6 @@
   - [ ] @egamma
   - [ ] @hediet
   - [ ] @isidorn
-  - [ ] @JacksonKearl
   - [ ] @joaomoreno
   - [ ] @joyceerhl
   - [ ] @jrieken
@@ -122,7 +121,6 @@
   - [ ] @egamma
   - [ ] @hediet
   - [ ] @isidorn
-  - [ ] @JacksonKearl
   - [ ] @joaomoreno
   - [ ] @joyceerhl
   - [ ] @jrieken
