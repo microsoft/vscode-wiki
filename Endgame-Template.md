@@ -41,10 +41,10 @@
 - [ ] Pause scheduled `insider` builds **endgame champion**
 - Satellite modules/npm packages ready, version updated, smoke tested
   - [ ] yo generator **@aeschli**
-  - [ ] node debug **@weinand**
   - [ ] js-debug **@connor4312**
-  - [ ] node debugadapter node **@weinand**
-  - [ ] debug adapter protocol **@weinand**
+  - [ ] Debug Adapter Protocol **@connor4312**
+  - [ ] vscode-debugadapter-node **@roblourens**
+  - [ ] Mock Debug **@roblourens**
   - [ ] custom data for html/css **@aeschli**
 - [ ] Only candidate issues are open and assigned to [🔖milestone](https://github.com/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22April+2022%22+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-remote-repositories-github+repo%3Amicrosoft%2Fvscode-unpkg+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+repo%3Amicrosoft%2Fvscode-python+repo%3Amicrosoft%2Fvscode-jupyter+repo%3Amicrosoft%2Fvscode-jupyter-internal+repo%3Amicrosoft%2Fvscode-settings-sync-server+repo%3Amicrosoft%2Fvscode-emmet-helper+repo%3Amicrosoft%2Fvscode-remotehub+repo%3Adevcontainers%2Fcli+repo%3Adevcontainers%2Fci+)
 - [ ] All issues [🔖verified](https://github.com/issues?q=is%3Aissue+milestone%3A%22April+2022%22+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-remote-repositories-github+repo%3Amicrosoft%2Fvscode-unpkg+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+repo%3Amicrosoft%2Fvscode-python+repo%3Amicrosoft%2Fvscode-jupyter+repo%3Amicrosoft%2Fvscode-jupyter-internal+repo%3Amicrosoft%2Fvscode-settings-sync-server+repo%3Amicrosoft%2Fvscode-emmet-helper+repo%3Amicrosoft%2Fvscode-remotehub+repo%3Adevcontainers%2Fcli+repo%3Adevcontainers%2Fci+-label%3Aiteration-plan+-label%3Aendgame-plan+-label%3Atestplan-item+label%3Abug+-label%3Aduplicate+-label%3A*duplicate+-label%3Ainvalid+-label%3Aas-designed+-label%3Aerror-telemetry+is%3Aclosed+-label%3Averified)
@@ -69,7 +69,6 @@
   - [ ] @egamma
   - [ ] @hediet
   - [ ] @isidorn
-  - [ ] @JacksonKearl
   - [ ] @joaomoreno
   - [ ] @joyceerhl
   - [ ] @jrieken
@@ -93,7 +92,7 @@
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Build and manually release Insider from release/<x.y> **endgame champion**
-- [ ] Localization: Run [Update VS Code Branch](https://github.com/microsoft/vscode-loc-drop/actions/workflows/update-vscode-branch.yml) in the vscode-loc-drop repo with `release/*` as the VS Code Branch parameter (it's the default so you shouldn't have to change anything) **endgame champion**
+- [ ] Localization: Run [Update VS Code Branch](https://monacotools.visualstudio.com/Monaco/_build?definitionId=369) build with `release/*` as the VS Code Branch parameter (it's the default so you shouldn't have to change anything) **endgame champion**
 
 ##### Friday/Monday
 - [ ] Polish release notes **redmond**
@@ -122,7 +121,6 @@
   - [ ] @egamma
   - [ ] @hediet
   - [ ] @isidorn
-  - [ ] @JacksonKearl
   - [ ] @joaomoreno
   - [ ] @joyceerhl
   - [ ] @jrieken
@@ -161,10 +159,8 @@
     - [ ] signed user installer ARM64
     - [ ] zip ARM64
   - [ ] macOS
-    - [ ] Universal **owner**
-    - [ ] Intel **owner**
-    - [ ] Intel server **owner**
-    - [ ] Apple Silicon **owner**
+    - [ ] Intel + Universal **owner**
+    - [ ] Apple Silicon + Universal **owner**
   - [ ] Linux x64
     - [ ] deb **owner**
     - [ ] rpm **owner**
