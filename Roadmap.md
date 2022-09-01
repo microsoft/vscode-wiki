@@ -6,7 +6,7 @@ When we execute on our roadmap, we keep learning and our assessment of some of t
 
 We describe some initiatives as "investigations" or "explorations" which means our goal in the next few months is to better understand the problem and potential solutions before scheduling actual feature work. Once an investigation is done, we will update our plans, either deferring the initiative or committing to it.
 
-As always, we listen to your feedback and adapt our plans if needed. 
+As always, we listen to your feedback and adapt our plans if needed.
 
 Legend of annotations:
 
@@ -63,7 +63,7 @@ For 2021, we'll particularly focus in the following themes.
 ## Codespace and Remote
 - [ ] Simplify to move from a local folder to a container to a codespace or the other way around
 - [ ] Investigate client-side caching of file resources (web and desktop) to make working with unreliable connection less dreadful
-- [ ] Remote-SSH 
+- [ ] Remote-SSH
    - [ ] Prevent server installation on micro-instances
    - [x] Support 'Reopen in Container' leveraging Remote-Container support
 - [ ] Remote-Container
@@ -96,7 +96,7 @@ For 2021, we'll particularly focus in the following themes.
 - [ ] Support to configure the workbench (also see https://github.com/microsoft/vscode/issues/115641)
    - [ ] Workbench font and font size
    - [ ] Workbench display density (small versus large buttons, compact activity bar)
-   - [ ] Broaden support to customize the UI, e.g. configure available actions in the menu bar, context menus, toolbars. Investigate Bartender like support. 
+   - [ ] Broaden support to customize the UI, e.g. configure available actions in the menu bar, context menus, toolbars. Investigate Bartender like support.
    - [ ] Introduce profiles describing appearance (and behavior) or the workbench (and extensions); related to _Sets of Settings_, maybe it's the same, we don't know yet; Examples: Text editor profile, IDE profile, Student profile
 - [ ] Explore to enable users (or the workbench on the user's behalf) to manage notifications
 - [x] Improve handling opening a file when there are multiple editors available, for example, let the user choose on first open
@@ -106,7 +106,7 @@ For 2021, we'll particularly focus in the following themes.
 - [ ] Improve custom editors and custom views
    - [x] Improve data transfer between webviews and the extension host
    - [ ] :runner: Support web-workers in webviews
-   - [x] Support a predefined set of webcomponents in webviews 
+   - [x] Support a predefined set of webcomponents in webviews
 - [ ] :runner: Our API provides access to open text editor, but not notebooks, or custom editors. Extension authors rely on less than optimal workarounds.
 - [ ] Enrich tree views to lower the need to implement a custom webview-based view (model-based search/filtering, inline editing, help text, large buttons, drag&drop, checkboxes)
 
@@ -197,7 +197,7 @@ For 2021, we'll particularly focus in the following themes.
 - [ ] Language aware spellchecking in comments
 
 ### TypeScript
-We will continue to collaborate deeply with the TypeScript. See also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap).
+We will continue to collaborate deeply with TypeScript. See also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap).
 - [ ] Adopt LSP for TS
 - [x] Inline type hints
 - [ ] :runner: Explore supporting multiple files/libraries in the Web Worker based language service
@@ -247,8 +247,8 @@ We will investigate into improving the performance of popular extensions that ar
 - [x] Explore improving the build time by using [esbuild](https://github.com/evanw/esbuild) (requires AMD support) - ensure we don't lose our ability to use with the latest TS RC
 
 
-## Website 
-- [ ] :runner: Refresh all of our dated overview videos. 
+## Website
+- [ ] :runner: Refresh all of our dated overview videos.
 - [ ] Modernize the website's architecture/implementation/technology stack
 - [ ] Modernize the appearance of our website
 
