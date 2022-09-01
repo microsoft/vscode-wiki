@@ -197,7 +197,7 @@ For 2021, we'll particularly focus in the following themes.
 - [ ] Language aware spellchecking in comments
 
 ### TypeScript
-We will continue to collaborate deeply with the TypeScript. See also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap).
+We will continue to collaborate deeply with TypeScript. See also the [TypeScript roadmap](https://github.com/Microsoft/TypeScript/wiki/Roadmap).
 - [ ] Adopt LSP for TS
 - [x] Inline type hints
 - [ ] :runner: Explore supporting multiple files/libraries in the Web Worker based language service
