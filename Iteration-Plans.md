@@ -1,3 +1,8 @@
+### September 2022
+* [Iteration Plan](https://github.com/microsoft/vscode/issues/160046)
+* [Endgame](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aendgame-plan+milestone%3A%22September+2022%22)
+
+
 ### August 2022
 * [Iteration Plan](https://github.com/microsoft/vscode/issues/157454)
 * [Endgame](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aendgame-plan+milestone%3A%22August+2022%22)
