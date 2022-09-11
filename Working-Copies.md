@@ -16,7 +16,7 @@ The fundamental pieces of a working copy are:
 * events (`onDidChangeDirty`, `onDidChangeContent`, `onDidSave`): to provide dirty tracking and backup support
 * methods (`backup`, `save`, `revert`): to actually provide the necessary implementation for the workbench to call on
 
-**Note:** you will likely already have a model in your component that can map directly onto the working copy shape. For example, the `ITextFileModel` that is used for every textual edit in files implements `IWorkingCopy` so that essentially the text file model IS the working copy that gets registered.
+**Note:** you will likely already have a model in your component that can map directly onto the working copy shape. For example, the [`ITextFileModel`](https://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/textfile/common/textfiles.ts#L482) that is used for every textual edit in files implements `IWorkingCopy` so that essentially the text file model IS the working copy that gets registered.
 
 ### Lifecycle
 As soon as your working copy comes to existence, call `IWorkingCopyService.registerWorkingCopy`. From that moment on, the workbench will observe the working copy for changes using its events. 
