@@ -48,6 +48,6 @@ When you introduce a working copy to the workbench, make sure to call `IWorkingC
 
 ## Stored Working Copy
 
-**Note: ** section is TBD and work in progress
+**Note:** section is TBD and work in progress
 
 Stored working copies are a variant of working copies that have a known representation on disk. For example, working copies of notebooks all provide a `resource` that denotes to the location of a file on disk. If you have working copies like that, you can provide a stored working copy to benefit from even more capabilities, such as fail save file writing/reading and automated backup handling. 
