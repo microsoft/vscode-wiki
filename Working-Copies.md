@@ -19,7 +19,7 @@ The fundamental pieces of a working copy are:
 **Note:** you will likely already have a model in your component that can map directly onto the working copy shape. For example, the [`ITextFileModel`](https://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/textfile/common/textfiles.ts#L482) that is used for every textual edit in files implements `IWorkingCopy` so that essentially the text file model IS the working copy that gets registered.
 
 ### Lifecycle
-As soon as your working copy comes to existence, call `IWorkingCopyService.registerWorkingCopy`. From that moment on, the workbench will observe the working copy for changes using its events. 
+As soon as your working copy comes to existence, call [`IWorkingCopyService.registerWorkingCopy`](https://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/workingCopy/common/workingCopyService.ts#L104). From that moment on, the workbench will observe the working copy for changes using its events. 
 
 As soon as your working copy becomes void, dispose the registration again!
 
@@ -33,7 +33,7 @@ As soon as the working copy reports a content change, the workbench will call th
 **Note:** backups are automatically deleted once the working copy is saved and no longer reports as dirty.
 
 ### Restoring Backups
-The workbench is not in charge of resolving your working copy, it is up to you as provider. In order to restore potential backups that might be present from a previous session, you have to use `IWorkingCopyBackupService.resolve` with the identifier (`resource` and `typeId`) and set the contents of the working copy to that when resolving. In addition, you should mark your working copy as dirty.
+The workbench is not in charge of resolving your working copy, it is up to you as provider. In order to restore potential backups that might be present from a previous session, you have to use [`IWorkingCopyBackupService.resolve`](https://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/workingCopy/common/workingCopyBackup.ts#L64) with the identifier (`resource` and `typeId`) and set the contents of the working copy to that when resolving. In addition, you should mark your working copy as dirty.
 
 ### Save/Revert
 The contract of these methods is that after the operation succeeded, the working copy is no longer dirty. In addition, the `onDidSave` and `onDidChangeDirty` should have fired.
@@ -41,7 +41,7 @@ The contract of these methods is that after the operation succeeded, the working
 ### Working Copy Editor Associations
 In most ways, working copies are editor agnostic, but there are cases where the workbench needs to convert a working copy to a functional editor. For example: when there are backups of working copies stored on disk and the workbench is asked to open, we eagerly restore all such working copies as editors so that the user is always aware of unsaved changes. However, this requires a bit of glue code so that the workbench knows how to open an editor from a working copy: `IWorkingCopyEditorService`
 
-When you introduce a working copy to the workbench, make sure to call `IWorkingCopyEditorService.registerHandler`:
+When you introduce a working copy to the workbench, make sure to call [`IWorkingCopyEditorService.registerHandler`](https://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/workingCopy/common/workingCopyEditorService.ts#L48):
 * `handles`: given a working copy, return whether it is yours or not
 * `isOpen`: given a working copy, return whether you know the working copy is opened in the provided editor
 * `createEditor`: given a working copy, return an editor that can edit the working copy
