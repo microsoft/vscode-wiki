@@ -4,7 +4,7 @@ For quite some time, VSCode only provided an editor for textual edits on files o
 
 ## Working Copy
 
-The API shape of a working copy provides the minimal structure for participating as an editable "thing" in the workbench. In most cases the user would edit it using an editor. If you build a new component that allows for editing, you can introduce your working copy into the workbench to benefit from:
+The API shape ([`IWorkingCopy`](https://github.com/microsoft/vscode/blob/835ace5796cec0ed19a7eec119b26b57220b0f1a/src/vs/workbench/services/workingCopy/common/workingCopy.ts#L120)) of a working copy provides the minimal structure for participating as an editable "thing" in the workbench. In most cases the user would edit it using an editor. If you build a new component that allows for editing, you can introduce your working copy into the workbench to benefit from:
 * unified (auto)save/revert handling
 * backups ("hot-exit")
 * dirty tracking
