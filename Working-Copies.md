@@ -16,27 +16,27 @@ The fundamental pieces of a working copy are:
 * events (`onDidChangeDirty`, `onDidChangeContent`, `onDidSave`): to provide dirty tracking and backup support
 * methods (`backup`, `save`, `revert`): to actually provide the necessary implementation for the workbench to call on
 
-## Lifecycle
+### Lifecycle
 As soon as your working copy comes to existence, call `IWorkingCopyService.registerWorkingCopy`. From that moment on, the workbench will observe the working copy for changes using its events. 
 
 As soon as your working copy becomes void, dispose the registration again!
 
 **Note:** it is an error to register the same working copy more than once. The combination of `resource` and `typeId` is used for comparing working copies with each other.
 
-## Providing Backups
+### Providing Backups
 As soon as the working copy reports a content change, the workbench will call the `backup` method to store a backup of the unsaved state in the backup location. You can:
 * provide the `content` to backup as raw buffer
 * provide some `meta` information as object associated with the backup
 
 **Note:** backups are automatically deleted once the working copy is saved and no longer reports as dirty.
 
-## Restoring Backups
+### Restoring Backups
 The workbench is not in charge of resolving your working copy, it is up to you as provider. In order to restore potential backups that might be present from a previous session, you have to use `IWorkingCopyBackupService.resolve` with the identifier (`resource` and `typeId`) and set the contents of the working copy to that when resolving. In addition, you should mark your working copy as dirty.
 
-## Save/Revert
+### Save/Revert
 The contract of these methods is that after the operation succeeded, the working copy is no longer dirty. In addition, the `onDidSave` and `onDidChangeDirty` should have fired.
 
-## Working Copy Editor Associations
+### Working Copy Editor Associations
 In most ways, working copies are editor agnostic, but there are cases where the workbench needs to convert a working copy to a functional editor. For example: when there are backups of working copies stored on disk and the workbench is asked to open, we eagerly restore all such working copies as editors so that the user is always aware of unsaved changes. However, this requires a bit of glue code so that the workbench knows how to open an editor from a working copy: `IWorkingCopyEditorService`
 
 When you introduce a working copy to the workbench, make sure to call `IWorkingCopyEditorService.registerHandler`:
@@ -45,3 +45,9 @@ When you introduce a working copy to the workbench, make sure to call `IWorkingC
 * `createEditor`: given a working copy, return an editor that can edit the working copy
 
 **Note:** you will not be asked to `createEditor` for a working copy you do not `handle`.
+
+## Stored Working Copy
+
+**Note: ** section is TBD and work in progress
+
+Stored working copies are a variant of working copies that have a known representation on disk. For example, working copies of notebooks all provide a `resource` that denotes to the location of a file on disk. If you have working copies like that, you can provide a stored working copy to benefit from even more capabilities, such as fail save file writing/reading and automated backup handling. 
