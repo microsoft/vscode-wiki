@@ -35,3 +35,13 @@ The workbench is not in charge of resolving your working copy, it is up to you a
 
 ### Save/Revert
 The contract of these methods is that after the operation succeeded, the working copy is no longer dirty. In addition, the `onDidSave` and `onDidChangeDirty` should have fired.
+
+### Working Copy Editor Associations
+In most ways, working copies are editor agnostic, but there are cases where the workbench needs to convert a working copy to a functional editor. For example: when there are backups of working copies stored on disk and the workbench is asked to open, we eagerly restore all such working copies as editors so that the user is always aware of unsaved changes. However, this requires a bit of glue code so that the workbench knows how to open an editor from a working copy: `IWorkingCopyEditorService`
+
+When you introduce a working copy to the workbench, make sure to call `IWorkingCopyEditorService.registerHandler`:
+* `handles`: given a working copy, return whether it is yours or not
+* `isOpen`: given a working copy, return whether you know the working copy is opened in the provided editor
+* `createEditor`: given a working copy, return an editor that can edit the working copy
+
+**Note:** you will not be asked to `createEditor` for a working copy you do not `handle`.
