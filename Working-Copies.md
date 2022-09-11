@@ -54,4 +54,5 @@ When you introduce a working copy to the workbench, make sure to call [`IWorking
 
 Stored working copies are a variant of working copies that have a known representation on disk. For example, working copies of notebooks all provide a `resource` that denotes to the location of a file on disk. We introduced stored working copies to allow for even more reuse of text file editor working copy behaviour with other providers. This includes:
 * fail save read/write from/to disk
+* automated backup handling when resolving
 * ...
