@@ -10,6 +10,11 @@ The startup performance editor (F1 > Developer: Startup Performance) gives you a
 * extension activation stats (activation reason, code loading time, time to finish calling activate)
 * code loading stats (dev only)
 
+The screen capture below shows a sample and highlights some interesting bits like code loading, processing extension contributions, and extension stats. The durations are derived from well-known perf-markers. Simplest is to look them up in source [here](https://github.com/microsoft/vscode/blob/joh/hide-menuItems/src/vs/workbench/services/timer/browser/timerService.ts#L575)
+
+<img width="1202" alt="Screenshot 2022-09-15 at 14 27 37" src="https://user-images.githubusercontent.com/1794099/190404112-326503e4-f888-4e3c-947d-6861d2d1072f.png">
+
+
 ### Performance Marks
 
 We have the [`performance.mark`](https://github.com/microsoft/vscode/blob/a3192fbad7bb02871ae8b6d3703c8bfc5433e661/src/vs/base/common/performance.d.ts#L11)-utility that works very similar to the standard [`mark`](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark)-function. The difference is that you can use it in any context (node, electron, browser, or worker) and that it works with unix timestamps. This allows them to be compared across different processes. 
@@ -63,6 +68,11 @@ Know that you can use `console.profile` and `console.profileEnd` to profile just
 * From the `︙` menu select "More tools > JavaScript Profiler"
 * Have and execute code like below
 * The JavaScript Profiler tab will be populated with the profiles
+
+### Profile Startup
+
+You can start VS Code with a `--prof-startup` flag and it will automatically capture a profile of the main, renderer, and extension host process. Once it is done it asks you to restart and stores the files in your home directory. This is great to analyse the whole startup, esp of the built product. 
+
 
 ```ts
 console.profile('Hi');
