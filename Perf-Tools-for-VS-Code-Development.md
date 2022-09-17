@@ -107,3 +107,15 @@ You can log all communication that happens between the renderer and its extensio
 Last but not least in the performance machine. That's an old laptop that daily downloads and starts VS Code Insiders and Exploration. Using wall-clock time we know it can start VS Code in under 2.5 seconds and it need to proof that. We use the best of N runs, a slack message to the performance-channel send with the results. 
 
 _Note_ that you DO NOT NEED access to the perf-machine. It's just a normal computer and if it runs slower things will also run slower locally. Likely not as dramatic because it is around 10 years old but still slower and something you can find locally. Rarely it is OS dependent: the perf-machine run windows 10 there is no perf machine for mac nor linux
+
+### Slow Workbench Contributions
+
+We started to log workbench contributions (`registerWorkbenchContribution`) that block the startup more than 5ms before editors have restored so that we can drill into them. Watch out for console messages in developer tools similar to this one:
+
+```
+WARN Workbench contribution WalkThroughSnippetContentProvider blocked restore phase by 7ms.
+```
+
+In that case, the idea is to either move the contribution out to a later phase or profile what takes long in the contribution.
+
+
