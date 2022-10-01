@@ -51,6 +51,7 @@
 - [ ] All open PRs on the milestone [🔖merged or deferred](https://github.com/issues?q=is%3Apr+milestone%3A%22April+2022%22+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-remote-repositories-github+repo%3Amicrosoft%2Fvscode-unpkg+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+repo%3Amicrosoft%2Fvscode-python+repo%3Amicrosoft%2Fvscode-jupyter+repo%3Amicrosoft%2Fvscode-jupyter-internal+repo%3Amicrosoft%2Fvscode-settings-sync-server+repo%3Amicrosoft%2Fvscode-emmet-helper+repo%3Amicrosoft%2Fvscode-remotehub+repo%3Adevcontainers%2Fcli+repo%3Adevcontainers%2Fci+is%3Aopen)
 - [ ] Branch code to `release/<x.y>` after all expected fixes are in (latest 5PM PST) **endgame champion**
 - [ ] Branch distro to `release/<x.y>` after all expected fixes are in (latest 5PM PST) **endgame champion**
+- [ ] Localization: Run [Update VS Code Branch](https://monacotools.visualstudio.com/Monaco/_build?definitionId=369) build with `release/*` as the VS Code Branch parameter (it's the default so you shouldn't have to change anything) **endgame champion**
 - [ ] Announce `main` is open for business **endgame champion**
 - [ ] Fixing (PR + review required once branched - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] All release notes updated
@@ -92,7 +93,6 @@
 - [ ] Add notable fixes to the release notes **all**
 - When done fixing/verifying and there are changes since last build at the end of day PT
   - [ ] Build and manually release Insider from release/<x.y> **endgame champion**
-- [ ] Localization: Run [Update VS Code Branch](https://monacotools.visualstudio.com/Monaco/_build?definitionId=369) build with `release/*` as the VS Code Branch parameter (it's the default so you shouldn't have to change anything) **endgame champion**
 
 ##### Friday/Monday
 - [ ] Polish release notes **redmond**
