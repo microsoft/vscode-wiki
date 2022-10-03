@@ -60,8 +60,6 @@
   - [ ] @alexdima
   - [ ] @alexr00
   - [ ] @andreamah
-  - [ ] @aiday-mar
-  - [ ] @benibenj
   - [ ] @bpasero
   - [ ] @chrmarti
   - [ ] @connor4312
