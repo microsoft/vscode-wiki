@@ -5,6 +5,7 @@ This page describes the Build Champion role. This is a weekly rotating role with
 - Daily: [Triage all failed and partially succeeded builds](#triage-non-green-builds)
 - At least once during the week: [Review and triage error telemetry](#triage-error-telemetry)
 - On the following Monday: Hand over the role to the next person
+- Build champ buddy: The build champ buddy is a role that you take the week following being the build champ. The buddy is responsible for investigating important build failures when the build champ on the other site is offline.
 
 ## Triage non-green builds
 
