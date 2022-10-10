@@ -40,6 +40,7 @@
     - [ ] x64 Alpine
     - [ ] ARM32
     - [ ] ARM64
+    - [ ] ARM64 Alpine
 - [ ] Publish website **@gregvanl**
 - [ ] Publish stable build **endgame champion**
 - [ ] Create an official release **endgame champion**

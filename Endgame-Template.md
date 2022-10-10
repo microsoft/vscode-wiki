@@ -167,6 +167,7 @@
     - [ ] x64 Alpine
     - [ ] ARM32
     - [ ] ARM64
+    - [ ] ARM64 Alpine
 - [ ] Publish website **@gregvanl**
 - [ ] Publish to stable **endgame champion**
 - [ ] Trigger the [vscode.dev Deploy pipeline](https://dev.azure.com/monacotools/Monaco/_build?definitionId=276) for the `prod` deployment target. Request approval from another team member at the necessary step. **endgame champion**
