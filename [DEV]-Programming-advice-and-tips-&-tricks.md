@@ -7,6 +7,7 @@ TODO@Matt
 
 ### Data structures
 
+* native `Map` and `Set` are sorted by [insertion order](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#description) 💡 this is a little-know but can come handy
 * `ResourceMap` and `ResourceSet` which are normal maps/sets but keyed by `URI` (`src/vs/base/common/map.ts`)
 * `LRUCache` is a map with recency and trimming abilities (`src/vs/base/common/map.ts`)
 * `TernarySearchTree` is map-like with the ability to lookup sub and super-strings (useful for path containment) (`src/vs/base/common/map.ts`)
@@ -16,3 +17,7 @@ TODO@Matt
 ### String/array utils
 
 The modules `src/vs/base/common/arrays.ts` and `src/vs/base/common/strings.ts` have many very useful utilities when dealing with arrays or strings.
+
+### Iterables
+
+The `src/vs/base/common/iterator.ts` modules contains utilities for working with iterables. Iterables can be a better alternative than arrays because they enforce readonly-ness by design and hence saving `Array.slice`-calls
