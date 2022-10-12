@@ -3,7 +3,10 @@ This page is a collection of FYI- and TIL-items that spotlights particular usefu
 
 ### Disposable utils
 
-TODO@Matt
+* The `Disposable` base class makes it easy for subclasses to `_register` values that should be disposed of when the instance is disposed of.
+* `DisposableStore` safely manages a collection of disposable values. It is preferred over `IDisposable[]`.
+* `DisposableMap` manages a map where the values are disposables. It helps you avoid some tricky lifecycle bugs vs implementing a `Map<K, IDisposable>` yourself.
+* `MutableDisposable` safely manages a disposable value that can change over this. This prevents bugs where you forget to dispose of the old value when overwriting it with a new value.
 
 ### Data structures
 
