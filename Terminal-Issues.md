@@ -48,6 +48,8 @@ For some terminal issues it's useful to get trace logs, this can reveal at what 
 
 If for some reason you're unable to restart VS Code like you're running in a remote, you can change the log level via the command palette (<kbd>F1</kbd> `Developer: Set Log Level...`).
 
+https://github.com/microsoft/vscode/blob/c56e49670ed87ab5fcfb5895f84a8564b865f645/src/vs/platform/terminal/common/terminalEnvironment.ts#L6-L9
+
 ### Enabling escape sequence logging
 
 For issues where text is misbehaving in the terminal you can enable logging of the data being sent to/from the terminal emulator and the shell process. To enable escape sequence logging run the "Terminal: Toggle Escape Sequence Logging" command from the command palette (<kbd>F1</kbd>), the logs can then be viewed in the devtools console (Help &gt; Toggle Developer Tools).
