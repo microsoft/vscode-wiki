@@ -24,3 +24,12 @@ The modules `src/vs/base/common/arrays.ts` and `src/vs/base/common/strings.ts` h
 ### Iterables
 
 The `src/vs/base/common/iterator.ts` modules contains utilities for working with iterables. Iterables can be a better alternative than arrays because they enforce readonly-ness by design and hence saving `Array.slice`-calls
+
+### Lazy, Async, Idle
+
+We have utils to delay certain operations or values
+
+* [`Lazy<T>`](https://github.com/microsoft/vscode/blob/bf8adecc347d4228bbc9d53fd44ece304b398583/src/vs/base/common/lazy.ts#L20) a lazy value is computed only when accessed for the first time
+* [`IdleValue<T>`](https://github.com/microsoft/vscode/blob/bf8adecc347d4228bbc9d53fd44ece304b398583/src/vs/base/common/async.ts#L1167) is similar to `Lazy` but uses browser idle times to eagerly compute its value. Implements the "idle until urgent" pattern, see: https://philipwalton.com/articles/idle-until-urgent/
+* [`runWhenIdle`](https://github.com/microsoft/vscode/blob/bf8adecc347d4228bbc9d53fd44ece304b398583/src/vs/base/common/async.ts#L1116) is our wrapper around browsers [`window.requestIdleCallback`](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback)-function
+* [`scheduleAtNextAnimationFrame`](https://github.com/microsoft/vscode/blob/bf8adecc347d4228bbc9d53fd44ece304b398583/src/vs/base/browser/dom.ts#L139) and [`runAtThisOrScheduleAtNextAnimationFrame`](https://github.com/microsoft/vscode/blob/bf8adecc347d4228bbc9d53fd44ece304b398583/src/vs/base/browser/dom.ts#L132) allows to join this or the next browser animation frame
