@@ -2,14 +2,6 @@
 
 These are VS Code coding guidelines. Please also review our [Source Code Organisation](https://github.com/microsoft/vscode/wiki/Source-Code-Organization) page.
 
-## Git
-
-We prefer a **rebase workflow** and occasional **feature branches**. Most work happens directly on the `main` branch. For that reason, we recommend setting the `pull.rebase` setting to `merges`.
-
-```bash
-git config --global pull.rebase merges
-```
-
 ## Indentation
 We use tabs, not spaces.
 
