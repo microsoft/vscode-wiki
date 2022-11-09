@@ -26,10 +26,8 @@
     - [ ] signed user installer ARM64
     - [ ] zip ARM64
   - [ ] macOS
-    - [ ] Universal **endgame champion**
-    - [ ] Intel **endgame champion**
-    - [ ] Intel server **endgame champion**
-    - [ ] Apple Silicon **endgame champion**
+    - [ ] Intel (including Universal & Server) **endgame champion**
+    - [ ] Apple Silicon (including Universal & Server) **endgame champion**
   - [ ] Linux x64
     - [ ] deb **endgame champion**
     - [ ] rpm **endgame champion**
