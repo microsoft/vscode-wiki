@@ -57,6 +57,8 @@ Reading data, like an editor selection, a configuration value, etc. is synchrono
 We usually don’t expose the fact that setting state is asynchronous. We try to have API that feels sync -`editor.selection` is a getter/setter and not a method. 
 
 
+_Note:_ Providing synchronous data comes with some additional engineering cost and will consume extra memory. However, it guarantees fast (zero-cost) data reading. Extensions might read a property in a tight loop and doing millions of RPC calls comes at a cost, esp. when it is not just the call but also the preparing of the "API-shaped" data. Also, synchronous APIs are more ergonomic and for extension authors easier to reason about (after every await the world could have changed)
+
 Data Driven
 -
 Whenever possible, you should define a data model and define provider-interfaces. This puts VS Code into control as we can decide when to ask those providers, how to deal with multiple providers etc. The `ReferenceProvider` interface is a good sample for this.
