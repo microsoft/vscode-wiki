@@ -10,12 +10,12 @@
 - [ ] Ensure we have a green build on all platforms at 5pm PT
 - [ ] [🔖All closed feature-requests](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22April+2022%22+label%3Afeature-request+-label%3Averification-needed+-label%3Aon-testplan+-label%3Averified+-label%3A*duplicate+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-dev+repo%3Amicrosoft%2Fvscode-remote-repositories-github+repo%3Amicrosoft%2Fvscode-unpkg+repo%3Amicrosoft%2Fvscode-remote-release+repo%3Amicrosoft%2Fvscode-js-debug+repo%3Amicrosoft%2Fvscode-pull-request-github+repo%3Amicrosoft%2Fvscode-livepreview+repo%3Amicrosoft%2Fvscode-python+repo%3Amicrosoft%2Fvscode-jupyter+repo%3Amicrosoft%2Fvscode-jupyter-internal+repo%3Amicrosoft%2Fvscode-settings-sync-server+repo%3Amicrosoft%2Fvscode-emmet-helper+repo%3Amicrosoft%2Fvscode-remotehub+repo%3Amicrosoft%2Fvscode-dev-chrome-launcher+repo%3Amicrosoft%2Fvscode-dev-chrome-launcher+repo%3Adevcontainers%2Fcli+repo%3Adevcontainers%2Fci+repo%3Amicrosoft%2Fvscode-hexeditor) either have a `verification-needed` or `on-testplan` label
 - [ ] Create test plan items following the template [here](https://github.com/microsoft/vscode/wiki/Writing-Test-Plan-Items) by 6pm PT
-- [ ] Update your availability for testing here - https://vscode-tools.azurewebsites.net/team-manifest **team**
+- [ ] Update your availability for testing here - https://tools.code.visualstudio.com/team-manifest **team**
   - [ ] Update availability of testers in vacation. Double check N/A testers. **endgame champion**
 
 
 ##### Tuesday
-- [ ] Test plan items assigned (using https://vscode-tools.azurewebsites.net/test-plan-items)
+- [ ] Test plan items assigned (using https://tools.code.visualstudio.com/test-plan-items)
   - Run the tool multiple times to balance load if test items come in later and assignments are already made
   - [Assigned to you](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+assignee%3A%40me++label%3Atestplan-item+)
 - [ ] Test build starts at 7am CET
@@ -88,7 +88,7 @@
   - [ ] @tanhakabir
   - [ ] @tylerleonhardt
   - [ ] @tyriar
-- [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. We have improved [the tooling](https://vscode-tools.azurewebsites.net/acknowledgement) so that the endgame champion can generate the pull request acknowledgment for all repositories at once. **endgame champion**
+- [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. We have improved [the tooling](https://tools.code.visualstudio.com/acknowledgement) so that the endgame champion can generate the pull request acknowledgment for all repositories at once. **endgame champion**
   - [ ] `debug-adapter-protocol`, `inno-updater`, `jsonc-parser`, `language-server-protocol`, `lsif-node`, `vscode`, `vscode-codicons`, `vscode-css-languageservice`, `vscode-debugadapter-node`, `vscode-dev-containers`, `vscode-docs`, `vscode-emmet-helper`, `vscode-eslint`, `vscode-extension-samples`, `vscode-generator-code`, `vscode-hexeditor`, `vscode-html-languageservice`, `vscode-js-debug`, `vscode-js-debug-companion`, `vscode-js-profile-visualizer`, `vscode-jshint`, `vscode-json-languageservice`, `vscode-languageserver-node`, `vscode-livepreview`, `vscode-loader`, `vscode-lsif-extension`, `vscode-node-debug`, `vscode-node-debug2`, `vscode-pull-request-github`, `vscode-recipes`, `vscode-references-view`, `vscode-textmate`, `vscode-vsce`
 - [ ] Acknowledge [issue trackers](https://github.com/microsoft/vscode-internalbacklog/wiki/Community-Triage---Credits) from the community **@chrmarti**
 - [ ] Add notable fixes to the release notes **all**
