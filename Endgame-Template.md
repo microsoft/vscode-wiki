@@ -38,8 +38,7 @@
 
 ##### Friday
 - [ ] Build a `stable` build to ensure stable build is green **endgame champion**
-- [ ] Pause scheduled `insider` builds **endgame champion**
-- [ ] Pause scheduled `insider` release for vscode.dev **endgame champion**
+- [ ] Pause scheduled `insider` builds (includes vscode.dev publishing) **endgame champion**
 - Satellite modules/npm packages ready, version updated, smoke tested
   - [ ] yo generator **@aeschli**
   - [ ] js-debug **@connor4312**
