@@ -54,6 +54,7 @@
 - [ ] Branch vscode.dev to `release/<x.y>` after all expected fixes are in (latest 5PM PST) **endgame champion**
 - [ ] Bump up the version in `package.json` on `main` - **endgame champion**
 - [ ] Localization: Run [Update VS Code Branch](https://monacotools.visualstudio.com/Monaco/_build?definitionId=369) build with `release/*` as the VS Code Branch parameter (it's the default so you shouldn't have to change anything) **endgame champion**
+- [ ] [Create next milestone](https://github.com/microsoft/vscode-internalbacklog/milestones/new) and ensure that it has a due date. The created milestone and its due date will be automatically synced across our repos **endgame champion**
 - [ ] Announce `main` is open for business **endgame champion**
 - [ ] Fixing (PR + review required once branched - major bugs only - to be discussed in stand-up meeting, labeled as `candidate`)
 - [ ] All release notes updated
@@ -182,6 +183,5 @@
 - [ ] Enable scheduled `insider` builds **endgame champion**
 - [ ] [Publish @types/vscode](https://github.com/microsoft/vscode/wiki/Publish-vscode-types) **endgame champion**
 - [ ] Close the milestone on [GitHub](https://github.com/microsoft/vscode/milestones) **endgame champion**
-- [ ] [Create next milestone](https://github.com/microsoft/vscode-internalbacklog/milestones/new) and ensure that it has a due date. The created milestone and its due date will be automatically synced across our repos **endgame champion**
 - [ ] If no Patch Tuesday release is planned, [let the Updates team know of that fact](https://github.com/microsoft/vscode-internalbacklog/wiki/Patch-Tuesday-E-Mail-Template) ([CSEClientPatching@microsoft.com](mailto:CSEClientPatching@microsoft.com)) **endgame champion**
 - [ ] If a [recovery build](https://github.com/microsoft/vscode/wiki/Running-the-Endgame#recovery-build) is needed, proceed to https://github.com/microsoft/vscode/wiki/Endgame-Recovery-Template or https://github.com/microsoft/vscode-internalbacklog/wiki/Patch-Tuesday-Release-Endgame-Template/ **endgame champion**
