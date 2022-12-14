@@ -11,29 +11,34 @@
 - [ ] Check `https://github.com/Microsoft/vscode/compare/release/<x.y>` to ensure no other commits have been made in the release branch **endgame champion**
 - [ ] Update the release notes and include a link to a query for the fixed issues **@gregvanl**
 - [ ] Sanity check of installable bits ([server instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers))
-  - [ ] Windows 32 bit **endgame champion**
+  - [ ] Windows 32 bit **owner**
     - [ ] signed installer 32-bit
     - [ ] signed user installer 32-bit
     - [ ] zip 32-bit
     - [ ] server 32-bit
-  - [ ] Windows 64 bit **endgame champion**
+  - [ ] Windows 64 bit **owner**
     - [ ] signed installer 64-bit
     - [ ] signed user installer 64-bit
     - [ ] zip 64-bit
     - [ ] server 64-bit
-  - [ ] Windows ARM64 **endgame champion**
+    - [ ] cli 64-bit
+  - [ ] Windows ARM64 **owner**
     - [ ] signed installer ARM64
     - [ ] signed user installer ARM64
     - [ ] zip ARM64
+    - [ ] cli ARM64
   - [ ] macOS
-    - [ ] Intel (including Universal & Server) **endgame champion**
-    - [ ] Apple Silicon (including Universal & Server) **endgame champion**
-  - [ ] Linux x64
-    - [ ] deb **endgame champion**
-    - [ ] rpm **endgame champion**
-    - [ ] archives **endgame champion**
-    - [ ] snap (`sudo snap install --classic --dangerous <file>.snap`) **endgame champion**
-  - [ ] Linux server **endgame champion**
+    - [ ] Intel + Universal **owner**
+    - [ ] cli Intel
+    - [ ] Apple Silicon + Universal **owner**
+    - [ ] cli Silicon
+  - [ ] Linux x64 **owner**
+    - [ ] deb 
+    - [ ] rpm 
+    - [ ] archives
+    - [ ] snap (`sudo snap install --classic --dangerous <file>.snap`)
+    - [ ] cli
+  - [ ] Linux server **owner**
     - [ ] x64
     - [ ] x64 Alpine
     - [ ] ARM32
