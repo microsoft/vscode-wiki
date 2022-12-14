@@ -154,18 +154,23 @@
     - [ ] signed user installer 64-bit
     - [ ] zip 64-bit
     - [ ] server 64-bit
+    - [ ] cli 64-bit
   - [ ] Windows ARM64 **owner**
     - [ ] signed installer ARM64
     - [ ] signed user installer ARM64
     - [ ] zip ARM64
+    - [ ] cli ARM64
   - [ ] macOS
     - [ ] Intel + Universal **owner**
+    - [ ] cli Intel
     - [ ] Apple Silicon + Universal **owner**
+    - [ ] cli Silicon
   - [ ] Linux x64
     - [ ] deb **owner**
     - [ ] rpm **owner**
     - [ ] archives **owner**
     - [ ] snap (`sudo snap install --classic --dangerous <file>.snap`) **owner**
+    - [ ] cli
   - [ ] Linux server **owner**
     - [ ] x64
     - [ ] x64 Alpine
