@@ -64,7 +64,7 @@ The best way to provide a service to others or to your own components is the `re
 registerSingleton(
   ISymbolNavigationService, // identifier
   SymbolNavigationService,  // ctor of an implementation
-  true // delay instantiation of this service until is actually needed
+  InstantiationType.Delayed // delay instantiation of this service until is actually needed
 );
 ```
 
