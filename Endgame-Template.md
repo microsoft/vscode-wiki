@@ -89,6 +89,7 @@
   - [ ] @tanhakabir
   - [ ] @tylerleonhardt
   - [ ] @tyriar
+  - [ ] @ulugbekna
 - [ ] Acknowledge pull requests in release notes. We acknowledge PRs from outside the team. We have improved [the tooling](https://tools.code.visualstudio.com/acknowledgement) so that the endgame champion can generate the pull request acknowledgment for all repositories at once. **endgame champion**
   - [ ] `debug-adapter-protocol`, `inno-updater`, `jsonc-parser`, `language-server-protocol`, `lsif-node`, `vscode`, `vscode-codicons`, `vscode-css-languageservice`, `vscode-debugadapter-node`, `vscode-dev-containers`, `vscode-docs`, `vscode-emmet-helper`, `vscode-eslint`, `vscode-extension-samples`, `vscode-generator-code`, `vscode-hexeditor`, `vscode-html-languageservice`, `vscode-js-debug`, `vscode-js-debug-companion`, `vscode-js-profile-visualizer`, `vscode-jshint`, `vscode-json-languageservice`, `vscode-languageserver-node`, `vscode-livepreview`, `vscode-loader`, `vscode-lsif-extension`, `vscode-node-debug`, `vscode-node-debug2`, `vscode-pull-request-github`, `vscode-recipes`, `vscode-references-view`, `vscode-textmate`, `vscode-vsce`
 - [ ] Acknowledge [issue trackers](https://github.com/microsoft/vscode-internalbacklog/wiki/Community-Triage---Credits) from the community **@chrmarti**
@@ -138,6 +139,7 @@
   - [ ] @sbatten
   - [ ] @tylerleonhardt
   - [ ] @tyriar
+  - [ ] @ulugbekna
 - [ ] Run `scripts/test-documentation.sh|bat` and add file or fix issues if there are new colors that are not documented. **endgame champion**
 
 > **Note:** The `Insiders` build needs to be in the wild for 24 hours before we can enter the last phase of the endgame. **endgame champion**
