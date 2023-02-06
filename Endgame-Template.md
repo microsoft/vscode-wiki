@@ -64,6 +64,7 @@
   - [ ] @alexdima
   - [ ] @alexr00
   - [ ] @andreamah
+  - [ ] @aiday-mar
   - [ ] @bhavyaus
   - [ ] @bpasero
   - [ ] @chrmarti
@@ -115,6 +116,7 @@
   - [ ] @alexdima
   - [ ] @alexr00
   - [ ] @andreamah
+  - [ ] @aiday-mar
   - [ ] @bhavyaus
   - [ ] @bpasero
   - [ ] @chrmarti
