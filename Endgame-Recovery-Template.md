@@ -1,6 +1,6 @@
 - [ ] Create a milestone `<Month> <Year> Recovery <1|2|3>` **endgame champion**
 - [ ] Bump the version number **endgame champion**
-- [ ] [🔖candidate issues](https://github.com/issues?utf8=✓&q=is%3Aissue+label%3Acandidate+repo%3Amicrosoft%2Fvscode+repo%3Amicrosoft%2Fvscode-internalbacklog+repo%3Amicrosoft%2Fvscode-remote-release+milestone%3A%22January+2020+Recovery%22)
+- [ ] [🔖candidate issues](https://github.com/issues?q=is%3Aissue%20label%3Acandidate%20repo%3Amicrosoft%2Fvscode%20repo%3Amicrosoft%2Fvscode-internalbacklog%20repo%3Amicrosoft%2Fvscode-remote-release%20repo%3Amicrosoft%2Fvscode-pull-request-github%20milestone%3A%22January%202020%20Recovery%22)
 - [ ] Assign candidate issues to the recovery milestone **team**
 - [ ] Review the `candidate` issues, and if they pass the review assign them to the recovery milestone **team**
 - [ ] All `candidate` fixes are peer reviewed and pushed to `main` and then cherry-picked into the release branch **team**
