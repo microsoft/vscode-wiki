@@ -104,9 +104,11 @@ You can log all communication that happens between the renderer and its extensio
 
 ### Perf Machine
 
-Last but not least in the performance machine. That's an old laptop that daily downloads and starts VS Code Insiders and Exploration. Using wall-clock time we know it can start VS Code in under 2.5 seconds and it need to proof that. We use the best of N runs, a slack message to the performance-channel send with the results. 
+Last but not least in the performance machines. We use a Windows laptop and mac mini as hardware to test VS Code Insiders and Exploration leveraging the https://github.com/Microsoft/vscode-perf-bot module. 
 
-_Note_ that you DO NOT NEED access to the perf-machine. It's just a normal computer and if it runs slower things will also run slower locally. Likely not as dramatic because it is around 10 years old but still slower and something you can find locally. Rarely it is OS dependent: the perf-machine run windows 10 there is no perf machine for mac nor linux
+Using wall-clock time we know it can start VS Code in a certain duration and it needs to proof that. We use the best of N runs, a slack message to the performance-channel send with the results. 
+
+_Note_ that you DO NOT NEED access to the perf-machine. It's just a normal computer and if it runs slower things will also run slower locally. Likely not as dramatic because it is around 10 years old but still slower and something you can find locally. Rarely it is OS dependent: the perf-machine run windows 10 and macOS 12.x.
 
 ### Slow Workbench Contributions
 
