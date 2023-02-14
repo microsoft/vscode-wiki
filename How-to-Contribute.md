@@ -35,7 +35,6 @@ You'll need the following tools:
       * `make`
       * [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/)
       * [GCC](https://gcc.gnu.org) or another compile toolchain
-      * Dependencies:
     * Building deb and rpm packages requires `fakeroot` and `rpm`; run: `sudo apt-get install fakeroot rpm`
 
 ### Troubleshooting
