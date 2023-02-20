@@ -186,7 +186,7 @@ The **render** process runs the UI code inside the Shell window. To debug code r
 
 #### Using VS Code
 * Open the `vscode` repository folder
-* Choose the `Launch VS Code` launch configuration from the launch dropdown in the Debug viewlet and press <kbd>F5</kbd>.
+* Choose the `VS Code` launch configuration from the launch dropdown in the Debug viewlet and press <kbd>F5</kbd>.
 
 
 #### Using the Chrome Developer Tools
