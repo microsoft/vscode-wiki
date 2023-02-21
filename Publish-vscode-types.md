@@ -17,6 +17,8 @@ We are using `@types/vscode` for publishing `vscode.d.ts`. See https://github.co
 
 ---
 
+## Publishing via CI (not currently working)
+
 For each release, we will need to publish a new version to DefinitelyTyped. Here are the steps:
 
 1. When you publish a tag such as `1.34.0`
