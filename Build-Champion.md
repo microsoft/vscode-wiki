@@ -3,6 +3,7 @@ This page describes the Build Champion role. This is a weekly rotating role with
 ## Responsibilities
 
 - Daily: [Triage all failed and partially succeeded builds](#triage-non-green-builds)
+- Daily: [Ensure a green Insiders build from `main`](#green-insiders-build)
 - At least once during the week: [Review and triage error telemetry](#triage-error-telemetry)
 - On the following Monday: Hand over the role to the next person
 - Build champ buddy: The build champ buddy is a role that you take the week following being the build champ. The buddy is responsible for investigating important build failures when the build champ on the other site is offline.
@@ -37,6 +38,12 @@ If this was a recent failure and the "Changes" seems relevant, ping the committe
 
 👉 It's important to use ✅ on failed builds as that helps save other team members from investigating failures that don't need it which could happen when they're pinged directly.
 
+
+## Green Insiders Build
+
+It is crucial for our success to have a green insiders build from `main` branch at least once on a day. Various tools depend on this to happen, for example performance testing to figure out performance regressions early. 
+
+👉 even in debt week, when the automated release is disabled, we still want the daily insiders build to succeed. this ensures our daily rhythm is not impacted at all and we can act on build issues early on
 
 
 ## Triage error telemetry
