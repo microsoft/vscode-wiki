@@ -43,7 +43,7 @@ If this was a recent failure and the "Changes" seems relevant, ping the committe
 
 It is crucial for our success to have a green insiders build from `main` branch at least once on a day. Various tools depend on this to happen, for example performance testing to figure out performance regressions early. 
 
-👉 even in debt week, when the automated release is disabled, we still want the daily insiders build to succeed. this ensures our daily rhythm is not impacted at all and we can act on build issues early on
+👉 even in debt week, when the automated release is disabled, we still want the daily insiders build to succeed (but not released!). this ensures our daily rhythm is not impacted at all and we can act on build issues early on
 
 
 ## Triage error telemetry
