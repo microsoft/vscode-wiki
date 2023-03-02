@@ -13,6 +13,8 @@ Here are some strategies for dealing with flakiness:
    	test('the flaky test ' + i, async () => { ... });
    }
    ```
+  - Wrap the code under test in `withVerboseLogs` to increase the amount of information you can get out of the test.
+  - Also add a call to `mocha.bail` in the appropriate `testrunner.js` so that the test run will end on a failure and is easier to find in the output.
 - **Test against the product build**: Some failures may only happen in the product build, not out of sources. Integration and [smoke tests](https://github.com/Microsoft/vscode/blob/main/test/smoke/README.md) can both run against the product build:
    ```sh
    # Integration tests
@@ -23,4 +25,5 @@ Here are some strategies for dealing with flakiness:
    yarn smoketest --build <install dir>
    ```
 - **Check the logs**: Log files (client and server) are available in Azure Pipelines for all tests except the unit tests as artifacts on the build. Look for the "n published" link under Related on the build summary page.
+  - If the logs don't provide any useful information, try improving the assert failure message to provide more information about the state when the test failed. You might need to wrap a timeout failure in a try/catch and add an `asser.fail` within the catch block.
 - **Playback Playwright traces**: Browser smoke tests can be played back on https://trace.playwright.dev/ by downloading the `playwright-trace-*.zip` build artifacts under `logs-<platform>-*` -> `smoke-tests-browser`.
