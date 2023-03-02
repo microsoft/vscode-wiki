@@ -14,7 +14,7 @@ Here are some strategies for dealing with flakiness:
    }
    ```
   - Wrap the code under test in `withVerboseLogs` to increase the amount of information you can get out of the test.
-  - Also add a call to `mocha.bail` in the appropriate `testrunner.js` so that the test run will end on a failure and is easier to find in the output.
+  - Also call `mocha.bail` before `mocha.run` in the appropriate `testrunner.js` so that the test run will end on a failure and is easier to find in the output.
 - **Test against the product build**: Some failures may only happen in the product build, not out of sources. Integration and [smoke tests](https://github.com/Microsoft/vscode/blob/main/test/smoke/README.md) can both run against the product build:
    ```sh
    # Integration tests
