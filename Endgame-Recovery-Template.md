@@ -16,6 +16,7 @@
     - [ ] signed user installer 32-bit
     - [ ] zip 32-bit
     - [ ] server 32-bit
+    - [ ] cli 32-bit
   - [ ] Windows 64 bit **owner**
     - [ ] signed installer 64-bit
     - [ ] signed user installer 64-bit
@@ -29,8 +30,10 @@
     - [ ] cli ARM64
   - [ ] macOS
     - [ ] Intel + Universal **owner**
+    - [ ] server Intel
     - [ ] cli Intel
     - [ ] Apple Silicon + Universal **owner**
+    - [ ] server Silicon
     - [ ] cli Silicon
   - [ ] Linux x64 **owner**
     - [ ] deb 
@@ -40,9 +43,9 @@
     - [ ] cli
   - [ ] Linux server **owner**
     - [ ] x64
-    - [ ] x64 Alpine
     - [ ] ARM32
     - [ ] ARM64
+    - [ ] x64 Alpine
     - [ ] ARM64 Alpine
 - [ ] Publish website **@gregvanl**
 - [ ] Publish stable build **endgame champion**
