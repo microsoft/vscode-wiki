@@ -23,7 +23,7 @@ brew install gpg2 gnupg pinentry-mac
 mkdir -p ~/.gnupg
 echo "pinentry-program $(brew --prefix)/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 echo "use-agent" >> ~/.gnupg/gpg.conf
-echo 'export GPG_TTY=$(tty)' >> .bash_profile # replace with .zprofile if using ZSH
+echo 'export GPG_TTY=$(tty)' >> ~/.bash_profile # replace with ~/.zprofile if using ZSH
 ```
 
 Restart your machine. Yes, really.
