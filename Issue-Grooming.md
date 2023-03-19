@@ -1,6 +1,6 @@
 Our GitHub community is one of the biggest reasons of our success. Every single day, you create between 50 - 250 issues with inspiring ideas for new functionality, you tell us what works as expected and what doesn't, and you tell us how to improve what's already there. We appreciate every single issue you create. Thank you!
 
-Despite our best efforts to deal with all of those issues, over the course of time we fall behind. When you look at an issue it's sometimes unclear whether or not we intent to provide the functionality you propose, whether or not we fix the bug, whether or not the issue is a duplicate of another one.
+Despite our best efforts to deal with all of those issues, over the course of time we fall behind. When you look at an issue it's sometimes unclear whether or not we intend to provide the functionality you propose, whether or not we fix the bug, whether or not the issue is a duplicate of another one.
 
 In order to restore a reasonable level of clarity we annually perform a House Keeping Iteration in which we go through all open issues. We categorize, label, fix, and close issues. This results in a wave of notification which is hard to deal with (our apologies) but in the end there is better understanding of what will happen to your ideas.
 
