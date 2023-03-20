@@ -69,9 +69,11 @@
   - [ ] @bpasero
   - [ ] @chrmarti
   - [ ] @connor4312
+  - [ ] @daviddossett
   - [ ] @dbaeumer
   - [ ] @deepak1556
   - [ ] @egamma
+  - [ ] @hbons
   - [ ] @hediet
   - [ ] @isidorn
   - [ ] @joaomoreno
@@ -121,9 +123,11 @@
   - [ ] @bpasero
   - [ ] @chrmarti
   - [ ] @connor4312
+  - [ ] @daviddossett
   - [ ] @dbaeumer
   - [ ] @deepak1556
   - [ ] @egamma
+  - [ ] @hbons
   - [ ] @hediet
   - [ ] @isidorn
   - [ ] @joaomoreno
