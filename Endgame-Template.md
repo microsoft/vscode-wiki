@@ -6,8 +6,8 @@
 - [ ] Check that all queries in this issue use the current milestone **endgame champion**
 - [ ] Run [OSS tool](https://github.com/microsoft/vscode-build-tools/tree/main/distro-tools) **endgame champion**
 - [ ] Update links in the [Endgame notebooks](https://github.com/microsoft/vscode/blob/main/.vscode/notebooks/endgame.github-issues) to point to new milestone **endgame champion**
-- [ ] Code freeze at 5pm PT
-- [ ] Ensure we have a green build on all platforms at 5pm PT
+- [ ] Code freeze at 5pm PT[
+- [ ] Ensure we have a green build on all platforms at 5pm](https://twitter.com/radekosmulski/status/1638882689343447040) PT
 - [ ] [🔖All closed feature-requests](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+milestone%3A%22December+2022%22+label%3Afeature-request+-label%3Averification-needed+-label%3Aon-testplan+-label%3Averified+-label%3A*duplicate+repo:microsoft/vscode%20repo:microsoft/vscode-remote-release%20repo:microsoft/vscode-js-debug%20repo:microsoft/vscode-pull-request-github%20repo:microsoft/vscode-github-issue-notebooks%20repo:microsoft/vscode-internalbacklog%20repo:microsoft/vscode-dev%20repo:microsoft/vscode-unpkg%20repo:microsoft/vscode-references-view%20repo:microsoft/vscode-anycode%20repo:microsoft/vscode-hexeditor%20repo:microsoft/vscode-extension-telemetry%20repo:microsoft/vscode-livepreview%20repo:microsoft/vscode-remotehub%20repo:microsoft/vscode-settings-sync-server%20repo:microsoft/vscode-remote-repositories-github%20repo:microsoft/monaco-editor%20repo:microsoft/vscode-vsce%20repo:microsoft/vscode-dev-chrome-launcher%20repo:microsoft/vscode-emmet-helper%20repo:microsoft/vscode-livepreview%20repo:microsoft/vscode-livepreview%20repo:microsoft/vscode-python%20repo:microsoft/vscode-jupyter%20repo:microsoft/vscode-jupyter-internal%20repo:microsoft/vscode-github-issue-notebooks%20repo:microsoft/vscode-l10n%20repo:microsoft/vscode-remote-tunnels) either have a `verification-needed` or `on-testplan` label
 - [ ] Create test plan items following the template [here](https://github.com/microsoft/vscode/wiki/Writing-Test-Plan-Items) by 6pm PT
 - [ ] Update your availability for testing here - https://tools.code.visualstudio.com/team-manifest **team**
@@ -89,7 +89,6 @@
   - [ ] @rzhao271
   - [ ] @sandy081
   - [ ] @sbatten
-  - [ ] @tanhakabir
   - [ ] @tylerleonhardt
   - [ ] @tyriar
   - [ ] @ulugbekna
