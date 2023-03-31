@@ -7,7 +7,7 @@ The renderer process is monitored for "hangs" and when those occur automatic pro
 * the profile is analysed and interesting call-stacks are reported as normal- and error-telemetry
 
 
-#### Dealing with `PerformanceError` error
+#### Dealing with `PerfSampleError` error
 
 As mentioned above, hangs are reported as normal- and error-telemetry. When the a certain error event is reported many times it shows up on our error triage page. The error shows a synthetic stacktrace which is the callstack that the profiler saw most often. The top is the slow function and the calls is how it was called. 
 
