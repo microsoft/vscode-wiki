@@ -32,6 +32,7 @@
 * [[Dealing with Test Flakiness]]
 * [[Contributor License Agreement]]
 * [[Extension API Guidelines]]
+* [[Accessibility Guidelines]]
 
 **Documentation**
 * [Extensions](https://code.visualstudio.com/docs/extensions/overview)
