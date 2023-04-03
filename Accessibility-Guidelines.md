@@ -16,7 +16,7 @@ Every actionable element in your component needs to be keyboard navigable, or th
 
 ### Aria labels
 
-When an element gets focus, a screen reader will read something if the element has an `aria-label` or a `title` attribute set. When in doubt, set an informative `aria-label` attribute on the element that gets focus. `aria-label` should be informative but concise. Always make sure to put the most important information to the front of the `aria-label` so if users skip the announcement they first hear the important stuff.
+When an element gets focus, a screen reader will read something if the element has an `aria-label` attribute set. Set an informative `aria-label` attribute on the element that gets focus. `aria-label` should be informative but concise. Always make sure to put the most important information to the front of the `aria-label` so if users skip the announcement they first hear the important stuff. When there are multiple things to express in the aria label `,` separate them. For example, here's an aria label of one Breakpoint: `main.js 12, ~/Development/vscode/src/main.js`. First the most important information: filename and line number, and then comma separated additional details.
 
 ### Aria alerts
 
