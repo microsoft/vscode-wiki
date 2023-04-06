@@ -154,30 +154,35 @@
 ##### Wednesday/Thursday - Expected release day (this may change)
 - [ ] Build stable for all platforms **endgame champion**
 - [ ] Sanity check of installable bits ([server instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers))
-  - [ ] Windows 32 bit **owner**
-    - [ ] signed installer 32-bit
-    - [ ] signed user installer 32-bit
-    - [ ] zip 32-bit
-    - [ ] server 32-bit
-    - [ ] cli 32-bit
-  - [ ] Windows 64 bit **owner**
-    - [ ] signed installer 64-bit
-    - [ ] signed user installer 64-bit
-    - [ ] zip 64-bit
-    - [ ] server 64-bit
-    - [ ] cli 64-bit
-  - [ ] Windows ARM64 **owner**
-    - [ ] signed installer ARM64
-    - [ ] signed user installer ARM64
-    - [ ] zip ARM64
-    - [ ] cli ARM64
+  - [ ] Windows
+      - [ ] 32 bit **owner**
+          - [ ] signed installer
+          - [ ] signed user installer
+          - [ ] zip
+          - [ ] server
+          - [ ] cli
+      - [ ] 64 bit **owner**
+          - [ ] signed installer
+          - [ ] signed user installer
+          - [ ] zip
+          - [ ] server
+          - [ ] cli
+      - [ ] ARM64 **owner**
+          - [ ] signed installer
+          - [ ] signed user installer
+          - [ ] zip
+          - [ ] cli
   - [ ] macOS
-    - [ ] Intel + Universal **owner**
-    - [ ] cli Intel
-    - [ ] server Intel
-    - [ ] Apple Silicon + Universal **owner**
-    - [ ] cli Silicon
-    - [ ] server Silicon
+    - [ ] Intel **owner**
+        - [ ] Universal
+        - [ ] Intel
+        - [ ] server
+        - [ ] cli
+    - [ ] Apple Silicon **owner**
+        - [ ] Universal
+        - [ ] Apple Silicon
+        - [ ] server
+        - [ ] cli
   - [ ] Linux x64
     - [ ] deb **owner**
     - [ ] rpm **owner**
