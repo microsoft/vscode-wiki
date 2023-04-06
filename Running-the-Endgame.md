@@ -42,4 +42,4 @@ We release one or more recovery builds with a handful of critical fixes and tran
 ### Schedule Template
 
 - https://github.com/microsoft/vscode/wiki/Endgame-Recovery-Template
-- https://github.com/microsoft/vscode-internalbacklog/wiki/Patch-Tuesday-Release-Endgame-Template/
+- https://github.com/microsoft/vscode-internalbacklog/wiki/MSRC-Patch-Tuesday-Release-Endgame-Template/
