@@ -13,7 +13,7 @@ schedules:
 stages:
   - stage: SyncWikiStage
     displayName: Sync Wiki
-    pool: vscode-1es-linux
+    pool: 1es-ubuntu-20.04-x64
     jobs:
       - job: SyncWikiJob
         displayName: Sync Wiki
