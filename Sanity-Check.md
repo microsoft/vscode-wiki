@@ -1,7 +1,7 @@
 
 ## Client
 
-TBD
+Download the correct bits and make sure they start and the window opens correctly.
 
 ## Server
 
