@@ -14,6 +14,7 @@
   * [[Writing Test Plan Items]]
   * [[Test - Smoke Test Template]]
   * [[Endgame Recovery Template]]
+  * [[Sanity Check]]
 * [[Related Projects]]
 
 **Contributing**
