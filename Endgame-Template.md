@@ -153,7 +153,7 @@
 
 ##### Wednesday/Thursday - Expected release day (this may change)
 - [ ] Build stable for all platforms **endgame champion**
-- [ ] Sanity check of installable bits ([server instructions](https://github.com/microsoft/vscode-remote-release/wiki/Sanity-Check-VS-Code-Servers))
+- [ ] Sanity check of installable bits ([instructions](https://github.com/microsoft/vscode/wiki/Sanity-Check))
   - [ ] Windows
       - [ ] 32 bit **owner**
           - [ ] signed installer
