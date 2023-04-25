@@ -6,9 +6,9 @@ VS Code supports a `--crash-reporter-directory <absolute-path>` option that you 
     * Run `code-insiders` instead of `code` if the issue is occurring on the Insiders version.
 3. Take the steps that lead to the crash.
 4. Check for a `*.dmp` file in that folder.
-5. Send the `*.dmp` file back to us, either by email, or by attaching it to the GitHub issue.
+5. Send the `*.dmp` file back to us, either by email, or by creating a zip archive containing it and attaching the zip to the GitHub issue.
 
-If you can reproduce the issue running out of sources, meaning compiled from source (code-oss), then you might be able to symbolicate the crash dump (`.dmp` file) as well.
+If you can reproduce the issue running out of sources, meaning compiled from source (code-oss), then you might be able to symbolicate the crash dump (`.dmp` file) as well. Otherwise, please wait for a maintainer to symbolicate your crash dump.
 
 ## Symbolicating a crash dump
 
