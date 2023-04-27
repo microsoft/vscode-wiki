@@ -20,15 +20,15 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - Track progress on test items and checklist items
 - Adjust schedule, particularly the publishing dates, based on defects found, fixes made, holidays, vacations, etc.
 
-### Schedule Template
+### Endgame Plan
 
-https://github.com/microsoft/vscode/wiki/Endgame-Template
+The template for the Endgame plan is [here](https://insiders.vscode.dev/github/microsoft/vscode-internalbacklog/blob/main/templates/endgame-plan.md). Endgame champ can create the endgame plan for a given milestone from the [Endgame Duty](https://tools.code.visualstudio.com/duties/endgame) website. 
 
-### OS Test Availability
+<img width="267" alt="create-endgame-plan" src="https://user-images.githubusercontent.com/10746682/234839464-15ddaf88-01c6-4536-951f-e4de49690571.png">
 
-Update the OS test availability [here](https://github.com/Microsoft/vscode-tools#updating-testers)
+This will create the endgame plan for the selected milestone. All you have to do after is to update the release and endgame dates.
 
-## Recovery Build
+## Recovery Release
 
 We release one or more recovery builds with a handful of critical fixes and translation updates a few days after a release. The candidate fixes are reviewed by the development team and are assigned to a recovery milestone. We want to be restrictive about the included candidates. The mindset is "we will lose users if we do not include the fix". Here are some examples:
 - data loss
@@ -39,7 +39,6 @@ We release one or more recovery builds with a handful of critical fixes and tran
 - critical security fixes (see Patch Tuesday Release Endgame Template below)
 - an issue that impacts extensions or is an API regression
 
-### Schedule Template
+### Endgame Plan
 
-- https://github.com/microsoft/vscode/wiki/Endgame-Recovery-Template
-- https://github.com/microsoft/vscode-internalbacklog/wiki/MSRC-Patch-Tuesday-Release-Endgame-Template/
+Create the Endgame plan using the [template](https://insiders.vscode.dev/github/microsoft/vscode-internalbacklog/blob/main/templates/endgame-recovery-plan.md) and update the placeholders with appropriate data.
