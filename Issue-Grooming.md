@@ -75,7 +75,7 @@ Each issue must have a **type** label. Most type labels are grey, some are yello
   - critical security, performance issues
   - UI issue that makes a feature unusable
 - We label issues that the community can take up as `help-wanted`.
-- If issues are suitable for beginners we may add the `good-first-issue` label and we add code pointers that help beginners to get started with a PR.
+- If issues are suitable for beginners, we may add the `good-first-issue` label and we add code pointers that help beginners to get started with a PR.
 
 # Fixing Issues
 
