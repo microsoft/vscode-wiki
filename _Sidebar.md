@@ -10,10 +10,7 @@
 * [[Build Champion]]
 * [[Release Process]]
 * [[Running the Endgame]]
-  * [[Endgame Template]]
   * [[Writing Test Plan Items]]
-  * [[Test - Smoke Test Template]]
-  * [[Endgame Recovery Template]]
   * [[Sanity Check]]
 * [[Related Projects]]
 
