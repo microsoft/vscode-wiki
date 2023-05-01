@@ -42,7 +42,11 @@ The first step is to try to reproduce the problem with all extensions disabled. 
 
 ![image](https://user-images.githubusercontent.com/172399/34978338-33e7bf98-fa9e-11e7-9c79-1138936c5c34.png)
 
-If you cannot reproduce the issue when **all** extensions are disabled, then can you narrow down the extension by selectively disabling extensions? You can identify the extension which causes a performance issue by executing "<kbd>F1</kbd> > Help: Start Extension Bisect". This will run binary search on your installed extensions by disabling some, reloading the window, and asking you whether the issue that you saw still occurs, until a single extension has been identified. Alternatively, you can manually disable extensions in the Extensions Viewlet and restart/reload.
+If you cannot reproduce the issue when **all** extensions are disabled, then can you narrow down the extension by selectively disabling extensions? You can identify the extension which causes a performance issue by executing "<kbd>F1</kbd> > Help: Start Extension Bisect". This will run binary search on your installed extensions by disabling some, reloading the window, and asking you whether the issue that you saw still occurs, until a single extension has been identified.
+
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/30305945/235482512-c65d3071-8eff-4df9-8420-8f8b8b43a29a.png">
+
+Alternatively, you can manually disable extensions in the Extensions Viewlet and restart/reload.
 
 ![image](https://user-images.githubusercontent.com/172399/31659646-243280d4-b335-11e7-9980-8666a32dba52.png)
 
