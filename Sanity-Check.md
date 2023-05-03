@@ -3,6 +3,12 @@
 
 Download the correct bits and make sure they start and the window opens correctly.
 
+### Linux Snap
+
+```
+sudo snap install --classic --dangerous <file>.snap
+```
+
 ## Server
 
 ### Linux Platforms
