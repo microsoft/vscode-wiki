@@ -97,4 +97,5 @@ docker run -e COMMIT -it --rm amd64/alpine /bin/sh -c 'wget "https://update.code
 docker run -e COMMIT -it --rm arm64v8/alpine /bin/sh -c 'wget "https://update.code.visualstudio.com/commit:$COMMIT/cli-alpine-arm64/stable" -O- | tar -xz && ./code tunnel'
 ```
 
-3. Check that each CLI prompts for accepting the EULA and that you can continue to the sign-in step.
+3. For each platform, login with GitHub and open the vscode.dev link returned by the command to test the tunnel end-to-end
+
