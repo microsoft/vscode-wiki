@@ -6,9 +6,9 @@ We are using `@types/vscode` for publishing `vscode.d.ts`. See https://github.co
 2. Update `types/vscode/index.d.ts` by copying the vscode.d.ts from our release branch. But leave the comment headers in place.
 3. **Important**: Update the two version numbers in those comment headers to the newly published vscode version number. The first comment header is what determines the published version of the `@types/vscode` package.
 4. Submit the PR
-5. If there are any lint failures in the CI job for the PR, you can disable tests in either the `tslint.json` or `.eslintrc.json` files. But first check to make sure that the lint failure isn't pointing out a real issue in our vscode.d.ts or with the copy/paste job.
-4. Ask either @jrieken or @kieferrm to merge the PR.
-5. `@types/vscode` will be published in ~10 minutes.
+    - If there are any lint failures in the CI job for the PR, you can disable tests in either the `tslint.json` or `.eslintrc.json` files. But first check to make sure that the lint failure isn't pointing out a real issue in our vscode.d.ts or with the copy/paste job.
+5. Ask either @jrieken or @kieferrm to merge the PR.
+6. `@types/vscode` will be published in ~10 minutes.
 
 ## Recovery
 - We don't easily have the ability to publish a patch release for a previous minor release - e.g. once 1.75.0 is published, we can't publish a 1.74.1. In theory we could merge a PR to change the version in main back to 1.74, which would publish a 1.74 patch release, then merge another PR to move it back to 1.75, which would publish an unnecessary 1.75.1. But if you need to do this, check with a DefinitelyTyped maintainer that this will actually work as expected.
