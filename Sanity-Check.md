@@ -65,7 +65,13 @@ Use the Remote-SSH extension to connect from any client platform to a macOS remo
 
 ## CLI
 
-### Linux Platforms
+### Windows & macOS
+
+1. Download the CLI archive and extract it
+2. Run it with `./code tunnel`, login against GitHub
+3. Open the vscode.dev link returned by the command to test the tunnel end-to-end
+
+### Linux
 
 > **Note:** You can run this test from Linux, Mac or Windows.
 
