@@ -57,7 +57,7 @@ Host localhost
 Where `<username>` can be found by running `whoami /user` on cmd.exe.
 When connecting, the password is the same as the user password (which might be the Active Directory password, but definitely not the login pin).
 
-Set the undocumented setting `"remote.SSH.force32bitWindows": true` to force a 32-bit VS Code server to be installed on a 64-bit Windows host.
+Set the undocumented setting `"remote.SSH.force32bitWindows": true` to force a 32-bit VS Code server to be installed on a 64-bit Windows host. If you have previously connected to this host with this version of VS Code, you will first want to run the command "Kill VS Code Server on Host" to remove the previously installed server.
 
 ### macOS
 
