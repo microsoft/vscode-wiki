@@ -68,8 +68,7 @@ Use the Remote-SSH extension to connect from any client platform to a macOS remo
 ### Windows & macOS
 
 1. Download the CLI archive and extract it
-2. Run it with `./code tunnel`, login against GitHub
-3. Open the vscode.dev link returned by the command to test the tunnel end-to-end
+2. Run it with `./code tunnel` and make sure it starts and you see the license notice
 
 ### Linux
 
@@ -97,5 +96,5 @@ docker run -e COMMIT -it --rm amd64/alpine /bin/sh -c 'wget "https://update.code
 docker run -e COMMIT -it --rm arm64v8/alpine /bin/sh -c 'wget "https://update.code.visualstudio.com/commit:$COMMIT/cli-alpine-arm64/stable" -O- | tar -xz && ./code tunnel'
 ```
 
-3. For each platform, login with GitHub and open the vscode.dev link returned by the command to test the tunnel end-to-end
+3. Make sure the program starts and you see the license notice
 
