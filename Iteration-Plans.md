@@ -1,3 +1,11 @@
+### May 2023
+* [Iteration Plan](https://github.com/microsoft/vscode/issues/181778)
+* [Endgame](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aendgame-plan+milestone%3A%22May+2023%22)
+
+### April 2023
+* [Iteration Plan](https://github.com/microsoft/vscode/issues/178951)
+* [Endgame](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aendgame-plan+milestone%3A%22April+2023%22)
+
 ### March 2023
 * [Iteration Plan](https://github.com/microsoft/vscode/issues/176147)
 * [Endgame](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aendgame-plan+milestone%3A%22March+2023%22)
