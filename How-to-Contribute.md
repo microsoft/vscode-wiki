@@ -121,6 +121,8 @@ Errors and warnings will show in the console while developing VS Code. If you us
 
 To test the changes, you launch a development version of VS Code on the workspace `vscode`, which you are currently editing.
 
+To test changes with a remote, use the "TestResolver" in your Code - OSS window which creates a fake remote window. Search Command Palette for `TestResolver`. More information is at https://github.com/microsoft/vscode/issues/162874#issuecomment-1271774905.
+
 ### Desktop
 
 Running on Electron with extensions run in NodeJS:
