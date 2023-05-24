@@ -120,4 +120,10 @@ WARN Workbench contribution WalkThroughSnippetContentProvider blocked restore ph
 
 In that case, the idea is to either move the contribution out to a later phase or profile what takes long in the contribution.
 
+### Performance Bots Dashboard
+
+We maintain a dashboard to show performance metrics for our Windows and macOS perf bots: https://dataexplorer.azure.com/dashboards/2e20491b-d517-40b5-bab4-269607f05221
+
+![image](https://github.com/microsoft/vscode/assets/900690/91211231-fd0e-41b9-b1a2-2c19e8682ae3)
+
 
