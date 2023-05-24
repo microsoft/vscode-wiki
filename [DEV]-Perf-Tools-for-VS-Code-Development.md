@@ -127,3 +127,8 @@ We maintain a dashboard to show performance metrics for our Windows and macOS pe
 ![image](https://github.com/microsoft/vscode/assets/900690/91211231-fd0e-41b9-b1a2-2c19e8682ae3)
 
 
+For numbers across all insiders and stable releases and knobs for drilling into non-standard scenarios you can visit
+
+https://msit.powerbi.com/groups/2bb9c256-c8ed-47a3-b1be-ebf0c050fb85/reports/2f5bed71-2607-4e0c-8a83-d0f9de023342/ReportSection2a538e7da53fa84953d6?experience=power-bi
+
+<img width="1848" alt="Screenshot 2023-05-24 at 10 36 50" src="https://github.com/microsoft/vscode/assets/1794099/bd5b63eb-5e5d-4665-9915-b48040f6c316">
