@@ -38,6 +38,6 @@ We release one or more recovery builds with a handful of critical fixes and tran
 - critical security fixes (see Patch Tuesday Release Endgame Template below)
 - an issue that impacts extensions or is an API regression
 
-### Endgame Plan
+### Recovery Endgame Plan
 
 Create the Endgame plan using the [template](https://insiders.vscode.dev/github/microsoft/vscode-internalbacklog/blob/main/templates/endgame-recovery-plan.md) and update the placeholders with appropriate data.
