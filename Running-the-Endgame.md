@@ -4,21 +4,20 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 
 > Proactive communication is key to a smooth and successful endgame.
 
-- Update iteration plan issue with the endgame schedule (see template below and potentially last month's schedule)
-  - Ensure each plan item is linked to a test item
-- Discuss the endgame schedule in Monday's planning call
+- Create the endgame plan and update the schedule (see template below and potentially last month's schedule)
+- Discuss the endgame plan in Monday's planning call
   - Find an endgame buddy in the other lab
   - Remind people to update their testing availability and platform(s) in the call and release channel
-- Ensure each test item has meaningful content
-- Assign test items to testers (usually platform specific) using the [testplan tool](https://vscode-tools.azurewebsites.net/); ensure fair distribution across testers
-- Communicate test assignments in the `release` Slack channel by posting the test item queries ([example query](https://github.com/Microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22June+2016%22+is%3Aclosed))
-- Communicate end of day progress in the `release` Slack channel by communicating
-   - the number of issues filed
-   - the number of test items not yet completed ([example query](https://github.com/Microsoft/vscode/issues?q=label%3Atestplan-item+milestone%3A%22June+2016%22+is%3Aclosed))
-   - number of issues to be [verified](https://github.com/Microsoft/vscode/wiki/Issue-Tracking#verification)
-- Assign owners to checklist items for each day (if not owned by the endgame master)
-- Track progress on test items and checklist items
+- Communicate in the `release` Slack channel every day about the plan, progress, TODOs and any other important notifications.
+  - Tidy up milestone (PRs, Issues, Feature Requests missing labels)
+  - Availability of the insiders build
+  - Testing to be done (Test Plan Items, Verifications)
+  - Fixing Bugs / Candidates & Writing Documentation
+  - Sanity testing and releasing.
+- Track progress and update the endgame plan by checking off the checklist items.
+- Coordinate with the buddy by communicating the progress and expected jobs to be done.
 - Adjust schedule, particularly the publishing dates, based on defects found, fixes made, holidays, vacations, etc.
+- Update the endgame process/template with the improvements/fixes that you learn in the current endgame.
 
 ### Endgame Plan
 
