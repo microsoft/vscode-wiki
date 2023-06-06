@@ -17,14 +17,13 @@ sudo snap install --classic --dangerous <file>.snap
 
 #### Pre-requisites
 
-- Install [Docker Desktop](https://docs.docker.com/engine/install/)
+- Install and run [Docker Desktop](https://docs.docker.com/engine/install/)
 - Install [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 #### Steps
 
-1. Install VS Code at the exact version (commit) that needs sanity checking.
-2. Install the Remote-Containers extension.
-3. Run the following commands. They register the QEMU hardware emulator and start 5 kinds of containers:
+1. Install VS Code at the exact version (commit) that needs sanity checking. https://builds.code.visualstudio.com/builds/stable
+2. Run the following commands. They register the QEMU hardware emulator and start 5 kinds of containers:
 
 ```
 docker run --privileged --rm tonistiigi/binfmt --install all
@@ -36,8 +35,8 @@ docker run -d amd64/alpine sleep inf
 docker run -d arm64v8/alpine sleep inf
 ```
 
-4. Check that you can connect to each of the containers from the Remote Explorer.
-	- Check which platform you are on by running `uname -m` from the integrated terminal. (Expect: `x86_64`, `armv7l` and `aarch64`)
+4. Check that you can connect to each of the containers from the Remote Explorer - Attach to Running Container...
+	- Check which platform you are on by running `uname -m` from the integrated terminal. (Expect: `x86_64` for amd64, `armv7l` for arm32 and `aarch64` for arm64)
 	- Alpine Linux runs on `x86_64` and `aarch64`, check `cat /etc/os-release` shows Alpine as the distro.
 5. Use the Remote Explorer to remove the containers. (Note that the current window's container cannot be removed, use a new window instead.)
 
