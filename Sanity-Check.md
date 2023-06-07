@@ -80,7 +80,8 @@ Use the Remote-SSH extension to connect from any client platform to a macOS remo
 #### Steps
 
 1. Look up the build's commit id and replace `<commit>` with that value below.
-2. Run the following commands one-by-one. They register the QEMU hardware emulator and start 5 Linux-builds of the CLI:
+2. Check that the Remote Tunnels pre-release extension is installed on the Stable client. Since there is a limit to the number of tunnels that can be registered at once, unregister any unnecessary tunnels before and during this sanity test.
+3. Run the following commands one-by-one. They register the QEMU hardware emulator and start 5 Linux builds of the CLI:
 
 ```
 export COMMIT="<commit>" # Bash
@@ -95,5 +96,8 @@ docker run -e COMMIT -it --rm amd64/alpine /bin/sh -c 'apk update && apk add mus
 docker run -e COMMIT -it --rm arm64v8/alpine /bin/sh -c 'apk update && apk add musl libgcc libstdc++ && wget "https://update.code.visualstudio.com/commit:$COMMIT/cli-alpine-arm64/stable" -O- | tar -xz && ./code tunnel'
 ```
 
-3. Make sure the program starts and you see the license notice
-
+4. For each CLI run:
+    1. Make sure the program starts and you see and can agree to the license
+    2. Connect to the tunnel using the Remote Tunnels prerelease extension on the Stable client
+    3. Check which platform you are on by running `uname -m` from the integrated terminal. (Expect: `x86_64` for amd64, `armv7l` for arm32 and `aarch64` for arm64)
+    4. Run `cat /etc/os-release`. For Alpine Linux tunnels, ensure the output shows Alpine as the distro. Otherwise, ensure that Ubuntu or Debian are mentioned in the output.
