@@ -35,10 +35,10 @@ docker run -d amd64/alpine sleep inf
 docker run -d arm64v8/alpine sleep inf
 ```
 
-4. Check that you can connect to each of the containers from the Remote Explorer - Attach to Running Container...
-	- Check which platform you are on by running `uname -m` from the integrated terminal. (Expect: `x86_64` for amd64, `armv7l` for arm32 and `aarch64` for arm64)
-	- Alpine Linux runs on `x86_64` and `aarch64`, check `cat /etc/os-release` shows Alpine as the distro.
-5. Use the Remote Explorer to remove the containers. (Note that the current window's container cannot be removed, use a new window instead.)
+4. Check that you can connect to each of the containers using the "Attach in New Window" button for each container in the Remote Explorer. For each container:
+    - Check which platform you are on by running `uname -m` from the integrated terminal. (Expect: `x86_64` for amd64, `armv7l` for arm32 and `aarch64` for arm64)
+    - Alpine Linux runs on `x86_64` and `aarch64`, check `cat /etc/os-release` shows Alpine as the distro.
+5. Use the Remote Explorer to remove the containers. Note that the current window's container cannot be removed, so use a new window instead.
 
 ### Windows
 
@@ -80,7 +80,7 @@ Use the Remote-SSH extension to connect from any client platform to a macOS remo
 #### Steps
 
 1. Look up the build's commit id and replace `<commit>` with that value below.
-2. Check that the Remote Tunnels pre-release extension is installed on the Stable client. Since there is a limit to the number of tunnels that can be registered at once, unregister any unnecessary tunnels before and during this sanity test.
+2. Check that the Remote Tunnels pre-release extension is installed on the Stable client, and that the Stable client is at the exact version (commit) that needs sanity checking. Since there is a limit to the number of tunnels that can be registered at once, unregister any unnecessary tunnels before and during this sanity test.
 3. Run the following commands one-by-one. They register the QEMU hardware emulator and start 5 Linux builds of the CLI:
 
 ```
@@ -96,8 +96,9 @@ docker run -e COMMIT -it --rm amd64/alpine /bin/sh -c 'apk update && apk add mus
 docker run -e COMMIT -it --rm arm64v8/alpine /bin/sh -c 'apk update && apk add musl libgcc libstdc++ && wget "https://update.code.visualstudio.com/commit:$COMMIT/cli-alpine-arm64/stable" -O- | tar -xz && ./code tunnel'
 ```
 
-4. For each CLI run:
+4. For each CLI test:
     1. Make sure the program starts and you see and can agree to the license
     2. Connect to the tunnel using the Remote Tunnels prerelease extension on the Stable client
     3. Check which platform you are on by running `uname -m` from the integrated terminal. (Expect: `x86_64` for amd64, `armv7l` for arm32 and `aarch64` for arm64)
     4. Run `cat /etc/os-release`. For Alpine Linux tunnels, ensure the output shows Alpine as the distro. Otherwise, ensure that Ubuntu or Debian are mentioned in the output.
+    5. Close the remote connection on the client. Then, hit Ctrl+C on the server.
