@@ -104,7 +104,7 @@ You can log all communication that happens between the renderer and its extensio
 
 ### Perf Machine
 
-Last but not least in the performance machines. We use a Windows laptop and mac mini as hardware to test VS Code Insiders and Exploration leveraging the https://github.com/Microsoft/vscode-perf-bot module. 
+Last but not least in the performance machines. We use a Windows laptop, mac mini and Linux mini PC as hardware to test VS Code Insiders and Exploration leveraging the https://github.com/Microsoft/vscode-perf-bot module. 
 
 Using wall-clock time we know it can start VS Code in a certain duration and it needs to proof that. We use the best of N runs, a slack message to the performance-channel send with the results. 
 
