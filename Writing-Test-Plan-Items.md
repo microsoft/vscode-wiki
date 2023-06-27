@@ -9,6 +9,8 @@ Test Plan Item (TPI) is an issue created with label `testplan-item` for testing 
   - https://github.com/microsoft/vscode/issues/156224
   - https://github.com/microsoft/vscode/issues/183547
 
+- If a Test Plan Item cannot feasibly be written in such a way that any tester on the team can test, consider choosing a specific tester to assign to the Item as described in [Example 5](###Example-5-(Pre-assigned-to-users)).
+
 - A Test Plan Item shall not take too long to test and scoped to a specific feature. Please note that **Complexity 5 is not unlimited and there shall be a time scope of one or two hours max of testing**. If your Test Plan Item has multiple features to test and also goes beyond complexity 5 and time scope, please break it down into multiple complexity (1-5) test plan items.
 
 - Consider to write a Test Plan Item
