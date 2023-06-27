@@ -16,6 +16,16 @@ Test Plan Item (TPI) is an issue created with label `testplan-item` for testing 
   - For any feature that you are looking for exploratory testing
   - For any refactorings you did during the milestone and expecting sanity/regression/smoke testing in that area.
 
+- Writing a Test Plan Item testing **Proposed and/or Latest API**
+  - Make sure to have `npx`, `yeoman`, and `generator-code` installed
+  - Call `yo code` and create a new TypeScript extension (accept all defaults). You now have the default "Hello World" extension
+  - Open the extension's package.json-file and remove the `@types/vscode` dev-dependency
+  - Delete the `node_modules/@types/vscode`-folder
+  - **Latest API**: Run `cd src && npx vscode-dts main` to fetch latest stable API
+  - **Proposed API**: Run `cd src && npx vscode-dts dev` to fetch `vscode.proposed.d.ts`. Also add `enableProposedApi: true` to the `package.json`-file
+  - Press `F5` to run your extension
+
+
 ## Test Plan Item format
 
 There is a tool that parses all these TPIs and generates user assignments. Endgame master uses this tool to assign these TPIs to others for testing. A Test Plan Item should contain **Header** and **Body** sections which are separated by `---` (line). Header section shall contain the meta information about the TPI that is used by the tool for generating TPI assignments. Body section shall include testing details for the user to test.
@@ -250,15 +260,3 @@ Roles: Developer, Engineering Manager
 <!-- Please write your test here. -->
 
 ```
-
-
-### How to: Testing Proposed and/or Latest API
-
-
-0. Make sure to have `npx`, `yeoman`, and `generator-code` installed
-1. Call `yo code` and create a new TypeScript extension (accept all defaults). You now have the default "Hello World" extension
-2. Open the extension's package.json-file and remove the `@types/vscode` dev-dependency
-3. Delete the `node_modules/@types/vscode`-folder
-4. **Latest API**: Run `cd src && npx vscode-dts main` to fetch latest stable API
-4. **Proposed API**: Run `cd src && npx vscode-dts dev` to fetch `vscode.proposed.d.ts`. Also add `enableProposedApi: true` to the `package.json`-file
-5. Press `F5` to run your extension
