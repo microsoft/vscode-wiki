@@ -2,7 +2,7 @@ Every new UI component that we add to VS Code needs to be accessible so all deve
 
 ### New features
 
-Test the feature with a screen reader to determine if the feature could benefit from an explanation. To educate users about what to expect and how to interact with a new feature, an `accessibility.verbosity` setting and an accessibility help menu should be added via `registerProvider` on `IAccessibleViewService`. 
+Test the feature with a screen reader to determine if the feature could benefit from an explanation. To educate screen reader users about what to expect and how to interact with a new feature, an `accessibility.verbosity` setting and an accessibility help menu should be added via `registerProvider` on `IAccessibleViewService`. 
 
 ### Existing widgets
 
