@@ -1,12 +1,12 @@
-Every new UI component that we add to VS Code needs to be accessible so all developers out there can use it with joy. If you have not already, please read these public facing docs as well: https://code.visualstudio.com/docs/editor/accessibility
+Every new UI component that we add to VS Code needs to be accessible so all developers out there can use it with joy. If you have not already, please read these public facing docs as well: https://code.visualstudio.com/docs/editor/accessibility and https://www.w3.org/TR/WCAG20/#guidelines.
 
 ### New features
 
-To educate users about what to expect and how to interact with a new feature, an `accessibility.verbosity` setting and an accessibility help menu should be added via `registerProvider` on `IAccessibleViewService`.
+Test the feature with a screen reader to determine if the feature could benefit from an explanation. To educate users about what to expect and how to interact with a new feature, an `accessibility.verbosity` setting and an accessibility help menu should be added via `registerProvider` on `IAccessibleViewService`. 
 
 ### Existing widgets
 
-If you are using an existing widget in your component you still need to make sure the new experience is accessible by trying it out. You can try it out by just interacting with it using the keyboard, or by turning on a Screen Reader and making sure the content that is announced is informative. For example, if you are using a `List` widget, you might have missed that you need to implement an `IListAccessibilityProvider`.
+If you are using an existing widget in your component you still need to make sure the new experience is accessible by trying it out. Interact with it using the keyboard and by turning on a Screen Reader and make sure the content that is announced is informative. For example, if you are using a `List` widget, you might have missed that you need to implement an `IListAccessibilityProvider`.
 
 ### Color contrast
 
@@ -25,6 +25,12 @@ When an element gets focus, a screen reader will read something if the element h
 ### Aria alerts
 
 Ideally aria announcements are done as focus moves in VS Code, however in some experiences that is not possible (e.g. parameter hints). In those cases you our helper method `aria.alert` to announce. This should be used as a workaround, since we can not control when the screen reader announces these alerts.
+
+### Aria roles
+It’s best to use a native HTML control if possible, but roles are available when we are building custom components.
+
+### Input elements
+Make sure <input> controls have associated labels.
 
 ### Audio cues
 
