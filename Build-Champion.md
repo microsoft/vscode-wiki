@@ -52,7 +52,7 @@ Insider builds are scheduled to running daily automatically. In case of failure,
 
 ## Triage error telemetry
 
-Our error telemetry captures any uncaught errors thrown in VS Code and presents them in https://vscode-errors.azurewebsites.net/. This website allows us to view errors by each release and they also contain stats on the number of hits and machines that particular error had. Errors typically represent a case that wasn't considered in code, a broken feature and/or a bad error notification presented to the user.
+Our error telemetry captures any uncaught errors thrown in VS Code and presents them in https://errors.code.visualstudio.com/. This website allows us to view errors by each release and they also contain stats on the number of hits and machines that particular error had. Errors typically represent a case that wasn't considered in code, a broken feature and/or a bad error notification presented to the user.
 
 At least one time during the week of being the Build Champion you should triage the errors in **the most recent ~3 pages** for a recent insiders build as well as the stable build.
 
@@ -98,7 +98,7 @@ If you're unsure who owns an area, you can roughly determine who an owner is by 
 
 ### Useful links
 
-- [Error telemetry website](https://vscode-errors.azurewebsites.net/)
+- [Error telemetry website](https://errors.code.visualstudio.com/)
 - [ADO VS Code build](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
 - [ADO VS Code build analytics](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111&view=ms.vss-pipelineanalytics-web.new-build-definition-pipeline-analytics-view-cardmetrics)
 - [Dealing with test flakiness wiki page](https://github.com/microsoft/vscode/wiki/Dealing-with-Test-Flakiness)
