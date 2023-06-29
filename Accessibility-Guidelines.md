@@ -36,6 +36,6 @@ Important accessibility issues are labeled with the `accessibility-sla` tag. Ple
 
 ### Screen readers
 The most common screen readers used per platform are:
-Windows - NVDA, JAWS, Narrator (in descending order of support)
-MacOS - VoiceOver
-Linux - Orca (often is tricky)
+- Windows - NVDA, JAWS, Narrator (in descending order of support)
+- MacOS - VoiceOver
+- Linux - Orca (often is tricky)
