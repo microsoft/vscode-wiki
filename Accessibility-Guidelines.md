@@ -1,5 +1,9 @@
 Every new UI component that we add to VS Code needs to be accessible so all developers out there can use it with joy. If you have not already, please read these public facing docs as well: https://code.visualstudio.com/docs/editor/accessibility
 
+### New features
+
+To educate users about what to expect and how to interact with a new feature, an `accessibility.verbosity` setting and an accessibility help menu should be added via `registerProvider` on `IAccessibleViewService`.
+
 ### Existing widgets
 
 If you are using an existing widget in your component you still need to make sure the new experience is accessible by trying it out. You can try it out by just interacting with it using the keyboard, or by turning on a Screen Reader and making sure the content that is announced is informative. For example, if you are using a `List` widget, you might have missed that you need to implement an `IListAccessibilityProvider`.
@@ -29,3 +33,9 @@ Some experiences can be enriched with audio cues (e.g. existence of a breakpoint
 ### Bug fixes
 
 Important accessibility issues are labeled with the `accessibility-sla` tag. Please prioritize the fix or reply in the issue within ~ 30 days. Also feel free to reach out to Megan Rogge or Isidor Nikolic for help. 
+
+### Screen readers
+The most common screen readers used per platform are:
+Windows - NVDA, JAWS, Narrator (in descending order of support)
+MacOS - VoiceOver
+Linux - Orca (often is tricky)
