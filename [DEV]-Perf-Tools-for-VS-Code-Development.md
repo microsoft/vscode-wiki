@@ -10,7 +10,7 @@ The startup performance editor (F1 > Developer: Startup Performance) gives you a
 * extension activation stats (activation reason, code loading time, time to finish calling activate)
 * code loading stats (dev only)
 
-The screen capture below shows a sample and highlights some interesting bits like code loading, processing extension contributions, and extension stats. The durations are derived from well-known perf-markers. Simplest is to look them up in source [here](https://github.com/microsoft/vscode/blob/joh/hide-menuItems/src/vs/workbench/services/timer/browser/timerService.ts#L575)
+The screen capture below shows a sample and highlights some interesting bits like code loading, processing extension contributions, and extension stats. The durations are derived from well-known perf-markers. Simplest is to look them up in source [here](https://github.com/microsoft/vscode/blob/main/src/vs/workbench/services/timer/browser/timerService.ts#L666)
 
 <img width="1202" alt="Screenshot 2022-09-15 at 14 27 37" src="https://user-images.githubusercontent.com/1794099/190404112-326503e4-f888-4e3c-947d-6861d2d1072f.png">
 
