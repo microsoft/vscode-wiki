@@ -35,7 +35,6 @@ You'll need the following tools:
       * `make`
       * [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/)
       * [GCC](https://gcc.gnu.org) or another compile toolchain
-      * Dependencies:
     * Building deb and rpm packages requires `fakeroot` and `rpm`; run: `sudo apt-get install fakeroot rpm`
 
 ### Troubleshooting
@@ -122,18 +121,20 @@ Errors and warnings will show in the console while developing VS Code. If you us
 
 To test the changes, you launch a development version of VS Code on the workspace `vscode`, which you are currently editing.
 
-### Desktop
+To test changes with a remote, use the "TestResolver" in your Code - OSS window which creates a fake remote window. Search Command Palette for `TestResolver`. More information is at https://github.com/microsoft/vscode/issues/162874#issuecomment-1271774905.
+
+#### Desktop
 
 Running on Electron with extensions run in NodeJS:
 
-**macOS and Linux**
+##### macOS and Linux
 
 ```bash
 ./scripts/code.sh
 ./scripts/code-cli.sh # for running CLI commands (eg --version)
 ```
 
-**Windows**
+##### Windows
 
 ```bat
 .\scripts\code.bat
@@ -142,34 +143,34 @@ Running on Electron with extensions run in NodeJS:
 
 👉 **Tip!** If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `yarn watch` first.
 
-### VS Code for the Web
+#### VS Code for the Web
 
 Extensions and UI run in the browser.
 
 👉 Besides `yarn watch` also run `yarn watch-web` to build the web bits for the built-in extensions.
 
-**macOS and Linux**
+##### macOS and Linux
 
 ```bash
 ./scripts/code-web.sh
 ```
 
-**Windows**
+##### Windows
 
 ```bat
 .\scripts\code-web.bat
 ```
-### Code Server Web
+#### Code Server Web
 
 UI in the browser, extensions run in code server (NodeJS):
 
-**macOS and Linux**
+##### macOS and Linux
 
 ```bash
 ./scripts/code-server.sh --launch
 ```
 
-**Windows**
+##### Windows
 
 ```bat
 .\scripts\code-server.bat --launch
@@ -187,7 +188,7 @@ The **render** process runs the UI code inside the Shell window. To debug code r
 
 #### Using VS Code
 * Open the `vscode` repository folder
-* Choose the `Launch VS Code` launch configuration from the launch dropdown in the Debug viewlet and press <kbd>F5</kbd>.
+* Choose the `VS Code` launch configuration from the launch dropdown in the Debug viewlet and press <kbd>F5</kbd>.
 
 
 #### Using the Chrome Developer Tools

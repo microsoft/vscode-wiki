@@ -8,7 +8,7 @@ This page describes how we track issues in the `vscode` repository.
 
 
 ## Inbox tracking and Issue triage
-New issues or pull requests submitted by the community are initially triaged by an [automatic classification bot](https://github.com/microsoft/vscode-github-triage-actions/tree/master/classifier-deep). Issues that the bot does not correctly triage are then triaged by a team member. The team rotates the inbox tracker on a weekly basis.
+New issues or pull requests submitted by the community are initially triaged by an [automatic classification bot](https://github.com/microsoft/vscode-github-triage-actions/tree/stable/classifier-deep). Issues that the bot does not correctly triage are then triaged by a team member. The team rotates the inbox tracker on a weekly basis.
 
 A [mirror](https://github.com/JacksonKearl/testissues/issues) of the VS Code issue stream is available with details about how the bot classifies issues, including feature-area classifications and confidence ratings. Per-category confidence thresholds and feature-area ownership data is maintained in [.github/classifier.json](https://github.com/microsoft/vscode/blob/master/.github/classifier.json). 
 

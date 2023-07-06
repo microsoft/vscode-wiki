@@ -1,6 +1,6 @@
 Our GitHub community is one of the biggest reasons of our success. Every single day, you create between 50 - 250 issues with inspiring ideas for new functionality, you tell us what works as expected and what doesn't, and you tell us how to improve what's already there. We appreciate every single issue you create. Thank you!
 
-Despite our best efforts to deal with all of those issues, over the course of time we fall behind. When you look at an issue it's sometimes unclear whether or not we intent to provide the functionality you propose, whether or not we fix the bug, whether or not the issue is a duplicate of another one.
+Despite our best efforts to deal with all of those issues, over the course of time we fall behind. When you look at an issue it's sometimes unclear whether or not we intend to provide the functionality you propose, whether or not we fix the bug, whether or not the issue is a duplicate of another one.
 
 In order to restore a reasonable level of clarity we annually perform a House Keeping Iteration in which we go through all open issues. We categorize, label, fix, and close issues. This results in a wave of notification which is hard to deal with (our apologies) but in the end there is better understanding of what will happen to your ideas.
 
@@ -28,16 +28,16 @@ We close issues with the help of a bot that responds to a particular comment suc
 
 ## Out-of-Scope Feature Requests
 
-Feature requests like all issues are a means of communication between us and our community as well as among members of the community. Thus, in principle, we could keep all feature requests open no matter what will happen to the feature they describe. But this makes it hard for you to understand what has realistic chances to ever make it into the repository. We therefore close feature requests we won't address. 
+Feature requests, like all issues, are a means of communication between us and our community, as well as among members of the community. Thus, in principle, we could keep all feature requests open no matter what will happen to the feature they describe. But this makes it hard for you to understand what has realistic chances to ever make it into the repository. We therefore close feature requests we won't address. 
 
-If you are the author of a feature request you might not like that we close your issue. It might even feel like a slap in your face. We understand that. All of us have been there as well - in this project or others we have contributed to. So, be assured, we love all of your input. Don't take personal offense when we decide to close your issue :peace_symbol:. If you feel your feature request deserves to stay open, improve your use case or gather more up-votes. Then ping us and we'll consider reopening the feature request.
+If you are the author of a feature request, you might not like that we close your issue. It might even feel like a slap in your face. We understand that. All of us have been there as well - in this project or others we have contributed to. So, be assured, we love all of your input. Don't take personal offense when we decide to close your issue :peace_symbol:. If you feel your feature request deserves to stay open, improve your use case or gather more up-votes. Then ping us and we'll consider reopening the feature request.
 
 Here are the criteria we use to make the decision about closing a feature request:
 1. Does the functionality described in the feature request have any reasonable chance to be implemented in the next 24 months? 24 months is longer than our [roadmap](https://github.com/Microsoft/vscode/wiki/Roadmap) which outlines the next 6-12 months. Thus, there is some crystal ball reading on our part, and we'll most likely keep more feature requests open than what we can accomplish in 24 months.
 2. Has the community at large expressed interest in this functionality? I.e. has it gathered more than 20 up-votes or more than 20 comments? This criterion alone covers more than 650 of the 2850 open feature requests as of right now, October 9th, 2019. 
 3. Do we think the feature request is bold and forward looking and would we like to see it be tackled at some point even if it's further out than 24 months? (Clearly, this one is the most subjective criterion.)
 
-If the answer to any of the three questions is `yes` then we ask about affordability:
+If the answer to any of the three questions is `yes`, then we ask about affordability:
 
 4. Can our team afford to implement the feature? I.e. are the costs to implement the functionality reasonable compared to the size of our team?
 
@@ -45,7 +45,7 @@ In summary, a feature needs to pass one of 1-3 and 4. Otherwise, we'll close it 
 
 ## Won't fix Bugs
 
-We close bugs as `won't fix` if there is a negative cost-benefit balance. It's not that we don't care about users who are affected by an issue but, for example, if the fix is so complex that despite all of our tests we risk regressions for many users, fixing is not a reasonable choice. When we close a bug as `won't fix` we'll make our case why we do so.
+We close bugs as `won't fix` if there is a negative cost-benefit balance. It's not that we don't care about users who are affected by an issue but, for example, if the fix is so complex that despite all of our tests, we risk regressions for many users, fixing is not a reasonable choice. When we close a bug as `won't fix`, we'll make our case why we do so.
 
 ## Upstream Issue
 
@@ -68,14 +68,15 @@ Each issue must have a **type** label. Most type labels are grey, some are yello
 |`engineering` | issues related to our engineering system or our processes|
 
 # Labeling Issues
+
 - We assign the `important` label to issues that
   - result in data loss
   - a breakage of extension
   - critical security, performance issues
   - UI issue that makes a feature unusable
 - We label issues that the community can take up as `help-wanted`.
-- If issues are suitable for beginners we may add the `good-first-issue` label and we add code pointers that help beginners to get started with a PR.
-
+- If issues are suitable for beginners, we may add the `good-first-issue` label and we add code pointers that help beginners to get started with a PR.
 
 # Fixing Issues
+
 - We assign bugs that we plan to fix during the grooming to the milestone of the current iteration.
