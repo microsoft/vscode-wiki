@@ -1,3 +1,73 @@
+# Sanity Checking VS Code
+### Jump to a section:
+[About](#about) \
+[Getting Started](#getting-started) \
+[Steps to Test Per Build Type](#steps-to-test-per-build-type) 
+
+
+---
+---
+## About
+
+#### What is sanity testing and why do we do it?
+Sanity testing is a process where we confirm our vscode installers work and that the final build can run. We sanity test to make sure the builds we ship work on the most basic level and there isn’t an immediate breaking change on VS Code. It also allows us to have human eyes on the actual build we ship and avoids the use of potentially flakey tests in the final stages of a release. (generally just make sure we don’t embarrass ourselves by shipping something that doesn’t even start).
+
+#### What to look for when you sanity test?
+
+We are looking for errors, failures, or anything else that is not desired behavior. Examples are things not loading or errors when trying to open the build in the first place.
+
+#### What does it mean to sanity test and what are some things to try during sanity testing?
+
+- On the most basic level:  install, launch, then open a file or the about dialog
+- Other options to test a bit more:
+    - Click through all the items on the sidebar
+    - Try some command from the command palette
+    - Open / click around in the terminal
+
+---
+---
+## Getting Started
+
+When the step of sanity testing comes in endgame, sections are assigned based on device type. The devices tested are as follows with the compatible testing machine:
+
+| OS to Test      | Possible Testing Machine for Given OS |
+| ----------- | ----------- |
+| Mac x64      | Windows x64, Windows x86, Linux x64, Linux Server, Linux CLI       |
+| Mac ARM   | Windows ARM, Linux Server, Linux CLI,        |
+| Windows x64 | Windows x86, Linux x64, Linux Server, Linux CLI |
+| Any Web Browser |  Windows x64, Windows x86, Linux x64, Linux Server, Linux CLI |
+
+#### Tools for Testing Different OS
+* On macOS you can get a Parallels license to spin up VMs , you can get a Parallels license. 
+* On Windows (virtualized or not), you can use the Sanity Testing WSL image created by @sbatten
+* And don’t forget, we have [dev box](https://devbox.microsoft.com/%25C2%25A0) thanks to @lszomoru which allows us to spin up Windows x64 VMs to access from any browser.
+
+#### Assignment & Beginning
+From here, different OS sections are self-assigned and checked off once complete on the given release github issue. All OSs are tested for Archive, Server, and CLI. The OS tested are as follows:
+- Windows x32
+- Windows x64
+- Windows ARM64
+- Mac Intel
+- Mac ARM64
+- Linux x64
+- Linux Server
+- Linux CLI
+
+
+
+Other system types have specific builds, these will be outlined in the release issue. Here are the types of builds and what this means:
+
+- Archive: The regular build (also referred to as client below)
+- Server: Running vscode on a server on a remote client.
+- CLI: Running vscode from the command line interface.
+- Universal Archive (for mac): Same as the regular archive but just a build that should work universally for all Macs.
+
+Once sections are assigned, follow the Steps to Test Build Type below to check off each of your assigned sections on the release issue.
+
+---
+---
+## Steps to Test Per Build Type
+follow the steps below for the client, server, and CLI steps.
 
 ## Client
 
