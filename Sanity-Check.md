@@ -37,6 +37,8 @@ When the step of sanity testing comes in endgame, sections are assigned based on
 | Windows x64 | Windows x86, Linux x64, Linux Server, Linux CLI |
 | Any Web Browser |  Windows x64, Windows x86, Linux x64, Linux Server, Linux CLI |
 
+credit to @tylerleonhardt for this table and the below tool descriptions.
+
 #### Tools for Testing Different OS
 * On macOS you can get a Parallels license to spin up VMs , you can get a Parallels license. 
 * On Windows (virtualized or not), you can use the Sanity Testing WSL image created by @sbatten
