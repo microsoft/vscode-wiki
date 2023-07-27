@@ -1,15 +1,13 @@
 # Sanity Checking VS Code
-### Jump to a section:
+## Jump to a section:
 [About](#about) \
 [Getting Started](#getting-started) \
 [Steps to Test Per Build Type](#steps-to-test-per-build-type) 
 
 
----
----
 ## About
 
-#### What is sanity testing and why do we do it?
+### What is sanity testing and why do we do it?
 
 VS Code has an extensive release process, called [Endgame](https://github.com/Microsoft/vscode/wiki/Running-the-Endgame), that contains multiple testing processes to ensure that we deliver a product of the highest quality to our users. The final process a build must pass before being released is what we call "Sanity testing".
 
@@ -41,34 +39,25 @@ When the step of sanity testing comes in endgame, sections are assigned based on
 | Mac x64      | Windows x64, Windows x86, Linux x64, Linux Server, Linux CLI       |
 | Mac ARM   | Windows ARM, Linux Server, Linux CLI,        |
 | Windows x64 | Windows x86, Linux x64, Linux Server, Linux CLI |
-| Any Web Browser |  Windows x64, Windows x86, Linux x64, Linux Server, Linux CLI |
+| Any Web Browser for devbox.microsoft.com|  Windows x64, Windows x86, Linux x64, Linux Server, Linux CLI |
 
 credit to @tylerleonhardt for this table and the below tool descriptions.
 
 #### Tools for Testing Different OS
-* On macOS you can get a Parallels license to spin up VMs , you can get a Parallels license. 
+* On macOS you can get a Parallels license from our admin to spin up VMs , you can get a Parallels license. 
 * On Windows (virtualized or not), you can use the Sanity Testing WSL image created by @sbatten
 * And don’t forget, we have [dev box](https://devbox.microsoft.com/%25C2%25A0) thanks to @lszomoru which allows us to spin up Windows x64 VMs to access from any browser.
 
-#### Assignment & Beginning
-From here, different OS sections are self-assigned and checked off once complete on the given release github issue. All OSs are tested for Archive, Server, and CLI. The OS tested are as follows:
-- Windows x32
-- Windows x64
-- Windows ARM64
-- Mac Intel
-- Mac ARM64
-- Linux x64
-- Linux Server
-- Linux CLI
 
 
 
 Other system types have specific builds, these will be outlined in the release issue. Here are the types of builds and what this means:
 
-- Archive: The regular build (also referred to as client below)
+- Archive: a build that doesn't have an installer (also referred to as client below)
 - Server: Running vscode on a server on a remote client.
 - CLI: Running vscode from the command line interface.
-- Universal Archive (for mac): Same as the regular archive but just a build that should work universally for all Macs.
+- Universal Archive (for macOS): Same as the regular archive but just a build that should work universally for both Intel and Apple Silicon based chips.
+
 
 Once sections are assigned, follow the Steps to Test Build Type below to check off each of your assigned sections on the release issue.
 
