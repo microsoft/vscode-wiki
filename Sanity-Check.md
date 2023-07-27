@@ -28,6 +28,7 @@ We are looking for errors, failures, or anything else that is not desired behavi
     - Click through all the items on the sidebar
     - Try some command from the command palette
     - Open / click around in the terminal
+    - Install and use an extension
 
 ---
 ---
