@@ -10,7 +10,12 @@
 ## About
 
 #### What is sanity testing and why do we do it?
-Sanity testing is a process where we confirm our vscode installers work and that the final build can run. We sanity test to make sure the builds we ship work on the most basic level and there isn’t an immediate breaking change on VS Code. It also allows us to have human eyes on the actual build we ship and avoids the use of potentially flakey tests in the final stages of a release. (generally just make sure we don’t embarrass ourselves by shipping something that doesn’t even start).
+
+VS Code has an extensive release process, called [Endgame](https://github.com/Microsoft/vscode/wiki/Running-the-Endgame), that contains multiple testing processes to ensure that we deliver a product of the highest quality to our users. The final process a build must pass before being released is what we call "Sanity testing".
+
+> NOTE: This testing is done for each platform build we ship.
+
+Sanity testing is human run and is the opportunity to have a final set of eyes on a build before it is released to users. This testing helps catch any final issues that might have slipped through the rest of the testing processes and ensures that the installer install VS Code correctly and it runs as expect.
 
 #### What to look for when you sanity test?
 
