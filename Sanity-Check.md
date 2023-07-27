@@ -28,8 +28,6 @@ We are looking for errors, failures, or anything else that is not desired behavi
     - Open / click around in the terminal
     - Install and use an extension
 
----
----
 ## Getting Started
 
 When the step of sanity testing comes in endgame, sections are assigned based on device type. The devices tested are as follows with the compatible testing machine:
@@ -61,8 +59,6 @@ Other system types have specific builds, these will be outlined in the release i
 
 Once sections are assigned, follow the Steps to Test Build Type below to check off each of your assigned sections on the release issue.
 
----
----
 ## Steps to Test Per Build Type
 follow the steps below for the client, server, and CLI steps.
 
