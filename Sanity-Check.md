@@ -30,7 +30,7 @@ We are looking for errors, failures, or anything else that is not desired behavi
 
 When the step of sanity testing comes in endgame, sections are assigned based on device type. The devices tested are as follows with the compatible testing machine:
 
-| OS to Test      | Possible Testing Machine for Given OS |
+| OS you are running | Additional builds you are able to test |
 | ----------- | ----------- |
 | Mac x64      | Windows x64, Windows x86, Linux x64, Linux Server, Linux CLI       |
 | Mac ARM   | Windows ARM, Linux Server, Linux CLI,        |
