@@ -103,9 +103,18 @@ docker run -d arm64v8/alpine sleep inf
     - Alpine Linux runs on `x86_64` and `aarch64`, check `cat /etc/os-release` shows Alpine as the distro.
 5. Use the Remote Explorer to remove the containers. Note that the current window's container cannot be removed, so use a new window instead.
 
-### Windows
+### Windows and Mac using the CLI/Tunnels
 
-Use the Remote-SSH extension to connect from any client platform to a Windows remote. You can connect to localhost on your own Windows machine, a parallels VM, or another machine. You'll need to [set up and start OpenSSH services](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse), such as the OpenSSH SSH Server service and the OpenSSH Authentication Agent service.
+You can sanity test the CLI and the server at the same time, by using the CLI to start a tunnel and connecting to it from a browser, specifying the right commit hash for the server version under test.
+
+1. Download and extract the CLI
+2. Run it with `./code tunnel`
+3. The CLI will print a `vscode.dev` link. Open that link, but add `?vscode-version=<commit hash>` to the end of the URL, where `<commit hash>` is the hash of the build that is being tested. You can find this on the builds page.
+4. Navigate to that URL. This will cause the CLI to download the specified version of the server and open a remote session in your browser over the tunnel.
+
+### Windows using Remote-SSH
+
+This is a second option for sanity testing the Windows server. Use the Remote-SSH extension to connect from any client platform to a Windows remote. You can connect to localhost on your own Windows machine, a parallels VM, or another machine. You'll need to [set up and start OpenSSH services](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse), such as the OpenSSH SSH Server service and the OpenSSH Authentication Agent service.
 
 Note: if you are an [AAD user](https://github.com/PowerShell/Win32-OpenSSH/issues/1787) on your Windows machine, you may have to apply [this workaround](https://github.com/PowerShell/Win32-OpenSSH/issues/1476#issuecomment-642974745).
 
@@ -121,7 +130,7 @@ When connecting, the password is the same as the user password (which might be t
 
 Set the undocumented setting `"remote.SSH.force32bitWindows": true` to force a 32-bit VS Code server to be installed on a 64-bit Windows host. If you have previously connected to this host with this version of VS Code, you will first want to run the command "Kill VS Code Server on Host" to remove the previously installed server.
 
-### macOS
+### macOS using Remote-SSH
 
 Use the Remote-SSH extension to connect from any client platform to a macOS remote (connecting to `localhost` is ok). To start the SSH server, you just have to enable Remote Login as described [here](https://osxdaily.com/2011/09/30/remote-login-ssh-server-mac-os-x/).
 
