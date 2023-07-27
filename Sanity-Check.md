@@ -43,7 +43,7 @@ credit to @tylerleonhardt for this table and the below tool descriptions.
 
 #### Tools for Testing Different OS
 * On macOS you can get a Parallels license from our admin to spin up VMs , you can get a Parallels license. 
-* On Windows (virtualized or not), you can use the Sanity Testing WSL image created by @sbatten
+* On Windows (virtualized or not), you can use the Sanity Testing WSL image created by @sbatten. Find images and instructions [here](https://microsoft-my.sharepoint.com/:f:/p/stbatt/EvLnK6RCcW9KttxeqDR59WkBbqoPxHehXV4-EkQinN62sA?e=yk9YNE).
 * And don’t forget, we have [dev box](https://devbox.microsoft.com/%25C2%25A0) thanks to @lszomoru which allows us to spin up Windows x64 VMs to access from any browser.
 
 
