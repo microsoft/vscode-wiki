@@ -26,7 +26,7 @@ You'll need the following tools:
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
   - **Windows WSL2**: https://github.com/microsoft/vscode/wiki/Selfhosting-on-Windows-WSL
   - **macOS**
-    - [Xcode](https://developer.apple.com/xcode/downloads/) and the Command Line Tools, which will install `gcc` and the related toolchain containing `make`
+    - [Xcode](https://developer.apple.com/xcode/resources/) and the Command Line Tools, which will install `gcc` and the related toolchain containing `make`
       - Run `xcode-select --install` to install the Command Line Tools
   - **Linux**
     * On Debian-based Linux: `sudo apt-get install build-essential g++ libx11-dev libxkbfile-dev libsecret-1-dev libkrb5-dev python-is-python3`
