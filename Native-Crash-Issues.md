@@ -10,7 +10,7 @@ VS Code supports a `--crash-reporter-directory <absolute-path>` option that you 
 
 If you can reproduce the issue running out of sources, meaning compiled from source (code-oss), then you might be able to symbolicate the crash dump (`.dmp` file) as well. Otherwise, please wait for a maintainer to symbolicate your crash dump.
 
-## Symbolicating a crash dump
+## Symbolicating a crash dump (_Steps for VS Code team members only_)
 
 A global install of electron-minidump is required for the following steps.  
 One can install electron-minidump globally using `npm install -g electron-minidump`. 
