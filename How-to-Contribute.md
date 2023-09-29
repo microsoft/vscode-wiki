@@ -10,8 +10,8 @@ In order to download necessary tools, clone the repository, and install dependen
 You'll need the following tools:
 
 - [Git](https://git-scm.com)
-- [Node.JS](https://nodejs.org/en/), **x64**, version `>=16.14.x and <17`
-- [Yarn](https://yarnpkg.com/en/), follow the [installation guide](https://yarnpkg.com/en/docs/install)
+- [Node.JS](https://nodejs.org/en/), **x64**, version `>=18.15.x and <19`
+- [Yarn 1](https://classic.yarnpkg.com/en/), version `>=1.10.1 and <2`, follow the [installation guide](https://classic.yarnpkg.com/en/docs/install)
 - [Python](https://www.python.org/downloads/) (required for node-gyp; check the [node-gyp readme](https://github.com/nodejs/node-gyp#installation) for the currently supported Python versions)
   - **Note:** Python will be automatically installed for Windows users through installing `windows-build-tools` npm module (see below)
 - A C/C++ compiler tool chain for your platform:
@@ -21,21 +21,20 @@ You'll need the following tools:
       - if you use a node version manager like [nvm](https://github.com/coreybutler/nvm-windows) or [nvs](https://github.com/jasongin/nvs) then follow these steps:
         - Install the current version of Python using the [Microsoft Store Package](https://docs.python.org/3/using/windows.html#the-microsoft-store-package).
         - Install the Visual C++ Build Environment by either installing the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) or the [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community). The minimum workload to install is 'Desktop Development with C++'.
-        - open a command prompt and run `npm config set msvs_version 2019`
+        - open a command prompt and run `npm config set msvs_version {visual studio version}`. (If you are using Visual Studio 2019 then you need to run `npm config set msvs_version 2019`)
     - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise, it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
   - **Windows WSL2**: https://github.com/microsoft/vscode/wiki/Selfhosting-on-Windows-WSL
   - **macOS**
-    - [Xcode](https://developer.apple.com/xcode/downloads/) and the Command Line Tools, which will install `gcc` and the related toolchain containing `make`
+    - [Xcode](https://developer.apple.com/xcode/resources/) and the Command Line Tools, which will install `gcc` and the related toolchain containing `make`
       - Run `xcode-select --install` to install the Command Line Tools
   - **Linux**
-    * On Debian-based Linux: `sudo apt-get install build-essential g++ libx11-dev libxkbfile-dev libsecret-1-dev python-is-python3`
-    * On Red Hat-based Linux: `sudo yum groupinstall "Development Tools" && sudo yum install libX11-devel.x86_64 libxkbfile-devel.x86_64 libsecret-devel # or .i686`.
+    * On Debian-based Linux: `sudo apt-get install build-essential g++ libx11-dev libxkbfile-dev libsecret-1-dev libkrb5-dev python-is-python3`
+    * On Red Hat-based Linux: `sudo yum groupinstall "Development Tools" && sudo yum install libX11-devel.x86_64 libxkbfile-devel.x86_64 libsecret-devel krb5-devel # or .i686`.
     * Others:
       * `make`
       * [pkg-config](https://www.freedesktop.org/wiki/Software/pkg-config/)
       * [GCC](https://gcc.gnu.org) or another compile toolchain
-      * Dependencies:
     * Building deb and rpm packages requires `fakeroot` and `rpm`; run: `sudo apt-get install fakeroot rpm`
 
 ### Troubleshooting
@@ -122,18 +121,20 @@ Errors and warnings will show in the console while developing VS Code. If you us
 
 To test the changes, you launch a development version of VS Code on the workspace `vscode`, which you are currently editing.
 
-### Desktop
+To test changes with a remote, use the "TestResolver" in your Code - OSS window which creates a fake remote window. Search Command Palette for `TestResolver`. More information is at https://github.com/microsoft/vscode/issues/162874#issuecomment-1271774905.
+
+#### Desktop
 
 Running on Electron with extensions run in NodeJS:
 
-**macOS and Linux**
+##### macOS and Linux
 
 ```bash
 ./scripts/code.sh
 ./scripts/code-cli.sh # for running CLI commands (eg --version)
 ```
 
-**Windows**
+##### Windows
 
 ```bat
 .\scripts\code.bat
@@ -142,34 +143,34 @@ Running on Electron with extensions run in NodeJS:
 
 👉 **Tip!** If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `yarn watch` first.
 
-### VS Code for the Web
+#### VS Code for the Web
 
 Extensions and UI run in the browser.
 
 👉 Besides `yarn watch` also run `yarn watch-web` to build the web bits for the built-in extensions.
 
-**macOS and Linux**
+##### macOS and Linux
 
 ```bash
 ./scripts/code-web.sh
 ```
 
-**Windows**
+##### Windows
 
 ```bat
 .\scripts\code-web.bat
 ```
-### Code Server Web
+#### Code Server Web
 
 UI in the browser, extensions run in code server (NodeJS):
 
-**macOS and Linux**
+##### macOS and Linux
 
 ```bash
 ./scripts/code-server.sh --launch
 ```
 
-**Windows**
+##### Windows
 
 ```bat
 .\scripts\code-server.bat --launch
@@ -187,7 +188,7 @@ The **render** process runs the UI code inside the Shell window. To debug code r
 
 #### Using VS Code
 * Open the `vscode` repository folder
-* Choose the `Launch VS Code` launch configuration from the launch dropdown in the Debug viewlet and press <kbd>F5</kbd>.
+* Choose the `VS Code` launch configuration from the launch dropdown in the Debug viewlet and press <kbd>F5</kbd>.
 
 
 #### Using the Chrome Developer Tools

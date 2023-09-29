@@ -134,7 +134,7 @@ In addition to milestones representing our iterations and releases such as **`No
 
 ## Asking for Help
 
-We label **`Backlog`**issues, particularly feature requests, that we encourage the community to take up with `help-wanted`. If issues are suitable for beginners we may add the `good-first-issue` label and we add code pointers that help beginners to get started with a PR.
+We label **`Backlog`** issues, particularly feature requests, that we encourage the community to take up with `help-wanted`. If issues are suitable for beginners we may add the `good-first-issue` label and we add code pointers that help beginners to get started with a PR.
 
 Sometime, we get issues that we can't or don't have the time to reproduce due to the complexity or time requirements of the setup but that we indeed suspect to be issues. We label those issues with `investigation-wanted`. What we are looking for is help in reproducing and analyzing the issue. In the best of all worlds we receive a PR from you. :smiley:
 

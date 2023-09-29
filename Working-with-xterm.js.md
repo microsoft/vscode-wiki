@@ -8,7 +8,7 @@ Since bugs and/or features manifest themselves in both VS Code and xterm.js, it'
 
 ### Updating `xterm` in vscode via script
 1. Open a terminal in the vscode repo and run `./scripts/update-xterm.ps1` (or `node ./scripts/update-xterm.js`).
-2. Add the changed files, excluding the aforementioned script files, and commit with the following message:
+2. Add the changed files and commit with the following message:
 
 ```
 xterm@x.y.z-betaX
