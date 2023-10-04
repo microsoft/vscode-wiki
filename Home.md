@@ -1,4 +1,4 @@
-# Welcome
+# Bem vindo
 
 Welcome to the Visual Studio Code Wiki. These pages are primarily intended for those who wish to contribute to the VS Code project by submitting bug reports, suggesting new features, building extensions, commenting on new ideas, or even by submitting pull requests.
 
