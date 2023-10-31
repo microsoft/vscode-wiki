@@ -4,7 +4,7 @@
     <img src="https://github.com/microsoft/vscode/assets/900690/38106cff-2a99-4715-934c-cb1711bbf72c" alt="Logo">
 </p>
 
-The `vscode-speech` extension adds speech-to-text capabilities to the chat interfaces in Visual Studio Code. No internet connection is required, the voice audio data is processed locally on your computer.
+The [VS Code Speech](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-speech) extension adds speech-to-text capabilities to the chat interfaces in Visual Studio Code. No internet connection is required, the voice audio data is processed locally on your computer.
 
 ![Speech to text in Visual Studio Code](https://github.com/microsoft/vscode/assets/900690/63279c01-3941-46c5-bf51-284fbc31fbfe)
 
