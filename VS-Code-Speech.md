@@ -10,7 +10,7 @@ The [VS Code Speech](https://marketplace.visualstudio.com/items?itemName=ms-vsco
 
 ## Getting Started
 
-Install the [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) extension and sign in. You will see a microphone icon in all chat interfaces that GitHub Copilot Chat extension provides.
+Install the [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) extension and sign in and then install [VS Code Speech](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-speech). You will see a microphone icon in all chat interfaces that GitHub Copilot Chat extension provides.
 
 ## Keybindings
 
