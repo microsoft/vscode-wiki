@@ -46,6 +46,18 @@ In case of issues, try deleting the contents of `~/.node-gyp` (alternatively `~/
 
 > If you have Visual Studio 2019 installed, you may face issues when using the default version of node-gyp. If you have Visual Studio 2019 installed, you may need to follow the solutions [here](https://github.com/nodejs/node-gyp/issues/1747).
 
+#### Missing spectre mitigated libraries on Windows
+
+If you are using npm >= 10.2.3 or node-gyp >= 10.0.0, then you might see error when building native modules of this project
+
+> Spectre-mitigated libraries are required for this project.
+
+To fix this error open Visual Studio Installer, add the following components corresponding to the architecture you are building for (x64/ARM/ARM64) and restart your build session
+
+- MSVC Spectre-mitigated libs (latest)
+- C++ ATL for latest build tools with Spectre Mitigations
+- C++ MFC for latest build tools with Spectre Mitigations
+
 ### Development container
 
 Alternatively, you can avoid local dependency installation as this repository includes a Visual Studio Code Remote - Containers / Codespaces [development container](https://github.com/microsoft/vscode/tree/main/.devcontainer).
