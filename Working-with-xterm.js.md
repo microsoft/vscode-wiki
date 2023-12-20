@@ -15,7 +15,9 @@ Since bugs and/or features manifest themselves in both VS Code and xterm.js, it'
 3. Run `./scripts/xterm-symlink.ps1 <absolute path to xterm folder>`, eg. `./scripts/xterm-symlink.ps1 C:\Github\Tyriar\xterm.js`
 4. Open the symlinked xterm.js repo in VS Code and run `yarn package -- --mode development --watch` to watch changes
 
-Debugging xterm.js inside VS Code should now work.
+Debugging xterm.js inside VS Code should now work. ⚠️ For now you will need to first debug in devtools to get the file to open in VS Code, then it works in VS Code.
+
+
 
 ### Updating `xterm` in vscode via script
 1. Open a terminal in the vscode repo and run `./scripts/xterm-update.ps1` (or `node ./scripts/xterm-update.js`).
