@@ -8,9 +8,9 @@ Since bugs and/or features manifest themselves in both VS Code and xterm.js, it'
 
 ### Symlinking a local xterm repo for easier debugging
 
-⚠️ Only Windows is tested currently
+⚠️ Only Windows and macOS have been tested
 
-1. Open Windows Terminal in administrator mode
+1. Open Windows Terminal in administrator mode (Windows) or any terminal (macOS)
 2. Navigate to the vscode repo folder
 3. Run `./scripts/xterm-symlink.ps1 <absolute path to xterm folder>`, eg. `./scripts/xterm-symlink.ps1 C:\Github\Tyriar\xterm.js`
 4. Open the symlinked xterm.js repo in VS Code and run `yarn package -- --mode development --watch` to watch changes
