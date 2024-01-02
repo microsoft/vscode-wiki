@@ -45,6 +45,8 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 |Python|[vscode-python](https://github.com/microsoft/vscode-python)|
 
 ## Data Science
+|Tool|Repository|
+|---|---|
 |Jupyter|[vscode-jupyter](https://github.com/microsoft/vscode-jupyter)|
 |Data Wrangler|[vscode-data-wrangler](https://github.com/microsoft/vscode-data-wrangler)|
 
