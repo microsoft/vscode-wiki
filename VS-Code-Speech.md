@@ -37,7 +37,7 @@ This is extension is tested and published for the following platforms:
 
 - Windows 64bit
 - macOS 64bit / ARM
-- Linux 64bit
+- Linux 64bit / ARM
 
 ## Supported Languages
 
