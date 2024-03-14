@@ -2,7 +2,7 @@
 
 We have 2 different implementations for file watching:
 - recursive: [`ParcelWatcher`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vs/platform/files/node/watcher/parcel/parcelWatcher.ts#L61) via [`parcel-watcher`](https://github.com/parcel-bundler/watcher)
-- non-recursive: [`NodeJSWatcherLibrary`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vs/platform/files/node/watcher/nodejs/nodejsWatcherLib.ts#L21) via `fs.watch`
+- non-recursive: [`NodeJSWatcherLibrary`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vs/platform/files/node/watcher/nodejs/nodejsWatcherLib.ts#L21) via [`fs.watch`](https://nodejs.org/docs/latest/api/fs.html#fswatchfilename-options-listener)
 
 ### Event Correlation vs. Non-Correlation
 
@@ -34,7 +34,7 @@ We do some deduplication of watch requests to avoid watching the same path twice
 - requests for same path and same correlation are ignored (last one wins)
 - recursive requests for overlapping path and same correlation are ignored (shortest path wins)
 
-Requests for non-existing paths are ignored unless the request is correlated. This was done to aid TypeScript extension to adopt our file watcher where this need exists. In that case we install a polling watcher on the path (`fs.watchFile`) to figure out when it is added. Since this is potentially compute intense, we only do this for correlated watch requests for now, but may later decide to do it for all requests.
+Requests for non-existing paths are ignored unless the request is correlated. This was done to aid TypeScript extension to adopt our file watcher where this need exists. In that case we install a polling watcher on the path ([`fs.watchFile`](https://nodejs.org/docs/latest/api/fs.html#fswatchfilefilename-options-listener)) to figure out when it is added. Since this is potentially compute intense, we only do this for correlated watch requests for now, but may later decide to do it for all requests.
 
 If a watched path gets deleted after being watched, the watcher maybe suspended and resumed when the path comes back, based on these rules:
 - correlated watch requests support suspend / resume unconditionally
