@@ -52,3 +52,38 @@ For when `RelativePattern` is used, patterns that include `**` or `/` are consid
 
 Correlated watch requests are pretty much handed off to the file service without further massaging, but uncorrelated recursive requests are massaged to reduce the impact on everyone that listens to `IFileService.onDidFilesChange`. These get their `exclude` rules configured based on the `files.watcherExclude` setting. As such, an extension that uses uncorrelated recursive file watching is at the mercy of how `files.watcherExclude` is configured. For that reason, the new proposed API was added.
 
+
+<details>
+  <summary>Raw File Watcher Internals</summary>
+  
+**`node.js / parcel watcher library`**
+- requests for non existing paths are ignored unless correlated
+- requests for same path and same correlation (including `undefined`) are ignored (last one wins)
+- recursive requests for overlapping path and same correlation are ignored (shortest path wins)
+- requests for a path that gets deleted later maybe rewatched
+  - correlated requests get rewatched via `fs.watchFile`
+  - uncorrelated recursive requests get rewatched by `fs.watch` on the parent path if exists
+
+**`DiskFileSystemProvider`**
+- every request to `watch` is passed through and not deduplicated in any way
+
+**`IFileService`**
+- requests that are identical (`resource` and `options`) are deduplicated
+- uncorrelated watch requests emit globally via `onDidFilesChange`
+- correlated watch requests emit only to the one that requested the watch
+
+**`createFileSystemWatcher`**
+- correlates if new proposed API is used that allows to pass in `excludes`
+- if pattern is a `string` we assume workspace watch mode
+  - any "out of workspace" events are ignored
+  - no request to watch is sent to the file service assuming the workspace is already watched
+- patterns with a `**` or `/` are treated as recursive watch requests if the path is a folder, otherwise non-recursive
+- correlated watch requests
+  - get to match on events from same correlation identifier
+- uncorrelated watch requests 
+  - get to match on events from all other uncorrelated watchers
+  - `exclude` rules are automatically added from `files.watcherExclude` setting to recursive watch requests
+  - `include` rules will be computed for non-recursive watchers that are inside the workspace to match on configured `exclude` rules as a way to prevent duplicate events from non-recursive and recursive watchers inside the workspace
+    - if no `exclude` rules are configured, the non-recursive watcher is ignored
+</details>
+
