@@ -6,7 +6,7 @@ We have 2 different implementations for file watching:
 
 ### Event Correlation vs. Non-Correlation
 
-Traditionally file events are not correlated: that means, any request to `IFileService.watch()` will contribute to the global `IFileService.onDidFilesChange` event reaching a lot of consumers.
+Traditionally file events are not correlated: that means, any request to `IFileService.watch()` will contribute to the global `IFileService.onDidFilesChange` event reaching a lot of consumers, including extensions.
 
 To make file watching more efficient, event correlation was added: `IFileService.createWatcher()` is a new method that returns an emitter for events specific to the watch request. None of the events will end up on the global `IFileService.onDidFilesChange` event which helps to reduce compute need. Correlated file watcher have a unique identifier (`number`) to be able to distinguish them from others.
 
