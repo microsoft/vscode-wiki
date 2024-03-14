@@ -56,6 +56,7 @@ Correlated watch requests are pretty much handed off to the file service without
 <details>
   <summary>Raw File Watcher Internals</summary>
   
+
 **`node.js / parcel watcher library`**
 - requests for non existing paths are ignored unless correlated
 - requests for same path and same correlation (including `undefined`) are ignored (last one wins)
