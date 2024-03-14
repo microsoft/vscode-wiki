@@ -1,6 +1,6 @@
 Some issues could originate from a problem with file watching. Let me explain how file watching works in VSCode first and then provide some details how to get more logging data from how file watching behaves in your case.
 
-**Update: ** There is now https://github.com/microsoft/vscode/wiki/File-Watcher-Internals documenting in detail how file watching works in VS Code.
+**Update:** There is now https://github.com/microsoft/vscode/wiki/File-Watcher-Internals documenting in detail how file watching works in VS Code.
 
 **Synopsis**
 VSCode has different strategies for file watching depending on your workspace and setup:
