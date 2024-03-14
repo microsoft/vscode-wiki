@@ -1,0 +1,55 @@
+### High Level
+
+We have 2 different implementations for file watching:
+- recursive: [`ParcelWatcher`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vs/platform/files/node/watcher/parcel/parcelWatcher.ts#L61) via [`parcel-watcher`](https://github.com/parcel-bundler/watcher)
+- non-recursive: [`NodeJSWatcherLibrary`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vs/platform/files/node/watcher/nodejs/nodejsWatcherLib.ts#L21) via `fs.watch`
+
+### Event Correlation vs. Non-Correlation
+
+Traditionally file events are not correlated: that means, any request to `IFileService.watch()` will contribute to the global `IFileService.onDidFilesChange` event reaching a lot of consumers.
+
+To make file watching more efficient, event correlation was added: `IFileService.createWatcher()` is a new method that returns an emitter for events specific to the watch request. None of the events will end up on the global `IFileService.onDidFilesChange` event which helps to reduce compute need. Correlated file watcher have a unique identifier (`number`) to be able to distinguish them from others.
+
+Today, correlated file watching is not yet being used in our product. We plan to use it for extensions that have complex file watching requests such as TypeScript.
+
+### End to End Flow
+
+#### `IFileService.watch()` / `IFileService.createWatcher()`
+
+Requests for watching are deduplicated if the request is an identical match. That means, if each property of the watch request (path, recursive, includes, excludes, correlation identifier) is the same. 
+
+This is done to avoid duplicate identical requests for file watching that are easy to identify.
+
+The request to file watch is passed onto the `IFileSystemProvider` that matches the scheme of the resource path to watch.
+
+#### `DiskFileSystemProvider.watch()`
+
+Our `DiskFileSystemProvider` deals with all `file` resource schemes. We look if the request to watch is `recursive` or not and hand it off to [`ParcelWatcher`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vs/platform/files/node/watcher/parcel/parcelWatcher.ts#L61) or [`NodeJSWatcherLibrary`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vs/platform/files/node/watcher/nodejs/nodejsWatcherLib.ts#L21)
+
+#### `ParcelWatcher` / `NodeJSWatcherLibrary`
+
+We do support correlated and uncorrelated watch requests. A request is considered to be equal in correlation if the correlation identifier matches or if both requests are uncorrelated.
+
+We do some deduplication of watch requests to avoid watching the same path twice:
+- requests for same path and same correlation are ignored (last one wins)
+- recursive requests for overlapping path and same correlation are ignored (shortest path wins)
+
+Requests for non-existing paths are ignored unless the request is correlated. This was done to aid TypeScript extension to adopt our file watcher where this need exists. In that case we install a polling watcher on the path (`fs.watchFile`) to figure out when it is added. Since this is potentially compute intense, we only do this for correlated watch requests for now, but may later decide to do it for all requests.
+
+If a watched path gets deleted after being watched, the watcher maybe suspended and resumed when the path comes back, based on these rules:
+- correlated watch requests support suspend / resume unconditionally
+- uncorrelated recursive watch requests try to resume watching by installing a listener on the parent path which can fail if the parent is deleted as well
+
+#### `vscode.workspace.createFileSystemWatcher`
+
+Extensions are able to create file watchers via the `vscode.workspace.createFileSystemWatcher()` API. The behaviour of the file watcher depends on the options that are passed in.
+
+Today, the stable API will only create uncorrelated file watchers and extensions cannot specify custom `exclude` rules. A new proposed API is offered with support for custom `exclude` rules that will create correlated file watchers (https://github.com/microsoft/vscode/issues/169724).
+
+If the `pattern` to watch is a `string` (and not `RelativePattern`), we limit events to paths that are inside the workspace only. Any event for a path outside the workspace is ignored. Under the hood, we do not install any file watcher because we do workspace watching by default.
+
+For when `RelativePattern` is used, patterns that include `**` or `/` are considered recursive watch requests if the path is a folder.
+
+Correlated watch requests are pretty much handed off to the file service without further massaging, but uncorrelated requests are massaged to reduce the impact on everyone that listens to `IFileService.onDidFilesChange`:
+- recursive watch requests get their `exclude` rules configured based on the `files.watcherExclude` setting
+
