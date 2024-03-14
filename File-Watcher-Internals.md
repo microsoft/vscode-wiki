@@ -37,7 +37,7 @@ We do some deduplication of watch requests to avoid watching the same path twice
 Requests for non-existing paths are ignored unless the request is correlated. This was done to aid TypeScript extension to adopt our file watcher where this need exists. In that case we install a polling watcher on the path ([`fs.watchFile`](https://nodejs.org/docs/latest/api/fs.html#fswatchfilefilename-options-listener)) to figure out when it is added. Since this is potentially compute intense, we only do this for correlated watch requests for now, but may later decide to do it for all requests.
 
 If a watched path gets deleted after being watched, the watcher maybe suspended and resumed when the path comes back, based on these rules:
-- correlated watch requests support suspend / resume unconditionally
+- correlated watch requests support suspend / resume unconditionally (again, to support TypeScript)
 - uncorrelated recursive watch requests try to resume watching by installing a listener on the parent path which can fail if the parent is deleted as well
 
 #### `vscode.workspace.createFileSystemWatcher`
