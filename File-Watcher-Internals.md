@@ -50,6 +50,5 @@ If the `pattern` to watch is a `string` (and not [`RelativePattern`](https://git
 
 For when `RelativePattern` is used, patterns that include `**` or `/` are considered recursive watch requests if the path is a folder.
 
-Correlated watch requests are pretty much handed off to the file service without further massaging, but uncorrelated requests are massaged to reduce the impact on everyone that listens to `IFileService.onDidFilesChange`:
-- recursive watch requests get their `exclude` rules configured based on the `files.watcherExclude` setting
+Correlated watch requests are pretty much handed off to the file service without further massaging, but uncorrelated recursive requests are massaged to reduce the impact on everyone that listens to `IFileService.onDidFilesChange`. These get their `exclude` rules configured based on the `files.watcherExclude` setting. As such, an extension that uses uncorrelated recursive file watching is at the mercy of how `files.watcherExclude` is configured. For that reason, the new proposed API was added.
 
