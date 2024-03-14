@@ -24,7 +24,9 @@ The request to file watch is passed onto the `IFileSystemProvider` that matches 
 
 #### `DiskFileSystemProvider.watch()`
 
-Our `DiskFileSystemProvider` deals with all `file` resource schemes. We look if the request to watch is `recursive` or not and hand it off to [`ParcelWatcher`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vs/platform/files/node/watcher/parcel/parcelWatcher.ts#L61) or [`NodeJSWatcherLibrary`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vs/platform/files/node/watcher/nodejs/nodejsWatcherLib.ts#L21)
+Our `DiskFileSystemProvider` deals with all `file` resource schemes and runs from the Electron main process. Since file watching is compute intense, we leverage `UtilityProcess` to host the file watchers in a separate process.
+
+We look if the request to watch is `recursive` or not and hand it off to [`ParcelWatcher`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vs/platform/files/node/watcher/parcel/parcelWatcher.ts#L61) or [`NodeJSWatcherLibrary`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vs/platform/files/node/watcher/nodejs/nodejsWatcherLib.ts#L21)
 
 #### `ParcelWatcher` / `NodeJSWatcherLibrary`
 
