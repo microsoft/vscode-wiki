@@ -42,7 +42,7 @@ If a watched path gets deleted after being watched, the watcher maybe suspended 
 
 #### `vscode.workspace.createFileSystemWatcher`
 
-Extensions are able to create file watchers via the `vscode.workspace.createFileSystemWatcher()` API. The behaviour of the file watcher depends on the options that are passed in.
+Extensions are able to create file watchers via the [`vscode.workspace.createFileSystemWatcher()`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vscode-dts/vscode.d.ts#L13272) API. The behaviour of the file watcher depends on the options that are passed in.
 
 Today, the stable API will only create uncorrelated file watchers and extensions cannot specify custom `exclude` rules. A new proposed API is offered with support for custom `exclude` rules that will create correlated file watchers (https://github.com/microsoft/vscode/issues/169724).
 
