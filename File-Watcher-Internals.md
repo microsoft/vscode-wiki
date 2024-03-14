@@ -1,6 +1,6 @@
 ### High Level
 
-We have 2 different implementations for file watching:
+We have 2 different implementations for file watching file and folder paths:
 - recursive: [`ParcelWatcher`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vs/platform/files/node/watcher/parcel/parcelWatcher.ts#L61) via [`parcel-watcher`](https://github.com/parcel-bundler/watcher)
 - non-recursive: [`NodeJSWatcherLibrary`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vs/platform/files/node/watcher/nodejs/nodejsWatcherLib.ts#L21) via [`fs.watch`](https://nodejs.org/docs/latest/api/fs.html#fswatchfilename-options-listener)
 
