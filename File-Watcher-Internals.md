@@ -46,7 +46,7 @@ Extensions are able to create file watchers via the [`vscode.workspace.createFil
 
 Today, the stable API will only create uncorrelated file watchers and extensions cannot specify custom `exclude` rules. A [new proposed API](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vscode-dts/vscode.proposed.createFileSystemWatcher.d.ts#L49) is offered with support for custom `exclude` rules that will create correlated file watchers (https://github.com/microsoft/vscode/issues/169724).
 
-If the `pattern` to watch is a `string` (and not `RelativePattern`), we limit events to paths that are inside the workspace only. Any event for a path outside the workspace is ignored. Under the hood, we do not install any file watcher because we do workspace watching by default.
+If the `pattern` to watch is a `string` (and not [`RelativePattern`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vscode-dts/vscode.d.ts#L2219)), we limit events to paths that are inside the workspace only. Any event for a path outside the workspace is ignored. Under the hood, we do not install any file watcher because we do workspace watching by default.
 
 For when `RelativePattern` is used, patterns that include `**` or `/` are considered recursive watch requests if the path is a folder.
 
