@@ -69,8 +69,9 @@ Correlated watch requests are pretty much handed off to the file service without
 - requests for non existing paths are ignored unless correlated
 - requests for same path and same correlation (including `undefined`) are ignored (last one wins)
 - recursive requests for overlapping path and same correlation are ignored (shortest path wins)
+- non-recursive requests for files try to reuse an existing recursive watcher
 - requests for a path that gets deleted later maybe rewatched
-  - correlated requests get rewatched via `fs.watchFile`
+  - correlated requests get rewatched either by reusing an existing recursive watcher or via `fs.watchFile`
   - uncorrelated recursive requests get rewatched by `fs.watch` on the parent path if exists
 
 **`DiskFileSystemProvider`**
