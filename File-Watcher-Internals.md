@@ -39,14 +39,14 @@ We do some deduplication of watch requests to avoid watching the same path twice
 
 If a watched path either does not exist in the beginning or gets deleted after being watched, the watcher maybe suspended and resumed when the path comes back, based on these rules:
 - correlated watch requests support suspend/resume unconditionally (this was added to support TypeScript)
-- uncorrelated recursive watch requests try to resume watching by installing a listener on the parent path which can fail if the parent is deleted as well [1]
-- uncorrelated non-recursive watch requests are ignored if the path does not exist in the beginning or remain failed if the path is deleted after watching has begun [1]
+- uncorrelated recursive watch requests try to resume watching by installing a listener on the parent path which can fail if the parent is deleted as well **[1]**
+- uncorrelated non-recursive watch requests are ignored if the path does not exist in the beginning or remain failed if the path is deleted after watching has begun **[1]**
 
 Suspend/resume is implemented with two strategies:
 - if the path is already watched by a recursive watcher, reuse that watcher
 - otherwise install a polling watcher on the path ([`fs.watchFile`](https://nodejs.org/docs/latest/api/fs.html#fswatchfilefilename-options-listener))
 
-[1] this is arguably an issue that we need to revisit at one point: a watcher that stopped because its path got deleted is in a failed state until disposed, which may never happen. Given this failed state is not communicated to the outside, another request for watching might wrongly be deduplicated with this failing instance. A better approach would be to support suspend/resume always or detect failed watchers and dispose them.
+**[1]** this is arguably an issue that we need to revisit at one point: a watcher that stopped because its path got deleted is in a failed state until disposed, which may never happen. Given this failed state is not communicated to the outside, another request for watching might wrongly be deduplicated with this failing instance. A better approach would be to support suspend/resume always or detect failed watchers and dispose them.
 
 #### `vscode.workspace.createFileSystemWatcher`
 
