@@ -35,12 +35,16 @@ We do support correlated and uncorrelated watch requests. A request is considere
 We do some deduplication of watch requests to avoid watching the same path twice:
 - requests for same path and same correlation are ignored (last one wins)
 - recursive requests for overlapping path and same correlation are ignored (shortest path wins)
+- requests for watching files try to reuse an existing recursive watcher
 
-Requests for non-existing paths are ignored unless the request is correlated. This was done to aid TypeScript extension to adopt our file watcher where this need exists. In that case we install a polling watcher on the path ([`fs.watchFile`](https://nodejs.org/docs/latest/api/fs.html#fswatchfilefilename-options-listener)) to figure out when it is added. Since this is potentially compute intense, we only do this for correlated watch requests for now, but may later decide to do it for all requests.
-
-If a watched path gets deleted after being watched, the watcher maybe suspended and resumed when the path comes back, based on these rules:
-- correlated watch requests support suspend / resume unconditionally (again, to support TypeScript)
+If a watched path either does not exist in the beginning or gets deleted after being watched, the watcher maybe suspended and resumed when the path comes back, based on these rules:
+- correlated watch requests support suspend/resume unconditionally (this was added to support TypeScript)
 - uncorrelated recursive watch requests try to resume watching by installing a listener on the parent path which can fail if the parent is deleted as well
+- uncorrelated non-recursive watch requests are ignored if the path does not exist in the beginning or remain failed if the path is deleted after watching has begun
+
+Suspend/resume is implemented with two strategies:
+- if the path is already watched by a recursive watcher, reuse that watcher
+- otherwise install a polling watcher on the path ([`fs.watchFile`](https://nodejs.org/docs/latest/api/fs.html#fswatchfilefilename-options-listener))
 
 #### `vscode.workspace.createFileSystemWatcher`
 
