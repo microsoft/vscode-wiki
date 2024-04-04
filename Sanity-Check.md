@@ -160,6 +160,7 @@ Use the Remote-SSH extension to connect from any client platform to a macOS remo
 export COMMIT="<commit>" # Bash
 $env:COMMIT='<commit>' # PowerShell
 
+docker run --privileged --rm tonistiigi/binfmt --uninstall *
 docker run --privileged --rm tonistiigi/binfmt --install all
 
 docker run -e COMMIT -it --rm --platform linux/amd64 mcr.microsoft.com/devcontainers/base:latest /bin/sh -c 'apt update && apt install -y wget libatomic1 ca-certificates python3-minimal && wget "https://update.code.visualstudio.com/commit:$COMMIT/cli-linux-x64/stable" -O- | tar -xz && ./code tunnel'
