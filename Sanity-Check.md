@@ -89,6 +89,7 @@ sudo snap install --classic --dangerous <file>.snap
 2. Run the following commands. They register the QEMU hardware emulator and start 5 kinds of containers:
 
 ```
+docker run --privileged --rm tonistiigi/binfmt --uninstall *
 docker run --privileged --rm tonistiigi/binfmt --install all
 
 docker run -d amd64/ubuntu sleep inf
