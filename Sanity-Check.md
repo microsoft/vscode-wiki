@@ -89,8 +89,8 @@ sudo snap install --classic --dangerous <file>.snap
 2. Run the following commands. They register the QEMU hardware emulator and start 5 kinds of containers:
 
 ```
-docker run --privileged --rm tonistiigi/binfmt --uninstall *
-docker run --privileged --rm tonistiigi/binfmt --install all
+docker run --privileged --rm tonistiigi/binfmt --uninstall '*'
+docker run --pull always --privileged --rm tonistiigi/binfmt --install all
 
 docker run -d amd64/ubuntu sleep inf
 docker run -d arm64v8/ubuntu sleep inf
@@ -160,8 +160,8 @@ Use the Remote-SSH extension to connect from any client platform to a macOS remo
 export COMMIT="<commit>" # Bash
 $env:COMMIT='<commit>' # PowerShell
 
-docker run --privileged --rm tonistiigi/binfmt --uninstall *
-docker run --privileged --rm tonistiigi/binfmt --install all
+docker run --privileged --rm tonistiigi/binfmt --uninstall '*'
+docker run --pull always --privileged --rm tonistiigi/binfmt --install all
 
 docker run -e COMMIT -it --rm --platform linux/amd64 mcr.microsoft.com/devcontainers/base:latest /bin/sh -c 'apt update && apt install -y wget libatomic1 ca-certificates python3-minimal && wget "https://update.code.visualstudio.com/commit:$COMMIT/cli-linux-x64/stable" -O- | tar -xz && ./code tunnel'
 docker run -e COMMIT -it --rm --platform linux/arm64 mcr.microsoft.com/devcontainers/base:latest /bin/sh -c 'apt update && apt install -y wget libatomic1 ca-certificates python3-minimal && wget "https://update.code.visualstudio.com/commit:$COMMIT/cli-linux-arm64/stable" -O- | tar -xz && ./code tunnel'
