@@ -16,7 +16,7 @@ Today, correlated file watching is not yet being used in our product. We plan to
 
 #### `IFileService.watch()` / `IFileService.createWatcher()`
 
-Requests for watching are deduplicated if the request is an identical match. That means, if each property of the watch request (path, recursive, includes, excludes, correlation identifier) is the same. 
+Requests for watching are deduplicated if the request is an identical match. That means, if each property of the watch request (path, recursive, includes, excludes, correlation identifier, filter) is the same. 
 
 This is done to avoid duplicate identical requests for file watching that are easy to identify.
 
@@ -60,6 +60,7 @@ For when `RelativePattern` is used, patterns that include `**` or `/` are consid
 
 Correlated watch requests are pretty much handed off to the file service without further massaging, but uncorrelated recursive requests are massaged to reduce the impact on everyone that listens to `IFileService.onDidFilesChange`. These get their `exclude` rules configured based on the `files.watcherExclude` setting. As such, an extension that uses uncorrelated recursive file watching is at the mercy of how `files.watcherExclude` is configured. For that reason, the new proposed API was added.
 
+Correlated watch requests set the `filter` property to indicate which file change type to consider. This can be done because the API allows an extensions to declare which file change type to consider. By default, all file change types will be considered. We only apply the `filter` for correlated watch requests because uncorrelated requests are potentially shared across multiple requests.
 
 <details>
   <summary>Raw File Watcher Internals</summary>
