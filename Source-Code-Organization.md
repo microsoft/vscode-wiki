@@ -100,7 +100,7 @@ Contributions that are contributed to the workbench all live inside the `vs/work
 We ship both to desktop via Electron and to the Web with the goal to share as much code as possible in both environments. Writing code that only runs in the one environment should be the exception, think twice before going down that path. Ideally the same code can run in both environments.
 
 To distinguish the environments in the product we build, there are entry files that define all the dependencies depending on the environment:
-* `src/vs/workbench/workbench.sandbox.main.ts`: for desktop only dependencies
+* `src/vs/workbench/workbench.desktop.main.ts`: for desktop only dependencies
 * `src/vs/workbench/workbench.web.main.ts`: for web only dependencies
 
 Both depend on our core entry file:
