@@ -5,7 +5,7 @@ Test flakiness slows down the whole team by making the pipeline less reliable, r
 Here are some strategies for dealing with flakiness:
 
 - **Timeouts**: Timeouts are inherently flaky as they depend on CPU speed, cores, other processes, etc. Polling is almost always a better approach.
-- **Retries**: Retrying a test can work around a flaky test temporarily, but should generally not be used in the long term. If a test needs to be retried, it means there's an underlying error being hidden and a flake could still end up happening (based on the flake rate). Retrying can be a good strategy when the test failing is acceptable and it's not worth the effort to investigate.
+- **Retries**: Retrying a test can work around a flaky test temporarily, but should generally not be used in the long term. If a test needs to be retried, it means there's an underlying error being hidden and a flake could still end up happening (based on the flake rate). Retrying can be a good strategy when the test failure is acceptable and it's not worth the effort to investigate.
 - **Async vs sync**: If a test can be written in a synchronous way (mostly for unit tests) this is preferable.
 - **Reproducing locally**: You might be able to reproduce the failure locally by wrapping the test in a loop:
    ```ts
