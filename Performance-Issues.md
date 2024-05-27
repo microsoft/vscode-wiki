@@ -112,6 +112,8 @@ Run VS Code in verbose mode and check whether there is any suspicious output in 
 
 #### Profiling the Renderer Process
 
+<img width="1151" alt="Screenshot 2024-05-27 at 15 27 31" src="https://github.com/microsoft/vscode/assets/1794099/9e2c71e2-6b72-45ef-b586-b007708acb9c">
+
 Very detailed information is captured in CPU profiles and that helps us best to narrow down on a slow-down. So, please create a CPU profile of the VS Code core (_renderer_ process) and attach it to the issue. To create a profile:
   - Execute "<kbd>F1</kbd> > Toggle Developer Tools." and select the "Performance"-tab
   - Start a new performance recording from the toolbar
