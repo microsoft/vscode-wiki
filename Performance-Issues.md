@@ -113,10 +113,8 @@ Run VS Code in verbose mode and check whether there is any suspicious output in 
 #### Profiling the Renderer Process
 
 Very detailed information is captured in CPU profiles and that helps us best to narrow down on a slow-down. So, please create a CPU profile of the VS Code core (_renderer_ process) and attach it to the issue. To create a profile:
-  -  Execute "<kbd>F1</kbd> > Toggle Developer Tools." In the overflow menu of the developer tools 
-<img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
-
-  - Select 'More Tools > JavaScript Profiler'. In there select start.
+  - Execute "<kbd>F1</kbd> > Toggle Developer Tools." and select the "Performance"-tab
+  - Start a new performance recording from the toolbar
   - Let it profile for 30 to 60 seconds, stop it.
   - When the performance issue happens on startup, start the profiler and then reload the window using "<kbd>F1</kbd> > Reload Window."
   - Save the profile to a file and attach the file to your issue.
