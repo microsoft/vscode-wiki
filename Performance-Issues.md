@@ -137,6 +137,12 @@ Run VS Code in verbose mode and check whether there is any suspicious output in 
 
 #### Profiling the Shared Process
 
+In order to attach devtools to the Shared Process you need to use a specific CLI flag:
+
+1. Start VS Code with `code --inspect-sharedprocess=9229`
+2. In Edge, open `edge://inspect/`
+3. You should see an entry under Remote Target that starts with `/Applications/Visual Studio Code/...`. Otherwise, if you don't see the above entry, then under `Devices`, click `Open dedicated DevTools for Node`.
+
 Very detailed information is captured in CPU profiles and that helps us best to narrow down on a slow-down. So, please create a CPU profile of the VS Code core (_shared_ process) and attach it to the issue. To create a profile:
   -  Execute "<kbd>F1</kbd> > Toggle Shared Process." In the overflow menu of the developer tools 
 <img width="380" alt="screen shot 2017-09-28 at 09 44 31" src="https://user-images.githubusercontent.com/1794099/30954796-d1be9e30-a431-11e7-959e-495d234c37c6.png">
