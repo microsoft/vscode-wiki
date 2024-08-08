@@ -16,13 +16,12 @@ You'll need the following tools:
   - **Note:** Python will be automatically installed for Windows users through installing `windows-build-tools` npm module (see below)
 - A C/C++ compiler tool chain for your platform:
   - **Windows 10/11**
-    - Install the Windows Build Tools:
-      - Install the current version of Python using the [Microsoft Store Package](https://docs.python.org/3/using/windows.html#the-microsoft-store-package).
-      - Install the Visual C++ Build Environment by either installing the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) or the [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community). The minimum workload to install is 'Desktop Development with C++'. But there are additional components from "Individual components":
-        - "MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)" (use `ARM64` for Windows on ARM)
-        - C++ ATL for latest build tools with Spectre Mitigations
-        - C++ MFC for latest build tools with Spectre Mitigations
-      - open a command prompt and run `npm config edit` and add or modify the `msvs_version` setting equal to your vs version. (e.g. `msvs_version=2022` for visual studio 2022)
+    - Install the current version of Python using the [Microsoft Store Package](https://docs.python.org/3/using/windows.html#the-microsoft-store-package).
+    - Install the Visual C++ Build Environment by either installing the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) or the [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community). The minimum workload to install is 'Desktop Development with C++'. But there are additional components from "Individual components":
+      - "MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)" (use `ARM64` for Windows on ARM)
+      - C++ ATL for latest build tools with Spectre Mitigations
+      - C++ MFC for latest build tools with Spectre Mitigations
+    - open a command prompt and run `npm config edit` and add or modify the `msvs_version` setting equal to your vs version. (e.g. `msvs_version=2022` for visual studio 2022)
     - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise, it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
   - **Windows WSL2**: https://github.com/microsoft/vscode/wiki/Selfhosting-on-Windows-WSL
