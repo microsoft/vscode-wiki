@@ -17,9 +17,10 @@ You'll need the following tools:
 - A C/C++ compiler tool chain for your platform:
   - **Windows 10/11 (x64 or ARM64)**
     - Install the Visual C++ Build Environment by either installing the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) or the [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community). The minimum workload to install is `Desktop Development with C++`. But there are additional components from "Individual components":
-      - `MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)` (use `ARM64` for Windows on ARM)
+      - `MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)` (use `ARM64` for Windows on ARM, but the x64/x86 may still be needed)
       - `C++ ATL for latest build tools with Spectre Mitigations`
       - `C++ MFC for latest build tools with Spectre Mitigations`
+      - note: for Windows on ARM, you may need to specify the version to v14.41-17.11, rather than (latest).
     - open a command prompt and run `npm config edit` and add or modify the `msvs_version` setting equal to your vs version. (e.g. `msvs_version=2022` for visual studio 2022)
     - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise, it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
