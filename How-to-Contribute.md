@@ -20,7 +20,7 @@ You'll need the following tools:
       - `MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)` (use `ARM64` for Windows on ARM, but the x64/x86 may still be needed)
       - `C++ ATL for latest build tools with Spectre Mitigations`
       - `C++ MFC for latest build tools with Spectre Mitigations`
-      - note: for Windows on ARM, you may need to specify the version to v14.41-17.11, rather than (latest).
+      - note: for Windows on ARM, you may need to specify the version to v14.41-17.11, rather than (latest), and also the `MSVC v143 - VS 2022 C++` build tools.
     - open a command prompt and run `npm config edit` and add or modify the `msvs_version` setting equal to your vs version. (e.g. `msvs_version=2022` for visual studio 2022)
     - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise, it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
