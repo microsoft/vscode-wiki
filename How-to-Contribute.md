@@ -5,14 +5,13 @@ After cloning and building the repo, check out the [issues list](https://github.
 
 ## Prerequisites
 
-In order to download necessary tools, clone the repository, and install dependencies via `yarn`, you need network access.
+In order to download necessary tools, clone the repository, and install dependencies via `npm`, you need network access.
 
 You'll need the following tools:
 
 - [Git](https://git-scm.com)
 - [Node.JS](https://nodejs.org/en/download/prebuilt-binaries), **x64** or **ARM64**, version `>=20.x`
   - Windows: do not pick the option to install Windows Build Tools, see the step below for instructions
-- [Yarn 1](https://classic.yarnpkg.com/en/), version `>=1.10.1 and <2`, follow the [installation guide](https://classic.yarnpkg.com/en/docs/install)
 - [Python](https://www.python.org/downloads/) (required for node-gyp; check the [node-gyp readme](https://github.com/nodejs/node-gyp#installation) for the currently supported Python versions)
   - **Note:** make sure `python` can run from a command line prompt without error
 - A C/C++ compiler tool chain for your platform:
@@ -38,9 +37,9 @@ You'll need the following tools:
     * Building deb and rpm packages requires `fakeroot` and `rpm`; run: `sudo apt-get install fakeroot rpm`
 
 ### Troubleshooting
-In case of issues, try deleting the contents of `~/.node-gyp` (alternatively `~/.cache/node-gyp` for Linux, `~/Library/Caches/node-gyp/` for macOS, or `%USERPROFILE%\AppData\Local\node-gyp` for Windows) first and then run `yarn cache clean` and then try again.
+In case of issues, try deleting the contents of `~/.node-gyp` (alternatively `~/.cache/node-gyp` for Linux, `~/Library/Caches/node-gyp/` for macOS, or `%USERPROFILE%\AppData\Local\node-gyp` for Windows) first and then run `git clean -xfd` and then try again.
 
-> If you are on Windows or Linux 64 bit systems and would like to compile to 32 bit, you'll need to set the `npm_config_arch` environment variable to `ia32` before running `yarn`. This will compile all native node modules for a 32 bit architecture. Similarly, when cross-compiling for ARM, set `npm_config_arch` to `arm`.
+> If you are on Windows or Linux 64 bit systems and would like to compile to 32 bit, you'll need to set the `npm_config_arch` environment variable to `ia32` before running `npm`. This will compile all native node modules for a 32 bit architecture. Similarly, when cross-compiling for ARM, set `npm_config_arch` to `arm`.
 
 > **Note:** For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
 
@@ -103,17 +102,17 @@ Manage any merge conflicts, commit them, and then push them to your fork.
 
 ### Build
 
-Install and build all of the dependencies using `Yarn`:
+Install and build all of the dependencies using `npm`:
 
 ```
 cd vscode
-yarn
+npm install
 ```
 
 Then you have two options:
 
 - If you want to build from inside VS Code, you can open the `vscode` folder and start the build task with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> on macOS). The build task will stay running in the background even if you close VS Code. If you happen to close VS Code and open it again, just resume the build by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) again. You can kill it by running the `Kill Build VS Code` task or pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal.
-- If you want to build from a terminal, run `yarn watch`. This will run both the core watch task and watch-extension tasks in a single terminal.
+- If you want to build from a terminal, run `npm run watch`. This will run both the core watch task and watch-extension tasks in a single terminal.
 
 The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience.
 
@@ -122,7 +121,7 @@ The incremental builder will do an initial full build and will display a message
 - **Windows:** If you have installed Visual Studio 2017 as your build tool, you need to open **x64 Native Tools Command Prompt for VS 2017**. Do not confuse it with *VS2015 x64 Native Tools Command Prompt*, if installed.
 - **Linux:** You may hit a ENOSPC error when running the build. To get around this follow instructions in the [Common Questions](https://code.visualstudio.com/docs/setup/linux#_common-questions).
 
-If the build step fails, or if the built version fails to run (see next section), run `git clean -xfd` in your `vscode` folder, then re-run `yarn`.
+If the build step fails, or if the built version fails to run (see next section), run `git clean -xfd` in your `vscode` folder, then re-run `npm install`.
 
 #### Errors and Warnings
 Errors and warnings will show in the console while developing VS Code. If you use VS Code to develop VS Code, errors and warnings are shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> and then <kbd>!</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> and <kbd>!</kbd> on macOS).
@@ -153,13 +152,13 @@ Running on Electron with extensions run in NodeJS:
 .\scripts\code-cli.bat
 ```
 
-👉 **Tip!** If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `yarn watch` first.
+👉 **Tip!** If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `npm run watch` first.
 
 #### VS Code for the Web
 
 Extensions and UI run in the browser.
 
-👉 Besides `yarn watch` also run `yarn watch-web` to build the web bits for the built-in extensions.
+👉 Besides `npm run watch` also run `npm run watch-web` to build the web bits for the built-in extensions.
 
 ##### macOS and Linux
 
@@ -223,7 +222,7 @@ We also have automated UI tests. The [smoke test README](https://github.com/Micr
 Run the tests directly from a terminal by running `./scripts/test.sh` from the `vscode` folder (`scripts\test` on Windows). The [test README](https://github.com/Microsoft/vscode/blob/main/test/README.md) has complete details on how to run and debug tests, as well as how to produce coverage reports.
 
 ### Linting
-We use [eslint](https://eslint.org/) for linting our sources. You can run eslint across the sources by calling `yarn eslint` from a terminal or command prompt. You can also run `yarn eslint` as a VS Code task by pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> on macOS) and entering `task eslint`.
+We use [eslint](https://eslint.org/) for linting our sources. You can run eslint across the sources by calling `npm run eslint` from a terminal or command prompt. You can also run `npm run eslint` as a VS Code task by pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> on macOS) and entering `task eslint`.
 
 To lint the source as you make changes you can install the [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
@@ -267,7 +266,7 @@ These `gulp` tasks are available:
 * `vscode-[platform]`: Builds a packaged version for `[platform]`.
 * `vscode-[platform]-min`: Builds a packaged and minified version for `[platform]`.
 
-👉 **Tip!** Run `gulp` via `yarn` to avoid potential out of memory issues, for example `yarn gulp vscode-linux-x64`
+👉 **Tip!** Run `gulp` via `npm` to avoid potential out of memory issues, for example `npm run gulp vscode-linux-x64`
 
 See also: [Cross-Compiling for Debian-based Linux](https://github.com/Microsoft/vscode/wiki/Cross-Compiling-for-Debian-Based-Linux)
 
