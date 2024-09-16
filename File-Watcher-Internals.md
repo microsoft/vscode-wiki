@@ -6,7 +6,7 @@ We have 2 different implementations for file watching file and folder paths:
 
 ### Event Correlation vs. Non-Correlation
 
-**Update Sep-2024:** ⚠️ event correlation is disabled again for TS extension given instability in parcel watcher. This document is still valid, but assume that all watching is uncorrelated!
+**Update Sep-2024:** ⚠️ event correlation is disabled again for TS extension given instability in parcel watcher. This document is still valid, but assume that **all watching is uncorrelated**!
 
 Traditionally file events are not correlated: that means, any request to `IFileService.watch()` will contribute to the global `IFileService.onDidFilesChange` event reaching a lot of consumers, including extensions.
 
