@@ -4,10 +4,10 @@ We have 2 different implementations for file watching file and folder paths:
 - recursive: [`ParcelWatcher`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vs/platform/files/node/watcher/parcel/parcelWatcher.ts#L61) via [`parcel-watcher`](https://github.com/parcel-bundler/watcher)
 - non-recursive: [`NodeJSWatcherLibrary`](https://github.com/microsoft/vscode/blob/5bc9d1d7850cc9d88ea3fb117de70acba68579c6/src/vs/platform/files/node/watcher/nodejs/nodejsWatcherLib.ts#L21) via [`fs.watch`](https://nodejs.org/docs/latest/api/fs.html#fswatchfilename-options-listener)
 
+### Update Sep-2024
+⚠️ event correlation is disabled again for TS extension given instability in parcel watcher. This document is still valid, but assume that **all watching is uncorrelated**!
+
 ### Event Correlation vs. Non-Correlation
-
-**Update Sep-2024:** ⚠️ event correlation is disabled again for TS extension given instability in parcel watcher. This document is still valid, but assume that **all watching is uncorrelated**!
-
 Traditionally file events are not correlated: that means, any request to `IFileService.watch()` will contribute to the global `IFileService.onDidFilesChange` event reaching a lot of consumers, including extensions.
 
 To make file watching more efficient, event correlation was added: `IFileService.createWatcher()` is a new method that returns an emitter for events specific to the watch request. None of the events will end up on the global `IFileService.onDidFilesChange` event which helps to reduce compute need. Correlated file watcher have a unique identifier (`number`) to be able to distinguish them from others.
