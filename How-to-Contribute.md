@@ -13,6 +13,7 @@ You'll need the following tools:
 - [Node.JS](https://nodejs.org/en/), **x64**, version `>=18.15.x and <19`
 - [Python](https://www.python.org/downloads/) (required for node-gyp; check the [node-gyp readme](https://github.com/nodejs/node-gyp#installation) for the currently supported Python versions)
   - **Note:** Python will be automatically installed for Windows users through installing `windows-build-tools` npm module (see below)
+- Rust, follow the [installation guide](https://doc.rust-lang.org/cargo/getting-started/installation.html)
 - A C/C++ compiler tool chain for your platform:
   - **Windows 10/11**
     - Install the Windows Build Tools:
