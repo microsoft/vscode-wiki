@@ -33,18 +33,18 @@ We are looking for errors, failures, or anything else that is not desired behavi
 
 During sanity testing, sections are assigned by operating system. Some operating systems along with the sections that they can test are as follows:
 
-| Operating system | Sections that it can test |
-| ----------- | ----------- |
-| Mac x64      | Mac x64, Windows x64, Linux x64, Linux Server, Linux CLI |
-| Mac ARM   | Mac ARM, Windows ARM, Linux Server, Linux CLI |
-| Windows x64 | Windows x64, Linux x64, Linux Server, Linux CLI |
+| Operating system | Sections that it can test                                |
+| ---------------- | -------------------------------------------------------- |
+| Mac x64          | Mac x64, Windows x64, Linux x64, Linux Server, Linux CLI |
+| Mac ARM          | Mac ARM, Windows ARM, Linux Server, Linux CLI            |
+| Windows x64      | Windows x64, Linux x64, Linux Server, Linux CLI          |
 
 In addition to those operating systems, any web browser on devbox.microsoft.com can test Windows x64, Linux x64, Linux Server, and Linux CLI sections.
 
 Each section on the endgame plan lists specific builds to test. Some of the builds are as follows:
 
 - Installer: on Windows, the system and user executables are installers that install VS Code to a system or user directory, respectively. With these executables, a user can launch VS Code after installing it.
-- Archive: a zip or tar.gz archive. On Windows and Linux, these builds do not have an installer and can be run automatically after extracting them. On macOS, the builds can be run after extracting them and moving the application file to the /Applications folder.
+- Archive: a zip or tar.gz archive. On Windows and Linux, these builds do not have an installer and can be run automatically after extracting them. On macOS, the builds can be run after extracting them and moving the application file to the `/Applications` folder.
 - Universal Archive: an archive specifically for macOS that supports both Intel and Apple Silicon chips by bundling two binaries into a single product.
 - Debian, RPM, and Snap packages: Linux packages that require differing steps per package to install. Steps for each package are listed in the following sections.
 - Server: the [VS Code server](https://code.visualstudio.com/docs/remote/vscode-server). Steps for each platform are listed in the following sections.
@@ -61,51 +61,21 @@ Once sections are assigned, follow the Steps to Test Build Type section below an
 
 ## Steps to Test Per Build Type
 
-follow the steps below for the client, server, and CLI steps.
+## Client
 
-### Linux Packages
+The Windows system and user executables are installers. After installing VS Code, it can be launched from the start menu. \
+The Windows archive can be run by extracting the archive and double-clicking on the extracted executable. \
+The macOS archives can be run by extracting the archive, moving the app to the `/Applications` folder, and launching it. \
+The Linux archive can be run by extracting it, opening a terminal to that directory, and running `./code`. \
+The Linux packages require differing commands to install and remove:
 
-#### Debian
+| Package | Install steps                                         | Remove steps            |
+| ------- | ----------------------------------------------------- | ----------------------- |
+| Debian  | `sudo dpkg -i <file>.deb`                             | `sudo dpkg -r code`     |
+| RPM     | `sudo rpm -ivh <file>.rpm`                            | `sudo rpm -evh code`    |
+| Snap    | `sudo snap install --classic --dangerous <file>.snap` | `sudo snap remove code` |
 
-To install:
-
-```sh
-sudo dpkg -i <file>.deb
-```
-
-To remove:
-
-```sh
-sudo dpkg -r code
-```
-
-### RPM
-
-To install:
-
-```sh
-sudo rpm -ivh <file>.rpm
-```
-
-To remove:
-
-```sh
-sudo rpm -evh code
-```
-
-### Snap
-
-To install:
-
-```sh
-sudo snap install --classic --dangerous <file>.snap
-```
-
-To remove:
-
-```sh
-sudo snap remove code
-```
+After installing a Linux package, run VS Code by running `code` in the terminal.
 
 ## Server
 
