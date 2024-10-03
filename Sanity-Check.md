@@ -4,7 +4,9 @@
 
 [About](#about) \
 [Getting Started](#getting-started) \
-[Steps to Test Per Build Type](#steps-to-test-per-build-type)
+[Client Testing Steps](#client-testing-steps) \
+[Server Testing Steps](#server-testing-steps) \
+[CLI Testing Steps](#cli-testing-steps)
 
 ## About
 
@@ -43,14 +45,15 @@ In addition to those operating systems, any web browser on devbox.microsoft.com 
 
 Each section on the endgame plan lists specific builds to test. Some of the builds are as follows:
 
-- Installer: on Windows, the system and user executables are installers that install VS Code to a system or user directory, respectively. With these executables, a user can launch VS Code after installing it.
-- Archive: a zip or tar.gz archive. On Windows and Linux, these builds do not have an installer and can be run automatically after extracting them. On macOS, the builds can be run after extracting them and moving the application file to the `/Applications` folder.
-- Universal Archive: an archive specifically for macOS that supports both Intel and Apple Silicon chips by bundling two binaries into a single product.
-- Debian, RPM, and Snap packages: Linux packages that require differing steps per package to install. Steps for each package are listed in the following sections.
+- Client: the following group of builds
+  - Installer: on Windows, the system and user executables are installers that install VS Code to a system or user directory, respectively. With these executables, a user can launch VS Code after installing it.
+  - Archive: a zip or tar.gz archive. On Windows and Linux, these builds do not have an installer and can be run automatically after extracting them. On macOS, the builds can be run after extracting them and moving the application file to the `/Applications` folder.
+  - Universal Archive: an archive specifically for macOS that supports both Intel and Apple Silicon chips by bundling two binaries into a single product.
+  - Debian, RPM, and Snap packages: Linux packages that require differing steps per package to install. Steps for each package are listed in the following sections.
 - Server: the [VS Code server](https://code.visualstudio.com/docs/remote/vscode-server). Steps for each platform are listed in the following sections.
 - CLI: the VS Code command line interface that comes bundled with VS Code. During sanity testing, we use the CLI to test [remote tunnels](https://code.visualstudio.com/docs/editor/command-line#_create-remote-tunnel). Steps for each platform are listed in the following sections.
 
-Once sections are assigned, follow the Steps to Test Build Type section below and check off each of your assigned sections on the endgame plan.
+Once sections are assigned, follow the steps for your assigned section and/or builds below, then check off your assigned section and/or builds on the endgame plan.
 
 ### Tools for Testing Different Builds
 
@@ -59,9 +62,7 @@ Once sections are assigned, follow the Steps to Test Build Type section below an
 - [Dev Box](https://devbox.microsoft.com/%25C2%25A0), thanks to @lszomoru, allows us to spin up and access Windows x64 VMs from any browser.
 - An [Ubuntu Desktop VM](https://ubuntu.com/download/desktop) can run the Debian, Archive, and Snap builds. A [Fedora Workstation VM](https://fedoraproject.org/en/workstation/download) can run the RPM and Archive builds.
 
-## Steps to Test Per Build Type
-
-## Client
+## Client Testing Steps
 
 The Windows system and user executables are installers. After installing VS Code, it can be launched from the start menu. \
 The Windows archive can be run by extracting the archive and double-clicking on the extracted executable. \
@@ -77,7 +78,7 @@ The Linux packages require differing commands to install and remove:
 
 After installing a Linux package, run VS Code by running `code` in the terminal.
 
-## Server
+## Server Testing Steps
 
 ### Linux Platforms
 
@@ -141,7 +142,7 @@ Set the undocumented setting `"remote.SSH.force32bitWindows": true` to force a 3
 
 Use the Remote-SSH extension to connect from any client platform to a macOS remote (connecting to `localhost` is ok). To start the SSH server, you just have to enable Remote Login as described [here](https://osxdaily.com/2011/09/30/remote-login-ssh-server-mac-os-x/).
 
-## CLI
+## CLI Testing Steps
 
 ### Windows & macOS
 
