@@ -56,8 +56,8 @@ Once sections are assigned, follow the Steps to Test Build Type section below an
 
 - On macOS you can get a Parallels license from the team admin to spin up Windows and Linux VMs.
 - On Windows (virtualized or not), you can use the [sanity testing WSL images](https://microsoft-my.sharepoint.com/:f:/p/stbatt/EvLnK6RCcW9KttxeqDR59WkBbqoPxHehXV4-EkQinN62sA?e=yk9YNE) created by @sbatten.
-- An [Ubuntu Desktop VM](https://ubuntu.com/download/desktop) can run the Debian, Archive, and Snap builds. A [Fedora Workstation VM](https://fedoraproject.org/en/workstation/download) can run the RPM and Archive builds.
 - [Dev Box](https://devbox.microsoft.com/%25C2%25A0), thanks to @lszomoru, allows us to spin up and access Windows x64 VMs from any browser.
+- An [Ubuntu Desktop VM](https://ubuntu.com/download/desktop) can run the Debian, Archive, and Snap builds. A [Fedora Workstation VM](https://fedoraproject.org/en/workstation/download) can run the RPM and Archive builds.
 
 ## Steps to Test Per Build Type
 
@@ -72,7 +72,7 @@ The Linux packages require differing commands to install and remove:
 | Package | Install steps                                         | Remove steps            |
 | ------- | ----------------------------------------------------- | ----------------------- |
 | Debian  | `sudo dpkg -i <file>.deb`                             | `sudo dpkg -r code`     |
-| RPM     | `sudo rpm -ivh <file>.rpm`                            | `sudo rpm -evh code`    |
+| RPM     | `sudo dnf install <file>.rpm`                         | `sudo dnf remove code`  |
 | Snap    | `sudo snap install --classic --dangerous <file>.snap` | `sudo snap remove code` |
 
 After installing a Linux package, run VS Code by running `code` in the terminal.
