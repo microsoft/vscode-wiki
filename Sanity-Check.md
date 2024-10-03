@@ -1,75 +1,110 @@
 # Sanity Checking VS Code
-## Jump to a section:
+
+## Table of Contents
+
 [About](#about) \
 [Getting Started](#getting-started) \
-[Steps to Test Per Build Type](#steps-to-test-per-build-type) 
-
+[Steps to Test Per Build Type](#steps-to-test-per-build-type)
 
 ## About
 
 ### What is sanity testing and why do we do it?
 
-VS Code has an extensive release process, called [Endgame](https://github.com/Microsoft/vscode/wiki/Running-the-Endgame), that contains multiple testing processes to ensure that we deliver a product of the highest quality to our users. The final process a build must pass before being released is what we call "Sanity testing".
+VS Code has an extensive release process, called [Endgame](https://github.com/Microsoft/vscode/wiki/Running-the-Endgame), that contains multiple testing processes to ensure that we deliver a product of the highest quality to our users. Sanity testing is the final verification process a build must pass before being released.
 
 > NOTE: This testing is done for each platform build we ship.
 
-Sanity testing is human run and is the opportunity to have a final set of eyes on a build before it is released to users. This testing helps catch any final issues that might have slipped through the rest of the testing processes and ensures that the installer install VS Code correctly and it runs as expect.
+Sanity testing is a manual process and is the opportunity to have a final set of eyes on a build before it is released to users. This testing ensures that the VS Code stable release candidate (Stable RC) installs and runs as expected.
 
-#### What to look for when you sanity test?
+#### What are we looking for when we sanity test?
 
 We are looking for errors, failures, or anything else that is not desired behavior. Examples are things not loading or errors when trying to open the build in the first place.
 
 #### What does it mean to sanity test and what are some things to try during sanity testing?
 
-- On the most basic level:  install, launch, then open a file or the about dialog
+- On the most basic level: install, launch, then open a file or the about dialog
 - Other options to test a bit more:
-    - Click through all the items on the sidebar
-    - Try some command from the command palette
-    - Open / click around in the terminal
-    - Install and use an extension
+  - Click through all the items on the sidebar
+  - Try some command from the command palette
+  - Open / click around in the terminal
+  - Install and use an extension
 
 ## Getting Started
 
-When the step of sanity testing comes in endgame, sections are assigned based on device type. The devices tested are as follows with the compatible testing machine:
+During sanity testing, sections are assigned by operating system. Some operating systems along with the sections that they can test are as follows:
 
-| OS you are running | Additional builds you are able to test |
+| Operating system | Sections that it can test |
 | ----------- | ----------- |
-| Mac x64      | Windows x64, Windows x86, Linux x64, Linux Server, Linux CLI       |
-| Mac ARM   | Windows ARM, Linux Server, Linux CLI,        |
-| Windows x64 | Windows x86, Linux x64, Linux Server, Linux CLI |
-| Any Web Browser for devbox.microsoft.com|  Windows x64, Windows x86, Linux x64, Linux Server, Linux CLI |
+| Mac x64      | Mac x64, Windows x64, Linux x64, Linux Server, Linux CLI |
+| Mac ARM   | Mac ARM, Windows ARM, Linux Server, Linux CLI |
+| Windows x64 | Windows x64, Linux x64, Linux Server, Linux CLI |
 
-credit to @tylerleonhardt for this table and the below tool descriptions.
+In addition to those operating systems, any web browser on devbox.microsoft.com can test Windows x64, Linux x64, Linux Server, and Linux CLI sections.
 
-#### Tools for Testing Different OS
-* On macOS you can get a Parallels license from our admin to spin up VMs , you can get a Parallels license. 
-* On Windows (virtualized or not), you can use the Sanity Testing WSL image created by @sbatten. Find images and instructions [here](https://microsoft-my.sharepoint.com/:f:/p/stbatt/EvLnK6RCcW9KttxeqDR59WkBbqoPxHehXV4-EkQinN62sA?e=yk9YNE).
-* And don’t forget, we have [dev box](https://devbox.microsoft.com/%25C2%25A0) thanks to @lszomoru which allows us to spin up Windows x64 VMs to access from any browser.
+Each section on the endgame plan lists specific builds to test. Some of the builds are as follows:
 
+- Installer: on Windows, the system and user executables are installers that install VS Code to a system or user directory, respectively. With these executables, a user can launch VS Code after installing it.
+- Archive: a zip or tar.gz archive. On Windows and Linux, these builds do not have an installer and can be run automatically after extracting them. On macOS, the builds can be run after extracting them and moving the application file to the /Applications folder.
+- Universal Archive: an archive specifically for macOS that supports both Intel and Apple Silicon chips by bundling two binaries into a single product.
+- Debian, RPM, and Snap packages: Linux packages that require differing steps per package to install. Steps for each package are listed in the following sections.
+- Server: the [VS Code server](https://code.visualstudio.com/docs/remote/vscode-server). Steps for each platform are listed in the following sections.
+- CLI: the VS Code command line interface that comes bundled with VS Code. During sanity testing, we use the CLI to test [remote tunnels](https://code.visualstudio.com/docs/editor/command-line#_create-remote-tunnel). Steps for each platform are listed in the following sections.
 
+Once sections are assigned, follow the Steps to Test Build Type section below and check off each of your assigned sections on the endgame plan.
 
+### Tools for Testing Different Builds
 
-Other system types have specific builds, these will be outlined in the release issue. Here are the types of builds and what this means:
-
-- Archive: a build that doesn't have an installer (also referred to as client below)
-- Server: Running vscode on a server on a remote client.
-- CLI: Running vscode from the command line interface.
-- Universal Archive (for macOS): Same as the regular archive but just a build that should work universally for both Intel and Apple Silicon based chips.
-
-
-Once sections are assigned, follow the Steps to Test Build Type below to check off each of your assigned sections on the release issue.
+- On macOS you can get a Parallels license from the team admin to spin up Windows and Linux VMs.
+- On Windows (virtualized or not), you can use the [sanity testing WSL images](https://microsoft-my.sharepoint.com/:f:/p/stbatt/EvLnK6RCcW9KttxeqDR59WkBbqoPxHehXV4-EkQinN62sA?e=yk9YNE) created by @sbatten.
+- An [Ubuntu Desktop VM](https://ubuntu.com/download/desktop) can run the Debian, Archive, and Snap builds. A [Fedora Workstation VM](https://fedoraproject.org/en/workstation/download) can run the RPM and Archive builds.
+- [Dev Box](https://devbox.microsoft.com/%25C2%25A0), thanks to @lszomoru, allows us to spin up and access Windows x64 VMs from any browser.
 
 ## Steps to Test Per Build Type
+
 follow the steps below for the client, server, and CLI steps.
 
-## Client
+### Linux Packages
 
-Download the correct bits and make sure they start and the window opens correctly.
+#### Debian
 
-### Linux Snap
+To install:
 
+```sh
+sudo dpkg -i <file>.deb
 ```
+
+To remove:
+
+```sh
+sudo dpkg -r code
+```
+
+### RPM
+
+To install:
+
+```sh
+sudo rpm -ivh <file>.rpm
+```
+
+To remove:
+
+```sh
+sudo rpm -evh code
+```
+
+### Snap
+
+To install:
+
+```sh
 sudo snap install --classic --dangerous <file>.snap
+```
+
+To remove:
+
+```sh
+sudo snap remove code
 ```
 
 ## Server
@@ -88,7 +123,7 @@ sudo snap install --classic --dangerous <file>.snap
 1. Install VS Code at the exact version (commit) that needs sanity checking. https://builds.code.visualstudio.com/builds/stable
 2. Run the following commands. They register the QEMU hardware emulator and start 5 kinds of containers:
 
-```
+```sh
 docker run --privileged --rm tonistiigi/binfmt --uninstall '*'
 docker run --pull always --privileged --rm tonistiigi/binfmt --install all
 
@@ -99,10 +134,10 @@ docker run -d amd64/alpine sleep inf
 docker run -d arm64v8/alpine sleep inf
 ```
 
-4. Check that you can connect to each of the containers using the "Attach in New Window" button for each container in the Remote Explorer. For each container:
+3. Check that you can connect to each of the containers using the "Attach in New Window" button for each container in the Remote Explorer. For each container:
     - Check which platform you are on by running `uname -m` from the integrated terminal. (Expect: `x86_64` for amd64, `armv7l` for arm32 and `aarch64` for arm64)
     - Alpine Linux runs on `x86_64` and `aarch64`, check `cat /etc/os-release` shows Alpine as the distro.
-5. Use the Remote Explorer to remove the containers. Note that the current window's container cannot be removed, so use a new window instead.
+4. Use the Remote Explorer to remove the containers. Note that the current window's container cannot be removed, so use a new window instead.
 
 ### Windows and Mac using the CLI/Tunnels
 
@@ -120,7 +155,8 @@ This is a second option for sanity testing the Windows server. Use the Remote-SS
 Note: if you are an [AAD user](https://github.com/PowerShell/Win32-OpenSSH/issues/1787) on your Windows machine, you may have to apply [this workaround](https://github.com/PowerShell/Win32-OpenSSH/issues/1476#issuecomment-642974745).
 
 Here is an example localhost config that can be added to your SSH `config` file:
-```
+
+```text
 Host localhost
     HostName localhost
     User <username>@microsoft.com
@@ -155,7 +191,7 @@ Use the Remote-SSH extension to connect from any client platform to a macOS remo
 1. Look up the build's commit id and replace `<commit>` with that value below.
 2. Run the following commands one-by-one. They register the QEMU hardware emulator and start 5 Linux builds of the CLI:
 
-```
+```sh
 export COMMIT="<commit>" # Bash
 $env:COMMIT='<commit>' # PowerShell
 
@@ -169,7 +205,7 @@ docker run -e COMMIT -it --rm amd64/alpine /bin/sh -c 'apk update && apk add mus
 docker run -e COMMIT -it --rm arm64v8/alpine /bin/sh -c 'apk update && apk add musl libgcc libstdc++ && wget "https://update.code.visualstudio.com/commit:$COMMIT/cli-alpine-arm64/stable" -O- | tar -xz && ./code tunnel'
 ```
 
-4. For each CLI test:
+3. For each CLI test:
     1. Make sure the program starts and you see and can agree to the license
     2. Connect to the tunnel via `https://vscode.dev/tunnel/<name>?vscode-version=COMMIT`
     3. Check which platform you are on by running `uname -m` from the integrated terminal. (Expect: `x86_64` for amd64, `armv7l` for arm32 and `aarch64` for arm64)
