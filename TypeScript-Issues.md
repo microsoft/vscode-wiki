@@ -1,4 +1,4 @@
-This document cover reporting issues with VS Code's built-in JavaScript and TypeScript support.
+This document covers how to handle and report issues with VS Code's built-in JavaScript and TypeScript support.
 
 # Most Common Causes of Crashes
 
