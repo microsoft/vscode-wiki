@@ -1,8 +1,8 @@
 This document cover reporting issues with VS Code's built-in JavaScript and TypeScript support.
 
-## Most Common Causes of Crashes
+# Most Common Causes of Crashes
 
-#### Extensions and TypeScript plugins
+### Extensions and TypeScript plugins
 Extensions can modify the behavior of VS Code's built-in TypeScript service. This is commonly used to add specialized tooling features or support different syntax such as Vue.
 
 However these extensions are also the leading cause of instability in VS Code's built-in JavaScript and TypeScript support. If you are seeing crashes or other issues, always first try [disabling all extensions](https://code.visualstudio.com/docs/editor/extension-gallery#_disable-an-extension) or use start extension bisect via "F1 > Start Extension Bisect". If you find the issue is caused by an extension you have installed please file an issue on the extension.
@@ -10,19 +10,19 @@ However these extensions are also the leading cause of instability in VS Code's 
 Additionally if you are using a workspace version of TypeScript, make sure to also try disabling any local plugins that are picked up by your `tsconfig` or `jsconfig`
 
 
-#### Outdated TypeScript versions
+### Outdated TypeScript versions
 
 #### Memory issues
 
  
 
 
-## Reporting issues
+# Reporting issues
 
 
 
 
-## Working with large projects
+# Working with large projects
 
 If you are working in a codebase with hundreds or thousands of TypeScript files, here are some steps you can take to improve both the editing experience in VS Code as well as compile times on the command line.
 
