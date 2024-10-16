@@ -1,6 +1,6 @@
 This document covers how to handle and report issues with VS Code's built-in JavaScript and TypeScript support.
 
-# How to report issues
+# Reporting issue
 
 Here's how to report a high quality TypeScript issue report. Make sure to also follow our [general issue reporting guide](https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions).
 
@@ -28,7 +28,6 @@ Here's how to report a high quality TypeScript issue report. Make sure to also f
     See [Collecting crash logs](#collecting-crash-logs) for steps about how to collect the logs from the crashed server. Make sure to attach these logs to your issue report
 
 For additional suggestions and guidance, see our [general issue reporting guide](https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions)
-
 
 
 # Most Common Causes of Problems
