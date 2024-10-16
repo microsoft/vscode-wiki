@@ -2,9 +2,12 @@ This document cover reporting issues with VS Code's built-in JavaScript and Type
 
 # Most Common Causes of Crashes
 
-- [Extensions and TypeScript plugins](#extensions-and-typescript-plugins)
+- [Extensions and plugins](#extensions-and-typescript-plugins)
+- [Outdated TypeScript version](#outdated-typeScript-version)
+- [Memory issues](#memory-issues)
 
-### Extensions and TypeScript plugins
+
+### Extensions and Plugins
 Extensions can modify the behavior of VS Code's built-in TypeScript service. This is commonly used to add specialized tooling features or support different syntax such as Vue.
 
 However these extensions are also the leading cause of instability in VS Code's built-in JavaScript and TypeScript support. If you are seeing crashes or other issues, always first try [disabling all extensions](https://code.visualstudio.com/docs/editor/extension-gallery#_disable-an-extension) or use start extension bisect via "F1 > Start Extension Bisect". If you find the issue is caused by an extension you have installed please file an issue on the extension.
@@ -12,10 +15,18 @@ However these extensions are also the leading cause of instability in VS Code's 
 Additionally if you are using a workspace version of TypeScript, make sure to also try disabling any local plugins that are picked up by your `tsconfig` or `jsconfig`
 
 
-### Outdated TypeScript versions
+### Outdated TypeScript version
+The latest VS Code release typically includes the latest stable TypeScript version. If you have told VS Code to use your workspace version of TypeScript, you may be using an older version that has bugs that have already been fixed.
 
-#### Memory issues
+Before reporting an issue, please make sure your Typescript version is up to date by:
 
+- Make sure your VS Code version is fully up to date. 
+
+- Make sure you are using VS Code's version of TypeScript (or a new version). With a JavaScript or TypeScript file open, run the `TypeScript: Select TypeScript version` command. Confirm that `Use VS Code's version` is selected
+
+
+### Memory issues
+For large or especially complex projects, it's possible that the TypeScript server may run out of memory which can cause the service to crash. You can double check memory usage 
  
 
 
