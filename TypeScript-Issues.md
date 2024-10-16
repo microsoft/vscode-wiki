@@ -57,7 +57,9 @@ Here's how to report a high quality TypeScript issue report. Make sure to also f
 
 3. For crashes, provide the TypeScript crash log
 
-    See [Collecting crash logs](#collecting-crash-logs) for steps about how to collect the logs from the crashed 
+    See [Collecting crash logs](#collecting-crash-logs) for steps about how to collect the logs from the crashed server. Make sure to attach these logs to your issue report
+
+For additional suggestions and guidance, see our [general issue reporting guide](https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions)
 
 
 # Collecting crash logs
