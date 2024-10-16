@@ -36,8 +36,48 @@ If this still doesn't work, you can try increasing the memory available to the T
 1. Increase the `typescript.tsserver.maxTsServerMemory` to a reasonable upper limit for memory usage. Make sure your system has enough memory for this.
 
 
-# Reporting issues
+# How to report issues
 
+Here's how to report a high quality TypeScript issue report. Make sure to also follow our [general issue reporting guide](https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions)
+
+1. Figure out if the issue is with TypeScript itself or with VS Code's TypeScript support
+
+    If the issue is about TypeScript itself, it should be [reported against TypeScript directly](https://github.com/microsoft/typescript/issues/new/choose). Example TypeScript issues include:
+
+    - Issues with type checking
+    - Issues with IntelliSense not working as expected in JavaScript or TypeScript
+    - Issues with compiling TypeScript
+    - Questions about how to use TypeScript 
+
+    If the issue is instead about VS Code's JavaScript and TypeScript support, please continue on
+   
+2. For tooling issues, provide clear steps to reproduce the issue
+
+    Clearly describe the issue and provide simple steps to reproduce the problem. Make sure to include all the relevant code needed to investigate the issue. If your code is complex or lengthy, try reducing the example down to the minimum amount of code possible. 
+
+3. For crashes, provide the TypeScript crash log
+
+    See [Collecting crash logs](#collecting-crash-logs) for steps about how to collect the logs from the crashed 
+
+
+# Collecting crash logs
+
+The TypeScript server logs provide detailed information that we can use to investigate crashes and other issues. To collect the logs after the TypeScript server has crashed:
+
+1. Set `"typescript.tsserver.log": "verbose"`
+1. Restart VS Code and reproduce the problem
+1. Open the `TypeScript` section of the output panel
+1. At the very top, find the first line that prints to path to the semantic error log file. It should look something like:
+
+    ```
+    [Info  - 19:54:59.247] <semantic> Log file: /Users/matb/Library/Application Support/Code - Insiders/logs/20200213T104930/exthost55/vscode.typescript-language-features/tsserver-log-ZT2zau/tsserver.log
+    ```
+
+    That file contains the typescript logs.
+
+When reporting the issue, please either include the full logs or a redacted version of them.
+
+ > **⚠️Warning:** The TypeScript log may include information from your workspace, including file paths and source code. If you have any concerns about posting this publicly on Github, just let me know and we can arrange something else. On our side, we only use these logs to investigate issues like this
 
 
 
