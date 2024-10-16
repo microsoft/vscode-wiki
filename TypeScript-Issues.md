@@ -1,6 +1,37 @@
 This document covers how to handle and report issues with VS Code's built-in JavaScript and TypeScript support.
 
-# Most Common Causes of Crashes
+# How to report issues
+
+Here's how to report a high quality TypeScript issue report. Make sure to also follow our [general issue reporting guide](https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions).
+
+1. Figure out if the issue is with TypeScript itself or with VS Code's TypeScript support
+
+    If the issue is about TypeScript itself, it should be [reported against TypeScript directly](https://github.com/microsoft/typescript/issues/new/choose). Example TypeScript issues include:
+
+    - Issues with type checking
+    - Issues with IntelliSense not working as expected in JavaScript or TypeScript
+    - Issues with compiling TypeScript
+    - Questions about how to use TypeScript 
+
+    If the issue is instead about VS Code's JavaScript and TypeScript support, please continue on
+
+2. Check the [most common causes of issues and crashes](#most-common-causes-of-problems)
+
+    The majority of TypeScript issues and crashes are caused by a [few common problems](#most-common-causes-of-problems)
+
+2. For tooling issues, provide clear steps to reproduce the issue
+
+    Clearly describe the issue and provide simple steps to reproduce the problem. Make sure to include all the relevant code needed to investigate the issue. If your code is complex or lengthy, try reducing the example down to the minimum amount of code possible. 
+
+3. For crashes, provide the TypeScript crash log
+
+    See [Collecting crash logs](#collecting-crash-logs) for steps about how to collect the logs from the crashed server. Make sure to attach these logs to your issue report
+
+For additional suggestions and guidance, see our [general issue reporting guide](https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions)
+
+
+
+# Most Common Causes of Problems
 
 - [Extensions and plugins](#extensions-and-typescript-plugins)
 - [Outdated TypeScript version](#outdated-typeScript-version)
@@ -34,32 +65,6 @@ If this still doesn't work, you can try increasing the memory available to the T
 
 1. In the VS Code settings, set `typescript.tsserver.nodePath` so that the TypeScript server runs using your local node version
 1. Increase the `typescript.tsserver.maxTsServerMemory` to a reasonable upper limit for memory usage. Make sure your system has enough memory for this.
-
-
-# How to report issues
-
-Here's how to report a high quality TypeScript issue report. Make sure to also follow our [general issue reporting guide](https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions)
-
-1. Figure out if the issue is with TypeScript itself or with VS Code's TypeScript support
-
-    If the issue is about TypeScript itself, it should be [reported against TypeScript directly](https://github.com/microsoft/typescript/issues/new/choose). Example TypeScript issues include:
-
-    - Issues with type checking
-    - Issues with IntelliSense not working as expected in JavaScript or TypeScript
-    - Issues with compiling TypeScript
-    - Questions about how to use TypeScript 
-
-    If the issue is instead about VS Code's JavaScript and TypeScript support, please continue on
-   
-2. For tooling issues, provide clear steps to reproduce the issue
-
-    Clearly describe the issue and provide simple steps to reproduce the problem. Make sure to include all the relevant code needed to investigate the issue. If your code is complex or lengthy, try reducing the example down to the minimum amount of code possible. 
-
-3. For crashes, provide the TypeScript crash log
-
-    See [Collecting crash logs](#collecting-crash-logs) for steps about how to collect the logs from the crashed server. Make sure to attach these logs to your issue report
-
-For additional suggestions and guidance, see our [general issue reporting guide](https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions)
 
 
 # Collecting crash logs
