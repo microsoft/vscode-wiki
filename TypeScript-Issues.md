@@ -2,6 +2,8 @@ This document cover reporting issues with VS Code's built-in JavaScript and Type
 
 # Most Common Causes of Crashes
 
+- [Extensions and TypeScript plugins](#extensions-and-typescript-plugins)
+
 ### Extensions and TypeScript plugins
 Extensions can modify the behavior of VS Code's built-in TypeScript service. This is commonly used to add specialized tooling features or support different syntax such as Vue.
 
