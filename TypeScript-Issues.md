@@ -4,7 +4,7 @@ This document cover reporting issues with VS Code's built-in JavaScript and Type
 
 - [Extensions and plugins](#extensions-and-typescript-plugins)
 - [Outdated TypeScript version](#outdated-typeScript-version)
-- [Memory issues](#memory-issues)
+- [Memory usage](#memory-usage)
 
 
 ### Extensions and Plugins
@@ -25,9 +25,15 @@ Before reporting an issue, please make sure your Typescript version is up to dat
 - Make sure you are using VS Code's version of TypeScript (or a new version). With a JavaScript or TypeScript file open, run the `TypeScript: Select TypeScript version` command. Confirm that `Use VS Code's version` is selected
 
 
-### Memory issues
-For large or especially complex projects, it's possible that the TypeScript server may run out of memory which can cause the service to crash. You can double check memory usage 
+### Memory usage
+For large or especially complex projects, it's possible that the TypeScript server may run out of memory which can cause the service to crash. You can double check memory usage using the [process explorer](https://github.com/Microsoft/vscode/wiki/Performance-Issues)
  
+If you suspect that memory usage is causing the TypeScript service to crash, first try [splitting your code. See [working with large projects](#working-with-large-projects) for tips
+
+If this still doesn't work, you can try increasing the memory available to the TypeScript server:
+
+1. In the VS Code settings, set `typescript.tsserver.nodePath` so that the TypeScript server runs using your local node version
+1. Increase the `typescript.tsserver.maxTsServerMemory` to a reasonable upper limit for memory usage. Make sure your system has enough memory for this.
 
 
 # Reporting issues
