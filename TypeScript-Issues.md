@@ -65,8 +65,9 @@ If this still doesn't work, you can try increasing the memory available to the T
 1. In the VS Code settings, set `typescript.tsserver.nodePath` so that the TypeScript server runs using your local node version
 1. Increase the `typescript.tsserver.maxTsServerMemory` to a reasonable upper limit for memory usage. Make sure your system has enough memory for this.
 
+# Diagnosing issues
 
-# Collecting crash logs
+## Collecting TS Server Crash Logs
 
 The TypeScript server logs provide detailed information that we can use to investigate crashes and other issues. To collect the logs after the TypeScript server has crashed:
 
@@ -85,7 +86,7 @@ When reporting the issue, please either include the full logs or a redacted vers
 
  > **⚠️Warning:** The TypeScript log may include information from your workspace, including file paths and source code. If you have any concerns about posting this publicly on Github, just let me know and we can arrange something else. On our side, we only use these logs to investigate issues like this
 
-# Collecting running TS Server logs
+## Collecting running TS Server logs
 
 If you're seeing a TypeScript issue that is not a crash, it's often helpful to share the logs from the currently running TypeScript server instance. 
 
