@@ -85,6 +85,15 @@ When reporting the issue, please either include the full logs or a redacted vers
 
  > **⚠️Warning:** The TypeScript log may include information from your workspace, including file paths and source code. If you have any concerns about posting this publicly on Github, just let me know and we can arrange something else. On our side, we only use these logs to investigate issues like this
 
+# Collecting running TS Server logs
+
+If you're seeing a TypeScript issue that is not a crash, it's often helpful to share the logs from the currently running TypeScript server instance. 
+
+1. Set `"typescript.tsserver.log": "verbose"`
+1. Restart VS Code and reproduce the problem
+1. With a JavaScript or TypeScript file opened and focused, run the `TypeScript: Open TS Server Log` command.
+
+This will open the current logs file in VS Code. 
 
 
 # Working with large projects
