@@ -48,7 +48,7 @@ We provide logging for file events when you enable verbose logging. Steps are:
 * select `Developer - Set Log Level...`
 * pick `Trace`
 * select `View | Output`
-* select `Log (Remote Server)` from the dropdown
+* select `Server` from the dropdown
 * attach the output when doing the operation that exhibits the issue
 
 ![image](https://user-images.githubusercontent.com/900690/156323886-6b7dfa25-d6ac-4316-9150-80e5c8104d04.png)
