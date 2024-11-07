@@ -179,6 +179,4 @@ docker run -e COMMIT -it --rm arm64v8/alpine /bin/sh -c 'apk update && apk add m
 3. For each CLI test:
     1. Make sure the program starts and you see and can agree to the license
     2. Connect to the tunnel via `https://vscode.dev/tunnel/<name>?vscode-version=COMMIT`
-    3. Check which platform you are on by running `uname -m` from the integrated terminal. (Expect: `x86_64` for amd64, `armv7l` for arm32 and `aarch64` for arm64)
-    4. Run `cat /etc/os-release`. For Alpine Linux tunnels, ensure the output shows Alpine as the distro. Otherwise, ensure that Ubuntu or Debian are mentioned in the output.
-    5. Close the tab, then hit Ctrl+C on the server.
+    3. Close the tab, then hit Ctrl+C on the server.
