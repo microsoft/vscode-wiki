@@ -13,7 +13,7 @@ This page describes the Build Champion role. This is a weekly rotating role with
 
 We have an internal `#build` channel that a bot posts to with the results of all builds of the `main` branch on ADO. It's important to review all these failures and create issues because ignoring non-green builds ends up causing the build quality to get worse and worse over time, resulting in a loss of trust of tests, multiple retries, waste of engineering resources, etc.
 
-It's expected that the build champion reviews all `failed` and `partiallySucceeded` builds and actions them appropriately at least once per day. The main focus is to triage and route the failure to the right owner and/or create an issue, so that the build continues to be healthy and run smoothly. **It is _not_ your job to fix the problem unless you own the feature area. It is expected that the build champion to investigate and fix build pipeline related issues like Terrapin for example** 
+It's expected that the build champion reviews all `failed` and `partiallySucceeded` builds and actions them appropriately at least once per day. The main focus is to triage and route the failure to the right owner and/or create an issue, so that the build continues to be healthy and run smoothly. **It is _not_ your job to fix the problem unless you own the feature area. It is expected that the build champion to investigate and fix build pipeline related issues like Terrapin for example**.
 
 Follow this as a rough guide for how to review a build:
 
