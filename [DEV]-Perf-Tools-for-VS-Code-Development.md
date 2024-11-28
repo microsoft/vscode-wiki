@@ -10,7 +10,7 @@ The startup performance editor (F1 > Developer: Startup Performance) gives you a
 * extension activation stats (activation reason, code loading time, time to finish calling activate)
 * code loading stats (dev only)
 
-The screen capture below shows a sample and highlights some interesting bits like code loading, processing extension contributions, and extension stats. The durations are derived from well-known perf-markers. Simplest is to look them up in source [here](https://github.com/microsoft/vscode/blob/joh/hide-menuItems/src/vs/workbench/services/timer/browser/timerService.ts#L575)
+The screen capture below shows a sample and highlights some interesting bits like code loading, processing extension contributions, and extension stats. The durations are derived from well-known perf-markers. Simplest is to look them up in source [here](https://github.com/microsoft/vscode/blob/main/src/vs/workbench/services/timer/browser/timerService.ts#L666)
 
 <img width="1202" alt="Screenshot 2022-09-15 at 14 27 37" src="https://user-images.githubusercontent.com/1794099/190404112-326503e4-f888-4e3c-947d-6861d2d1072f.png">
 
@@ -69,16 +69,17 @@ Know that you can use `console.profile` and `console.profileEnd` to profile just
 * Have and execute code like below
 * The JavaScript Profiler tab will be populated with the profiles
 
-### Profile Startup
-
-You can start VS Code with a `--prof-startup` flag and it will automatically capture a profile of the main, renderer, and extension host process. Once it is done it asks you to restart and stores the files in your home directory. This is great to analyse the whole startup, esp of the built product. 
-
-
 ```ts
 console.profile('Hi');
 // some code that you want to drill into
 console.profileEnd('Hi');
 ```
+
+
+### Profile Startup
+
+You can start VS Code with a `--prof-startup` flag and it will automatically capture a profile of the main, renderer, and extension host process. Once it is done it asks you to restart and stores the files in your home directory. This is great to analyse the whole startup, esp of the built product. 
+
 
 ### Delayed Services
 
@@ -104,9 +105,11 @@ You can log all communication that happens between the renderer and its extensio
 
 ### Perf Machine
 
-Last but not least in the performance machine. That's an old laptop that daily downloads and starts VS Code Insiders and Exploration. Using wall-clock time we know it can start VS Code in under 2.5 seconds and it need to proof that. We use the best of N runs, a slack message to the performance-channel send with the results. 
+Last but not least in the performance machines. We use a Windows laptop, mac mini and Linux mini PC as hardware to test VS Code Insiders and Exploration leveraging the https://github.com/Microsoft/vscode-perf-bot module. 
 
-_Note_ that you DO NOT NEED access to the perf-machine. It's just a normal computer and if it runs slower things will also run slower locally. Likely not as dramatic because it is around 10 years old but still slower and something you can find locally. Rarely it is OS dependent: the perf-machine run windows 10 there is no perf machine for mac nor linux
+Using wall-clock time we know it can start VS Code in a certain duration and it needs to proof that. We use the best of N runs, a slack message to the performance-channel send with the results. 
+
+_Note_ that you DO NOT NEED access to the perf-machine. It's just a normal computer and if it runs slower things will also run slower locally. Likely not as dramatic because it is around 10 years old but still slower and something you can find locally. Rarely it is OS dependent: the perf-machine run windows 10 and macOS 12.x.
 
 ### Slow Workbench Contributions
 
@@ -118,4 +121,15 @@ WARN Workbench contribution WalkThroughSnippetContentProvider blocked restore ph
 
 In that case, the idea is to either move the contribution out to a later phase or profile what takes long in the contribution.
 
+### Performance Bots Dashboard
 
+We maintain a dashboard to show performance metrics for our Windows and macOS perf bots: https://dataexplorer.azure.com/dashboards/2e20491b-d517-40b5-bab4-269607f05221
+
+![image](https://github.com/microsoft/vscode/assets/900690/91211231-fd0e-41b9-b1a2-2c19e8682ae3)
+
+
+For numbers across all insiders and stable releases and knobs for drilling into non-standard scenarios you can visit
+
+https://msit.powerbi.com/groups/2bb9c256-c8ed-47a3-b1be-ebf0c050fb85/reports/2f5bed71-2607-4e0c-8a83-d0f9de023342/ReportSection2a538e7da53fa84953d6?experience=power-bi
+
+<img width="1848" alt="Screenshot 2023-05-24 at 10 36 50" src="https://github.com/microsoft/vscode/assets/1794099/bd5b63eb-5e5d-4665-9915-b48040f6c316">

@@ -33,7 +33,7 @@ Because cross-compiling isn't officially supported by the Visual Studio Code tea
 
    *note the -L linker argument pointing to the absolute path of libx11 on the chroot/rootfs*
 
-1. Tell `yarn` you want to cross-compile native modules for ARM:
+1. Tell `npm` you want to cross-compile native modules for ARM:
    
    ```bash
    export npm_config_arch=arm
@@ -42,7 +42,7 @@ Because cross-compiling isn't officially supported by the Visual Studio Code tea
 1. Build VS Code and create a .deb file (for easier installation on the target device) as usual:
 
    ```bash
-   yarn
-   yarn run gulp vscode-linux-arm-min
-   yarn run gulp vscode-linux-arm-build-deb
+   npm i
+   npm run gulp vscode-linux-arm-min
+   npm run gulp vscode-linux-arm-build-deb
    ```

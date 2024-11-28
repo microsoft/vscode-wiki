@@ -10,10 +10,8 @@
 * [[Build Champion]]
 * [[Release Process]]
 * [[Running the Endgame]]
-  * [[Endgame Template]]
   * [[Writing Test Plan Items]]
-  * [[Test - Smoke Test Template]]
-  * [[Endgame Recovery Template]]
+  * [[Sanity Check]]
 * [[Related Projects]]
 
 **Contributing**
@@ -28,10 +26,13 @@
 * [[Feedback Channels]]
 * [[Source Code Organization]]
 * [[Coding Guidelines]]
-* [[Smoke Test]]
+* Testing
+  * [[Writing Tests]]
+  * [[Smoke Test]]
 * [[Dealing with Test Flakiness]]
 * [[Contributor License Agreement]]
 * [[Extension API Guidelines]]
+* [[Accessibility Guidelines]]
 
 **Documentation**
 * [Extensions](https://code.visualstudio.com/docs/extensions/overview)

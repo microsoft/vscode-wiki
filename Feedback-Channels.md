@@ -16,9 +16,9 @@ Notice, we don't want to use GitHub Issues for general 'how-to' questions about 
 The VS Code PM and Advocacy teams have a presence in this community, periodicially posting announcements and answering questions.
 
 ## Slack
-The [Visual Studio Code Development Community](https://aka.ms/vscode-dev-community) Slack workspace is a community maintained place for VS Code contributors, extension developers, theme authors, etc to help one another and collaborate. This Slack workspace contains many discussion channels including many for specific extensions.
+The [Visual Studio Code Development Community]() Slack workspace is a community maintained place for VS Code contributors, extension developers, theme authors, etc to help one another and collaborate. This Slack workspace contains many discussion channels including many for specific extensions.
 
-Here are a few of the main channels: (you must first [join the Slack workspace](https://aka.ms/vscode-dev-community) before the links below will work)
+Here are a few of the main channels: (you must first [join the Slack workspace](https://vscode-dev-community.slack.com/) before the links below will work)
 - [vscode-dev](https://vscode-dev-community.slack.com/messages/C74E1CNGL) for general VS Code discussions.
 - [vscode-extensions-dev](https://vscode-dev-community.slack.com/messages/C74CB59NE) for discussions about extension development.
 - [vscode-themes](https://vscode-dev-community.slack.com/messages/CBQAQ5GAD/) for discussions about theme authoring.

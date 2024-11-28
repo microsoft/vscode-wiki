@@ -44,13 +44,9 @@ For some terminal issues it's useful to get trace logs, this can reveal at what 
 1. Close all VS Code windows
 2. Launch VS Code from the terminal using `code --log trace`
 3. At this point you should reproduce the terminal issue you're having
-4. Run the command "Developer: Open Log File..." (<kbd>F1</kbd> opened command palette) and select `Window` to get an editor containing the logs. Select the `Remote Extension Host` log file if you're diagnosing an issue in a remote workspace (SSH/WSL/Containers/Codespace).
+4. Run the command "Developer: Open Log File..." (<kbd>F1</kbd> opened command palette) and select `Terminal` (frontend logs like input) or `Pty Host` (backend logs like communication with shell) to get an editor containing the logs for the terminal.
 
 If for some reason you're unable to restart VS Code like you're running in a remote, you can change the log level via the command palette (<kbd>F1</kbd> `Developer: Set Log Level...`).
-
-### Enabling escape sequence logging
-
-For issues where text is misbehaving in the terminal you can enable logging of the data being sent to/from the terminal emulator and the shell process. To enable escape sequence logging run the "Terminal: Toggle Escape Sequence Logging" command from the command palette (<kbd>F1</kbd>), the logs can then be viewed in the devtools console (Help &gt; Toggle Developer Tools).
 
 ### Using showkey to investigate keybinding issues
 

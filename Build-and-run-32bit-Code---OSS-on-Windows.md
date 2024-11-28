@@ -6,9 +6,9 @@ Every so often, you may need to debug an issue that only appears in the 32bit ve
 1. Stop any running processes from the regular contributing guide.
 1. Start a PowerShell session in the `vscode` directory that you cloned.
 1. run `git clean -fdx` - remove downloaded election, remove `node_modules`, remove anything that isn't checked in to the repo
-1. run `$env:npm_config_arch = 'ia32'` - let yarn know that you want to build the 32bit version
-1. run `yarn` - install dependencies
-1. run `yarn electron ia32` - download the 32bit of electron
+1. run `$env:npm_config_arch = 'ia32'` - let npm know that you want to build the 32bit version
+1. run `npm i` - install dependencies
+1. run `npm run electron ia32` - download the 32bit of electron
 1. run `.\scripts\code.bat` - start VS Code
 
 You should be able to go into the About section and see that you're running the 32bit version of VS Code.

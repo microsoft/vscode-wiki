@@ -24,8 +24,6 @@ The `core` of VS Code is fully implemented in [TypeScript](https://github.com/mi
   - may use code from: `common`
 - `electron-sandbox`: Source code that requires the `browser` APIs like access to the DOM and a small subset of APIs to communicate with the Electron main process (anything exposed from `src/vs/base/parts/sandbox/electron-sandbox/globals.ts`
   - may use code from: `common`, `browser`, `electron-sandbox`
-- [⚠️ deprecated] `electron-browser`: Source code that requires the [Electron renderer-process](https://github.com/atom/electron/tree/master/docs#modules-for-the-renderer-process-web-page) APIs
-  - may use code from: `common`, `browser`, `node`
 - `electron-main`: Source code that requires the [Electron main-process](https://github.com/atom/electron/tree/master/docs#modules-for-the-main-process) APIs
   - may use code from: `common`, `node`
 
@@ -64,7 +62,7 @@ The best way to provide a service to others or to your own components is the `re
 registerSingleton(
   ISymbolNavigationService, // identifier
   SymbolNavigationService,  // ctor of an implementation
-  true // delay instantiation of this service until is actually needed
+  InstantiationType.Delayed // delay instantiation of this service until is actually needed
 );
 ```
 
@@ -102,7 +100,7 @@ Contributions that are contributed to the workbench all live inside the `vs/work
 We ship both to desktop via Electron and to the Web with the goal to share as much code as possible in both environments. Writing code that only runs in the one environment should be the exception, think twice before going down that path. Ideally the same code can run in both environments.
 
 To distinguish the environments in the product we build, there are entry files that define all the dependencies depending on the environment:
-* `src/vs/workbench/workbench.sandbox.main.ts`: for desktop only dependencies
+* `src/vs/workbench/workbench.desktop.main.ts`: for desktop only dependencies
 * `src/vs/workbench/workbench.web.main.ts`: for web only dependencies
 
 Both depend on our core entry file:

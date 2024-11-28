@@ -42,6 +42,13 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 |Go|[vscode-go](https://github.com/microsoft/vscode-go)|
 |Emmet Helper|[vscode-emmet-helper](https://github.com/Microsoft/vscode-emmet-helper)|
 |Markdown Textmate Grammar|[vscode-markdown-tm-grammar](https://github.com/Microsoft/vscode-markdown-tm-grammar)|
+|Python|[vscode-python](https://github.com/microsoft/vscode-python)|
+
+## Data Science
+|Tool|Repository|
+|---|---|
+|Jupyter|[vscode-jupyter](https://github.com/microsoft/vscode-jupyter)|
+|Data Wrangler|[vscode-data-wrangler](https://github.com/microsoft/vscode-data-wrangler)|
 
 ## Localization
 |Tool|Repository|

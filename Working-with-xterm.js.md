@@ -6,8 +6,21 @@ Check out the [xterm.js contribution documentation](https://github.com/xtermjs/x
 
 Since bugs and/or features manifest themselves in both VS Code and xterm.js, it's a little unclear initially where the issue(s) should be created. After some experimentation I landed on the best way to deal with this is to create the an issue in both the Microsoft/vscode and xtermjs/xterm.js repositories. The reason this is the best workflow is because the changes will then be verified during endgame and it's much easier to compose release notes for the terminal changes. This guideline is less important for more obscure terminal issues where it's typically easier to keep a single source of truth in the xterm.js repo.
 
+### Symlinking a local xterm repo for easier debugging
+
+⚠️ Only Windows and macOS have been tested
+
+1. Open Windows Terminal in administrator mode (Windows) or any terminal (macOS)
+2. Navigate to the vscode repo folder
+3. Run `./scripts/xterm-symlink.ps1 <absolute path to xterm folder>`, eg. `./scripts/xterm-symlink.ps1 C:\Github\Tyriar\xterm.js`
+4. Open the symlinked xterm.js repo in VS Code and run `yarn package -- --mode development --watch` to watch changes
+
+Debugging xterm.js inside VS Code should now work. ⚠️ For now you will need to first debug in devtools to get the file to open in VS Code, then it works in VS Code.
+
+
+
 ### Updating `xterm` in vscode via script
-1. Open a terminal in the vscode repo and run `./scripts/update-xterm.ps1` (or `node ./scripts/update-xterm.js`).
+1. Open a terminal in the vscode repo and run `./scripts/xterm-update.ps1` (or `node ./scripts/xterm-update.js`).
 2. Add the changed files and commit with the following message:
 
 ```

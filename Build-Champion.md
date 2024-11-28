@@ -3,6 +3,7 @@ This page describes the Build Champion role. This is a weekly rotating role with
 ## Responsibilities
 
 - Daily: [Triage all failed and partially succeeded builds](#triage-non-green-builds)
+- Daily: [Ensure a green Insiders build from `main`](#green-insiders-build)
 - At least once during the week: [Review and triage error telemetry](#triage-error-telemetry)
 - On the following Monday: Hand over the role to the next person
 - Build champ buddy: The build champ buddy is a role that you take the week following being the build champ. The buddy is responsible for investigating important build failures when the build champ on the other site is offline.
@@ -38,10 +39,20 @@ If this was a recent failure and the "Changes" seems relevant, ping the committe
 👉 It's important to use ✅ on failed builds as that helps save other team members from investigating failures that don't need it which could happen when they're pinged directly.
 
 
+## Green Insiders Build
+
+It is crucial for our success to have a green insiders build from `main` branch that gets published to our [update site](https://builds.code.visualstudio.com/builds/insider) at least once on a day. Various tools depend on this to happen, for example performance testing to figure out performance regressions early. 
+
+Insider builds are scheduled to running daily automatically. In case of failure, it is your responsibility to act accordingly:
+* when automated release is disabled (debt week): run the [pipeline](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111) but do not release the build
+* when automated release is enabled (otherwise): run the [pipeline](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111) and release the build
+
+👉 even in debt week, when the automated release is disabled, we still want the daily insiders build to succeed (but not released!). this ensures our daily rhythm is not impacted at all and we can act on build issues early on
+
 
 ## Triage error telemetry
 
-Our error telemetry captures any uncaught errors thrown in VS Code and presents them in https://vscode-errors.azurewebsites.net/. This website allows us to view errors by each release and they also contain stats on the number of hits and machines that particular error had. Errors typically represent a case that wasn't considered in code, a broken feature and/or a bad error notification presented to the user.
+Our error telemetry captures any uncaught errors thrown in VS Code and presents them in https://errors.code.visualstudio.com/. This website allows us to view errors by each release and they also contain stats on the number of hits and machines that particular error had. Errors typically represent a case that wasn't considered in code, a broken feature and/or a bad error notification presented to the user.
 
 At least one time during the week of being the Build Champion you should triage the errors in **the most recent ~3 pages** for a recent insiders build as well as the stable build.
 
@@ -87,7 +98,7 @@ If you're unsure who owns an area, you can roughly determine who an owner is by 
 
 ### Useful links
 
-- [Error telemetry website](https://vscode-errors.azurewebsites.net/)
+- [Error telemetry website](https://errors.code.visualstudio.com/)
 - [ADO VS Code build](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
 - [ADO VS Code build analytics](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111&view=ms.vss-pipelineanalytics-web.new-build-definition-pipeline-analytics-view-cardmetrics)
 - [Dealing with test flakiness wiki page](https://github.com/microsoft/vscode/wiki/Dealing-with-Test-Flakiness)
