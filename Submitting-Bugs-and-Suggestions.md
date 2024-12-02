@@ -3,6 +3,7 @@ The VS Code project tracks issues and feature requests using the [GitHub issue t
 
 ### Before Submitting an Issue
 Please begin by consulting any of the following pages that may be relevant:
+  * [Codespace Issues](https://docs.github.com/en/codespaces/troubleshooting)
   * [Performance Issues](Performance-Issues)
   * [Keybinding Issues](Keybinding-Issues)
   * [Native Crash Issues](Native-Crash-Issues)
