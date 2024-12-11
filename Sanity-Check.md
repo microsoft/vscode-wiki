@@ -99,7 +99,7 @@ docker run --privileged --rm tonistiigi/binfmt --uninstall '*'
 docker run --pull always --privileged --rm tonistiigi/binfmt --install all
 
 docker run -d amd64/ubuntu sleep inf
-docker run -d arm64v8/ubuntu sleep inf
+docker run -d --platform linux/arm64 arm64v8/ubuntu sleep inf
 docker run -d arm32v7/ubuntu /bin/sh -c 'apt update && apt install -y libatomic1 && sleep inf'
 docker run -d amd64/alpine sleep inf
 docker run -d arm64v8/alpine sleep inf
