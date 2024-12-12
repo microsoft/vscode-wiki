@@ -98,11 +98,11 @@ After installing a Linux package, run VS Code by running `code` in the terminal.
 docker run --privileged --rm tonistiigi/binfmt --uninstall '*'
 docker run --pull always --privileged --rm tonistiigi/binfmt --install all
 
-docker run -d amd64/ubuntu sleep inf
-docker run -d --platform linux/arm64 arm64v8/ubuntu sleep inf
-docker run -d arm32v7/ubuntu /bin/sh -c 'apt update && apt install -y libatomic1 && sleep inf'
-docker run -d amd64/alpine sleep inf
-docker run -d arm64v8/alpine sleep inf
+docker run -d --pull always --platform linux/amd64 amd64/ubuntu sleep inf
+docker run -d --pull always --platform linux/arm64 arm64v8/ubuntu sleep inf
+docker run -d --pull always --platform linux/arm/v7 arm32v7/ubuntu /bin/sh -c 'apt update && apt install -y libatomic1 && sleep inf'
+docker run -d --pull always --platform linux/amd64 amd64/alpine sleep inf
+docker run -d --pull always --platform linux/arm64 arm64v8/alpine sleep inf
 ```
 
 3. Check that you can connect to each of the containers using the "Attach in New Window" button for each container in the Remote Explorer. For each container:
