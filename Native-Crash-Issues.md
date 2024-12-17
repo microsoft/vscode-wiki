@@ -10,6 +10,20 @@ VS Code supports a `--crash-reporter-directory <absolute-path>` option that you 
 
 If you can reproduce the issue running out of sources, meaning compiled from source (code-oss), then you might be able to symbolicate the crash dump (`.dmp` file) as well. Otherwise, please wait for a maintainer to symbolicate your crash dump.
 
+## Remote Extension Host Crashes
+
+Before running the server on the remote configure `ulimit -c unlimited` to create the dump file on crash. Once the crash happens you can retrieve the coredump either by locating with `coredumpctl` or checking the path configured in `/proc/sys/kernel/core_pattern`.
+
+Once you have the dump file run the following command `gdb -se <path-to-vscode-server>/node -c <path-to-core-file>` and provide the output for each of the following gdb commands,
+
+```
+> set pagination off
+> info sharedlibrary
+> info registers
+> bt full
+> disassemble
+```
+
 ## Symbolicating a crash dump (_Steps for VS Code team members only_)
 
 A global install of electron-minidump is required for the following steps.  
