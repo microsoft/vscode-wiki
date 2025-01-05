@@ -84,6 +84,10 @@ If you want to understand how VS Code works or want to debug an issue, you'll wa
 
 First, fork the VS Code repository so that you can make a pull request. Then, clone your fork locally:
 
+> [!Warning]
+> Make sure that the path to your local clone does not contain spaces.
+> This can cause issues with later steps.
+
 ```
 git clone https://github.com/<<<your-github-account>>>/vscode.git
 cd vscode
@@ -117,6 +121,7 @@ The incremental builder will do an initial full build and will display a message
 
 **Troubleshooting:**
 
+- Make sure that the path to your local clone of the repo does not contain spaces.
 - **Windows:** If you have installed Visual Studio 2017 as your build tool, you need to open **x64 Native Tools Command Prompt for VS 2017**. Do not confuse it with *VS2015 x64 Native Tools Command Prompt*, if installed.
 - **Linux:** You may hit a ENOSPC error when running the build. To get around this follow instructions in the [Common Questions](https://code.visualstudio.com/docs/setup/linux#_common-questions).
 
