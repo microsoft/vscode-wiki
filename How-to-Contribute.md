@@ -86,12 +86,12 @@ First, fork the VS Code repository so that you can make a pull request. Then, cl
 
 ```
 git clone https://github.com/<<<your-github-account>>>/vscode.git
+cd vscode
 ```
 
 Occasionally you will want to merge changes in the upstream repository (the official code repo) with your fork.
 
 ```
-cd vscode
 git checkout main
 git pull https://github.com/microsoft/vscode.git main
 ```
@@ -105,7 +105,6 @@ Manage any merge conflicts, commit them, and then push them to your fork.
 Install and build all of the dependencies using `npm`:
 
 ```
-cd vscode
 npm i
 ```
 
