@@ -32,6 +32,9 @@ It’s best to use a native HTML control if possible, but roles are available wh
 ### Input elements
 Make sure <input> controls have associated labels.
 
+### Links
+Links within `p` elements will automatically show underlines to discern themselves from regular text if `accessibility.underlineLinks` is enabled. However, this rule doesn't catch every case where links could benefit from underlines. Consider including `text-decoration: var(--text-link-decoration)` to ensure a link element respects that setting. 
+
 ### Audio cues
 
 Some experiences can be enriched with audio cues (e.g. existence of a breakpoint on a line). Audio cues should be used when just focus and `aria-label` are not enough. When in doubt, reach out to Megan Rogge and she can also put you in contact with our sound designer.

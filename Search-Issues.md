@@ -50,6 +50,19 @@ You can start VS Code from the command line with the `--status` flag, or use the
 
 The steps on the [[Performance Issues]] wiki page may also be useful.
 
+
+## Which extension triggered a search?
+
+A search can be triggered by your action in VS Code, or by an extension. If you see `rg` processes running right when VS Code starts or other times when you are not searching in VS Code, then an extension might be triggering the search. Follow these steps to find out which one:
+
+- Ctrl/Cmd+shift+P > Run the command `"Developer: Set Log Level..."`, select "Trace"
+- Reproduce the issue again, for example, by reloading the window with the command "Reload Window"
+- In the Output panel in VS Code, find the `Log (Extension Host)` channel
+- Messages are logged each time an extension starts a search. An example would be something like `extHostWorkspace#findFiles: fileSearch, extension: vscode.npm, entryPoint: findFiles`. If it's a text search, it would start with `extHostWorkspace#findTextInFiles`. Search for these log messages, and if you think that the extension shouldn't have been searching, you can file an issue on the extension.
+
+You can also often get a hint about which extension is involved by just looking at the arguments that the `rg` process was started with.
+
+
 ## Filing a search issue
 
 When filing a search-related issue on the VS Code repo, please try the steps above and include as many details as possible to help us diagnose the issue.

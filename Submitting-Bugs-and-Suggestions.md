@@ -9,6 +9,7 @@ Please begin by consulting any of the following pages that may be relevant:
   * [Native Crash Issues](Native-Crash-Issues)
   * [Search Issues](Search-Issues)
   * [Terminal Issues](Terminal-Issues)
+  * [TypeScript Issues](TypeScript-Issues)
 
 Next, do a search in [open issues](https://github.com/Microsoft/vscode/issues) to see if the issue or feature request has already been filed. Use this [query](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) to search for the most popular feature requests.
 
