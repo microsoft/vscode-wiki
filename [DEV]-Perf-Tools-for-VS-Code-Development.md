@@ -1,16 +1,16 @@
-The page lists some tools to investigate and understand performance of VS Code. They complement the built-in Performance, CPU Profiler, and Memory tabs of dev tools and usually require code changes (which usually must not be committed) 
+The page lists some tools to investigate and understand the performance of VS Code. They complement the built-in Performance, CPU Profiler, and Memory tabs of dev tools and usually require code changes (which usually must not be committed).
 
 The following tools are available to the "core" of VS Code, e.g main, renderer, shared, and extension host process but not to extensions. 
 
 ### Performance View/Editor
 
-The startup performance editor (F1 > Developer: Startup Performance) gives you a good overview of things that are important for startup, eg
+The startup performance editor (F1 > Developer: Startup Performance) gives you a good overview of things that are important for startup, e.g
 
 * high-level aggregation of perf-marks (see below for more details)
 * extension activation stats (activation reason, code loading time, time to finish calling activate)
 * code loading stats (dev only)
 
-The screen capture below shows a sample and highlights some interesting bits like code loading, processing extension contributions, and extension stats. The durations are derived from well-known perf-markers. Simplest is to look them up in source [here](https://github.com/microsoft/vscode/blob/main/src/vs/workbench/services/timer/browser/timerService.ts#L666)
+The screen capture below shows a sample and highlights some interesting bits like code loading, processing extension contributions, and extension stats. The durations are derived from well-known perf-markers. Simplest is to look them up in the source [here](https://github.com/microsoft/vscode/blob/main/src/vs/workbench/services/timer/browser/timerService.ts#L666).
 
 <img width="1202" alt="Screenshot 2022-09-15 at 14 27 37" src="https://user-images.githubusercontent.com/1794099/190404112-326503e4-f888-4e3c-947d-6861d2d1072f.png">
 
@@ -35,7 +35,7 @@ mark('code/didCreateCodeWindow');
 - *Note* that mark names should start with `code/` - other marks aren't considered for down-level tooling (perf-editor, telemetry)
 - *Note* that marks around async code might measure more than you think because yielding the event loop gives any scheduled code a chance to run
 
-Performance marks can be used in the following ways
+Performance marks can be used in the following ways:
 
 - All marks from all contexts are send as telemetry events. That allows to aggregate any of them and to learn how long things take in the "real world"
 
@@ -50,7 +50,7 @@ Performance marks can be used in the following ways
 
 ### Eventing
 
-Emitting events can be a source of performance issues. Imagine an event with 100 listeners: if the average listener takes 2ms to execute then each `fire` costs 200ms. This slows down your component but isn't in your control. A fun exercise is to step into each listener to see what they do or to profile firing. This is quite laborious too and therefore you can get a high-level overview via [`EmitterOptions._profName`](https://github.com/microsoft/vscode/blob/cd2381c266c162b144fdab91f91ec49542e07dea/src/vs/base/common/event.ts#L492). Do the following
+Emitting events can be a source of performance issues. Imagine an event with 100 listeners: if the average listener takes 2ms to execute then each `fire` costs 200ms. This slows down your component but isn't in your control. A fun exercise is to step into each listener to see what they do or to profile firing. This is quite laborious too and therefore you can get a high-level overview via [`EmitterOptions._profName`](https://github.com/microsoft/vscode/blob/cd2381c266c162b144fdab91f91ec49542e07dea/src/vs/base/common/event.ts#L492). Do the following:
 
 * When creating your emitter, pass the `_profName`-option. ❗This is dev-time only and MUST NOT be committed
 * Reload or execute the code in questions
@@ -128,7 +128,7 @@ We maintain a dashboard to show performance metrics for our Windows and macOS pe
 ![image](https://github.com/microsoft/vscode/assets/900690/91211231-fd0e-41b9-b1a2-2c19e8682ae3)
 
 
-For numbers across all insiders and stable releases and knobs for drilling into non-standard scenarios you can visit
+For numbers across all insiders and stable releases and knobs for drilling into non-standard scenarios, you can visit:
 
 https://msit.powerbi.com/groups/2bb9c256-c8ed-47a3-b1be-ebf0c050fb85/reports/2f5bed71-2607-4e0c-8a83-d0f9de023342/ReportSection2a538e7da53fa84953d6?experience=power-bi
 
