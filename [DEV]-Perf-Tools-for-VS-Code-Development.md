@@ -50,7 +50,7 @@ Performance marks can be used in the following ways
 
 ### Eventing
 
-Emitting events can be a source of performance issues. Image an event with 100 listeners: if the average listener takes 2ms to execute then each `fire` costs 200ms. This slows down your component but isn't in your control. A fun exercise is to step into each listener to see what they do or to profile firing. This is quite laborious too and therefore you can get a high-level overview via [`EmitterOptions._profName`](https://github.com/microsoft/vscode/blob/cd2381c266c162b144fdab91f91ec49542e07dea/src/vs/base/common/event.ts#L492). Do the following
+Emitting events can be a source of performance issues. Imagine an event with 100 listeners: if the average listener takes 2ms to execute then each `fire` costs 200ms. This slows down your component but isn't in your control. A fun exercise is to step into each listener to see what they do or to profile firing. This is quite laborious too and therefore you can get a high-level overview via [`EmitterOptions._profName`](https://github.com/microsoft/vscode/blob/cd2381c266c162b144fdab91f91ec49542e07dea/src/vs/base/common/event.ts#L492). Do the following
 
 * When creating your emitter, pass the `_profName`-option. ❗This is dev-time only and MUST NOT be committed
 * Reload or execute the code in questions
