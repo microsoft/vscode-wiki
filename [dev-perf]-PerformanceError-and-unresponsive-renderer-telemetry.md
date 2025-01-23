@@ -1,6 +1,6 @@
 ## Automatic renderer profiling
 
-The renderer process is monitored for "hangs" and when those occur automatic profiling is started. It works as follows
+The renderer process is monitored for "hangs" and when those occur automatic profiling is started. It works as follows:
 
 * after startup a performance baseline is computed (on fast machines this is fine-tuned to be roughly one frame at 64fps, 15ms)
 * when a [long task](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceLongTaskTiming) that is 10x of the baseline is reported, automatic renderer profiling is started (for 5secs)
