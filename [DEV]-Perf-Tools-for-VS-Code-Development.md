@@ -17,7 +17,7 @@ The screen capture below shows a sample and highlights some interesting bits lik
 
 ### Performance Marks
 
-We have the [`performance.mark`](https://github.com/microsoft/vscode/blob/a3192fbad7bb02871ae8b6d3703c8bfc5433e661/src/vs/base/common/performance.d.ts#L11)-utility that works very similar to the standard [`mark`](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark)-function. The difference is that you can use it in any context (node, electron, browser, or worker) and that it works with unix timestamps. This allows them to be compared across different processes. 
+We have the [`performance.mark`](https://github.com/microsoft/vscode/blob/a3192fbad7bb02871ae8b6d3703c8bfc5433e661/src/vs/base/common/performance.d.ts#L11)-utility that works very similarly to the standard [`mark`](https://developer.mozilla.org/en-US/docs/Web/API/Performance/mark)-function. The difference is that you can use it in any context (node, electron, browser, or worker) and that it works with Unix timestamps. This allows them to be compared across different processes. 
 
 Performance markers should be used for significant points of program execution and usually come in pairs of `willXYZ` and `didXYZ`.
 
@@ -44,7 +44,7 @@ Performance marks can be used in the following ways:
 <img width="578" alt="Screenshot 2022-09-14 at 09 07 21" src="https://user-images.githubusercontent.com/1794099/190085435-2c60c873-49b8-4776-ab6e-f3aa747abb99.png">
 
 
-- Marks form the renderer are visible in the Performance-tab when recording while reload, like so 
+- Marks from the renderer are visible in the Performance-tab when recording while reload, like so 
 <img width="471" alt="Screenshot 2022-09-14 at 09 04 30" src="https://user-images.githubusercontent.com/1794099/190084419-c04cf172-7ba1-4127-bbc0-130005f14ddb.png">
 
 
@@ -83,13 +83,13 @@ You can start VS Code with a `--prof-startup` flag and it will automatically cap
 
 ### Delayed Services
 
-We use dependency injection and services for most parts of VS Code. Concrete service are registered via the [`registerSingleton`](https://github.com/microsoft/vscode/blob/cd2381c266c162b144fdab91f91ec49542e07dea/src/vs/platform/instantiation/common/extensions.ts#L25)-function and when a service consumer (actions, workbench- or editor-contribution, etc) is being created our instantiation service ensures that the services it needs are also created. This is often wasteful because most consumers don't need the service right away - e.g their constructors simply store the service-instance for later use. To counter that a concrete service can mark itself as supporting [delayed instantiation](https://github.com/microsoft/vscode/blob/f3f9f7a10d877fd2177daec3e1f6054706c7e5bc/src/vs/platform/instantiation/common/extensions.ts#L22) - in that case the instantiation service gives consumers a proxy of the actual service which becomes "real" when needed or when there is some idle time.
+We use dependency injection and services for most parts of VS Code. Concrete services are registered via the [`registerSingleton`](https://github.com/microsoft/vscode/blob/cd2381c266c162b144fdab91f91ec49542e07dea/src/vs/platform/instantiation/common/extensions.ts#L25)-function and when a service consumer (actions, workbench- or editor-contribution, etc) is being created our instantiation service ensures that the services it needs are also created. This is often wasteful because most consumers don't need the service right away - e.g their constructors simply store the service-instance for later use. To counter that, a concrete service can mark itself as supporting [delayed instantiation](https://github.com/microsoft/vscode/blob/f3f9f7a10d877fd2177daec3e1f6054706c7e5bc/src/vs/platform/instantiation/common/extensions.ts#L22) - in that case, the instantiation service gives consumers a proxy of the actual service which becomes "real" when needed or when there is some idle time.
 
 It is highly recommended to register services with support for being instantiated delayed. Services are usually fit for this - a good indication is a more or less empty constructor and not relying on events to build up some state but build up state from other state and use events for updates only. 
 
 ### Trace Instantiation
 
-The instantiation service supports a trace mode. It records all invocations of `createInstance` and `invokeFunction` and know the overall cost of such a call and what creations it has caused. To use it, do the following
+The instantiation service supports a trace mode. It records all invocations of `createInstance` and `invokeFunction` and knows the overall cost of such a call and what creations it has caused. To use it, do the following:
 
 * Uncomment [this line](https://github.com/microsoft/vscode/blob/b24fefc5403ae8152db6d79eb80333f77e199a6f/src/vs/platform/instantiation/common/instantiationService.ts#L15) ❗ MUST NOT be committed and written so weirdly that this shouldn't happen by accident
 * Run "F1 > Print Service Traces"
@@ -105,11 +105,11 @@ You can log all communication that happens between the renderer and its extensio
 
 ### Perf Machine
 
-Last but not least in the performance machines. We use a Windows laptop, mac mini and Linux mini PC as hardware to test VS Code Insiders and Exploration leveraging the https://github.com/Microsoft/vscode-perf-bot module. 
+Last but not least are the performance machines. We use a Windows laptop, Mac mini and Linux mini PC as hardware to test VS Code Insiders and Exploration leveraging the https://github.com/Microsoft/vscode-perf-bot module. 
 
 Using wall-clock time we know it can start VS Code in a certain duration and it needs to proof that. We use the best of N runs, a slack message to the performance-channel send with the results. 
 
-_Note_ that you DO NOT NEED access to the perf-machine. It's just a normal computer and if it runs slower things will also run slower locally. Likely not as dramatic because it is around 10 years old but still slower and something you can find locally. Rarely it is OS dependent: the perf-machine run windows 10 and macOS 12.x.
+_Note_ that you DO NOT NEED access to the perf-machine. It's just a normal computer and if it runs slower things will also run slower locally. Likely not as dramatic because it is around 10 years old but still slower and something you can find locally. Rarely it is OS dependent: the perf-machine runs Windows 10 and MacOS 12.x.
 
 ### Slow Workbench Contributions
 
@@ -123,7 +123,7 @@ In that case, the idea is to either move the contribution out to a later phase o
 
 ### Performance Bots Dashboard
 
-We maintain a dashboard to show performance metrics for our Windows and macOS perf bots: https://dataexplorer.azure.com/dashboards/2e20491b-d517-40b5-bab4-269607f05221
+We maintain a dashboard to show performance metrics for our Windows and MacOS perf bots: https://dataexplorer.azure.com/dashboards/2e20491b-d517-40b5-bab4-269607f05221
 
 ![image](https://github.com/microsoft/vscode/assets/900690/91211231-fd0e-41b9-b1a2-2c19e8682ae3)
 
