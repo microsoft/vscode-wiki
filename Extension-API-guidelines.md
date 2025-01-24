@@ -108,11 +108,11 @@ We add JSDoc for all parts of the API. The doc is supported by markdown syntax. 
 
 # Optional parameters (`?` vs `| undefined`)
 - For implementation, treat omitting a parameter with `?` the same as explicitly passing in `undefined`
-- Use `| undefined` when you want callers to always have to consider the parameter. 
-- Use `?` when you want to allow callers to omit the parameter. 
-- Never use `?` and `| undefined` on a parameter. Instead follow the two rules above to decide which version to use .
-- If adding a new parameter to an existing function, use `?` as this allows the new signature to be backwards compatible with the old version.
-- Do not add an overload to add an optional parameter to the end of the function. Instead use `?`.
+- Use `| undefined` when you want callers to always have to consider the parameter
+- Use `?` when you want to allow callers to omit the parameter
+- Never use `?` and `| undefined` on a parameter. Instead follow the two rules above to decide which version to use
+- If adding a new parameter to an existing function, use `?` as this allows the new signature to be backwards compatible with the old version
+- Do not add an overload to add an optional parameter to the end of the function. Instead use `?`
 
 # Optional properties (`?` vs `| undefined`)
 
@@ -120,7 +120,7 @@ We add JSDoc for all parts of the API. The doc is supported by markdown syntax. 
     - This can sometimes hit you on spreads or iterating through objects, so just something to be aware of
 
 - For readonly properties on interfaces that VS Code exposes to extensions (this includes managed objects, as well as the objects passed to events):
-    - Use `| undefined` as this makes it clear the property exists but has the value `undefined`. 
+    - Use `| undefined` as this makes it clear the property exists but has the value `undefined`
   
 - For readonly properties on options bag type objects passed from extensions to VS Code:
     -  Use `?` when it is ok to omit the property
