@@ -22,7 +22,7 @@ Like other parts of VS Code, the code is organized by the target runtime environ
 ```
 |-- editor
 |	|-- browser				// source code that requires the browser APIs like access to the DOM
-|	|-- common				// the core part of the editor, source code that only requires basic JavaScript APIs and run in all the other target environments
+|	|-- common				// the core part of the editor, source code that only requires basic JavaScript APIs and runs in all the other target environments
 |	|-- contrib				// first class *extensions* of the editor
 |	|-- electron-browser 	// source code that requires the Electron renderer-process APIs
 |	|-- node				// source code that requires nodejs APIs
@@ -34,7 +34,7 @@ Like other parts of VS Code, the code is organized by the target runtime environ
 
 Although we don't adopt any framework during the development, Monaco's design finally turns out to be MVVM (Model-View-ViewModel). With this design pattern in mind, we can simply separate components in the core into three layers:
 
-* View: User interface. It display information to users (Text, Cursor, Selection, etc) and handle user interactions. The View elements here are actually HTML DOM nodes.
+* View: User interface. It displays information to users (Text, Cursor, Selection, etc) and handles user interactions. The View elements here are actually HTML DOM nodes.
 * Model: Provides a view-independent representation of business entities. In Monaco, it usually represents the file you are editing.
 * ViewModel: The bridge between the View and the Model. It retrieves data from the Model and manipulates it into the format required by the View. A good **example** to help understand ViewModel is that `\t` is always a single character in Model while it takes several columns in ViewModel and it's determined by option `tabSize`.
 
