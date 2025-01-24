@@ -46,7 +46,7 @@ Insider builds are scheduled to running daily automatically. In case of failure,
 * when automated release is disabled (debt week): run the [pipeline](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111) but do not release the build
 * when automated release is enabled (otherwise): run the [pipeline](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111) and release the build
 
-👉 even in debt week, when the automated release is disabled, we still want the daily insiders build to succeed (but not released!). this ensures our daily rhythm is not impacted at all and we can act on build issues early on
+👉 even in debt week, when the automated release is disabled, we still want the daily insiders build to succeed (but not released!). This ensures our daily rhythm is not impacted at all and we can act on build issues early on.
 
 
 ## Triage error telemetry
