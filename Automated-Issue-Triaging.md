@@ -104,12 +104,12 @@ The feature requests bot serves to implement our [feature request triaging pipel
 
 All issues which have the `needs more info` label, haven't been interacted with 7 days, and were last interacted with by a team member are closed.
 
-If an issue has the `needs more info`, hasn't been interacted with in 60 days, and was last interacted with by a non-team member, the bot will comment pinging the issue assignee to take a look at the issue to ensure it doesn't "slip though the cracks".
+If an issue has the `needs more info`, hasn't been interacted with in 60 days, and was last interacted with by a non-team member, the bot will comment pinging the issue assignee to take a look at the issue to ensure it doesn't "slip through the cracks".
 
 ## Locker
 [Source](https://github.com/microsoft/vscode-github-triage-actions/tree/stable/locker)
 
-Issue which have been closed for 45 days and have not been interacted with in 3 days are locked. If the issue has the label `author-verification-requested` and does not have the label `verified`, it will not be locked. If the issue has the label `*out-of-scope`, it will not be locked.
+Issues which have been closed for 45 days and have not been interacted with in 3 days are locked. If the issue has the label `author-verification-requested` and does not have the label `verified`, it will not be locked. If the issue has the label `*out-of-scope`, it will not be locked.
 
 ## English Please
 [Source](https://github.com/microsoft/vscode-github-triage-actions/tree/stable/english-please) | [Examples](https://github.com/microsoft/vscode/issues?q=is%3Aissue+is%3Aclosed+label%3Atranslation-required-portuguese-brazil)
