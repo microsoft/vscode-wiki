@@ -20,11 +20,11 @@ Every actionable element in your component needs to be keyboard navigable, or th
 
 ### Aria labels
 
-When an element gets focus, a screen reader will read something if the element has an `aria-label` attribute set. Set an informative `aria-label` attribute on the element that gets focus. `aria-label` should be informative but concise. Always make sure to put the most important information to the front of the `aria-label` so if users skip the announcement they first hear the important stuff. When there are multiple things to express in the aria label `,` separate them. For example, here's an `aria-label` of one Breakpoint: `main.js 12, ~/Development/vscode/src/main.js`. First the most important information: filename and line number, and then comma separated additional details.
+When an element gets focus, a screen reader will read something if the element has an `aria-label` attribute set. Set an informative `aria-label` attribute on the element that gets focus. `aria-label` should be informative but concise. Always make sure to put the most important information to the front of the `aria-label` so if users skip the announcement they first hear the important stuff. When there are multiple things to express in the aria label `,` separate them. For example, here's an `aria-label` of one Breakpoint: `main.js 12, ~/Development/vscode/src/main.js`. First, the most important information: filename and line number, and then comma separated additional details.
 
 ### Aria alerts
 
-Ideally aria announcements are done as focus moves in VS Code, however in some experiences that is not possible (e.g. parameter hints). In those cases you our helper method `aria.alert` to announce. This should be used as a workaround, since we can not control when the screen reader announces these alerts.
+Ideally, aria announcements are done as focus moves in VS Code, however in some experiences that is not possible (e.g. parameter hints). In those cases you our helper method `aria.alert` to announce. This should be used as a workaround, since we can not control when the screen reader announces these alerts.
 
 ### Aria roles
 It’s best to use a native HTML control if possible, but roles are available when we are building custom components.
