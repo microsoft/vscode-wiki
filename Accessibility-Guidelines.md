@@ -16,7 +16,7 @@ If the component is introducing colors make sure all colors pass the required co
 
 ### Keyboard navigation
 
-Every actionable element in your component needs to be keyboard navigable, or there needs to be a great keyboard alternative. No functionality should only be accessed by mouse. Focus movement in your experience should go in a naturaly visual way. Focus can also be moved using arrow keys to save on tabs tops - `ActionBar` is doing that right now.
+Every actionable element in your component needs to be keyboard navigable, or there needs to be a great keyboard alternative. No functionality should only be accessed by mouse. Focus movement in your experience should go in a natura visual way. Focus can also be moved using arrow keys to save on tabs tops - `ActionBar` is doing that right now.
 
 ### Aria labels
 
