@@ -1,5 +1,7 @@
 Some issues could originate from a problem with file watching. Let me explain how file watching works in VSCode first and then provide some details how to get more logging data from how file watching behaves in your case.
 
+**Update:** There is now https://github.com/microsoft/vscode/wiki/File-Watcher-Internals documenting in detail how file watching works in VS Code.
+
 **Synopsis**
 VSCode has different strategies for file watching depending on your workspace and setup:
 * no folder opened: files in opened editors are watched via node.js `fs.watch`
@@ -46,7 +48,7 @@ We provide logging for file events when you enable verbose logging. Steps are:
 * select `Developer - Set Log Level...`
 * pick `Trace`
 * select `View | Output`
-* select `Log (Remote Server)` from the dropdown
+* select `Server` from the dropdown
 * attach the output when doing the operation that exhibits the issue
 
 ![image](https://user-images.githubusercontent.com/900690/156323886-6b7dfa25-d6ac-4316-9150-80e5c8104d04.png)

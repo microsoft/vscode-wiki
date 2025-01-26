@@ -23,6 +23,7 @@
   * [[Search Issues]]
   * [[Terminal Issues]]
   * [[File Watcher Issues]]
+  * [[TypeScript Issues]]
 * [[Feedback Channels]]
 * [[Source Code Organization]]
 * [[Coding Guidelines]]
