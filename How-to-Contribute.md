@@ -7,6 +7,8 @@ After cloning and building the repo, check out the [issues list](https://github.
 
 In order to download necessary tools, clone the repository, and install dependencies via `npm`, you need network access.
 
+**Note** that you should clone into a path WITHOUT spaces to avoid issues when compiling native modules.
+
 You'll need the following tools:
 
 - [Git](https://git-scm.com)
