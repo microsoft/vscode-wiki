@@ -74,8 +74,14 @@ export namespace Range {
 - Place the cursor on (1, 1). Move cursor down, move cursor up.
 - Verify the screen reader reads the full first line. 
 
-macOS:
-- Verify there is a black box surrounding the line 
+**macOS:**
+- Verify there is a black box surrounding the line that is read
 
 ## Screen Reader with Word Wrap
+
+- Set the setting `editor.wordWrapColumn` to 10
+- Set the setting `editor.wordWrap` to `wordWrapColumn`
+- Place the cursor on (1, 1). 
+- Put cursor down once, verify it reads: `interface`
+- Put cursor down once, verify it reads: `IRange {`
 
