@@ -94,4 +94,19 @@ export namespace Range {
 
 ## Screen Reader Read Word by Word
 
-## Screen Reader Jump to Next Paragraph
+**macos:**
+- Consider the keybindings:
+  - Option + leftArrow to read the previous word
+  - Option + rightArrow to read the next word
+- Place the cursor on (1, 1)
+- Jump to the next word. The screen reader should read `export`
+- Jump to the next word. The screen reader should read `interface`
+- Jump to the previous word. The screen reader should read `export`
+
+**windows:**
+- Consider the keybindings:
+  - NVDA + ctrl + leftArrow to read the previous word
+  - NVDA + ctrl + rightArrow to read the next word
+- Place the cursor on (1, 1)
+- Jump to the next word. The screen reader should read `interface`
+- Jump to the previous word. The screen reader should read `export`
