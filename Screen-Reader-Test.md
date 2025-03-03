@@ -92,3 +92,6 @@ export namespace Range {
 - Put cursor down once, verify it reads: `interface`
 - Put cursor down once, verify it reads: `IRange {`
 
+## Screen Reader Read Word by Word
+
+## Screen Reader Jump to Next Paragraph
