@@ -76,6 +76,13 @@ export namespace Range {
 
 **macOS:**
 - Verify there is a black box surrounding the line that is read
+- Move cursor right to (1, 2) with the right arrow. Verify it reads `e`.
+- Move cursor right to (1, 3) with the right arrow. Verify it reads `x`.
+
+**windows:**
+- Verify there is a black box surrounding the line that is read
+- Move cursor right to (1, 2) with the right arrow. Verify it reads `x`.
+- Move cursor right to (1, 3) with the right arrow. Verify it reads `p`.
 
 ## Screen Reader with Word Wrap
 
