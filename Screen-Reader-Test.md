@@ -1,9 +1,7 @@
 This page can be used to smoke test the screen reader usage with VS Code. In the following always have screen reader accessibility mode toggled on. 
 
-The golden standard is how screen readers work with Visual Studio
-
-- For macOS use VoiceOver
-- For windows use NVDA
+- For macOS use VoiceOver. The gold standard is XCode.
+- For windows use NVDA. The golden standard is Visual Studio. 
 
 In the following tests use the following example code:
 
@@ -73,7 +71,11 @@ export namespace Range {
 
 ## Simple Screen Reader Usage
 
+- Place the cursor on (1, 1). Move cursor down, move cursor up.
+- Verify the screen reader reads the full first line. 
 
+macOS:
+- Verify there is a black box surrounding the line 
 
 ## Screen Reader with Word Wrap
 
