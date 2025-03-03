@@ -12,7 +12,7 @@ In the following tests use the following example code:
 Example Code
 </summary>
 
-
+```
 export interface IRange {
 	start: number;
 	end: number;
@@ -68,7 +68,7 @@ export namespace Range {
 		return result;
 	}
 }
-
+```
 </details>
 
 ## Simple Screen Reader Usage
