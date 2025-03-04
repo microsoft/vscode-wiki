@@ -12,7 +12,8 @@ In order to download necessary tools, clone the repository, and install dependen
 You'll need the following tools:
 
 - [Git](https://git-scm.com)
-- [Node.JS](https://nodejs.org/en/download/prebuilt-binaries), **x64** or **ARM64**, version `>=20.x`
+- [Node.JS](https://nodejs.org/en/download/prebuilt-binaries), **x64** or **ARM64**, version `>=20.x` (also see [`.nvmrc`](https://github.com/microsoft/vscode/blob/main/.nvmrc), which could be more up-to-date)
+  - If using `nvm`, consider updating your default node installation with `nvm alias default <VERSION>`
   - Windows: do not pick the option to install Windows Build Tools, see the step below for instructions
 - [Python](https://www.python.org/downloads/) (required for node-gyp; check the [node-gyp readme](https://github.com/nodejs/node-gyp#installation) for the currently supported Python versions)
   - **Note:** make sure `python` can run from a command line prompt without error
