@@ -23,6 +23,7 @@ We use tabs, not spaces.
 * Use "double quotes" for strings shown to the user that need to be externalized (localized)
 * Use 'single quotes' otherwise
 * All strings visible to the user need to be externalized
+* Use title-style capitalization for command labels - don't capitalize prepositions of four or fewer letters unless it's the first or last word (e.g. "in", "with", "for")
 
 ## Style
 * Use arrow functions `=>` over anonymous function expressions
