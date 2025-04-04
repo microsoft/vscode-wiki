@@ -78,39 +78,9 @@ The Linux packages require differing commands to install and remove:
 
 After installing a Linux package, run VS Code by running `code` in the terminal.
 
-## Server Testing Steps
+## Server and CLI Testing Steps
 
-### Linux Platforms
-
-> **Note:** You can run this test from Linux, Mac or Windows.
-
-#### Pre-requisites
-
-- Install and run [Docker Desktop](https://docs.docker.com/engine/install/)
-- Install [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-
-#### Steps
-
-1. Install VS Code at the exact version (commit) that needs sanity checking. https://builds.code.visualstudio.com/builds/stable
-2. Run the following commands. They register the QEMU hardware emulator and start 5 kinds of containers:
-
-```sh
-docker run --privileged --rm tonistiigi/binfmt --uninstall '*'
-docker run --pull always --privileged --rm tonistiigi/binfmt --install all
-
-docker run -d --pull always --platform linux/amd64 amd64/ubuntu sleep inf
-docker run -d --pull always --platform linux/arm64 arm64v8/ubuntu sleep inf
-docker run -d --pull always --platform linux/arm/v7 arm32v7/ubuntu /bin/sh -c 'apt update && apt install -y libatomic1 && sleep inf'
-docker run -d --pull always --platform linux/amd64 amd64/alpine sleep inf
-docker run -d --pull always --platform linux/arm64 arm64v8/alpine sleep inf
-```
-
-3. Check that you can connect to each of the containers using the "Attach in New Window" button for each container in the Remote Explorer. For each container:
-    - Check which platform you are on by running `uname -m` from the integrated terminal. (Expect: `x86_64` for amd64, `armv7l` for arm32 and `aarch64` for arm64)
-    - Alpine Linux runs on `x86_64` and `aarch64`, check `cat /etc/os-release` shows Alpine as the distro.
-4. Use the Remote Explorer to remove the containers. Note that the current window's container cannot be removed, so use a new window instead.
-
-### Windows and Mac using the CLI/Tunnels
+### Windows and macOS using the CLI/Tunnels
 
 You can sanity test the CLI and the server at the same time, by using the CLI to start a tunnel and connecting to it from a browser, specifying the right commit hash for the server version under test.
 
@@ -119,45 +89,9 @@ You can sanity test the CLI and the server at the same time, by using the CLI to
 3. The CLI will print a `vscode.dev` link. Open that link, but add `?vscode-version=<commit hash>` to the end of the URL, where `<commit hash>` is the hash of the build that is being tested. You can find this on the builds page.
 4. Navigate to that URL. This will cause the CLI to download the specified version of the server and open a remote session in your browser over the tunnel.
 
-### Windows using Remote-SSH
+### Linux using the CLI/Tunnels
 
-This is a second option for sanity testing the Windows server. Use the Remote-SSH extension to connect from any client platform to a Windows remote. You can connect to localhost on your own Windows machine, a parallels VM, or another machine. You'll need to [set up and start OpenSSH services](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse), such as the OpenSSH SSH Server service and the OpenSSH Authentication Agent service.
-
-Note: if you are an [AAD user](https://github.com/PowerShell/Win32-OpenSSH/issues/1787) on your Windows machine, you may have to apply [this workaround](https://github.com/PowerShell/Win32-OpenSSH/issues/1476#issuecomment-642974745).
-
-Here is an example localhost config that can be added to your SSH `config` file:
-
-```text
-Host localhost
-    HostName localhost
-    User <username>@microsoft.com
-```
-
-Where `<username>` can be found by running `whoami /user` on cmd.exe.
-When connecting, the password is the same as the user password (which might be the Active Directory password, but definitely not the login pin).
-
-Set the undocumented setting `"remote.SSH.force32bitWindows": true` to force a 32-bit VS Code server to be installed on a 64-bit Windows host. If you have previously connected to this host with this version of VS Code, you will first want to run the command "Kill VS Code Server on Host" to remove the previously installed server.
-
-### macOS using Remote-SSH
-
-Use the Remote-SSH extension to connect from any client platform to a macOS remote (connecting to `localhost` is ok). To start the SSH server, you just have to enable Remote Login as described [here](https://osxdaily.com/2011/09/30/remote-login-ssh-server-mac-os-x/).
-
-## CLI Testing Steps
-
-### Windows & macOS
-
-1. Download the CLI archive and extract it
-2. Run it with `./code tunnel` and make sure it starts and you see the license notice
-
-### Linux
-
-> **Note:** You can run this test from Linux, Mac or Windows.
-
-#### Pre-requisites
-
-- Install [Docker Desktop](https://docs.docker.com/engine/install/)
-
-#### Steps
+> **Note:** You can run this test from macOS or Windows too by installing and running [Docker Desktop](https://docs.docker.com/engine/install/).
 
 1. Look up the build's commit id and replace `<commit>` with that value below.
 2. Run the following commands one-by-one. They register the QEMU hardware emulator and start 5 Linux builds of the CLI:
@@ -176,7 +110,31 @@ docker run -e COMMIT -it --rm --pull always --platform linux/amd64 amd64/alpine 
 docker run -e COMMIT -it --rm --pull always --platform linux/arm64 arm64v8/alpine /bin/sh -c 'apk update && apk add musl libgcc libstdc++ && wget "https://update.code.visualstudio.com/commit:$COMMIT/cli-alpine-arm64/stable" -O- | tar -xz && ./code tunnel'
 ```
 
-3. For each CLI test:
-    1. Make sure the program starts and you see and can agree to the license
-    2. Connect to the tunnel via `https://vscode.dev/tunnel/<name>?vscode-version=COMMIT`
-    3. Close the tab, then hit Ctrl+C on the server.
+For each CLI test:
+
+  1. Make sure the program starts and you see and can agree to the license
+  2. Connect to the tunnel via `https://vscode.dev/tunnel/<name>?vscode-version=COMMIT`
+  3. Close the tab, then hit Ctrl+C on the server.
+
+## Alternative Server Testing Steps
+
+### Windows using Remote-SSH
+
+Use the Remote-SSH extension to connect from any client platform to a Windows remote. You can connect to localhost on your own Windows machine, a parallels VM, or another machine. You'll need to [set up and start OpenSSH services](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse), such as the OpenSSH SSH Server service and the OpenSSH Authentication Agent service.
+
+Note: if you are an [AAD user](https://github.com/PowerShell/Win32-OpenSSH/issues/1787) on your Windows machine, you may have to apply an [SSH workaround](https://github.com/PowerShell/Win32-OpenSSH/issues/1476#issuecomment-642974745).
+
+Here is an example localhost config that can be added to your SSH `config` file:
+
+```text
+Host localhost
+    HostName localhost
+    User <username>@microsoft.com
+```
+
+Where `<username>` can be found by running `whoami /user` on cmd.exe.
+When connecting, the password is the same as the user password (which might be the Active Directory password, but definitely not the login pin).
+
+### macOS using Remote-SSH
+
+Use the Remote-SSH extension to connect from any client platform to a macOS remote (connecting to `localhost` is ok). To start the SSH server, you just have to [enable Remote Login](https://osxdaily.com/2011/09/30/remote-login-ssh-server-mac-os-x/).
