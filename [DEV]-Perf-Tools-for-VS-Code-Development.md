@@ -4,7 +4,7 @@ The following tools are available to the "core" of VS Code, e.g main, renderer, 
 
 ### Performance View/Editor
 
-The startup performance editor (F1 > Developer: Startup Performance) gives you a good overview of things that are important for startup, e.g
+The startup performance editor (F1 > Developer: Startup Performance) gives you a good overview of things that are important for startup, such as
 
 * high-level aggregation of perf-marks (see below for more details)
 * extension activation stats (activation reason, code loading time, time to finish calling activate)
