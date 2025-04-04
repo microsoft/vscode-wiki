@@ -62,7 +62,7 @@ Each issue must have a **type** label. Most type labels are grey, some are yello
 |`under-discussion` | not decided whether the issue is a bug or feature|
 |`debt` | improve the implementation/architecture|
 |`needs more info` | not possible to assign a type label due to missing information|
-|`question` | we should direct questions to SO|
+|`question` | we should direct questions to Stack Overflow|
 |`upstream` | an issue used to track an issue in an upstream component|
 |`electron` | an issue with electron|
 |`engineering` | issues related to our engineering system or our processes|
