@@ -5,8 +5,7 @@
 [About](#about) \
 [Getting Started](#getting-started) \
 [Client Testing Steps](#client-testing-steps) \
-[Server Testing Steps](#server-testing-steps) \
-[CLI Testing Steps](#cli-testing-steps)
+[Server and CLI Testing Steps](#server-and-cli-testing-steps)
 
 ## About
 
