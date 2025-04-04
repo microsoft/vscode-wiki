@@ -102,7 +102,7 @@ The feature requests bot serves to implement our [feature request triaging pipel
 ## Needs More Info
 [Source](https://github.com/microsoft/vscode-github-triage-actions/tree/stable/needs-more-info-closer) | [Example](https://github.com/microsoft/vscode/issues/123535#issuecomment-838615068)
 
-All issues which have the `needs more info` label, haven't been interacted with 7 for days, and were last interacted with by a team member are closed.
+All issues which have the `needs more info` label, haven't been interacted with for 7 days, and were last interacted with by a team member are closed.
 
 If an issue has the `needs more info`, hasn't been interacted with in 60 days, and was last interacted with by a non-team member, the bot will comment pinging the issue assignee to take a look at the issue to ensure it doesn't "slip through the cracks".
 
