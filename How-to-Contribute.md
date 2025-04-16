@@ -7,10 +7,13 @@ After cloning and building the repo, check out the [issues list](https://github.
 
 In order to download necessary tools, clone the repository, and install dependencies via `npm`, you need network access.
 
+**Note** that you should clone into a path WITHOUT spaces to avoid issues when compiling native modules.
+
 You'll need the following tools:
 
 - [Git](https://git-scm.com)
-- [Node.JS](https://nodejs.org/en/download/prebuilt-binaries), **x64** or **ARM64**, version `>=20.x`
+- [Node.JS](https://nodejs.org/en/download/prebuilt-binaries), **x64** or **ARM64**, version `>=20.x` (also see [`.nvmrc`](https://github.com/microsoft/vscode/blob/main/.nvmrc), which may provide a more precise version to install)
+  - If using `nvm`, consider updating your default node installation with `nvm alias default <VERSION>`
   - Windows: do not pick the option to install Windows Build Tools, see the step below for instructions
 - [Python](https://www.python.org/downloads/) (required for node-gyp; check the [node-gyp readme](https://github.com/nodejs/node-gyp#installation) for the currently supported Python versions)
   - **Note:** make sure `python` can run from a command line prompt without error
@@ -20,8 +23,6 @@ You'll need the following tools:
       - `MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)` (use `ARM64` for Windows on ARM, but the x64/x86 may still be needed)
       - `C++ ATL for latest build tools with Spectre Mitigations`
       - `C++ MFC for latest build tools with Spectre Mitigations`
-      - note: for Windows on ARM, you may need to specify the version, e.g. v14.41-17.11, rather than (latest), but pick a version that is not out of support.
-          - also the `MSVC v143 - VS 2022 C++ build tools`.
     - open a command prompt and run `npm config edit` and add or modify the `msvs_version` setting equal to your vs version. (e.g. `msvs_version=2022` for visual studio 2022)
     - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise, it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
@@ -39,6 +40,8 @@ You'll need the following tools:
     * Building deb and rpm packages requires `fakeroot` and `rpm`; run: `sudo apt-get install fakeroot rpm`
 
 ### Troubleshooting
+Make sure you cloned `vscode` into a folder without any spaces in the path hierarchy.
+
 In case of issues, try deleting the contents of `~/.node-gyp` (alternatively `~/.cache/node-gyp` for Linux, `~/Library/Caches/node-gyp/` for macOS, or `%USERPROFILE%\AppData\Local\node-gyp` for Windows) first and then run `git clean -xfd` and then try again.
 
 > If you are on Windows or Linux 64 bit systems and would like to compile to 32 bit, you'll need to set the `npm_config_arch` environment variable to `ia32` before running `npm`. This will compile all native node modules for a 32 bit architecture. Similarly, when cross-compiling for ARM, set `npm_config_arch` to `arm`.
@@ -58,6 +61,10 @@ To fix this error open Visual Studio Installer, add the following components cor
 - MSVC Spectre-mitigated libs (latest)
 - C++ ATL for latest build tools with Spectre Mitigations
 - C++ MFC for latest build tools with Spectre Mitigations
+
+#### node-gyp related failures on Windows ARM
+
+For the build tools individual components, you may need to specify the version, e.g. v14.41-17.11, rather than (latest), but pick a version that is not out of support.
 
 ### Development container
 
