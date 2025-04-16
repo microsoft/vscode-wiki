@@ -16,7 +16,8 @@ You'll need the following tools:
   - If using `nvm`, consider updating your default node installation with `nvm alias default <VERSION>`
   - Windows: do not pick the option to install Windows Build Tools, see the step below for instructions
 - [Python](https://www.python.org/downloads/) (required for node-gyp; check the [node-gyp readme](https://github.com/nodejs/node-gyp#installation) for the currently supported Python versions)
-  - **Note:** make sure `python` can run from a command line prompt without error
+  - Make sure `python` can run from a command line prompt without error
+  - Your Python version may not come with all the proper utilities, it is recommended to install the `setuptools` package (`pip install setuptools`) otherwise you may get difficult to debug errors.
 - A C/C++ compiler tool chain for your platform:
   - **Windows 10/11 (x64 or ARM64)**
     - Install the Visual C++ Build Environment by either installing the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) or the [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community). The minimum workload to install is `Desktop Development with C++`. But there are additional components from "Individual components":
