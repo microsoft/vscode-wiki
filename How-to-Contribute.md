@@ -67,6 +67,10 @@ To fix this error open Visual Studio Installer, add the following components cor
 
 For the build tools individual components, you may need to specify the version, e.g. v14.41-17.11, rather than (latest), but pick a version that is not out of support.
 
+### node-gyp related failures on macOS
+
+If you receive errors building native modules with node-gyp with clang enable debug logging via `export CXX="c++ -v"` to receive a better error message.
+
 ### Development container
 
 Alternatively, you can avoid local dependency installation as this repository includes a Visual Studio Code Remote - Containers / Codespaces [development container](https://github.com/microsoft/vscode/tree/main/.devcontainer).
