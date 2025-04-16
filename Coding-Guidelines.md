@@ -24,6 +24,10 @@ We use tabs, not spaces.
 * Use 'single quotes' otherwise
 * All strings visible to the user need to be externalized
 
+## UI labels
+* Use title-style capitalization for command labels, buttons and menu items (each word is capitalized).
+* Don't capitalize prepositions of four or fewer letters unless it's the first or last word (e.g. "in", "with", "for").
+
 ## Style
 * Use arrow functions `=>` over anonymous function expressions
 * Only surround arrow function parameters when necessary. For example, `(x) => x + x` is wrong but the following are correct:
