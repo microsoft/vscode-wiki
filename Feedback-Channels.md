@@ -13,7 +13,7 @@ Notice, we don't want to use GitHub Issues for general 'how-to' questions about 
 ## GitHub Discussions
 [GitHub Discussions](https://github.com/microsoft/vscode-discussions/discussions) provides a place where the community can get together and collaborate. It is the official place to discuss VS Code's extension platform, ask questions, help other members of the community, and get answers.
 
-The VS Code PM and Advocacy teams have a presence in this community, periodicially posting announcements and answering questions.
+The VS Code PM and Advocacy teams have a presence in this community, periodically posting announcements and answering questions.
 
 ## Slack
 The [Visual Studio Code Development Community]() Slack workspace is a community maintained place for VS Code contributors, extension developers, theme authors, etc to help one another and collaborate. This Slack workspace contains many discussion channels including many for specific extensions.
