@@ -67,7 +67,7 @@ To fix this error open Visual Studio Installer, add the following components cor
 
 For the build tools individual components, you may need to specify the version, e.g. v14.41-17.11, rather than (latest), but pick a version that is not out of support.
 
-### node-gyp related failures on macOS
+#### node-gyp related failures on macOS
 
 If you receive errors building native modules with node-gyp with clang enable debug logging via `export CXX="c++ -v"` to receive a better error message.
 
