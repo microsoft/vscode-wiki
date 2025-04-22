@@ -7,7 +7,8 @@ After cloning and building the repo, check out the [issues list](https://github.
 
 In order to download necessary tools, clone the repository, and install dependencies via `npm`, you need network access.
 
-**Note** that you should clone into a path WITHOUT spaces to avoid issues when compiling native modules.
+> [!NOTE]
+> You should clone into a path WITHOUT spaces to avoid issues when compiling native modules.
 
 You'll need the following tools:
 
@@ -94,7 +95,8 @@ Otherwise, if you're a member of the VS Code team, follow the [Commit Signing](h
 
 If you want to understand how VS Code works or want to debug an issue, you'll want to get the source, build it, and run the tool locally.
 
-> NOTE: If you need to debug the 32bit version of VS Code on 64bit Windows, follow [the guide on how to do that](https://github.com/microsoft/vscode/wiki/Build-and-run-32bit-Code---OSS-on-Windows).
+> [!NOTE]
+> If you need to debug the 32bit version of VS Code on 64bit Windows, follow [the guide on how to do that](https://github.com/microsoft/vscode/wiki/Build-and-run-32bit-Code---OSS-on-Windows).
 
 ### Getting the sources
 
@@ -114,7 +116,8 @@ git pull https://github.com/microsoft/vscode.git main
 
 Manage any merge conflicts, commit them, and then push them to your fork.
 
-**Note**: The `microsoft/vscode` repository contains a collection of GitHub Actions that help us with triaging issues. As you probably don't want these running on your fork, you can disable Actions for your fork via `https://github.com/<<Your Username>>/vscode/settings/actions`.
+> [!NOTE]
+> The `microsoft/vscode` repository contains a collection of GitHub Actions that help us with triaging issues. As you probably don't want these running on your fork, you can disable Actions for your fork via `https://github.com/<<Your Username>>/vscode/settings/actions`.
 
 ### Build
 
