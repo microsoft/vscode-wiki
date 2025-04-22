@@ -47,8 +47,10 @@ In case of issues, try deleting the contents of `~/.node-gyp` (alternatively `~/
 
 > If you are on Windows or Linux 64 bit systems and would like to compile to 32 bit, you'll need to set the `npm_config_arch` environment variable to `ia32` before running `npm`. This will compile all native node modules for a 32 bit architecture. Similarly, when cross-compiling for ARM, set `npm_config_arch` to `arm`.
 
-> **Note:** For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
+> [!NOTE]
+> For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
 
+> [!WARNING]
 > If you have Visual Studio 2019 installed, you may face issues when using the default version of node-gyp. If you have Visual Studio 2019 installed, you may need to follow the solutions [here](https://github.com/nodejs/node-gyp/issues/1747).
 
 #### Missing spectre mitigated libraries on Windows
@@ -140,7 +142,8 @@ If the build step fails, or if the built version fails to run (see next section)
 #### Errors and Warnings
 Errors and warnings will show in the console while developing VS Code. If you use VS Code to develop VS Code, errors and warnings are shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> and then <kbd>!</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> and <kbd>!</kbd> on macOS).
 
-👉 **Tip!** You don't need to stop and restart the development version of VS Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>R</kbd> (<kbd>CMD</kbd>+<kbd>R</kbd> on macOS) to this command.
+> [!TIP]
+> You don't need to stop and restart the development version of VS Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>R</kbd> (<kbd>CMD</kbd>+<kbd>R</kbd> on macOS) to this command.
 
 ### Run
 
@@ -166,13 +169,15 @@ Running on Electron with extensions run in NodeJS:
 .\scripts\code-cli.bat
 ```
 
-👉 **Tip!** If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `npm run watch` first.
+> [!TIP]
+> If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `npm run watch` first.
 
 #### VS Code for the Web
 
 Extensions and UI run in the browser.
 
-👉 Besides `npm run watch` also run `npm run watch-web` to build the web bits for the built-in extensions.
+> [!TIP]
+> Besides `npm run watch` also run `npm run watch-web` to build the web bits for the built-in extensions.
 
 ##### macOS and Linux
 
@@ -280,7 +285,8 @@ These `gulp` tasks are available:
 * `vscode-[platform]`: Builds a packaged version for `[platform]`.
 * `vscode-[platform]-min`: Builds a packaged and minified version for `[platform]`.
 
-👉 **Tip!** Run `gulp` via `npm` to avoid potential out of memory issues, for example `npm run gulp vscode-linux-x64`
+> [!TIP]
+> Run `gulp` via `npm` to avoid potential out of memory issues, for example `npm run gulp vscode-linux-x64`
 
 See also: [Cross-Compiling for Debian-based Linux](https://github.com/Microsoft/vscode/wiki/Cross-Compiling-for-Debian-Based-Linux)
 
