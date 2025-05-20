@@ -32,7 +32,7 @@ We release one or more recovery builds with a handful of critical fixes and tran
 
 ## Create Endgame Plan
 
-You can create the main / recovery / patch tuesday endgame plans from [Milestones View](https://tools.code.visualstudio.com/milestones) website. 
+You can create the main / recovery / patch tuesday endgame plans from [Milestones View](https://tools.code.visualstudio.com/milestones). 
 
 
 This will create the endgame plan for the selected milestone. All you have to do after is to update the release and endgame dates.
