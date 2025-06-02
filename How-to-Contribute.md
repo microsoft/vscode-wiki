@@ -7,7 +7,8 @@ After cloning and building the repo, check out the [issues list](https://github.
 
 In order to download necessary tools, clone the repository, and install dependencies via `npm`, you need network access.
 
-**Note** that you should clone into a path WITHOUT spaces to avoid issues when compiling native modules.
+> [!NOTE]
+> You should clone into a path WITHOUT spaces to avoid issues when compiling native modules.
 
 You'll need the following tools:
 
@@ -47,8 +48,10 @@ In case of issues, try deleting the contents of `~/.node-gyp` (alternatively `~/
 
 > If you are on Windows or Linux 64 bit systems and would like to compile to 32 bit, you'll need to set the `npm_config_arch` environment variable to `ia32` before running `npm`. This will compile all native node modules for a 32 bit architecture. Similarly, when cross-compiling for ARM, set `npm_config_arch` to `arm`.
 
-> **Note:** For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
+> [!NOTE]
+> For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
 
+> [!WARNING]
 > If you have Visual Studio 2019 installed, you may face issues when using the default version of node-gyp. If you have Visual Studio 2019 installed, you may need to follow the solutions [here](https://github.com/nodejs/node-gyp/issues/1747).
 
 #### Missing spectre mitigated libraries on Windows
@@ -92,7 +95,8 @@ Otherwise, if you're a member of the VS Code team, follow the [Commit Signing](h
 
 If you want to understand how VS Code works or want to debug an issue, you'll want to get the source, build it, and run the tool locally.
 
-> NOTE: If you need to debug the 32bit version of VS Code on 64bit Windows, follow [the guide on how to do that](https://github.com/microsoft/vscode/wiki/Build-and-run-32bit-Code---OSS-on-Windows).
+> [!NOTE]
+> If you need to debug the 32bit version of VS Code on 64bit Windows, follow [the guide on how to do that](https://github.com/microsoft/vscode/wiki/Build-and-run-32bit-Code---OSS-on-Windows).
 
 ### Getting the sources
 
@@ -112,7 +116,8 @@ git pull https://github.com/microsoft/vscode.git main
 
 Manage any merge conflicts, commit them, and then push them to your fork.
 
-**Note**: The `microsoft/vscode` repository contains a collection of GitHub Actions that help us with triaging issues. As you probably don't want these running on your fork, you can disable Actions for your fork via `https://github.com/<<Your Username>>/vscode/settings/actions`.
+> [!NOTE]
+> The `microsoft/vscode` repository contains a collection of GitHub Actions that help us with triaging issues. As you probably don't want these running on your fork, you can disable Actions for your fork via `https://github.com/<<Your Username>>/vscode/settings/actions`.
 
 ### Build
 
@@ -140,7 +145,8 @@ If the build step fails, or if the built version fails to run (see next section)
 #### Errors and Warnings
 Errors and warnings will show in the console while developing VS Code. If you use VS Code to develop VS Code, errors and warnings are shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> and then <kbd>!</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> and <kbd>!</kbd> on macOS).
 
-👉 **Tip!** You don't need to stop and restart the development version of VS Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>R</kbd> (<kbd>CMD</kbd>+<kbd>R</kbd> on macOS) to this command.
+> [!TIP]
+> You don't need to stop and restart the development version of VS Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>R</kbd> (<kbd>CMD</kbd>+<kbd>R</kbd> on macOS) to this command.
 
 ### Run
 
@@ -166,13 +172,15 @@ Running on Electron with extensions run in NodeJS:
 .\scripts\code-cli.bat
 ```
 
-👉 **Tip!** If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `npm run watch` first.
+> [!TIP]
+> If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `npm run watch` first.
 
 #### VS Code for the Web
 
 Extensions and UI run in the browser.
 
-👉 Besides `npm run watch` also run `npm run watch-web` to build the web bits for the built-in extensions.
+> [!TIP]
+> Besides `npm run watch` also run `npm run watch-web` to build the web bits for the built-in extensions.
 
 ##### macOS and Linux
 
@@ -280,7 +288,8 @@ These `gulp` tasks are available:
 * `vscode-[platform]`: Builds a packaged version for `[platform]`.
 * `vscode-[platform]-min`: Builds a packaged and minified version for `[platform]`.
 
-👉 **Tip!** Run `gulp` via `npm` to avoid potential out of memory issues, for example `npm run gulp vscode-linux-x64`
+> [!TIP]
+> Run `gulp` via `npm` to avoid potential out of memory issues, for example `npm run gulp vscode-linux-x64`
 
 See also: [Cross-Compiling for Debian-based Linux](https://github.com/Microsoft/vscode/wiki/Cross-Compiling-for-Debian-Based-Linux)
 

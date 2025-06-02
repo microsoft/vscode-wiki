@@ -32,8 +32,7 @@ We release one or more recovery builds with a handful of critical fixes and tran
 
 ## Create Endgame Plan
 
-Endgame champ can create the main and recovery endgame plans for a given milestone from the [Endgame Duty](https://tools.code.visualstudio.com/duties/endgame) website. 
+You can create the main / recovery / patch tuesday endgame plans from [Milestones View](https://tools.code.visualstudio.com/milestones). 
 
-<img width="267" alt="create-endgame-plan" src="https://user-images.githubusercontent.com/10746682/234839464-15ddaf88-01c6-4536-951f-e4de49690571.png">
 
 This will create the endgame plan for the selected milestone. All you have to do after is to update the release and endgame dates.
