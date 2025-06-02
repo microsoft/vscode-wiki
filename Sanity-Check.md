@@ -67,15 +67,18 @@ The Windows system and user executables are installers. After installing VS Code
 The Windows archive can be run by extracting the archive and double-clicking on the extracted executable. \
 The macOS archives can be run by extracting the archive, moving the app to the `/Applications` folder, and launching it. \
 The Linux archive can be run by extracting it, opening a terminal to that directory, and running `./code`. \
-The Linux packages require differing commands to install and remove:
+The Linux packages require differing commands to install and remove depending on what package manager you have available:
 
-| Package | Install steps                                         | Remove steps            |
-| ------- | ----------------------------------------------------- | ----------------------- |
-| Debian  | `sudo dpkg -i <file>.deb`                             | `sudo dpkg -r code`     |
-| RPM     | `sudo dnf install <file>.rpm`                         | `sudo dnf remove code`  |
-| Snap    | `sudo snap install --classic --dangerous <file>.snap` | `sudo snap remove code` |
+| Package Manager | Install Steps                                         | Remove Steps             |
+|-----------------|-------------------------------------------------------|--------------------------|
+| Debian          | `sudo dpkg -i <file>.deb`                             | `sudo dpkg -r code`      |
+| Snap            | `sudo snap install --classic --dangerous <file>.snap` | `sudo snap remove code`  |
+| DNF             | `sudo dnf install <file>.rpm`                         | `sudo dnf remove code`   |
+| Zypper          | `sudo zypper install <file>.rpm`                      | `sudo zypper remove code`|
+| RPM             | `sudo rpm -i <file>.rpm`                              | `sudo rpm -e code`       |
 
 After installing a Linux package, run VS Code by running `code` in the terminal.
+If both the Debian and Snap packages are installed, you can run the Snap package by running `snap run code` in the terminal.
 
 ## Server and CLI Testing Steps
 
