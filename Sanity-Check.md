@@ -71,14 +71,14 @@ The Linux packages require differing commands to install and remove depending on
 
 | Package Manager | Install Steps                                         | Remove Steps             |
 |-----------------|-------------------------------------------------------|--------------------------|
-| Debian          | `sudo dpkg -i <file>.deb`                             | `sudo dpkg -r code`      |
-| Snap            | `sudo snap install --classic --dangerous <file>.snap` | `sudo snap remove code`  |
+| dpkg            | `sudo dpkg -i <file>.deb`                             | `sudo dpkg -r code`      |
+| snap            | `sudo snap install --classic --dangerous <file>.snap` | `sudo snap remove code`  |
 | DNF             | `sudo dnf install <file>.rpm`                         | `sudo dnf remove code`   |
 | Zypper          | `sudo zypper install <file>.rpm`                      | `sudo zypper remove code`|
 | RPM             | `sudo rpm -i <file>.rpm`                              | `sudo rpm -e code`       |
 
 After installing a Linux package, run VS Code by running `code` in the terminal.
-If both the Debian and Snap packages are installed, you can run the Snap package by running `snap run code` in the terminal.
+If both the Debian and snap packages are installed, you can run the snap package by running `snap run code` in the terminal.
 
 ## Server and CLI Testing Steps
 
