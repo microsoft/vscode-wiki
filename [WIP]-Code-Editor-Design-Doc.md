@@ -85,7 +85,7 @@ However real world applications are usually more complex than that. The Model is
 
 In Monaco, the View has no direct way of talking to the Model. Instead it asks ViewModel for data or events, and informs the ViewModel about user actions. So the ViewModel contains the reference to the Model, the state of the View, event handlers and distributors, and transformers that can convert Model data to View info and vice versa.
 
-We can take a look at the interface of ViewModel in Monaco to grasp a better idea:
+We can take a look at the interface of ViewModel in Monaco to grasp a better idea
 
 ```
 export interface IViewModel extends IEventEmitter {
