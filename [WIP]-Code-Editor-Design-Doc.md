@@ -22,7 +22,7 @@ Like other parts of VS Code, the code is organized by the target runtime environ
 ```
 |-- editor
 |	|-- browser				// source code that requires the browser APIs like access to the DOM
-|	|-- common				// the core part of the editor, source code that only requires basic JavaScript APIs and run in all the other target environments
+|	|-- common				// the core part of the editor, source code that only requires basic JavaScript APIs and runs in all the other target environments
 |	|-- contrib				// first class *extensions* of the editor
 |	|-- electron-browser 	// source code that requires the Electron renderer-process APIs
 |	|-- node				// source code that requires nodejs APIs
@@ -34,7 +34,7 @@ Like other parts of VS Code, the code is organized by the target runtime environ
 
 Although we don't adopt any framework during the development, Monaco's design finally turns out to be MVVM (Model-View-ViewModel). With this design pattern in mind, we can simply separate components in the core into three layers:
 
-* View: User interface. It display information to users (Text, Cursor, Selection, etc) and handle user interactions. The View elements here are actually HTML DOM nodes.
+* View: User interface. It displays information to users (Text, Cursor, Selection, etc) and handles user interactions. The View elements here are actually HTML DOM nodes.
 * Model: Provides a view-independent representation of business entities. In Monaco, it usually represents the file you are editing.
 * ViewModel: The bridge between the View and the Model. It retrieves data from the Model and manipulates it into the format required by the View. A good **example** to help understand ViewModel is that `\t` is always a single character in Model while it takes several columns in ViewModel and it's determined by option `tabSize`.
 
@@ -119,6 +119,6 @@ Besides, both Model and ViewModel are implemented as `EventEmitter`, which allow
 ## Model
 Model is the data and business logic, which is completely UI independent. To some extent, it's the core part of Monaco editor. It holds content and metadata of files, tokens and markers which provide a language-specific, structured representation of plain text, decorations for customized visual effect metadata, etc.
 
-Monaco has a rich extensibility model and you can extend it in many ways. However, we do not provide direct access to the View or ViewModel to extensions. We are continually trying to optimize use of the underlying web technologies to deliver an always available, highly responsive editor and we will continue to tune our use of the DOM as these technologies and our product evolve. To maintain performance and compatibility, we run extensions in their own host process and prevent direct access to the View related information. Instead we feed extensions with Model which is more stable and very unlikely to change vastly and break external extensions.
+Monaco has a rich extensibility model and you can extend it in many ways. However, we do not provide direct access to the View or ViewModel to extensions. We are continually trying to optimize the use of the underlying web technologies to deliver an always available, highly responsive editor and we will continue to tune our use of the DOM as these technologies and our product evolve. To maintain performance and compatibility, we run extensions in their own host process and prevent direct access to the View related information. Instead, we feed extensions with Model which is more stable and very unlikely to change vastly and break external extensions.
 
 Monaco already includes a built-in set of UI components for common scenarios such as IntelliSense, so that these experiences are consistent across programming languages and extensions and extension developers do not need to build their own. These UI components are mostly put in `/vs/editor/contrib/` and that's the place we should go if we want to add new UI components which are good to have in the editor but not fundamental to the core.
