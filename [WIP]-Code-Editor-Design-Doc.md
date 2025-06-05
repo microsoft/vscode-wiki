@@ -17,7 +17,7 @@
 # Overview
 
 ## Code structure
-Like other parts of VS Code, the code is organized by the target runtime environment in Monaco. We distinguish between the following target environments:
+Like other parts of VS Code, the code is organized by the target runtime environment in Monaco. We distinguish between the following target environments
 
 ```
 |-- editor
