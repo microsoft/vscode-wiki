@@ -75,9 +75,9 @@ Supported builds and flavors:
 
 | OS | Support |
 |-----------------|-------------------------------------------------------|
-| Linux    | Archive, Deb, RPM, Snap, Server, CLI |
-| Windows  | Archive, User Installer, System Installer, Server, CLI |
-| macOS    | Archive, Universal Archive, Server, CLI |
+| Linux (x64, ARM64)    | Archive, Deb, RPM, Snap, Server, CLI |
+| Windows (x64, ARM64)  | Archive, User Installer, System Installer, Server, CLI |
+| macOS (x64, ARM64)    | Archive, Universal Archive, Server, CLI |
 
 ## Client Testing Steps
 
