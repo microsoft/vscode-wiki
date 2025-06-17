@@ -71,13 +71,20 @@ npx @vscode/vscode-bisect@latest --sanity --commit <commit SHA of build to test>
 
 It will guide you through the process and download, install and execute each build artefact that needs to be tested.
 
-Supported builds and flavors:
+Supported builds and flavors (all):
 
 | OS | Support |
 |-----------------|-------------------------------------------------------|
 | Linux (x64, ARM64)    | Archive, Deb, RPM, Snap, Server, CLI |
 | Windows (x64, ARM64)  | Archive, User Installer, System Installer, Server, CLI |
 | macOS (x64, ARM64)    | Archive, Universal Archive, Server, CLI |
+
+For testing CLI `ARM32`, `x64 Alpine` and `ARM64 Alpine`, run these commands:
+```sh
+npx @vscode/vscode-bisect@latest --commit <commit SHA of build to test> --quality stable --flavor cli-linux-armv7
+npx @vscode/vscode-bisect@latest --commit <commit SHA of build to test> --quality stable --flavor cli-alpine-amd64
+npx @vscode/vscode-bisect@latest --commit <commit SHA of build to test> --quality stable --flavor cli-alpine-arm64
+```
 
 ## Client Testing Steps
 
