@@ -1,3 +1,18 @@
+### June 2025
+<!-- * [Iteration Plan](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aiteration-plan+milestone%3A%22June+2025%22) -->
+* [Iteration Plan](https://github.com/microsoft/vscode/issues/251551)
+* [Endgame](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aendgame-plan+milestone%3A%22June+2025%22)
+
+### May 2025
+<!-- * [Iteration Plan](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aiteration-plan+milestone%3A%22May+2025%22) -->
+* [Iteration Plan](https://github.com/microsoft/vscode/issues/248627)
+* [Endgame](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aendgame-plan+milestone%3A%22May+2025%22)
+
+### April 2025
+<!-- * [Iteration Plan](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aiteration-plan+milestone%3A%22April+2025%22) -->
+* [Iteration Plan](https://github.com/microsoft/vscode/issues/245823)
+* [Endgame](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aendgame-plan+milestone%3A%22JApril+2025%22)
+
 ### March 2025
 * [Iteration Plan](https://github.com/microsoft/vscode/issues/243015)
 * [Endgame](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aendgame-plan+milestone%3A%22March+2025%22)
