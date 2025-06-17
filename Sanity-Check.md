@@ -69,6 +69,14 @@ npx @vscode/vscode-bisect@latest --sanity --commit <commit SHA of build to test>
 
 It will guide you through the process.
 
+Supported builds and flavors:
+
+| OS | Support |
+|-----------------|-------------------------------------------------------|
+| Linux    | Archive, Deb, RPM, Snap, Server, CLI |
+| Windows  | Archive, User Installer, System Installer, Server, CLI |
+| macOS    | Archive, Universal Archive, Server, CLI |
+
 ## Client Testing Steps
 
 The Windows system and user executables are installers. After installing VS Code, it can be launched from the start menu. \
