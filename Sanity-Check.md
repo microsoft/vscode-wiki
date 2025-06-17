@@ -61,6 +61,14 @@ Once sections are assigned, follow the steps for your assigned section and/or bu
 - [Dev Box](https://devbox.microsoft.com/%25C2%25A0), thanks to @lszomoru, allows us to spin up and access Windows x64 VMs from any browser.
 - An [Ubuntu Desktop VM](https://ubuntu.com/download/desktop) can run the Debian, Archive, and Snap builds. A [Fedora Workstation VM](https://fedoraproject.org/en/workstation/download) can run the RPM and Archive builds.
 
+## 🆕 Testing via `vscode-bisect` ✨ 
+We now have a command line utility to aid in sanity testing (for `x64` and `arm64`). You can run it as so:
+```sh
+npx @vscode/vscode-bisect@latest --sanity --commit <commit SHA of build to test>
+```
+
+It will guide you through the process.
+
 ## Client Testing Steps
 
 The Windows system and user executables are installers. After installing VS Code, it can be launched from the start menu. \
