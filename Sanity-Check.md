@@ -79,8 +79,10 @@ Supported builds and flavors (all):
 | Windows (x64, ARM64)  | Archive, User Installer, System Installer, Server, CLI |
 | macOS (x64, ARM64)    | Archive, Universal Archive, Server, CLI |
 
-For testing CLI `ARM32`, `x64 Alpine` and `ARM64 Alpine`, run these commands:
+For testing Linux Server and CLI, run these commands one after the other and verify a working VS Code in web connected via tunnel:
 ```sh
+npx @vscode/vscode-bisect@latest --commit <commit SHA of build to test> --quality stable --flavor cli-linux-amd64
+npx @vscode/vscode-bisect@latest --commit <commit SHA of build to test> --quality stable --flavor cli-linux-arm64
 npx @vscode/vscode-bisect@latest --commit <commit SHA of build to test> --quality stable --flavor cli-linux-armv7
 npx @vscode/vscode-bisect@latest --commit <commit SHA of build to test> --quality stable --flavor cli-alpine-amd64
 npx @vscode/vscode-bisect@latest --commit <commit SHA of build to test> --quality stable --flavor cli-alpine-arm64
