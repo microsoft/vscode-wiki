@@ -170,11 +170,11 @@ Make sure that if you push a signed commit to GitHub it appears as `Verified`:
 
 ### How important is this key?
 
-You should guard this key as well as you guard your SSH key, maybe even better. While an SSH key can easily be replaced by another, since it only affects the login to Github, a GPG key will forever be associated with your commits. This means that as soon as you remove the GPG key from GitHub, because say you replaced it with another, the commits won't appear `Verified` any longer.
+You should guard this key as well as you guard your SSH key. While an SSH key can easily be replaced by another, since it only affects the login to Github, a GPG key will forever be associated with your commits. This means that as soon as you remove the GPG key from GitHub, because say you replaced it with another, the commits won't appear `Verified` any longer.
 
 ### How can I best store this key?
 
-One of the best ways to store a backup or even to use the key directly is to use a [YubiKey](https://www.yubico.com/). You can store a copy of your key in a YubiKey, serving as a backup. Or you can even store the only copy of your key in it and always require your YubiKey when creating commits. This definitely increases security but with the obvious added cost of always needing your YubiKey around. [Learn more](https://support.yubico.com/hc/en-us/articles/360013790259-Using-Your-YubiKey-with-OpenPGP).
+One of the best ways to store a backup or even to use the key directly is to use a [YubiKey](https://www.yubico.com/). You can store a copy of your key in a YubiKey, serving as a backup. Or you can even store the only copy of your key in it and always require your YubiKey when creating commits. This definitely increases security but with the obvious added inconvenience of always needing your YubiKey around when committing changes changes. [Learn more](https://support.yubico.com/hc/en-us/articles/360013790259-Using-Your-YubiKey-with-OpenPGP).
 
 ### What about Codespaces?
 
