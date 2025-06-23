@@ -1,5 +1,7 @@
 This guide will show you how you can configure your development setup to automatically sign git commits using GPG and link your GPG key with GitHub.
 
+Commit signing with GPG proves your commits are actually from you and haven't been messed with—anyone can fake a Git author name, but they can't fake your cryptographic signature. The catch is that your **private key is everything: if someone gets it, they can sign commits as you and potentially slip malicious code into your projects** while looking completely legitimate. Keep your GPG key secure with a strong passphrase and treat it like any other critical credential, because once it's compromised, your entire signing credibility goes with it.
+
 ### Prerequisites
 
 Make sure you follow the [Prerequisites, How To Contribute (microsoft/vscode)](https://github.com/microsoft/vscode/wiki/How-to-Contribute#prerequisites) guide.
