@@ -8,7 +8,7 @@ Make sure you follow the [Prerequisites, How To Contribute (microsoft/vscode)](h
 
 # Install Tools
 
-#### Windows 10
+#### Windows
 
 Install [Gpg4win](https://gpg4win.org/) and make sure Git uses that GPG version:
 
