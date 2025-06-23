@@ -24,6 +24,7 @@
   * [[Terminal Issues]]
   * [[File Watcher Issues]]
   * [[TypeScript Issues]]
+  * [[Copilot Issues]]
 * [[Feedback Channels]]
 * [[Source Code Organization]]
 * [[Coding Guidelines]]
