@@ -1,6 +1,6 @@
 This guide will show you how you can configure your development setup to automatically sign git commits using GPG and link your GPG key with GitHub.
 
-# Prerequisites
+### Prerequisites
 
 Make sure you follow the [Prerequisites, How To Contribute (microsoft/vscode)](https://github.com/microsoft/vscode/wiki/How-to-Contribute#prerequisites) guide.
 
