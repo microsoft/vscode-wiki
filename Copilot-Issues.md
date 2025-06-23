@@ -1,12 +1,12 @@
 This document covers how to handle and report issues with VS Code's Copilot and Copilot Chat extensions. 
 
-# Reporting issue
+# Reporting Issues
 
-Here's how to contribute a high quality and actionable issue for Copilot. Make sure to first refer to our [general issue reporting guide](https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions).
+Here's how to contribute a high quality and _actionable_ issue for Copilot. Make sure to also refer to our [general issue reporting guidelines](https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions).
 
 1. If possible, try to find a consistent set of steps to reproduce the issue that you are reporting.
 
-2. Search first for your issue and determine if it has already been filed. If you find a matching issue, please comment there with all of the information listed in the next step.
+2. Search first for your issue and determine if it has already been filed. If you find a matching issue, please comment there with all of the information listed in the next step. This helps us minimize time spent triaging issues, and accurately determine what the priority issues are.
 
 3. Please collect the following information to help us diagnose any potential back end issues, as well as helping us reproduce the issue locally.
 
