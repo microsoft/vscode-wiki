@@ -16,7 +16,7 @@ Here's how to contribute a high quality and _actionable_ issue for Copilot. Make
     - Any error logs from either the **Window** or **Copilot Chat** output channels (see notes on finding logs)
 
 
-# Finding logs
+# Finding Logs
 
 Finding the relevant output logs is easily accomplished by doing the following:
 
