@@ -16,6 +16,8 @@ Here's how to contribute a high quality and _actionable_ issue for Copilot. Make
     - Any error logs from either the **Window** or **Copilot Chat** output channels (see notes on finding logs)
     - _For network issues_: Use the command palette with the command `Developer: GitHub Copilot Chat Diagnostics` and attach this output as well to the issue.
 
+<img width="1079" alt="Screenshot 2025-06-26 at 11 00 18 AM" src="https://github.com/user-attachments/assets/28a4b2e3-9519-4824-87c6-e778867d0914" />
+
 # Finding Logs
 
 Finding the relevant output logs is easily accomplished by doing the following:
