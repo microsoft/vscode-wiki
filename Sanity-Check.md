@@ -78,7 +78,7 @@ Supported builds and flavors (all):
 | Linux (x64, ARM64)    | Archive, Deb, RPM, Snap, Server, CLI |
 | Windows (x64, ARM64)  | Archive, User Installer, System Installer, Server, CLI |
 | macOS (x64, ARM64)    | Archive, Universal Archive, Server, CLI |
-| Linux Server/CLI.     | AMD64, ARM64, ARMv7, Alpine AMD64, Alpine ARM64 |
+| Linux Server/CLI      | AMD64, ARM64, ARMv7, Alpine AMD64, Alpine ARM64 |
 
 ## Client Testing Steps
 
