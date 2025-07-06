@@ -1,0 +1,47 @@
+# 📱 Vývojový proces mobilní aplikace
+
+## 1. 🎯 Ideace a cíle
+- Definice problému, který aplikace řeší
+- Cílová skupina a klíčové funkce
+- MVP rozsah
+
+## 2. 🔍 Analýza a plánování
+- Průzkum trhu a konkurence
+- Výběr platformy: iOS, Android, nebo obě
+- Rozhodnutí: nativní vs. cross-platform (např. Flutter)
+
+## 3. ✏️ Návrh UX/UI
+- Wireframy a prototypy (např. Figma)
+- Uživatelské testování návrhu
+- Design systém a komponenty
+
+## 4. 🛠️ Vývoj
+- Frontend: Swift/Kotlin/Flutter/React Native
+- Backend: Node.js, Firebase, Django apod.
+- API integrace a správa dat
+
+## 5. ✅ Testování
+- Unit testy a integrační testy
+- Testování na reálných zařízeních
+- Beta testování (např. TestFlight, Firebase App Distribution)
+
+## 6. 🚀 Nasazení
+- Příprava buildů pro App Store a Google Play
+- Splnění požadavků (ikony, popisy, screenshoty)
+- Review proces a publikace
+
+## 7. 📊 Monitoring a analýza
+- Crash reporting (např. Sentry, Firebase Crashlytics)
+- Analytika (např. Google Analytics, Mixpanel)
+- Uživatelská zpětná vazba
+
+## 8. 🔄 Údržba a aktualizace
+- Opravy chyb a bezpečnostní aktualizace
+- Pravidelné vylepšování funkcí
+- Reakce na změny v OS nebo API
+
+## 📌 Nástroje
+- **Repozitář**: GitHub / GitLab
+- **CI/CD**: Fastlane, Bitrise, GitHub Actions
+- **Design**: Figma
+- **Komunikace**: Slack, Notion
