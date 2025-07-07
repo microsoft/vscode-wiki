@@ -31,7 +31,7 @@ Finding the relevant output logs is easily accomplished by doing the following:
 
 ## Reading requests
 
-To easily see the details of requests made by Copilot Chat, run the command "Show Chat Debug View". This will show a treeview with an entry for each request made. You can see the prompt that was sent to the model, the tools that were enabled, the response, and other key details. Always read the prompt when making any changes, to ensure that it's being rendered as you expect! You can save the request log with right click > "Export As...".
+To easily see the details of requests made by Copilot Chat, run the command "Show Chat Debug View". This will show a treeview with an entry for each request made. You can see the prompt that was sent to the model, the tools that were enabled, the response, and other key details. You can save the request log with right click > "Export As...".
 
 The view also has entries for tool calls on their own, and a prompt-tsx debug view that opens in the Simple Browser.
 
