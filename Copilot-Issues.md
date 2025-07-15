@@ -42,5 +42,24 @@ To look at the information that was send to and received from the Language Model
 
 > 🚨 **Note**: This log may contain personal information such as the contents of your files or terminal output. Please review the contents carefully before sharing it with anyone else.
 
-<img width="1572" height="543" alt="image" src="https://github.com/user-attachments/assets/5b77358c-a4c6-4612-ba64-1193fb58fc9f" />
+<img alt="LLM Request Log" src="https://github.com/user-attachments/assets/5b77358c-a4c6-4612-ba64-1193fb58fc9f" />
 
+## Custom Instructions Logs
+
+To debug why your [custom instructions](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions) are not used by the language model test the following.
+
+- First check if setting `chat.promptFiles` is enabled. Some organizations forbid the use of experimental features, and the settings `chat.promptFiles` is marked as such. When `chat.promptFiles` is set, you show see `Prompt Files` and `Instructions` in the gear menu of the chat view:
+<img  alt="Chat Gear Menu" src="https://github.com/user-attachments/assets/4ea706c0-f41b-43fe-a375-f20a26a5e523" />
+
+- Run the `Developer: Show Logs...` command and select `Window`. This will show the Output view showing log statements for the current window
+- Run the `Developer: Set Log Level...` and select `Trace`
+- Do your prompt
+- Check the log for `[InstructionsContextComputer]`
+Example:
+```
+2025-07-14 17:44:36.149 [trace] [Window] [InstructionsContextComputer] 1 instruction files available.
+2025-07-14 17:44:36.156 [trace] [Window] [InstructionsContextComputer] Match for file:///c%3A/Users/martinae/workspaces/vscode/.github/instructions/typescript.instructions.md with **/*.ts for file file:///c%3A/Users/martinae/workspaces/vscode/src/vs/workbench/contrib/chat/common/promptSyntax/computeAutomaticInstructions.ts
+2025-07-14 17:44:36.157 [trace] [Window] [InstructionsContextComputer]  1 Copilot instructions files added.
+```
+
+- When done you can run `Developer: Set Log Level...` again and set it to back to `Info`
