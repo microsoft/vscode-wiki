@@ -29,10 +29,18 @@ Finding the relevant output logs is easily accomplished by doing the following:
 ![Screenshot 2025-06-23 at 1 47 23 PM](https://github.com/user-attachments/assets/29b35d2e-35b9-442a-82ba-b062c6b094c7)
 
 
-## Reading requests
+## Language Model Requests and Responses
 
-> 🚨 **Note**: This log is also very helpful in troubleshooting issues, and we will appreciate if you share it when filing an issue about the agent's behavior. But, this log may contain personal information such as the contents of your files or terminal output. Please review the contents carefully before sharing it with anyone else.
+To look at the information that was send to and received from the Language Model do the following
 
-To easily see the details of requests made by Copilot Chat, run the command "Show Chat Debug View". This will show a treeview with an entry for each request made. You can see the prompt that was sent to the model, the tools that were enabled, the response, and other key details. You can save the request log with right click > "Export As...".
+- make your chat request
+- run command `Developer: Open Chat Debug View`
+- in the view that opens go to the end of the view and look for node like `panel/editAgent` or `panel/askAgent`
+- select the node to see the detailed information
+- save the request log with right click > "Export As...".
 
-The view also has entries for tool calls on their own, and a prompt-tsx debug view that opens in the Simple Browser.
+
+> 🚨 **Note**: This log may contain personal information such as the contents of your files or terminal output. Please review the contents carefully before sharing it with anyone else.
+
+<img width="1572" height="543" alt="image" src="https://github.com/user-attachments/assets/5b77358c-a4c6-4612-ba64-1193fb58fc9f" />
+
