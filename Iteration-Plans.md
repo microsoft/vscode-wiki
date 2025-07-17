@@ -1,3 +1,8 @@
+### July 2025
+<!-- * [Iteration Plan](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aiteration-plan+milestone%3A%22July+2025%22) -->
+* [Iteration Plan](https://github.com/microsoft/vscode/issues/255701)
+* [Endgame](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aendgame-plan+milestone%3A%22June+2025%22)
+
 ### June 2025
 <!-- * [Iteration Plan](https://github.com/microsoft/vscode/issues?q=is%3Aissue+label%3Aiteration-plan+milestone%3A%22June+2025%22) -->
 * [Iteration Plan](https://github.com/microsoft/vscode/issues/251551)
