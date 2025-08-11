@@ -26,6 +26,7 @@ Check our ["inbox"](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=
   - `/extTS`
 
 - If it is a bug you can reproduce, `/confirm` it and add any additional info that might help the dev team reproduce it.
+  - If it is thought to be a regression, get bonus points by using `npx --yes @vscode/vscode-bisect@latest` in conjunction with your repro steps to try and identify the commit which caused it.
 - If it is a bug you cannot reproduce, use `/confirmationPending` to label it and add any info that might help the author clarify the steps to reproduce.
 - If you know which team member should look at it, use `/assign @XYZ`.
 - If it is a question that is better asked on StackOverflow, use `/question` to label and close it as such.
