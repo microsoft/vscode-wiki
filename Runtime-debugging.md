@@ -1,5 +1,7 @@
 ## Table of Contents
 - [CPU profiling unresponsive window via tracing](#tracing-cpu-profiler)
+- [Using samply on macOS](#samply-sampling-profiler)
+- [Using etw on windows](#etw-windows-profiler)
 
 <a name="tracing-cpu-profiler"/>
 
@@ -16,3 +18,34 @@ This will generate a trace json file which can be loaded into any of the followi
 1. chrome://tracing in any chromium browser
 2. [ui.perfetto.dev](https://ui.perfetto.dev/)
 3. [Firefox profiler](https://profiler.firefox.com/)
+
+<a name="samply-sampling-profiler"/>
+
+## Using samply on macOS
+
+If you have an unsigned build of VSCode, then samply can be used to capture both JIT and native traces
+
+* Download the latest release of https://github.com/mstange/samply/releases
+* Start from the command line with following `samply.exe record -s -o profile.json.gz --browsers -- <path>/Visual\ Studio\ Code.app/Contents/MacOS/Electron --js-flags="--perf-basic-prof --perf-prof-unwinding-info --interpreted-frames-native-stack"`
+* Perform the steps for unresponsiveness or slow startups etc
+* Exit the application and the profile will be saved to `profile.json.gz`
+
+You can inspect the profile with `samply.exe load --breakpad-symbol-dir <path> profile.json.gz`
+
+<a name="etw-windows-profiler"/>
+
+## Using etw on windows
+
+* Open `Windows Performance Recorder` from System start menu, it is not installed by default. You can install it via [Windows Assessment and Deployment Kit](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install) (ADK) and choose ` Windows Performance Toolkit`.
+* Select the following options under `Resource Analysis`
+   1) CPU Usage
+   2) File I/O activity
+   3) Pool usage
+   4) VirtualAlloc usage
+* Set `Performance Scenario` to `General`, `Detail level` to `verbose` and `Logging mode` to `file`
+* Start the recorder
+* Start the VSCode application from the terminal with the following additional flags `--js-flags="--enable-etw-stack-walking --interpreted-frames-native-stack"`
+* Perform the actions that trigger the issue (slow startups, out of memory, unresponsive threads etc)
+* Stop the recorder and save the file
+
+The `.etl` file should **not** be attached to public issues since they contain PII and only shared via trusted channels.
