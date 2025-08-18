@@ -6,7 +6,6 @@ This page describes the Build Champion role. This is a weekly rotating role with
 - Daily: [Ensure a green Insiders build from `main`](#green-insiders-build)
 - At least once during the week: [Review and triage error telemetry](#triage-error-telemetry)
 - On the following Monday: Hand over the role to the next person
-- Build champ buddy: The build champ buddy is a role that you take the week following being the build champ. The buddy is responsible for investigating important build failures when the build champ on the other site is offline.
 
 ## Triage non-green builds
 
@@ -14,7 +13,7 @@ This page describes the Build Champion role. This is a weekly rotating role with
 
 We have an internal `#build` channel that a bot posts to with the results of all builds of the `main` branch on ADO. It's important to review all these failures and create issues because ignoring non-green builds ends up causing the build quality to get worse and worse over time, resulting in a loss of trust of tests, multiple retries, waste of engineering resources, etc.
 
-It's expected that the build champion reviews all `failed` and `partiallySucceeded` builds and actions them appropriately at least once per day. The main focus is to triage and route the failure to the right owner and/or create an issue, so that the build continues to be healthy and run smoothly. **It is _not_ your job to fix the problem unless you own the feature area. It is expected that the build champion to investigate and fix build pipeline related issues like Terrapin for example** 
+It's expected that the build champion reviews all `failed` and `partiallySucceeded` builds and actions them appropriately at least once per day. The main focus is to triage and route the failure to the right owner and/or create an issue, so that the build continues to be healthy and run smoothly. **It is _not_ your job to fix the problem unless you own the feature area. It is expected that the build champion to investigate and fix build pipeline related issues like Terrapin for example**.
 
 Follow this as a rough guide for how to review a build:
 
@@ -43,11 +42,11 @@ If this was a recent failure and the "Changes" seems relevant, ping the committe
 
 It is crucial for our success to have a green insiders build from `main` branch that gets published to our [update site](https://builds.code.visualstudio.com/builds/insider) at least once on a day. Various tools depend on this to happen, for example performance testing to figure out performance regressions early. 
 
-Insider builds are scheduled to running daily automatically. In case of failure, it is your responsibility to act accordingly:
+Insider builds are scheduled to run daily automatically. In case of failure, it is your responsibility to act accordingly:
 * when automated release is disabled (debt week): run the [pipeline](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111) but do not release the build
 * when automated release is enabled (otherwise): run the [pipeline](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111) and release the build
 
-👉 even in debt week, when the automated release is disabled, we still want the daily insiders build to succeed (but not released!). this ensures our daily rhythm is not impacted at all and we can act on build issues early on
+👉 even in debt week, when the automated release is disabled, we still want the daily insiders build to succeed (but not released!). This ensures our daily rhythm is not impacted at all and we can act on build issues early on.
 
 
 ## Triage error telemetry

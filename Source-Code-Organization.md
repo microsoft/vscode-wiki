@@ -22,10 +22,12 @@ The `core` of VS Code is fully implemented in [TypeScript](https://github.com/mi
   - may use code from: `common`
 - `node`: Source code that requires [Node.JS](https://nodejs.org) APIs
   - may use code from: `common`
-- `electron-sandbox`: Source code that requires the `browser` APIs like access to the DOM and a small subset of APIs to communicate with the Electron main process (anything exposed from `src/vs/base/parts/sandbox/electron-sandbox/globals.ts`
-  - may use code from: `common`, `browser`, `electron-sandbox`
-- `electron-main`: Source code that requires the [Electron main-process](https://github.com/atom/electron/tree/master/docs#modules-for-the-main-process) APIs
+- `electron-browser`: Source code that requires the `browser` APIs like access to the DOM and a small subset of APIs to communicate with the Electron main process (anything exposed from `src/vs/base/parts/sandbox/electron-browser/globals.ts`
+  - may use code from: `common`, `browser`, `electron-browser`
+- `electron-utility`: Source code that requires the [Electron utility-process](https://github.com/electron/electron/blob/main/lib/utility/api/module-list.ts) APIs
   - may use code from: `common`, `node`
+- `electron-main`: Source code that requires the [Electron main-process](https://github.com/atom/electron/tree/master/docs#modules-for-the-main-process) APIs
+  - may use code from: `common`, `node`, `electron-utility`
 
 <div align="center">
 <img width="600" src="images/organization/environments.png" />
@@ -81,7 +83,7 @@ Add this call into a module-scope so that it is executed during startup. The wor
 The VS Code workbench (`vs/workbench`) is composed of many things to provide a rich development experience. Examples include full text search, integrated git and debug. At its core, the workbench does not have direct dependencies to all these contributions. Instead, we use an internal (as opposed to real extension API) mechanism to contribute these contributions to the workbench. 
 
 In a nutshell, folders are organised as:
-* `vs/workbench/{common|browser|electron-sandbox}`: workbench core that is as minimal as possible
+* `vs/workbench/{common|browser|electron-browser}`: workbench core that is as minimal as possible
 * `vs/workbench/api`: the provider of the `vscode.d.ts` API (both extension host and workbench implementations)
 * `vs/workbench/services`: workbench core services (should NOT include services that are only used in `vs/workbench/contrib`)
 * `vs/workbench/contrib`: workbench contributions (this is where most of your code should live, see below)

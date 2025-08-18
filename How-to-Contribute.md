@@ -5,22 +5,28 @@ After cloning and building the repo, check out the [issues list](https://github.
 
 ## Prerequisites
 
-In order to download necessary tools, clone the repository, and install dependencies via `npm i`, you need network access.
+In order to download necessary tools, clone the repository, and install dependencies via `npm`, you need network access.
+
+> [!NOTE]
+> You should clone into a path WITHOUT spaces to avoid issues when compiling native modules.
 
 You'll need the following tools:
 
 - [Git](https://git-scm.com)
-- [Node.JS](https://nodejs.org/en/), **x64**, version `>=18.15.x and <19`
+- [Node.JS](https://nodejs.org/en/download/prebuilt-binaries), **x64** or **ARM64**, version `>=20.x` (also see [`.nvmrc`](https://github.com/microsoft/vscode/blob/main/.nvmrc), which may provide a more precise version to install)
+  - If using `nvm`, consider updating your default node installation with `nvm alias default <VERSION>`
+  - Windows: do not pick the option to install Windows Build Tools, see the step below for instructions
 - [Python](https://www.python.org/downloads/) (required for node-gyp; check the [node-gyp readme](https://github.com/nodejs/node-gyp#installation) for the currently supported Python versions)
-  - **Note:** Python will be automatically installed for Windows users through installing `windows-build-tools` npm module (see below)
+  - Make sure `python` can run from a command line prompt without error
+  - Your Python version may not come with all the proper utilities, it is recommended to install the `setuptools` package (`pip install setuptools`) otherwise you may get difficult to debug errors.
 - A C/C++ compiler tool chain for your platform:
-  - **Windows 10/11**
-    - Install the Windows Build Tools:
-      - if you install Node on your system using the Node installer from the [Node.JS](https://nodejs.org/en/download/) page then ensure that you have installed the 'Tools for Native Modules'. Everything should work out of the box then.
-      - if you use a node version manager like [nvm](https://github.com/coreybutler/nvm-windows) or [nvs](https://github.com/jasongin/nvs) then follow these steps:
-        - Install the current version of Python using the [Microsoft Store Package](https://docs.python.org/3/using/windows.html#the-microsoft-store-package).
-        - Install the Visual C++ Build Environment by either installing the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) or the [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community). The minimum workload to install is 'Desktop Development with C++'.
-        - open a command prompt and run `npm config set msvs_version {visual studio version}`. (If you are using Visual Studio 2019 then you need to run `npm config set msvs_version 2019`)
+  - **Windows 10/11 (x64 or ARM64)**
+    - Install the Visual C++ Build Environment by either installing the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) or the [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community). The minimum workload to install is `Desktop Development with C++`. But there are additional components from "Individual components":
+      - `MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)` (use `ARM64`, not `ARM` for Windows on ARM, but the x64/x86 may still be needed)
+      - `C++ ATL for latest build tools with Spectre Mitigations`
+      - `C++ MFC for latest build tools with Spectre Mitigations`
+      - **Windows on ARM only:** Windows 10 SDK (10.0.20348.0)
+    - open a command prompt and run `npm config edit` and add or modify the `msvs_version` setting equal to your vs version. (e.g. `msvs_version=2022` for visual studio 2022)
     - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise, it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
     - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
   - **Windows WSL2**: https://github.com/microsoft/vscode/wiki/Selfhosting-on-Windows-WSL
@@ -37,12 +43,16 @@ You'll need the following tools:
     * Building deb and rpm packages requires `fakeroot` and `rpm`; run: `sudo apt-get install fakeroot rpm`
 
 ### Troubleshooting
-In case of issues, try deleting the contents of `~/.node-gyp` (alternatively `~/.cache/node-gyp` for Linux, `~/Library/Caches/node-gyp/` for macOS, or `%USERPROFILE%\AppData\Local\node-gyp` for Windows) first and then run `npm cache clean -f` and then try again.
+Make sure you cloned `vscode` into a folder without any spaces in the path hierarchy.
 
-> If you are on Windows or Linux 64 bit systems and would like to compile to 32 bit, you'll need to set the `npm_config_arch` environment variable to `ia32` before running `npm i`. This will compile all native node modules for a 32 bit architecture. Similarly, when cross-compiling for ARM, set `npm_config_arch` to `arm`.
+In case of issues, try deleting the contents of `~/.node-gyp` (alternatively `~/.cache/node-gyp` for Linux, `~/Library/Caches/node-gyp/` for macOS, or `%USERPROFILE%\AppData\Local\node-gyp` for Windows) first and then run `git clean -xfd` and then try again.
 
-> **Note:** For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
+> If you are on Windows or Linux 64 bit systems and would like to compile to 32 bit, you'll need to set the `npm_config_arch` environment variable to `ia32` before running `npm`. This will compile all native node modules for a 32 bit architecture. Similarly, when cross-compiling for ARM, set `npm_config_arch` to `arm`.
 
+> [!NOTE]
+> For more information on how to install NPM modules globally on UNIX systems without resorting to `sudo`, refer to [this guide](http://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/).
+
+> [!WARNING]
 > If you have Visual Studio 2019 installed, you may face issues when using the default version of node-gyp. If you have Visual Studio 2019 installed, you may need to follow the solutions [here](https://github.com/nodejs/node-gyp/issues/1747).
 
 #### Missing spectre mitigated libraries on Windows
@@ -56,6 +66,14 @@ To fix this error open Visual Studio Installer, add the following components cor
 - MSVC Spectre-mitigated libs (latest)
 - C++ ATL for latest build tools with Spectre Mitigations
 - C++ MFC for latest build tools with Spectre Mitigations
+
+#### node-gyp related failures on Windows ARM
+
+For the build tools individual components, you may need to specify the version, e.g. v14.41-17.11, rather than (latest), but pick a version that is not out of support.
+
+#### node-gyp related failures on macOS
+
+If you receive errors building native modules with node-gyp with clang enable debug logging via `export CXX="c++ -v"` to receive a better error message.
 
 ### Development container
 
@@ -78,7 +96,8 @@ Otherwise, if you're a member of the VS Code team, follow the [Commit Signing](h
 
 If you want to understand how VS Code works or want to debug an issue, you'll want to get the source, build it, and run the tool locally.
 
-> NOTE: If you need to debug the 32bit version of VS Code on 64bit Windows, follow [the guide on how to do that](https://github.com/microsoft/vscode/wiki/Build-and-run-32bit-Code---OSS-on-Windows).
+> [!NOTE]
+> If you need to debug the 32bit version of VS Code on 64bit Windows, follow [the guide on how to do that](https://github.com/microsoft/vscode/wiki/Build-and-run-32bit-Code---OSS-on-Windows).
 
 ### Getting the sources
 
@@ -98,7 +117,8 @@ git pull https://github.com/microsoft/vscode.git main
 
 Manage any merge conflicts, commit them, and then push them to your fork.
 
-**Note**: The `microsoft/vscode` repository contains a collection of GitHub Actions that help us with triaging issues. As you probably don't want these running on your fork, you can disable Actions for your fork via `https://github.com/<<Your Username>>/vscode/settings/actions`.
+> [!NOTE]
+> The `microsoft/vscode` repository contains a collection of GitHub Actions that help us with triaging issues. As you probably don't want these running on your fork, you can disable Actions for your fork via `https://github.com/<<Your Username>>/vscode/settings/actions`.
 
 ### Build
 
@@ -106,7 +126,7 @@ Install and build all of the dependencies using `npm`:
 
 ```
 cd vscode
-npm i
+npm install
 ```
 
 Then you have two options:
@@ -121,12 +141,13 @@ The incremental builder will do an initial full build and will display a message
 - **Windows:** If you have installed Visual Studio 2017 as your build tool, you need to open **x64 Native Tools Command Prompt for VS 2017**. Do not confuse it with *VS2015 x64 Native Tools Command Prompt*, if installed.
 - **Linux:** You may hit a ENOSPC error when running the build. To get around this follow instructions in the [Common Questions](https://code.visualstudio.com/docs/setup/linux#_common-questions).
 
-If the build step fails, or if the built version fails to run (see next section), run `git clean -xfd` in your `vscode` folder, then re-run `npm i`.
+If the build step fails, or if the built version fails to run (see next section), run `git clean -xfd` in your `vscode` folder, then re-run `npm install`.
 
 #### Errors and Warnings
 Errors and warnings will show in the console while developing VS Code. If you use VS Code to develop VS Code, errors and warnings are shown in the status bar at the bottom left of the editor. You can view the error list using `View | Errors and Warnings` or pressing <kbd>Ctrl</kbd>+<kbd>P</kbd> and then <kbd>!</kbd> (<kbd>CMD</kbd>+<kbd>P</kbd> and <kbd>!</kbd> on macOS).
 
-👉 **Tip!** You don't need to stop and restart the development version of VS Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>R</kbd> (<kbd>CMD</kbd>+<kbd>R</kbd> on macOS) to this command.
+> [!TIP]
+> You don't need to stop and restart the development version of VS Code after each change. You can just execute `Reload Window` from the command palette. We like to assign the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>R</kbd> (<kbd>CMD</kbd>+<kbd>R</kbd> on macOS) to this command.
 
 ### Run
 
@@ -152,13 +173,15 @@ Running on Electron with extensions run in NodeJS:
 .\scripts\code-cli.bat
 ```
 
-👉 **Tip!** If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `npm run watch` first.
+> [!TIP]
+> If you receive an error stating that the app is not a valid Electron app, it probably means you didn't run `npm run watch` first.
 
 #### VS Code for the Web
 
 Extensions and UI run in the browser.
 
-👉 Besides `npm run watch` also run `npm run watch-web` to build the web bits for the built-in extensions.
+> [!TIP]
+> Besides `npm run watch` also run `npm run watch-web` to build the web bits for the built-in extensions.
 
 ##### macOS and Linux
 
@@ -266,7 +289,8 @@ These `gulp` tasks are available:
 * `vscode-[platform]`: Builds a packaged version for `[platform]`.
 * `vscode-[platform]-min`: Builds a packaged and minified version for `[platform]`.
 
-👉 **Tip!** Run `gulp` via `npm` to avoid potential out of memory issues, for example `npm run gulp vscode-linux-x64`
+> [!TIP]
+> Run `gulp` via `npm` to avoid potential out of memory issues, for example `npm run gulp vscode-linux-x64`
 
 See also: [Cross-Compiling for Debian-based Linux](https://github.com/Microsoft/vscode/wiki/Cross-Compiling-for-Debian-Based-Linux)
 
