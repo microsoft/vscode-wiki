@@ -34,7 +34,7 @@ Finding the relevant output logs is easily accomplished by doing the following:
 To look at the information that was send to and received from the Language Model do the following
 
 - make your chat request
-- run command `Developer: Open Chat Debug View`
+- run command `Developer: Show Chat Debug View`
 - in the view that opens go to the end of the view and look for node like `panel/editAgent` or `panel/askAgent`
 - select the node to see the detailed information
 - save the request log with right click > "Export As...".
