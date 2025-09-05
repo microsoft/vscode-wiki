@@ -112,7 +112,7 @@ export interface IViewModel extends IEventEmitter {
 }
 ```
 
-The first half methods are wrappers of Model, Editor configuration and View state. The second half are converters of View and Model info. Remember the first example of tab and column width we mentioned at the beginning of this topic? `convertModelPositionToViewPosition` and its counterpart `convertViewRangeToModelRange` are the right methods to call and they sit in the ViewModel but not other layers.
+The first half methods are wrappers of Model, Editor configuration, and View state. The second half are converters of View and Model info. Remember the first example of tab and column width we mentioned at the beginning of this topic? `convertModelPositionToViewPosition` and its counterpart `convertViewRangeToModelRange` are the right methods to call and they sit in the ViewModel but not other layers.
 
 Besides, both Model and ViewModel are implemented as `EventEmitter`, which allows us to handle events with ease.
 
