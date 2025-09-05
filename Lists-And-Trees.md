@@ -26,7 +26,7 @@ Apart from being a virtual rendering engine, the `List` provides quite a lot of 
 
 ### Index Tree
 
-A tree UI widget should be able to represent tree-like data, eg. a file explorer. A rendered tree can always be rendered as a list; it is each row's indentation level and twistie indicators which give the user the perception of tree structure. By leveraging the virtual rendering functionalites of the list we can use composition to create a tree widget.
+A tree UI widget should be able to represent tree-like data, eg. a file explorer. A rendered tree can always be rendered as a list; it is each row's indentation level and twistie indicators which give the user the perception of tree structure. By leveraging the virtual rendering functionalities of the list we can use composition to create a tree widget.
 
 There is the question of API: how can we keep a tree-like structure API relatively simple, yet allow for complex operations, such as removing and inserting whole subtrees? If we take the same `splice` analogy as the list's (pick a location, remove some elements and add other elements), it's possible to come up with a tree `splice` call, in which the location is multi-dimensional (the first element of the `start` array represents the index in the root's children array; the `n`-th element of the `start` array represents the index in the `n - 1`-th children array) and the elements to insert are entire subtrees.
 
@@ -95,4 +95,4 @@ Here are the results from profiling all these cases on the same machine along wi
 | **Filter to One** | 970 ms | 78 ms | 12.4x |
 | **Collapse All** | 30.000 ms 😱 | 625 ms | **48x** 😎 |
 
-While the speedup results are impressive, some of the absolute values are still unnaceptable: 625ms for collapsing all tree nodes will eat up a large chunk of JavaScript time, drastically reducing our frame rate, even if collapsing all nodes is a punctual operation. The good news is that there is still lots of room for improvement, given that we now have a solid algorithm and data structure foundation on which can iterate much easier. Stay tuned!
+While the speedup results are impressive, some of the absolute values are still unacceptable: 625ms for collapsing all tree nodes will eat up a large chunk of JavaScript time, drastically reducing our frame rate, even if collapsing all nodes is a punctual operation. The good news is that there is still lots of room for improvement, given that we now have a solid algorithm and data structure foundation on which can iterate much easier. Stay tuned!

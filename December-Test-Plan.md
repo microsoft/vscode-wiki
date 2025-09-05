@@ -11,7 +11,7 @@ Verify that long text now nicely wraps across multiple lines in the debug repl b
 - [x] linux @aeschli 
 
 We have changed breakpoints states and now show it differently in the UI. Verify:
-* new UI properly and intuitivly reflects if breakpoints are enabled, disabled, verified or deactivated. 
+* new UI properly and intuitively reflects if breakpoints are enabled, disabled, verified or deactivated. 
 * breakpoints get hit / not hit depending on their enablement state
 
 ### Debug - extension debugging

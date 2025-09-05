@@ -8,7 +8,7 @@ Besides `.gitignore`, we also look at the `.ignore`, `.rgignore`, and `.git/info
 
 > **Tip**: You can set `"search.useIgnoreFiles": false` to disable using the `.gitignore` file for search
 
-An easy way to validate whether exclude setttings or ignore files are affecting your search is to turn off the "Use Exclude Settings and Ignore Files" button in the search viewlet. This is the gear button in the lower right corner:
+An easy way to validate whether exclude settings or ignore files are affecting your search is to turn off the "Use Exclude Settings and Ignore Files" button in the search viewlet. This is the gear button in the lower right corner:
 
 ![Use Exclude Settings and Ignore Files button](https://user-images.githubusercontent.com/8586769/132767680-dd9048dc-beef-4849-a5cd-2cfadcd01e19.png)
 

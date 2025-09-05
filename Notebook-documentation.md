@@ -29,7 +29,7 @@ Since we are using the `TextModelResolverService` for cell's text model resoluti
 
 ## Viewport rendering
 
-The viewport rendering of notebook list view is a "guess and validate" process. It will calcuate how many cells/rows it can render within the viewport first, have them all rendered, and then ask for their real dimensions, and based on the cell/row dimensions it will decide if it needs to render more cells (if there is still some room in the viewport) or remove a few.
+The viewport rendering of notebook list view is a "guess and validate" process. It will calculate how many cells/rows it can render within the viewport first, have them all rendered, and then ask for their real dimensions, and based on the cell/row dimensions it will decide if it needs to render more cells (if there is still some room in the viewport) or remove a few.
 
 For short, the process is more or less
 
@@ -103,7 +103,7 @@ Since most elements' positions are absolute and there is latency between the two
 * Fewer layout messages between the main and iframe
 * Less flickering and forced reflow on scrolling
 
-While we continue optimizing the layout code, we need to make sure that the new optimization won't lead to regression in above three aspects. Here is a list of existing optimziations we already have and we want to make sure they still perform well when updating layout code.
+While we continue optimizing the layout code, we need to make sure that the new optimization won't lead to regression in above three aspects. Here is a list of existing optimizations we already have and we want to make sure they still perform well when updating layout code.
 
 ## Avoid flickering on resize of cells above current viewport
 
@@ -164,7 +164,7 @@ will genrate text output `2`. The re-rendering of the output is fast and we want
 	2. In 200ms, we will reset the output height to `0`, unless there is a new output rendered
 2. Received new output
 	1. Re-render the new output
-	2. Calcuate the height of the new output, update layout
+	2. Calculate the height of the new output, update layout
 
 
 If the new output is rendered within 200ms, users won't see the UI movement.
@@ -192,7 +192,7 @@ We also warm up all rendered markdown in the document, from top to bottom, when 
   * require our own serialization/deserialization
 * Performance
   * `window.find` can be slow
-    * We currently travese the DOM tree to figure out which cell/output contain the find match belongs to, it's really costly. One idea is checking the absolute position of the find match and compare it with output container positions.
+    * We currently traverse the DOM tree to figure out which cell/output contain the find match belongs to, it's really costly. One idea is checking the absolute position of the find match and compare it with output container positions.
   * Search only rendered outputs
     * MutationObserver for output change
 	* Change active selection to the beginning of the new output and then request `window.find`

@@ -14,7 +14,7 @@ Install the [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?ite
 
 ## Keybindings
 
-For a quick experience of starting to listen from the microphone and submitting when done you can assign the following keybinding squence:
+For a quick experience of starting to listen from the microphone and submitting when done you can assign the following keybinding sequence:
 
 ```json
 {

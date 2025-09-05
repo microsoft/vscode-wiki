@@ -217,7 +217,7 @@ VS Code is made possible through a wide range of technologies. Below are example
 
 ## Explorations
 
-- [ ] Explore support to synchronize more state when opening the same folder in different VS Code installs such as  untitled files, open files, focussed editor.
+- [ ] Explore support to synchronize more state when opening the same folder in different VS Code installs such as  untitled files, open files, focused editor.
 - [ ] Explore how to better provide support for low-end devices.
 - [ ] :runner: Explore how to support new user in learning VS Code (interactive exploration mode, videos)  
 - [ ] Explore how to make it easier to show, tell, and share your VS Code customizations.
