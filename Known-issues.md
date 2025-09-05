@@ -19,5 +19,5 @@ reported by [**alexey-kozlenkov**](https://github.com/Microsoft/vscode/issues/12
 
 reported by [**rcdmk**](https://github.com/Microsoft/vscode/issues/12637#issuecomment-277464550)
  > I have another trick that does work as long as I keep focus on the VS code window: 
- > 1. Tap with tree fingers, so Search/Cortana pannel shows up to the left of screen. 
+ > 1. Tap with three fingers, so Search/Cortana panel shows up to the left of screen. 
  > 2. Swipe with two fingers over the VS code window and notice that the document does scroll

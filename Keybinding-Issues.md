@@ -43,7 +43,7 @@ The first keydown event is for the `MetaLeft` key (`cmd`) and cannot be dispatch
   * Are you connecting to the Linux machine via some form of virtualization or remote desktop software?
     * **symptoms**: e.g. pressing <kbd>AltGr</kbd> acts as `Backspace`, pressing <kbd>C</kbd> acts as `ArrowLeft`, etc.
     * **solution**: use `"keyboard.dispatch": "keyCode"` in your settings and restart VS Code.
-    * **explanation**: VS Code on Linux dispatches keybindings using scan codes to accomodate various keyboard layouts. This works well when sitting physically at the machine and the OS is the one creating keyboard events, but some virtualization / remote desktop software creates keyboard events with incorrect scan codes.
+    * **explanation**: VS Code on Linux dispatches keybindings using scan codes to accommodate various keyboard layouts. This works well when sitting physically at the machine and the OS is the one creating keyboard events, but some virtualization / remote desktop software creates keyboard events with incorrect scan codes.
 
   * Are you switching keyboard layouts while VS Code is running?
     * **symptoms**: VS Code keybindings reflect the keyboard layout that was active when VS Code was launched.
