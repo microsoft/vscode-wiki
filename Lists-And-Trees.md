@@ -22,7 +22,7 @@ class List<T> {
 }
 ```
 
-Apart from being a virtual rendering engine, the `List` provides quite a lot of functionality that actually make it a usable widget: keyboard and mouse navigation, focus and selection traits, and accessibility roles, etc. These features are what defines `List` as a usable widget across our workbench.
+Apart from being a virtual rendering engine, the `List` provides quite a lot of functionality that actually make it a usable widget: keyboard and mouse navigation, focus and selection traits, accessibility roles, etc. These features are what defines `List` as a usable widget across our workbench.
 
 ### Index Tree
 
