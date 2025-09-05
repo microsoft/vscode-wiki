@@ -1,4 +1,4 @@
-Input method smoke test. VS Code is powered by [Monaco](https://github.com/Microsoft/monaco-editor), a browser based code editor which supports IE 9/10/11, Edge, Chrome, Firefox, Safari and Opera, so when we make changes to the editor part, we should make sure it still works on all browsers Monaco support.
+Input method smoke test. VS Code is powered by [Monaco](https://github.com/Microsoft/monaco-editor), a browser based code editor which supports IE 9/10/11, Edge, Chrome, Firefox, Safari, and Opera, so when we make changes to the editor part, we should make sure it still works on all browsers Monaco support.
 
 The golden standard is Word
 

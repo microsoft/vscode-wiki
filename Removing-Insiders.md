@@ -24,7 +24,7 @@ To remove the `.deb` package (Debian and Ubuntu):
 sudo apt-get purge code-insiders
 ```
 
-To remove the `.rpm` package (Red Hat, CentOS and SUSE):
+To remove the `.rpm` package (Red Hat, CentOS, and SUSE):
 
 ```
 sudo yum remove code-insiders

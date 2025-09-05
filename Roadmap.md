@@ -219,7 +219,7 @@ Over the course of the last years we made significant progress on our original r
 
 
 ## VS Code Services
-- [x] Investigate hand-off/continuity service: When opening the same folder in different VS Code installs we hand over all untitled files, uncommitted or untracked changes, and some UI state.
+- [x] Investigate hand-off/continuity service: When opening the same folder in different VS Code installs we hand over all untitled files, uncommitted, or untracked changes, and some UI state.
 
 
 ## Languages
@@ -266,7 +266,7 @@ We have a dedicated [Python Roadmap](https://github.com/microsoft/vscode-python/
 
 ## Engineering
 - [x] Improve our smoke tests and revisit the current approach on how we implement them.
-- [x] Invest into a unified, improved and fast file watching
+- [x] Invest into a unified, improved, and fast file watching
 - [ ] :runner: Improve our GitHub issue bots, examples:
    - [x] reject invalid incoming issues automatically
    - [ ] :runner: automate training of our classification bot

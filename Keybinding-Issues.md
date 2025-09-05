@@ -229,7 +229,7 @@ Moreover, it is not possible to correlate modifier keys, `e.code` and `e.key` in
 
 ## How it works on Windows
 
-All built-in commands, extensions and user settings register keybindings in terms of `keyCode`. All Electron APIs (i.e. menus) refer to keybindings in terms of `keyCode`. The only special thing to do here is to be sure to present good labels in the UI to end-users.
+All built-in commands, extensions, and user settings register keybindings in terms of `keyCode`. All Electron APIs (i.e. menus) refer to keybindings in terms of `keyCode`. The only special thing to do here is to be sure to present good labels in the UI to end-users.
 
 For example, the `Toggle Line Comment` action is bound to <kbd>Ctrl+0xBF</kbd>:
 
@@ -256,7 +256,7 @@ Backslash: {
 
 ## How it works on macOS/Linux
 
-All built-in commands, extensions and user settings register keybindings in terms of `keyCode`. Therefore, the immediate thing to do here is to transform these keybindings in terms of `code`. This is done with an heuristic based on the produced characters.
+All built-in commands, extensions, and user settings register keybindings in terms of `keyCode`. Therefore, the immediate thing to do here is to transform these keybindings in terms of `code`. This is done with an heuristic based on the produced characters.
 
 
 <table>

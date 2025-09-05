@@ -69,7 +69,7 @@ You can run it as so:
 npx @vscode/vscode-bisect@latest --sanity --commit <commit SHA of build to test>
 ```
 
-It will guide you through the process and download, install and execute each build artefact that needs to be tested.
+It will guide you through the process and download, install, and execute each build artefact that needs to be tested.
 
 Supported builds and flavors (all):
 

@@ -16,6 +16,7 @@ You'll need the following tools:
 - [Node.JS](https://nodejs.org/en/download/prebuilt-binaries), **x64** or **ARM64**, version `>=20.x` (also see [`.nvmrc`](https://github.com/microsoft/vscode/blob/main/.nvmrc), which may provide a more precise version to install)
   - If using `nvm`, consider updating your default node installation with `nvm alias default <VERSION>`
   - Windows: do not pick the option to install Windows Build Tools, see the step below for instructions
+  - Windows: If using [`nvm-windows`](https://github.com/coreybutler/nvm-windows) on **ARM64**, you must postfix each command with `arm64`. Eg: `nvm install 22 arm64`
 - [Python](https://www.python.org/downloads/) (required for node-gyp; check the [node-gyp readme](https://github.com/nodejs/node-gyp#installation) for the currently supported Python versions)
   - Make sure `python` can run from a command line prompt without error
   - Your Python version may not come with all the proper utilities, it is recommended to install the `setuptools` package (`pip install setuptools`) otherwise you may get difficult to debug errors.

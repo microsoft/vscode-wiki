@@ -13,7 +13,7 @@
 
 ### File opening & rendering
 
-One major goal of native notebook experience in VS Code is performance: file opening, scrolling and editing should be as performant as a normal text editor. Please test the code change doesn't regress the performance
+One major goal of native notebook experience in VS Code is performance: file opening, scrolling, and editing should be as performant as a normal text editor. Please test the code change doesn't regress the performance
 
 * Open `samples/runCode.ipynb`, make sure markdown cell and code cells are rendered properly.
   * Scrolling in the editor is smooth, no significant noticeable lag.

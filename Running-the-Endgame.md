@@ -8,7 +8,7 @@ Each iteration closes with an [endgame](https://github.com/Microsoft/vscode/wiki
 - Discuss the endgame plan in Monday's planning call
   - Find an endgame buddy in the other lab
   - Remind people to update their testing availability and platform(s) in the call and release channel
-- Communicate in the `release` Slack channel every day about the plan, progress, TODOs and any other important notifications.
+- Communicate in the `release` Slack channel every day about the plan, progress, TODOs, and any other important notifications.
   - Tidy up milestone (PRs, Issues, Feature Requests missing labels)
   - Availability of the insiders build
   - Testing to be done (Test Plan Items, Verifications)
