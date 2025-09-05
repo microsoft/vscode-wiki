@@ -158,7 +158,7 @@ Very detailed information is captured in CPU profiles and that helps us best to 
 If VS Code is slugging when scrolling, moving mouse or typing, please create a performance profile. Do the following
   - Toggle the developer tools Help > Toggle Developer Tools
   - Select 'Performance'. In there click the record button.
-  - Scroll, type, or any operation leads to the slowness of the UI
+  - Scroll, type, or perform any operation leads to the slowness of the UI
   - Let it profile for 30 to 60 seconds, stop it.
   - Save the profile to a file and attach the file to your issue.
 
