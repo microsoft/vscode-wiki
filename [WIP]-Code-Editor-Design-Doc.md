@@ -117,7 +117,7 @@ The first half methods are wrappers of Model, Editor configuration and View stat
 Besides, both Model and ViewModel are implemented as `EventEmitter`, which allows us to handle events with ease.
 
 ## Model
-Model is the data and business logic, which is completely UI independent. To some extent, it's the core part of Monaco editor. It holds content and metadata of files, tokens and markers which provide a language-specific, structured representation of plain text, decorations for customized visual effect metadata, etc.
+Model is the data and business logic, which is completely UI independent. To some extent, it's the core part of Monaco editor. It holds content and metadata of files, tokens, and markers which provide a language-specific, structured representation of plain text, decorations for customized visual effect metadata, etc.
 
 Monaco has a rich extensibility model and you can extend it in many ways. However, we do not provide direct access to the View or ViewModel to extensions. We are continually trying to optimize the use of the underlying web technologies to deliver an always available, highly responsive editor and we will continue to tune our use of the DOM as these technologies and our product evolve. To maintain performance and compatibility, we run extensions in their own host process and prevent direct access to the View related information. Instead, we feed extensions with Model which is more stable and very unlikely to change vastly and break external extensions.
 
