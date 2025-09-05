@@ -60,7 +60,7 @@ When set, language extensions like TypeScript start reporting semantic tokens.
 
 Each semantic token is described by a token type, any number of token modifiers and a language. There's a [standardized set](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-token-classification) of semantic types and modifiers, but languages can also define new and derived types and modifiers.
 
-Color themes can [write rules](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#theming) directly against these semantic token types, modifiers and language.
+Color themes can [write rules](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#theming) directly against these semantic token types, modifiers, and language.
 
 Alternatively, if a theme does not contain a semantic theming rule for a token, VSCode will use a [mapping from semantic token to a TextMate scopes](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-token-scope-map) and look up the color in the themes TextMate rules. 
 

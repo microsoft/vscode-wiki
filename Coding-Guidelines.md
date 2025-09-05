@@ -25,7 +25,7 @@ We use tabs, not spaces.
 * All strings visible to the user need to be externalized
 
 ## UI labels
-* Use title-style capitalization for command labels, buttons and menu items (each word is capitalized).
+* Use title-style capitalization for command labels, buttons, and menu items (each word is capitalized).
 * Don't capitalize prepositions of four or fewer letters unless it's the first or last word (e.g. "in", "with", "for").
 
 ## Style

@@ -55,7 +55,7 @@ Emitting events can be a source of performance issues. Imagine an event with 100
 * When creating your emitter, pass the `_profName`-option. ❗This is dev-time only and MUST NOT be committed
 * Reload or execute the code in questions
 * Run "F1 > Print Emitter Profiles"
-* On the dev tools console and you'll see a summary including the listener count, the invocation count, total and average durations
+* On the dev tools console and you'll see a summary including the listener count, the invocation count, total, and average durations
 
 
 ### Targeted CPU profiling

@@ -178,7 +178,7 @@ We are working on a UI for VS Code to indicate that the Window runs in a restric
 If working on a single file is not option, language extensions can also decide to disable the extension when in a virtual workspaces. 
 
 If your extension provides both grammars and rich language support and have to disable the extension also the grammars will be disabled. To avoid this, we recommend to split off a basic language extension (grammars, language configuration, snippets) form the rich language support and have two extensions.
-- The basic language extension has `"virtualWorkspaces": true` and provides language id, configuration, grammar and snippets.
+- The basic language extension has `"virtualWorkspaces": true` and provides language id, configuration, grammar, and snippets.
 - The rich language extension  has `"virtualWorkspaces": false` contains the main file contributing language supports and commands and has a extension dependency (`extensionDependencies`) on the basic language extension. The rich language extension should keep the ID of the established extension, so the user will continue to the full functionality by installing a single extension.
 
 You can see this with the built-in language extensions, such as JSON, which consists of a JSON extension and a JSON language feature extension.

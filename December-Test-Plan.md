@@ -11,7 +11,7 @@ Verify that long text now nicely wraps across multiple lines in the debug repl b
 - [x] linux @aeschli 
 
 We have changed breakpoints states and now show it differently in the UI. Verify:
-* new UI properly and intuitivly reflects if breakpoints are enabled, disabled, verified or deactivated. 
+* new UI properly and intuitivly reflects if breakpoints are enabled, disabled, verified, or deactivated. 
 * breakpoints get hit / not hit depending on their enablement state
 
 ### Debug - extension debugging
@@ -94,7 +94,7 @@ Should expand to
 
 - [x] win | mac | linux @jrieken
 
-The language client / server libraries now support the complete set of language features available in the extension host. Implement a sample language server with more features by taking https://github.com/Microsoft/vscode-languageserver-node-example as a starting point. Focus on the new support for CodeActions, CodeLens, Formatting and rename.
+The language client / server libraries now support the complete set of language features available in the extension host. Implement a sample language server with more features by taking https://github.com/Microsoft/vscode-languageserver-node-example as a starting point. Focus on the new support for CodeActions, CodeLens, Formatting, and rename.
 
 ## vscode-tslint
 
@@ -249,6 +249,6 @@ If you are in a repository without a **remote** configured, none of the previous
 - [x] any platform @isidorn 
 
 Due to the move to textmate tokenizer, there were changes in the appearance of the default light and dark theme: Some themes got far more colorful, in particular JavaScript, some languages lost colors, e.g. Jade and XML. The goal was to stay as close as possible to what we had in 0.9.0: We stick to a few major colors: blue for keywords, green for comments and red for strings.
- * Test JavaScript and TypeScript in the light and dark theme, compare it our old state at https://opentools.azurewebsites.net/try. Note, new colors for method, function and parameters declarations
- * Test XML, HTML, Jade, Razor, Handlebars, CSS, LESS and SASS, JSON in the light and dark theme: They should all look consistent. Check stings, comments...
+ * Test JavaScript and TypeScript in the light and dark theme, compare it our old state at https://opentools.azurewebsites.net/try. Note, new colors for method, function, and parameters declarations
+ * Test XML, HTML, Jade, Razor, Handlebars, CSS, LESS, and SASS, JSON in the light and dark theme: They should all look consistent. Check stings, comments...
  * Try some of the other languages as well. Check stings, comments...
