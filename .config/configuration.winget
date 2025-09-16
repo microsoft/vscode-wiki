@@ -1,0 +1,150 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  assertions:
+    - resource: Microsoft.Windows.Developer/OsVersion
+      directives:
+        description: Verify Windows 11 for VS Code development
+        allowPrerelease: true
+      settings:
+        MinVersion: '10.0.22000'
+  resources:
+    # Enable Developer Mode for Windows development
+    - resource: Microsoft.Windows.Settings/WindowsSettings
+      id: developerMode
+      directives:
+        description: Enable Developer Mode for development tools and debugging
+        allowPrerelease: true
+        securityContext: elevated
+      settings:
+        DeveloperMode: true
+
+    # Install Git version control sgsystem
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: gitPackage
+      directives:
+        description: Install Git for version control
+        allowPrerelease: true
+      settings:
+        id: Git.Git
+        source: winget
+
+    # Install Node.js (LTS version >=20.x)
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: nodePackage
+      directives:
+        description: Install Node.js LTS for VS Code development
+        allowPrerelease: true
+      settings:
+        id: OpenJS.NodeJS.LTS
+        source: winget
+
+    # Install Python for node-gyp
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: pythonPackage
+      directives:
+        description: Install Python for node-gyp native module compilation
+        allowPrerelease: true
+      settings:
+        id: Python.Python.3.12
+        source: winget
+
+    # Install Visual Studio Build Tools 2022
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: vsBuildTools
+      directives:
+        description: Install Visual Studio Build Tools 2022 for C++ compilation
+        allowPrerelease: true
+        securityContext: elevated
+      settings:
+        id: Microsoft.VisualStudio.2022.BuildTools
+        source: winget
+
+    # Configure Visual Studio components using .vsconfig
+    - resource: Microsoft.VisualStudio.DSC/VSComponents
+      dependsOn:
+        - vsBuildTools
+      directives:
+        description: Install required VS workloads and components for VS Code development
+        allowPrerelease: true
+        securityContext: elevated
+      settings:
+        productId: Microsoft.VisualStudio.Product.BuildTools
+        channelId: VisualStudio.17.Release
+        vsConfigFile: '${WinGetConfigRoot}\.vsconfig'
+        includeRecommended: true
+
+    # Set npm Visual Studio version configuration
+    - resource: PSDesiredStateConfiguration/Script
+      dependsOn:
+        - nodePackage
+        - vsBuildTools
+      directives:
+        description: Configure npm to use Visual Studio 2022
+        allowPrerelease: true
+      settings:
+        GetScript: |
+          $config = npm config get msvs_version
+          return @{ Result = $config }
+        TestScript: |
+          $config = npm config get msvs_version
+          return $config -eq "2022"
+        SetScript: |
+          npm config set msvs_version 2022
+          npm config set python python
+
+    # Install Visual Studio Code (optional but helpful)
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: vscodePackage
+      directives:
+        description: Install Visual Studio Code editor
+        allowPrerelease: true
+      settings:
+        id: Microsoft.VisualStudioCode
+        source: winget
+
+    # Install Windows Terminal (modern terminal experience)
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: terminalPackage
+      directives:
+        description: Install Windows Terminal for better command line experience
+        allowPrerelease: true
+      settings:
+        id: Microsoft.WindowsTerminal
+        source: winget
+
+    # Install PowerShell 7+ (modern PowerShell)
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: powershellPackage
+      directives:
+        description: Install PowerShell 7+ for modern shell experience
+        allowPrerelease: true
+      settings:
+        id: Microsoft.PowerShell
+        source: winget
+
+    # Set up Python setuptools (recommended in the guide)
+    - resource: PSDesiredStateConfiguration/Script
+      dependsOn:
+        - pythonPackage
+      directives:
+        description: Install Python setuptools for better node-gyp compatibility
+        allowPrerelease: true
+      settings:
+        GetScript: |
+          try {
+            $result = python -m pip show setuptools
+            return @{ Result = "installed" }
+          } catch {
+            return @{ Result = "not installed" }
+          }
+        TestScript: |
+          try {
+            $result = python -m pip show setuptools
+            return $true
+          } catch {
+            return $false
+          }
+        SetScript: |
+          python -m pip install setuptools
+
+  configurationVersion: 0.2.0
