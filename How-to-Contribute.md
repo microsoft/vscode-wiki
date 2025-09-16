@@ -13,7 +13,7 @@ In order to download necessary tools, clone the repository, and install dependen
 You'll need the following tools:
 
 - [Git](https://git-scm.com)
-- [Node.JS](https://nodejs.org/en/download/prebuilt-binaries), **x64** or **ARM64**, version `>=20.x` (also see [`.nvmrc`](https://github.com/microsoft/vscode/blob/main/.nvmrc), which may provide a more precise version to install)
+- [Node.JS](https://nodejs.org/en/download/prebuilt-binaries), **x64** or **ARM64**, version `>=20.x` and `<24` (also see [`.nvmrc`](https://github.com/microsoft/vscode/blob/main/.nvmrc), which may provide a more precise version to install)
   - If using `nvm`, consider updating your default node installation with `nvm alias default <VERSION>`
   - Windows: do not pick the option to install Windows Build Tools, see the step below for instructions
   - Windows: If using [`nvm-windows`](https://github.com/coreybutler/nvm-windows) on **ARM64**, you must postfix each command with `arm64`. Eg: `nvm install 22 arm64`
