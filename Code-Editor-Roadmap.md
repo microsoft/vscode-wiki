@@ -9,7 +9,7 @@
 
 * [issue #9409](https://github.com/Microsoft/vscode/issues/9409): Outdent issue with Typescript
 * [issue #15598](https://github.com/Microsoft/vscode/issues/15598): Multi-line indents do not preserve partial indents
-* [issue ##2272](https://github.com/Microsoft/vscode/issues/2272): Automatically indent "end" for ruby code
+* [issue #2272](https://github.com/Microsoft/vscode/issues/2272): Automatically indent "end" for ruby code
 
 ## Find widget
 * [issue #15579](https://github.com/Microsoft/vscode/issues/15579): Regex search issue
