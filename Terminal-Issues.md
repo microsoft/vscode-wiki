@@ -83,6 +83,10 @@ Known rendering problems:
 
 Sometimes terminal wrapping doesn't work as expected, for example a line that is expected to wrap will start overwriting the first part of the wrapped line. This type of problem is typically related to the backend and frontend's column count differing. You can get the frontend's column count by counting the number of cells in a line, for the backend `stty -a | grep columns` should tell you.
 
+### Prompt input detection
+
+To power features like [terminal IntelliSense](https://code.visualstudio.com/docs/terminal/shell-integration#_intellisense-preview) and general understanding of the command that was run in the terminal, we detect what is happening in the prompt by leveraging [shell integration](https://code.visualstudio.com/docs/terminal/shell-integration). When these feature aren't working as expected you can check VS Code's understanding of the prompt input by hovering the terminal tab and clicking Show Details on the bottom. Taking a screenshot of this is helpful to diagnose problems in this area.
+
 ## Why did you close my issue?
 
 We get _a lot_ of issues and have to split our time between responding to and issues and actually improving the product. Because of this, we have a pretty high bar on issue quality and reproducibility, if we can't reproduce the issue we may have to close it off since we cannot action it.
