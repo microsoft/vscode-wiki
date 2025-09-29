@@ -19,8 +19,8 @@ Follow this as a rough guide for how to review a build:
 
 1. Open the "Build" link which will go to GH Actions or ADO
 2. Click into the failed step and review the failure
-3. If an issue is already created for this failure, mark the thread with a ✅ to indicate it's actioned
-4. If not action the failure and then mark the thread with ✅, here are some common failure types and how to handle them:
+3. If an issue is already created for this failure, mark the thread with a ✅ to indicate that action has been taken on it
+4. Otherwise take the action and then mark the thread with ✅, here are some common failure types and how to handle them:
 
 **Test failure:**
 If it looks like the test failed because of the linked change, ping the [area owner](#area-owners).
