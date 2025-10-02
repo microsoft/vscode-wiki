@@ -25,8 +25,9 @@ We use tabs, not spaces.
 * All strings visible to the user need to be externalized
 
 ## UI labels
-* Use title-style capitalization for command labels, buttons, and menu items (each word is capitalized).
+* Use title case (each major word is capitalized) for command labels, buttons, and menu items
 * Don't capitalize prepositions of four or fewer letters unless it's the first or last word (e.g. "in", "with", "for").
+* Use sentence case (only first word is capitalized) for titles/headings in views and don't end with a period (e.g. "Build with agent mode")
 
 ## Style
 * Use arrow functions `=>` over anonymous function expressions
