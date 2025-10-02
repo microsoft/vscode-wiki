@@ -11,7 +11,7 @@ For bugs, try other cases beyond the original issue. Could the fix be improved? 
 
 For features, ask yourself: does the feature makes sense as designed? Does it align with the rest of VS Code? Could be improved or extended? Could it cause problems for certain workflows or in the future?
 
-Approaching testing this way not only helps us ship a better product, it also makes testing more fun. Exploring new features and trying to break them becomes an investing challenge. It can also be a great opportunity to learn about and explore a new area of the product.
+Approaching testing this way not only helps us ship a better product, it also makes testing more fun. Exploring new features and trying to break them becomes an interesting challenge. How can I break this? How else could it have been implemented? It can also be a great opportunity to learn about and explore a new area of the product.
 
 Don't be afraid about opening bugs or providing feedback. Getting fresh eyes on a feature is extremely valuable, and often interns will end up spot problems or offer perspective that a team of very senior engineers hadn't considered. If you see something that feels off during testing, open an issue. It doesn't have to be something major. You don't even have to be sure it is a bug. Just having the issue opened provides valuable feedback. Do this even for any part of VS Code, not just the feature you are testing/verification 
 
