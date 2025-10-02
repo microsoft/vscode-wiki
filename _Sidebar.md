@@ -11,6 +11,7 @@
 * [[Release Process]]
 * [[Running the Endgame]]
   * [[Writing Test Plan Items]]
+  * [[Endgame testing and verification]]
   * [[Sanity Check]]
 * [[Related Projects]]
 
