@@ -1,4 +1,4 @@
-This page covers testing during the endgame process. It's mainly for VS Code team members but others may find our general approach to testing and some of the specific tips of interest
+This page covers testing during the [endgame](https://github.com/microsoft/vscode/wiki/Running-the-Endgame) process. It's mainly for VS Code team members but others may find our general approach to testing and some of the specific tips of interest
 
 # General Philosophy
 The VS Code team strives for a culture where all team members feel responsible for the quality of VS Code and are empowered to uphold and improve this quality. Testing and how we approach testing is a key part of this.
