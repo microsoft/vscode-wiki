@@ -1,11 +1,11 @@
 This page covers testing during the endgame process. It's mainly for VS Code team members but others may find our general approach to testing and some of the specific tips of interest
 
 # General Philosophy
-The VS Code team strives for a culture where all team members feel responsible for the quality of VS Code and also feel empowered to uphold and improve this quality. Testing and how we think about testing is a key part of this
+The VS Code team strives for a culture where all team members feel responsible for the quality of VS Code and are empowered to uphold and improve this quality. Testing and how we approach testing is a key part of this.
 
-It's not always the most fun to run through tests and verify issues, but this is what helps us uphold the quality of VS Code. When a bug is fixed, we want to confirm it really has been fixed. When a feature is committed to a milestone, we want to make sure it works as described. But it's more than that too
+It's not always the most fun to run through tests and verify issues, but this is a key part of upholding the quality of VS Code. When a bug is fixed, we want to confirm it really has been fixed. When a feature is committed to a milestone, we want to make sure it works as described. But it's more than that too.
 
-When going through a test-plan item or verifying an issue, it's not enough to mechanically race through the exact flow listed so you can check it off and move on. Instead try to treat testing as more exploratory, open ended process.
+When going through a test-plan item or verifying an issue, it's not enough to mechanically through the exact flow listed so you can check it off and move on to the next item. Instead try to treat testing as more exploratory, open ended process. 
 
 For bugs, try other cases beyond the original issue. Could the fix be improved? Are there similar bugs in other areas of the product?
 
@@ -15,7 +15,8 @@ Approaching testing this way not only helps us ship a better product, it also ma
 
 Don't be afraid about opening bugs or providing feedback. Getting fresh eyes on a feature is extremely valuable, and often interns will end up spot problems or offer perspective that a team of very senior engineers hadn't considered. If you see something that feels off during testing, open an issue. It doesn't have to be something major. You don't even have to be sure it is a bug. Just having the issue opened provides valuable feedback. Do this even for any part of VS Code, not just the feature you are testing/verification 
 
-Critically, try to take this same testing mindset beyond endgame too. We all use VS Code every day, so you should always report issue and confusion you run into
+Critically, take this same testing mindset beyond endgame into your daily work too. We all use VS Code every day, so always report issues and confusion you run into in your day-to-day work too. We are all responsible for the quality of VS Code
+
 
 # Starting questions to ask during testing
 
