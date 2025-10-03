@@ -54,6 +54,9 @@ You'll need the following tools:
   - **macOS**
     - [Xcode](https://developer.apple.com/xcode/resources/) and the Command Line Tools, which will install `gcc` and the related toolchain containing `make`
       - Run `xcode-select --install` to install the Command Line Tools
+      - **Note**: if you have multiple installations of clang/clang++, make sure you include the following lines in your `~/.bash_profile` file to point CMake to the correct binaries:
+        - `export CXX="$(xcode-select -p)/usr/bin/clang++"`
+        - `export CC="$(xcode-select -p)/usr/bin/clang"`
   - **Linux**
     * On Debian-based Linux: `sudo apt-get install build-essential g++ libx11-dev libxkbfile-dev libsecret-1-dev libkrb5-dev python-is-python3`
     * On Red Hat-based Linux: `sudo yum groupinstall "Development Tools" && sudo yum install libX11-devel.x86_64 libxkbfile-devel.x86_64 libsecret-devel krb5-devel # or .i686`.
