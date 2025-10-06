@@ -20,6 +20,8 @@ git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"
 
 Install the necessary tools and configure GPG:
 
+First, install Homebrew (https://brew.sh/). Then run the following commands:
+
 ```bash
 brew install gpg2 gnupg pinentry-mac
 mkdir -p ~/.gnupg
