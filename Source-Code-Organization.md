@@ -32,7 +32,8 @@ The `core` of VS Code is fully implemented in [TypeScript](https://github.com/mi
   - may use code from: `common`, `node`, `electron-utility`
 
 <div align="center">
-<img width="600" src="images/organization/environments.png" />
+<img width="600" alt="environments" src="https://github.com/user-attachments/assets/6cc2993f-b6a0-4715-b0fb-ff87d6ad3db5" />
+
 </div>
 
 # Dependency Injection
