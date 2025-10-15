@@ -9,6 +9,7 @@ This doc provides a brief overview of how these rules are setup and how you can 
 # Resources
 - [ESLint rules](https://eslint.org/docs/latest/extend/custom-rules) — General documentation about writing eslint rules
 - [TypeScript ASTs and eslint](https://typescript-eslint.io/blog/asts-and-typescript-eslint/) — Look at how ESLint works with TS programs
+- [ESTree selectors](https://eslint.org/docs/latest/extend/selectors)  — Info about the selector syntax rules use to target specific nodes in an AST. Works similarly to css selectors.
 - [TypeScript ESLint playground](https://typescript-eslint.io/play/#showAST=es) — Useful tool for figuring out the structure of TS programs and debugging custom rule selectors
 
 
@@ -23,7 +24,7 @@ These rules are then enabled in the `eslint.config.js` file. This is the main es
 
 For example, here's a configuration that enables the no `test.only` rule in all `*.test.ts` files in the VS Code repo:
 
-```
+```ts
 {
     // Define which files these rules apply to
     files: [
@@ -109,3 +110,4 @@ Make sure to update the `meta.schema` property on your rule with the JSON schema
 
 
 ## Adding fixers
+Fixers are a useful way to mechanically fix 
