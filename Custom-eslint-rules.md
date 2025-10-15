@@ -99,7 +99,7 @@ This walks through the steps to create a new eslint rule:
     }
     ```
 
-If your rule takes custom arguments in the `eslint.config.js`, for example:
+Rules can also take custom arguments. For example, here's how we can pass arguments to a custom rule in the `eslint.config.js`:
 
 ```
 rules: {
@@ -108,7 +108,7 @@ rules: {
 }
 ```
 
-Make sure to update the `meta.schema` property on your rule with the JSON schema for the arguments
+In these cases amek sure to update the `meta.schema` property on your rule with the JSON schema for the arguments. You can access these arguments using `context.options` in the rule `create` function
 
 
 ## Adding fixes to custom rules
