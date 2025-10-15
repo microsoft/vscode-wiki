@@ -36,6 +36,7 @@
 * [[Contributor License Agreement]]
 * [[Extension API Guidelines]]
 * [[Accessibility Guidelines]]
+* [[Custom ESLint rules]]
 
 **Documentation**
 * [Extensions](https://code.visualstudio.com/docs/extensions/overview)
