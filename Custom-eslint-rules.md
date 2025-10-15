@@ -41,8 +41,71 @@ For example, here's a configuration that enables the no `test.only` rule in all 
 ```
 
 # Creating a new custom rule
-
-...
-
+This walks through the steps to create a new eslint rule:
 
 
+1. Create a new rule file under `.eslint-plugin-local`. Generally you should call it `code-YOUR-RULE-NAME.ts`, for example, `.eslint-plugin-local/code-no-not-null-assertions-on-undefined-values.ts`
+
+2. In this file, add the rule. Here's a template:
+
+
+    ```ts
+    /*---------------------------------------------------------------------------------------------
+    *  Copyright (c) Microsoft Corporation. All rights reserved.
+    *  Licensed under the MIT License. See License.txt in the project root for license information.
+    *--------------------------------------------------------------------------------------------*/
+
+    import * as eslint from 'eslint';
+
+    export = new class YourRuleName implements eslint.Rule.RuleModule {
+
+        readonly meta: eslint.Rule.RuleMetaData = {
+            messages: {
+                customMessageName: 'message text shown in errors/warnings',
+            },
+            schema: false,
+        };
+
+        create(context: eslint.Rule.RuleContext): eslint.Rule.RuleListener {
+            return {
+                [SELECTOR]: (node: any) => {
+                    // Report errors if needed
+                    return context.report({
+                        node,
+                        messageId: 'customMessageName'
+                    });
+                }
+            };
+        }
+    };
+    ```
+
+    - Update the name of the class to match the name of your rule
+    - Add message entries for any errors you want to report
+    - Update `SELECTOR` with the [ESTree selector](https://eslint.org/docs/latest/extend/selectors) needed to target the nodes you are interested in. Use the [TypeScript ESLint playground](https://typescript-eslint.io/play/#showAST=es) to figure out which nodes you need and debug selectors
+
+3. Register the rule in `eslint.config.js`
+
+    Generally this is just turning on the rule in the rule list like so:
+
+    ```js
+    rules: {
+         // Name should match file name
+	'local/code-no-not-null-assertions-on-undefined-values': 'warn',
+        ...
+    }
+    ```
+
+If your rule takes custom arguments in the `eslint.config.js`, for example:
+
+```
+rules: {
+    'local/code-no-not-null-assertions-on-undefined-values': ['warn', { testsOk: true }],
+    ...
+}
+```
+
+Make sure to update the `meta.schema` property on your rule with the JSON schema for the arguments
+
+
+## Adding fixers
