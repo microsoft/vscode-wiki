@@ -109,5 +109,15 @@ rules: {
 Make sure to update the `meta.schema` property on your rule with the JSON schema for the arguments
 
 
-## Adding fixers
-Fixers are a useful way to mechanically fix 
+## Adding fixes to custom rules
+Fixes are a useful way to mechanically fix basic linting issues, such as auto inserting semicolons. These fix typically work at the AST level, say they are more reliable way to perform bulk fixes compared to find/replaces
+
+To add a fix for a custom rule:
+
+1. On the `meta` for your rule, add `fixable: 'code'`
+
+2. When reporting an error in the rule, also include a `fix`. This is a function that takes a `fixer` argument and returns one or more fixes. 
+
+See the [Double quoted to single quoted string covert fix](https://github.com/microsoft/vscode/blob/b074375e1884ae01033967bf0bbceeaa4795354a/.eslint-plugin-local/code-no-unexternalized-strings.ts#L128) for an example. The ESLint docs also have [details on adding fixes and the fixer api](https://eslint.org/docs/latest/extend/custom-rules#applying-fixes)
+
+The fixes can be run using `npx eslint --fix` in the VS Code repo
