@@ -1,10 +1,12 @@
-VS Code use a set of custom [ESLint](http://eslint.org) to enforce repo specific coding rules and styles. Thees custom rules are run in addition to many standard ESLine rules. Example custom rules includes:
+VS Code use a set of custom [ESLint](http://eslint.org) to enforce repo specific coding rules and styles. These custom rules are run in addition to many standard ESLine rules we enable in the project. Some example custom rules includes:
 
 - Enforcing proper code layering
 - Preventing checking in of `test.only(...)`
 - Enforcing conventions in `vscode.d.ts`
 
-This doc provides a brief overview of how these rules are setup and how you can add a new one
+Custom rules are mostly used for enforcing or banning certain coding patterns. We tend to leave stylistic choices up to area owners unless there's a good reason to enforce something project wide.
+
+This doc provides a brief overview of how these rules are setup and how you can add a new one. 
 
 # Resources
 - [ESLint rules](https://eslint.org/docs/latest/extend/custom-rules) — General documentation about writing eslint rules
