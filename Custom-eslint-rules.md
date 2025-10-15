@@ -7,9 +7,9 @@ VS Code use a set of custom [ESLint](http://eslint.org) to enforce repo specific
 This doc provides a brief overview of how these rules are setup and how you can add a new one
 
 # Resources
-- [ESLint custom rules](https://eslint.org/docs/latest/extend/custom-rules)
-- [TypeScript ASTs and eslint](https://typescript-eslint.io/blog/asts-and-typescript-eslint/)
-- [TypeScript ESLint playground](https://typescript-eslint.io/play/#showAST=es)
+- [ESLint rules](https://eslint.org/docs/latest/extend/custom-rules) — General documentation about writing eslint rules
+- [TypeScript ASTs and eslint](https://typescript-eslint.io/blog/asts-and-typescript-eslint/) — Look at how ESLint works with TS programs
+- [TypeScript ESLint playground](https://typescript-eslint.io/play/#showAST=es) — Useful tool for figuring out the structure of TS programs and debugging custom rule selectors
 
 
 # Custom Rule Configuration
