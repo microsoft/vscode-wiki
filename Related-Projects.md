@@ -25,7 +25,9 @@ The Code project consists of the `vscode` repository plus a number of satellite 
 |yo code generator|[vscode-generator-code](https://github.com/microsoft/vscode-generator-code)|
 |vsce publishing tool|[vscode-vsce](https://github.com/microsoft/vscode-vsce)|
 |Telemetry for extensions|[vscode-extension-telemetry](https://github.com/Microsoft/vscode-extension-telemetry)|
-|NLS Tools|[NLS Tools](https://github.com/Microsoft/vscode-nls)
+|NLS Tools|[NLS Tools](https://github.com/Microsoft/vscode-nls)|
+|Testing utility for extensions|[vscode-test](https://github.com/microsoft/vscode-test)|
+|Testing utility for web extensions|[vscode-test-web](https://github.com/microsoft/vscode-test-web)|
 
 ## Documentation
 |Repository|
