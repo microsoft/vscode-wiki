@@ -58,7 +58,7 @@ With the following options:
 - Expiration: `0` (does not expire)
 - Real Name: use your real name
 - Email address: use your Microsoft email address
-  - If you use the setting "Keep my email addresses private" (in (here)[https://github.com/settings/emails]), you might need to set the private email address listed there as the email address in this step.
+  - Note: If you use the setting "Keep my email addresses private" (in the [GitHub Email Settings](https://github.com/settings/emails)), you might need to set the private email address listed there as the email address on this step.
 - Comment: `Key for signing commits for Microsoft`
 - **Passphrase**: Pick a long, secure passphrase, which you'll easily remember.
 
