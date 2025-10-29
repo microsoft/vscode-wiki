@@ -87,6 +87,10 @@ Sometimes terminal wrapping doesn't work as expected, for example a line that is
 
 To power features like [terminal IntelliSense](https://code.visualstudio.com/docs/terminal/shell-integration#_intellisense-preview) and general understanding of the command that was run in the terminal, we detect what is happening in the prompt by leveraging [shell integration](https://code.visualstudio.com/docs/terminal/shell-integration). When these feature aren't working as expected you can check VS Code's understanding of the prompt input by hovering the terminal tab and clicking Show Details on the bottom. Taking a screenshot of this is helpful to diagnose problems in this area.
 
+### Investigating buffer synchronization issues with Windows/ConPTY
+
+The helper [ConsoleMonitor.exe](https://github.com/microsoft/vscode/wiki/bin/ConsoleMonitor.exe) is available that is built from [the Windows Terminal repo](https://github.com/microsoft/terminal/blob/b56f61eca1b931ac03aaa8ad148bd95112e42ba1/src/tools/ConsoleMonitor/main.cpp) allows showing the actual buffer maintained by ConPTY in a console window. To do this, just download the binary and run it within the terminal you want to track.
+
 ## Why did you close my issue?
 
 We get _a lot_ of issues and have to split our time between responding to and issues and actually improving the product. Because of this, we have a pretty high bar on issue quality and reproducibility, if we can't reproduce the issue we may have to close it off since we cannot action it.
