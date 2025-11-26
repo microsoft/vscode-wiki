@@ -65,6 +65,7 @@ You can inspect the profile with `samply.exe load --breakpad-symbol-dir <path> p
    3) Registry I/O activity
    4) Pool usage
    5) VirtualAlloc usage
+   6) GPU activity
 * Set `Performance Scenario` to `General`, `Detail level` to `verbose` and `Logging mode` to `file`
 * Start the recorder
 * Start the VSCode application from the terminal with the following additional flags `--js-flags="--enable-etw-stack-walking --interpreted-frames-native-stack"`
