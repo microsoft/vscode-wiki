@@ -15,13 +15,33 @@ You'll need the following tools:
 - [Git](https://git-scm.com)
 - [Node.JS](https://nodejs.org/en/download/prebuilt-binaries), **x64** or **ARM64**, version `>=20.x` (also see [`.nvmrc`](https://github.com/microsoft/vscode/blob/main/.nvmrc), which may provide a more precise version to install)
   - If using `nvm`, consider updating your default node installation with `nvm alias default <VERSION>`
-  - Windows: do not pick the option to install Windows Build Tools, see the step below for instructions
-  - Windows: If using [`nvm-windows`](https://github.com/coreybutler/nvm-windows) on **ARM64**, you must postfix each command with `arm64`. Eg: `nvm install 22 arm64`
+  - Windows:
+    - Do not pick the option to install Windows Build Tools, see the step below for instructions
+    - If using [`nvm-windows`](https://github.com/coreybutler/nvm-windows) on **ARM64**, you must postfix each command with `arm64`. Eg: `nvm install 22 arm64`
+  - macOS/Linux:
+    - When using `nvm` with the zsh shell, ensure that the nvm initialization script is added to `.zprofile` rather than `.zshrc`. The `.zshrc` file is only sourced for interactive shells (such as those in the VS Code terminal panel), while VS Code build tasks use a non-interactive shell that sources `.zprofile` but not `.zshrc`. Placing the script in `.zprofile` helps maintain a consistent Node.js version across both environments.
+
 - [Python](https://www.python.org/downloads/) (required for node-gyp; check the [node-gyp readme](https://github.com/nodejs/node-gyp#installation) for the currently supported Python versions)
   - Make sure `python` can run from a command line prompt without error
   - Your Python version may not come with all the proper utilities, it is recommended to install the `setuptools` package (`pip install setuptools`) otherwise you may get difficult to debug errors.
 - A C/C++ compiler tool chain for your platform:
   - **Windows 10/11 (x64 or ARM64)**
+    - <details><summary><b>Quick install via <code>winget</code> (Windows Package Manager)</b></summary>
+        Select your operating system, and run the given command in a terminal.
+        <details><summary><b>Windows x64/x86</b></summary>
+            <code>winget install --id Microsoft.VisualStudio.2022.BuildTools -e --source winget --override "--add Microsoft.VisualStudio.Component.Windows11SDK.22621 --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre --add Microsoft.VisualStudio.Component.VC.ATL.Spectre --add Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre"</code>
+        </details>
+        <details><summary><b>Windows ARM</b></summary>
+            <code>winget install --id Microsoft.VisualStudio.2022.BuildTools -e --source winget --override "--add Microsoft.VisualStudio.Component.Windows10SDK.20348 --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre --add Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre --add Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre"</code>
+        </details>
+        <details><summary><b>Windows ARM64</b></summary>
+            <code>winget install --id Microsoft.VisualStudio.2022.BuildTools -e --source winget --override "--add Microsoft.VisualStudio.Component.Windows10SDK.20348 --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre --add Microsoft.VisualStudio.Component.VC.ATL.ARM64.Spectre --add Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre"</code>
+        </details>
+        
+        For details on the packages listed, see [Visual Studio Build Tools component directory](https://learn.microsoft.com/en-us/visualstudio/install/workload-component-id-vs-build-tools?view=vs-2022#desktop-development-with-c)
+        
+    </details>
+    
     - Install the Visual C++ Build Environment by either installing the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) or the [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community). The minimum workload to install is `Desktop Development with C++`. But there are additional components from "Individual components":
       - `MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)` (use `ARM64`, not `ARM` for Windows on ARM, but the x64/x86 may still be needed)
       - `C++ ATL for latest build tools with Spectre Mitigations`
@@ -34,6 +54,9 @@ You'll need the following tools:
   - **macOS**
     - [Xcode](https://developer.apple.com/xcode/resources/) and the Command Line Tools, which will install `gcc` and the related toolchain containing `make`
       - Run `xcode-select --install` to install the Command Line Tools
+      - **Note**: if you have multiple installations of clang/clang++, make sure you include the following lines in your `~/.bash_profile` file to point CMake to the correct binaries:
+        - `export CXX="$(xcode-select -p)/usr/bin/clang++"`
+        - `export CC="$(xcode-select -p)/usr/bin/clang"`
   - **Linux**
     * On Debian-based Linux: `sudo apt-get install build-essential g++ libx11-dev libxkbfile-dev libsecret-1-dev libkrb5-dev python-is-python3`
     * On Red Hat-based Linux: `sudo yum groupinstall "Development Tools" && sudo yum install libX11-devel.x86_64 libxkbfile-devel.x86_64 libsecret-devel krb5-devel # or .i686`.

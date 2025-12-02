@@ -11,6 +11,7 @@
 * [[Release Process]]
 * [[Running the Endgame]]
   * [[Writing Test Plan Items]]
+  * [[Endgame testing and verification]]
   * [[Sanity Check]]
 * [[Related Projects]]
 
@@ -35,6 +36,7 @@
 * [[Contributor License Agreement]]
 * [[Extension API Guidelines]]
 * [[Accessibility Guidelines]]
+* [[Custom ESLint rules]]
 
 **Documentation**
 * [Extensions](https://code.visualstudio.com/docs/extensions/overview)

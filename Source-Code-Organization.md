@@ -1,13 +1,15 @@
-Visual Studio Code consists of a layered and modular `core` (found as `src/vs`) that can be extended using extensions. Extensions are run in a separate process referred to as the
-`extension host.` Extensions are implemented by utilising the [extension API](https://code.visualstudio.com/docs/extensions/overview). Built-in extensions can be found in the `extensions` folder.
+Visual Studio Code consists of a layered and modular `core` that can be extended using extensions. Extensions are run in a separate process referred to as the
+`extension host`. Extensions are implemented by utilising the [extension API](https://code.visualstudio.com/docs/extensions/overview).
+
+The `core` can be found under the `src/vs/` folder. Built-in extensions can be found under the `extensions/` folder.
 
 # Layers
 
 The `core` is partitioned into the following layers:
 - `base`: Provides general utilities and user interface building blocks that can be used in any other layer.
 - `platform`: Defines service injection support and the base services for VS Code that are shared across layers such as `workbench` and `code`. Should not include `editor` or `workbench` specific services or code.
-- `editor`: The "Monaco" editor is available as a [separate downloadable](https://microsoft.github.io/monaco-editor/) component.
-- `workbench`: Hosts the "Monaco" editor, notebooks, and custom editors and provides the framework for panels like the Explorer, Status Bar, or Menu Bar, leveraging [Electron](https://www.electronjs.org/) to implement the VS Code desktop application and browser APIs to provide VS Code for the Web.
+- `editor`: Monaco Editor Core. Note: The full [Monaco Editor](https://microsoft.github.io/monaco-editor/) is defined in a separate repo https://github.com/microsoft/monaco-editor, which adds some programming language features on top of the Monaco Editor Core and publishes the combination as an npm package. See that repo's [CONTRIBUTING.md](https://github.com/microsoft/monaco-editor/blob/main/CONTRIBUTING.md) for a diagram that explains how these are related.
+- `workbench`: Hosts the Monaco Editor Core, notebooks, and custom editors and provides the framework for panels like the Explorer, Status Bar, or Menu Bar, leveraging [Electron](https://www.electronjs.org/) to implement the VS Code desktop application and browser APIs to provide VS Code for the Web.
 - `code`: The entry point to the desktop app that stitches everything together, this includes the Electron main file, shared process, and the CLI for example.
 - `server`: The entry point to our server app for remote development.
 
@@ -30,7 +32,8 @@ The `core` of VS Code is fully implemented in [TypeScript](https://github.com/mi
   - may use code from: `common`, `node`, `electron-utility`
 
 <div align="center">
-<img width="600" src="images/organization/environments.png" />
+<img width="600" alt="environments" src="https://github.com/user-attachments/assets/6cc2993f-b6a0-4715-b0fb-ff87d6ad3db5" />
+
 </div>
 
 # Dependency Injection
