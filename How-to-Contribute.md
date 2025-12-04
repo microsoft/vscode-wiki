@@ -144,6 +144,21 @@ Manage any merge conflicts, commit them, and then push them to your fork.
 > [!NOTE]
 > The `microsoft/vscode` repository contains a collection of GitHub Actions that help us with triaging issues. As you probably don't want these running on your fork, you can disable Actions for your fork via `https://github.com/<<Your Username>>/vscode/settings/actions`.
 
+### Use the correct version of Node
+
+Before installing and building, ensure you are using the correct version of Node.
+
+It's recommended you install [`fnm`](https://github.com/Schniz/fnm) and run the following command in your `vscode` folder:
+
+```
+fnm use
+```
+
+> [!TIP]
+> When [configuring fnm](https://github.com/Schniz/fnm#shell-setup) you can add the `--use-on-cd` flag and then `fnm use` will be automatically run whenever you navigate to a new directory.
+
+Otherwise, check the `.nvmrc` file in the `vscode` folder to see the current version of Node being used and then update Node however you see fit.
+
 ### Build
 
 Install and build all of the dependencies using `npm`:
