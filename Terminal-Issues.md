@@ -48,6 +48,36 @@ For some terminal issues it's useful to get trace logs, this can reveal at what 
 
 If for some reason you're unable to restart VS Code like you're running in a remote, you can change the log level via the command palette (<kbd>F1</kbd> `Developer: Set Log Level...`).
 
+### Why was a terminal command auto approved in chat?
+
+The terminal tool in chat has a [powerful auto approve feature](https://code.visualstudio.com/docs/copilot/chat/chat-tools#_automatically-approve-terminal-commands) that you can enable in the allow dropdown. Once enabled, this will enable a set of default auto approval rules (unless `"chat.tools.terminal.ignoreDefaultAutoApproveRules": true` is set), you can see this set inside VS Code by auto completing the `chat.tools.terminal.autoApprove` setting in your settings.json file. For example this includes the following rules:
+
+```json
+{
+  "find": true,
+  "/^find\\b.*-(delete|exec|execdir|fprint|fprintf|fls|ok|okdir)\\b/": false,
+}
+```
+
+This allows the `find` command in general, but not a set of arguments that can either write to arbitrary files or execute arbitrary commands.
+
+In addition to the default rules, enabling auto approve will also enable auto approval rules in your [settings](https://code.visualstudio.com/docs/configure/settings) (user, profile, remote and workspace scopes).
+
+In order to be approved a _command line_ must:
+
+1. Achieve one of the following:
+    - All sub-commands are auto approved by a rule. For example, `foo && bar` would need a `foo` and a `bar` rule.
+    - The command line was auto approve by a rule. For example, `foo && bar` would match `"/^foo/": { "approve": true, "matchCommandLine": true }`.
+2. No sub-commands or command lines are _denied_ by a false auto auto approve rule. For example, `"foo": false` will always block the `foo` command regardless of arguments.
+3. For any detected file writes (only redirection at the time of writing), the command passes the rules defined by the `chat.tools.terminal.blockDetectedFileWrites` setting. By default this allows writing to workspace files as typically you will have an SCM protecting the content, and the [timeline view](https://code.visualstudio.com/docs/getstarted/userinterface#_timeline-view) may also allow accessing file history. So `cat README.md > README2.md` will intentionally allow writing to README2.md, or something like `cat /dev/null > README.md` can delete the content of a file.
+
+If you see a command unexpectedly auto approved, you can follow these steps to diagnose why it was auto approve:
+
+1. Hovering the tool call's check icon should tell you which rule(s) were used to approve it which can be clicked to go directly to them in your settings file.
+2. Opening the Output panel and selecting the Terminal channel will show detailed logging on the reasoning of how the command was approved.
+
+Note also that we use tree-sitter to parse the commands and extract sub-commands, we use [this PowerShell grammar](https://github.com/airbus-cert/tree-sitter-powershell) for pwsh and [the official bash grammar](https://github.com/tree-sitter/tree-sitter-bash) for everything else. This does mean that using auto approve on zsh may approve something unexpected when there is a conflict with bashes syntax, this is one of the "best effort" things that's talked about in the modal opt-in warning. You can read more about this and other related concerns in the caution section in [the docs](https://code.visualstudio.com/docs/copilot/chat/chat-tools#_automatically-approve-terminal-commands).
+
 ### Using showkey to investigate keybinding issues
 
 There is a utility called `showkey` which will print the character codes as received by the application, this is similar to escape sequence logging above but's evaluated on the process side. Install `showkey` by installing the `kbd` package on Linux or `showkey` on homebrew, for example:

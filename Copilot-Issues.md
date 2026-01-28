@@ -44,6 +44,12 @@ To look at the information that was send to and received from the Language Model
 
 <img alt="LLM Request Log" src="https://github.com/user-attachments/assets/5b77358c-a4c6-4612-ba64-1193fb58fc9f" />
 
+### Chat Replay/Log Viewer
+
+The `.chatreplay.json` file can be viewed here: https://digitarald.github.io/vscode-chat-logs/ , either local-only va drag & drop or linked from an uploaded gist. The viewer also supports markdown logs (right-click `Copy All` in a conversation) and Chat Exports (command: `Chat: Export Chat…`.
+
+<img alt="Chat Replay Viewer" width="835" height="518" alt="Image" src="https://github.com/user-attachments/assets/a7c6b9d7-ad32-4802-aec0-f987519f92a1" />
+
 ## Custom Instructions Logs
 
 To debug why your [custom instructions](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions) are not used by the language model test the following.
