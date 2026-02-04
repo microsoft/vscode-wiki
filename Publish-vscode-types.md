@@ -18,7 +18,7 @@ Example of PR when releasing 1.84 - https://github.com/DefinitelyTyped/Definitel
 4. Update the minor version in `"version"` property in `types/vscode/package.json`, e.g., `1.83.9999` to `1.84.9999` (`9999` is not just an example)
 5. Submit the PR
    - If there are any lint failures in the CI job for the PR, you can disable tests in either the `tslint.json` or `.eslintrc.json` files. But first check to make sure that the lint failure isn't pointing out a real issue in our `vscode.d.ts` or with the copy/paste job.
-6. Ask either @jrieken or @kieferrm to merge the PR.
+6. Ask either @mjbvz, @jrieken, or @kieferrm to merge the PR.
 7. `@types/vscode` will be published in ~10 minutes.
 8. Make sure a correct version of `@types/vscode` was published, e.g., if you're releasing VS Code 1.84, you should see `@types/vscode` version 1.84.0 [here](https://www.npmjs.com/package/@types/vscode)
 
