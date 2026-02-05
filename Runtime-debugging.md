@@ -28,7 +28,8 @@ This will generate a trace json file which can be loaded into any of the followi
 If you have an unsigned build of VSCode, then samply can be used to capture both JIT and native traces
 
 * Download the latest release of https://github.com/mstange/samply/releases
-* Start from the command line with following `samply.exe record -s -o profile.json.gz --browsers -- <path>/Visual\ Studio\ Code.app/Contents/MacOS/Electron --js-flags="--perf-basic-prof --perf-prof-unwinding-info --interpreted-frames-native-stack"`
+* Run `xattr -c <path-to-samply-zip>` and extract it
+* Start from the command line with following `samply.exe record -s -o profile.json.gz --browsers -- /Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron --js-flags="--perf-basic-prof --perf-prof-unwinding-info --interpreted-frames-native-stack" --no-sandbox`
 * Perform the steps for unresponsiveness or slow startups etc
 * Exit the application and the profile will be saved to `profile.json.gz`
 
@@ -39,7 +40,7 @@ You can inspect the profile with `samply.exe load --breakpad-symbol-dir <path> p
 If you want to capture only application related cpu profile with both JIT and native traces
 
 * Download the latest release of https://github.com/mstange/samply/releases
-* Start from the command line with following `samply.exe record -s -o profile.json.gz --browsers -- <path>/Microsoft\ VS\ Code/Code.exe --js-flags="--enable-etw-stack-walking --interpreted-frames-native-stack"`
+* Start from the command line with following `samply.exe record -s -o profile.json.gz --browsers -- <path>/Microsoft\ VS\ Code/Code.exe --js-flags="--enable-etw-stack-walking --interpreted-frames-native-stack"` (replace <path> with absolute path to the application executable)
 * Perform the steps for unresponsiveness or slow startups etc
 * Exit the application and the profile will be saved to `profile.json.gz`
 
@@ -48,7 +49,7 @@ You can inspect the profile with `samply.exe load --breakpad-symbol-dir <path> p
 ## Using samply on linux
 
 * Download the latest release of https://github.com/mstange/samply/releases
-* Start from the command line with following `samply.exe record -s -o profile.json.gz --browsers -- <path>/code --js-flags="--perf-basic-prof --perf-prof-unwinding-info --interpreted-frames-native-stack"`
+* Start from the command line with following `samply.exe record -s -o profile.json.gz --browsers -- code --js-flags="--perf-basic-prof --perf-prof-unwinding-info --interpreted-frames-native-stack" --no-sandbox`
 * Perform the steps for unresponsiveness or slow startups etc
 * Exit the application and the profile will be saved to `profile.json.gz`
 
