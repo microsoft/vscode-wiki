@@ -3,7 +3,7 @@ This page describes the Build Champion role. This is a weekly rotating role with
 ## Responsibilities
 
 - Daily: [Triage all failed and partially succeeded builds](#triage-non-green-builds)
-- Daily: [Ensure a green Insiders build from `main`](#green-insiders-build)
+- Daily: [Ensure a green Insiders build from `main` and Copilot Chat pre-release build from `main`](#green-insiders-build)
 - At least once during the week: [Review and triage error telemetry](#triage-error-telemetry)
 - On the following Monday: Hand over the role to the next person
 
@@ -43,8 +43,8 @@ If this was a recent failure and the "Changes" seems relevant, ping the committe
 It is crucial for our success to have a green insiders build from `main` branch that gets published to our [update site](https://builds.code.visualstudio.com/builds/insider) at least once on a day. Various tools depend on this to happen, for example performance testing to figure out performance regressions early. 
 
 Insider builds are scheduled to run daily automatically. In case of failure, it is your responsibility to act accordingly:
-* when automated release is disabled (debt week): run the [pipeline](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111) but do not release the build
-* when automated release is enabled (otherwise): run the [pipeline](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111) and release the build
+* when automated release is disabled (debt week): run the [pipeline](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111) and Copilot Chat [pipeline](https://dev.azure.com/monacotools/Monaco/_build?definitionId=489) but do not release the build
+* when automated release is enabled (otherwise): run the [pipeline](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111) and Copilot Chat [pipeline](https://dev.azure.com/monacotools/Monaco/_build?definitionId=489) and release the build
 
 👉 even in debt week, when the automated release is disabled, we still want the daily insiders build to succeed (but not released!). This ensures our daily rhythm is not impacted at all and we can act on build issues early on.
 
