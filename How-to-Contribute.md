@@ -128,14 +128,18 @@ If you want to understand how VS Code works or want to debug an issue, you'll wa
 
 First, fork the VS Code repository so that you can make a pull request. Then, clone your fork locally:
 
+> [!Warning]
+> Make sure that the path to your local clone does not contain spaces.
+> This can cause issues with later steps.
+
 ```
 git clone https://github.com/<<<your-github-account>>>/vscode.git
+cd vscode
 ```
 
 Occasionally you will want to merge changes in the upstream repository (the official code repo) with your fork.
 
 ```
-cd vscode
 git checkout main
 git pull https://github.com/microsoft/vscode.git main
 ```
@@ -166,18 +170,19 @@ Install and build all of the dependencies using `npm`:
 
 ```
 cd vscode
-npm install
+npm i
 ```
 
 Then you have two options:
 
-- If you want to build from inside VS Code, you can open the `vscode` folder and start the build task with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> on macOS). The build task will stay running in the background even if you close VS Code. If you happen to close VS Code and open it again, just resume the build by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) again. You can kill it by running the `Kill Build VS Code` task or pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal.
+- If you want to build from inside VS Code, open the `vscode` folder in vscode (`code .`) and start the build task with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> on macOS). The build task will stay running in the background even if you close VS Code. If you happen to close VS Code and open it again, just resume the build by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> (<kbd>CMD</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>) again. You can kill it by running the `Kill Build VS Code` task or pressing <kbd>Ctrl</kbd>+<kbd>D</kbd> in the task terminal.
 - If you want to build from a terminal, run `npm run watch`. This will run both the core watch task and watch-extension tasks in a single terminal.
 
 The incremental builder will do an initial full build and will display a message that includes the phrase "Finished compilation" once the initial build is complete. The builder will watch for file changes and compile those changes incrementally, giving you a fast, iterative coding experience.
 
 **Troubleshooting:**
 
+- Make sure that the path to your local clone of the repo does not contain spaces.
 - **Windows:** If you have installed Visual Studio 2017 as your build tool, you need to open **x64 Native Tools Command Prompt for VS 2017**. Do not confuse it with *VS2015 x64 Native Tools Command Prompt*, if installed.
 - **Linux:** You may hit a ENOSPC error when running the build. To get around this follow instructions in the [Common Questions](https://code.visualstudio.com/docs/setup/linux#_common-questions).
 
