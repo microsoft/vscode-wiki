@@ -40,7 +40,7 @@ You can inspect the profile with `samply.exe load --breakpad-symbol-dir <path> p
 If you want to capture only application related cpu profile with both JIT and native traces
 
 * Download the latest release of https://github.com/mstange/samply/releases
-* Start from the command line with following `samply.exe record -s -o profile.json.gz --browsers -- <path>/Microsoft\ VS\ Code/Code.exe --js-flags="--enable-etw-stack-walking --interpreted-frames-native-stack"` --no-sandbox (replace <path> with absolute path to the application executable)
+* Start from the command line with following `samply.exe record -s -o profile.json.gz --browsers -- <path>/Microsoft\ VS\ Code/Code.exe --js-flags="--enable-etw-stack-walking --interpreted-frames-native-stack" --no-sandbox` (replace <path> with absolute path to the application executable)
 * Perform the steps for unresponsiveness or slow startups etc
 * Exit the application and the profile will be saved to `profile.json.gz`
 
