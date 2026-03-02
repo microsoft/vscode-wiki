@@ -10,7 +10,15 @@ Make sure you follow the [Prerequisites, How To Contribute (microsoft/vscode)](h
 
 #### Windows
 
-Install [Gpg4win](https://gpg4win.org/) and make sure Git uses that GPG version:
+- Install [Gpg4win](https://gpg4win.org/) 
+
+- Check the path of your gpg version. Depending on whether you installed the 32-bit or 64-bit version it will be either in "Program Files (x86)" or in "Program Files":
+```
+where gpg
+> C:\Program Files\GnuPG\bin\gpg.exe
+```
+
+- Make sure Git uses that GPG version:
 
 ```
 git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"
