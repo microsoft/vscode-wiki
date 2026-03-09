@@ -13,7 +13,7 @@ In order to download necessary tools, clone the repository, and install dependen
 You'll need the following tools:
 
 - [Git](https://git-scm.com)
-- [Node.js](https://nodejs.org/en/download/prebuilt-binaries), **x64** or **ARM64**, version `>=20.x` (also see [`.nvmrc`](https://github.com/microsoft/vscode/blob/main/.nvmrc), which may provide a more precise version to install)
+- [Node.js](https://nodejs.org/en/download/prebuilt-binaries), **x64** or **ARM64**, version `>=22.x` (also see [`.nvmrc`](https://github.com/microsoft/vscode/blob/main/.nvmrc), which may provide a more precise version to install)
   - Consider using `fnm` instead of `nvm`. See the section [Use the correct version of Node](https://github.com/microsoft/vscode/wiki/How-to-Contribute#use-the-correct-version-of-node) below for more details on how to set that up.
   - If using `nvm`, consider updating your default node installation with `nvm alias default <VERSION>`
   - Windows:
