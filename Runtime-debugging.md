@@ -69,7 +69,7 @@ You can inspect the profile with `samply.exe load --breakpad-symbol-dir <path> p
    6) GPU activity
 * Set `Performance Scenario` to `General`, `Detail level` to `verbose` and `Logging mode` to `file`
 * Start the recorder
-* Start the VSCode application from the terminal with the following additional flags `--js-flags="--enable-etw-stack-walking --interpreted-frames-native-stack"`
+* Start the VSCode application from the terminal with the following additional flags `--js-flags="--enable-etw-stack-walking --interpreted-frames-native-stack" --no-sandbox`
 * Perform the actions that trigger the issue (slow startups, out of memory, unresponsive threads etc)
 * Stop the recorder and save the file
 
