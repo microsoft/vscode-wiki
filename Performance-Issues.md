@@ -122,6 +122,10 @@ Very detailed information is captured in CPU profiles and that helps us best to 
   - When the performance issue happens on startup, start the profiler and then reload the window using "<kbd>F1</kbd> > Reload Window."
   - Save the profile to a file and attach the file to your issue.
 
+#### Renderer process hanging
+
+If the renderer process stops responding, and you can reproduce the issue, follow the steps in [Runtime Debugging](Runtime-Debugging) to collect a trace.
+
 <a name="shared-process"/>
 
 ### The Shared process consumes a lot of CPU
