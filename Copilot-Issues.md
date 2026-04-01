@@ -73,7 +73,12 @@ Example:
 
 ## Troubleshooting Sessions
 
-Starting Chat extension 0.42.2, you can troubleshoot any session using /troubleshoot slash command by adding the session as context using #session.
+Starting Copilot Chat Extension 0.42.2, you can troubleshoot a session using `/troubleshoot` command by adding the session as context using `#session`.
+
+Following settings need to be enabled to use troubleshoot command: 
+`setting(github.copilot.chat.agentDebugLog.enabled)`, `setting(github.copilot.chat.agentDebugLog.fileLogging.enabled)`
+
+If setting was previously turned off, please repro your issue after turning on the above setting.
 
 Steps:
 
