@@ -71,7 +71,7 @@ Example:
 - When done you can run `Developer: Set Log Level...` again and set it to back to `Info`
 
 
-## Troubleshooting sessions
+## Troubleshooting Sessions
 
 Starting Chat extension 0.42.2, you can troubleshoot any session using /troubleshoot slash command by adding the session as context using #session.
 
