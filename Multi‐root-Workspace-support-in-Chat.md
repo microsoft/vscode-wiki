@@ -17,6 +17,7 @@ my-workspace
 │   └── .github/hooks/
 └── backend
     └── .github/hooks/
+```
 
 ## Why the primary directory matters
 
