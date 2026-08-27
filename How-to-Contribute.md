@@ -13,7 +13,7 @@ In order to download necessary tools, clone the repository, and install dependen
 You'll need the following tools:
 
 - [Git](https://git-scm.com)
-- [Node.js](https://nodejs.org/en/download/prebuilt-binaries), **x64** or **ARM64**, version `>=20.x` (also see [`.nvmrc`](https://github.com/microsoft/vscode/blob/main/.nvmrc), which may provide a more precise version to install)
+- [Node.js](https://nodejs.org/en/download/prebuilt-binaries), **x64** or **ARM64**, version `>=22.x` (also see [`.nvmrc`](https://github.com/microsoft/vscode/blob/main/.nvmrc), which may provide a more precise version to install)
   - Consider using `fnm` instead of `nvm`. See the section [Use the correct version of Node](https://github.com/microsoft/vscode/wiki/How-to-Contribute#use-the-correct-version-of-node) below for more details on how to set that up.
   - If using `nvm`, consider updating your default node installation with `nvm alias default <VERSION>`
   - Windows:
@@ -28,29 +28,79 @@ You'll need the following tools:
 - A C/C++ compiler tool chain for your platform:
   - **Windows 10/11 (x64 or ARM64)**
     - <details><summary><b>Quick install via <code>winget</code> (Windows Package Manager)</b></summary>
-        Select your operating system, and run the given command in a terminal.
-        <details><summary><b>Windows x64/x86</b></summary>
-            <code>winget install --id Microsoft.VisualStudio.2022.BuildTools -e --source winget --override "--add Microsoft.VisualStudio.Component.Windows11SDK.22621 --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre --add Microsoft.VisualStudio.Component.VC.ATL.Spectre --add Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre"</code>
-        </details>
-        <details><summary><b>Windows ARM</b></summary>
-            <code>winget install --id Microsoft.VisualStudio.2022.BuildTools -e --source winget --override "--add Microsoft.VisualStudio.Component.Windows10SDK.20348 --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre --add Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre --add Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre"</code>
-        </details>
-        <details><summary><b>Windows ARM64</b></summary>
-            <code>winget install --id Microsoft.VisualStudio.2022.BuildTools -e --source winget --override "--add Microsoft.VisualStudio.Component.Windows10SDK.20348 --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre --add Microsoft.VisualStudio.Component.VC.ATL.ARM64.Spectre --add Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre"</code>
-        </details>
-        
-        For details on the packages listed, see [Visual Studio Build Tools component directory](https://learn.microsoft.com/en-us/visualstudio/install/workload-component-id-vs-build-tools?view=vs-2022#desktop-development-with-c)
-        
-    </details>
-    
-    - Install the Visual C++ Build Environment by either installing the [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) or the [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community). The minimum workload to install is `Desktop Development with C++`. But there are additional components from "Individual components":
-      - `MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)` (use `ARM64`, not `ARM` for Windows on ARM, but the x64/x86 may still be needed)
-      - `C++ ATL for latest build tools with Spectre Mitigations`
-      - `C++ MFC for latest build tools with Spectre Mitigations`
-      - **Windows on ARM only:** Windows 10 SDK (10.0.20348.0)
-    - open a command prompt and run `npm config edit` and add or modify the `msvs_version` setting equal to your vs version. (e.g. `msvs_version=2022` for visual studio 2022)
-    - **Warning:** Make sure your profile path only contains ASCII letters, e.g. *John*, otherwise, it can lead to [node-gyp usage problems (nodejs/node-gyp/issues#297)](https://github.com/nodejs/node-gyp/issues/297)
-    - **Note**: Building and debugging via the Windows subsystem for Linux (WSL) is currently not supported.
+
+      Run the appropriate command from an elevated PowerShell terminal.
+
+      If Visual Studio is not already installed, install Visual Studio 2026 Build Tools:
+
+      <details><summary><b>Windows x64/x86</b></summary>
+
+      ```powershell
+      winget install --id Microsoft.VisualStudio.BuildTools -e --source winget --override "--add Microsoft.VisualStudio.Component.Windows11SDK.26100 --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre --add Microsoft.VisualStudio.Component.VC.ATL.Spectre --add Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre"
+      ```
+
+      </details>
+
+      <details><summary><b>Windows ARM64</b></summary>
+
+      ```powershell
+      winget install --id Microsoft.VisualStudio.BuildTools -e --source winget --override "--add Microsoft.VisualStudio.Component.Windows11SDK.26100 --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre --add Microsoft.VisualStudio.Component.VC.ATL.ARM64.Spectre --add Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre"
+      ```
+
+      </details>
+
+      If Visual Studio is already installed, `node-gyp` might select that installation instead of Build Tools. Check the installation path reported by `gyp info find VS`:
+
+      ```text
+      gyp info find VS using VS2026 (...) found at:
+      gyp info find VS "C:\Program Files\Microsoft Visual Studio\18\Enterprise"
+      ```
+
+      Install the Spectre libraries into that exact Visual Studio instance. For example:
+
+      <details><summary><b>Existing Visual Studio 2026 Enterprise installation — x64/x86</b></summary>
+
+      ```powershell
+      winget install --id Microsoft.VisualStudio.Enterprise -e --source winget --force --override 'modify --installPath "C:\Program Files\Microsoft Visual Studio\18\Enterprise" --passive --wait --norestart --add Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre --add Microsoft.VisualStudio.Component.VC.ATL.Spectre --add Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre'
+      ```
+
+      </details>
+
+      <details><summary><b>Existing Visual Studio 2026 Enterprise installation — ARM64</b></summary>
+
+      ```powershell
+      winget install --id Microsoft.VisualStudio.Enterprise -e --source winget --force --override 'modify --installPath "C:\Program Files\Microsoft Visual Studio\18\Enterprise" --passive --wait --norestart --add Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre --add Microsoft.VisualStudio.Component.VC.ATL.ARM64.Spectre --add Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre'
+      ```
+
+      </details>
+
+      For another Visual Studio edition, replace both the package ID and installation path with the edition and path reported by `node-gyp`:
+
+      - `Microsoft.VisualStudio.Community`
+      - `Microsoft.VisualStudio.Professional`
+      - `Microsoft.VisualStudio.Enterprise`
+      - `Microsoft.VisualStudio.BuildTools`
+
+      Installing the components into a different Visual Studio instance will not resolve the build failure.
+
+      Visual Studio 2026 does not provide current MSVC v180 components for 32-bit ARM. Windows on Arm contributors should use the ARM64 components.
+
+      For details, see the [Visual Studio 2026 component directory](https://learn.microsoft.com/visualstudio/install/workload-component-id-vs-build-tools?view=visualstudio).
+
+      </details>
+
+    - Alternatively, install the Visual C++ build environment using the [Visual Studio Installer](https://visualstudio.microsoft.com/downloads/). Select the `Desktop development with C++` workload and the following individual components for the architecture being built:
+      - **x64/x86**
+        - `C++ Spectre-mitigated libraries for x64/x86 (Latest MSVC)`
+        - `C++ ATL with Spectre mitigations for x64/x86 (Latest MSVC)`
+        - `C++ MFC with Spectre mitigations for x64/x86 (Latest MSVC)`
+      - **ARM64**
+        - `C++ Spectre-mitigated libraries for ARM64/ARM64EC (Latest MSVC)`
+        - `C++ ATL with Spectre mitigations for ARM64/ARM64EC (Latest MSVC)`
+        - `C++ MFC with Spectre mitigations for ARM64/ARM64EC (Latest MSVC)`
+    - After changing the Visual Studio installation, close and reopen the terminal before running `npm install` again.
+    - Make sure your profile path contains only ASCII characters, for example *John*. Non-ASCII characters can cause [`node-gyp` problems](https://github.com/nodejs/node-gyp/issues/297).
+    - Building and debugging using the Windows Subsystem for Linux is not supported by these native Windows instructions. For WSL2, see [Self-hosting on Windows WSL](https://github.com/microsoft/vscode/wiki/Selfhosting-on-Windows-WSL).
   - **Windows WSL2**: https://github.com/microsoft/vscode/wiki/Selfhosting-on-Windows-WSL
   - **macOS**
     - [Xcode](https://developer.apple.com/xcode/resources/) and the Command Line Tools, which will install `gcc` and the related toolchain containing `make`

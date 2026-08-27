@@ -54,8 +54,9 @@ The `.chatreplay.json` file can be viewed here: https://digitarald.github.io/vsc
 
 To debug why your [custom instructions](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions) are not used by the language model test the following.
 
-- First check if setting `chat.promptFiles` is enabled. Some organizations forbid the use of experimental features, and the settings `chat.promptFiles` is marked as such. When `chat.promptFiles` is set, you show see `Prompt Files` and `Instructions` in the gear menu of the chat view:
-<img  alt="Chat Gear Menu" src="https://github.com/user-attachments/assets/4ea706c0-f41b-43fe-a375-f20a26a5e523" />
+- Open VS Code on the folder with your repository
+- First check whether the customization UI shows your customization. Click on the gear menu of the chat view:
+<img width="778" height="656" alt="image" src="https://github.com/user-attachments/assets/7213e72c-35bf-4394-a2b0-7267dc3e8da1" />
 
 - Run the `Developer: Show Logs...` command and select `Window`. This will show the Output view showing log statements for the current window
 - Run the `Developer: Set Log Level...` and select `Trace`
@@ -69,3 +70,25 @@ Example:
 ```
 
 - When done you can run `Developer: Set Log Level...` again and set it to back to `Info`
+
+
+## Troubleshooting Sessions
+
+Starting Copilot Chat Extension 0.42.2, you can troubleshoot a session using `/troubleshoot` command by adding the session as context using `#session`.
+
+Following settings need to be enabled to use troubleshoot command: 
+`setting(github.copilot.chat.agentDebugLog.enabled)`, `setting(github.copilot.chat.agentDebugLog.fileLogging.enabled)`
+
+If setting was previously turned off, please repro your issue after turning on the above setting.
+
+Steps:
+
+* Start a new chat
+* Type /troubleshoot in the chat input.
+* Type #session and select from the list of session you want to troubleshoot
+* Add your question (for example, "Why were my custom instructions ignored?") and send.
+
+e.g.
+<img width="1200" height="373" alt="image" src="https://github.com/user-attachments/assets/514fa4b2-2fa4-4272-b2bd-acc1bc40e33a" />
+
+

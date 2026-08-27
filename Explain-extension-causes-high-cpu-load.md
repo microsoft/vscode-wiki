@@ -10,10 +10,7 @@ When an extension is monopolizing the extension host process, VS Code encourages
 
 * Make sure the `<myExtensionId>.cpuprofile.txt`-file has been uploaded. If not, ask the author for it. 
 * Remove the `.txt`-suffix
-* Open the JavaScript profiler via **F1** > **Developer Tools** > **⋮** > **More Tools** > **JavaScript Profiler**
-* Select **Load** and pick the `.cpuprofile`-file
-
-![profiler](https://user-images.githubusercontent.com/1794099/49524455-12e71e80-f8ac-11e8-84c1-3c8645128d17.gif)
+* Open the `.cpuprofile` in VS Code, or on the web using [Speedscope](https://www.speedscope.app/)
 
 Use the JavaScript profiler to drill into individual functions and analyse in what part of the code most time has been spend. Keep in mind that a huge file, a huge number of files, or some other "unexpected" input may have been involved and that was the cause of the high CPU load. 
 

@@ -9,6 +9,7 @@
 - [Visual Studio Code is sluggish](#sluggish-ui)
 - [Visual Studio Code starts up slowly](#slow-startup)  
   - [Read the Startup Timers](#startup-timer)
+- [Analysis with external tools](#external-tools)
 
 <a name="reporting"/>
 
@@ -121,6 +122,10 @@ Very detailed information is captured in CPU profiles and that helps us best to 
   - When the performance issue happens on startup, start the profiler and then reload the window using "<kbd>F1</kbd> > Reload Window."
   - Save the profile to a file and attach the file to your issue.
 
+#### Renderer process hanging
+
+If the renderer process stops responding, and you can reproduce the issue, follow the steps in [Runtime Debugging](Runtime-Debugging) to collect a trace.
+
 <a name="shared-process"/>
 
 ### The Shared process consumes a lot of CPU
@@ -182,3 +187,9 @@ When VS Code feels slow to start, you can check the startup timers. Hit <kbd>F1<
 <img width="1038" alt="Screenshot 2023-05-03 at 16 44 42" src="https://user-images.githubusercontent.com/1794099/235951322-f85587d0-6967-41cf-a8b3-385d4248f1d2.png">
 
 Please share these numbers with us as they often allows us to understand what is slow.
+
+<a name="external-tools"/>
+
+### Analysis with external tools
+
+For advanced scenarios, consider [runtime debugging](https://github.com/microsoft/vscode/wiki/Runtime-debugging) to attach an external profiler to VS Code processes.
