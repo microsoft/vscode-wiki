@@ -25,5 +25,16 @@ Here are a few of the main channels: (you must first [join the Slack workspace](
 
 The VS Code team's presence in this Slack workspace will be optional, at least for the foreseeable future.
 
-## Twitter
-Watch for tweets from the [**@code**](https://twitter.com/code) account on twitter for announcements and updates from members of the development team.
+## Social media
+Follow VS Code on social media for announcements, product updates, tips, videos, and other content from the team:
+
+- [X (@code)](https://x.com/code)
+- [LinkedIn](https://www.linkedin.com/showcase/vs-code)
+- [LinkedIn newsletter](https://aka.ms/VSCode/News)
+- [Bluesky (@vscode.dev)](https://bsky.app/profile/vscode.dev)
+- [TikTok (@vscode)](https://www.tiktok.com/@vscode)
+- [YouTube (@code)](https://www.youtube.com/@code)
+- [Instagram (@vscode.ig)](https://www.instagram.com/vscode.ig)
+
+## Reddit
+The [VS Code subreddit](https://www.reddit.com/r/vscode/) is a place where users can share tips, ask questions, and discuss VS Code.
