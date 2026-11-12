@@ -98,6 +98,7 @@ If you're unsure who owns an area, you can roughly determine who an owner is by 
 ### Useful links
 
 - [Error telemetry website](https://errors.code.visualstudio.com/)
-- [ADO VS Code build](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111)
-- [ADO VS Code build analytics](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111&view=ms.vss-pipelineanalytics-web.new-build-definition-pipeline-analytics-view-cardmetrics)
+- [ADO VS Code CI build](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=727) (the CI builds of `main` and `release/*`)
+- [ADO VS Code CI build analytics](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=727&view=ms.vss-pipelineanalytics-web.new-build-definition-pipeline-analytics-view-cardmetrics) (test and flake history of the CI builds)
+- [ADO VS Code build](https://monacotools.visualstudio.com/DefaultCollection/Monaco/_build?definitionId=111) (the scheduled and manual product builds, including Insiders)
 - [Dealing with test flakiness wiki page](https://github.com/microsoft/vscode/wiki/Dealing-with-Test-Flakiness)
