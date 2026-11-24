@@ -14,6 +14,8 @@ Please begin by consulting any of the following pages that may be relevant:
 
 Next, do a search in [open issues](https://github.com/Microsoft/vscode/issues) to see if the issue or feature request has already been filed. Use this [query](https://github.com/Microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc) to search for the most popular feature requests.
 
+You can also use GitHub Copilot with GitHub MCP enabled to better search for related issues.
+
 If you find your issue already exists, make relevant comments and add your [reaction](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments). Use [a reaction on the issue description](Issues-Triaging#up-voting-a-feature-request) rather than adding a "+1" comment.
 
 👍 - upvote
