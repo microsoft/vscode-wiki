@@ -49,7 +49,7 @@ When team members files a bug they perform steps of the inbox tracker for the is
 
 Issues need to be verified.
 
-Verification is a service that you request from others either implicitly with the `bug`-label or explicitly with the `verification-needed`-label. Find issue that are to be verified with these queries
+Verification is a service that you request from others either implicitly with the `bug`-label or explicitly with the `verification-needed`-label. Find issues that are to be verified with these queries:
 
 - [bugs to be verified, VS Code](https://github.com/Microsoft/vscode/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3Abug%20-label%3Averified%20is%3Aclosed%20-label%3Aduplicate%20-label%3Ainvalid%20)
 - [verification needed, VS Code](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+-label%3Averified+is%3Aclosed+label%3Averification-needed)
@@ -69,7 +69,7 @@ Follow the these rules:
 
 ### Author Verification
 
-In some cases, such as when a bug is particularly hard or time-consuming to reproduce, it can be desirable to allow the initial, community member, author of the bug report to verify an issue. This can be achieved by adding the `author-verification-requested` label, which launches a workflow where the author is be pinged when the relevant patch is released, and then asked to verify the issues themselves. 
+In some cases, such as when a bug is particularly hard or time-consuming to reproduce, it can be desirable to allow the initial, community member, author of the bug report to verify an issue. This can be achieved by adding the `author-verification-requested` label, which launches a workflow where the author is pinged when the relevant patch is released, and then asked to verify the issues themselves. 
 
 Issues must be closed with a reference to a commit SHA in order for the bot to accurately ping users when the Insiders release with their fix is released.
 
