@@ -21,32 +21,29 @@ stages:
           - checkout: self
             persistCredentials: true
 
-          - pwsh: |
-              $result = git config --get-regexp .*extraheader ^AUTHORIZATION:
-              $token = $result -split "AUTHORIZATION: basic " | Select-Object -Last 1
-              $pat = [System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String($token)) -split ":" | Select-Object -Last 1
+          - script: |
+              set -e
+              wiki_url=https://github.com/Microsoft/vscode.wiki.git
+              checkout_header=$(git config --local --get-urlmatch http.extraHeader "$(git remote get-url origin)")
 
-              "machine github.com
-              login vscode
-              password $pat" > ~/.netrc
+              wiki_git() {
+                WIKI_AUTH_HEADER="$checkout_header" git --config-env="http.${wiki_url}.extraHeader=WIKI_AUTH_HEADER" "$@"
+              }
 
               git config user.email "vscode@microsoft.com"
               git config user.name "VSCode"
-            displayName: Prepare tooling
+              git remote add upstream "$wiki_url"
 
-          - script: |
-              set -e
-              git remote add upstream https://github.com/Microsoft/vscode.wiki.git
-              git fetch upstream
+              wiki_git fetch upstream
 
               echo 'Merging in vscode.wiki'
               git merge upstream/master
-              
+
               echo 'Pushing to vscode-wiki'
               git push origin HEAD:$(Build.SourceBranch)
 
               echo 'Pushing to vscode.wiki'
-              git push upstream HEAD:master
+              wiki_git push upstream HEAD:master
 
               echo 'Done!'
             displayName: Sync vscode-wiki & vscode.wiki
